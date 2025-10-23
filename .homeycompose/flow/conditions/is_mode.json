@@ -1,0 +1,25 @@
+{
+    "id": "is_mode",
+    "title": {
+        "en": "Mode is active",
+        "nl": "Stand is actief"
+    },
+    "titleFormatted": {
+        "en": "[[name]] is !{{active|inactive}}",
+        "nl": "[[name]] is !{{actief|inactief}}"
+    },
+    "hint": {
+        "en": "Checks if a mode is activated.",
+        "nl": "Controleert of een stand is geactiveerd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

@@ -1,0 +1,42 @@
+{
+    "id": "com.basmilius.flowbits",
+    "version": "1.0.0",
+    "compatibility": ">=12.4.0",
+    "sdk": 3,
+    "brandColor": "#4f46e5",
+    "platforms": [
+        "local"
+    ],
+    "name": {
+        "en": "FlowBits",
+        "nl": "FlowBits"
+    },
+    "description": {
+        "en": "Small bits of logic, big difference in your Flows.",
+        "nl": "Kleine stukjes logica, groot verschil in je Flows."
+    },
+    "category": [
+        "tools"
+    ],
+    "permissions": [],
+    "images": {
+        "small": "/assets/images/small.png",
+        "large": "/assets/images/large.png",
+        "xlarge": "/assets/images/xlarge.png"
+    },
+    "author": {
+        "name": "Bas Milius",
+        "email": "bas@mili.us"
+    },
+    "bugs": {
+        "url": "https://github.com/basmilius/homey-flowbits/issues"
+    },
+    "source": "https://github.com/basmilius/homey-flowbits",
+    "contributing": {
+        "donate": {
+            "githubSponsors": {
+                "username": "basmilius"
+            }
+        }
+    }
+}

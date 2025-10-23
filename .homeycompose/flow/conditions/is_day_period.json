@@ -1,0 +1,51 @@
+{
+    "id": "is_day_period",
+    "title": {
+        "en": "It !{{is|isn't}}...",
+        "nl": "Het !{{is|is geen}}..."
+    },
+    "titleFormatted": {
+        "en": "It !{{is|isn't}} [[value]]",
+        "nl": "Het !{{is|is geen}} [[value]]"
+    },
+    "args": [
+        {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+                "en": "Day period",
+                "nl": "Dagperiode"
+            },
+            "values": [
+                {
+                    "id": "morning",
+                    "title": {
+                        "en": "Morning",
+                        "nl": "Ochtend"
+                    }
+                },
+                {
+                    "id": "afternoon",
+                    "title": {
+                        "en": "Afternoon",
+                        "nl": "Middag"
+                    }
+                },
+                {
+                    "id": "evening",
+                    "title": {
+                        "en": "evening",
+                        "nl": "Avond"
+                    }
+                },
+                {
+                    "id": "night",
+                    "title": {
+                        "en": "Night",
+                        "nl": "Nacht"
+                    }
+                }
+            ]
+        }
+    ]
+}

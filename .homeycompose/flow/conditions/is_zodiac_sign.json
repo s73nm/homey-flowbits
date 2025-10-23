@@ -1,0 +1,107 @@
+{
+    "id": "is_zodiac_sign",
+    "title": {
+        "en": "The current zodiac sign !{{is|isn't}}...",
+        "nl": "Het huidige sterrenbeeld !{{is|is niet}}..."
+    },
+    "titleFormatted": {
+        "en": "The current zodiac sign !{{is|isn't}} [[value]]",
+        "nl": "Het huidige sterrenbeeld !{{is|is niet}} [[value]]"
+    },
+    "args": [
+        {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+                "en": "Zodiac sign",
+                "nl": "Sterrenbeeld"
+            },
+            "values": [
+                {
+                    "id": "aries",
+                    "title": {
+                        "en": "Aries",
+                        "nl": "Ram"
+                    }
+                },
+                {
+                    "id": "taurus",
+                    "title": {
+                        "en": "Taurus",
+                        "nl": "Stier"
+                    }
+                },
+                {
+                    "id": "gemini",
+                    "title": {
+                        "en": "Gemini",
+                        "nl": "Tweelingen"
+                    }
+                },
+                {
+                    "id": "cancer",
+                    "title": {
+                        "en": "Cancer",
+                        "nl": "Kreeft"
+                    }
+                },
+                {
+                    "id": "leo",
+                    "title": {
+                        "en": "Leo",
+                        "nl": "Leeuw"
+                    }
+                },
+                {
+                    "id": "virgo",
+                    "title": {
+                        "en": "Virgo",
+                        "nl": "Maagd"
+                    }
+                },
+                {
+                    "id": "libra",
+                    "title": {
+                        "en": "Libra",
+                        "nl": "Weegschaal"
+                    }
+                },
+                {
+                    "id": "scorpio",
+                    "title": {
+                        "en": "Scorpio",
+                        "nl": "Schorpioen"
+                    }
+                },
+                {
+                    "id": "sagittarius",
+                    "title": {
+                        "en": "Sagittarius",
+                        "nl": "Boogschutter"
+                    }
+                },
+                {
+                    "id": "capricorn",
+                    "title": {
+                        "en": "Capricorn",
+                        "nl": "Steenbok"
+                    }
+                },
+                {
+                    "id": "aquarius",
+                    "title": {
+                        "en": "Aquarius",
+                        "nl": "Waterman"
+                    }
+                },
+                {
+                    "id": "pisces",
+                    "title": {
+                        "en": "Pisces",
+                        "nl": "Vissen"
+                    }
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,55 @@
+{
+    "id": "day_period_over",
+    "title": {
+        "en": "The ... is over",
+        "nl": "De ... is voorbij"
+    },
+    "titleFormatted": {
+        "en": "The [[value]] is over",
+        "nl": "De [[value]] is voorbij"
+    },
+    "hint": {
+        "en": "Triggers when the day period is over.",
+        "nl": "Triggert wanneer de periode van de dag voorbij is."
+    },
+    "args": [
+        {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+                "en": "Day period",
+                "nl": "Dagperiode"
+            },
+            "values": [
+                {
+                    "id": "morning",
+                    "title": {
+                        "en": "Morning",
+                        "nl": "Ochtend"
+                    }
+                },
+                {
+                    "id": "afternoon",
+                    "title": {
+                        "en": "Afternoon",
+                        "nl": "Middag"
+                    }
+                },
+                {
+                    "id": "evening",
+                    "title": {
+                        "en": "evening",
+                        "nl": "Avond"
+                    }
+                },
+                {
+                    "id": "night",
+                    "title": {
+                        "en": "Night",
+                        "nl": "Nacht"
+                    }
+                }
+            ]
+        }
+    ]
+}

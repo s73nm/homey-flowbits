@@ -1,0 +1,745 @@
+{
+  "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
+  "id": "com.basmilius.flowbits",
+  "version": "1.0.0",
+  "compatibility": ">=12.4.0",
+  "sdk": 3,
+  "brandColor": "#4f46e5",
+  "platforms": [
+    "local"
+  ],
+  "name": {
+    "en": "FlowBits",
+    "nl": "FlowBits"
+  },
+  "description": {
+    "en": "Small bits of logic, big difference in your Flows.",
+    "nl": "Kleine stukjes logica, groot verschil in je Flows."
+  },
+  "category": [
+    "tools"
+  ],
+  "permissions": [],
+  "images": {
+    "small": "/assets/images/small.png",
+    "large": "/assets/images/large.png",
+    "xlarge": "/assets/images/xlarge.png"
+  },
+  "author": {
+    "name": "Bas Milius",
+    "email": "bas@mili.us"
+  },
+  "bugs": {
+    "url": "https://github.com/basmilius/homey-flowbits/issues"
+  },
+  "source": "https://github.com/basmilius/homey-flowbits",
+  "contributing": {
+    "donate": {
+      "githubSponsors": {
+        "username": "basmilius"
+      }
+    }
+  },
+  "flow": {
+    "triggers": [
+      {
+        "id": "cycle_becomes",
+        "title": {
+          "en": "Cycle reached value",
+          "nl": "Teller waarde bereikt"
+        },
+        "titleFormatted": {
+          "en": "When cycle [[name]] reaches [[value]]",
+          "nl": "Wanneer teller [[name]] de waarde [[value]] bereikt"
+        },
+        "hint": {
+          "en": "Triggers when a cycle reaches the specified value.",
+          "nl": "Triggert wanneer een teller de opgegeven waarde bereikt."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "day_period_becomes",
+        "title": {
+          "en": "It becomes ...",
+          "nl": "Het wordt ..."
+        },
+        "titleFormatted": {
+          "en": "It becomes [[value]]",
+          "nl": "Het wordt [[value]]"
+        },
+        "hint": {
+          "en": "Triggers when the day period changes.",
+          "nl": "Triggert wanneer de periode van de dag veranderd."
+        },
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+              "en": "Day period",
+              "nl": "Dagperiode"
+            },
+            "values": [
+              {
+                "id": "morning",
+                "title": {
+                  "en": "Morning",
+                  "nl": "Ochtend"
+                }
+              },
+              {
+                "id": "afternoon",
+                "title": {
+                  "en": "Afternoon",
+                  "nl": "Middag"
+                }
+              },
+              {
+                "id": "evening",
+                "title": {
+                  "en": "evening",
+                  "nl": "Avond"
+                }
+              },
+              {
+                "id": "night",
+                "title": {
+                  "en": "Night",
+                  "nl": "Nacht"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "day_period_over",
+        "title": {
+          "en": "The ... is over",
+          "nl": "De ... is voorbij"
+        },
+        "titleFormatted": {
+          "en": "The [[value]] is over",
+          "nl": "De [[value]] is voorbij"
+        },
+        "hint": {
+          "en": "Triggers when the day period is over.",
+          "nl": "Triggert wanneer de periode van de dag voorbij is."
+        },
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+              "en": "Day period",
+              "nl": "Dagperiode"
+            },
+            "values": [
+              {
+                "id": "morning",
+                "title": {
+                  "en": "Morning",
+                  "nl": "Ochtend"
+                }
+              },
+              {
+                "id": "afternoon",
+                "title": {
+                  "en": "Afternoon",
+                  "nl": "Middag"
+                }
+              },
+              {
+                "id": "evening",
+                "title": {
+                  "en": "evening",
+                  "nl": "Avond"
+                }
+              },
+              {
+                "id": "night",
+                "title": {
+                  "en": "Night",
+                  "nl": "Nacht"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "mode_activated",
+        "title": {
+          "en": "A mode is activated",
+          "nl": "Een stand is geactiveerd"
+        },
+        "titleFormatted": {
+          "en": "When [[name]] is activated",
+          "nl": "Wanneer [[name]] is geactiveerd"
+        },
+        "hint": {
+          "en": "Triggers when a mode gets activated.",
+          "nl": "Triggert wanneer een stand is geactiveerd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "mode_deactivated",
+        "title": {
+          "en": "A mode is activated",
+          "nl": "Een stand is geactiveerd"
+        },
+        "titleFormatted": {
+          "en": "When [[name]] is deactivated",
+          "nl": "Wanneer [[name]] is gedeactiveerd"
+        },
+        "hint": {
+          "en": "Triggers when a mode gets deactivated.",
+          "nl": "Triggert wanneer een stand is gedeactiveerd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          }
+        ]
+      }
+    ],
+    "conditions": [
+      {
+        "id": "continue_with_chance",
+        "title": {
+          "en": "Continue with ...% chance",
+          "nl": "Ga door met ...% kans"
+        },
+        "titleFormatted": {
+          "en": "Continue with [[chance]] chance",
+          "nl": "Ga door met [[chance]] kans"
+        },
+        "args": [
+          {
+            "type": "range",
+            "name": "chance",
+            "title": {
+              "en": "Chance",
+              "nl": "Kans"
+            },
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "label": "%",
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "is_day_period",
+        "title": {
+          "en": "It !{{is|isn't}}...",
+          "nl": "Het !{{is|is geen}}..."
+        },
+        "titleFormatted": {
+          "en": "It !{{is|isn't}} [[value]]",
+          "nl": "Het !{{is|is geen}} [[value]]"
+        },
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+              "en": "Day period",
+              "nl": "Dagperiode"
+            },
+            "values": [
+              {
+                "id": "morning",
+                "title": {
+                  "en": "Morning",
+                  "nl": "Ochtend"
+                }
+              },
+              {
+                "id": "afternoon",
+                "title": {
+                  "en": "Afternoon",
+                  "nl": "Middag"
+                }
+              },
+              {
+                "id": "evening",
+                "title": {
+                  "en": "evening",
+                  "nl": "Avond"
+                }
+              },
+              {
+                "id": "night",
+                "title": {
+                  "en": "Night",
+                  "nl": "Nacht"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "is_mode",
+        "title": {
+          "en": "Mode is active",
+          "nl": "Stand is actief"
+        },
+        "titleFormatted": {
+          "en": "[[name]] is !{{active|inactive}}",
+          "nl": "[[name]] is !{{actief|inactief}}"
+        },
+        "hint": {
+          "en": "Checks if a mode is activated.",
+          "nl": "Controleert of een stand is geactiveerd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "is_moon_phase",
+        "title": {
+          "en": "The current moon phase !{{is|isn't}}...",
+          "nl": "De huidige maanfase !{{is|is niet}}..."
+        },
+        "titleFormatted": {
+          "en": "The current moon phase !{{is|isn't}} [[value]]",
+          "nl": "De huidige maanfase !{{is|is niet}} [[value]]"
+        },
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+              "en": "Moon phase",
+              "nl": "Maanfase"
+            },
+            "values": [
+              {
+                "id": "new_moon",
+                "title": {
+                  "en": "New Moon",
+                  "nl": "Nieuwe maan"
+                }
+              },
+              {
+                "id": "waxing_crescent",
+                "title": {
+                  "en": "Waxing Crescent",
+                  "nl": "Wassende sikkel"
+                }
+              },
+              {
+                "id": "first_quarter",
+                "title": {
+                  "en": "First Quarter",
+                  "nl": "Eerste kwartier"
+                }
+              },
+              {
+                "id": "waxing_gibbous",
+                "title": {
+                  "en": "Waxing Gibbous",
+                  "nl": "Wassende maan"
+                }
+              },
+              {
+                "id": "full_moon",
+                "title": {
+                  "en": "Full Moon",
+                  "nl": "Volle maan"
+                }
+              },
+              {
+                "id": "waning_gibbous",
+                "title": {
+                  "en": "Waning Gibbous",
+                  "nl": "Afnemende maan"
+                }
+              },
+              {
+                "id": "last_quarter",
+                "title": {
+                  "en": "Last Quarter",
+                  "nl": "Laatste kwartier"
+                }
+              },
+              {
+                "id": "waning_crescent",
+                "title": {
+                  "en": "Waning Crescent",
+                  "nl": "Afnemende sikkel"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "is_school_holiday",
+        "title": {
+          "en": "🇳🇱 It is a school holiday",
+          "nl": "Het is een schoolvakantie"
+        },
+        "titleFormatted": {
+          "en": "🇳🇱 It !{{is|isn't}} [[holiday]] in region [[region]]",
+          "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "holiday",
+            "title": {
+              "en": "School holiday",
+              "nl": "Schoolvakatie"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "region",
+            "title": {
+              "en": "Region",
+              "nl": "Regio"
+            },
+            "values": [
+              {
+                "id": "north",
+                "title": {
+                  "en": "North",
+                  "nl": "Noord"
+                }
+              },
+              {
+                "id": "middle",
+                "title": {
+                  "en": "Middle",
+                  "nl": "Midden"
+                }
+              },
+              {
+                "id": "south",
+                "title": {
+                  "en": "South",
+                  "nl": "Zuid"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "is_zodiac_sign",
+        "title": {
+          "en": "The current zodiac sign !{{is|isn't}}...",
+          "nl": "Het huidige sterrenbeeld !{{is|is niet}}..."
+        },
+        "titleFormatted": {
+          "en": "The current zodiac sign !{{is|isn't}} [[value]]",
+          "nl": "Het huidige sterrenbeeld !{{is|is niet}} [[value]]"
+        },
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+              "en": "Zodiac sign",
+              "nl": "Sterrenbeeld"
+            },
+            "values": [
+              {
+                "id": "aries",
+                "title": {
+                  "en": "Aries",
+                  "nl": "Ram"
+                }
+              },
+              {
+                "id": "taurus",
+                "title": {
+                  "en": "Taurus",
+                  "nl": "Stier"
+                }
+              },
+              {
+                "id": "gemini",
+                "title": {
+                  "en": "Gemini",
+                  "nl": "Tweelingen"
+                }
+              },
+              {
+                "id": "cancer",
+                "title": {
+                  "en": "Cancer",
+                  "nl": "Kreeft"
+                }
+              },
+              {
+                "id": "leo",
+                "title": {
+                  "en": "Leo",
+                  "nl": "Leeuw"
+                }
+              },
+              {
+                "id": "virgo",
+                "title": {
+                  "en": "Virgo",
+                  "nl": "Maagd"
+                }
+              },
+              {
+                "id": "libra",
+                "title": {
+                  "en": "Libra",
+                  "nl": "Weegschaal"
+                }
+              },
+              {
+                "id": "scorpio",
+                "title": {
+                  "en": "Scorpio",
+                  "nl": "Schorpioen"
+                }
+              },
+              {
+                "id": "sagittarius",
+                "title": {
+                  "en": "Sagittarius",
+                  "nl": "Boogschutter"
+                }
+              },
+              {
+                "id": "capricorn",
+                "title": {
+                  "en": "Capricorn",
+                  "nl": "Steenbok"
+                }
+              },
+              {
+                "id": "aquarius",
+                "title": {
+                  "en": "Aquarius",
+                  "nl": "Waterman"
+                }
+              },
+              {
+                "id": "pisces",
+                "title": {
+                  "en": "Pisces",
+                  "nl": "Vissen"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    ],
+    "actions": [
+      {
+        "id": "activate_mode",
+        "title": {
+          "en": "Activate ...",
+          "nl": "Activeer ..."
+        },
+        "titleFormatted": {
+          "en": "Activate [[name]]",
+          "nl": "Activeer [[name]]"
+        },
+        "hint": {
+          "en": "Activates a defined mode and deactivates all other modes.",
+          "nl": "Activeer een gedefinieerde stand en deactiveer alle andere standen."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cycle",
+        "title": {
+          "en": "Go to the next step of ...",
+          "nl": "Ga naar de volgende stap van ..."
+        },
+        "titleFormatted": {
+          "en": "Go to the next step of [[name]] (max [[max_value]])",
+          "nl": "Ga naar de volgende stap van [[name]] (max [[max_value]])"
+        },
+        "hint": {
+          "en": "Move the cycle to its next value up to the maximum",
+          "nl": "Ga naar de volgende waarde van de teller tot het maximum"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "max_value",
+            "title": {
+              "en": "End value",
+              "nl": "Eindnummer"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cycle_between",
+        "title": {
+          "en": "Go to the next step of ...",
+          "nl": "Ga naar de volgende stap van ..."
+        },
+        "titleFormatted": {
+          "en": "Go to the next step of [[name]] (min [[min_value]], max [[max_value]])",
+          "nl": "Ga naar de volgende stap van [[name]] (min [[min_value]], max [[max_value]])"
+        },
+        "hint": {
+          "en": "Move the cycle to its next value up to the maximum",
+          "nl": "Ga naar de volgende waarde van de teller tot het maximum"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "max_value",
+            "title": {
+              "en": "Max value",
+              "nl": "Maximale waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5"
+            }
+          },
+          {
+            "type": "number",
+            "name": "min_value",
+            "title": {
+              "en": "Min value",
+              "nl": "Minimale waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. -5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "deactivate_mode",
+        "title": {
+          "en": "Deactivate ...",
+          "nl": "Deactiveer ..."
+        },
+        "titleFormatted": {
+          "en": "Deactivate [[name]]",
+          "nl": "Deactiveer [[name]]"
+        },
+        "hint": {
+          "en": "Deactivates a defined mode.",
+          "nl": "Deactiveer een gedefinieerde stand."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          }
+        ]
+      },
+      {
+        "id": "random_fact",
+        "title": {
+          "en": "Give a random fact",
+          "nl": "Geef een willekeurig feitje"
+        },
+        "titleFormatted": {
+          "en": "Give a random fact",
+          "nl": "Geef een willekeurig feitje"
+        },
+        "tokens": [
+          {
+            "name": "randomFact",
+            "type": "string",
+            "title": {
+              "en": "Random fact",
+              "nl": "Willekeurig feitje"
+            }
+          }
+        ]
+      }
+    ]
+  }
+}

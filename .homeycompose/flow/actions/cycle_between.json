@@ -1,0 +1,49 @@
+{
+    "id": "cycle_between",
+    "title": {
+        "en": "Go to the next step of ...",
+        "nl": "Ga naar de volgende stap van ..."
+    },
+    "titleFormatted": {
+        "en": "Go to the next step of [[name]] (min [[min_value]], max [[max_value]])",
+        "nl": "Ga naar de volgende stap van [[name]] (min [[min_value]], max [[max_value]])"
+    },
+    "hint": {
+        "en": "Move the cycle to its next value up to the maximum",
+        "nl": "Ga naar de volgende waarde van de teller tot het maximum"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        },
+        {
+            "type": "number",
+            "name": "max_value",
+            "title": {
+                "en": "Max value",
+                "nl": "Maximale waarde"
+            },
+            "placeholder": {
+                "en": "E.g. 5",
+                "nl": "Bijv. 5"
+            }
+        },
+        {
+            "type": "number",
+            "name": "min_value",
+            "title": {
+                "en": "Min value",
+                "nl": "Minimale waarde"
+            },
+            "placeholder": {
+                "en": "E.g. 5",
+                "nl": "Bijv. -5"
+            }
+        }
+    ]
+}

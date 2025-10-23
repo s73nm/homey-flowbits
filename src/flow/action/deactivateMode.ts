@@ -1,0 +1,41 @@
+import { ModeAutocompleteProvider } from '../autocomplete';
+import { BaseAction } from '../base';
+import { action } from '../decorator';
+import { ModeDeactivatedTrigger } from '../trigger';
+
+@action('deactivate_mode')
+export default class DeactivateModeAction extends BaseAction<Args, never> {
+    async onInit(): Promise<void> {
+        this.registerAutocomplete('name', ModeAutocompleteProvider);
+
+        await super.onInit();
+    }
+
+    async onRun(args: Args): Promise<void> {
+        const name = args.name.name;
+        const id = 'flowbits-mode';
+        let value: string | null = this.homey.settings.get(id);
+
+        console.log({value, name});
+
+        if (value !== name) {
+            return;
+        }
+
+        this.homey.settings.set(id, null);
+
+        this.brain.registry
+            .findTrigger(ModeDeactivatedTrigger)
+            ?.trigger({name});
+
+        await this.homey.notifications.createNotification({
+            excerpt: this.homey.__('notification.mode_deactivated', {mode: args.name.name})
+        });
+    }
+}
+
+type Args = {
+    readonly name: {
+        readonly name: string;
+    };
+};

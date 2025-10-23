@@ -1,0 +1,25 @@
+{
+    "id": "activate_mode",
+    "title": {
+        "en": "Activate ...",
+        "nl": "Activeer ..."
+    },
+    "titleFormatted": {
+        "en": "Activate [[name]]",
+        "nl": "Activeer [[name]]"
+    },
+    "hint": {
+        "en": "Activates a defined mode and deactivates all other modes.",
+        "nl": "Activeer een gedefinieerde stand en deactiveer alle andere standen."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

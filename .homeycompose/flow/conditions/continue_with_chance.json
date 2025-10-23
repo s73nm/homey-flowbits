@@ -1,0 +1,26 @@
+{
+    "id": "continue_with_chance",
+    "title": {
+        "en": "Continue with ...% chance",
+        "nl": "Ga door met ...% kans"
+    },
+    "titleFormatted": {
+        "en": "Continue with [[chance]] chance",
+        "nl": "Ga door met [[chance]] kans"
+    },
+    "args": [
+        {
+            "type": "range",
+            "name": "chance",
+            "title": {
+                "en": "Chance",
+                "nl": "Kans"
+            },
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "label": "%",
+            "labelDecimals": 0
+        }
+    ]
+}

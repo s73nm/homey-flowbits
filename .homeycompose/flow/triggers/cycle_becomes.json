@@ -1,0 +1,37 @@
+{
+    "id": "cycle_becomes",
+    "title": {
+        "en": "Cycle reached value",
+        "nl": "Teller waarde bereikt"
+    },
+    "titleFormatted": {
+        "en": "When cycle [[name]] reaches [[value]]",
+        "nl": "Wanneer teller [[name]] de waarde [[value]] bereikt"
+    },
+    "hint": {
+        "en": "Triggers when a cycle reaches the specified value.",
+        "nl": "Triggert wanneer een teller de opgegeven waarde bereikt."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        },
+        {
+            "type": "number",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde"
+            },
+            "placeholder": {
+                "en": "E.g. 5",
+                "nl": "Bijv. 5"
+            }
+        }
+    ]
+}

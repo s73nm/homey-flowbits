@@ -1,0 +1,32 @@
+{
+  "tokens": {
+    "day_period": "Day period (raw)",
+    "moon_phase": "Moon phase (raw)",
+    "zodiac_sign": "Zodiac sign (raw)",
+    "day_period_translated": "Day period",
+    "moon_phase_translated": "Moon phase",
+    "zodiac_sign_translated": "Zodiac sign"
+  },
+  "autocomplete": {
+    "cycle_new": "New counter in this flow",
+    "mode_new": "New mode in this flow"
+  },
+  "day_period": {
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "morning": "Morning",
+    "night": "Night"
+  },
+  "notification": {
+    "mode_activated": "**__mode__** is activated.",
+    "mode_deactivated": "**__mode__** is deactivated."
+  },
+  "token": {
+    "day_period": "Day period (raw)",
+    "day_period_translated": "Day period",
+    "moon_phase": "Moon phase (raw)",
+    "moon_phase_translated": "Moon phase",
+    "zodiac_sign": "Zodiac sign (raw)",
+    "zodiac_sign_translated": "Zodiac sign"
+  }
+}

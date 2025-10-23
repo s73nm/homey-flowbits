@@ -1,0 +1,79 @@
+{
+    "id": "is_moon_phase",
+    "title": {
+        "en": "The current moon phase !{{is|isn't}}...",
+        "nl": "De huidige maanfase !{{is|is niet}}..."
+    },
+    "titleFormatted": {
+        "en": "The current moon phase !{{is|isn't}} [[value]]",
+        "nl": "De huidige maanfase !{{is|is niet}} [[value]]"
+    },
+    "args": [
+        {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+                "en": "Moon phase",
+                "nl": "Maanfase"
+            },
+            "values": [
+                {
+                    "id": "new_moon",
+                    "title": {
+                        "en": "New Moon",
+                        "nl": "Nieuwe maan"
+                    }
+                },
+                {
+                    "id": "waxing_crescent",
+                    "title": {
+                        "en": "Waxing Crescent",
+                        "nl": "Wassende sikkel"
+                    }
+                },
+                {
+                    "id": "first_quarter",
+                    "title": {
+                        "en": "First Quarter",
+                        "nl": "Eerste kwartier"
+                    }
+                },
+                {
+                    "id": "waxing_gibbous",
+                    "title": {
+                        "en": "Waxing Gibbous",
+                        "nl": "Wassende maan"
+                    }
+                },
+                {
+                    "id": "full_moon",
+                    "title": {
+                        "en": "Full Moon",
+                        "nl": "Volle maan"
+                    }
+                },
+                {
+                    "id": "waning_gibbous",
+                    "title": {
+                        "en": "Waning Gibbous",
+                        "nl": "Afnemende maan"
+                    }
+                },
+                {
+                    "id": "last_quarter",
+                    "title": {
+                        "en": "Last Quarter",
+                        "nl": "Laatste kwartier"
+                    }
+                },
+                {
+                    "id": "waning_crescent",
+                    "title": {
+                        "en": "Waning Crescent",
+                        "nl": "Afnemende sikkel"
+                    }
+                }
+            ]
+        }
+    ]
+}

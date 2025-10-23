@@ -1,0 +1,25 @@
+{
+    "id": "mode_deactivated",
+    "title": {
+        "en": "A mode is activated",
+        "nl": "Een stand is geactiveerd"
+    },
+    "titleFormatted": {
+        "en": "When [[name]] is deactivated",
+        "nl": "Wanneer [[name]] is gedeactiveerd"
+    },
+    "hint": {
+        "en": "Triggers when a mode gets deactivated.",
+        "nl": "Triggert wanneer een stand is gedeactiveerd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

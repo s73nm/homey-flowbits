@@ -1,0 +1,55 @@
+{
+    "id": "day_period_becomes",
+    "title": {
+        "en": "It becomes ...",
+        "nl": "Het wordt ..."
+    },
+    "titleFormatted": {
+        "en": "It becomes [[value]]",
+        "nl": "Het wordt [[value]]"
+    },
+    "hint": {
+        "en": "Triggers when the day period changes.",
+        "nl": "Triggert wanneer de periode van de dag veranderd."
+    },
+    "args": [
+        {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+                "en": "Day period",
+                "nl": "Dagperiode"
+            },
+            "values": [
+                {
+                    "id": "morning",
+                    "title": {
+                        "en": "Morning",
+                        "nl": "Ochtend"
+                    }
+                },
+                {
+                    "id": "afternoon",
+                    "title": {
+                        "en": "Afternoon",
+                        "nl": "Middag"
+                    }
+                },
+                {
+                    "id": "evening",
+                    "title": {
+                        "en": "evening",
+                        "nl": "Avond"
+                    }
+                },
+                {
+                    "id": "night",
+                    "title": {
+                        "en": "Night",
+                        "nl": "Nacht"
+                    }
+                }
+            ]
+        }
+    ]
+}

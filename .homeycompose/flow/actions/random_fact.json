@@ -1,0 +1,21 @@
+{
+    "id": "random_fact",
+    "title": {
+        "en": "Give a random fact",
+        "nl": "Geef een willekeurig feitje"
+    },
+    "titleFormatted": {
+        "en": "Give a random fact",
+        "nl": "Geef een willekeurig feitje"
+    },
+    "tokens": [
+        {
+            "name": "randomFact",
+            "type": "string",
+            "title": {
+                "en": "Random fact",
+                "nl": "Willekeurig feitje"
+            }
+        }
+    ]
+}
