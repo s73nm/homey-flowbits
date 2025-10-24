@@ -12,11 +12,6 @@ export default class extends BaseAction<Args, never> {
     }
 
     async onRun(args: Args): Promise<void> {
-        const {waitFor} = await import('@basmilius/utils');
-
-        // Built-in wait time, to allow deactivated mode to trigger.
-        await waitFor(100);
-
         const name = args.name.name;
         const id = 'flowbits-mode';
         let value: string | null = this.homey.settings.get(id);
