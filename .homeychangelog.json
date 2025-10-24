@@ -10,5 +10,8 @@
   },
   "0.0.3": {
     "en": "Tweaks to modes."
+  },
+  "0.0.4": {
+    "en": "Added new math then-cards and added signals."
   }
 }
