@@ -1,7 +1,7 @@
 import type { FlowCard, FlowCardAction, FlowCardCondition, FlowCardTrigger } from 'homey';
 import { BaseAutocompleteProvider } from '../base';
 
-export default class ModeAutocompleteProvider extends BaseAutocompleteProvider {
+export default class extends BaseAutocompleteProvider {
     #activateModeAction!: FlowCardAction;
     #deactivateModeAction!: FlowCardAction;
     #isModeCondition!: FlowCardCondition;

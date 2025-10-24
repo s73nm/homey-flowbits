@@ -1,7 +1,7 @@
 import type { FlowCard, FlowCardAction, FlowCardTrigger } from 'homey';
 import { BaseAutocompleteProvider } from '../base';
 
-export default class CycleAutocompleteProvider extends BaseAutocompleteProvider {
+export default class extends BaseAutocompleteProvider {
     #cycleAction!: FlowCardAction;
     #cycleBetweenAction!: FlowCardAction;
     #cycleBecomesTrigger!: FlowCardTrigger;

@@ -5,8 +5,8 @@
         "nl": "Het huidige sterrenbeeld !{{is|is niet}}..."
     },
     "titleFormatted": {
-        "en": "The current zodiac sign !{{is|isn't}} [[value]]",
-        "nl": "Het huidige sterrenbeeld !{{is|is niet}} [[value]]"
+        "en": "The zodiac sign !{{is|isn't}} [[value]]",
+        "nl": "Het sterrenbeeld !{{is|is niet}} [[value]]"
     },
     "args": [
         {

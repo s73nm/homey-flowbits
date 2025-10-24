@@ -1,16 +1,16 @@
 {
     "id": "cycle_between",
     "title": {
-        "en": "Go to the next step of ...",
-        "nl": "Ga naar de volgende stap van ..."
+        "en": "Next step in sequence",
+        "nl": "Volgende stap in stappenreeks"
     },
     "titleFormatted": {
-        "en": "Go to the next step of [[name]] (min [[min_value]], max [[max_value]])",
-        "nl": "Ga naar de volgende stap van [[name]] (min [[min_value]], max [[max_value]])"
+        "en": "Next step in [[name]] ([[min_value]]—[[max_value]])",
+        "nl": "Volgende stap in [[name]] ([[min_value]]—[[max_value]])"
     },
     "hint": {
-        "en": "Move the cycle to its next value up to the maximum",
-        "nl": "Ga naar de volgende waarde van de teller tot het maximum"
+        "en": "Go to the next step in a sequence. When the last value is reached, the sequence starts from the beginning.",
+        "nl": "Ga naar de volgende stap in een stappenreeks. Bij de laatste waarde begint de reeks opnieuw."
     },
     "args": [
         {
@@ -24,9 +24,11 @@
         {
             "type": "number",
             "name": "max_value",
+            "min": 2,
+            "step": 1,
             "title": {
-                "en": "Max value",
-                "nl": "Maximale waarde"
+                "en": "Max",
+                "nl": "Maximum"
             },
             "placeholder": {
                 "en": "E.g. 5",
@@ -36,9 +38,11 @@
         {
             "type": "number",
             "name": "min_value",
+            "min": 1,
+            "step": 1,
             "title": {
-                "en": "Min value",
-                "nl": "Minimale waarde"
+                "en": "Min",
+                "nl": "Minimum"
             },
             "placeholder": {
                 "en": "E.g. 5",

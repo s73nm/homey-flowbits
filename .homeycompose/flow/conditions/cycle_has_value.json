@@ -1,16 +1,12 @@
 {
-    "id": "cycle_becomes",
+    "id": "cycle_has_value",
     "title": {
-        "en": "Sequence has value ...",
-        "nl": "Stappenreeks heeft waarde ..."
+        "en": "Sequence equals",
+        "nl": "Stappenreeks is gelijk aan"
     },
     "titleFormatted": {
-        "en": "Sequence [[name]] reaches [[value]]",
-        "nl": "Stappenreeks [[name]] bereikt waarde [[value]]"
-    },
-    "hint": {
-        "en": "Triggers when a sequence reaches the specified value.",
-        "nl": "Triggert wanneer een stappenreeks een waarde bereikt."
+        "en": "Sequence [[name]] equals [[value]]",
+        "nl": "Stappenreeks [[name]] is gelijk aan [[value]]"
     },
     "args": [
         {

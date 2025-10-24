@@ -3,7 +3,7 @@ import { BaseTrigger } from '../base';
 import { trigger } from '../decorator';
 
 @trigger('mode_activated')
-export default class ModeActivatedTrigger extends BaseTrigger<Args, State> {
+export default class extends BaseTrigger<Args, State> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', ModeAutocompleteProvider);
 

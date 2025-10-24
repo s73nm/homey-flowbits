@@ -3,7 +3,7 @@ import { BaseCondition } from '../base';
 import { condition } from '../decorator';
 
 @condition('continue_with_chance')
-export default class ContinueWithChanceCondition extends BaseCondition<Args, never> {
+export default class extends BaseCondition<Args, never> {
     async onRun(args: Args): Promise<boolean> {
         const chance = Number(args.chance) || 0;
 

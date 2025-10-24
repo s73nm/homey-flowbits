@@ -5,7 +5,7 @@ import { condition } from '../decorator';
 import schoolHolidays from '../../data/schoolHolidays';
 
 @condition('is_school_holiday')
-export default class IsSchoolHolidayCondition extends BaseCondition<Args, never> {
+export default class extends BaseCondition<Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('holiday', SchoolVacationAutocompleteProvider);
 

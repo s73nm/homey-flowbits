@@ -2,7 +2,7 @@ import type { FlowCard } from 'homey';
 import schoolHolidays from '../../data/schoolHolidays';
 import { BaseAutocompleteProvider } from '../base';
 
-export default class SchoolVacationAutocompleteProvider extends BaseAutocompleteProvider {
+export default class extends BaseAutocompleteProvider {
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
         const hasQuery = query.trim().length > 0;
 

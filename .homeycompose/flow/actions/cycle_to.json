@@ -1,16 +1,16 @@
 {
-    "id": "cycle_becomes",
+    "id": "cycle_to",
     "title": {
-        "en": "Sequence has value ...",
-        "nl": "Stappenreeks heeft waarde ..."
+        "en": "Set sequence to",
+        "nl": "Stel stappenreeks in op"
     },
     "titleFormatted": {
-        "en": "Sequence [[name]] reaches [[value]]",
-        "nl": "Stappenreeks [[name]] bereikt waarde [[value]]"
+        "en": "Set sequence [[name]] to [[value]]",
+        "nl": "Stel stappenreeks [[name]] in op [[value]]"
     },
     "hint": {
-        "en": "Triggers when a sequence reaches the specified value.",
-        "nl": "Triggert wanneer een stappenreeks een waarde bereikt."
+        "en": "Jump directly to a step in the sequence.",
+        "nl": "Spring direct naar de gewenste stap in de reeks."
     },
     "args": [
         {
@@ -24,11 +24,11 @@
         {
             "type": "number",
             "name": "value",
-            "min": 1,
+            "min": 2,
             "step": 1,
             "title": {
-                "en": "Value",
-                "nl": "Waarde"
+                "en": "Max",
+                "nl": "Maximum"
             },
             "placeholder": {
                 "en": "E.g. 5",

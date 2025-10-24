@@ -1,4 +1,5 @@
 export { default as ContinueWithChanceCondition } from './continueWithChance';
+export { default as CycleHasValueCondition } from './cycleHasValue';
 export { default as IsDayPeriodCondition } from './isDayPeriod';
 export { default as IsModeCondition } from './isMode';
 export { default as IsMoonPhaseCondition } from './isMoonPhase';

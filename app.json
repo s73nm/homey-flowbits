@@ -32,7 +32,9 @@
   "bugs": {
     "url": "https://github.com/basmilius/homey-flowbits/issues"
   },
+  "homepage": "https://bas.dev",
   "source": "https://github.com/basmilius/homey-flowbits",
+  "support": "https://github.com/basmilius/homey-flowbits/issues",
   "contributing": {
     "donate": {
       "githubSponsors": {
@@ -45,16 +47,16 @@
       {
         "id": "cycle_becomes",
         "title": {
-          "en": "Cycle reached value",
-          "nl": "Teller waarde bereikt"
+          "en": "Sequence has value ...",
+          "nl": "Stappenreeks heeft waarde ..."
         },
         "titleFormatted": {
-          "en": "When cycle [[name]] reaches [[value]]",
-          "nl": "Wanneer teller [[name]] de waarde [[value]] bereikt"
+          "en": "Sequence [[name]] reaches [[value]]",
+          "nl": "Stappenreeks [[name]] bereikt waarde [[value]]"
         },
         "hint": {
-          "en": "Triggers when a cycle reaches the specified value.",
-          "nl": "Triggert wanneer een teller de opgegeven waarde bereikt."
+          "en": "Triggers when a sequence reaches the specified value.",
+          "nl": "Triggert wanneer een stappenreeks een waarde bereikt."
         },
         "args": [
           {
@@ -68,6 +70,8 @@
           {
             "type": "number",
             "name": "value",
+            "min": 1,
+            "step": 1,
             "title": {
               "en": "Value",
               "nl": "Waarde"
@@ -192,12 +196,12 @@
       {
         "id": "mode_activated",
         "title": {
-          "en": "A mode is activated",
-          "nl": "Een stand is geactiveerd"
+          "en": "Mode activated",
+          "nl": "Stand geactiveerd"
         },
         "titleFormatted": {
-          "en": "When [[name]] is activated",
-          "nl": "Wanneer [[name]] is geactiveerd"
+          "en": "[[name]] is activated",
+          "nl": "[[name]] is geactiveerd"
         },
         "hint": {
           "en": "Triggers when a mode gets activated.",
@@ -208,8 +212,8 @@
             "type": "autocomplete",
             "name": "name",
             "title": {
-              "en": "Name",
-              "nl": "Naam"
+              "en": "Mode",
+              "nl": "Stand"
             }
           }
         ]
@@ -221,8 +225,8 @@
           "nl": "Een stand is geactiveerd"
         },
         "titleFormatted": {
-          "en": "When [[name]] is deactivated",
-          "nl": "Wanneer [[name]] is gedeactiveerd"
+          "en": "[[name]] is deactivated",
+          "nl": "[[name]] is gedeactiveerd"
         },
         "hint": {
           "en": "Triggers when a mode gets deactivated.",
@@ -233,8 +237,8 @@
             "type": "autocomplete",
             "name": "name",
             "title": {
-              "en": "Name",
-              "nl": "Naam"
+              "en": "Mode",
+              "nl": "Stand"
             }
           }
         ]
@@ -244,8 +248,8 @@
       {
         "id": "continue_with_chance",
         "title": {
-          "en": "Continue with ...% chance",
-          "nl": "Ga door met ...% kans"
+          "en": "Continue with chance",
+          "nl": "Ga door met kans"
         },
         "titleFormatted": {
           "en": "Continue with [[chance]] chance",
@@ -264,6 +268,41 @@
             "step": 1,
             "label": "%",
             "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "cycle_has_value",
+        "title": {
+          "en": "Sequence equals",
+          "nl": "Stappenreeks is gelijk aan"
+        },
+        "titleFormatted": {
+          "en": "Sequence [[name]] equals [[value]]",
+          "nl": "Stappenreeks [[name]] is gelijk aan [[value]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 1,
+            "step": 1,
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5"
+            }
           }
         ]
       },
@@ -346,12 +385,12 @@
       {
         "id": "is_moon_phase",
         "title": {
-          "en": "The current moon phase !{{is|isn't}}...",
-          "nl": "De huidige maanfase !{{is|is niet}}..."
+          "en": "The moon phase !{{is|isn't}}...",
+          "nl": "De maanfase !{{is|is niet}}..."
         },
         "titleFormatted": {
-          "en": "The current moon phase !{{is|isn't}} [[value]]",
-          "nl": "De huidige maanfase !{{is|is niet}} [[value]]"
+          "en": "The moon phase !{{is|isn't}} [[value]]",
+          "nl": "De maanfase !{{is|is niet}} [[value]]"
         },
         "args": [
           {
@@ -481,8 +520,8 @@
           "nl": "Het huidige sterrenbeeld !{{is|is niet}}..."
         },
         "titleFormatted": {
-          "en": "The current zodiac sign !{{is|isn't}} [[value]]",
-          "nl": "Het huidige sterrenbeeld !{{is|is niet}} [[value]]"
+          "en": "The zodiac sign !{{is|isn't}} [[value]]",
+          "nl": "Het sterrenbeeld !{{is|is niet}} [[value]]"
         },
         "args": [
           {
@@ -611,16 +650,16 @@
       {
         "id": "cycle",
         "title": {
-          "en": "Go to the next step of ...",
-          "nl": "Ga naar de volgende stap van ..."
+          "en": "Next step in sequence",
+          "nl": "Volgende stap in stappenreeks"
         },
         "titleFormatted": {
-          "en": "Go to the next step of [[name]] (max [[max_value]])",
-          "nl": "Ga naar de volgende stap van [[name]] (max [[max_value]])"
+          "en": "Next step in [[name]] ( 1—[[max_value]])",
+          "nl": "Volgende stap in [[name]] ( 1—[[max_value]])"
         },
         "hint": {
-          "en": "Move the cycle to its next value up to the maximum",
-          "nl": "Ga naar de volgende waarde van de teller tot het maximum"
+          "en": "Go to the next step in a sequence. When the last value is reached, the sequence starts from the beginning.",
+          "nl": "Ga naar de volgende stap in een stappenreeks. Bij de laatste waarde begint de reeks opnieuw."
         },
         "args": [
           {
@@ -634,9 +673,11 @@
           {
             "type": "number",
             "name": "max_value",
+            "min": 2,
+            "step": 1,
             "title": {
-              "en": "End value",
-              "nl": "Eindnummer"
+              "en": "Max",
+              "nl": "Maximum"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -648,16 +689,16 @@
       {
         "id": "cycle_between",
         "title": {
-          "en": "Go to the next step of ...",
-          "nl": "Ga naar de volgende stap van ..."
+          "en": "Next step in sequence",
+          "nl": "Volgende stap in stappenreeks"
         },
         "titleFormatted": {
-          "en": "Go to the next step of [[name]] (min [[min_value]], max [[max_value]])",
-          "nl": "Ga naar de volgende stap van [[name]] (min [[min_value]], max [[max_value]])"
+          "en": "Next step in [[name]] ([[min_value]]—[[max_value]])",
+          "nl": "Volgende stap in [[name]] ([[min_value]]—[[max_value]])"
         },
         "hint": {
-          "en": "Move the cycle to its next value up to the maximum",
-          "nl": "Ga naar de volgende waarde van de teller tot het maximum"
+          "en": "Go to the next step in a sequence. When the last value is reached, the sequence starts from the beginning.",
+          "nl": "Ga naar de volgende stap in een stappenreeks. Bij de laatste waarde begint de reeks opnieuw."
         },
         "args": [
           {
@@ -671,9 +712,11 @@
           {
             "type": "number",
             "name": "max_value",
+            "min": 2,
+            "step": 1,
             "title": {
-              "en": "Max value",
-              "nl": "Maximale waarde"
+              "en": "Max",
+              "nl": "Maximum"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -683,13 +726,54 @@
           {
             "type": "number",
             "name": "min_value",
+            "min": 1,
+            "step": 1,
             "title": {
-              "en": "Min value",
-              "nl": "Minimale waarde"
+              "en": "Min",
+              "nl": "Minimum"
             },
             "placeholder": {
               "en": "E.g. 5",
               "nl": "Bijv. -5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cycle_to",
+        "title": {
+          "en": "Set sequence to",
+          "nl": "Stel stappenreeks in op"
+        },
+        "titleFormatted": {
+          "en": "Set sequence [[name]] to [[value]]",
+          "nl": "Stel stappenreeks [[name]] in op [[value]]"
+        },
+        "hint": {
+          "en": "Jump directly to a step in the sequence.",
+          "nl": "Spring direct naar de gewenste stap in de reeks."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 2,
+            "step": 1,
+            "title": {
+              "en": "Max",
+              "nl": "Maximum"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5"
             }
           }
         ]

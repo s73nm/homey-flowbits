@@ -3,8 +3,8 @@ import { BaseCondition } from '../base';
 import { condition } from '../decorator';
 
 @condition('is_zodiac_sign')
-export default class IsZodiacSignCondition extends BaseCondition<Args, never> {
-    async onRun(args: Args, state: never): Promise<boolean> {
+export default class extends BaseCondition<Args, never> {
+    async onRun(args: Args, _: never): Promise<boolean> {
         const {getZodiacSign} = await import('@basmilius/utils');
 
         const now = DateTime.now();

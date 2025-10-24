@@ -1,8 +1,8 @@
 {
     "id": "continue_with_chance",
     "title": {
-        "en": "Continue with ...% chance",
-        "nl": "Ga door met ...% kans"
+        "en": "Continue with chance",
+        "nl": "Ga door met kans"
     },
     "titleFormatted": {
         "en": "Continue with [[chance]] chance",

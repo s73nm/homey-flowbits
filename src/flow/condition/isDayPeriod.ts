@@ -3,7 +3,7 @@ import { BaseCondition } from '../base';
 import { condition } from '../decorator';
 
 @condition('is_day_period')
-export default class IsDayPeriodCondition extends BaseCondition<Args, never> {
+export default class extends BaseCondition<Args, never> {
     async onRun(args: Args): Promise<boolean> {
         const {getDayPeriod} = await import('@basmilius/utils');
 

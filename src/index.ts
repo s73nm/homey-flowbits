@@ -2,9 +2,9 @@ import Homey from 'homey';
 import { Settings } from 'luxon';
 
 import { Brain } from './brain';
-import { ActivateModeAction, CycleAction, CycleBetweenAction, DeactivateModeAction, RandomFactAction } from './flow/action';
+import { ActivateModeAction, CycleAction, CycleBetweenAction, CycleToAction, DeactivateModeAction, RandomFactAction } from './flow/action';
 import { CycleAutocompleteProvider, ModeAutocompleteProvider, SchoolVacationAutocompleteProvider } from './flow/autocomplete';
-import { ContinueWithChanceCondition, IsDayPeriodCondition, IsModeCondition, IsMoonPhaseCondition, IsSchoolHolidayCondition, IsZodiacSignCondition } from './flow/condition';
+import { ContinueWithChanceCondition, CycleHasValueCondition, IsDayPeriodCondition, IsModeCondition, IsMoonPhaseCondition, IsSchoolHolidayCondition, IsZodiacSignCondition } from './flow/condition';
 import { CycleBecomesTrigger, DayPeriodBecomesTrigger, DayPeriodOverTrigger, ModeActivatedTrigger, ModeDeactivatedTrigger } from './flow/trigger';
 
 export default class Index extends Homey.App {
@@ -34,6 +34,7 @@ export default class Index extends Homey.App {
         this.#brain.registry.action(ActivateModeAction);
         this.#brain.registry.action(CycleAction);
         this.#brain.registry.action(CycleBetweenAction);
+        this.#brain.registry.action(CycleToAction);
         this.#brain.registry.action(DeactivateModeAction);
         this.#brain.registry.action(RandomFactAction);
     }
@@ -46,6 +47,7 @@ export default class Index extends Homey.App {
 
     #registerConditions(): void {
         this.#brain.registry.condition(ContinueWithChanceCondition);
+        this.#brain.registry.condition(CycleHasValueCondition);
         this.#brain.registry.condition(IsDayPeriodCondition);
         this.#brain.registry.condition(IsModeCondition);
         this.#brain.registry.condition(IsMoonPhaseCondition);

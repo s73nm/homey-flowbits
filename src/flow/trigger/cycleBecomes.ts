@@ -3,7 +3,7 @@ import { BaseTrigger } from '../base';
 import { trigger } from '../decorator';
 
 @trigger('cycle_becomes')
-export default class CycleBecomesTrigger extends BaseTrigger<Args, State> {
+export default class extends BaseTrigger<Args, State> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', CycleAutocompleteProvider);
 

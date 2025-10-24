@@ -3,7 +3,7 @@ import { BaseCondition } from '../base';
 import { condition } from '../decorator';
 
 @condition('is_moon_phase')
-export default class IsMoonPhaseCondition extends BaseCondition<Args, never> {
+export default class extends BaseCondition<Args, never> {
     async onRun(args: Args): Promise<boolean> {
         const {getMoonPhase} = await import('@basmilius/utils');
 

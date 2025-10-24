@@ -3,7 +3,7 @@ import { BaseCondition } from '../base';
 import { condition } from '../decorator';
 
 @condition('is_mode')
-export default class IsModeCondition extends BaseCondition<Args, never> {
+export default class extends BaseCondition<Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', ModeAutocompleteProvider);
 

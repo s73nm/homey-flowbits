@@ -31,7 +31,9 @@
     "bugs": {
         "url": "https://github.com/basmilius/homey-flowbits/issues"
     },
+    "homepage": "https://bas.dev",
     "source": "https://github.com/basmilius/homey-flowbits",
+    "support": "https://github.com/basmilius/homey-flowbits/issues",
     "contributing": {
         "donate": {
             "githubSponsors": {

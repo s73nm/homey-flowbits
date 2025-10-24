@@ -4,7 +4,7 @@ import { BaseAction } from '../base';
 import { action } from '../decorator';
 import { CycleBecomesTrigger } from '../trigger';
 
-@action('cycle')
+@action('cycle_to')
 export default class extends BaseAction<Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', CycleAutocompleteProvider);
@@ -15,24 +15,17 @@ export default class extends BaseAction<Args, never> {
     async onRun(args: Args): Promise<void> {
         const name = args.name.name;
         const id = `flowbits-cycle:${slugify(name)}`;
-        let value: number | null = this.homey.settings.get(id);
 
-        if (value === null) {
-            value = 0;
-        } else {
-            value = ((value + 1) % args.max_value);
-        }
-
-        this.homey.settings.set(id, value);
+        this.homey.settings.set(id, args.value);
 
         this.brain.registry
             .findTrigger(CycleBecomesTrigger)
-            ?.trigger({name, value: value + 1});
+            ?.trigger({name, value: args.value});
     }
 }
 
 type Args = {
-    readonly max_value: number;
+    readonly value: number;
     readonly name: {
         readonly name: string;
     };

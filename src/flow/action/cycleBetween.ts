@@ -1,11 +1,11 @@
+import { slugify } from '../../util';
 import { CycleAutocompleteProvider } from '../autocomplete';
 import { BaseAction } from '../base';
 import { action } from '../decorator';
-import { slugify } from '../../util';
 import { CycleBecomesTrigger } from '../trigger';
 
 @action('cycle_between')
-export default class CycleBetweenAction extends BaseAction<Args, never> {
+export default class extends BaseAction<Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', CycleAutocompleteProvider);
 

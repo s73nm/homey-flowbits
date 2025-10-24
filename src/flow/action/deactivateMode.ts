@@ -4,7 +4,7 @@ import { action } from '../decorator';
 import { ModeDeactivatedTrigger } from '../trigger';
 
 @action('deactivate_mode')
-export default class DeactivateModeAction extends BaseAction<Args, never> {
+export default class extends BaseAction<Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', ModeAutocompleteProvider);
 
@@ -15,8 +15,6 @@ export default class DeactivateModeAction extends BaseAction<Args, never> {
         const name = args.name.name;
         const id = 'flowbits-mode';
         let value: string | null = this.homey.settings.get(id);
-
-        console.log({value, name});
 
         if (value !== name) {
             return;

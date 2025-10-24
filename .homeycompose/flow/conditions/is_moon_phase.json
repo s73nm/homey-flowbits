@@ -1,12 +1,12 @@
 {
     "id": "is_moon_phase",
     "title": {
-        "en": "The current moon phase !{{is|isn't}}...",
-        "nl": "De huidige maanfase !{{is|is niet}}..."
+        "en": "The moon phase !{{is|isn't}}...",
+        "nl": "De maanfase !{{is|is niet}}..."
     },
     "titleFormatted": {
-        "en": "The current moon phase !{{is|isn't}} [[value]]",
-        "nl": "De huidige maanfase !{{is|is niet}} [[value]]"
+        "en": "The moon phase !{{is|isn't}} [[value]]",
+        "nl": "De maanfase !{{is|is niet}} [[value]]"
     },
     "args": [
         {
