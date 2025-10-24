@@ -65,6 +65,7 @@
 <script type="text/javascript">
     function onHomeyReady(Homey) {
         let lastResult = null;
+        let ready = false;
 
         async function init() {
             Homey.on('flowbits-mode-update', update);
@@ -115,9 +116,14 @@
             grid.innerHTML = '';
             elements.forEach(element => grid.appendChild(element));
 
-            Homey.ready({
-                height: grid.getBoundingClientRect().height
-            });
+            const height = grid.getBoundingClientRect().height;
+
+            if (ready) {
+                await Homey.setHeight(height);
+            } else {
+                Homey.ready({height});
+                ready = true;
+            }
         }
 
         init();

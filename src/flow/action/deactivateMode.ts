@@ -26,11 +26,15 @@ export default class extends BaseAction<Args, never> {
             .findTrigger(ModeDeactivatedTrigger)
             ?.trigger({name});
 
-        this.homey.api.realtime('flowbits-mode-update', null);
+        await this.onUpdate();
 
         await this.homey.notifications.createNotification({
             excerpt: this.homey.__('notification.mode_deactivated', {mode: args.name.name})
         });
+    }
+
+    async onUpdate(): Promise<void> {
+        await this.homey.api.realtime('flowbits-mode-update', null);
     }
 }
 

@@ -13,6 +13,10 @@ export default class extends BaseTrigger<Args, State> {
     async onRun(args: Args, state: State): Promise<boolean> {
         return args.name.name === state.name;
     }
+
+    async onUpdate(): Promise<void> {
+        await this.homey.api.realtime('flowbits-mode-update', null);
+    }
 }
 
 type Args = {

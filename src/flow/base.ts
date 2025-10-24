@@ -39,11 +39,15 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
 
     async onInit(): Promise<void> {
         this.#card.registerRunListener(this.onRun.bind(this));
+        this.#card.on('update', this.onUpdate.bind(this));
 
         this.log(`onInit() -> Flow card ${this.type}#${this.id} has been registered.`);
     }
 
     abstract onRun(args: TArgs, state: TState): Promise<any>;
+
+    async onUpdate(): Promise<void> {
+    }
 
     registerAutocomplete<T extends BaseAutocompleteProvider>(name: string, autocompleteProvider: AutocompleteProvider<T>): void {
         const provider = this.#brain.registry.findAutocompleteProvider(autocompleteProvider);

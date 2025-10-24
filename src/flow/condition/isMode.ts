@@ -17,6 +17,10 @@ export default class extends BaseCondition<Args, never> {
 
         return value === name;
     }
+
+    async onUpdate(): Promise<void> {
+        await this.homey.api.realtime('flowbits-mode-update', null);
+    }
 }
 
 type Args = {

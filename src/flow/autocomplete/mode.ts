@@ -21,7 +21,7 @@ export default class extends BaseAutocompleteProvider {
             .sort((a, b) => a.name.localeCompare(b.name));
 
         if (hasQuery && !this.#values.some(name => query === name)) {
-            results.push({
+            results.unshift({
                 name: query,
                 description: this.homey.__('autocomplete.mode_new')
             });
