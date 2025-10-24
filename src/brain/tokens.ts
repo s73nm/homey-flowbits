@@ -19,7 +19,7 @@ const TRIGGERS: Record<string, Trigger<any>[]> = {
     day_period: [DayPeriodBecomesTrigger, DayPeriodOverTrigger]
 };
 
-export default class Tokens {
+export default class {
     readonly #brain: Brain;
     readonly #tokens: Record<string, Token>;
     readonly #values: Record<string, string | boolean | number>;

@@ -1,0 +1,19 @@
+{
+    "name": {
+        "en": "Modes",
+        "nl": "Standen"
+    },
+    "height": 120,
+    "transparent": true,
+    "settings": [],
+    "api": {
+        "list": {
+            "method": "GET",
+            "path": "/"
+        },
+        "toggle": {
+            "method": "POST",
+            "path": "/"
+        }
+    }
+}

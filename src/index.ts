@@ -1,13 +1,17 @@
 import Homey from 'homey';
 import { Settings } from 'luxon';
 
-import { Brain } from './brain';
+import { Brain, type Widgets } from './brain';
 import { ActivateModeAction, CycleAction, CycleBetweenAction, CycleToAction, DeactivateModeAction, RandomFactAction } from './flow/action';
 import { CycleAutocompleteProvider, ModeAutocompleteProvider, SchoolVacationAutocompleteProvider } from './flow/autocomplete';
 import { ContinueWithChanceCondition, CycleHasValueCondition, IsDayPeriodCondition, IsModeCondition, IsMoonPhaseCondition, IsSchoolHolidayCondition, IsZodiacSignCondition } from './flow/condition';
 import { CycleBecomesTrigger, DayPeriodBecomesTrigger, DayPeriodOverTrigger, ModeActivatedTrigger, ModeDeactivatedTrigger } from './flow/trigger';
 
 export default class Index extends Homey.App {
+    get widgets(): Widgets {
+        return this.#brain.widgets;
+    }
+
     #brain!: Brain;
 
     async onInit(): Promise<void> {

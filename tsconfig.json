@@ -3,6 +3,10 @@
     "compilerOptions": {
         "allowJs": true,
         "experimentalDecorators": true,
+        "lib": [
+            "dom",
+            "es2022"
+        ],
         "outDir": ".homeybuild/",
         "resolveJsonModule": true
     }

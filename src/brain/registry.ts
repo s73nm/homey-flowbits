@@ -6,7 +6,7 @@ export type AutocompleteProvider<T extends BaseAutocompleteProvider> = new (brai
 export type Condition<T extends BaseCondition> = new (brain: Brain) => T;
 export type Trigger<T extends BaseTrigger> = new (brain: Brain) => T;
 
-export default class Registry {
+export default class {
     get actions(): BaseAction[] {
         return this.#actions;
     }
