@@ -4,7 +4,7 @@ import { action } from '../decorator';
 import { ModeDeactivatedTrigger } from '../trigger';
 
 @action('deactivate_mode')
-export default class extends BaseAction<Args, never> {
+export default class extends BaseAction<Args> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', ModeAutocompleteProvider);
 

@@ -2,7 +2,7 @@ import type Homey from 'homey/lib/Homey';
 import type { FlowCard, FlowCardAction, FlowCardCondition, FlowCardTrigger } from 'homey';
 import type { AutocompleteProvider, Brain } from '../brain';
 
-export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState = unknown> {
+export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState = unknown, TResult = unknown> {
     get brain(): Brain {
         return this.#brain;
     }
@@ -44,7 +44,7 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
         this.log(`onInit() -> Flow card ${this.type}#${this.id} has been registered.`);
     }
 
-    abstract onRun(args: TArgs, state: TState): Promise<any>;
+    abstract onRun(args: TArgs, state: TState): Promise<TResult>;
 
     async onUpdate(): Promise<void> {
     }
@@ -76,13 +76,13 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
     }
 }
 
-export abstract class BaseAction<TArgs = unknown, TState = unknown> extends BaseFlowEntity<FlowCardAction, TArgs, TState> {
+export abstract class BaseAction<TArgs = unknown, TState = unknown, TResult = unknown> extends BaseFlowEntity<FlowCardAction, TArgs, TState, TResult> {
 }
 
-export abstract class BaseCondition<TArgs = unknown, TState = unknown> extends BaseFlowEntity<FlowCardCondition, TArgs, TState> {
+export abstract class BaseCondition<TArgs = unknown, TState = unknown> extends BaseFlowEntity<FlowCardCondition, TArgs, TState, boolean> {
 }
 
-export abstract class BaseTrigger<TArgs = unknown, TState = unknown> extends BaseFlowEntity<FlowCardTrigger, TArgs, TState> {
+export abstract class BaseTrigger<TArgs = unknown, TState = unknown> extends BaseFlowEntity<FlowCardTrigger, TArgs, TState, boolean> {
     async trigger(state: TState, tokens?: Record<string, unknown>): Promise<any> {
         return this.card.trigger(tokens, state as object);
     }

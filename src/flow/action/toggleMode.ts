@@ -1,9 +1,10 @@
 import { ModeAutocompleteProvider } from '../autocomplete';
 import { BaseAction } from '../base';
 import { action } from '../decorator';
-import { ModeActivatedTrigger, ModeDeactivatedTrigger } from '../trigger';
+import ActivateModeAction from './activateMode';
+import DeactivateModeAction from './deactivateMode';
 
-@action('activate_mode')
+@action('toggle_mode')
 export default class extends BaseAction<Args> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', ModeAutocompleteProvider);
@@ -17,30 +18,14 @@ export default class extends BaseAction<Args> {
         let value: string | null = this.homey.settings.get(id);
 
         if (value === name) {
-            return;
-        }
-
-        if (value !== null) {
             this.brain.registry
-                .findTrigger(ModeDeactivatedTrigger)
-                ?.trigger({name: value});
-
-            await this.homey.notifications.createNotification({
-                excerpt: this.homey.__('notification.mode_deactivated', {mode: value})
-            });
+                .findAction(DeactivateModeAction)
+                ?.onRun(args);
+        } else {
+            this.brain.registry
+                .findAction(ActivateModeAction)
+                ?.onRun(args);
         }
-
-        this.homey.settings.set(id, name);
-
-        this.brain.registry
-            .findTrigger(ModeActivatedTrigger)
-            ?.trigger({name});
-
-        await this.onUpdate();
-
-        await this.homey.notifications.createNotification({
-            excerpt: this.homey.__('notification.mode_activated', {mode: args.name.name})
-        });
     }
 
     async onUpdate(): Promise<void> {

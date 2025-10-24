@@ -242,6 +242,31 @@
             }
           }
         ]
+      },
+      {
+        "id": "receive_signal",
+        "title": {
+          "en": "Receive signal",
+          "nl": "Ontvang signaal"
+        },
+        "titleFormatted": {
+          "en": "Receive [[signal]]",
+          "nl": "Ontvang [[signal]]"
+        },
+        "hint": {
+          "en": "Receives a signal that was sent using the 'Send signal' card.",
+          "nl": "Ontvangt een signaal dat verstuurd is door de 'Stuur signaal' kaart."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "signal",
+            "title": {
+              "en": "Signal",
+              "nl": "Signaal"
+            }
+          }
+        ]
       }
     ],
     "conditions": [
@@ -641,8 +666,8 @@
             "type": "autocomplete",
             "name": "name",
             "title": {
-              "en": "Name",
-              "nl": "Naam"
+              "en": "Mode",
+              "nl": "Stand"
             }
           }
         ]
@@ -797,8 +822,251 @@
             "type": "autocomplete",
             "name": "name",
             "title": {
-              "en": "Name",
-              "nl": "Naam"
+              "en": "Mode",
+              "nl": "Stand"
+            }
+          }
+        ]
+      },
+      {
+        "id": "math_make_negative",
+        "title": {
+          "en": "Make negative",
+          "nl": "Maak negatief"
+        },
+        "titleFormatted": {
+          "en": "Make [[value]] negative",
+          "nl": "Maak [[value]] negatief"
+        },
+        "hint": {
+          "en": "Makes the value negative.",
+          "nl": "Maakt de waarde negatief"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 13",
+              "nl": "Bijv. 13"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "result",
+            "type": "number",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat"
+            }
+          }
+        ]
+      },
+      {
+        "id": "math_make_positive",
+        "title": {
+          "en": "Make positive",
+          "nl": "Maak positief"
+        },
+        "titleFormatted": {
+          "en": "Make [[value]] positive",
+          "nl": "Maak [[value]] positief"
+        },
+        "hint": {
+          "en": "Takes the absolute value of a number.",
+          "nl": "Neem de absolute waarde van een getal"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 13",
+              "nl": "Bijv. 13"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "result",
+            "type": "number",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat"
+            }
+          }
+        ]
+      },
+      {
+        "id": "math_round",
+        "title": {
+          "en": "Round",
+          "nl": "Rond af"
+        },
+        "titleFormatted": {
+          "en": "Round [[value]]",
+          "nl": "Rond [[value]] af"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 13",
+              "nl": "Bijv. 13"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "result",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat"
+            }
+          }
+        ]
+      },
+      {
+        "id": "math_round_down",
+        "title": {
+          "en": "Round down",
+          "nl": "Rond af naar beneden"
+        },
+        "titleFormatted": {
+          "en": "Round [[value]] down",
+          "nl": "Rond [[value]] af naar beneden"
+        },
+        "hint": {
+          "en": "Rounds down to the nearest integer.",
+          "nl": "Rond omlaag af naar het dichtsbijzijnde geheel."
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 13",
+              "nl": "Bijv. 13"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "result",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat"
+            }
+          }
+        ]
+      },
+      {
+        "id": "math_round_step",
+        "title": {
+          "en": "Round to step",
+          "nl": "Rond af op stapgrootte"
+        },
+        "titleFormatted": {
+          "en": "Round [[value]] to [[step]]",
+          "nl": "Rond [[value]] af op [[step]]"
+        },
+        "hint": {
+          "en": "Rounds to the nearest multiple of the step.",
+          "nl": "Rond af naar een veelvoud van de stapgrootte."
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 13",
+              "nl": "Bijv. 13"
+            }
+          },
+          {
+            "type": "number",
+            "name": "step",
+            "min": 0,
+            "title": {
+              "en": "Step",
+              "nl": "Stapgrootte"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "result",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat"
+            }
+          }
+        ]
+      },
+      {
+        "id": "math_round_up",
+        "title": {
+          "en": "Round up",
+          "nl": "Rond af naar boven"
+        },
+        "titleFormatted": {
+          "en": "Round [[value]] up",
+          "nl": "Rond [[value]] af naar boven"
+        },
+        "hint": {
+          "en": "Rounds up to the nearest integer.",
+          "nl": "Rond omhoog af naar het dichtsbijzijnde geheel."
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            },
+            "placeholder": {
+              "en": "E.g. 13",
+              "nl": "Bijv. 13"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "result",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat"
             }
           }
         ]
@@ -820,6 +1088,56 @@
             "title": {
               "en": "Random fact",
               "nl": "Willekeurig feitje"
+            }
+          }
+        ]
+      },
+      {
+        "id": "send_signal",
+        "title": {
+          "en": "Send signal",
+          "nl": "Stuur signaal"
+        },
+        "titleFormatted": {
+          "en": "Send [[signal]]",
+          "nl": "Stuur [[signal]]"
+        },
+        "hint": {
+          "en": "Sends a signal that can be received by the 'Receive signal' card.",
+          "nl": "Stuur een signaal dat vervolgens ontvangen kan worden door de 'Ontvang signaal' kaart."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "signal",
+            "title": {
+              "en": "Signal",
+              "nl": "Signaal"
+            }
+          }
+        ]
+      },
+      {
+        "id": "toggle_mode",
+        "title": {
+          "en": "Toggle ...",
+          "nl": "Schakel ... om"
+        },
+        "titleFormatted": {
+          "en": "Toggle [[name]]",
+          "nl": "Schakel [[name]] om"
+        },
+        "hint": {
+          "en": "Turns the mode on if it’s off, and off if it’s on.",
+          "nl": "Schakelt de stand aan als deze uit is, en uit als deze aan is."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Mode",
+              "nl": "Stand"
             }
           }
         ]

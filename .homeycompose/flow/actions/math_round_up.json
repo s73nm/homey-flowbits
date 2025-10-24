@@ -1,0 +1,39 @@
+{
+    "id": "math_round_up",
+    "title": {
+        "en": "Round up",
+        "nl": "Rond af naar boven"
+    },
+    "titleFormatted": {
+        "en": "Round [[value]] up",
+        "nl": "Rond [[value]] af naar boven"
+    },
+    "hint": {
+        "en": "Rounds up to the nearest integer.",
+        "nl": "Rond omhoog af naar het dichtsbijzijnde geheel."
+    },
+    "args": [
+        {
+            "type": "number",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde"
+            },
+            "placeholder": {
+                "en": "E.g. 13",
+                "nl": "Bijv. 13"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "type": "number",
+            "name": "result",
+            "title": {
+                "en": "Result",
+                "nl": "Resultaat"
+            }
+        }
+    ]
+}

@@ -9,7 +9,8 @@
   },
   "autocomplete": {
     "cycle_new": "New counter in this flow",
-    "mode_new": "New mode in this flow"
+    "mode_new": "New mode in this flow",
+    "signal_new": "New signal"
   },
   "day_period": {
     "afternoon": "Afternoon",

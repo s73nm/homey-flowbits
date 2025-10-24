@@ -15,7 +15,8 @@
   },
   "autocomplete": {
     "cycle_new": "Nieuwe teller in deze flow",
-    "mode_new": "Nieuwe stand in deze flow"
+    "mode_new": "Nieuwe stand in deze flow",
+    "signal_new": "Nieuw signaal"
   },
   "notification": {
     "mode_activated": "**__mode__** is geactiveerd.",

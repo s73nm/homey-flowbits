@@ -14,6 +14,10 @@ export function action(id: string) {
     };
 }
 
+export function actionFunction(id: string) {
+
+}
+
 export function condition(id: string) {
     return <T extends Constructor>(ConditionClass: T): T => {
         return class extends ConditionClass {

@@ -1,0 +1,39 @@
+{
+    "id": "math_make_positive",
+    "title": {
+        "en": "Make positive",
+        "nl": "Maak positief"
+    },
+    "titleFormatted": {
+        "en": "Make [[value]] positive",
+        "nl": "Maak [[value]] positief"
+    },
+    "hint": {
+        "en": "Takes the absolute value of a number.",
+        "nl": "Neem de absolute waarde van een getal"
+    },
+    "args": [
+        {
+            "type": "number",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde"
+            },
+            "placeholder": {
+                "en": "E.g. 13",
+                "nl": "Bijv. 13"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "name": "result",
+            "type": "number",
+            "title": {
+                "en": "Result",
+                "nl": "Resultaat"
+            }
+        }
+    ]
+}

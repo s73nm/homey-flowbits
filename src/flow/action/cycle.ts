@@ -5,7 +5,7 @@ import { action } from '../decorator';
 import { CycleBecomesTrigger } from '../trigger';
 
 @action('cycle')
-export default class extends BaseAction<Args, never> {
+export default class extends BaseAction<Args> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', CycleAutocompleteProvider);
 

@@ -1,0 +1,25 @@
+{
+    "id": "toggle_mode",
+    "title": {
+        "en": "Toggle ...",
+        "nl": "Schakel ... om"
+    },
+    "titleFormatted": {
+        "en": "Toggle [[name]]",
+        "nl": "Schakel [[name]] om"
+    },
+    "hint": {
+        "en": "Turns the mode on if it’s off, and off if it’s on.",
+        "nl": "Schakelt de stand aan als deze uit is, en uit als deze aan is."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Mode",
+                "nl": "Stand"
+            }
+        }
+    ]
+}

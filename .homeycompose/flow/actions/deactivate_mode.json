@@ -17,8 +17,8 @@
             "type": "autocomplete",
             "name": "name",
             "title": {
-                "en": "Name",
-                "nl": "Naam"
+                "en": "Mode",
+                "nl": "Stand"
             }
         }
     ]

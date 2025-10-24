@@ -37,6 +37,13 @@ export default class {
         this.#actions.push(new action(this.#brain));
     }
 
+    actionFunction<TArgs = any, TResult = any>(id: string, onRun: (args: TArgs) => TResult): void {
+        const action = this.#brain.homey.flow.getActionCard(id);
+        action.registerRunListener(onRun);
+
+        this.#brain.homey.log(`Flow card actionFunction#${id} has been registered.`)
+    }
+
     autocompleteProvider<T extends BaseAutocompleteProvider>(autocompleteProvider: AutocompleteProvider<T>): void {
         this.#autocompleteProviders.push(new autocompleteProvider(this.#brain));
     }
