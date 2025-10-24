@@ -5,7 +5,7 @@ import { Brain, type Widgets } from './brain';
 import { ActivateModeAction, CycleAction, CycleBetweenAction, CycleToAction, DeactivateModeAction, RandomFactAction, SendSignalAction, ToggleModeAction } from './flow/action';
 import { CycleAutocompleteProvider, ModeAutocompleteProvider, SchoolVacationAutocompleteProvider, SignalAutocompleteProvider } from './flow/autocomplete';
 import { ContinueWithChanceCondition, CycleHasValueCondition, IsDayPeriodCondition, IsModeCondition, IsMoonPhaseCondition, IsSchoolHolidayCondition, IsZodiacSignCondition } from './flow/condition';
-import { CycleBecomesTrigger, DayPeriodBecomesTrigger, DayPeriodOverTrigger, ModeActivatedTrigger, ModeDeactivatedTrigger, ReceiveSignalTrigger } from './flow/trigger';
+import { CycleBecomesTrigger, CycleUpdatesTrigger, DayPeriodBecomesTrigger, DayPeriodOverTrigger, ModeActivatedTrigger, ModeDeactivatedTrigger, ReceiveSignalTrigger } from './flow/trigger';
 
 export default class Index extends Homey.App {
     get widgets(): Widgets {
@@ -77,6 +77,7 @@ export default class Index extends Homey.App {
 
     #registerTriggers(): void {
         this.#brain.registry.trigger(CycleBecomesTrigger);
+        this.#brain.registry.trigger(CycleUpdatesTrigger);
         this.#brain.registry.trigger(DayPeriodBecomesTrigger);
         this.#brain.registry.trigger(DayPeriodOverTrigger);
         this.#brain.registry.trigger(ModeActivatedTrigger);

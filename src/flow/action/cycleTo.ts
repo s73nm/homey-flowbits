@@ -2,7 +2,7 @@ import { slugify } from '../../util';
 import { CycleAutocompleteProvider } from '../autocomplete';
 import { BaseAction } from '../base';
 import { action } from '../decorator';
-import { CycleBecomesTrigger } from '../trigger';
+import { CycleBecomesTrigger, CycleUpdatesTrigger } from '../trigger';
 
 @action('cycle_to')
 export default class extends BaseAction<Args> {
@@ -21,6 +21,10 @@ export default class extends BaseAction<Args> {
         this.brain.registry
             .findTrigger(CycleBecomesTrigger)
             ?.trigger({name, value: args.value});
+
+        this.brain.registry
+            .findTrigger(CycleUpdatesTrigger)
+            ?.trigger({name}, {value: args.value});
     }
 }
 

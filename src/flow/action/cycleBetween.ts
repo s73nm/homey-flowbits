@@ -2,7 +2,7 @@ import { slugify } from '../../util';
 import { CycleAutocompleteProvider } from '../autocomplete';
 import { BaseAction } from '../base';
 import { action } from '../decorator';
-import { CycleBecomesTrigger } from '../trigger';
+import { CycleBecomesTrigger, CycleUpdatesTrigger } from '../trigger';
 
 @action('cycle_between')
 export default class extends BaseAction<Args> {
@@ -16,14 +16,15 @@ export default class extends BaseAction<Args> {
         const name = args.name.name;
         const id = `flowbits-cycle:${slugify(name)}`;
 
-        const min = Number(args.min_value ?? 1);
-        const max = Number(args.max_value ?? 1);
+        const min = args.min_value;
+        const max = args.max_value;
 
         let value: number | null = this.homey.settings.get(id);
 
         if (value === null) {
             value = min;
         } else {
+            value = Math.max(value, min);
             value += 1;
 
             if (value > max) {
@@ -35,7 +36,11 @@ export default class extends BaseAction<Args> {
 
         this.brain.registry
             .findTrigger(CycleBecomesTrigger)
-            ?.trigger({name, value: value + 1});
+            ?.trigger({name, value});
+
+        this.brain.registry
+            .findTrigger(CycleUpdatesTrigger)
+            ?.trigger({name}, {value});
     }
 }
 

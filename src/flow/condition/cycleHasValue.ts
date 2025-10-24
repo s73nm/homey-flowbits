@@ -16,7 +16,11 @@ export default class extends BaseCondition<Args, never> {
         const id = `flowbits-cycle:${slugify(name)}`;
         let value: number | null = this.homey.settings.get(id);
 
-        return Number(value) === Number(args.value);
+        if (value === null) {
+            return false;
+        }
+
+        return value === args.value;
     }
 }
 

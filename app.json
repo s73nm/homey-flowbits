@@ -70,7 +70,7 @@
           {
             "type": "number",
             "name": "value",
-            "min": 1,
+            "min": 0,
             "step": 1,
             "title": {
               "en": "Value",
@@ -79,6 +79,41 @@
             "placeholder": {
               "en": "E.g. 5",
               "nl": "Bijv. 5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cycle_updates",
+        "title": {
+          "en": "Sequence updates value",
+          "nl": "Stappenreeks veranderd van waarde"
+        },
+        "titleFormatted": {
+          "en": "Sequence [[name]] updates value",
+          "nl": "Stappenreeks [[name]] veranderd van waarde"
+        },
+        "hint": {
+          "en": "Triggers when a sequence updates its value.",
+          "nl": "Triggert wanneer een stappenreeks zijn waarde veranderd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
             }
           }
         ]
@@ -318,7 +353,7 @@
           {
             "type": "number",
             "name": "value",
-            "min": 1,
+            "min": 0,
             "step": 1,
             "title": {
               "en": "Value",
@@ -790,11 +825,11 @@
           {
             "type": "number",
             "name": "value",
-            "min": 2,
+            "min": 0,
             "step": 1,
             "title": {
-              "en": "Max",
-              "nl": "Maximum"
+              "en": "Value",
+              "nl": "Waarde"
             },
             "placeholder": {
               "en": "E.g. 5",

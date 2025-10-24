@@ -2,7 +2,7 @@ import { slugify } from '../../util';
 import { CycleAutocompleteProvider } from '../autocomplete';
 import { BaseAction } from '../base';
 import { action } from '../decorator';
-import { CycleBecomesTrigger } from '../trigger';
+import { CycleBecomesTrigger, CycleUpdatesTrigger } from '../trigger';
 
 @action('cycle')
 export default class extends BaseAction<Args> {
@@ -15,19 +15,31 @@ export default class extends BaseAction<Args> {
     async onRun(args: Args): Promise<void> {
         const name = args.name.name;
         const id = `flowbits-cycle:${slugify(name)}`;
+
+        const min = 1;
+        const max = args.max_value;
+
         let value: number | null = this.homey.settings.get(id);
 
         if (value === null) {
-            value = 0;
+            value = min;
         } else {
-            value = ((value + 1) % args.max_value);
+            value += 1;
+
+            if (value > max) {
+                value = min;
+            }
         }
 
         this.homey.settings.set(id, value);
 
         this.brain.registry
             .findTrigger(CycleBecomesTrigger)
-            ?.trigger({name, value: value + 1});
+            ?.trigger({name, value});
+
+        this.brain.registry
+            .findTrigger(CycleUpdatesTrigger)
+            ?.trigger({name}, {value});
     }
 }
 
