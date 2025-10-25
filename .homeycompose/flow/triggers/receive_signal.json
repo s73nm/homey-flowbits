@@ -5,8 +5,8 @@
         "nl": "Ontvang signaal"
     },
     "titleFormatted": {
-        "en": "Receive [[signal]]",
-        "nl": "Ontvang [[signal]]"
+        "en": "Receive signal [[signal]]",
+        "nl": "Ontvang signaal [[signal]]"
     },
     "hint": {
         "en": "Receives a signal that was sent using the 'Send signal' card.",

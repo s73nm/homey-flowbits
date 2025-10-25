@@ -5,8 +5,8 @@
         "nl": "Stuur signaal"
     },
     "titleFormatted": {
-        "en": "Send [[signal]]",
-        "nl": "Stuur [[signal]]"
+        "en": "Send signal [[signal]]",
+        "nl": "Stuur signaal [[signal]]"
     },
     "hint": {
         "en": "Sends a signal that can be received by the 'Receive signal' card.",
