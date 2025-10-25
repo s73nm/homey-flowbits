@@ -1,8 +1,8 @@
+import type { ClockUnit } from '../../types';
 import { BaseTrigger } from '../base';
 import { trigger } from '../decorator';
 
 import * as AutocompleteProviders from '../autocomplete';
-import type { ClockUnit } from '../../types';
 
 @trigger('timer_remaining')
 export default class extends BaseTrigger<Args, State> {
@@ -28,5 +28,5 @@ type Args = {
 type State = {
     readonly duration: number;
     readonly timer: string;
-    readonly unit: ClockUnit;
+    readonly unit: string;
 };

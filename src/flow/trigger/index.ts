@@ -6,7 +6,6 @@ export { default as ModeActivated } from './modeActivated';
 export { default as ModeDeactivated } from './modeDeactivated';
 export { default as SignalReceive } from './signalReceive';
 export { default as TimerFinished } from './timerFinished';
-export { default as TimerHalfway } from './timerHalfway';
 export { default as TimerPaused } from './timerPaused';
 export { default as TimerRemaining } from './timerRemaining';
 export { default as TimerResumed } from './timerResumed';

@@ -4,7 +4,7 @@ import { condition } from '../decorator';
 
 import * as AutocompleteProviders from '../autocomplete';
 
-@condition('timer_exceeded')
+@condition('timer_duration')
 export default class extends BaseCondition<Args> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('timer', AutocompleteProviders.Timer);
@@ -13,7 +13,7 @@ export default class extends BaseCondition<Args> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        return await this.brain.timers.isExceeded(args.timer.name, args.duration, args.unit);
+        return await this.brain.timers.isDuration(args.timer.name, args.duration, args.unit);
     }
 }
 

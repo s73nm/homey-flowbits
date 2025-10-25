@@ -30,8 +30,8 @@ export default class Index extends Homey.App {
             await provider.onInit();
         }
 
-        // register and update all tokens.
-        await this.#brain.tokens.register();
+        await this.#brain.timers.initialize();
+        await this.#brain.tokens.initialize();
 
         this.log('FlowBits has been initialized!');
     }
@@ -80,7 +80,7 @@ export default class Index extends Homey.App {
         this.#brain.registry.condition(Conditions.ModeIs);
         this.#brain.registry.condition(Conditions.MoonPhaseIs);
         this.#brain.registry.condition(Conditions.SchoolHolidayIs);
-        this.#brain.registry.condition(Conditions.TimerExceeded);
+        this.#brain.registry.condition(Conditions.TimerDuration);
         this.#brain.registry.condition(Conditions.TimerFinished);
         this.#brain.registry.condition(Conditions.TimerPaused);
         this.#brain.registry.condition(Conditions.TimerRunning);
@@ -96,7 +96,6 @@ export default class Index extends Homey.App {
         this.#brain.registry.trigger(Triggers.ModeDeactivated);
         this.#brain.registry.trigger(Triggers.SignalReceive);
         this.#brain.registry.trigger(Triggers.TimerFinished);
-        this.#brain.registry.trigger(Triggers.TimerHalfway);
         this.#brain.registry.trigger(Triggers.TimerPaused);
         this.#brain.registry.trigger(Triggers.TimerRemaining);
         this.#brain.registry.trigger(Triggers.TimerResumed);

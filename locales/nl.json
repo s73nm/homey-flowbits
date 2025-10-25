@@ -20,8 +20,8 @@
     "timer_new": "Nieuwe timer in deze flow"
   },
   "notification": {
-    "mode_activated": "**__mode__** is geactiveerd.",
-    "mode_deactivated": "**__mode__** is gedeactiveerd."
+    "mode_activated": "**__name__** is geactiveerd.",
+    "mode_deactivated": "**__name__** is gedeactiveerd."
   },
   "token": {
     "day_period": "Dagperiode (ruw)",

@@ -36,6 +36,18 @@ export default class {
         this.#values = {};
     }
 
+    async initialize(): Promise<void> {
+        const {getDayPeriod, getMoonPhase, getZodiacSign} = await import('@basmilius/utils');
+
+        this.#state = await this.state();
+
+        await this.create('day_period', 'string', ({now}) => getDayPeriod(now), value => this.#t(`day_period.${value}`));
+        await this.create('moon_phase', 'string', ({now}) => getMoonPhase(now), value => this.#t(`day_period.${value}`));
+        await this.create('zodiac_sign', 'string', ({now}) => getZodiacSign(now), value => this.#t(`day_period.${value}`));
+
+        this.#brain.homey.setInterval(async () => await this.#brain.tokens.update(), 15 * 1000);
+    }
+
     async create<T extends string | boolean | number>(id: string, type: string, provider: Provider<T>, translator?: Translator<T>): Promise<void> {
         const value = provider(this.#state);
         this.#values[id] = value;
@@ -57,18 +69,6 @@ export default class {
         } else {
             this.#tokens[id] = [token, provider];
         }
-    }
-
-    async register(): Promise<void> {
-        const {getDayPeriod, getMoonPhase, getZodiacSign} = await import('@basmilius/utils');
-
-        this.#state = await this.state();
-
-        await this.create('day_period', 'string', ({now}) => getDayPeriod(now), value => this.#t(`day_period.${value}`));
-        await this.create('moon_phase', 'string', ({now}) => getMoonPhase(now), value => this.#t(`day_period.${value}`));
-        await this.create('zodiac_sign', 'string', ({now}) => getZodiacSign(now), value => this.#t(`day_period.${value}`));
-
-        this.#brain.homey.setInterval(async () => await this.#brain.tokens.update(), 15 * 1000);
     }
 
     async state(): Promise<State> {

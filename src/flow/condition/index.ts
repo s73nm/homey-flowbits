@@ -4,7 +4,7 @@ export { default as DayPeriodIs } from './dayPeriodIs';
 export { default as ModeIs } from './modeIs';
 export { default as MoonPhaseIs } from './moonPhaseIs';
 export { default as SchoolHolidayIs } from './schoolHolidayIs';
-export { default as TimerExceeded } from './timerExceeded';
+export { default as TimerDuration } from './timerDuration';
 export { default as TimerFinished } from './timerFinished';
 export { default as TimerPaused } from './timerPaused';
 export { default as TimerRunning } from './timerRunning';

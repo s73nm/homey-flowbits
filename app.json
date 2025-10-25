@@ -325,27 +325,6 @@
         ]
       },
       {
-        "id": "timer_halfway",
-        "title": {
-          "en": "Timer halfway",
-          "nl": "Timer is halverwege"
-        },
-        "titleFormatted": {
-          "en": "Timer [[timer]] halfway",
-          "nl": "Timer [[timer]] is halverwege"
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "timer",
-            "title": {
-              "en": "Name",
-              "nl": "Naam"
-            }
-          }
-        ]
-      },
-      {
         "id": "timer_paused",
         "title": {
           "en": "Timer paused",
@@ -773,14 +752,14 @@
         ]
       },
       {
-        "id": "timer_exceeded",
+        "id": "timer_duration",
         "title": {
-          "en": "Timer has exceeded ...",
-          "nl": "Timer heeft meer dan ... verstreken"
+          "en": "Timer has more than ... left",
+          "nl": "Timer heeft nog meer dan ... looptijd"
         },
         "titleFormatted": {
-          "en": "Timer [[timer]] has exceeded [[duration]] [[unit]]",
-          "nl": "Timer [[timer]] heeft meer dan [[duration]] [[unit]] verstreken"
+          "en": "Timer [[timer]] has !{{more|less}} than [[duration]] [[unit]] left",
+          "nl": "Timer [[timer]] heeft nog !{{meer|minder}} dan [[duration]] [[unit]] looptijd"
         },
         "args": [
           {
