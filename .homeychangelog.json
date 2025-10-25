@@ -19,5 +19,8 @@
   },
   "0.0.6": {
     "en": "Refactored most flow cards and introduced timer cards without functionality for now."
+  },
+  "0.0.7": {
+    "en": "Implemented initial logic for timers."
   }
 }
