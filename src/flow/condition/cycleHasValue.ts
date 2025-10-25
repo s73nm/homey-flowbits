@@ -1,6 +1,5 @@
 import { BaseCondition } from '../base';
 import { condition } from '../decorator';
-import { slugify } from '../../util';
 
 import * as AutocompleteProviders from '../autocomplete';
 
@@ -13,15 +12,7 @@ export default class extends BaseCondition<Args, never> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        const name = args.name.name;
-        const id = `flowbits-cycle:${slugify(name)}`;
-        let value: number | null = this.homey.settings.get(id);
-
-        if (value === null) {
-            return false;
-        }
-
-        return value === args.value;
+        return await this.brain.cycles.getValue(args.name.name) === args.value;
     }
 }
 
