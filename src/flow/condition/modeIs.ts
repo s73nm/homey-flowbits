@@ -12,15 +12,11 @@ export default class extends BaseCondition<Args, never> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        const name = args.name.name;
-        const id = 'flowbits-mode';
-        let value: string | null = this.homey.settings.get(id);
-
-        return value === name;
+        return this.brain.modes.currentMode === args.name.name;
     }
 
     async onUpdate(): Promise<void> {
-        await this.homey.api.realtime('flowbits-mode-update', null);
+        await this.brain.modes.triggerRealtimeUpdate();
     }
 }
 

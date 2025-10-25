@@ -6,8 +6,8 @@
         "timer_new": "new timer in this flow"
     },
     "notification": {
-        "mode_activated": "**__mode__** is activated.",
-        "mode_deactivated": "**__mode__** is deactivated."
+        "mode_activated": "**__name__** is activated.",
+        "mode_deactivated": "**__name__** is deactivated."
     },
     "token": {
         "day_period": "Day period (raw)",

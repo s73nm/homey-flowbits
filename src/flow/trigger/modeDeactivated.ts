@@ -16,7 +16,7 @@ export default class extends BaseTrigger<Args, State> {
     }
 
     async onUpdate(): Promise<void> {
-        await this.homey.api.realtime('flowbits-mode-update', null);
+        await this.brain.modes.triggerRealtimeUpdate();
     }
 }
 
