@@ -1,9 +1,13 @@
 import type Brain from './brain';
+import type Modes from './modes';
 
-import * as Actions from '../flow/action';
 import * as AutocompleteProviders from '../flow/autocomplete';
 
 export default class {
+    get modes(): Modes {
+        return this.#brain.modes;
+    }
+
     readonly #brain: Brain;
 
     constructor(brain: Brain) {
@@ -17,7 +21,7 @@ export default class {
             throw new Error('Failed to get the mode autocomplete provider.');
         }
 
-        const current = this.#brain.homey.settings.get('flowbits-mode');
+        const current = this.modes.currentMode;
         const modes = await autocompleteProvider.find('');
 
         if (modes.length === 0) {
@@ -39,11 +43,9 @@ export default class {
         }
 
         if (mode.active) {
-            const action = this.#brain.registry.findAction(Actions.ModeDeactivate);
-            await action?.onRun({name: {name: mode.name}});
+            await this.modes.deactivate(mode.name);
         } else {
-            const action = this.#brain.registry.findAction(Actions.ModeActivate);
-            await action?.onRun({name: {name: mode.name}});
+            await this.modes.activate(mode.name);
         }
 
         return true;
