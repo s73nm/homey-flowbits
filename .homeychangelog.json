@@ -16,5 +16,8 @@
   },
   "0.0.5": {
     "en": "Fixed a few issues with cycles."
+  },
+  "0.0.6": {
+    "en": "Refactored most flow cards and introduced timer cards without functionality for now."
   }
 }
