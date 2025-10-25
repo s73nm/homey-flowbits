@@ -1,6 +1,7 @@
-import { ActivateModeAction, DeactivateModeAction } from '../flow/action';
-import { ModeAutocompleteProvider } from '../flow/autocomplete';
 import type Brain from './brain';
+
+import * as Actions from '../flow/action';
+import * as AutocompleteProviders from '../flow/autocomplete';
 
 export default class {
     readonly #brain: Brain;
@@ -10,7 +11,7 @@ export default class {
     }
 
     async getModes(): Promise<Mode[]> {
-        const autocompleteProvider = this.#brain.registry.findAutocompleteProvider(ModeAutocompleteProvider);
+        const autocompleteProvider = this.#brain.registry.findAutocompleteProvider(AutocompleteProviders.Mode);
 
         if (!autocompleteProvider) {
             throw new Error('Failed to get the mode autocomplete provider.');
@@ -38,10 +39,10 @@ export default class {
         }
 
         if (mode.active) {
-            const action = this.#brain.registry.findAction(DeactivateModeAction);
+            const action = this.#brain.registry.findAction(Actions.ModeDeactivate);
             await action?.onRun({name: {name: mode.name}});
         } else {
-            const action = this.#brain.registry.findAction(ActivateModeAction);
+            const action = this.#brain.registry.findAction(Actions.ModeActivate);
             await action?.onRun({name: {name: mode.name}});
         }
 

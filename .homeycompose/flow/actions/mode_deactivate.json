@@ -1,0 +1,25 @@
+{
+    "id": "mode_deactivate",
+    "title": {
+        "en": "Deactivate ...",
+        "nl": "Deactiveer ..."
+    },
+    "titleFormatted": {
+        "en": "Deactivate [[name]]",
+        "nl": "Deactiveer [[name]]"
+    },
+    "hint": {
+        "en": "Deactivates a defined mode.",
+        "nl": "Deactiveer een gedefinieerde stand."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Mode",
+                "nl": "Stand"
+            }
+        }
+    ]
+}

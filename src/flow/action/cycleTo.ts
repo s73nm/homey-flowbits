@@ -1,13 +1,14 @@
 import { slugify } from '../../util';
-import { CycleAutocompleteProvider } from '../autocomplete';
 import { BaseAction } from '../base';
 import { action } from '../decorator';
-import { CycleBecomesTrigger, CycleUpdatesTrigger } from '../trigger';
+
+import * as AutocompleteProviders from '../autocomplete';
+import * as Triggers from '../trigger';
 
 @action('cycle_to')
 export default class extends BaseAction<Args> {
     async onInit(): Promise<void> {
-        this.registerAutocomplete('name', CycleAutocompleteProvider);
+        this.registerAutocomplete('name', AutocompleteProviders.Cycle);
 
         await super.onInit();
     }
@@ -19,11 +20,11 @@ export default class extends BaseAction<Args> {
         this.homey.settings.set(id, args.value);
 
         this.brain.registry
-            .findTrigger(CycleBecomesTrigger)
+            .findTrigger(Triggers.CycleBecomes)
             ?.trigger({name, value: args.value});
 
         this.brain.registry
-            .findTrigger(CycleUpdatesTrigger)
+            .findTrigger(Triggers.CycleUpdates)
             ?.trigger({name}, {value: args.value});
     }
 }

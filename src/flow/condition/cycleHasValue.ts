@@ -1,12 +1,13 @@
-import { CycleAutocompleteProvider } from '../autocomplete';
 import { BaseCondition } from '../base';
 import { condition } from '../decorator';
 import { slugify } from '../../util';
 
+import * as AutocompleteProviders from '../autocomplete';
+
 @condition('cycle_has_value')
 export default class extends BaseCondition<Args, never> {
     async onInit(): Promise<void> {
-        this.registerAutocomplete('name', CycleAutocompleteProvider);
+        this.registerAutocomplete('name', AutocompleteProviders.Cycle);
 
         await super.onInit();
     }

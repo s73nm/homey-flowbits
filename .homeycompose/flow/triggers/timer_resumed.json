@@ -1,0 +1,21 @@
+{
+    "id": "timer_resumed",
+    "title": {
+        "en": "Timer resumed",
+        "nl": "Timer is hervat"
+    },
+    "titleFormatted": {
+        "en": "Timer [[timer]] resumed",
+        "nl": "Timer [[timer]] is hervat"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "timer",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

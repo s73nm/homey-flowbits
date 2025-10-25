@@ -1,0 +1,25 @@
+{
+    "id": "signal_receive",
+    "title": {
+        "en": "Receive signal",
+        "nl": "Ontvang signaal"
+    },
+    "titleFormatted": {
+        "en": "Receive signal [[signal]]",
+        "nl": "Ontvang signaal [[signal]]"
+    },
+    "hint": {
+        "en": "Receives a signal that was sent using the 'Send signal' card.",
+        "nl": "Ontvangt een signaal dat verstuurd is door de 'Stuur signaal' kaart."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "signal",
+            "title": {
+                "en": "Signal",
+                "nl": "Signaal"
+            }
+        }
+    ]
+}

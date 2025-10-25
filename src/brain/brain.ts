@@ -1,5 +1,6 @@
 import type Homey from 'homey/lib/Homey';
 import Registry from './registry';
+import Timers from './timers';
 import Tokens from './tokens';
 import Widgets from './widgets';
 
@@ -12,6 +13,10 @@ export default class {
         return this.#registry;
     }
 
+    get timers(): Timers {
+        return this.#timers;
+    }
+
     get tokens(): Tokens {
         return this.#tokens;
     }
@@ -22,12 +27,14 @@ export default class {
 
     readonly #homey: Homey;
     readonly #registry: Registry;
+    readonly #timers: Timers;
     readonly #tokens: Tokens;
     readonly #widgets: Widgets;
 
     constructor(homey: Homey) {
         this.#homey = homey;
         this.#registry = new Registry(this);
+        this.#timers = new Timers(this);
         this.#tokens = new Tokens(this);
         this.#widgets = new Widgets(this);
     }

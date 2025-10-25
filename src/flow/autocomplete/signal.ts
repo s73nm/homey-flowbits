@@ -13,7 +13,7 @@ export default class extends BaseAutocompleteProvider {
         const hasQuery = query.trim().length > 0;
 
         const results: FlowCard.ArgumentAutocompleteResults = this.#values
-            // .filter(name => !hasQuery || name.toLowerCase().includes(query.toLowerCase()))
+            .filter(name => !hasQuery || name.toLowerCase().includes(query.toLowerCase()))
             .map(name => ({name}))
             .sort((a, b) => a.name.localeCompare(b.name));
 
@@ -42,8 +42,8 @@ export default class extends BaseAutocompleteProvider {
     }
 
     async onInit(): Promise<void> {
-        this.#sendSignalAction = this.homey.flow.getActionCard('send_signal');
-        this.#receiveSignalTrigger = this.homey.flow.getTriggerCard('receive_signal');
+        this.#sendSignalAction = this.homey.flow.getActionCard('signal_send');
+        this.#receiveSignalTrigger = this.homey.flow.getTriggerCard('signal_receive');
 
         return super.onInit();
     }

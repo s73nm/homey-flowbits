@@ -1,0 +1,21 @@
+{
+    "id": "timer_stopped",
+    "title": {
+        "en": "Timer stopped",
+        "nl": "Timer is gestopt"
+    },
+    "titleFormatted": {
+        "en": "Timer [[timer]] stopped",
+        "nl": "Timer [[timer]] is gestopt"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "timer",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

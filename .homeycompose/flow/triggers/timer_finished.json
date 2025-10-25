@@ -1,0 +1,21 @@
+{
+    "id": "timer_finished",
+    "title": {
+        "en": "Timer finished",
+        "nl": "Timer is afgelopen"
+    },
+    "titleFormatted": {
+        "en": "Timer [[timer]] finished",
+        "nl": "Timer [[timer]] is afgelopen"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "timer",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

@@ -1,0 +1,21 @@
+{
+    "id": "timer_resume",
+    "title": {
+        "en": "Resume timer",
+        "nl": "Hervat timer"
+    },
+    "titleFormatted": {
+        "en": "Resume timer [[timer]]",
+        "nl": "Hervat timer [[timer]]"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "timer",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

@@ -1,0 +1,52 @@
+{
+    "id": "school_holiday_is",
+    "title": {
+        "en": "🇳🇱 It is a school holiday",
+        "nl": "Het is een schoolvakantie"
+    },
+    "titleFormatted": {
+        "en": "🇳🇱 It !{{is|isn't}} [[holiday]] in region [[region]]",
+        "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "holiday",
+            "title": {
+                "en": "School holiday",
+                "nl": "Schoolvakatie"
+            }
+        },
+        {
+            "type": "dropdown",
+            "name": "region",
+            "title": {
+                "en": "Region",
+                "nl": "Regio"
+            },
+            "values": [
+                {
+                    "id": "north",
+                    "title": {
+                        "en": "north",
+                        "nl": "noord"
+                    }
+                },
+                {
+                    "id": "middle",
+                    "title": {
+                        "en": "middle",
+                        "nl": "midden"
+                    }
+                },
+                {
+                    "id": "south",
+                    "title": {
+                        "en": "south",
+                        "nl": "zuid"
+                    }
+                }
+            ]
+        }
+    ]
+}

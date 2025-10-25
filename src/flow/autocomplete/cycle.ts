@@ -1,11 +1,7 @@
-import type { FlowCard, FlowCardAction, FlowCardTrigger } from 'homey';
+import type { FlowCard } from 'homey';
 import { BaseAutocompleteProvider } from '../base';
 
 export default class extends BaseAutocompleteProvider {
-    #cycleAction!: FlowCardAction;
-    #cycleBetweenAction!: FlowCardAction;
-    #cycleBecomesTrigger!: FlowCardTrigger;
-
     #values: string[] = [];
 
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
@@ -31,9 +27,9 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.#cycleAction.getArgumentValues(),
-                await this.#cycleBetweenAction.getArgumentValues(),
-                await this.#cycleBecomesTrigger.getArgumentValues()
+                await this.homey.flow.getActionCard('cycle').getArgumentValues(),
+                await this.homey.flow.getActionCard('cycle_between').getArgumentValues(),
+                await this.homey.flow.getTriggerCard('cycle_becomes').getArgumentValues()
             ])
             .then(allValues => allValues
                 .filter(values => values.status === 'fulfilled')
@@ -41,13 +37,5 @@ export default class extends BaseAutocompleteProvider {
                 .reduce((acc, curr) => acc.concat(curr))
                 .map(value => value.name.name)
                 .filter((value, index, arr) => arr.indexOf(value) === index));
-    }
-
-    async onInit(): Promise<void> {
-        this.#cycleAction = this.homey.flow.getActionCard('cycle');
-        this.#cycleBetweenAction = this.homey.flow.getActionCard('cycle_between');
-        this.#cycleBecomesTrigger = this.homey.flow.getTriggerCard('cycle_becomes');
-
-        return super.onInit();
     }
 }

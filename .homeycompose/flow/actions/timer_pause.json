@@ -1,0 +1,21 @@
+{
+    "id": "timer_pause",
+    "title": {
+        "en": "Pause timer",
+        "nl": "Pauzeer timer"
+    },
+    "titleFormatted": {
+        "en": "Pause timer [[timer]]",
+        "nl": "Pauzeer timer [[timer]]"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "timer",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

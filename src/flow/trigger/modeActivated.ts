@@ -1,11 +1,12 @@
-import { ModeAutocompleteProvider } from '../autocomplete';
 import { BaseTrigger } from '../base';
 import { trigger } from '../decorator';
+
+import * as AutocompleteProviders from '../autocomplete';
 
 @trigger('mode_activated')
 export default class extends BaseTrigger<Args, State> {
     async onInit(): Promise<void> {
-        this.registerAutocomplete('name', ModeAutocompleteProvider);
+        this.registerAutocomplete('name', AutocompleteProviders.Mode);
 
         await super.onInit();
     }

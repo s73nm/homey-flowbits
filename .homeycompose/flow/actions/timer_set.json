@@ -1,0 +1,77 @@
+{
+    "id": "timer_set",
+    "title": {
+        "en": "Set timer",
+        "nl": "Stel timer in"
+    },
+    "titleFormatted": {
+        "en": "Set timer [[timer]] to [[duration]] [[unit]]",
+        "nl": "Stel timer [[timer]] in op [[duration]] [[unit]]"
+    },
+    "hint": {
+        "en": "Sets the remaining time of the timer.",
+        "nl": "Wijzigt de resterende tijd van de timer."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "timer",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        },
+        {
+            "type": "number",
+            "name": "duration",
+            "min": 1,
+            "step": 1,
+            "title": {
+                "en": "Duration",
+                "nl": "Looptijd"
+            },
+            "placeholder": {
+                "en": "E.g. 10",
+                "nl": "Bijv. 10"
+            }
+        },
+        {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+                "en": "Unit",
+                "nl": "Eenheid"
+            },
+            "values": [
+                {
+                    "id": "seconds",
+                    "title": {
+                        "en": "seconds",
+                        "nl": "seconden"
+                    }
+                },
+                {
+                    "id": "minutes",
+                    "title": {
+                        "en": "minutes",
+                        "nl": "minuten"
+                    }
+                },
+                {
+                    "id": "hours",
+                    "title": {
+                        "en": "hours",
+                        "nl": "uren"
+                    }
+                },
+                {
+                    "id": "days",
+                    "title": {
+                        "en": "days",
+                        "nl": "dagen"
+                    }
+                }
+            ]
+        }
+    ]
+}

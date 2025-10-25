@@ -1,11 +1,12 @@
-import { CycleAutocompleteProvider } from '../autocomplete';
 import { BaseTrigger } from '../base';
 import { trigger } from '../decorator';
+
+import * as AutocompleteProviders from '../autocomplete';
 
 @trigger('cycle_becomes')
 export default class extends BaseTrigger<Args, State> {
     async onInit(): Promise<void> {
-        this.registerAutocomplete('name', CycleAutocompleteProvider);
+        this.registerAutocomplete('name', AutocompleteProviders.Cycle);
 
         await super.onInit();
     }

@@ -2,7 +2,8 @@
     "autocomplete": {
         "cycle_new": "New counter in this flow",
         "mode_new": "New mode in this flow",
-        "signal_new": "New signal"
+        "signal_new": "New signal in this flow",
+        "timer_new": "new timer in this flow"
     },
     "notification": {
         "mode_activated": "**__mode__** is activated.",

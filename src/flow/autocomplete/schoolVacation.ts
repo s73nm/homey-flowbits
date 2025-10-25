@@ -1,6 +1,7 @@
 import type { FlowCard } from 'homey';
-import schoolHolidays from '../../data/schoolHolidays';
 import { BaseAutocompleteProvider } from '../base';
+
+import schoolHolidays from '../../data/schoolHolidays';
 
 export default class extends BaseAutocompleteProvider {
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {

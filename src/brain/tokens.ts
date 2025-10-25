@@ -1,8 +1,9 @@
 import type { FlowToken } from 'homey';
 import { DateTime } from 'luxon';
-import { DayPeriodBecomesTrigger, DayPeriodOverTrigger } from '../flow/trigger';
 import type Brain from './brain';
 import type { Trigger } from './registry';
+
+import * as Triggers from '../flow/trigger';
 
 type Provider<T extends string | boolean | number> = (state: State) => T;
 type Translator<T> = (value: T) => string;
@@ -16,7 +17,10 @@ type TranslatedToken = [...RawToken, FlowToken, Translator<any>];
 type Token = RawToken | TranslatedToken;
 
 const TRIGGERS: Record<string, Trigger<any>[]> = {
-    day_period: [DayPeriodBecomesTrigger, DayPeriodOverTrigger]
+    day_period: [
+        Triggers.DayPeriodBecomes,
+        Triggers.DayPeriodOver
+    ]
 };
 
 export default class {
