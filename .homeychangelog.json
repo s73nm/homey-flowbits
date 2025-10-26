@@ -22,5 +22,8 @@
   },
   "0.0.7": {
     "en": "Implemented initial logic for timers."
+  },
+  "0.0.8": {
+    "en": "Introduce Flags."
   }
 }
