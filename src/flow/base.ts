@@ -1,18 +1,38 @@
 import type Homey from 'homey/lib/Homey';
 import type { FlowCard, FlowCardAction, FlowCardCondition, FlowCardTrigger } from 'homey';
-import type { AutocompleteProvider, Brain } from '../brain';
+import type { AutocompleteProvider, Brain, Cycles, Flags, Modes, Registry, Timers } from '../brain';
 
 export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState = unknown, TResult = unknown> {
-    get brain(): Brain {
-        return this.#brain;
+    get log() {
+        return this.#brain.homey.__;
+    }
+
+    get language(): string {
+        return this.#brain.homey.i18n.getLanguage();
     }
 
     get card(): T {
         return this.#card;
     }
 
-    get homey(): Homey {
-        return this.#brain.homey;
+    get cycles(): Cycles {
+        return this.#brain.cycles;
+    }
+
+    get flags(): Flags {
+        return this.#brain.flags;
+    }
+
+    get modes(): Modes {
+        return this.#brain.modes;
+    }
+
+    get registry(): Registry {
+        return this.#brain.registry;
+    }
+
+    get timers(): Timers {
+        return this.#brain.timers;
     }
 
     get id(): string {
@@ -30,11 +50,7 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
         this.#brain = brain;
         this.#card = this.#getCard();
 
-        this.onInit();
-    }
-
-    log(...args: any[]): void {
-        this.homey.log(...args);
+        this.onInit().then().catch(console.error.bind(console));
     }
 
     async onInit(): Promise<void> {
@@ -50,7 +66,7 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
     }
 
     registerAutocomplete<T extends BaseAutocompleteProvider>(name: string, autocompleteProvider: AutocompleteProvider<T>): void {
-        const provider = this.#brain.registry.findAutocompleteProvider(autocompleteProvider);
+        const provider = this.registry.findAutocompleteProvider(autocompleteProvider);
 
         if (!provider) {
             throw new Error(`Unable to register autocomplete for ${this.type}#${this.id}. The provider was not registered.`);
@@ -61,15 +77,15 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
 
     #getCard(): T {
         if (this instanceof BaseAction) {
-            return this.homey.flow.getActionCard((this as any).actionId) as unknown as T;
+            return this.#brain.homey.flow.getActionCard((this as any).actionId) as unknown as T;
         }
 
         if (this instanceof BaseCondition) {
-            return this.homey.flow.getConditionCard((this as any).conditionId) as unknown as T;
+            return this.#brain.homey.flow.getConditionCard((this as any).conditionId) as unknown as T;
         }
 
         if (this instanceof BaseTrigger) {
-            return this.homey.flow.getTriggerCard((this as any).triggerId) as unknown as T;
+            return this.#brain.homey.flow.getTriggerCard((this as any).triggerId) as unknown as T;
         }
 
         throw new Error('Cannot find the card type.');
@@ -89,8 +105,16 @@ export abstract class BaseTrigger<TArgs = unknown, TState = unknown> extends Bas
 }
 
 export abstract class BaseAutocompleteProvider {
-    get brain(): Brain {
-        return this.#brain;
+    get getActionCard() {
+        return this.#brain.homey.flow.getActionCard.bind(this.#brain.homey.flow);
+    }
+
+    get getConditionCard() {
+        return this.#brain.homey.flow.getConditionCard.bind(this.#brain.homey.flow);
+    }
+
+    get getTriggerCard() {
+        return this.#brain.homey.flow.getTriggerCard.bind(this.#brain.homey.flow);
     }
 
     get homey(): Homey {

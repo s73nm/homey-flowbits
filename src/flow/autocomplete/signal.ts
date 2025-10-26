@@ -1,10 +1,7 @@
-import type { FlowCard, FlowCardAction, FlowCardTrigger } from 'homey';
+import type { FlowCard } from 'homey';
 import { BaseAutocompleteProvider } from '../base';
 
 export default class extends BaseAutocompleteProvider {
-    #sendSignalAction!: FlowCardAction;
-    #receiveSignalTrigger!: FlowCardTrigger;
-
     #values: string[] = [];
 
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
@@ -30,8 +27,8 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.#sendSignalAction.getArgumentValues(),
-                await this.#receiveSignalTrigger.getArgumentValues()
+                await this.getActionCard('signal_send').getArgumentValues(),
+                await this.getTriggerCard('signal_receive').getArgumentValues()
             ])
             .then(allValues => allValues
                 .filter(values => values.status === 'fulfilled')
@@ -39,12 +36,5 @@ export default class extends BaseAutocompleteProvider {
                 .reduce((acc, curr) => acc.concat(curr))
                 .map(value => value.signal.name)
                 .filter((value, index, arr) => arr.indexOf(value) === index));
-    }
-
-    async onInit(): Promise<void> {
-        this.#sendSignalAction = this.homey.flow.getActionCard('signal_send');
-        this.#receiveSignalTrigger = this.homey.flow.getTriggerCard('signal_receive');
-
-        return super.onInit();
     }
 }

@@ -12,7 +12,7 @@ export default class extends BaseCondition<Args, never> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        return await this.brain.cycles.getValue(args.name.name) === args.value;
+        return await this.cycles.getValue(args.name.name) === args.value;
     }
 }
 

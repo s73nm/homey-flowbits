@@ -12,11 +12,11 @@ export default class extends BaseCondition<Args, never> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        return this.brain.modes.currentMode === args.name.name;
+        return this.modes.currentMode === args.name.name;
     }
 
     async onUpdate(): Promise<void> {
-        await this.brain.modes.triggerRealtimeUpdate();
+        await this.modes.triggerRealtimeUpdate();
     }
 }
 

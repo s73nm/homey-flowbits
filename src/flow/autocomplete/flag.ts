@@ -27,11 +27,11 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.homey.flow.getActionCard('flag_activate').getArgumentValues(),
-                await this.homey.flow.getActionCard('flag_deactivate').getArgumentValues(),
-                await this.homey.flow.getConditionCard('flag_is').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('flag_activated').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('flag_deactivated').getArgumentValues()
+                await this.getActionCard('flag_activate').getArgumentValues(),
+                await this.getActionCard('flag_deactivate').getArgumentValues(),
+                await this.getConditionCard('flag_is').getArgumentValues(),
+                await this.getTriggerCard('flag_activated').getArgumentValues(),
+                await this.getTriggerCard('flag_deactivated').getArgumentValues()
             ])
             .then(allValues => allValues
                 .filter(values => values.status === 'fulfilled')

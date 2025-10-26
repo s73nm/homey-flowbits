@@ -27,21 +27,21 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.homey.flow.getActionCard('timer_pause').getArgumentValues(),
-                await this.homey.flow.getActionCard('timer_resume').getArgumentValues(),
-                await this.homey.flow.getActionCard('timer_set').getArgumentValues(),
-                await this.homey.flow.getActionCard('timer_start').getArgumentValues(),
-                await this.homey.flow.getActionCard('timer_stop').getArgumentValues(),
-                await this.homey.flow.getConditionCard('timer_duration').getArgumentValues(),
-                await this.homey.flow.getConditionCard('timer_finished').getArgumentValues(),
-                await this.homey.flow.getConditionCard('timer_paused').getArgumentValues(),
-                await this.homey.flow.getConditionCard('timer_running').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('timer_finished').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('timer_paused').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('timer_remaining').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('timer_resumed').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('timer_started').getArgumentValues(),
-                await this.homey.flow.getTriggerCard('timer_stopped').getArgumentValues()
+                await this.getActionCard('timer_pause').getArgumentValues(),
+                await this.getActionCard('timer_resume').getArgumentValues(),
+                await this.getActionCard('timer_set').getArgumentValues(),
+                await this.getActionCard('timer_start').getArgumentValues(),
+                await this.getActionCard('timer_stop').getArgumentValues(),
+                await this.getConditionCard('timer_duration').getArgumentValues(),
+                await this.getConditionCard('timer_finished').getArgumentValues(),
+                await this.getConditionCard('timer_paused').getArgumentValues(),
+                await this.getConditionCard('timer_running').getArgumentValues(),
+                await this.getTriggerCard('timer_finished').getArgumentValues(),
+                await this.getTriggerCard('timer_paused').getArgumentValues(),
+                await this.getTriggerCard('timer_remaining').getArgumentValues(),
+                await this.getTriggerCard('timer_resumed').getArgumentValues(),
+                await this.getTriggerCard('timer_started').getArgumentValues(),
+                await this.getTriggerCard('timer_stopped').getArgumentValues()
             ])
             .then(allValues => allValues
                 .filter(values => values.status === 'fulfilled')

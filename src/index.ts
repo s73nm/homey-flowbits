@@ -15,25 +15,30 @@ export default class Index extends Homey.App {
     #brain!: Brain;
 
     async onInit(): Promise<void> {
-        this.#brain = new Brain(this.homey);
+        try {
+            this.#brain = new Brain(this.homey);
 
-        Settings.defaultZone = this.homey.clock.getTimezone();
+            Settings.defaultZone = this.homey.clock.getTimezone();
 
-        this.#registerAutocompleteProviders();
-        this.#registerActions();
-        this.#registerConditions();
-        this.#registerTriggers();
+            this.#registerAutocompleteProviders();
+            this.#registerActions();
+            this.#registerConditions();
+            this.#registerTriggers();
 
-        await this.#registerActionFunctions();
+            await this.#registerActionFunctions();
 
-        for (const provider of this.#brain.registry.autocompleteProviders) {
-            await provider.onInit();
+            for (const provider of this.#brain.registry.autocompleteProviders) {
+                await provider.onInit();
+            }
+
+            await this.#brain.timers.initialize();
+            await this.#brain.tokens.initialize();
+
+            this.log('FlowBits has been initialized!');
+        } catch (err) {
+            console.error(err);
+            this.error('Failed to initialize FlowBits.');
         }
-
-        await this.#brain.timers.initialize();
-        await this.#brain.tokens.initialize();
-
-        this.log('FlowBits has been initialized!');
     }
 
     #registerActions(): void {

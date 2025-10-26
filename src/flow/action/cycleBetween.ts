@@ -12,7 +12,7 @@ export default class extends BaseAction<Args> {
     }
 
     async onRun(args: Args): Promise<void> {
-        await this.brain.cycles.cycle(args.name.name, args.min_value, args.max_value);
+        await this.cycles.cycle(args.name.name, args.min_value, args.max_value);
     }
 }
 

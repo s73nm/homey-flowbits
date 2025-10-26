@@ -13,7 +13,7 @@ export default class extends BaseAction<Args> {
     }
 
     async onRun(args: Args): Promise<void> {
-        this.brain.registry
+        this.registry
             .findTrigger(Triggers.SignalReceive)
             ?.trigger({signal: args.signal.name});
     }

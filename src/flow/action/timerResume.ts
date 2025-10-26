@@ -12,7 +12,7 @@ export default class extends BaseAction<Args> {
     }
 
     async onRun(args: Args): Promise<void> {
-        await this.brain.timers.resume(args.timer.name);
+        await this.timers.resume(args.timer.name);
     }
 }
 

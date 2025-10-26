@@ -12,11 +12,11 @@ export default class extends BaseAction<Args> {
     }
 
     async onRun(args: Args): Promise<void> {
-        await this.brain.modes.toggle(args.name.name);
+        await this.modes.toggle(args.name.name);
     }
 
     async onUpdate(): Promise<void> {
-        await this.brain.modes.triggerRealtimeUpdate();
+        await this.modes.triggerRealtimeUpdate();
     }
 }
 

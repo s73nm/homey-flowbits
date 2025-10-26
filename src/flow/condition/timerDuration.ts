@@ -13,7 +13,7 @@ export default class extends BaseCondition<Args> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        return await this.brain.timers.isDuration(args.timer.name, args.duration, args.unit);
+        return await this.timers.isDuration(args.timer.name, args.duration, args.unit);
     }
 }
 
