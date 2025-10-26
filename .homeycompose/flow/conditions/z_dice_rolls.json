@@ -1,0 +1,25 @@
+{
+    "id": "dice_rolls",
+    "title": {
+        "en": "Roll a dice",
+        "nl": "Gooi een dobbelsteen"
+    },
+    "titleFormatted": {
+        "en": "Dice rolls [[result]]",
+        "nl": "Dobbelsteen gooit [[result]]"
+    },
+    "args": [
+        {
+            "type": "range",
+            "name": "result",
+            "title": {
+                "en": "Result",
+                "nl": "Ogen"
+            },
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "labelDecimals": 0
+        }
+    ]
+}

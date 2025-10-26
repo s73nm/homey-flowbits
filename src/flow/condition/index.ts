@@ -1,6 +1,7 @@
 export { default as ContinueWithChance } from './continueWithChance';
 export { default as CycleHasValue } from './cycleHasValue';
 export { default as DayPeriodIs } from './dayPeriodIs';
+export { default as DiceRolls } from './diceRolls';
 export { default as FlagIs } from './flagIs';
 export { default as ModeIs } from './modeIs';
 export { default as MoonPhaseIs } from './moonPhaseIs';

@@ -534,32 +534,6 @@
     ],
     "conditions": [
       {
-        "id": "continue_with_chance",
-        "title": {
-          "en": "Continue with chance",
-          "nl": "Ga door met kans"
-        },
-        "titleFormatted": {
-          "en": "Continue with [[chance]] chance",
-          "nl": "Ga door met [[chance]] kans"
-        },
-        "args": [
-          {
-            "type": "range",
-            "name": "chance",
-            "title": {
-              "en": "Chance",
-              "nl": "Kans"
-            },
-            "min": 1,
-            "max": 100,
-            "step": 1,
-            "label": "%",
-            "labelDecimals": 0
-          }
-        ]
-      },
-      {
         "id": "cycle_has_value",
         "title": {
           "en": "Sequence equals",
@@ -692,85 +666,6 @@
               "en": "Name",
               "nl": "Naam"
             }
-          }
-        ]
-      },
-      {
-        "id": "moon_phase_is",
-        "title": {
-          "en": "The moon phase !{{is|isn't}}...",
-          "nl": "De maanfase !{{is|is niet}}..."
-        },
-        "titleFormatted": {
-          "en": "The moon phase !{{is|isn't}} [[value]]",
-          "nl": "De maanfase !{{is|is niet}} [[value]]"
-        },
-        "args": [
-          {
-            "type": "dropdown",
-            "name": "value",
-            "title": {
-              "en": "Moon phase",
-              "nl": "Maanfase"
-            },
-            "values": [
-              {
-                "id": "new_moon",
-                "title": {
-                  "en": "New Moon",
-                  "nl": "Nieuwe maan"
-                }
-              },
-              {
-                "id": "waxing_crescent",
-                "title": {
-                  "en": "Waxing Crescent",
-                  "nl": "Wassende sikkel"
-                }
-              },
-              {
-                "id": "first_quarter",
-                "title": {
-                  "en": "First Quarter",
-                  "nl": "Eerste kwartier"
-                }
-              },
-              {
-                "id": "waxing_gibbous",
-                "title": {
-                  "en": "Waxing Gibbous",
-                  "nl": "Wassende maan"
-                }
-              },
-              {
-                "id": "full_moon",
-                "title": {
-                  "en": "Full Moon",
-                  "nl": "Volle maan"
-                }
-              },
-              {
-                "id": "waning_gibbous",
-                "title": {
-                  "en": "Waning Gibbous",
-                  "nl": "Afnemende maan"
-                }
-              },
-              {
-                "id": "last_quarter",
-                "title": {
-                  "en": "Last Quarter",
-                  "nl": "Laatste kwartier"
-                }
-              },
-              {
-                "id": "waning_crescent",
-                "title": {
-                  "en": "Waning Crescent",
-                  "nl": "Afnemende sikkel"
-                }
-              }
-            ]
           }
         ]
       },
@@ -959,6 +854,136 @@
               "en": "Name",
               "nl": "Naam"
             }
+          }
+        ]
+      },
+      {
+        "id": "continue_with_chance",
+        "title": {
+          "en": "Continue with chance",
+          "nl": "Ga door met kans"
+        },
+        "titleFormatted": {
+          "en": "Continue with [[chance]] chance",
+          "nl": "Ga door met [[chance]] kans"
+        },
+        "args": [
+          {
+            "type": "range",
+            "name": "chance",
+            "title": {
+              "en": "Chance",
+              "nl": "Kans"
+            },
+            "min": 1,
+            "max": 100,
+            "step": 1,
+            "label": "%",
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "dice_rolls",
+        "title": {
+          "en": "Roll a dice",
+          "nl": "Gooi een dobbelsteen"
+        },
+        "titleFormatted": {
+          "en": "Dice rolls [[result]]",
+          "nl": "Dobbelsteen gooit [[result]]"
+        },
+        "args": [
+          {
+            "type": "range",
+            "name": "result",
+            "title": {
+              "en": "Result",
+              "nl": "Ogen"
+            },
+            "min": 1,
+            "max": 6,
+            "step": 1,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "moon_phase_is",
+        "title": {
+          "en": "The moon phase !{{is|isn't}}...",
+          "nl": "De maanfase !{{is|is niet}}..."
+        },
+        "titleFormatted": {
+          "en": "The moon phase !{{is|isn't}} [[value]]",
+          "nl": "De maanfase !{{is|is niet}} [[value]]"
+        },
+        "args": [
+          {
+            "type": "dropdown",
+            "name": "value",
+            "title": {
+              "en": "Moon phase",
+              "nl": "Maanfase"
+            },
+            "values": [
+              {
+                "id": "new_moon",
+                "title": {
+                  "en": "New Moon",
+                  "nl": "Nieuwe maan"
+                }
+              },
+              {
+                "id": "waxing_crescent",
+                "title": {
+                  "en": "Waxing Crescent",
+                  "nl": "Wassende sikkel"
+                }
+              },
+              {
+                "id": "first_quarter",
+                "title": {
+                  "en": "First Quarter",
+                  "nl": "Eerste kwartier"
+                }
+              },
+              {
+                "id": "waxing_gibbous",
+                "title": {
+                  "en": "Waxing Gibbous",
+                  "nl": "Wassende maan"
+                }
+              },
+              {
+                "id": "full_moon",
+                "title": {
+                  "en": "Full Moon",
+                  "nl": "Volle maan"
+                }
+              },
+              {
+                "id": "waning_gibbous",
+                "title": {
+                  "en": "Waning Gibbous",
+                  "nl": "Afnemende maan"
+                }
+              },
+              {
+                "id": "last_quarter",
+                "title": {
+                  "en": "Last Quarter",
+                  "nl": "Laatste kwartier"
+                }
+              },
+              {
+                "id": "waning_crescent",
+                "title": {
+                  "en": "Waning Crescent",
+                  "nl": "Afnemende sikkel"
+                }
+              }
+            ]
           }
         ]
       },

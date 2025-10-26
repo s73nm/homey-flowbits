@@ -79,6 +79,7 @@ export default class Index extends Homey.App {
         this.#brain.registry.condition(Conditions.ContinueWithChance);
         this.#brain.registry.condition(Conditions.CycleHasValue);
         this.#brain.registry.condition(Conditions.DayPeriodIs);
+        this.#brain.registry.condition(Conditions.DiceRolls);
         this.#brain.registry.condition(Conditions.FlagIs);
         this.#brain.registry.condition(Conditions.ModeIs);
         this.#brain.registry.condition(Conditions.MoonPhaseIs);
