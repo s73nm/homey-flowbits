@@ -25,5 +25,8 @@
   },
   "0.0.8": {
     "en": "Introduce Flags."
+  },
+  "0.1.0": {
+    "en": "Introduce dice rolls condition."
   }
 }
