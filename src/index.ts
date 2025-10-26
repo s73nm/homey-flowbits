@@ -45,11 +45,9 @@ export default class Index extends Homey.App {
         this.#brain.registry.action(Actions.ModeToggle);
         this.#brain.registry.action(Actions.RandomFact);
         this.#brain.registry.action(Actions.SignalSend);
-        this.#brain.registry.action(Actions.TimerExtend);
         this.#brain.registry.action(Actions.TimerPause);
         this.#brain.registry.action(Actions.TimerResume);
         this.#brain.registry.action(Actions.TimerSet);
-        this.#brain.registry.action(Actions.TimerShorten);
         this.#brain.registry.action(Actions.TimerStart);
         this.#brain.registry.action(Actions.TimerStop);
     }

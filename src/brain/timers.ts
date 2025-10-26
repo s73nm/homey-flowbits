@@ -40,9 +40,6 @@ export default class {
         await this.#schedule();
     }
 
-    async extend(name: string, duration: number, unit: ClockUnit): Promise<void> {
-    }
-
     async finish(timer: Timer): Promise<void> {
         await this.#update(timer.name, timer.duration, 0, timer.target, 'finished');
         await this.#triggerFinished(timer.name);
@@ -87,9 +84,6 @@ export default class {
 
         await this.#save(name, duration, unit, timer.status);
         await this.#schedule();
-    }
-
-    async shorten(name: string, duration: number, unit: ClockUnit): Promise<void> {
     }
 
     async start(name: string, duration: number, unit: ClockUnit): Promise<void> {

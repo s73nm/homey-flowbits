@@ -27,11 +27,9 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.homey.flow.getActionCard('timer_extend').getArgumentValues(),
                 await this.homey.flow.getActionCard('timer_pause').getArgumentValues(),
                 await this.homey.flow.getActionCard('timer_resume').getArgumentValues(),
                 await this.homey.flow.getActionCard('timer_set').getArgumentValues(),
-                await this.homey.flow.getActionCard('timer_shorten').getArgumentValues(),
                 await this.homey.flow.getActionCard('timer_start').getArgumentValues(),
                 await this.homey.flow.getActionCard('timer_stop').getArgumentValues(),
                 await this.homey.flow.getConditionCard('timer_duration').getArgumentValues(),

@@ -6,7 +6,7 @@
     },
     "titleFormatted": {
         "en": "[[duration]] [[unit]] remaining for timer [[timer]]",
-        "nl": "Nog [[duration]] [[unit]] voor timer [[timer]]"
+        "nl": "Timer [[timer]] bereikt [[duration]] [[unit]]"
     },
     "args": [
         {

@@ -353,7 +353,7 @@
         },
         "titleFormatted": {
           "en": "[[duration]] [[unit]] remaining for timer [[timer]]",
-          "nl": "Nog [[duration]] [[unit]] voor timer [[timer]]"
+          "nl": "Timer [[timer]] bereikt [[duration]] [[unit]]"
         },
         "args": [
           {
@@ -1249,83 +1249,6 @@
         ]
       },
       {
-        "id": "timer_extend",
-        "title": {
-          "en": "Extend timer",
-          "nl": "Verleng timer"
-        },
-        "titleFormatted": {
-          "en": "Extend timer [[timer]] with [[duration]] [[unit]]",
-          "nl": "Verleng timer [[timer]] met [[duration]] [[unit]]"
-        },
-        "hint": {
-          "en": "Adds time to the timer.",
-          "nl": "Voegt tijd toe aan de timer."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "timer",
-            "title": {
-              "en": "Name",
-              "nl": "Naam"
-            }
-          },
-          {
-            "type": "number",
-            "name": "duration",
-            "min": 1,
-            "step": 1,
-            "title": {
-              "en": "Duration",
-              "nl": "Looptijd"
-            },
-            "placeholder": {
-              "en": "E.g. 10",
-              "nl": "Bijv. 10"
-            }
-          },
-          {
-            "type": "dropdown",
-            "name": "unit",
-            "title": {
-              "en": "Unit",
-              "nl": "Eenheid"
-            },
-            "values": [
-              {
-                "id": "seconds",
-                "title": {
-                  "en": "seconds",
-                  "nl": "seconden"
-                }
-              },
-              {
-                "id": "minutes",
-                "title": {
-                  "en": "minutes",
-                  "nl": "minuten"
-                }
-              },
-              {
-                "id": "hours",
-                "title": {
-                  "en": "hours",
-                  "nl": "uren"
-                }
-              },
-              {
-                "id": "days",
-                "title": {
-                  "en": "days",
-                  "nl": "dagen"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
         "id": "timer_pause",
         "title": {
           "en": "Pause timer",
@@ -1380,83 +1303,6 @@
         "hint": {
           "en": "Sets the remaining time of the timer.",
           "nl": "Wijzigt de resterende tijd van de timer."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "timer",
-            "title": {
-              "en": "Name",
-              "nl": "Naam"
-            }
-          },
-          {
-            "type": "number",
-            "name": "duration",
-            "min": 1,
-            "step": 1,
-            "title": {
-              "en": "Duration",
-              "nl": "Looptijd"
-            },
-            "placeholder": {
-              "en": "E.g. 10",
-              "nl": "Bijv. 10"
-            }
-          },
-          {
-            "type": "dropdown",
-            "name": "unit",
-            "title": {
-              "en": "Unit",
-              "nl": "Eenheid"
-            },
-            "values": [
-              {
-                "id": "seconds",
-                "title": {
-                  "en": "seconds",
-                  "nl": "seconden"
-                }
-              },
-              {
-                "id": "minutes",
-                "title": {
-                  "en": "minutes",
-                  "nl": "minuten"
-                }
-              },
-              {
-                "id": "hours",
-                "title": {
-                  "en": "hours",
-                  "nl": "uren"
-                }
-              },
-              {
-                "id": "days",
-                "title": {
-                  "en": "days",
-                  "nl": "dagen"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "timer_shorten",
-        "title": {
-          "en": "Shorten timer",
-          "nl": "Verkort timer"
-        },
-        "titleFormatted": {
-          "en": "Shorten timer [[timer]] with [[duration]] [[unit]]",
-          "nl": "Verkort timer [[timer]] met [[duration]] [[unit]]"
-        },
-        "hint": {
-          "en": "Subtracts time to the timer.",
-          "nl": "Haalt tijd van de timer af."
         },
         "args": [
           {
