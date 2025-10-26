@@ -1,0 +1,19 @@
+{
+    "name": {
+        "en": "Flags",
+        "nl": "Flags"
+    },
+    "height": 120,
+    "transparent": true,
+    "settings": [],
+    "api": {
+        "list": {
+            "method": "GET",
+            "path": "/"
+        },
+        "toggle": {
+            "method": "POST",
+            "path": "/"
+        }
+    }
+}

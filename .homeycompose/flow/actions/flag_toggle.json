@@ -1,0 +1,25 @@
+{
+    "id": "flag_toggle",
+    "title": {
+        "en": "Toggle flag",
+        "nl": "Schakel flag om"
+    },
+    "titleFormatted": {
+        "en": "Toggle flag [[flag]]",
+        "nl": "Schakel flag [[flag]] om"
+    },
+    "hint": {
+        "en": "Turns the flag on if it’s off, and off if it’s on.",
+        "nl": "Schakelt de flag aan als deze uit is, en uit als deze aan is."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+                "en": "Flag",
+                "nl": "Flag"
+            }
+        }
+    ]
+}

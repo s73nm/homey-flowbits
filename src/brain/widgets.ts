@@ -1,9 +1,14 @@
 import type Brain from './brain';
+import type Flags from './flags';
 import type Modes from './modes';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 
 export default class {
+    get flags(): Flags {
+        return this.#brain.flags;
+    }
+
     get modes(): Modes {
         return this.#brain.modes;
     }
@@ -12,6 +17,43 @@ export default class {
 
     constructor(brain: Brain) {
         this.#brain = brain;
+    }
+
+    async getFlags(): Promise<Flag[]> {
+        const autocompleteProvider = this.#brain.registry.findAutocompleteProvider(AutocompleteProviders.Flag);
+
+        if (!autocompleteProvider) {
+            throw new Error('Failed to get the flag autocomplete provider.');
+        }
+
+        const current = this.flags.currentFlags;
+        const flags = await autocompleteProvider.find('');
+
+        if (flags.length === 0) {
+            return [];
+        }
+
+        return flags.map(flag => ({
+            active: current.includes(flag.name),
+            name: flag.name
+        }));
+    }
+
+    async toggleFlag(flagName: string): Promise<boolean> {
+        const flags = await this.getFlags();
+        const flag = flags.find(m => m.name === flagName);
+
+        if (!flag) {
+            throw new Error('Flag not found.');
+        }
+
+        if (flag.active) {
+            await this.flags.deactivate(flag.name);
+        } else {
+            await this.flags.activate(flag.name);
+        }
+
+        return true;
     }
 
     async getModes(): Promise<Mode[]> {
@@ -25,7 +67,7 @@ export default class {
         const modes = await autocompleteProvider.find('');
 
         if (modes.length === 0) {
-            throw new Error('No modes found.');
+            return [];
         }
 
         return modes.map(mode => ({
@@ -51,6 +93,11 @@ export default class {
         return true;
     }
 }
+
+type Flag = {
+    readonly active: boolean;
+    readonly name: string;
+};
 
 type Mode = {
     readonly active: boolean;

@@ -1,6 +1,9 @@
 export { default as Cycle } from './cycle';
 export { default as CycleBetween } from './cycleBetween';
 export { default as CycleTo } from './cycleTo';
+export { default as FlagActivate } from './flagActivate';
+export { default as FlagDeactivate } from './flagDeactivate';
+export { default as FlagToggle } from './flagToggle';
 export { default as ModeActivate } from './modeActivate';
 export { default as ModeDeactivate } from './modeDeactivate';
 export { default as ModeToggle } from './modeToggle';

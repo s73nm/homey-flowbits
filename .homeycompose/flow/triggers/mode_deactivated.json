@@ -1,8 +1,8 @@
 {
     "id": "mode_deactivated",
     "title": {
-        "en": "A mode is activated",
-        "nl": "Een stand is geactiveerd"
+        "en": "Mode deactivated",
+        "nl": "Stand gedeactiveerd"
     },
     "titleFormatted": {
         "en": "[[name]] is deactivated",

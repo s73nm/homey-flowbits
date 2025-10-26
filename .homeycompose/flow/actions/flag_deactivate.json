@@ -1,0 +1,25 @@
+{
+    "id": "flag_deactivate",
+    "title": {
+        "en": "Deactivate flag",
+        "nl": "Deactiveer flag"
+    },
+    "titleFormatted": {
+        "en": "Deactivate flag [[flag]]",
+        "nl": "Deactiveer flag [[flag]]"
+    },
+    "hint": {
+        "en": "Deactivates a defined flag.",
+        "nl": "Deactiveer een gedefinieerde flag."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+                "en": "Flag",
+                "nl": "Flag"
+            }
+        }
+    ]
+}

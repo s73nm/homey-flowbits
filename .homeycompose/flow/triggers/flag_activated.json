@@ -1,0 +1,25 @@
+{
+    "id": "flag_activated",
+    "title": {
+        "en": "Flag activated",
+        "nl": "Flag geactiveerd"
+    },
+    "titleFormatted": {
+        "en": "Flag [[flag]] is activated",
+        "nl": "Flag [[flag]] is geactiveerd"
+    },
+    "hint": {
+        "en": "Triggers when a flag gets activated.",
+        "nl": "Triggert wanneer een flag is geactiveerd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+                "en": "Flag",
+                "nl": "Flag"
+            }
+        }
+    ]
+}

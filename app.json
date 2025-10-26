@@ -229,6 +229,56 @@
         ]
       },
       {
+        "id": "flag_activated",
+        "title": {
+          "en": "Flag activated",
+          "nl": "Flag geactiveerd"
+        },
+        "titleFormatted": {
+          "en": "Flag [[flag]] is activated",
+          "nl": "Flag [[flag]] is geactiveerd"
+        },
+        "hint": {
+          "en": "Triggers when a flag gets activated.",
+          "nl": "Triggert wanneer een flag is geactiveerd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+              "en": "Flag",
+              "nl": "Flag"
+            }
+          }
+        ]
+      },
+      {
+        "id": "flag_deactivated",
+        "title": {
+          "en": "Flag deactivated",
+          "nl": "Flag gedeactiveerd"
+        },
+        "titleFormatted": {
+          "en": "Flag [[flag]] is deactivated",
+          "nl": "Flag [[flag]] is gedeactiveerd"
+        },
+        "hint": {
+          "en": "Triggers when a flag gets deactivated.",
+          "nl": "Triggert wanneer een flag is gedeactiveerd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+              "en": "Flag",
+              "nl": "Flag"
+            }
+          }
+        ]
+      },
+      {
         "id": "mode_activated",
         "title": {
           "en": "Mode activated",
@@ -256,8 +306,8 @@
       {
         "id": "mode_deactivated",
         "title": {
-          "en": "A mode is activated",
-          "nl": "Een stand is geactiveerd"
+          "en": "Mode deactivated",
+          "nl": "Stand gedeactiveerd"
         },
         "titleFormatted": {
           "en": "[[name]] is deactivated",
@@ -592,6 +642,31 @@
                 }
               }
             ]
+          }
+        ]
+      },
+      {
+        "id": "flag_is",
+        "title": {
+          "en": "Flag is active",
+          "nl": "Flag is actief"
+        },
+        "titleFormatted": {
+          "en": "Flag [[flag]] is !{{active|inactive}}",
+          "nl": "Flag [[flag]] is !{{actief|inactief}}"
+        },
+        "hint": {
+          "en": "Checks if a flag is activated.",
+          "nl": "Controleert of een flag is geactiveerd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+              "en": "Flag",
+              "nl": "Flag"
+            }
           }
         ]
       },
@@ -1128,10 +1203,85 @@
         ]
       },
       {
+        "id": "flag_activate",
+        "title": {
+          "en": "Activate flag",
+          "nl": "Activeer flag"
+        },
+        "titleFormatted": {
+          "en": "Activate flag [[flag]]",
+          "nl": "Activeer flag [[flag]]"
+        },
+        "hint": {
+          "en": "Activates a defined flag.",
+          "nl": "Activeer een gedefinieerde flag."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+              "en": "Flag",
+              "nl": "Flag"
+            }
+          }
+        ]
+      },
+      {
+        "id": "flag_deactivate",
+        "title": {
+          "en": "Deactivate flag",
+          "nl": "Deactiveer flag"
+        },
+        "titleFormatted": {
+          "en": "Deactivate flag [[flag]]",
+          "nl": "Deactiveer flag [[flag]]"
+        },
+        "hint": {
+          "en": "Deactivates a defined flag.",
+          "nl": "Deactiveer een gedefinieerde flag."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+              "en": "Flag",
+              "nl": "Flag"
+            }
+          }
+        ]
+      },
+      {
+        "id": "flag_toggle",
+        "title": {
+          "en": "Toggle flag",
+          "nl": "Schakel flag om"
+        },
+        "titleFormatted": {
+          "en": "Toggle flag [[flag]]",
+          "nl": "Schakel flag [[flag]] om"
+        },
+        "hint": {
+          "en": "Turns the flag on if it’s off, and off if it’s on.",
+          "nl": "Schakelt de flag aan als deze uit is, en uit als deze aan is."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+              "en": "Flag",
+              "nl": "Flag"
+            }
+          }
+        ]
+      },
+      {
         "id": "mode_activate",
         "title": {
-          "en": "Activate ...",
-          "nl": "Activeer ..."
+          "en": "Activate mode",
+          "nl": "Activeer stand"
         },
         "titleFormatted": {
           "en": "Activate [[name]]",
@@ -1155,8 +1305,8 @@
       {
         "id": "mode_deactivate",
         "title": {
-          "en": "Deactivate ...",
-          "nl": "Deactiveer ..."
+          "en": "Deactivate mode",
+          "nl": "Deactiveer stand"
         },
         "titleFormatted": {
           "en": "Deactivate [[name]]",
@@ -1180,8 +1330,8 @@
       {
         "id": "mode_toggle",
         "title": {
-          "en": "Toggle ...",
-          "nl": "Schakel ... om"
+          "en": "Toggle mode",
+          "nl": "Schakel stand om"
         },
         "titleFormatted": {
           "en": "Toggle [[name]]",
@@ -1711,6 +1861,26 @@
     ]
   },
   "widgets": {
+    "flags": {
+      "name": {
+        "en": "Flags",
+        "nl": "Flags"
+      },
+      "height": 120,
+      "transparent": true,
+      "settings": [],
+      "api": {
+        "list": {
+          "method": "GET",
+          "path": "/"
+        },
+        "toggle": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "flags"
+    },
     "modes": {
       "name": {
         "en": "Modes",

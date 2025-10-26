@@ -1,8 +1,8 @@
 {
     "id": "mode_toggle",
     "title": {
-        "en": "Toggle ...",
-        "nl": "Schakel ... om"
+        "en": "Toggle mode",
+        "nl": "Schakel stand om"
     },
     "titleFormatted": {
         "en": "Toggle [[name]]",

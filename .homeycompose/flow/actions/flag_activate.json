@@ -1,0 +1,25 @@
+{
+    "id": "flag_activate",
+    "title": {
+        "en": "Activate flag",
+        "nl": "Activeer flag"
+    },
+    "titleFormatted": {
+        "en": "Activate flag [[flag]]",
+        "nl": "Activeer flag [[flag]]"
+    },
+    "hint": {
+        "en": "Activates a defined flag.",
+        "nl": "Activeer een gedefinieerde flag."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+                "en": "Flag",
+                "nl": "Flag"
+            }
+        }
+    ]
+}

@@ -40,6 +40,9 @@ export default class Index extends Homey.App {
         this.#brain.registry.action(Actions.Cycle);
         this.#brain.registry.action(Actions.CycleBetween);
         this.#brain.registry.action(Actions.CycleTo);
+        this.#brain.registry.action(Actions.FlagActivate);
+        this.#brain.registry.action(Actions.FlagDeactivate);
+        this.#brain.registry.action(Actions.FlagToggle);
         this.#brain.registry.action(Actions.ModeActivate);
         this.#brain.registry.action(Actions.ModeDeactivate);
         this.#brain.registry.action(Actions.ModeToggle);
@@ -65,6 +68,7 @@ export default class Index extends Homey.App {
 
     #registerAutocompleteProviders(): void {
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Cycle);
+        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Flag);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Mode);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.SchoolVacation);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Signal);
@@ -75,6 +79,7 @@ export default class Index extends Homey.App {
         this.#brain.registry.condition(Conditions.ContinueWithChance);
         this.#brain.registry.condition(Conditions.CycleHasValue);
         this.#brain.registry.condition(Conditions.DayPeriodIs);
+        this.#brain.registry.condition(Conditions.FlagIs);
         this.#brain.registry.condition(Conditions.ModeIs);
         this.#brain.registry.condition(Conditions.MoonPhaseIs);
         this.#brain.registry.condition(Conditions.SchoolHolidayIs);
@@ -90,6 +95,8 @@ export default class Index extends Homey.App {
         this.#brain.registry.trigger(Triggers.CycleUpdates);
         this.#brain.registry.trigger(Triggers.DayPeriodBecomes);
         this.#brain.registry.trigger(Triggers.DayPeriodOver);
+        this.#brain.registry.trigger(Triggers.FlagActivated);
+        this.#brain.registry.trigger(Triggers.FlagDeactivated);
         this.#brain.registry.trigger(Triggers.ModeActivated);
         this.#brain.registry.trigger(Triggers.ModeDeactivated);
         this.#brain.registry.trigger(Triggers.SignalReceive);

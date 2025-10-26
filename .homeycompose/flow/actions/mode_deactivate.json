@@ -1,8 +1,8 @@
 {
     "id": "mode_deactivate",
     "title": {
-        "en": "Deactivate ...",
-        "nl": "Deactiveer ..."
+        "en": "Deactivate mode",
+        "nl": "Deactiveer stand"
     },
     "titleFormatted": {
         "en": "Deactivate [[name]]",

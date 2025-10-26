@@ -2,6 +2,8 @@ export { default as CycleBecomes } from './cycleBecomes';
 export { default as CycleUpdates } from './cycleUpdates';
 export { default as DayPeriodBecomes } from './dayPeriodBecomes';
 export { default as DayPeriodOver } from './dayPeriodOver';
+export { default as FlagActivated } from './flagActivated';
+export { default as FlagDeactivated } from './flagDeactivated';
 export { default as ModeActivated } from './modeActivated';
 export { default as ModeDeactivated } from './modeDeactivated';
 export { default as SignalReceive } from './signalReceive';

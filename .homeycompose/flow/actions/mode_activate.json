@@ -1,8 +1,8 @@
 {
     "id": "mode_activate",
     "title": {
-        "en": "Activate ...",
-        "nl": "Activeer ..."
+        "en": "Activate mode",
+        "nl": "Activeer stand"
     },
     "titleFormatted": {
         "en": "Activate [[name]]",

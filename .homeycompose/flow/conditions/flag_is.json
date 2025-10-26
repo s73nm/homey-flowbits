@@ -1,0 +1,25 @@
+{
+    "id": "flag_is",
+    "title": {
+        "en": "Flag is active",
+        "nl": "Flag is actief"
+    },
+    "titleFormatted": {
+        "en": "Flag [[flag]] is !{{active|inactive}}",
+        "nl": "Flag [[flag]] is !{{actief|inactief}}"
+    },
+    "hint": {
+        "en": "Checks if a flag is activated.",
+        "nl": "Controleert of een flag is geactiveerd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+                "en": "Flag",
+                "nl": "Flag"
+            }
+        }
+    ]
+}

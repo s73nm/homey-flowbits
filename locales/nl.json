@@ -17,7 +17,8 @@
     "cycle_new": "Nieuwe teller in deze flow",
     "mode_new": "Nieuwe stand in deze flow",
     "signal_new": "Nieuw signaal in deze flow",
-    "timer_new": "Nieuwe timer in deze flow"
+    "timer_new": "Nieuwe timer in deze flow",
+    "flag_new": "Nieuwe flag in deze flow"
   },
   "notification": {
     "mode_activated": "**__name__** is geactiveerd.",

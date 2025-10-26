@@ -1,5 +1,6 @@
 import type Homey from 'homey/lib/Homey';
 import Cycles from './cycles';
+import Flags from './flags';
 import Modes from './modes';
 import Registry from './registry';
 import Timers from './timers';
@@ -13,6 +14,10 @@ export default class {
 
     get cycles(): Cycles {
         return this.#cycles;
+    }
+
+    get flags(): Flags {
+        return this.#flags;
     }
 
     get modes(): Modes {
@@ -37,6 +42,7 @@ export default class {
 
     readonly #homey: Homey;
     readonly #cycles: Cycles;
+    readonly #flags: Flags;
     readonly #modes: Modes;
     readonly #registry: Registry;
     readonly #timers: Timers;
@@ -46,6 +52,7 @@ export default class {
     constructor(homey: Homey) {
         this.#homey = homey;
         this.#cycles = new Cycles(this);
+        this.#flags = new Flags(this);
         this.#modes = new Modes(this);
         this.#registry = new Registry(this);
         this.#timers = new Timers(this);
