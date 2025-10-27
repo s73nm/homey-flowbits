@@ -1,12 +1,16 @@
 {
     "id": "school_holiday_is",
     "title": {
-        "en": "🇳🇱 It is a school holiday",
+        "en": "It is a school holiday",
         "nl": "Het is een schoolvakantie"
     },
     "titleFormatted": {
-        "en": "🇳🇱 It !{{is|isn't}} [[holiday]] in region [[region]]",
+        "en": "It !{{is|isn't}} [[holiday]] in region [[region]]",
         "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]"
+    },
+    "hint": {
+        "en": "Checks if it is a school holiday in the Netherlands.",
+        "nl": "Checkt of het een schoolvakantie is."
     },
     "args": [
         {
