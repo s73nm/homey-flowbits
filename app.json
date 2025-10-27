@@ -1,7 +1,7 @@
 {
   "_comment": "This file is generated. Please edit .homeycompose/app.json instead.",
   "id": "com.basmilius.flowbits",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "compatibility": ">=12.4.0",
   "sdk": 3,
   "brandColor": "#204ef6",
@@ -672,12 +672,16 @@
       {
         "id": "school_holiday_is",
         "title": {
-          "en": "🇳🇱 It is a school holiday",
+          "en": "It is a school holiday",
           "nl": "Het is een schoolvakantie"
         },
         "titleFormatted": {
-          "en": "🇳🇱 It !{{is|isn't}} [[holiday]] in region [[region]]",
+          "en": "It !{{is|isn't}} [[holiday]] in region [[region]]",
           "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]"
+        },
+        "hint": {
+          "en": "Checks if it is a school holiday in the Netherlands.",
+          "nl": "Checkt of het een schoolvakantie is."
         },
         "args": [
           {
