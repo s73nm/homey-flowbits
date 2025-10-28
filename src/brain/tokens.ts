@@ -42,8 +42,8 @@ export default class {
         this.#state = await this.state();
 
         await this.create('day_period', 'string', ({now}) => getDayPeriod(now), value => this.#t(`day_period.${value}`));
-        await this.create('moon_phase', 'string', ({now}) => getMoonPhase(now), value => this.#t(`day_period.${value}`));
-        await this.create('zodiac_sign', 'string', ({now}) => getZodiacSign(now), value => this.#t(`day_period.${value}`));
+        await this.create('moon_phase', 'string', ({now}) => getMoonPhase(now), value => this.#t(`moon_phase.${value}`));
+        await this.create('zodiac_sign', 'string', ({now}) => getZodiacSign(now), value => this.#t(`zodiac_sign.${value}`));
 
         this.#brain.homey.setInterval(async () => await this.#brain.tokens.update(), 15 * 1000);
     }
@@ -61,8 +61,8 @@ export default class {
         if (translator) {
             const translated = await this.#brain.homey.flow.createToken(`${id}_translated`, {
                 title: this.#brain.homey.__(`token.${id}_translated`),
-                type,
-                value: translator(value)
+                type: 'string',
+                value: translator(value).toString()
             });
 
             this.#tokens[id] = [token, provider, translated, translator];
@@ -104,7 +104,7 @@ export default class {
             this.#values[id] = value;
             await token.setValue(value);
 
-            translated && translator && await translated.setValue(translator(value));
+            translated && translator && await translated.setValue(translator(value).toString());
         }
 
         this.#brain.homey.log('Global tokens updated.');
