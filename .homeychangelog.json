@@ -40,5 +40,8 @@
   },
   "1.0.3": {
     "en": "Fixed a translated token error where the token would not be added at all."
+  },
+  "1.0.4": {
+    "en": "Added app manifest tags."
   }
 }
