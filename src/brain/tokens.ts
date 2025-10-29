@@ -62,7 +62,7 @@ export default class {
             const translated = await this.#brain.homey.flow.createToken(`${id}_translated`, {
                 title: this.#brain.homey.__(`token.${id}_translated`),
                 type: 'string',
-                value: translator(value).toString()
+                value: translator(value)?.toString() ?? ''
             });
 
             this.#tokens[id] = [token, provider, translated, translator];
