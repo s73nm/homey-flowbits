@@ -104,7 +104,7 @@ export default class {
             this.#values[id] = value;
             await token.setValue(value);
 
-            translated && translator && await translated.setValue(translator(value).toString());
+            translated && translator && await translated.setValue(translator(value)?.toString());
         }
 
         this.#brain.homey.log('Global tokens updated.');
