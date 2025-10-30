@@ -43,5 +43,8 @@
   },
   "1.0.4": {
     "en": "Added app manifest tags."
+  },
+  "1.0.5": {
+    "en": "Added a missing null check."
   }
 }
