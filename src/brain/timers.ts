@@ -197,7 +197,7 @@ export default class {
             const isValid = timer && checkKeys.every(key => key in timer);
 
             if (!isValid || !definedTimers.find(t => t.name === timer.name)) {
-                await this.#remove(timer.id);
+                timer && await this.#remove(timer.id);
                 continue;
             }
 
