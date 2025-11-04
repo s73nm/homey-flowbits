@@ -1,0 +1,35 @@
+{
+    "id": "mode_changed",
+    "title": {
+        "en": "Mode changed",
+        "nl": "Stand gewijzigd"
+    },
+    "titleFormatted": {
+        "en": "Mode [[name]] changed",
+        "nl": "Stand [[name]] gewijzigd"
+    },
+    "hint": {
+        "en": "Triggers when a mode is activated or deactivated.",
+        "nl": "Triggert wanneer een stand wordt geactiveerd of gedeactiveerd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+                "en": "Mode",
+                "nl": "Stand"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "name": "active",
+            "type": "boolean",
+            "title": {
+                "en": "Active",
+                "nl": "Actief"
+            }
+        }
+    ]
+}

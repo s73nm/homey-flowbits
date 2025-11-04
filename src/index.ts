@@ -102,8 +102,10 @@ export default class Index extends Homey.App {
         this.#brain.registry.trigger(Triggers.DayPeriodBecomes);
         this.#brain.registry.trigger(Triggers.DayPeriodOver);
         this.#brain.registry.trigger(Triggers.FlagActivated);
+        this.#brain.registry.trigger(Triggers.FlagChanged);
         this.#brain.registry.trigger(Triggers.FlagDeactivated);
         this.#brain.registry.trigger(Triggers.ModeActivated);
+        this.#brain.registry.trigger(Triggers.ModeChanged);
         this.#brain.registry.trigger(Triggers.ModeDeactivated);
         this.#brain.registry.trigger(Triggers.SignalReceive);
         this.#brain.registry.trigger(Triggers.TimerFinished);

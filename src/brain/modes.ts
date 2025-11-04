@@ -36,6 +36,7 @@ export default class {
         this.currentMode = mode;
 
         await this.#triggerActivated(mode);
+        await this.#triggerChanged(mode, true);
         await this.triggerRealtimeUpdate();
     }
 
@@ -49,6 +50,7 @@ export default class {
         this.currentMode = null;
 
         await this.#triggerDeactivated(mode);
+        await this.#triggerChanged(mode, false);
         await this.triggerRealtimeUpdate();
     }
 
@@ -72,6 +74,12 @@ export default class {
         await this.#brain.homey.notifications.createNotification({
             excerpt: this.#brain.homey.__('notification.mode_activated', {name})
         });
+    }
+
+    async #triggerChanged(name: string, active: boolean): Promise<void> {
+        this.registry
+            .findTrigger(Triggers.ModeChanged)
+            ?.trigger({name}, {active});
     }
 
     async #triggerDeactivated(name: string): Promise<void> {

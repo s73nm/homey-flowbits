@@ -32,6 +32,7 @@ export default class {
         this.currentFlags = [...current, flag];
 
         await this.#triggerActivated(flag);
+        await this.#triggerChanged(flag, true);
         await this.triggerRealtimeUpdate();
     }
 
@@ -45,6 +46,7 @@ export default class {
         this.currentFlags = current.filter(f => f !== flag);
 
         await this.#triggerDeactivated(flag);
+        await this.#triggerChanged(flag, false);
         await this.triggerRealtimeUpdate();
     }
 
@@ -64,6 +66,12 @@ export default class {
         this.registry
             .findTrigger(Triggers.FlagActivated)
             ?.trigger({name});
+    }
+
+    async #triggerChanged(name: string, active: boolean): Promise<void> {
+        this.registry
+            .findTrigger(Triggers.FlagChanged)
+            ?.trigger({name}, {active});
     }
 
     async #triggerDeactivated(name: string): Promise<void> {

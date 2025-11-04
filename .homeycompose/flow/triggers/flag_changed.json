@@ -1,0 +1,35 @@
+{
+    "id": "flag_changed",
+    "title": {
+        "en": "Flag changed",
+        "nl": "Flag gewijzigd"
+    },
+    "titleFormatted": {
+        "en": "Flag [[flag]] changed",
+        "nl": "Flag [[flag]] gewijzigd"
+    },
+    "hint": {
+        "en": "Triggers when a flag is activated or deactivated.",
+        "nl": "Triggert wanneer een flag wordt geactiveerd of gedeactiveerd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "flag",
+            "title": {
+                "en": "Flag",
+                "nl": "Flag"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "name": "active",
+            "type": "boolean",
+            "title": {
+                "en": "Active",
+                "nl": "Actief"
+            }
+        }
+    ]
+}
