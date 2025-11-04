@@ -31,6 +31,7 @@ export default class extends BaseAutocompleteProvider {
                 await this.getActionCard('flag_deactivate').getArgumentValues(),
                 await this.getConditionCard('flag_is').getArgumentValues(),
                 await this.getTriggerCard('flag_activated').getArgumentValues(),
+                await this.getTriggerCard('flag_changed').getArgumentValues(),
                 await this.getTriggerCard('flag_deactivated').getArgumentValues()
             ])
             .then(allValues => allValues

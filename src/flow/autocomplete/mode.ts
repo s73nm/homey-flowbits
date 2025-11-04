@@ -31,6 +31,7 @@ export default class extends BaseAutocompleteProvider {
                 await this.getActionCard('mode_deactivate').getArgumentValues(),
                 await this.getConditionCard('mode_is').getArgumentValues(),
                 await this.getTriggerCard('mode_activated').getArgumentValues(),
+                await this.getTriggerCard('mode_changed').getArgumentValues(),
                 await this.getTriggerCard('mode_deactivated').getArgumentValues()
             ])
             .then(allValues => allValues
