@@ -41,7 +41,7 @@ export default class {
         const action = this.#brain.homey.flow.getActionCard(id);
         action.registerRunListener(onRun);
 
-        this.#brain.homey.log(`Flow card actionFunction#${id} has been registered.`)
+        this.#brain.homey.log(`Flow card actionFunction#${id} has been registered.`);
     }
 
     autocompleteProvider<T extends BaseAutocompleteProvider>(autocompleteProvider: AutocompleteProvider<T>): void {

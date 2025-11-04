@@ -23,7 +23,7 @@ export default class extends BaseCondition<Args, never> {
         const yearSet = schoolHolidays.find(s => s.schoolyear === `${startYear}-${endYear}`);
 
         if (!yearSet) {
-            throw new Error('Cannot find holidays for the current school year.')
+            throw new Error('Cannot find holidays for the current school year.');
         }
 
         const vacations = yearSet.vacations.filter(v => v.type === args.holiday.name);

@@ -6,7 +6,7 @@ export default function (text: string): string {
         .trim()
         .replace(/\s+/g, '-')
         .replace(/[^\w\-]+/g, '')
-        .replace(/_/g,'-')
+        .replace(/_/g, '-')
         .replace(/--+/g, '-')
         .replace(/-$/g, '');
 }
