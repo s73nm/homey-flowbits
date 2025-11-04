@@ -55,5 +55,8 @@
   },
   "1.1.0": {
     "en": "This update adds two new trigger cards: 'Flag updated' and 'Mode updated'."
+  },
+  "1.2.0": {
+    "en": "This update adds a new flag on/off widget for your dashboards."
   }
 }
