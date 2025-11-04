@@ -19,6 +19,10 @@ export default class {
         this.#brain = brain;
     }
 
+    async initialize(): Promise<void> {
+        await this.initializeFlagOnOff();
+    }
+
     async getFlags(): Promise<Flag[]> {
         const autocompleteProvider = this.#brain.registry.findAutocompleteProvider(AutocompleteProviders.Flag);
 
@@ -91,6 +95,18 @@ export default class {
         }
 
         return true;
+    }
+
+    async initializeFlagOnOff(): Promise<void> {
+        const widget = this.#brain.homey.dashboards.getWidget('flag_onoff');
+
+        widget.registerSettingAutocompleteListener('flag', async (query, settings) => {
+            const flags = await this.getFlags();
+
+            return flags.map(flag => ({
+                name: flag.name
+            }));
+        });
     }
 }
 

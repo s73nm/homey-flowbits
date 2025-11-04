@@ -33,6 +33,7 @@ export default class Index extends Homey.App {
 
             await this.#brain.timers.initialize();
             await this.#brain.tokens.initialize();
+            await this.#brain.widgets.initialize();
 
             this.log('FlowBits has been initialized!');
         } catch (err) {

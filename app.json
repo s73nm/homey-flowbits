@@ -1990,6 +1990,35 @@
     ]
   },
   "widgets": {
+    "flag_onoff": {
+      "name": {
+        "en": "Flag on/off",
+        "nl": "Flag aan/uit"
+      },
+      "height": 120,
+      "transparent": true,
+      "settings": [
+        {
+          "id": "flag",
+          "type": "autocomplete",
+          "title": {
+            "en": "Flag",
+            "nl": "Flag"
+          }
+        }
+      ],
+      "api": {
+        "state": {
+          "method": "GET",
+          "path": "/"
+        },
+        "toggle": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "flag_onoff"
+    },
     "flags": {
       "name": {
         "en": "Flags",
