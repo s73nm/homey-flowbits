@@ -61,5 +61,8 @@
   },
   "1.2.1": {
     "en": "Reworked some internal logic."
+  },
+  "1.2.2": {
+    "en": "Fixed a bug where the timer remaining flow card could fire multiple times. This only was the case when multiple remaining timer cards were used with the same time, for a single timer."
   }
 }
