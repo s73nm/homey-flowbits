@@ -212,7 +212,9 @@ export default class extends BrainAware {
             await this.#clear(timer.id);
 
             const diff = Math.floor(timer.target - now);
-            const triggers = remainingTriggers.filter(t => t.timer.name === timer.name);
+            const triggers = remainingTriggers
+                .filter(t => t.timer.name === timer.name)
+                .filter((t, index, arr) => arr.findIndex(tt => tt.duration === t.duration && tt.unit === t.unit) === index);
 
             if (diff > 0 && timer.status === 'running') {
                 this.log(`Timer ${timer.name} is scheduled to finish in ${diff} seconds.`);
