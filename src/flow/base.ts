@@ -3,10 +3,6 @@ import type { FlowCard, FlowCardAction, FlowCardCondition, FlowCardTrigger } fro
 import type { AutocompleteProvider, Brain, Cycles, Flags, Modes, Registry, Timers } from '../brain';
 
 export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState = unknown, TResult = unknown> {
-    get log() {
-        return this.#brain.homey.__;
-    }
-
     get language(): string {
         return this.#brain.homey.i18n.getLanguage();
     }
@@ -63,6 +59,10 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
     abstract onRun(args: TArgs, state: TState): Promise<TResult>;
 
     async onUpdate(): Promise<void> {
+    }
+
+    log(...args: any[]): void {
+        this.#brain.homey.log(...args);
     }
 
     registerAutocomplete<T extends BaseAutocompleteProvider>(name: string, autocompleteProvider: AutocompleteProvider<T>): void {
