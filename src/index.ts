@@ -37,8 +37,7 @@ export default class FlowBitsApp extends Homey.App {
 
             this.log('FlowBits has been initialized!');
         } catch (err) {
-            console.error(err);
-            this.error('Failed to initialize FlowBits.');
+            this.error('Failed initializing FlowBits.', err);
         }
     }
 

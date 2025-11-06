@@ -1,25 +1,14 @@
-import type Brain from './brain';
-import type Registry from './registry';
+import BrainAware from './aware';
 
 import * as Triggers from '../flow/trigger';
 
-export default class {
+export default class extends BrainAware {
     get currentMode(): string | null {
-        return this.#brain.homey.settings.get('flowbits-mode');
+        return this.settings.get('flowbits-mode');
     }
 
     set currentMode(value: string | null) {
-        this.#brain.homey.settings.set('flowbits-mode', value);
-    }
-
-    get registry(): Registry {
-        return this.#brain.registry;
-    }
-
-    readonly #brain: Brain;
-
-    constructor(brain: Brain) {
-        this.#brain = brain;
+        this.settings.set('flowbits-mode', value);
     }
 
     async activate(mode: string): Promise<void> {
@@ -63,7 +52,7 @@ export default class {
     }
 
     async triggerRealtimeUpdate(): Promise<void> {
-        this.#brain.homey.api.realtime('flowbits-mode-update', null);
+        this.realtime('flowbits-mode-update');
     }
 
     async #triggerActivated(name: string): Promise<void> {
@@ -71,9 +60,7 @@ export default class {
             .findTrigger(Triggers.ModeActivated)
             ?.trigger({name});
 
-        await this.#brain.homey.notifications.createNotification({
-            excerpt: this.#brain.homey.__('notification.mode_activated', {name})
-        });
+        await this.notify(this.translate('notification.mode_activated', {name}));
     }
 
     async #triggerChanged(name: string, active: boolean): Promise<void> {
@@ -87,8 +74,6 @@ export default class {
             .findTrigger(Triggers.ModeDeactivated)
             ?.trigger({name});
 
-        await this.#brain.homey.notifications.createNotification({
-            excerpt: this.#brain.homey.__('notification.mode_deactivated', {name})
-        });
+        await this.notify(this.translate('notification.mode_deactivated', {name}));
     }
 }

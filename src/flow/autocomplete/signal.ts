@@ -19,7 +19,7 @@ export default class extends BaseAutocompleteProvider {
         if (hasQuery && !this.#values.some(name => query === name)) {
             results.unshift({
                 name: query,
-                description: this.homey.__('autocomplete.signal_new')
+                description: this.translate('autocomplete.signal_new')
             });
         }
 

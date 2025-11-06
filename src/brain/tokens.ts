@@ -1,6 +1,6 @@
 import type { FlowToken } from 'homey';
 import { DateTime } from 'luxon';
-import type Brain from './brain';
+import BrainAware from './aware';
 import type { Trigger } from './registry';
 
 import * as Triggers from '../flow/trigger';
@@ -23,44 +23,35 @@ const TRIGGERS: Record<string, Trigger<any>[]> = {
     ]
 };
 
-export default class {
-    readonly #brain: Brain;
-    readonly #tokens: Record<string, Token>;
-    readonly #values: Record<string, string | boolean | number>;
-
-    #state!: State;
-
-    constructor(brain: Brain) {
-        this.#brain = brain;
-        this.#tokens = {};
-        this.#values = {};
-    }
+export default class extends BrainAware {
+    readonly #tokens: Record<string, Token> = {};
+    readonly #values: Record<string, string | boolean | number> = {};
 
     async initialize(): Promise<void> {
         const {getDayPeriod, getMoonPhase, getZodiacSign} = await import('@basmilius/utils');
 
-        this.#state = await this.state();
+        const state = await this.#state();
 
-        await this.create('day_period', 'string', ({now}) => getDayPeriod(now), value => this.#t(`day_period.${value}`));
-        await this.create('moon_phase', 'string', ({now}) => getMoonPhase(now), value => this.#t(`moon_phase.${value}`));
-        await this.create('zodiac_sign', 'string', ({now}) => getZodiacSign(now), value => this.#t(`zodiac_sign.${value}`));
+        await this.#create('day_period', 'string', state, ({now}) => getDayPeriod(now), value => this.translate(`day_period.${value}`));
+        await this.#create('moon_phase', 'string', state, ({now}) => getMoonPhase(now), value => this.translate(`moon_phase.${value}`));
+        await this.#create('zodiac_sign', 'string', state, ({now}) => getZodiacSign(now), value => this.translate(`zodiac_sign.${value}`));
 
-        this.#brain.homey.setInterval(async () => await this.#brain.tokens.update(), 15 * 1000);
+        this.setInterval(async () => await this.#update(), 15 * 1000);
     }
 
-    async create<T extends string | boolean | number>(id: string, type: string, provider: Provider<T>, translator?: Translator<T>): Promise<void> {
-        const value = provider(this.#state);
+    async #create<T extends string | boolean | number>(id: string, type: string, state: State, provider: Provider<T>, translator?: Translator<T>): Promise<void> {
+        const value = provider(state);
         this.#values[id] = value;
 
-        const token = await this.#brain.homey.flow.createToken(id, {
-            title: this.#brain.homey.__(`token.${id}`),
+        const token = await this.homey.flow.createToken(id, {
+            title: this.translate(`token.${id}`),
             type,
             value
         });
 
         if (translator) {
-            const translated = await this.#brain.homey.flow.createToken(`${id}_translated`, {
-                title: this.#brain.homey.__(`token.${id}_translated`),
+            const translated = await this.homey.flow.createToken(`${id}_translated`, {
+                title: this.translate(`token.${id}_translated`),
                 type: 'string',
                 value: translator(value)?.toString() ?? ''
             });
@@ -71,17 +62,17 @@ export default class {
         }
     }
 
-    async state(): Promise<State> {
+    async #state(): Promise<State> {
         return {
             now: DateTime.now()
         };
     }
 
-    async update(): Promise<void> {
-        this.#state = await this.state();
+    async #update(): Promise<void> {
+        const state = await this.#state();
 
         for (const [id, [token, provider, translated, translator]] of Object.entries(this.#tokens)) {
-            const value = provider(this.#state);
+            const value = provider(state);
             const previousValue = this.#values[id];
 
             if (value === previousValue) {
@@ -92,7 +83,7 @@ export default class {
                 const triggers = TRIGGERS[id];
 
                 for (const trigger of triggers) {
-                    this.#brain.registry
+                    this.registry
                         .findTrigger(trigger)
                         ?.trigger({
                             value,
@@ -107,10 +98,6 @@ export default class {
             translated && translator && await translated.setValue(translator(value)?.toString() ?? '');
         }
 
-        this.#brain.homey.log('Global tokens updated.');
-    }
-
-    #t(key: string | Object, tags?: Object | undefined): string {
-        return this.#brain.homey.__(key, tags);
+        this.log('Global tokens updated.');
     }
 }

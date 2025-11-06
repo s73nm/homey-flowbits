@@ -1,30 +1,14 @@
-import type Brain from './brain';
-import type Flags from './flags';
-import type Modes from './modes';
+import BrainAware from './aware';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 
-export default class {
-    get flags(): Flags {
-        return this.#brain.flags;
-    }
-
-    get modes(): Modes {
-        return this.#brain.modes;
-    }
-
-    readonly #brain: Brain;
-
-    constructor(brain: Brain) {
-        this.#brain = brain;
-    }
-
+export default class extends BrainAware {
     async initialize(): Promise<void> {
         await this.initializeFlagOnOff();
     }
 
     async getFlags(): Promise<Flag[]> {
-        const autocompleteProvider = this.#brain.registry.findAutocompleteProvider(AutocompleteProviders.Flag);
+        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Flag);
 
         if (!autocompleteProvider) {
             throw new Error('Failed to get the flag autocomplete provider.');
@@ -61,7 +45,7 @@ export default class {
     }
 
     async getModes(): Promise<Mode[]> {
-        const autocompleteProvider = this.#brain.registry.findAutocompleteProvider(AutocompleteProviders.Mode);
+        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Mode);
 
         if (!autocompleteProvider) {
             throw new Error('Failed to get the mode autocomplete provider.');
@@ -98,9 +82,11 @@ export default class {
     }
 
     async initializeFlagOnOff(): Promise<void> {
-        const widget = this.#brain.homey.dashboards.getWidget('flag_onoff');
+        const widget = this.dashboards.getWidget('flag_onoff');
 
         widget.registerSettingAutocompleteListener('flag', async (query, settings) => {
+            console.log({query, settings});
+
             const flags = await this.getFlags();
 
             return flags.map(flag => ({

@@ -1,34 +1,10 @@
-import type Homey from 'homey/lib/Homey';
 import type { FlowCard, FlowCardAction, FlowCardCondition, FlowCardTrigger } from 'homey';
-import type { AutocompleteProvider, Brain, Cycles, Flags, Modes, Registry, Timers } from '../brain';
+import type { AutocompleteProvider, Brain } from '../brain';
+import BrainAware from '../brain/aware';
 
-export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState = unknown, TResult = unknown> {
-    get language(): string {
-        return this.#brain.homey.i18n.getLanguage();
-    }
-
+export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState = unknown, TResult = unknown> extends BrainAware {
     get card(): T {
         return this.#card;
-    }
-
-    get cycles(): Cycles {
-        return this.#brain.cycles;
-    }
-
-    get flags(): Flags {
-        return this.#brain.flags;
-    }
-
-    get modes(): Modes {
-        return this.#brain.modes;
-    }
-
-    get registry(): Registry {
-        return this.#brain.registry;
-    }
-
-    get timers(): Timers {
-        return this.#brain.timers;
     }
 
     get id(): string {
@@ -39,13 +15,12 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
         return this.#card.type;
     }
 
-    readonly #brain: Brain;
     readonly #card: T;
 
     constructor(brain: Brain) {
-        this.#brain = brain;
-        this.#card = this.#getCard();
+        super(brain);
 
+        this.#card = this.#getCard();
         this.onInit().then().catch(console.error.bind(console));
     }
 
@@ -61,10 +36,6 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
     async onUpdate(): Promise<void> {
     }
 
-    log(...args: any[]): void {
-        this.#brain.homey.log(...args);
-    }
-
     registerAutocomplete<T extends BaseAutocompleteProvider>(name: string, autocompleteProvider: AutocompleteProvider<T>): void {
         const provider = this.registry.findAutocompleteProvider(autocompleteProvider);
 
@@ -77,15 +48,15 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
 
     #getCard(): T {
         if (this instanceof BaseAction) {
-            return this.#brain.homey.flow.getActionCard((this as any).actionId) as unknown as T;
+            return this.homey.flow.getActionCard((this as any).actionId) as unknown as T;
         }
 
         if (this instanceof BaseCondition) {
-            return this.#brain.homey.flow.getConditionCard((this as any).conditionId) as unknown as T;
+            return this.homey.flow.getConditionCard((this as any).conditionId) as unknown as T;
         }
 
         if (this instanceof BaseTrigger) {
-            return this.#brain.homey.flow.getTriggerCard((this as any).triggerId) as unknown as T;
+            return this.homey.flow.getTriggerCard((this as any).triggerId) as unknown as T;
         }
 
         throw new Error(`Flow card type ${this.constructor.name} not found.`);
@@ -104,27 +75,17 @@ export abstract class BaseTrigger<TArgs = unknown, TState = unknown> extends Bas
     }
 }
 
-export abstract class BaseAutocompleteProvider {
+export abstract class BaseAutocompleteProvider extends BrainAware {
     get getActionCard() {
-        return this.#brain.homey.flow.getActionCard.bind(this.#brain.homey.flow);
+        return this.homey.flow.getActionCard.bind(this.homey.flow);
     }
 
     get getConditionCard() {
-        return this.#brain.homey.flow.getConditionCard.bind(this.#brain.homey.flow);
+        return this.homey.flow.getConditionCard.bind(this.homey.flow);
     }
 
     get getTriggerCard() {
-        return this.#brain.homey.flow.getTriggerCard.bind(this.#brain.homey.flow);
-    }
-
-    get homey(): Homey {
-        return this.#brain.homey;
-    }
-
-    readonly #brain: Brain;
-
-    constructor(brain: Brain) {
-        this.#brain = brain;
+        return this.homey.flow.getTriggerCard.bind(this.homey.flow);
     }
 
     abstract find(query: string, args: Record<string, unknown>): Promise<FlowCard.ArgumentAutocompleteResults>;
@@ -132,7 +93,7 @@ export abstract class BaseAutocompleteProvider {
     abstract update(): Promise<void>
 
     async onInit(): Promise<void> {
-        this.#brain.homey.log(`onInit() -> Autocomplete provider ${(this as any).autocompleteId} has been registered.`);
+        this.homey.log(`onInit() -> Autocomplete provider ${(this as any).autocompleteId} has been registered.`);
         await this.update();
     }
 }

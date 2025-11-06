@@ -1,20 +1,9 @@
 import { slugify } from '../util';
-import type Brain from './brain';
-import type Registry from './registry';
+import BrainAware from './aware';
 
 import * as Triggers from '../flow/trigger';
 
-export default class {
-    get registry(): Registry {
-        return this.#brain.registry;
-    }
-
-    readonly #brain: Brain;
-
-    constructor(brain: Brain) {
-        this.#brain = brain;
-    }
-
+export default class extends BrainAware {
     async cycle(name: string, minValue: number, maxValue: number): Promise<void> {
         let value = this.#get(name);
 
@@ -48,11 +37,11 @@ export default class {
     }
 
     #get(name: string): number | null {
-        return this.#brain.homey.settings.get(this.#id(name));
+        return this.settings.get(this.#id(name));
     }
 
     #set(name: string, value: number): void {
-        this.#brain.homey.settings.set(this.#id(name), value);
+        this.settings.set(this.#id(name), value);
     }
 
     async #triggerCycleBecomes(name: string, value: number): Promise<void> {

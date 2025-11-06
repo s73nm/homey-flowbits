@@ -1,40 +1,14 @@
 import { DateTime } from 'luxon';
 import type { ClockState, ClockUnit } from '../types';
 import { slugify } from '../util';
-import type Brain from './brain';
-import type Registry from './registry';
+import BrainAware from './aware';
 
-import * as AutocompleteProvider from '../flow/autocomplete';
+import * as AutocompleteProviders from '../flow/autocomplete';
 import * as Triggers from '../flow/trigger';
 
-export default class {
-    get clearTimeout() {
-        return this.#brain.homey.clearTimeout.bind(this.#brain.homey);
-    }
-
-    get log() {
-        return this.#brain.homey.log;
-    }
-
-    get registry(): Registry {
-        return this.#brain.registry;
-    }
-
-    get setTimeout() {
-        return this.#brain.homey.setTimeout.bind(this.#brain.homey);
-    }
-
-    get settings() {
-        return this.#brain.homey.settings;
-    }
-
-    readonly #brain: Brain;
+export default class extends BrainAware {
     #timeouts: Record<string, NodeJS.Timeout[]> = {};
     #timers: Record<string, Timer> = {};
-
-    constructor(brain: Brain) {
-        this.#brain = brain;
-    }
 
     async initialize(): Promise<void> {
         await this.#schedule();
@@ -177,7 +151,7 @@ export default class {
     }
 
     async #findAll(): Promise<Timer[]> {
-        const autocompleteProvider = this.#brain.registry.findAutocompleteProvider(AutocompleteProvider.Timer);
+        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Timer);
 
         if (!autocompleteProvider) {
             throw new Error('Failed to get autocomplete provider.');
@@ -230,7 +204,7 @@ export default class {
     async #schedule(): Promise<void> {
         const now = DateTime.now().toSeconds();
         const timers = await this.#findAll();
-        const remainingTriggers: { timer: { name: string }, duration: number, unit: ClockUnit }[] = await this.#brain.homey.flow.getTriggerCard('timer_remaining').getArgumentValues();
+        const remainingTriggers: { timer: { name: string }, duration: number, unit: ClockUnit }[] = await this.homey.flow.getTriggerCard('timer_remaining').getArgumentValues();
 
         this.#timers = {};
 

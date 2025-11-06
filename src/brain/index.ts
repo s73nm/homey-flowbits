@@ -9,3 +9,4 @@ export type { default as Tokens } from './tokens';
 export type { default as Widgets } from './widgets';
 
 export { default as Brain } from './brain';
+export { default as BrainAware } from './aware';

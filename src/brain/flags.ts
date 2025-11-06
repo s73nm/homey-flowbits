@@ -1,25 +1,14 @@
-import type Brain from './brain';
-import type Registry from './registry';
+import BrainAware from './aware';
 
 import * as Triggers from '../flow/trigger';
 
-export default class {
+export default class extends BrainAware {
     get currentFlags(): string[] {
-        return this.#brain.homey.settings.get('flowbits-flags') ?? [];
+        return this.settings.get('flowbits-flags') ?? [];
     }
 
     set currentFlags(value: string[]) {
-        this.#brain.homey.settings.set('flowbits-flags', value);
-    }
-
-    get registry(): Registry {
-        return this.#brain.registry;
-    }
-
-    readonly #brain: Brain;
-
-    constructor(brain: Brain) {
-        this.#brain = brain;
+        this.settings.set('flowbits-flags', value);
     }
 
     async activate(flag: string): Promise<void> {
@@ -59,7 +48,7 @@ export default class {
     }
 
     async triggerRealtimeUpdate(): Promise<void> {
-        this.#brain.homey.api.realtime('flowbits-flags-update', null);
+        this.realtime('flowbits-flags-update');
     }
 
     async #triggerActivated(name: string): Promise<void> {
