@@ -1,6 +1,8 @@
 import type { FlowCard } from 'homey';
 import { BaseAutocompleteProvider } from '../base';
+import { autocomplete } from '../decorator';
 
+@autocomplete('signal')
 export default class extends BaseAutocompleteProvider {
     #values: string[] = [];
 

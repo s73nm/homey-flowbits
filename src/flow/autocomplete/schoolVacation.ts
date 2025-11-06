@@ -1,8 +1,10 @@
 import type { FlowCard } from 'homey';
 import { BaseAutocompleteProvider } from '../base';
+import { autocomplete } from '../decorator';
 
 import schoolHolidays from '../../data/schoolHolidays';
 
+@autocomplete('schoolVacation')
 export default class extends BaseAutocompleteProvider {
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
         const hasQuery = query.trim().length > 0;

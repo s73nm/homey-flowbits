@@ -7,7 +7,7 @@ import * as AutocompleteProviders from './flow/autocomplete';
 import * as Conditions from './flow/condition';
 import * as Triggers from './flow/trigger';
 
-export default class Index extends Homey.App {
+export default class FlowBitsApp extends Homey.App {
     get widgets(): Widgets {
         return this.#brain.widgets;
     }

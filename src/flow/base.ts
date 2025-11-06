@@ -88,7 +88,7 @@ export abstract class BaseFlowEntity<T extends FlowCard, TArgs = unknown, TState
             return this.#brain.homey.flow.getTriggerCard((this as any).triggerId) as unknown as T;
         }
 
-        throw new Error('Cannot find the card type.');
+        throw new Error(`Flow card type ${this.constructor.name} not found.`);
     }
 }
 
@@ -132,7 +132,7 @@ export abstract class BaseAutocompleteProvider {
     abstract update(): Promise<void>
 
     async onInit(): Promise<void> {
-        this.#brain.homey.log(`onInit() -> Autocomplete provider ${this.constructor.name} has been registered.`);
+        this.#brain.homey.log(`onInit() -> Autocomplete provider ${(this as any).autocompleteId} has been registered.`);
         await this.update();
     }
 }

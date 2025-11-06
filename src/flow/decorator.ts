@@ -6,9 +6,15 @@ export function action(id: string) {
             get actionId(): string {
                 return id;
             }
+        };
+    };
+}
 
-            constructor(...args: any[]) {
-                super(...args);
+export function autocomplete(id: string) {
+    return <T extends Constructor>(AutocompleteClass: T): T => {
+        return class extends AutocompleteClass {
+            get autocompleteId(): string {
+                return id;
             }
         };
     };
@@ -20,10 +26,6 @@ export function condition(id: string) {
             get conditionId(): string {
                 return id;
             }
-
-            constructor(...args: any[]) {
-                super(...args);
-            }
         };
     };
 }
@@ -33,10 +35,6 @@ export function trigger(id: string) {
         return class extends TriggerClass {
             get triggerId(): string {
                 return id;
-            }
-
-            constructor(...args: any[]) {
-                super(...args);
             }
         };
     };
