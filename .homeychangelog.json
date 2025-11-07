@@ -64,5 +64,8 @@
   },
   "1.2.2": {
     "en": "Fixed a bug where the timer remaining flow card could fire multiple times. This only was the case when multiple remaining timer cards were used with the same time, for a single timer."
+  },
+  "1.3.0": {
+    "en": "This update introduces a no-repeat flow card and adds translations for all supported languages."
   }
 }
