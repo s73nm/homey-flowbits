@@ -64,6 +64,8 @@ export default class FlowBitsApp extends Homey.App {
     async #registerActionFunctions(): Promise<void> {
         const {roundStep} = await import('@basmilius/utils');
 
+        this.#brain.registry.actionFunction('z_math_decrement', args => ({result: args.value - args.step}));
+        this.#brain.registry.actionFunction('z_math_increment', args => ({result: args.value + args.step}));
         this.#brain.registry.actionFunction('z_math_make_negative', args => ({result: args.value < 0 ? args.value : -args.value}));
         this.#brain.registry.actionFunction('z_math_make_positive', args => ({result: Math.abs(args.value)}));
         this.#brain.registry.actionFunction('z_math_round', args => ({result: Math.round(args.value)}));

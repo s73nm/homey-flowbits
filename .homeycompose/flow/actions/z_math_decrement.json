@@ -1,0 +1,119 @@
+{
+    "id": "z_math_decrement",
+    "title": {
+        "en": "Decrement",
+        "nl": "Verlaag",
+        "de": "Verringern",
+        "fr": "Décrémenter",
+        "it": "Decrementa",
+        "sv": "Minska",
+        "no": "Reduser",
+        "es": "Decrementar",
+        "da": "Formindsk",
+        "ru": "Уменьшить",
+        "pl": "Zmniejsz",
+        "ko": "감소"
+    },
+    "titleFormatted": {
+        "en": "Decrement [[value]] by [[step]]",
+        "nl": "Verlaag [[value]] met [[step]]",
+        "de": "Verringere [[value]] um [[step]]",
+        "fr": "Décrémenter [[value]] de [[step]]",
+        "it": "Decrementa [[value]] di [[step]]",
+        "sv": "Minska [[value]] med [[step]]",
+        "no": "Reduser [[value]] med [[step]]",
+        "es": "Decrementar [[value]] en [[step]]",
+        "da": "Formindsk [[value]] med [[step]]",
+        "ru": "Уменьшить [[value]] на [[step]]",
+        "pl": "Zmniejsz [[value]] o [[step]]",
+        "ko": "[[value]]를 [[step]]만큼 감소"
+    },
+    "args": [
+        {
+            "type": "number",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
+            },
+            "placeholder": {
+                "en": "E.g. 13",
+                "nl": "Bijv. 13",
+                "de": "Z. B. 13",
+                "fr": "P. ex. 13",
+                "it": "Es. 13",
+                "sv": "T.ex. 13",
+                "no": "F.eks. 13",
+                "es": "P. ej. 13",
+                "da": "F.eks. 13",
+                "ru": "Напр. 13",
+                "pl": "Np. 13",
+                "ko": "예: 13"
+            }
+        },
+        {
+            "type": "number",
+            "name": "step",
+            "min": 0.01,
+            "step": 0.01,
+            "title": {
+                "en": "Step",
+                "nl": "Stap",
+                "de": "Schritt",
+                "fr": "Pas",
+                "it": "Passo",
+                "sv": "Steg",
+                "no": "Trinn",
+                "es": "Paso",
+                "da": "Trin",
+                "ru": "Шаг",
+                "pl": "Krok",
+                "ko": "단계"
+            },
+            "placeholder": {
+                "en": "E.g. 1",
+                "nl": "Bijv. 1",
+                "de": "Z. B. 1",
+                "fr": "P. ex. 1",
+                "it": "Es. 1",
+                "sv": "T.ex. 1",
+                "no": "F.eks. 1",
+                "es": "P. ej. 1",
+                "da": "F.eks. 1",
+                "ru": "Напр. 1",
+                "pl": "Np. 1",
+                "ko": "예: 1"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "type": "number",
+            "name": "result",
+            "title": {
+                "en": "Result",
+                "nl": "Resultaat",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
+            }
+        }
+    ]
+}

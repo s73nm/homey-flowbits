@@ -1,7 +1,17 @@
 {
     "name": {
         "en": "Flags",
-        "nl": "Flags"
+        "nl": "Flags",
+        "de": "Flags",
+        "fr": "Drapeaux",
+        "it": "Flag",
+        "sv": "Flaggor",
+        "no": "Flagg",
+        "es": "Banderas",
+        "da": "Flag",
+        "ru": "Флаги",
+        "pl": "Flagi",
+        "ko": "플래그"
     },
     "height": 120,
     "transparent": true,

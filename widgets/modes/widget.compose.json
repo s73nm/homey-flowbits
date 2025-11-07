@@ -1,7 +1,17 @@
 {
     "name": {
         "en": "Modes",
-        "nl": "Standen"
+        "nl": "Standen",
+        "de": "Modi",
+        "fr": "Modes",
+        "it": "Modalità",
+        "sv": "Lägen",
+        "no": "Moduser",
+        "es": "Modos",
+        "da": "Tilstande",
+        "ru": "Режимы",
+        "pl": "Tryby",
+        "ko": "모드"
     },
     "height": 120,
     "transparent": true,

@@ -47,18 +47,18 @@
             "type": "autocomplete",
             "name": "name",
             "title": {
-                "en": "Name",
-                "nl": "Naam",
-                "de": "Name",
-                "fr": "Nom",
-                "it": "Nome",
-                "sv": "Namn",
-                "no": "Navn",
-                "es": "Nombre",
-                "da": "Navn",
-                "ru": "Название",
-                "pl": "Nazwa",
-                "ko": "이름"
+                "en": "Mode",
+                "nl": "Stand",
+                "de": "Modus",
+                "fr": "Mode",
+                "it": "Modalità",
+                "sv": "Läge",
+                "no": "Modus",
+                "es": "Modo",
+                "da": "Tilstand",
+                "ru": "Режим",
+                "pl": "Tryb",
+                "ko": "모드"
             }
         }
     ]
