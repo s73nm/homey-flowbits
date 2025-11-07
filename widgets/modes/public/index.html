@@ -9,14 +9,35 @@
             user-select: none;
         }
 
-        .grid {
+        .grid,
+        .list {
             display: grid;
-            gap: var(--homey-su-3);
+            gap: 1px;
             grid-auto-rows: 1fr;
-            grid-template-columns: 1fr 1fr;
+            background: var(--homey-color-mono-025);
         }
 
-        .grid-item {
+        .grid {
+            grid-template-columns: 1fr 1fr;
+
+            &:has(> .item:last-child:nth-child(odd)) {
+                &::after {
+                    display: flex;
+                    content: '';
+                    background: var(--homey-background-color);
+                }
+            }
+        }
+
+        .list {
+            grid-template-columns: 1fr;
+        }
+
+        .homey-dark-mode .grid {
+            background: var(--homey-color-mono-100);
+        }
+
+        .item {
             display: flex;
             align-items: center;
             flex-flow: row;
@@ -24,22 +45,22 @@
             gap: var(--homey-su-3);
             background: var(--homey-background-color);
             border: 0;
-            border-radius: var(--homey-border-radius-default);
             line-height: 1;
             outline: 0;
             overflow: hidden;
             text-align: left;
             transition: 150ms cubic-bezier(0.55, 0, 0.1, 1);
-            transition-property: background, scale;
+            transition-property: background, border-radius, scale;
             will-change: transform;
         }
 
-        .grid-item:active {
+        .item:active {
             background: rgb(from var(--homey-background-color) r g b / .5);
+            border-radius: var(--homey-border-radius-default);
             scale: 0.975;
         }
 
-        .grid-item-caption {
+        .item-caption {
             display: flex;
             align-items: stretch;
             flex-flow: column;
@@ -48,13 +69,13 @@
             overflow: hidden;
         }
 
-        .grid-item-caption .homey-text-medium {
+        .item-caption .homey-text-medium {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
 
-        .grid-item-icon {
+        .item-icon {
             --color: #64748b;
             --icon: url(shapes.svg);
 
@@ -89,7 +110,7 @@
 
 <body class="homey-widget-full">
 
-<div class="grid" id="mode-grid"></div>
+<div id="modes"></div>
 
 <script type="text/javascript">
     function onHomeyReady(Homey) {
@@ -123,19 +144,19 @@
 
             for (const result of results) {
                 const button = document.createElement('button');
-                button.className = 'homey-widget grid-item';
+                button.className = 'homey-widget item';
                 button.onclick = () => onClickMode(result);
 
                 if (settings.show_icons && result.icon) {
                     const icon = document.createElement('div');
-                    icon.className = 'grid-item-icon';
+                    icon.className = 'item-icon';
                     icon.style.setProperty('--color', result.icon.color);
                     icon.style.setProperty('--icon', `url(${result.icon.url})`);
                     button.appendChild(icon);
                 }
 
                 const caption = document.createElement('div');
-                caption.className = 'grid-item-caption';
+                caption.className = 'item-caption';
                 button.appendChild(caption);
 
                 const name = document.createElement('p');
@@ -152,11 +173,18 @@
                 elements.push(button);
             }
 
-            const grid = document.getElementById('mode-grid');
-            grid.innerHTML = '';
-            elements.forEach(element => grid.appendChild(element));
+            const modes = document.getElementById('modes');
 
-            const height = grid.getBoundingClientRect().height;
+            if (settings.view_mode === 'grid') {
+                modes.className = 'grid';
+            } else {
+                modes.className = 'list';
+            }
+
+            modes.innerHTML = '';
+            elements.forEach(element => modes.appendChild(element));
+
+            const height = modes.getBoundingClientRect().height;
 
             if (ready) {
                 await Homey.setHeight(height);
