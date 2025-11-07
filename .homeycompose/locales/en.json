@@ -24,5 +24,11 @@
         "evening": "Evening",
         "morning": "Morning",
         "night": "Night"
+    },
+    "widget": {
+        "current_mode": {
+            "label": "Current mode",
+            "suffix": "mode"
+        }
     }
 }

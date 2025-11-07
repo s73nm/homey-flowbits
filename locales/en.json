@@ -33,5 +33,11 @@
     "moon_phase_translated": "Moon phase",
     "zodiac_sign": "Zodiac sign (raw)",
     "zodiac_sign_translated": "Zodiac sign"
+  },
+  "widget": {
+    "current_mode": {
+      "label": "Current mode",
+      "suffix": "mode"
+    }
   }
 }

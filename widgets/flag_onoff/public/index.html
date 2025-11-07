@@ -110,6 +110,8 @@
 
                 loading = true;
 
+                Homey.hapticFeedback();
+
                 if (power.classList.contains('on')) {
                     power.classList.remove('on');
                 } else {

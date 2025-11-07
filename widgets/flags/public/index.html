@@ -74,6 +74,7 @@
         }
 
         async function onClickFlag(flag) {
+            Homey.hapticFeedback();
             await Homey.api('POST', '/', {flag: flag.name});
         }
 

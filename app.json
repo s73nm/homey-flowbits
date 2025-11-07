@@ -1926,18 +1926,18 @@
             "type": "autocomplete",
             "name": "name",
             "title": {
-              "en": "Name",
-              "nl": "Naam",
-              "de": "Name",
-              "fr": "Nom",
-              "it": "Nome",
-              "sv": "Namn",
-              "no": "Navn",
-              "es": "Nombre",
-              "da": "Navn",
-              "ru": "Название",
-              "pl": "Nazwa",
-              "ko": "이름"
+              "en": "Mode",
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
             }
           }
         ]
@@ -5436,7 +5436,17 @@
     "flag_onoff": {
       "name": {
         "en": "Flag on/off",
-        "nl": "Flag aan/uit"
+        "nl": "Flag aan/uit",
+        "de": "Flag ein/aus",
+        "fr": "Flag activé/désactivé",
+        "it": "Flag acceso/spento",
+        "sv": "Flag på/av",
+        "no": "Flag på/av",
+        "es": "Flag activado/desactivado",
+        "da": "Flag tændt/slukket",
+        "ru": "Флаг включен/выключен",
+        "pl": "Flaga włączona/wyłączona",
+        "ko": "플래그 켬/끔"
       },
       "height": 120,
       "transparent": true,
@@ -5446,7 +5456,17 @@
           "type": "autocomplete",
           "title": {
             "en": "Flag",
-            "nl": "Flag"
+            "nl": "Flag",
+            "de": "Flagge",
+            "fr": "Drapeau",
+            "it": "Flag",
+            "sv": "Flagga",
+            "no": "Flagg",
+            "es": "Bandera",
+            "da": "Flag",
+            "ru": "Флаг",
+            "pl": "Flaga",
+            "ko": "플래그"
           }
         }
       ],
@@ -5465,7 +5485,17 @@
     "flags": {
       "name": {
         "en": "Flags",
-        "nl": "Flags"
+        "nl": "Flags",
+        "de": "Flags",
+        "fr": "Drapeaux",
+        "it": "Flag",
+        "sv": "Flaggor",
+        "no": "Flagg",
+        "es": "Banderas",
+        "da": "Flag",
+        "ru": "Флаги",
+        "pl": "Flagi",
+        "ko": "플래그"
       },
       "height": 120,
       "transparent": true,
@@ -5482,10 +5512,45 @@
       },
       "id": "flags"
     },
+    "mode_current": {
+      "name": {
+        "en": "Current mode",
+        "nl": "Huidige stand",
+        "de": "Aktueller Modus",
+        "fr": "Mode actuel",
+        "it": "Modalità corrente",
+        "sv": "Aktuellt läge",
+        "no": "Gjeldende modus",
+        "es": "Modo actual",
+        "da": "Nuværende tilstand",
+        "ru": "Текущий режим",
+        "pl": "Aktualny tryb",
+        "ko": "현재 모드"
+      },
+      "height": 120,
+      "settings": [],
+      "api": {
+        "get": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "mode_current"
+    },
     "modes": {
       "name": {
         "en": "Modes",
-        "nl": "Standen"
+        "nl": "Standen",
+        "de": "Modi",
+        "fr": "Modes",
+        "it": "Modalità",
+        "sv": "Lägen",
+        "no": "Moduser",
+        "es": "Modos",
+        "da": "Tilstande",
+        "ru": "Режимы",
+        "pl": "Tryby",
+        "ko": "모드"
       },
       "height": 120,
       "transparent": true,

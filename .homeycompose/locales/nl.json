@@ -24,5 +24,11 @@
         "evening": "Avond",
         "morning": "Ochtend",
         "night": "Nacht"
+    },
+    "widget": {
+        "current_mode": {
+            "label": "Huidige stand",
+            "suffix": "stand"
+        }
     }
 }

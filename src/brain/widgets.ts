@@ -1,4 +1,5 @@
 import BrainAware from './aware';
+import knownModes from '../../assets/modes/known.json';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 
@@ -44,6 +45,27 @@ export default class extends BrainAware {
         return true;
     }
 
+    async getCurrentMode(): Promise<string | null> {
+        return this.modes.currentMode;
+    }
+
+    async getModeIcon(mode: string, prefix: string, suffix: string): Promise<ModeIcon | null> {
+        let normalized = mode.toLowerCase();
+        normalized = normalized.startsWith(prefix) ? normalized.substring(prefix.length) : normalized;
+        normalized = normalized.endsWith(suffix) ? normalized.substring(0, -suffix.length) : normalized;
+
+        const candidate = knownModes.find(item => (item as any)[this.language].includes(normalized));
+
+        if (candidate) {
+            return {
+                color: candidate.color,
+                url: `../../assets/modes/${candidate.icon}.svg`
+            };
+        }
+
+        return null;
+    }
+
     async getModes(): Promise<Mode[]> {
         const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Mode);
 
@@ -85,8 +107,6 @@ export default class extends BrainAware {
         const widget = this.dashboards.getWidget('flag_onoff');
 
         widget.registerSettingAutocompleteListener('flag', async (query, settings) => {
-            console.log({query, settings});
-
             const flags = await this.getFlags();
 
             return flags.map(flag => ({
@@ -104,4 +124,9 @@ type Flag = {
 type Mode = {
     readonly active: boolean;
     readonly name: string;
+};
+
+type ModeIcon = {
+    readonly color: string;
+    readonly url: string;
 };

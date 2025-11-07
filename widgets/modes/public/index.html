@@ -74,6 +74,7 @@
         }
 
         async function onClickMode(mode) {
+            Homey.hapticFeedback();
             await Homey.api('POST', '/', {mode: mode.name});
         }
 

@@ -1,0 +1,24 @@
+{
+    "name": {
+        "en": "Current mode",
+        "nl": "Huidige stand",
+        "de": "Aktueller Modus",
+        "fr": "Mode actuel",
+        "it": "Modalità corrente",
+        "sv": "Aktuellt läge",
+        "no": "Gjeldende modus",
+        "es": "Modo actual",
+        "da": "Nuværende tilstand",
+        "ru": "Текущий режим",
+        "pl": "Aktualny tryb",
+        "ko": "현재 모드"
+    },
+    "height": 120,
+    "settings": [],
+    "api": {
+        "get": {
+            "method": "GET",
+            "path": "/"
+        }
+    }
+}
