@@ -2,11 +2,31 @@
     "id": "day_period_is",
     "title": {
         "en": "It !{{is|isn't}}...",
-        "nl": "Het !{{is|is geen}}..."
+        "nl": "Het !{{is|is geen}}...",
+        "de": "Es !{{ist|ist nicht}}...",
+        "fr": "Il !{{est|n’est pas}}...",
+        "it": "È !{{|non è}}...",
+        "sv": "Det !{{är|är inte}}...",
+        "no": "Det !{{er|er ikke}}...",
+        "es": "Es !{{|no es}}...",
+        "da": "Det !{{er|er ikke}}...",
+        "ru": "Это !{{есть|не есть}}...",
+        "pl": "Jest !{{|nie jest}}...",
+        "ko": "지금 !{{은|은 아닌}}..."
     },
     "titleFormatted": {
         "en": "It !{{is|isn't}} [[value]]",
-        "nl": "Het !{{is|is geen}} [[value]]"
+        "nl": "Het !{{is|is geen}} [[value]]",
+        "de": "Es !{{ist|ist nicht}} [[value]]",
+        "fr": "Il !{{est|n’est pas}} [[value]]",
+        "it": "È !{{|non è}} [[value]]",
+        "sv": "Det !{{är|är inte}} [[value]]",
+        "no": "Det !{{er|er ikke}} [[value]]",
+        "es": "Es !{{|no es}} [[value]]",
+        "da": "Det !{{er|er ikke}} [[value]]",
+        "ru": "Это !{{есть|не есть}} [[value]]",
+        "pl": "Jest !{{|nie jest}} [[value]]",
+        "ko": "지금 !{{은|은 아닌}} [[value]]"
     },
     "args": [
         {
@@ -14,35 +34,85 @@
             "name": "value",
             "title": {
                 "en": "Day period",
-                "nl": "Dagperiode"
+                "nl": "Dagperiode",
+                "de": "Tageszeit",
+                "fr": "Période de la journée",
+                "it": "Periodo della giornata",
+                "sv": "Del av dagen",
+                "no": "Del av dagen",
+                "es": "Momento del día",
+                "da": "Dagens periode",
+                "ru": "Период дня",
+                "pl": "Pora dnia",
+                "ko": "시간대"
             },
             "values": [
                 {
                     "id": "morning",
                     "title": {
                         "en": "Morning",
-                        "nl": "Ochtend"
+                        "nl": "Ochtend",
+                        "de": "Morgen",
+                        "fr": "Matin",
+                        "it": "Mattina",
+                        "sv": "Morgon",
+                        "no": "Morgen",
+                        "es": "Mañana",
+                        "da": "Morgen",
+                        "ru": "Утро",
+                        "pl": "Poranek",
+                        "ko": "아침"
                     }
                 },
                 {
                     "id": "afternoon",
                     "title": {
                         "en": "Afternoon",
-                        "nl": "Middag"
+                        "nl": "Middag",
+                        "de": "Nachmittag",
+                        "fr": "Après-midi",
+                        "it": "Pomeriggio",
+                        "sv": "Eftermiddag",
+                        "no": "Ettermiddag",
+                        "es": "Tarde",
+                        "da": "Eftermiddag",
+                        "ru": "День",
+                        "pl": "Popołudnie",
+                        "ko": "오후"
                     }
                 },
                 {
                     "id": "evening",
                     "title": {
-                        "en": "evening",
-                        "nl": "Avond"
+                        "en": "Evening",
+                        "nl": "Avond",
+                        "de": "Abend",
+                        "fr": "Soir",
+                        "it": "Sera",
+                        "sv": "Kväll",
+                        "no": "Kveld",
+                        "es": "Noche temprana",
+                        "da": "Aften",
+                        "ru": "Вечер",
+                        "pl": "Wieczór",
+                        "ko": "저녁"
                     }
                 },
                 {
                     "id": "night",
                     "title": {
                         "en": "Night",
-                        "nl": "Nacht"
+                        "nl": "Nacht",
+                        "de": "Nacht",
+                        "fr": "Nuit",
+                        "it": "Notte",
+                        "sv": "Natt",
+                        "no": "Natt",
+                        "es": "Noche",
+                        "da": "Nat",
+                        "ru": "Ночь",
+                        "pl": "Noc",
+                        "ko": "밤"
                     }
                 }
             ]

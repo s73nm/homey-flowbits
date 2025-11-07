@@ -2,11 +2,31 @@
     "id": "cycle_has_value",
     "title": {
         "en": "Sequence equals",
-        "nl": "Stappenreeks is gelijk aan"
+        "nl": "Stappenreeks is gelijk aan",
+        "de": "Sequenz ist gleich",
+        "fr": "La séquence est égale à",
+        "it": "La sequenza è uguale a",
+        "sv": "Sekvens är lika med",
+        "no": "Sekvens er lik",
+        "es": "La secuencia es igual a",
+        "da": "Sekvens er lig med",
+        "ru": "Последовательность равна",
+        "pl": "Sekwencja równa się",
+        "ko": "시퀀스가 동일함"
     },
     "titleFormatted": {
         "en": "Sequence [[name]] equals [[value]]",
-        "nl": "Stappenreeks [[name]] is gelijk aan [[value]]"
+        "nl": "Stappenreeks [[name]] is gelijk aan [[value]]",
+        "de": "Sequenz [[name]] ist gleich [[value]]",
+        "fr": "La séquence [[name]] est égale à [[value]]",
+        "it": "La sequenza [[name]] è uguale a [[value]]",
+        "sv": "Sekvens [[name]] är lika med [[value]]",
+        "no": "Sekvens [[name]] er lik [[value]]",
+        "es": "La secuencia [[name]] es igual a [[value]]",
+        "da": "Sekvens [[name]] er lig med [[value]]",
+        "ru": "Последовательность [[name]] равна [[value]]",
+        "pl": "Sekwencja [[name]] równa się [[value]]",
+        "ko": "시퀀스 [[name]] 이(가) [[value]] 와 동일함"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "name",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         },
         {
@@ -24,11 +54,31 @@
             "step": 1,
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 5",
-                "nl": "Bijv. 5"
+                "nl": "Bijv. 5",
+                "de": "Z. B. 5",
+                "fr": "P. ex. 5",
+                "it": "Es. 5",
+                "sv": "T.ex. 5",
+                "no": "F.eks. 5",
+                "es": "P. ej. 5",
+                "da": "F.eks. 5",
+                "ru": "Напр. 5",
+                "pl": "Np. 5",
+                "ko": "예: 5"
             }
         }
     ]

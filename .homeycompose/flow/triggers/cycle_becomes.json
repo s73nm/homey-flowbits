@@ -2,15 +2,45 @@
     "id": "cycle_becomes",
     "title": {
         "en": "Sequence has value ...",
-        "nl": "Stappenreeks heeft waarde ..."
+        "nl": "Stappenreeks heeft waarde ...",
+        "de": "Sequenz hat Wert ...",
+        "fr": "La séquence a la valeur ...",
+        "it": "La sequenza ha il valore ...",
+        "sv": "Sekvensen har värdet ...",
+        "no": "Sekvensen har verdien ...",
+        "es": "La secuencia tiene el valor ...",
+        "da": "Sekvensen har værdien ...",
+        "ru": "Последовательность имеет значение ...",
+        "pl": "Sekwencja ma wartość ...",
+        "ko": "시퀀스의 값 ..."
     },
     "titleFormatted": {
         "en": "Sequence [[name]] reaches [[value]]",
-        "nl": "Stappenreeks [[name]] bereikt waarde [[value]]"
+        "nl": "Stappenreeks [[name]] bereikt waarde [[value]]",
+        "de": "Sequenz [[name]] erreicht Wert [[value]]",
+        "fr": "La séquence [[name]] atteint la valeur [[value]]",
+        "it": "La sequenza [[name]] raggiunge il valore [[value]]",
+        "sv": "Sekvensen [[name]] når värdet [[value]]",
+        "no": "Sekvensen [[name]] når verdien [[value]]",
+        "es": "La secuencia [[name]] alcanza el valor [[value]]",
+        "da": "Sekvensen [[name]] når værdien [[value]]",
+        "ru": "Последовательность [[name]] достигает значения [[value]]",
+        "pl": "Sekwencja [[name]] osiąga wartość [[value]]",
+        "ko": "시퀀스 [[name]]이(가) [[value]] 값에 도달"
     },
     "hint": {
         "en": "Triggers when a sequence reaches the specified value.",
-        "nl": "Triggert wanneer een stappenreeks een waarde bereikt."
+        "nl": "Triggert wanneer een stappenreeks een waarde bereikt.",
+        "de": "Löst aus, wenn eine Sequenz den angegebenen Wert erreicht.",
+        "fr": "Déclenche lorsque la séquence atteint la valeur spécifiée.",
+        "it": "Attiva quando la sequenza raggiunge il valore specificato.",
+        "sv": "Utlöses när en sekvens når det angivna värdet.",
+        "no": "Utøses når en sekvens når den angitte verdien.",
+        "es": "Se activa cuando una secuencia alcanza el valor especificado.",
+        "da": "Udløses når en sekvens når den angivne værdi.",
+        "ru": "Срабатывает, когда последовательность достигает указанного значения.",
+        "pl": "Wyzwalane, gdy sekwencja osiągnie podaną wartość.",
+        "ko": "시퀀스가 지정된 값에 도달하면 트리거됩니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Название",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         },
         {
@@ -28,11 +68,31 @@
             "step": 1,
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 5",
-                "nl": "Bijv. 5"
+                "nl": "Bijv. 5",
+                "de": "Z. B. 5",
+                "fr": "P. ex. 5",
+                "it": "Es. 5",
+                "sv": "T.ex. 5",
+                "no": "F.eks. 5",
+                "es": "P. ej. 5",
+                "da": "Fx 5",
+                "ru": "Напр. 5",
+                "pl": "Np. 5",
+                "ko": "예: 5"
             }
         }
     ]

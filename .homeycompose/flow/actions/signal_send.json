@@ -2,15 +2,45 @@
     "id": "signal_send",
     "title": {
         "en": "Send signal",
-        "nl": "Stuur signaal"
+        "nl": "Stuur signaal",
+        "de": "Signal senden",
+        "fr": "Envoyer un signal",
+        "it": "Invia segnale",
+        "sv": "Skicka signal",
+        "no": "Send signal",
+        "es": "Enviar señal",
+        "da": "Send signal",
+        "ru": "Отправить сигнал",
+        "pl": "Wyślij sygnał",
+        "ko": "신호 보내기"
     },
     "titleFormatted": {
         "en": "Send signal [[signal]]",
-        "nl": "Stuur signaal [[signal]]"
+        "nl": "Stuur signaal [[signal]]",
+        "de": "Sende Signal [[signal]]",
+        "fr": "Envoyer le signal [[signal]]",
+        "it": "Invia il segnale [[signal]]",
+        "sv": "Skicka signalen [[signal]]",
+        "no": "Send signalet [[signal]]",
+        "es": "Enviar la señal [[signal]]",
+        "da": "Send signalet [[signal]]",
+        "ru": "Отправить сигнал [[signal]]",
+        "pl": "Wyślij sygnał [[signal]]",
+        "ko": "신호 [[signal]] 보내기"
     },
     "hint": {
         "en": "Sends a signal that can be received by the 'Receive signal' card.",
-        "nl": "Stuur een signaal dat vervolgens ontvangen kan worden door de 'Ontvang signaal' kaart."
+        "nl": "Stuur een signaal dat vervolgens ontvangen kan worden door de 'Ontvang signaal' kaart.",
+        "de": "Sendet ein Signal das von der Karte „Signal empfangen“ empfangen werden kann.",
+        "fr": "Envoie un signal qui peut être reçu par la carte « Recevoir un signal ».",
+        "it": "Invia un segnale che può essere ricevuto dalla scheda \"Ricevi segnale\".",
+        "sv": "Skickar en signal som kan tas emot av kortet \"Ta emot signal\".",
+        "no": "Sender et signal som kan mottas av «Motta signal»-kortet.",
+        "es": "Envía una señal que puede ser recibida por la tarjeta «Recibir señal».",
+        "da": "Sender et signal der kan modtages af kortet \"Modtag signal\".",
+        "ru": "Отправляет сигнал который может быть получен картой «Получить сигнал».",
+        "pl": "Wysyła sygnał który może zostać odebrany przez kartę „Odbierz sygnał”.",
+        "ko": "‘신호 받기’ 카드에서 받을 수 있는 신호를 보냅니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "signal",
             "title": {
                 "en": "Signal",
-                "nl": "Signaal"
+                "nl": "Signaal",
+                "de": "Signal",
+                "fr": "Signal",
+                "it": "Segnale",
+                "sv": "Signal",
+                "no": "Signal",
+                "es": "Señal",
+                "da": "Signal",
+                "ru": "Сигнал",
+                "pl": "Sygnał",
+                "ko": "신호"
             }
         }
     ]

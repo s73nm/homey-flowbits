@@ -2,15 +2,45 @@
     "id": "mode_deactivate",
     "title": {
         "en": "Deactivate mode",
-        "nl": "Deactiveer stand"
+        "nl": "Deactiveer stand",
+        "de": "Modus deaktivieren",
+        "fr": "Désactiver le mode",
+        "it": "Disattiva modalità",
+        "sv": "Inaktivera läge",
+        "no": "Deaktiver modus",
+        "es": "Desactivar modo",
+        "da": "Deaktivér tilstand",
+        "ru": "Деактивировать режим",
+        "pl": "Dezaktywuj tryb",
+        "ko": "모드 비활성화"
     },
     "titleFormatted": {
         "en": "Deactivate [[name]]",
-        "nl": "Deactiveer [[name]]"
+        "nl": "Deactiveer [[name]]",
+        "de": "Deaktiviere [[name]]",
+        "fr": "Désactiver [[name]]",
+        "it": "Disattiva [[name]]",
+        "sv": "Inaktivera [[name]]",
+        "no": "Deaktiver [[name]]",
+        "es": "Desactivar [[name]]",
+        "da": "Deaktivér [[name]]",
+        "ru": "Деактивировать [[name]]",
+        "pl": "Dezaktywuj [[name]]",
+        "ko": "[[name]] 비활성화"
     },
     "hint": {
         "en": "Deactivates a defined mode.",
-        "nl": "Deactiveer een gedefinieerde stand."
+        "nl": "Deactiveer een gedefinieerde stand.",
+        "de": "Deaktiviert einen definierten Modus.",
+        "fr": "Désactive un mode défini.",
+        "it": "Disattiva una modalità definita.",
+        "sv": "Inaktiverar ett definierat läge.",
+        "no": "Deaktiverer en definert modus.",
+        "es": "Desactiva un modo definido.",
+        "da": "Deaktiverer en defineret tilstand.",
+        "ru": "Деактивирует определенный режим.",
+        "pl": "Dezaktywuje zdefiniowany tryb.",
+        "ko": "정의된 모드를 비활성화합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Mode",
-                "nl": "Stand"
+                "nl": "Stand",
+                "de": "Modus",
+                "fr": "Mode",
+                "it": "Modalità",
+                "sv": "Läge",
+                "no": "Modus",
+                "es": "Modo",
+                "da": "Tilstand",
+                "ru": "Режим",
+                "pl": "Tryb",
+                "ko": "모드"
             }
         }
     ]

@@ -2,11 +2,31 @@
     "id": "timer_resume",
     "title": {
         "en": "Resume timer",
-        "nl": "Hervat timer"
+        "nl": "Hervat timer",
+        "de": "Timer fortsetzen",
+        "fr": "Reprendre le minuteur",
+        "it": "Riprendi il timer",
+        "sv": "Återuppta timer",
+        "no": "Gjenoppta timer",
+        "es": "Reanudar temporizador",
+        "da": "Genoptag timer",
+        "ru": "Возобновить таймер",
+        "pl": "Wznów timer",
+        "ko": "타이머 재개"
     },
     "titleFormatted": {
         "en": "Resume timer [[timer]]",
-        "nl": "Hervat timer [[timer]]"
+        "nl": "Hervat timer [[timer]]",
+        "de": "Setze Timer [[timer]] fort",
+        "fr": "Reprendre le minuteur [[timer]]",
+        "it": "Riprendi il timer [[timer]]",
+        "sv": "Återuppta timern [[timer]]",
+        "no": "Gjenoppta timeren [[timer]]",
+        "es": "Reanudar el temporizador [[timer]]",
+        "da": "Genoptag timeren [[timer]]",
+        "ru": "Возобновить таймер [[timer]]",
+        "pl": "Wznów timer [[timer]]",
+        "ko": "[[timer]] 타이머 재개"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

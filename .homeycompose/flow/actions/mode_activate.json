@@ -2,15 +2,45 @@
     "id": "mode_activate",
     "title": {
         "en": "Activate mode",
-        "nl": "Activeer stand"
+        "nl": "Activeer stand",
+        "de": "Modus aktivieren",
+        "fr": "Activer le mode",
+        "it": "Attiva modalità",
+        "sv": "Aktivera läge",
+        "no": "Aktiver modus",
+        "es": "Activar modo",
+        "da": "Aktivér tilstand",
+        "ru": "Активировать режим",
+        "pl": "Aktywuj tryb",
+        "ko": "모드 활성화"
     },
     "titleFormatted": {
         "en": "Activate [[name]]",
-        "nl": "Activeer [[name]]"
+        "nl": "Activeer [[name]]",
+        "de": "Aktiviere [[name]]",
+        "fr": "Activer [[name]]",
+        "it": "Attiva [[name]]",
+        "sv": "Aktivera [[name]]",
+        "no": "Aktiver [[name]]",
+        "es": "Activar [[name]]",
+        "da": "Aktivér [[name]]",
+        "ru": "Активировать [[name]]",
+        "pl": "Aktywuj [[name]]",
+        "ko": "[[name]] 활성화"
     },
     "hint": {
         "en": "Activates a defined mode and deactivates all other modes.",
-        "nl": "Activeer een gedefinieerde stand en deactiveer alle andere standen."
+        "nl": "Activeer een gedefinieerde stand en deactiveer alle andere standen.",
+        "de": "Aktiviert einen definierten Modus und deaktiviert alle anderen Modi.",
+        "fr": "Active un mode défini et désactive tous les autres modes.",
+        "it": "Attiva una modalità definita e disattiva tutte le altre modalità.",
+        "sv": "Aktiverar ett definierat läge och inaktiverar alla andra lägen.",
+        "no": "Aktiverer en definert modus og deaktiverer alle andre modi.",
+        "es": "Activa un modo definido y desactiva todos los demás modos.",
+        "da": "Aktiverer en defineret tilstand og deaktiverer alle andre tilstande.",
+        "ru": "Активирует определенный режим и деактивирует все остальные режимы.",
+        "pl": "Aktywuje zdefiniowany tryb i dezaktywuje wszystkie inne tryby.",
+        "ko": "정의된 모드를 활성화하고 다른 모든 모드를 비활성화합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Mode",
-                "nl": "Stand"
+                "nl": "Stand",
+                "de": "Modus",
+                "fr": "Mode",
+                "it": "Modalità",
+                "sv": "Läge",
+                "no": "Modus",
+                "es": "Modo",
+                "da": "Tilstand",
+                "ru": "Режим",
+                "pl": "Tryb",
+                "ko": "모드"
             }
         }
     ]

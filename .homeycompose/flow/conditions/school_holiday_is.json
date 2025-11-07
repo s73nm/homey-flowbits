@@ -2,15 +2,45 @@
     "id": "school_holiday_is",
     "title": {
         "en": "It is a school holiday",
-        "nl": "Het is een schoolvakantie"
+        "nl": "Het is een schoolvakantie",
+        "de": "Es ist ein Schulferien",
+        "fr": "C’est un congé scolaire",
+        "it": "È una vacanza scolastica",
+        "sv": "Det är ett skollov",
+        "no": "Det er en skoleferie",
+        "es": "Es un día de vacaciones escolares",
+        "da": "Det er en skoleferie",
+        "ru": "Школьные каникулы",
+        "pl": "Są ferie szkolne",
+        "ko": "학교 휴일입니다"
     },
     "titleFormatted": {
         "en": "It !{{is|isn't}} [[holiday]] in region [[region]]",
-        "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]"
+        "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]",
+        "de": "Es !{{ist|ist nicht}} [[holiday]] in der Region [[region]]",
+        "fr": "C’est !{{le|pas le}} [[holiday]] dans la région [[region]]",
+        "it": "È !{{|non è}} [[holiday]] nella regione [[region]]",
+        "sv": "Det !{{är|är inte}} [[holiday]] i region [[region]]",
+        "no": "Det !{{er|er ikke}} [[holiday]] i region [[region]]",
+        "es": "Es !{{|no es}} [[holiday]] en la región [[region]]",
+        "da": "Det !{{er|er ikke}} [[holiday]] i region [[region]]",
+        "ru": "Это !{{есть|нет}} [[holiday]] в регионе [[region]]",
+        "pl": "To !{{jest|nie jest}} [[holiday]] w regionie [[region]]",
+        "ko": "해당 지역([[region]])은 [[holiday]]가 !{{맞습니다|아닙니다}}"
     },
     "hint": {
         "en": "Checks if it is a school holiday in the Netherlands.",
-        "nl": "Checkt of het een schoolvakantie is."
+        "nl": "Checkt of het een schoolvakantie is.",
+        "de": "Prüft, ob es sich um Schulferien in den Niederlanden handelt.",
+        "fr": "Vérifie s’il s’agit de vacances scolaires aux Pays-Bas.",
+        "it": "Verifica se si tratta di una vacanza scolastica nei Paesi Bassi.",
+        "sv": "Kontrollerar om det är ett skollov i Nederländerna.",
+        "no": "Sjekker om det er skoleferie i Nederland.",
+        "es": "Comprueba si es un día de vacaciones escolares en los Países Bajos.",
+        "da": "Tjekker om det er en skoleferie i Nederlandene.",
+        "ru": "Проверяет, являются ли это школьные каникулы в Нидерландах.",
+        "pl": "Sprawdza, czy są ferie szkolne w Niderlandach.",
+        "ko": "네덜란드의 학교 휴일인지 확인합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "holiday",
             "title": {
                 "en": "School holiday",
-                "nl": "Schoolvakatie"
+                "nl": "Schoolvakatie",
+                "de": "Schulferien",
+                "fr": "Vacances scolaires",
+                "it": "Vacanze scolastiche",
+                "sv": "Skollov",
+                "no": "Skoleferie",
+                "es": "Vacaciones escolares",
+                "da": "Skoleferie",
+                "ru": "Школьные каникулы",
+                "pl": "Ferie szkolne",
+                "ko": "학교 휴일"
             }
         },
         {
@@ -26,28 +66,68 @@
             "name": "region",
             "title": {
                 "en": "Region",
-                "nl": "Regio"
+                "nl": "Regio",
+                "de": "Region",
+                "fr": "Région",
+                "it": "Regione",
+                "sv": "Region",
+                "no": "Region",
+                "es": "Región",
+                "da": "Region",
+                "ru": "Регион",
+                "pl": "Region",
+                "ko": "지역"
             },
             "values": [
                 {
                     "id": "north",
                     "title": {
                         "en": "north",
-                        "nl": "noord"
+                        "nl": "noord",
+                        "de": "Norden",
+                        "fr": "nord",
+                        "it": "nord",
+                        "sv": "norr",
+                        "no": "nord",
+                        "es": "norte",
+                        "da": "nord",
+                        "ru": "север",
+                        "pl": "północ",
+                        "ko": "북부"
                     }
                 },
                 {
                     "id": "middle",
                     "title": {
                         "en": "middle",
-                        "nl": "midden"
+                        "nl": "midden",
+                        "de": "Mitte",
+                        "fr": "centre",
+                        "it": "centro",
+                        "sv": "mitt",
+                        "no": "midt",
+                        "es": "centro",
+                        "da": "midt",
+                        "ru": "центр",
+                        "pl": "środek",
+                        "ko": "중부"
                     }
                 },
                 {
                     "id": "south",
                     "title": {
                         "en": "south",
-                        "nl": "zuid"
+                        "nl": "zuid",
+                        "de": "Süden",
+                        "fr": "sud",
+                        "it": "sud",
+                        "sv": "söder",
+                        "no": "sør",
+                        "es": "sur",
+                        "da": "syd",
+                        "ru": "юг",
+                        "pl": "południe",
+                        "ko": "남부"
                     }
                 }
             ]

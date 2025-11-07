@@ -2,15 +2,45 @@
     "id": "z_math_make_positive",
     "title": {
         "en": "Make positive",
-        "nl": "Maak positief"
+        "nl": "Maak positief",
+        "de": "Positiv machen",
+        "fr": "Rendre positif",
+        "it": "Rendi positivo",
+        "sv": "Gör positiv",
+        "no": "Gjør positiv",
+        "es": "Hacer positivo",
+        "da": "Gør positiv",
+        "ru": "Сделать положительным",
+        "pl": "Uczyń dodatnim",
+        "ko": "양수로 만들기"
     },
     "titleFormatted": {
         "en": "Make [[value]] positive",
-        "nl": "Maak [[value]] positief"
+        "nl": "Maak [[value]] positief",
+        "de": "Mache [[value]] positiv",
+        "fr": "Rendre [[value]] positif",
+        "it": "Rendi [[value]] positivo",
+        "sv": "Gör [[value]] positiv",
+        "no": "Gjør [[value]] positiv",
+        "es": "Hacer [[value]] positivo",
+        "da": "Gør [[value]] positiv",
+        "ru": "Сделать [[value]] положительным",
+        "pl": "Uczyń [[value]] dodatnim",
+        "ko": "[[value]] 양수로 만들기"
     },
     "hint": {
         "en": "Takes the absolute value of a number.",
-        "nl": "Neem de absolute waarde van een getal"
+        "nl": "Neem de absolute waarde van een getal",
+        "de": "Nimmt den Absolutwert einer Zahl.",
+        "fr": "Prend la valeur absolue d’un nombre.",
+        "it": "Prende il valore assoluto di un numero.",
+        "sv": "Tar absolutbeloppet av ett tal.",
+        "no": "Tar absoluttverdien av et tall.",
+        "es": "Toma el valor absoluto de un número.",
+        "da": "Tager den absolutte værdi af et tal.",
+        "ru": "Берет абсолютное значение числа.",
+        "pl": "Pobiera wartość bezwzględną liczby.",
+        "ko": "숫자의 절댓값을 사용합니다."
     },
     "args": [
         {
@@ -18,11 +48,31 @@
             "name": "value",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 13",
-                "nl": "Bijv. 13"
+                "nl": "Bijv. 13",
+                "de": "Z. B. 13",
+                "fr": "P. ex. 13",
+                "it": "Es. 13",
+                "sv": "T.ex. 13",
+                "no": "F.eks. 13",
+                "es": "P. ej. 13",
+                "da": "F.eks. 13",
+                "ru": "Напр. 13",
+                "pl": "Np. 13",
+                "ko": "예: 13"
             }
         }
     ],
@@ -32,7 +82,17 @@
             "type": "number",
             "title": {
                 "en": "Result",
-                "nl": "Resultaat"
+                "nl": "Resultaat",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
             }
         }
     ]

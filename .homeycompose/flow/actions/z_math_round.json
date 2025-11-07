@@ -2,11 +2,31 @@
     "id": "z_math_round",
     "title": {
         "en": "Round",
-        "nl": "Rond af"
+        "nl": "Rond af",
+        "de": "Runden",
+        "fr": "Arrondir",
+        "it": "Arrotonda",
+        "sv": "Avrunda",
+        "no": "Avrund",
+        "es": "Redondear",
+        "da": "Afrund",
+        "ru": "Округлить",
+        "pl": "Zaokrąglij",
+        "ko": "반올림"
     },
     "titleFormatted": {
         "en": "Round [[value]]",
-        "nl": "Rond [[value]] af"
+        "nl": "Rond [[value]] af",
+        "de": "Runde [[value]]",
+        "fr": "Arrondir [[value]]",
+        "it": "Arrotonda [[value]]",
+        "sv": "Avrunda [[value]]",
+        "no": "Avrund [[value]]",
+        "es": "Redondear [[value]]",
+        "da": "Afrund [[value]]",
+        "ru": "Округлить [[value]]",
+        "pl": "Zaokrąglij [[value]]",
+        "ko": "[[value]] 반올림"
     },
     "args": [
         {
@@ -14,11 +34,31 @@
             "name": "value",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 13",
-                "nl": "Bijv. 13"
+                "nl": "Bijv. 13",
+                "de": "Z. B. 13",
+                "fr": "P. ex. 13",
+                "it": "Es. 13",
+                "sv": "T.ex. 13",
+                "no": "F.eks. 13",
+                "es": "P. ej. 13",
+                "da": "F.eks. 13",
+                "ru": "Напр. 13",
+                "pl": "Np. 13",
+                "ko": "예: 13"
             }
         }
     ],
@@ -28,7 +68,17 @@
             "name": "result",
             "title": {
                 "en": "Result",
-                "nl": "Resultaat"
+                "nl": "Resultaat",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
             }
         }
     ]

@@ -2,15 +2,45 @@
     "id": "signal_receive",
     "title": {
         "en": "Receive signal",
-        "nl": "Ontvang signaal"
+        "nl": "Ontvang signaal",
+        "de": "Signal empfangen",
+        "fr": "Recevoir le signal",
+        "it": "Ricevi segnale",
+        "sv": "Ta emot signal",
+        "no": "Motta signal",
+        "es": "Recibir señal",
+        "da": "Modtag signal",
+        "ru": "Получить сигнал",
+        "pl": "Odbierz sygnał",
+        "ko": "신호 받기"
     },
     "titleFormatted": {
         "en": "Receive signal [[signal]]",
-        "nl": "Ontvang signaal [[signal]]"
+        "nl": "Ontvang signaal [[signal]]",
+        "de": "Empfange Signal [[signal]]",
+        "fr": "Recevoir le signal [[signal]]",
+        "it": "Ricevi segnale [[signal]]",
+        "sv": "Ta emot signal [[signal]]",
+        "no": "Motta signal [[signal]]",
+        "es": "Recibir señal [[signal]]",
+        "da": "Modtag signal [[signal]]",
+        "ru": "Получить сигнал [[signal]]",
+        "pl": "Odbierz sygnał [[signal]]",
+        "ko": "[[signal]] 신호 받기"
     },
     "hint": {
         "en": "Receives a signal that was sent using the 'Send signal' card.",
-        "nl": "Ontvangt een signaal dat verstuurd is door de 'Stuur signaal' kaart."
+        "nl": "Ontvangt een signaal dat verstuurd is door de 'Stuur signaal' kaart.",
+        "de": "Empfängt ein Signal, das mit der 'Signal senden'-Karte gesendet wurde.",
+        "fr": "Reçoit un signal envoyé avec la carte 'Envoyer signal'.",
+        "it": "Riceve un segnale inviato tramite la scheda 'Invia segnale'.",
+        "sv": "Tar emot en signal som skickades med 'Skicka signal'-kortet.",
+        "no": "Mottar et signal som ble sendt med 'Send signal'-kortet.",
+        "es": "Recibe una señal enviada mediante la tarjeta 'Enviar señal'.",
+        "da": "Modtager et signal, der blev sendt med 'Send signal'-kortet.",
+        "ru": "Получает сигнал, отправленный с помощью карты 'Отправить сигнал'.",
+        "pl": "Odbiera sygnał wysłany za pomocą karty 'Wyślij sygnał'.",
+        "ko": "'신호 보내기' 카드로 보낸 신호를 받습니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "signal",
             "title": {
                 "en": "Signal",
-                "nl": "Signaal"
+                "nl": "Signaal",
+                "de": "Signal",
+                "fr": "Signal",
+                "it": "Segnale",
+                "sv": "Signal",
+                "no": "Signal",
+                "es": "Señal",
+                "da": "Signal",
+                "ru": "Сигнал",
+                "pl": "Sygnał",
+                "ko": "신호"
             }
         }
     ]

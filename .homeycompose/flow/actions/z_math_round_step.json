@@ -2,15 +2,45 @@
     "id": "z_math_round_step",
     "title": {
         "en": "Round to step",
-        "nl": "Rond af op stapgrootte"
+        "nl": "Rond af op stapgrootte",
+        "de": "Auf Schritt runden",
+        "fr": "Arrondir à l’incrément",
+        "it": "Arrotonda allo step",
+        "sv": "Avrunda till steg",
+        "no": "Avrund til steg",
+        "es": "Redondear al incremento",
+        "da": "Afrund til trin",
+        "ru": "Округлить по шагу",
+        "pl": "Zaokrąglij do kroku",
+        "ko": "스텝 단위로 반올림"
     },
     "titleFormatted": {
         "en": "Round [[value]] to [[step]]",
-        "nl": "Rond [[value]] af op [[step]]"
+        "nl": "Rond [[value]] af op [[step]]",
+        "de": "Runde [[value]] auf [[step]]",
+        "fr": "Arrondir [[value]] à [[step]]",
+        "it": "Arrotonda [[value]] a [[step]]",
+        "sv": "Avrunda [[value]] till [[step]]",
+        "no": "Avrund [[value]] til [[step]]",
+        "es": "Redondear [[value]] a [[step]]",
+        "da": "Afrund [[value]] til [[step]]",
+        "ru": "Округлить [[value]] по [[step]]",
+        "pl": "Zaokrąglij [[value]] do [[step]]",
+        "ko": "[[value]]을(를) [[step]] 단위로 반올림"
     },
     "hint": {
         "en": "Rounds to the nearest multiple of the step.",
-        "nl": "Rond af naar een veelvoud van de stapgrootte."
+        "nl": "Rond af naar een veelvoud van de stapgrootte.",
+        "de": "Rundet auf das nächste Vielfache des Schritts.",
+        "fr": "Arrondit au multiple le plus proche de l’incrément.",
+        "it": "Arrotonda al multiplo più vicino dello step.",
+        "sv": "Avrundar till närmaste multipel av steget.",
+        "no": "Avrunder til nærmeste multiplum av steget.",
+        "es": "Redondea al múltiplo más cercano del incremento.",
+        "da": "Afrunder til nærmeste multiplum af trinnet.",
+        "ru": "Округляет до ближайшего кратного шагу.",
+        "pl": "Zaokrągla do najbliższego wielokrotności kroku.",
+        "ko": "스텝의 가장 가까운 배수로 반올림합니다."
     },
     "args": [
         {
@@ -18,11 +48,31 @@
             "name": "value",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 13",
-                "nl": "Bijv. 13"
+                "nl": "Bijv. 13",
+                "de": "Z. B. 13",
+                "fr": "P. ex. 13",
+                "it": "Es. 13",
+                "sv": "T.ex. 13",
+                "no": "F.eks. 13",
+                "es": "P. ej. 13",
+                "da": "F.eks. 13",
+                "ru": "Напр. 13",
+                "pl": "Np. 13",
+                "ko": "예: 13"
             }
         },
         {
@@ -31,11 +81,31 @@
             "min": 0,
             "title": {
                 "en": "Step",
-                "nl": "Stapgrootte"
+                "nl": "Stapgrootte",
+                "de": "Schritt",
+                "fr": "Incrément",
+                "it": "Step",
+                "sv": "Steg",
+                "no": "Steg",
+                "es": "Incremento",
+                "da": "Trin",
+                "ru": "Шаг",
+                "pl": "Krok",
+                "ko": "스텝"
             },
             "placeholder": {
                 "en": "E.g. 5",
-                "nl": "Bijv. 5"
+                "nl": "Bijv. 5",
+                "de": "Z. B. 5",
+                "fr": "P. ex. 5",
+                "it": "Es. 5",
+                "sv": "T.ex. 5",
+                "no": "F.eks. 5",
+                "es": "P. ej. 5",
+                "da": "F.eks. 5",
+                "ru": "Напр. 5",
+                "pl": "Np. 5",
+                "ko": "예: 5"
             }
         }
     ],
@@ -45,7 +115,17 @@
             "name": "result",
             "title": {
                 "en": "Result",
-                "nl": "Resultaat"
+                "nl": "Resultaat",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
             }
         }
     ]

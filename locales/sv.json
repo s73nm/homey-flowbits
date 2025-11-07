@@ -1,0 +1,28 @@
+{
+  "autocomplete": {
+    "cycle_new": "Ny räknare i detta flöde",
+    "flag_new": "Ny flagga i detta flöde",
+    "mode_new": "Nytt läge i detta flöde",
+    "no_repeat_new": "Nytt icke-repetitionsfönster i detta flöde",
+    "signal_new": "Ny signal i detta flöde",
+    "timer_new": "Ny timer i detta flöde"
+  },
+  "notification": {
+    "mode_activated": "**__name__** är aktiverad.",
+    "mode_deactivated": "**__name__** är inaktiverad."
+  },
+  "token": {
+    "day_period": "Dagsperiod (rå)",
+    "day_period_translated": "Dagsperiod",
+    "moon_phase": "Månfas (rå)",
+    "moon_phase_translated": "Månfas",
+    "zodiac_sign": "Stjärntecken (rå)",
+    "zodiac_sign_translated": "Stjärntecken"
+  },
+  "day_period": {
+    "morning": "Morgon",
+    "afternoon": "Eftermiddag",
+    "evening": "Kväll",
+    "night": "Natt"
+  }
+}

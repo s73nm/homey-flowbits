@@ -2,11 +2,31 @@
     "id": "dice_rolls",
     "title": {
         "en": "Roll a dice",
-        "nl": "Gooi een dobbelsteen"
+        "nl": "Gooi een dobbelsteen",
+        "de": "Würfel werfen",
+        "fr": "Lancer un dé",
+        "it": "Lancia un dado",
+        "sv": "Kasta en tärning",
+        "no": "Kast en terning",
+        "es": "Lanzar un dado",
+        "da": "Slå med en terning",
+        "ru": "Бросить кубик",
+        "pl": "Rzuć kostką",
+        "ko": "주사위를 굴리기"
     },
     "titleFormatted": {
         "en": "Dice rolls [[result]]",
-        "nl": "Dobbelsteen gooit [[result]]"
+        "nl": "Dobbelsteen gooit [[result]]",
+        "de": "Der Würfel zeigt [[result]]",
+        "fr": "Le dé affiche [[result]]",
+        "it": "Il dado mostra [[result]]",
+        "sv": "Tärningen visar [[result]]",
+        "no": "Terningen viser [[result]]",
+        "es": "El dado muestra [[result]]",
+        "da": "Terningen viser [[result]]",
+        "ru": "Кубик показывает [[result]]",
+        "pl": "Kostka pokazuje [[result]]",
+        "ko": "주사위 결과 [[result]]"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "result",
             "title": {
                 "en": "Result",
-                "nl": "Ogen"
+                "nl": "Ogen",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
             },
             "min": 1,
             "max": 6,

@@ -1,0 +1,28 @@
+{
+    "autocomplete": {
+        "cycle_new": "이 플로우에 새로운 카운터",
+        "flag_new": "이 플로우에 새로운 플래그",
+        "mode_new": "이 플로우에 새로운 모드",
+        "no_repeat_new": "이 플로우에 새로운 반복 없음 창",
+        "signal_new": "이 플로우에 새로운 신호",
+        "timer_new": "이 플로우에 새로운 타이머"
+    },
+    "notification": {
+        "mode_activated": "**__name__** 활성화됨.",
+        "mode_deactivated": "**__name__** 비활성화됨."
+    },
+    "token": {
+        "day_period": "시간대 (원본)",
+        "day_period_translated": "시간대",
+        "moon_phase": "달의 위상 (원본)",
+        "moon_phase_translated": "달의 위상",
+        "zodiac_sign": "별자리 (원본)",
+        "zodiac_sign_translated": "별자리"
+    },
+    "day_period": {
+        "morning": "아침",
+        "afternoon": "오후",
+        "evening": "저녁",
+        "night": "밤"
+    }
+}

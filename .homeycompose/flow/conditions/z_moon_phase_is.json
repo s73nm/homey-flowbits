@@ -2,11 +2,31 @@
     "id": "moon_phase_is",
     "title": {
         "en": "The moon phase !{{is|isn't}}...",
-        "nl": "De maanfase !{{is|is niet}}..."
+        "nl": "De maanfase !{{is|is niet}}...",
+        "de": "Die Mondphase !{{ist|ist nicht}}...",
+        "fr": "La phase de la lune !{{est|n'est pas}}...",
+        "it": "La fase lunare !{{è|non è}}...",
+        "sv": "Månfasen !{{är|är inte}}...",
+        "no": "Månefasen !{{er|er ikke}}...",
+        "es": "La fase lunar !{{es|no es}}...",
+        "da": "Månefasen !{{er|er ikke}}...",
+        "ru": "Фаза Луны !{{есть|не является}}...",
+        "pl": "Faza Księżyca !{{jest|nie jest}}...",
+        "ko": "달의 위상 !{{이다|아니다}}..."
     },
     "titleFormatted": {
         "en": "The moon phase !{{is|isn't}} [[value]]",
-        "nl": "De maanfase !{{is|is niet}} [[value]]"
+        "nl": "De maanfase !{{is|is niet}} [[value]]",
+        "de": "Die Mondphase !{{ist|ist nicht}} [[value]]",
+        "fr": "La phase de la lune !{{est|n'est pas}} [[value]]",
+        "it": "La fase lunare !{{è|non è}} [[value]]",
+        "sv": "Månfasen !{{är|är inte}} [[value]]",
+        "no": "Månefasen !{{er|er ikke}} [[value]]",
+        "es": "La fase lunar !{{es|no es}} [[value]]",
+        "da": "Månefasen !{{er|er ikke}} [[value]]",
+        "ru": "Фаза Луны !{{есть|не является}} [[value]]",
+        "pl": "Faza Księżyca !{{jest|nie jest}} [[value]]",
+        "ko": "달의 위상 !{{이다|아니다}} [[value]]"
     },
     "args": [
         {
@@ -14,63 +34,153 @@
             "name": "value",
             "title": {
                 "en": "Moon phase",
-                "nl": "Maanfase"
+                "nl": "Maanfase",
+                "de": "Mondphase",
+                "fr": "Phase de la lune",
+                "it": "Fase lunare",
+                "sv": "Månfas",
+                "no": "Månefase",
+                "es": "Fase lunar",
+                "da": "Månens fase",
+                "ru": "Фаза Луны",
+                "pl": "Faza Księżyca",
+                "ko": "달의 위상"
             },
             "values": [
                 {
                     "id": "new_moon",
                     "title": {
                         "en": "New Moon",
-                        "nl": "Nieuwe maan"
+                        "nl": "Nieuwe maan",
+                        "de": "Neumond",
+                        "fr": "Nouvelle lune",
+                        "it": "Luna nuova",
+                        "sv": "Nymåne",
+                        "no": "Nymåne",
+                        "es": "Luna nueva",
+                        "da": "Nymåne",
+                        "ru": "Новолуние",
+                        "pl": "Nów",
+                        "ko": "삭"
                     }
                 },
                 {
                     "id": "waxing_crescent",
                     "title": {
                         "en": "Waxing Crescent",
-                        "nl": "Wassende sikkel"
+                        "nl": "Wassende sikkel",
+                        "de": "Zunehmende Sichel",
+                        "fr": "Croissant croissant",
+                        "it": "Falce crescente",
+                        "sv": "Tilltagande skära",
+                        "no": "Voksende sigd",
+                        "es": "Creciente",
+                        "da": "Tiltagende segl",
+                        "ru": "Молодой месяц",
+                        "pl": "Sierp przybywający",
+                        "ko": "초승달"
                     }
                 },
                 {
                     "id": "first_quarter",
                     "title": {
                         "en": "First Quarter",
-                        "nl": "Eerste kwartier"
+                        "nl": "Eerste kwartier",
+                        "de": "Erstes Viertel",
+                        "fr": "Premier quartier",
+                        "it": "Primo quarto",
+                        "sv": "Första kvarteret",
+                        "no": "Første kvarter",
+                        "es": "Cuarto creciente",
+                        "da": "Første kvarter",
+                        "ru": "Первая четверть",
+                        "pl": "Pierwsza kwadra",
+                        "ko": "상현달"
                     }
                 },
                 {
                     "id": "waxing_gibbous",
                     "title": {
                         "en": "Waxing Gibbous",
-                        "nl": "Wassende maan"
+                        "nl": "Wassende maan",
+                        "de": "Zunehmender Dreiviertelmond",
+                        "fr": "Gibbeuse croissante",
+                        "it": "Gibbosa crescente",
+                        "sv": "Tilltagande gibbe",
+                        "no": "Voksende måne",
+                        "es": "Gibosa creciente",
+                        "da": "Tiltagende måne",
+                        "ru": "Растущая Луна",
+                        "pl": "Przybywająca garbata",
+                        "ko": "상현과 보름 사이"
                     }
                 },
                 {
                     "id": "full_moon",
                     "title": {
                         "en": "Full Moon",
-                        "nl": "Volle maan"
+                        "nl": "Volle maan",
+                        "de": "Vollmond",
+                        "fr": "Pleine lune",
+                        "it": "Luna piena",
+                        "sv": "Fullmåne",
+                        "no": "Fullmåne",
+                        "es": "Luna llena",
+                        "da": "Fuldmåne",
+                        "ru": "Полнолуние",
+                        "pl": "Pełnia",
+                        "ko": "보름달"
                     }
                 },
                 {
                     "id": "waning_gibbous",
                     "title": {
                         "en": "Waning Gibbous",
-                        "nl": "Afnemende maan"
+                        "nl": "Afnemende maan",
+                        "de": "Abnehmender Dreiviertelmond",
+                        "fr": "Gibbeuse décroissante",
+                        "it": "Gibbosa calante",
+                        "sv": "Avtagande gibbe",
+                        "no": "Avtagende måne",
+                        "es": "Gibosa menguante",
+                        "da": "Aftagende måne",
+                        "ru": "Убывающая Луна",
+                        "pl": "Garbus ubywający",
+                        "ko": "보름과 하현 사이"
                     }
                 },
                 {
                     "id": "last_quarter",
                     "title": {
                         "en": "Last Quarter",
-                        "nl": "Laatste kwartier"
+                        "nl": "Laatste kwartier",
+                        "de": "Letztes Viertel",
+                        "fr": "Dernier quartier",
+                        "it": "Ultimo quarto",
+                        "sv": "Sista kvarteret",
+                        "no": "Siste kvarter",
+                        "es": "Cuarto menguante",
+                        "da": "Sidste kvarter",
+                        "ru": "Последняя четверть",
+                        "pl": "Ostatnia kwadra",
+                        "ko": "하현달"
                     }
                 },
                 {
                     "id": "waning_crescent",
                     "title": {
                         "en": "Waning Crescent",
-                        "nl": "Afnemende sikkel"
+                        "nl": "Afnemende sikkel",
+                        "de": "Abnehmende Sichel",
+                        "fr": "Croissant décroissant",
+                        "it": "Falce calante",
+                        "sv": "Avtagande skära",
+                        "no": "Avtagende sigd",
+                        "es": "Creciente menguante",
+                        "da": "Aftagende segl",
+                        "ru": "Старый месяц",
+                        "pl": "Sierp ubywający",
+                        "ko": "그믐달"
                     }
                 }
             ]

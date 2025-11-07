@@ -1,0 +1,28 @@
+{
+  "autocomplete": {
+    "cycle_new": "Новый счетчик в этом потоке",
+    "flag_new": "Новый флаг в этом потоке",
+    "mode_new": "Новый режим в этом потоке",
+    "no_repeat_new": "Новое окно без повторов в этом потоке",
+    "signal_new": "Новый сигнал в этом потоке",
+    "timer_new": "Новый таймер в этом потоке"
+  },
+  "notification": {
+    "mode_activated": "**__name__** активирован.",
+    "mode_deactivated": "**__name__** деактивирован."
+  },
+  "token": {
+    "day_period": "Период дня (сырой)",
+    "day_period_translated": "Период дня",
+    "moon_phase": "Фаза луны (сырой)",
+    "moon_phase_translated": "Фаза луны",
+    "zodiac_sign": "Знак зодиака (сырой)",
+    "zodiac_sign_translated": "Знак зодиака"
+  },
+  "day_period": {
+    "morning": "Утро",
+    "afternoon": "День",
+    "evening": "Вечер",
+    "night": "Ночь"
+  }
+}

@@ -2,15 +2,45 @@
     "id": "flag_is",
     "title": {
         "en": "Flag is active",
-        "nl": "Flag is actief"
+        "nl": "Flag is actief",
+        "de": "Flag ist aktiv",
+        "fr": "Le drapeau est actif",
+        "it": "La flag è attiva",
+        "sv": "Flaggan är aktiv",
+        "no": "Flagget er aktivt",
+        "es": "La bandera está activa",
+        "da": "Flaget er aktivt",
+        "ru": "Флаг активен",
+        "pl": "Flaga jest aktywna",
+        "ko": "플래그가 활성화됨"
     },
     "titleFormatted": {
         "en": "Flag [[flag]] is !{{active|inactive}}",
-        "nl": "Flag [[flag]] is !{{actief|inactief}}"
+        "nl": "Flag [[flag]] is !{{actief|inactief}}",
+        "de": "Flag [[flag]] ist !{{aktiv|inaktiv}}",
+        "fr": "Le drapeau [[flag]] est !{{actif|inactif}}",
+        "it": "La flag [[flag]] è !{{attiva|inattiva}}",
+        "sv": "Flaggan [[flag]] är !{{aktiv|inaktiv}}",
+        "no": "Flagget [[flag]] er !{{aktivt|inaktivt}}",
+        "es": "La bandera [[flag]] está !{{activa|inactiva}}",
+        "da": "Flaget [[flag]] er !{{aktivt|inaktivt}}",
+        "ru": "Флаг [[flag]] !{{активен|неактивен}}",
+        "pl": "Flaga [[flag]] jest !{{aktywna|nieaktywna}}",
+        "ko": "플래그 [[flag]]는 !{{활성|비활성}} 상태입니다"
     },
     "hint": {
         "en": "Checks if a flag is activated.",
-        "nl": "Controleert of een flag is geactiveerd."
+        "nl": "Controleert of een flag is geactiveerd.",
+        "de": "Prüft, ob eine Flag aktiviert ist.",
+        "fr": "Vérifie si un drapeau est activé.",
+        "it": "Verifica se una flag è attivata.",
+        "sv": "Kontrollerar om en flagga är aktiverad.",
+        "no": "Sjekker om et flagg er aktivert.",
+        "es": "Comprueba si una bandera está activada.",
+        "da": "Kontrollerer om et flag er aktiveret.",
+        "ru": "Проверяет, активирован ли флаг.",
+        "pl": "Sprawdza, czy flaga jest aktywowana.",
+        "ko": "플래그가 활성화되었는지 확인합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "flag",
             "title": {
                 "en": "Flag",
-                "nl": "Flag"
+                "nl": "Flag",
+                "de": "Flagge",
+                "fr": "Drapeau",
+                "it": "Flag",
+                "sv": "Flagga",
+                "no": "Flagg",
+                "es": "Bandera",
+                "da": "Flag",
+                "ru": "Флаг",
+                "pl": "Flaga",
+                "ko": "플래그"
             }
         }
     ]

@@ -2,15 +2,45 @@
     "id": "flag_changed",
     "title": {
         "en": "Flag changed",
-        "nl": "Flag gewijzigd"
+        "nl": "Flag gewijzigd",
+        "de": "Flag geändert",
+        "fr": "Drapeau modifié",
+        "it": "Flag modificata",
+        "sv": "Flagga ändrad",
+        "no": "Flagg endret",
+        "es": "Bandera cambiada",
+        "da": "Flag ændret",
+        "ru": "Флаг изменён",
+        "pl": "Flaga zmieniona",
+        "ko": "플래그 변경됨"
     },
     "titleFormatted": {
         "en": "Flag [[flag]] changed",
-        "nl": "Flag [[flag]] gewijzigd"
+        "nl": "Flag [[flag]] gewijzigd",
+        "de": "Flag [[flag]] geändert",
+        "fr": "Le drapeau [[flag]] a changé",
+        "it": "La flag [[flag]] è cambiata",
+        "sv": "Flaggan [[flag]] ändrades",
+        "no": "Flagget [[flag]] ble endret",
+        "es": "La bandera [[flag]] cambió",
+        "da": "Flaget [[flag]] blev ændret",
+        "ru": "Флаг [[flag]] изменён",
+        "pl": "Flaga [[flag]] została zmieniona",
+        "ko": "플래그 [[flag]]이 변경됨"
     },
     "hint": {
         "en": "Triggers when a flag is activated or deactivated.",
-        "nl": "Triggert wanneer een flag wordt geactiveerd of gedeactiveerd."
+        "nl": "Triggert wanneer een flag wordt geactiveerd of gedeactiveerd.",
+        "de": "Löst aus wenn ein Flag aktiviert oder deaktiviert wird.",
+        "fr": "Se déclenche lorsqu’un drapeau est activé ou désactivé.",
+        "it": "Si attiva quando una flag viene attivata o disattivata.",
+        "sv": "Utlöses när en flagga aktiveras eller avaktiveras.",
+        "no": "Utøses når et flagg aktiveres eller deaktiveres.",
+        "es": "Se activa cuando una bandera se activa o desactiva.",
+        "da": "Udløses når et flag aktiveres eller deaktiveres.",
+        "ru": "Срабатывает при активации или деактивации флага.",
+        "pl": "Wyzwalane gdy flaga zostaje aktywowana lub dezaktywowana.",
+        "ko": "플래그가 활성화되거나 비활성화될 때 트리거됨."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "flag",
             "title": {
                 "en": "Flag",
-                "nl": "Flag"
+                "nl": "Flag",
+                "de": "Flag",
+                "fr": "Drapeau",
+                "it": "Flag",
+                "sv": "Flagga",
+                "no": "Flagg",
+                "es": "Bandera",
+                "da": "Flag",
+                "ru": "Флаг",
+                "pl": "Flaga",
+                "ko": "플래그"
             }
         }
     ],
@@ -28,7 +68,17 @@
             "type": "boolean",
             "title": {
                 "en": "Active",
-                "nl": "Actief"
+                "nl": "Actief",
+                "de": "Aktiv",
+                "fr": "Actif",
+                "it": "Attivo",
+                "sv": "Aktiv",
+                "no": "Aktiv",
+                "es": "Activo",
+                "da": "Aktiv",
+                "ru": "Активен",
+                "pl": "Aktywny",
+                "ko": "활성"
             }
         }
     ]

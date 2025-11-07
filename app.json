@@ -10,11 +10,31 @@
   ],
   "name": {
     "en": "FlowBits",
-    "nl": "FlowBits"
+    "nl": "FlowBits",
+    "de": "FlowBits",
+    "fr": "FlowBits",
+    "it": "FlowBits",
+    "sv": "FlowBits",
+    "no": "FlowBits",
+    "es": "FlowBits",
+    "da": "FlowBits",
+    "ru": "FlowBits",
+    "pl": "FlowBits",
+    "ko": "FlowBits"
   },
   "description": {
     "en": "Small bits of logic, big difference in your Flows.",
-    "nl": "Kleine stukjes logica, groot verschil in je Flows."
+    "nl": "Kleine stukjes logica, groot verschil in je Flows.",
+    "de": "Kleine Logikbausteine, große Wirkung in deinen Flows.",
+    "fr": "Petits bouts de logique, grande différence dans vos Flows.",
+    "it": "Piccoli pezzi di logica, grande differenza nei tuoi Flows.",
+    "sv": "Små logikbitar, stor skillnad i dina Flöden.",
+    "no": "Små logikkbiter, stor forskjell i dine Flows.",
+    "es": "Pequeños fragmentos de lógica, gran diferencia en tus Flujos.",
+    "da": "Små logikstykker, stor forskel i dine Flows.",
+    "ru": "Малые логические блоки, большое влияние на ваши потоки.",
+    "pl": "Małe elementy logiki, duża różnica w Twoich Flow.",
+    "ko": "작은 논리 조각, 당신의 흐름에 큰 차이를 만듭니다."
   },
   "category": [
     "tools"
@@ -29,6 +49,7 @@
       "flags",
       "mode",
       "modes",
+      "repeat",
       "signal",
       "timer"
     ],
@@ -39,14 +60,146 @@
       "cycle",
       "flag",
       "flags",
+      "herhaling",
       "mode",
       "modes",
+      "modus",
       "signal",
       "timer",
       "stappenreeks",
       "stand",
       "standen",
       "signaal"
+    ],
+    "de": [
+      "Flow",
+      "erweiterter Flow",
+      "Bits",
+      "Zyklus",
+      "Flag",
+      "Flags",
+      "Wiederholung",
+      "Modus",
+      "Modi",
+      "Signal",
+      "Timer"
+    ],
+    "fr": [
+      "flux",
+      "flux avancé",
+      "bits",
+      "cycle",
+      "drapeau",
+      "drapeaux",
+      "répétition",
+      "mode",
+      "modes",
+      "signal",
+      "minuteur"
+    ],
+    "it": [
+      "flusso",
+      "flusso avanzato",
+      "bit",
+      "ciclo",
+      "flag",
+      "flag",
+      "ripetizione",
+      "modalità",
+      "modalità",
+      "segnale",
+      "timer"
+    ],
+    "sv": [
+      "flöde",
+      "avancerat flöde",
+      "bitar",
+      "cykel",
+      "flagga",
+      "flaggor",
+      "upprepning",
+      "läge",
+      "lägen",
+      "signal",
+      "timer"
+    ],
+    "no": [
+      "flyt",
+      "avansert flyt",
+      "biter",
+      "syklus",
+      "flagg",
+      "flagg",
+      "gjenta",
+      "modus",
+      "moduser",
+      "signal",
+      "tidtaker"
+    ],
+    "es": [
+      "flujo",
+      "flujo avanzado",
+      "bits",
+      "ciclo",
+      "bandera",
+      "banderas",
+      "repetir",
+      "modo",
+      "modos",
+      "señal",
+      "temporizador"
+    ],
+    "da": [
+      "flow",
+      "avanceret flow",
+      "bits",
+      "cyklus",
+      "flag",
+      "flag",
+      "gentag",
+      "tilstand",
+      "tilstande",
+      "signal",
+      "timer"
+    ],
+    "ru": [
+      "поток",
+      "расширенный поток",
+      "биты",
+      "цикл",
+      "флаг",
+      "флаги",
+      "повтор",
+      "режим",
+      "режимы",
+      "сигнал",
+      "таймер"
+    ],
+    "pl": [
+      "przepływ",
+      "zaawansowany przepływ",
+      "bity",
+      "cykl",
+      "flaga",
+      "flagi",
+      "powtarzanie",
+      "tryb",
+      "tryby",
+      "sygnał",
+      "timer"
+    ],
+    "ko": [
+      "흐름",
+      "고급 흐름",
+      "비트",
+      "주기",
+      "플래그",
+      "플래그들",
+      "반복",
+      "모드",
+      "모드들",
+      "신호",
+      "타이머"
     ]
   },
   "permissions": [],
@@ -78,15 +231,45 @@
         "id": "cycle_becomes",
         "title": {
           "en": "Sequence has value ...",
-          "nl": "Stappenreeks heeft waarde ..."
+          "nl": "Stappenreeks heeft waarde ...",
+          "de": "Sequenz hat Wert ...",
+          "fr": "La séquence a la valeur ...",
+          "it": "La sequenza ha il valore ...",
+          "sv": "Sekvensen har värdet ...",
+          "no": "Sekvensen har verdien ...",
+          "es": "La secuencia tiene el valor ...",
+          "da": "Sekvensen har værdien ...",
+          "ru": "Последовательность имеет значение ...",
+          "pl": "Sekwencja ma wartość ...",
+          "ko": "시퀀스의 값 ..."
         },
         "titleFormatted": {
           "en": "Sequence [[name]] reaches [[value]]",
-          "nl": "Stappenreeks [[name]] bereikt waarde [[value]]"
+          "nl": "Stappenreeks [[name]] bereikt waarde [[value]]",
+          "de": "Sequenz [[name]] erreicht Wert [[value]]",
+          "fr": "La séquence [[name]] atteint la valeur [[value]]",
+          "it": "La sequenza [[name]] raggiunge il valore [[value]]",
+          "sv": "Sekvensen [[name]] når värdet [[value]]",
+          "no": "Sekvensen [[name]] når verdien [[value]]",
+          "es": "La secuencia [[name]] alcanza el valor [[value]]",
+          "da": "Sekvensen [[name]] når værdien [[value]]",
+          "ru": "Последовательность [[name]] достигает значения [[value]]",
+          "pl": "Sekwencja [[name]] osiąga wartość [[value]]",
+          "ko": "시퀀스 [[name]]이(가) [[value]] 값에 도달"
         },
         "hint": {
           "en": "Triggers when a sequence reaches the specified value.",
-          "nl": "Triggert wanneer een stappenreeks een waarde bereikt."
+          "nl": "Triggert wanneer een stappenreeks een waarde bereikt.",
+          "de": "Löst aus, wenn eine Sequenz den angegebenen Wert erreicht.",
+          "fr": "Déclenche lorsque la séquence atteint la valeur spécifiée.",
+          "it": "Attiva quando la sequenza raggiunge il valore specificato.",
+          "sv": "Utlöses när en sekvens når det angivna värdet.",
+          "no": "Utøses når en sekvens når den angitte verdien.",
+          "es": "Se activa cuando una secuencia alcanza el valor especificado.",
+          "da": "Udløses når en sekvens når den angivne værdi.",
+          "ru": "Срабатывает, когда последовательность достигает указанного значения.",
+          "pl": "Wyzwalane, gdy sekwencja osiągnie podaną wartość.",
+          "ko": "시퀀스가 지정된 값에 도달하면 트리거됩니다."
         },
         "args": [
           {
@@ -94,7 +277,17 @@
             "name": "name",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Название",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -104,11 +297,31 @@
             "step": 1,
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 5",
-              "nl": "Bijv. 5"
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "Fx 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5"
             }
           }
         ]
@@ -117,15 +330,45 @@
         "id": "cycle_updates",
         "title": {
           "en": "Sequence updates value",
-          "nl": "Stappenreeks veranderd van waarde"
+          "nl": "Stappenreeks verandert van waarde",
+          "de": "Sequenz aktualisiert Wert",
+          "fr": "La séquence met à jour la valeur",
+          "it": "La sequenza aggiorna il valore",
+          "sv": "Sekvensen uppdaterar värdet",
+          "no": "Sekvensen oppdaterer verdien",
+          "es": "La secuencia actualiza el valor",
+          "da": "Sekvensen opdaterer værdien",
+          "ru": "Последовательность обновляет значение",
+          "pl": "Sekwencja aktualizuje wartość",
+          "ko": "시퀀스가 값을 업데이트함"
         },
         "titleFormatted": {
           "en": "Sequence [[name]] updates value",
-          "nl": "Stappenreeks [[name]] veranderd van waarde"
+          "nl": "Stappenreeks [[name]] verandert van waarde",
+          "de": "Sequenz [[name]] aktualisiert Wert",
+          "fr": "La séquence [[name]] met à jour la valeur",
+          "it": "La sequenza [[name]] aggiorna il valore",
+          "sv": "Sekvensen [[name]] uppdaterar värdet",
+          "no": "Sekvensen [[name]] oppdaterer verdien",
+          "es": "La secuencia [[name]] actualiza el valor",
+          "da": "Sekvensen [[name]] opdaterer værdien",
+          "ru": "Последовательность [[name]] обновляет значение",
+          "pl": "Sekwencja [[name]] aktualizuje wartość",
+          "ko": "시퀀스 [[name]]이(가) 값을 업데이트함"
         },
         "hint": {
           "en": "Triggers when a sequence updates its value.",
-          "nl": "Triggert wanneer een stappenreeks zijn waarde veranderd."
+          "nl": "Triggert wanneer een stappenreeks zijn waarde verandert.",
+          "de": "Löst aus, wenn eine Sequenz ihren Wert aktualisiert.",
+          "fr": "Déclenche lorsque la séquence met à jour sa valeur.",
+          "it": "Attiva quando la sequenza aggiorna il proprio valore.",
+          "sv": "Utlöses när en sekvens uppdaterar sitt värde.",
+          "no": "Utøses når en sekvens oppdaterer verdien sin.",
+          "es": "Se activa cuando una secuencia actualiza su valor.",
+          "da": "Udløses når en sekvens opdaterer sin værdi.",
+          "ru": "Срабатывает, когда последовательность обновляет свое значение.",
+          "pl": "Wyzwalane, gdy sekwencja aktualizuje swoją wartość.",
+          "ko": "시퀀스가 값을 업데이트할 때 트리거됨."
         },
         "args": [
           {
@@ -133,7 +376,17 @@
             "name": "name",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Название",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ],
@@ -143,7 +396,17 @@
             "type": "number",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             }
           }
         ]
@@ -152,15 +415,45 @@
         "id": "day_period_becomes",
         "title": {
           "en": "It becomes ...",
-          "nl": "Het wordt ..."
+          "nl": "Het wordt ...",
+          "de": "Es wird ...",
+          "fr": "Il devient ...",
+          "it": "Diventa ...",
+          "sv": "Det blir ...",
+          "no": "Det blir ...",
+          "es": "Se vuelve ...",
+          "da": "Det bliver ...",
+          "ru": "Наступает ...",
+          "pl": "Staje się ...",
+          "ko": "…이 됨"
         },
         "titleFormatted": {
           "en": "It becomes [[value]]",
-          "nl": "Het wordt [[value]]"
+          "nl": "Het wordt [[value]]",
+          "de": "Es wird [[value]]",
+          "fr": "Il devient [[value]]",
+          "it": "Diventa [[value]]",
+          "sv": "Det blir [[value]]",
+          "no": "Det blir [[value]]",
+          "es": "Se vuelve [[value]]",
+          "da": "Det bliver [[value]]",
+          "ru": "Наступает [[value]]",
+          "pl": "Staje się [[value]]",
+          "ko": "[[value]]이 됨"
         },
         "hint": {
           "en": "Triggers when the day period changes.",
-          "nl": "Triggert wanneer de periode van de dag veranderd."
+          "nl": "Triggert wanneer de periode van de dag verandert.",
+          "de": "Löst aus, wenn die Tagesperiode wechselt.",
+          "fr": "Déclenche lorsque la période de la journée change.",
+          "it": "Si attiva quando cambia il periodo della giornata.",
+          "sv": "Utlöses när dagens period ändras.",
+          "no": "Utøses når dagens periode endres.",
+          "es": "Se activa cuando cambia el período del día.",
+          "da": "Udløses når dagens periode ændres.",
+          "ru": "Срабатывает при смене периода дня.",
+          "pl": "Wyzwalane przy zmianie pory dnia.",
+          "ko": "하루의 기간이 바뀔 때 트리거됨."
         },
         "args": [
           {
@@ -168,35 +461,85 @@
             "name": "value",
             "title": {
               "en": "Day period",
-              "nl": "Dagperiode"
+              "nl": "Dagperiode",
+              "de": "Tagesperiode",
+              "fr": "Période de la journée",
+              "it": "Periodo del giorno",
+              "sv": "Dagperiod",
+              "no": "Dagsperiode",
+              "es": "Período del día",
+              "da": "Dagens periode",
+              "ru": "Период дня",
+              "pl": "Pora dnia",
+              "ko": "하루 기간"
             },
             "values": [
               {
                 "id": "morning",
                 "title": {
                   "en": "Morning",
-                  "nl": "Ochtend"
+                  "nl": "Ochtend",
+                  "de": "Morgen",
+                  "fr": "Matin",
+                  "it": "Mattina",
+                  "sv": "Morgon",
+                  "no": "Morgen",
+                  "es": "Mañana",
+                  "da": "Morgen",
+                  "ru": "Утро",
+                  "pl": "Poranek",
+                  "ko": "아침"
                 }
               },
               {
                 "id": "afternoon",
                 "title": {
                   "en": "Afternoon",
-                  "nl": "Middag"
+                  "nl": "Middag",
+                  "de": "Nachmittag",
+                  "fr": "Après-midi",
+                  "it": "Pomeriggio",
+                  "sv": "Eftermiddag",
+                  "no": "Ettermiddag",
+                  "es": "Tarde",
+                  "da": "Eftermiddag",
+                  "ru": "День",
+                  "pl": "Popołudnie",
+                  "ko": "오후"
                 }
               },
               {
                 "id": "evening",
                 "title": {
-                  "en": "evening",
-                  "nl": "Avond"
+                  "en": "Evening",
+                  "nl": "Avond",
+                  "de": "Abend",
+                  "fr": "Soir",
+                  "it": "Sera",
+                  "sv": "Kväll",
+                  "no": "Kveld",
+                  "es": "Noche",
+                  "da": "Aften",
+                  "ru": "Вечер",
+                  "pl": "Wieczór",
+                  "ko": "저녁"
                 }
               },
               {
                 "id": "night",
                 "title": {
                   "en": "Night",
-                  "nl": "Nacht"
+                  "nl": "Nacht",
+                  "de": "Nacht",
+                  "fr": "Nuit",
+                  "it": "Notte",
+                  "sv": "Natt",
+                  "no": "Natt",
+                  "es": "Noche",
+                  "da": "Nat",
+                  "ru": "Ночь",
+                  "pl": "Noc",
+                  "ko": "밤"
                 }
               }
             ]
@@ -207,15 +550,45 @@
         "id": "day_period_over",
         "title": {
           "en": "The ... is over",
-          "nl": "De ... is voorbij"
+          "nl": "De ... is voorbij",
+          "de": "Die ... ist vorbei",
+          "fr": "La ... est terminée",
+          "it": "La ... è finita",
+          "sv": "… är över",
+          "no": "… er over",
+          "es": "La ... ha terminado",
+          "da": "… er slut",
+          "ru": "… закончился",
+          "pl": "… się skończyła",
+          "ko": "…이 끝남"
         },
         "titleFormatted": {
           "en": "The [[value]] is over",
-          "nl": "De [[value]] is voorbij"
+          "nl": "De [[value]] is voorbij",
+          "de": "[[value]] ist vorbei",
+          "fr": "[[value]] est terminée",
+          "it": "[[value]] è finita",
+          "sv": "[[value]] är över",
+          "no": "[[value]] er over",
+          "es": "[[value]] ha terminado",
+          "da": "[[value]] er slut",
+          "ru": "[[value]] закончился",
+          "pl": "[[value]] się skończyła",
+          "ko": "[[value]]이 끝남"
         },
         "hint": {
           "en": "Triggers when the day period is over.",
-          "nl": "Triggert wanneer de periode van de dag voorbij is."
+          "nl": "Triggert wanneer de periode van de dag voorbij is.",
+          "de": "Löst aus, wenn die Tagesperiode vorbei ist.",
+          "fr": "Déclenche lorsque la période de la journée est terminée.",
+          "it": "Si attiva quando il periodo della giornata è finito.",
+          "sv": "Utlöses när dagens period är över.",
+          "no": "Utøses når dagens periode er over.",
+          "es": "Se activa cuando el período del día ha terminado.",
+          "da": "Udløses når dagens periode er slut.",
+          "ru": "Срабатывает при окончании периода дня.",
+          "pl": "Wyzwalane gdy pora dnia dobiegnie końca.",
+          "ko": "하루 기간이 끝날 때 트리거됨."
         },
         "args": [
           {
@@ -223,35 +596,85 @@
             "name": "value",
             "title": {
               "en": "Day period",
-              "nl": "Dagperiode"
+              "nl": "Dagperiode",
+              "de": "Tagesperiode",
+              "fr": "Période de la journée",
+              "it": "Periodo del giorno",
+              "sv": "Dagperiod",
+              "no": "Dagsperiode",
+              "es": "Período del día",
+              "da": "Dagens periode",
+              "ru": "Период дня",
+              "pl": "Pora dnia",
+              "ko": "하루 기간"
             },
             "values": [
               {
                 "id": "morning",
                 "title": {
                   "en": "Morning",
-                  "nl": "Ochtend"
+                  "nl": "Ochtend",
+                  "de": "Morgen",
+                  "fr": "Matin",
+                  "it": "Mattina",
+                  "sv": "Morgon",
+                  "no": "Morgen",
+                  "es": "Mañana",
+                  "da": "Morgen",
+                  "ru": "Утро",
+                  "pl": "Poranek",
+                  "ko": "아침"
                 }
               },
               {
                 "id": "afternoon",
                 "title": {
                   "en": "Afternoon",
-                  "nl": "Middag"
+                  "nl": "Middag",
+                  "de": "Nachmittag",
+                  "fr": "Après-midi",
+                  "it": "Pomeriggio",
+                  "sv": "Eftermiddag",
+                  "no": "Ettermiddag",
+                  "es": "Tarde",
+                  "da": "Eftermiddag",
+                  "ru": "День",
+                  "pl": "Popołudnie",
+                  "ko": "오후"
                 }
               },
               {
                 "id": "evening",
                 "title": {
-                  "en": "evening",
-                  "nl": "Avond"
+                  "en": "Evening",
+                  "nl": "Avond",
+                  "de": "Abend",
+                  "fr": "Soir",
+                  "it": "Sera",
+                  "sv": "Kväll",
+                  "no": "Kveld",
+                  "es": "Noche",
+                  "da": "Aften",
+                  "ru": "Вечер",
+                  "pl": "Wieczór",
+                  "ko": "저녁"
                 }
               },
               {
                 "id": "night",
                 "title": {
                   "en": "Night",
-                  "nl": "Nacht"
+                  "nl": "Nacht",
+                  "de": "Nacht",
+                  "fr": "Nuit",
+                  "it": "Notte",
+                  "sv": "Natt",
+                  "no": "Natt",
+                  "es": "Noche",
+                  "da": "Nat",
+                  "ru": "Ночь",
+                  "pl": "Noc",
+                  "ko": "밤"
                 }
               }
             ]
@@ -262,15 +685,45 @@
         "id": "flag_activated",
         "title": {
           "en": "Flag activated",
-          "nl": "Flag geactiveerd"
+          "nl": "Flag geactiveerd",
+          "de": "Flag aktiviert",
+          "fr": "Drapeau activé",
+          "it": "Flag attivato",
+          "sv": "Flagga aktiverad",
+          "no": "Flagg aktivert",
+          "es": "Bandera activada",
+          "da": "Flag aktiveret",
+          "ru": "Флаг активирован",
+          "pl": "Flaga aktywowana",
+          "ko": "플래그 활성화됨"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] is activated",
-          "nl": "Flag [[flag]] is geactiveerd"
+          "nl": "Flag [[flag]] is geactiveerd",
+          "de": "Flag [[flag]] ist aktiviert",
+          "fr": "Le drapeau [[flag]] est activé",
+          "it": "La flag [[flag]] è attivata",
+          "sv": "Flaggan [[flag]] är aktiverad",
+          "no": "Flagget [[flag]] er aktivert",
+          "es": "La bandera [[flag]] está activada",
+          "da": "Flaget [[flag]] er aktiveret",
+          "ru": "Флаг [[flag]] активирован",
+          "pl": "Flaga [[flag]] została aktywowana",
+          "ko": "플래그 [[flag]]이 활성화됨"
         },
         "hint": {
           "en": "Triggers when a flag gets activated.",
-          "nl": "Triggert wanneer een flag is geactiveerd."
+          "nl": "Triggert wanneer een flag is geactiveerd.",
+          "de": "Löst aus, wenn ein Flag aktiviert wird.",
+          "fr": "Se déclenche lorsqu’un drapeau est activé.",
+          "it": "Si attiva quando una flag viene attivata.",
+          "sv": "Utlöses när en flagga aktiveras.",
+          "no": "Utøses når et flagg aktiveres.",
+          "es": "Se activa cuando una bandera es activada.",
+          "da": "Udløses når et flag aktiveres.",
+          "ru": "Срабатывает при активации флага.",
+          "pl": "Wyzwalane gdy flaga zostanie aktywowana.",
+          "ko": "플래그가 활성화될 때 트리거됨."
         },
         "args": [
           {
@@ -278,7 +731,17 @@
             "name": "flag",
             "title": {
               "en": "Flag",
-              "nl": "Flag"
+              "nl": "Flag",
+              "de": "Flag",
+              "fr": "Drapeau",
+              "it": "Flag",
+              "sv": "Flagga",
+              "no": "Flagg",
+              "es": "Bandera",
+              "da": "Flag",
+              "ru": "Флаг",
+              "pl": "Flaga",
+              "ko": "플래그"
             }
           }
         ]
@@ -287,15 +750,45 @@
         "id": "flag_changed",
         "title": {
           "en": "Flag changed",
-          "nl": "Flag gewijzigd"
+          "nl": "Flag gewijzigd",
+          "de": "Flag geändert",
+          "fr": "Drapeau modifié",
+          "it": "Flag modificata",
+          "sv": "Flagga ändrad",
+          "no": "Flagg endret",
+          "es": "Bandera cambiada",
+          "da": "Flag ændret",
+          "ru": "Флаг изменён",
+          "pl": "Flaga zmieniona",
+          "ko": "플래그 변경됨"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] changed",
-          "nl": "Flag [[flag]] gewijzigd"
+          "nl": "Flag [[flag]] gewijzigd",
+          "de": "Flag [[flag]] geändert",
+          "fr": "Le drapeau [[flag]] a changé",
+          "it": "La flag [[flag]] è cambiata",
+          "sv": "Flaggan [[flag]] ändrades",
+          "no": "Flagget [[flag]] ble endret",
+          "es": "La bandera [[flag]] cambió",
+          "da": "Flaget [[flag]] blev ændret",
+          "ru": "Флаг [[flag]] изменён",
+          "pl": "Flaga [[flag]] została zmieniona",
+          "ko": "플래그 [[flag]]이 변경됨"
         },
         "hint": {
           "en": "Triggers when a flag is activated or deactivated.",
-          "nl": "Triggert wanneer een flag wordt geactiveerd of gedeactiveerd."
+          "nl": "Triggert wanneer een flag wordt geactiveerd of gedeactiveerd.",
+          "de": "Löst aus wenn ein Flag aktiviert oder deaktiviert wird.",
+          "fr": "Se déclenche lorsqu’un drapeau est activé ou désactivé.",
+          "it": "Si attiva quando una flag viene attivata o disattivata.",
+          "sv": "Utlöses när en flagga aktiveras eller avaktiveras.",
+          "no": "Utøses når et flagg aktiveres eller deaktiveres.",
+          "es": "Se activa cuando una bandera se activa o desactiva.",
+          "da": "Udløses når et flag aktiveres eller deaktiveres.",
+          "ru": "Срабатывает при активации или деактивации флага.",
+          "pl": "Wyzwalane gdy flaga zostaje aktywowana lub dezaktywowana.",
+          "ko": "플래그가 활성화되거나 비활성화될 때 트리거됨."
         },
         "args": [
           {
@@ -303,7 +796,17 @@
             "name": "flag",
             "title": {
               "en": "Flag",
-              "nl": "Flag"
+              "nl": "Flag",
+              "de": "Flag",
+              "fr": "Drapeau",
+              "it": "Flag",
+              "sv": "Flagga",
+              "no": "Flagg",
+              "es": "Bandera",
+              "da": "Flag",
+              "ru": "Флаг",
+              "pl": "Flaga",
+              "ko": "플래그"
             }
           }
         ],
@@ -313,7 +816,17 @@
             "type": "boolean",
             "title": {
               "en": "Active",
-              "nl": "Actief"
+              "nl": "Actief",
+              "de": "Aktiv",
+              "fr": "Actif",
+              "it": "Attivo",
+              "sv": "Aktiv",
+              "no": "Aktiv",
+              "es": "Activo",
+              "da": "Aktiv",
+              "ru": "Активен",
+              "pl": "Aktywny",
+              "ko": "활성"
             }
           }
         ]
@@ -322,15 +835,45 @@
         "id": "flag_deactivated",
         "title": {
           "en": "Flag deactivated",
-          "nl": "Flag gedeactiveerd"
+          "nl": "Flag gedeactiveerd",
+          "de": "Flag deaktiviert",
+          "fr": "Drapeau désactivé",
+          "it": "Flag disattivata",
+          "sv": "Flagga inaktiverad",
+          "no": "Flagg deaktivert",
+          "es": "Bandera desactivada",
+          "da": "Flag deaktiveret",
+          "ru": "Флаг деактивирован",
+          "pl": "Flaga dezaktywowana",
+          "ko": "플래그 비활성화됨"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] is deactivated",
-          "nl": "Flag [[flag]] is gedeactiveerd"
+          "nl": "Flag [[flag]] is gedeactiveerd",
+          "de": "Flag [[flag]] ist deaktiviert",
+          "fr": "Le drapeau [[flag]] est désactivé",
+          "it": "La flag [[flag]] è disattivata",
+          "sv": "Flaggan [[flag]] är inaktiverad",
+          "no": "Flagget [[flag]] er deaktivert",
+          "es": "La bandera [[flag]] está desactivada",
+          "da": "Flaget [[flag]] er deaktiveret",
+          "ru": "Флаг [[flag]] деактивирован",
+          "pl": "Flaga [[flag]] została dezaktywowana",
+          "ko": "플래그 [[flag]]가 비활성화됨"
         },
         "hint": {
           "en": "Triggers when a flag gets deactivated.",
-          "nl": "Triggert wanneer een flag is gedeactiveerd."
+          "nl": "Triggert wanneer een flag is gedeactiveerd.",
+          "de": "Löst aus, wenn ein Flag deaktiviert wird.",
+          "fr": "Se déclenche lorsqu’un drapeau est désactivé.",
+          "it": "Si attiva quando una flag viene disattivata.",
+          "sv": "Utlöses när en flagga avaktiveras.",
+          "no": "Utøses når et flagg deaktiveres.",
+          "es": "Se activa cuando una bandera se desactiva.",
+          "da": "Udløses når et flag deaktiveres.",
+          "ru": "Срабатывает при деактивации флага.",
+          "pl": "Wyzwalane gdy flaga zostaje dezaktywowana.",
+          "ko": "플래그가 비활성화될 때 트리거됨."
         },
         "args": [
           {
@@ -338,7 +881,17 @@
             "name": "flag",
             "title": {
               "en": "Flag",
-              "nl": "Flag"
+              "nl": "Flag",
+              "de": "Flag",
+              "fr": "Drapeau",
+              "it": "Flag",
+              "sv": "Flagga",
+              "no": "Flagg",
+              "es": "Bandera",
+              "da": "Flag",
+              "ru": "Флаг",
+              "pl": "Flaga",
+              "ko": "플래그"
             }
           }
         ]
@@ -347,15 +900,45 @@
         "id": "mode_activated",
         "title": {
           "en": "Mode activated",
-          "nl": "Stand geactiveerd"
+          "nl": "Stand geactiveerd",
+          "de": "Modus aktiviert",
+          "fr": "Mode activé",
+          "it": "Modalità attivata",
+          "sv": "Läge aktiverat",
+          "no": "Modus aktivert",
+          "es": "Modo activado",
+          "da": "Tilstand aktiveret",
+          "ru": "Режим активирован",
+          "pl": "Tryb aktywowany",
+          "ko": "모드 활성화됨"
         },
         "titleFormatted": {
           "en": "[[name]] is activated",
-          "nl": "[[name]] is geactiveerd"
+          "nl": "[[name]] is geactiveerd",
+          "de": "[[name]] ist aktiviert",
+          "fr": "[[name]] est activé",
+          "it": "[[name]] è attivata",
+          "sv": "[[name]] är aktiverat",
+          "no": "[[name]] er aktivert",
+          "es": "[[name]] está activado",
+          "da": "[[name]] er aktiveret",
+          "ru": "[[name]] активирован",
+          "pl": "[[name]] został aktywowany",
+          "ko": "[[name]]가 활성화됨"
         },
         "hint": {
           "en": "Triggers when a mode gets activated.",
-          "nl": "Triggert wanneer een stand is geactiveerd."
+          "nl": "Triggert wanneer een stand is geactiveerd.",
+          "de": "Löst aus, wenn ein Modus aktiviert wird.",
+          "fr": "Se déclenche lorsqu’un mode est activé.",
+          "it": "Si attiva quando una modalità viene attivata.",
+          "sv": "Utlöses när ett läge aktiveras.",
+          "no": "Utløses når en modus aktiveres.",
+          "es": "Se activa cuando un modo se activa.",
+          "da": "Udløses når en tilstand aktiveres.",
+          "ru": "Срабатывает при активации режима.",
+          "pl": "Wyzwalane, gdy tryb zostaje aktywowany.",
+          "ko": "모드가 활성화될 때 트리거됨."
         },
         "args": [
           {
@@ -363,7 +946,17 @@
             "name": "name",
             "title": {
               "en": "Mode",
-              "nl": "Stand"
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
             }
           }
         ]
@@ -372,15 +965,45 @@
         "id": "mode_changed",
         "title": {
           "en": "Mode changed",
-          "nl": "Stand gewijzigd"
+          "nl": "Stand gewijzigd",
+          "de": "Modus geändert",
+          "fr": "Mode changé",
+          "it": "Modalità modificata",
+          "sv": "Läge ändrat",
+          "no": "Modus endret",
+          "es": "Modo cambiado",
+          "da": "Tilstand ændret",
+          "ru": "Режим изменён",
+          "pl": "Tryb zmieniony",
+          "ko": "모드 변경됨"
         },
         "titleFormatted": {
           "en": "Mode [[name]] changed",
-          "nl": "Stand [[name]] gewijzigd"
+          "nl": "Stand [[name]] gewijzigd",
+          "de": "Modus [[name]] geändert",
+          "fr": "Mode [[name]] changé",
+          "it": "Modalità [[name]] modificata",
+          "sv": "Läge [[name]] ändrat",
+          "no": "Modus [[name]] endret",
+          "es": "Modo [[name]] cambiado",
+          "da": "Tilstand [[name]] ændret",
+          "ru": "Режим [[name]] изменён",
+          "pl": "Tryb [[name]] zmieniony",
+          "ko": "모드 [[name]] 변경됨"
         },
         "hint": {
           "en": "Triggers when a mode is activated or deactivated.",
-          "nl": "Triggert wanneer een stand wordt geactiveerd of gedeactiveerd."
+          "nl": "Triggert wanneer een stand wordt geactiveerd of gedeactiveerd.",
+          "de": "Löst aus, wenn ein Modus aktiviert oder deaktiviert wird.",
+          "fr": "Se déclenche lorsqu’un mode est activé ou désactivé.",
+          "it": "Si attiva quando una modalità viene attivata o disattivata.",
+          "sv": "Utlöses när ett läge aktiveras eller deaktiveras.",
+          "no": "Utløses når en modus aktiveres eller deaktiveres.",
+          "es": "Se activa cuando un modo se activa o desactiva.",
+          "da": "Udløses når en tilstand aktiveres eller deaktiveres.",
+          "ru": "Срабатывает при активации или деактивации режима.",
+          "pl": "Wyzwalane, gdy tryb zostaje aktywowany lub dezaktywowany.",
+          "ko": "모드가 활성화되거나 비활성화될 때 트리거됨."
         },
         "args": [
           {
@@ -388,7 +1011,17 @@
             "name": "name",
             "title": {
               "en": "Mode",
-              "nl": "Stand"
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
             }
           }
         ],
@@ -398,7 +1031,17 @@
             "type": "boolean",
             "title": {
               "en": "Active",
-              "nl": "Actief"
+              "nl": "Actief",
+              "de": "Aktiv",
+              "fr": "Actif",
+              "it": "Attivo",
+              "sv": "Aktiv",
+              "no": "Aktiv",
+              "es": "Activo",
+              "da": "Aktiv",
+              "ru": "Активный",
+              "pl": "Aktywny",
+              "ko": "활성"
             }
           }
         ]
@@ -407,15 +1050,45 @@
         "id": "mode_deactivated",
         "title": {
           "en": "Mode deactivated",
-          "nl": "Stand gedeactiveerd"
+          "nl": "Stand gedeactiveerd",
+          "de": "Modus deaktiviert",
+          "fr": "Mode désactivé",
+          "it": "Modalità disattivata",
+          "sv": "Läge inaktiverat",
+          "no": "Modus deaktivert",
+          "es": "Modo desactivado",
+          "da": "Tilstand deaktiveret",
+          "ru": "Режим деактивирован",
+          "pl": "Tryb dezaktywowany",
+          "ko": "모드 비활성화됨"
         },
         "titleFormatted": {
           "en": "[[name]] is deactivated",
-          "nl": "[[name]] is gedeactiveerd"
+          "nl": "[[name]] is gedeactiveerd",
+          "de": "[[name]] ist deaktiviert",
+          "fr": "[[name]] est désactivé",
+          "it": "[[name]] è disattivato",
+          "sv": "[[name]] är inaktiverat",
+          "no": "[[name]] er deaktivert",
+          "es": "[[name]] está desactivado",
+          "da": "[[name]] er deaktiveret",
+          "ru": "[[name]] деактивирован",
+          "pl": "[[name]] jest dezaktywowany",
+          "ko": "[[name]] 비활성화됨"
         },
         "hint": {
           "en": "Triggers when a mode gets deactivated.",
-          "nl": "Triggert wanneer een stand is gedeactiveerd."
+          "nl": "Triggert wanneer een stand is gedeactiveerd.",
+          "de": "Löst aus, wenn ein Modus deaktiviert wird.",
+          "fr": "Se déclenche lorsqu’un mode est désactivé.",
+          "it": "Si attiva quando una modalità viene disattivata.",
+          "sv": "Utlöses när ett läge inaktiveras.",
+          "no": "Utløses når en modus deaktiveres.",
+          "es": "Se activa cuando un modo se desactiva.",
+          "da": "Udløses når en tilstand deaktiveres.",
+          "ru": "Срабатывает при деактивации режима.",
+          "pl": "Wyzwalane, gdy tryb zostaje dezaktywowany.",
+          "ko": "모드가 비활성화될 때 트리거됨."
         },
         "args": [
           {
@@ -423,7 +1096,17 @@
             "name": "name",
             "title": {
               "en": "Mode",
-              "nl": "Stand"
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
             }
           }
         ]
@@ -432,15 +1115,45 @@
         "id": "signal_receive",
         "title": {
           "en": "Receive signal",
-          "nl": "Ontvang signaal"
+          "nl": "Ontvang signaal",
+          "de": "Signal empfangen",
+          "fr": "Recevoir le signal",
+          "it": "Ricevi segnale",
+          "sv": "Ta emot signal",
+          "no": "Motta signal",
+          "es": "Recibir señal",
+          "da": "Modtag signal",
+          "ru": "Получить сигнал",
+          "pl": "Odbierz sygnał",
+          "ko": "신호 받기"
         },
         "titleFormatted": {
           "en": "Receive signal [[signal]]",
-          "nl": "Ontvang signaal [[signal]]"
+          "nl": "Ontvang signaal [[signal]]",
+          "de": "Empfange Signal [[signal]]",
+          "fr": "Recevoir le signal [[signal]]",
+          "it": "Ricevi segnale [[signal]]",
+          "sv": "Ta emot signal [[signal]]",
+          "no": "Motta signal [[signal]]",
+          "es": "Recibir señal [[signal]]",
+          "da": "Modtag signal [[signal]]",
+          "ru": "Получить сигнал [[signal]]",
+          "pl": "Odbierz sygnał [[signal]]",
+          "ko": "[[signal]] 신호 받기"
         },
         "hint": {
           "en": "Receives a signal that was sent using the 'Send signal' card.",
-          "nl": "Ontvangt een signaal dat verstuurd is door de 'Stuur signaal' kaart."
+          "nl": "Ontvangt een signaal dat verstuurd is door de 'Stuur signaal' kaart.",
+          "de": "Empfängt ein Signal, das mit der 'Signal senden'-Karte gesendet wurde.",
+          "fr": "Reçoit un signal envoyé avec la carte 'Envoyer signal'.",
+          "it": "Riceve un segnale inviato tramite la scheda 'Invia segnale'.",
+          "sv": "Tar emot en signal som skickades med 'Skicka signal'-kortet.",
+          "no": "Mottar et signal som ble sendt med 'Send signal'-kortet.",
+          "es": "Recibe una señal enviada mediante la tarjeta 'Enviar señal'.",
+          "da": "Modtager et signal, der blev sendt med 'Send signal'-kortet.",
+          "ru": "Получает сигнал, отправленный с помощью карты 'Отправить сигнал'.",
+          "pl": "Odbiera sygnał wysłany za pomocą karty 'Wyślij sygnał'.",
+          "ko": "'신호 보내기' 카드로 보낸 신호를 받습니다."
         },
         "args": [
           {
@@ -448,7 +1161,17 @@
             "name": "signal",
             "title": {
               "en": "Signal",
-              "nl": "Signaal"
+              "nl": "Signaal",
+              "de": "Signal",
+              "fr": "Signal",
+              "it": "Segnale",
+              "sv": "Signal",
+              "no": "Signal",
+              "es": "Señal",
+              "da": "Signal",
+              "ru": "Сигнал",
+              "pl": "Sygnał",
+              "ko": "신호"
             }
           }
         ]
@@ -457,11 +1180,31 @@
         "id": "timer_finished",
         "title": {
           "en": "Timer finished",
-          "nl": "Timer is afgelopen"
+          "nl": "Timer is afgelopen",
+          "de": "Timer beendet",
+          "fr": "Minuteur terminé",
+          "it": "Timer terminato",
+          "sv": "Timer klar",
+          "no": "Timer ferdig",
+          "es": "Temporizador terminado",
+          "da": "Timer færdig",
+          "ru": "Таймер завершён",
+          "pl": "Zegar zakończony",
+          "ko": "타이머 종료"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] finished",
-          "nl": "Timer [[timer]] is afgelopen"
+          "nl": "Timer [[timer]] is afgelopen",
+          "de": "Timer [[timer]] beendet",
+          "fr": "Minuteur [[timer]] terminé",
+          "it": "Timer [[timer]] terminato",
+          "sv": "Timer [[timer]] klar",
+          "no": "Timer [[timer]] ferdig",
+          "es": "Temporizador [[timer]] terminado",
+          "da": "Timer [[timer]] færdig",
+          "ru": "Таймер [[timer]] завершён",
+          "pl": "Zegar [[timer]] zakończony",
+          "ko": "타이머 [[timer]] 종료"
         },
         "args": [
           {
@@ -469,7 +1212,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -478,11 +1231,31 @@
         "id": "timer_paused",
         "title": {
           "en": "Timer paused",
-          "nl": "Timer is gepauzeerd"
+          "nl": "Timer is gepauzeerd",
+          "de": "Timer pausiert",
+          "fr": "Minuteur en pause",
+          "it": "Timer in pausa",
+          "sv": "Timer pausad",
+          "no": "Timer pausert",
+          "es": "Temporizador en pausa",
+          "da": "Timer sat på pause",
+          "ru": "Таймер на паузе",
+          "pl": "Timer wstrzymany",
+          "ko": "타이머 일시정지"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] paused",
-          "nl": "Timer [[timer]] is gepauzeerd"
+          "nl": "Timer [[timer]] is gepauzeerd",
+          "de": "Timer [[timer]] pausiert",
+          "fr": "Minuteur [[timer]] en pause",
+          "it": "Timer [[timer]] in pausa",
+          "sv": "Timer [[timer]] pausad",
+          "no": "Timer [[timer]] pausert",
+          "es": "Temporizador [[timer]] en pausa",
+          "da": "Timer [[timer]] sat på pause",
+          "ru": "Таймер [[timer]] на паузе",
+          "pl": "Timer [[timer]] wstrzymany",
+          "ko": "타이머 [[timer]] 일시정지"
         },
         "args": [
           {
@@ -490,7 +1263,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -499,11 +1282,31 @@
         "id": "timer_remaining",
         "title": {
           "en": "Timer remaining",
-          "nl": "Timer is resterend"
+          "nl": "Timer is resterend",
+          "de": "Verbleibende Zeit des Timers",
+          "fr": "Temps restant du minuteur",
+          "it": "Tempo rimanente del timer",
+          "sv": "Timer kvar",
+          "no": "Timer gjenstår",
+          "es": "Tiempo restante del temporizador",
+          "da": "Tid tilbage på timer",
+          "ru": "Осталось времени таймера",
+          "pl": "Pozostały czas timera",
+          "ko": "타이머 남은 시간"
         },
         "titleFormatted": {
           "en": "[[duration]] [[unit]] remaining for timer [[timer]]",
-          "nl": "Timer [[timer]] bereikt [[duration]] [[unit]]"
+          "nl": "Timer [[timer]] bereikt [[duration]] [[unit]]",
+          "de": "[[duration]] [[unit]] verbleibend für Timer [[timer]]",
+          "fr": "[[duration]] [[unit]] restant pour le minuteur [[timer]]",
+          "it": "[[duration]] [[unit]] rimanenti per il timer [[timer]]",
+          "sv": "[[duration]] [[unit]] kvar för timer [[timer]]",
+          "no": "[[duration]] [[unit]] gjenstår for timer [[timer]]",
+          "es": "[[duration]] [[unit]] restantes para el temporizador [[timer]]",
+          "da": "[[duration]] [[unit]] tilbage for timer [[timer]]",
+          "ru": "[[duration]] [[unit]] осталось для таймера [[timer]]",
+          "pl": "[[duration]] [[unit]] pozostało dla timera [[timer]]",
+          "ko": "타이머 [[timer]]에 [[duration]] [[unit]] 남음"
         },
         "args": [
           {
@@ -511,7 +1314,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -521,11 +1334,31 @@
             "step": 1,
             "title": {
               "en": "Duration",
-              "nl": "Looptijd"
+              "nl": "Looptijd",
+              "de": "Dauer",
+              "fr": "Durée",
+              "it": "Durata",
+              "sv": "Varaktighet",
+              "no": "Varighet",
+              "es": "Duración",
+              "da": "Varighed",
+              "ru": "Продолжительность",
+              "pl": "Czas trwania",
+              "ko": "기간"
             },
             "placeholder": {
               "en": "E.g. 10",
-              "nl": "Bijv. 10"
+              "nl": "Bijv. 10",
+              "de": "Z.B. 10",
+              "fr": "Ex. 10",
+              "it": "Es. 10",
+              "sv": "T.ex. 10",
+              "no": "F.eks. 10",
+              "es": "Ej. 10",
+              "da": "F.eks. 10",
+              "ru": "Напр. 10",
+              "pl": "Np. 10",
+              "ko": "예: 10"
             }
           },
           {
@@ -533,35 +1366,85 @@
             "name": "unit",
             "title": {
               "en": "Unit",
-              "nl": "Eenheid"
+              "nl": "Eenheid",
+              "de": "Einheit",
+              "fr": "Unité",
+              "it": "Unità",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Unidad",
+              "da": "Enhed",
+              "ru": "Единица",
+              "pl": "Jednostka",
+              "ko": "단위"
             },
             "values": [
               {
                 "id": "seconds",
                 "title": {
                   "en": "seconds",
-                  "nl": "seconden"
+                  "nl": "seconden",
+                  "de": "Sekunden",
+                  "fr": "secondes",
+                  "it": "secondi",
+                  "sv": "sekunder",
+                  "no": "sekunder",
+                  "es": "segundos",
+                  "da": "sekunder",
+                  "ru": "секунды",
+                  "pl": "sekundy",
+                  "ko": "초"
                 }
               },
               {
                 "id": "minutes",
                 "title": {
                   "en": "minutes",
-                  "nl": "minuten"
+                  "nl": "minuten",
+                  "de": "Minuten",
+                  "fr": "minutes",
+                  "it": "minuti",
+                  "sv": "minuter",
+                  "no": "minutter",
+                  "es": "minutos",
+                  "da": "minutter",
+                  "ru": "минуты",
+                  "pl": "minuty",
+                  "ko": "분"
                 }
               },
               {
                 "id": "hours",
                 "title": {
                   "en": "hours",
-                  "nl": "uren"
+                  "nl": "uren",
+                  "de": "Stunden",
+                  "fr": "heures",
+                  "it": "ore",
+                  "sv": "timmar",
+                  "no": "timer",
+                  "es": "horas",
+                  "da": "timer",
+                  "ru": "часы",
+                  "pl": "godziny",
+                  "ko": "시간"
                 }
               },
               {
                 "id": "days",
                 "title": {
                   "en": "days",
-                  "nl": "dagen"
+                  "nl": "dagen",
+                  "de": "Tage",
+                  "fr": "jours",
+                  "it": "giorni",
+                  "sv": "dagar",
+                  "no": "dager",
+                  "es": "días",
+                  "da": "dage",
+                  "ru": "дни",
+                  "pl": "dni",
+                  "ko": "일"
                 }
               }
             ]
@@ -572,11 +1455,31 @@
         "id": "timer_resumed",
         "title": {
           "en": "Timer resumed",
-          "nl": "Timer is hervat"
+          "nl": "Timer is hervat",
+          "de": "Timer fortgesetzt",
+          "fr": "Minuteur repris",
+          "it": "Timer ripreso",
+          "sv": "Timer återupptagen",
+          "no": "Timer gjenopptatt",
+          "es": "Temporizador reanudado",
+          "da": "Timer genoptaget",
+          "ru": "Таймер возобновлён",
+          "pl": "Timer wznowiony",
+          "ko": "타이머 재개됨"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] resumed",
-          "nl": "Timer [[timer]] is hervat"
+          "nl": "Timer [[timer]] is hervat",
+          "de": "Timer [[timer]] fortgesetzt",
+          "fr": "Minuteur [[timer]] repris",
+          "it": "Timer [[timer]] ripreso",
+          "sv": "Timer [[timer]] återupptagen",
+          "no": "Timer [[timer]] gjenopptatt",
+          "es": "Temporizador [[timer]] reanudado",
+          "da": "Timer [[timer]] genoptaget",
+          "ru": "Таймер [[timer]] возобновлён",
+          "pl": "Timer [[timer]] wznowiony",
+          "ko": "타이머 [[timer]] 재개됨"
         },
         "args": [
           {
@@ -584,7 +1487,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -593,11 +1506,31 @@
         "id": "timer_started",
         "title": {
           "en": "Timer started",
-          "nl": "Timer is gestart"
+          "nl": "Timer is gestart",
+          "de": "Timer gestartet",
+          "fr": "Minuteur démarré",
+          "it": "Timer avviato",
+          "sv": "Timer startad",
+          "no": "Timer startet",
+          "es": "Temporizador iniciado",
+          "da": "Timer startet",
+          "ru": "Таймер запущен",
+          "pl": "Timer rozpoczęty",
+          "ko": "타이머 시작됨"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] started",
-          "nl": "Timer [[timer]] is gestart"
+          "nl": "Timer [[timer]] is gestart",
+          "de": "Timer [[timer]] gestartet",
+          "fr": "Minuteur [[timer]] démarré",
+          "it": "Timer [[timer]] avviato",
+          "sv": "Timer [[timer]] startad",
+          "no": "Timer [[timer]] startet",
+          "es": "Temporizador [[timer]] iniciado",
+          "da": "Timer [[timer]] startet",
+          "ru": "Таймер [[timer]] запущен",
+          "pl": "Timer [[timer]] rozpoczęty",
+          "ko": "타이머 [[timer]] 시작됨"
         },
         "args": [
           {
@@ -605,7 +1538,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -614,11 +1557,31 @@
         "id": "timer_stopped",
         "title": {
           "en": "Timer stopped",
-          "nl": "Timer is gestopt"
+          "nl": "Timer is gestopt",
+          "de": "Timer gestoppt",
+          "fr": "Minuteur arrêté",
+          "it": "Timer fermato",
+          "sv": "Timer stoppad",
+          "no": "Timer stoppet",
+          "es": "Temporizador detenido",
+          "da": "Timer stoppet",
+          "ru": "Таймер остановлен",
+          "pl": "Timer zatrzymany",
+          "ko": "타이머 중지됨"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] stopped",
-          "nl": "Timer [[timer]] is gestopt"
+          "nl": "Timer [[timer]] is gestopt",
+          "de": "Timer [[timer]] gestoppt",
+          "fr": "Minuteur [[timer]] arrêté",
+          "it": "Timer [[timer]] fermato",
+          "sv": "Timer [[timer]] stoppad",
+          "no": "Timer [[timer]] stoppet",
+          "es": "Temporizador [[timer]] detenido",
+          "da": "Timer [[timer]] stoppet",
+          "ru": "Таймер [[timer]] остановлен",
+          "pl": "Timer [[timer]] zatrzymany",
+          "ko": "타이머 [[timer]] 중지됨"
         },
         "args": [
           {
@@ -626,7 +1589,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -637,11 +1610,31 @@
         "id": "cycle_has_value",
         "title": {
           "en": "Sequence equals",
-          "nl": "Stappenreeks is gelijk aan"
+          "nl": "Stappenreeks is gelijk aan",
+          "de": "Sequenz ist gleich",
+          "fr": "La séquence est égale à",
+          "it": "La sequenza è uguale a",
+          "sv": "Sekvens är lika med",
+          "no": "Sekvens er lik",
+          "es": "La secuencia es igual a",
+          "da": "Sekvens er lig med",
+          "ru": "Последовательность равна",
+          "pl": "Sekwencja równa się",
+          "ko": "시퀀스가 동일함"
         },
         "titleFormatted": {
           "en": "Sequence [[name]] equals [[value]]",
-          "nl": "Stappenreeks [[name]] is gelijk aan [[value]]"
+          "nl": "Stappenreeks [[name]] is gelijk aan [[value]]",
+          "de": "Sequenz [[name]] ist gleich [[value]]",
+          "fr": "La séquence [[name]] est égale à [[value]]",
+          "it": "La sequenza [[name]] è uguale a [[value]]",
+          "sv": "Sekvens [[name]] är lika med [[value]]",
+          "no": "Sekvens [[name]] er lik [[value]]",
+          "es": "La secuencia [[name]] es igual a [[value]]",
+          "da": "Sekvens [[name]] er lig med [[value]]",
+          "ru": "Последовательность [[name]] равна [[value]]",
+          "pl": "Sekwencja [[name]] równa się [[value]]",
+          "ko": "시퀀스 [[name]] 이(가) [[value]] 와 동일함"
         },
         "args": [
           {
@@ -649,7 +1642,17 @@
             "name": "name",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -659,11 +1662,31 @@
             "step": 1,
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 5",
-              "nl": "Bijv. 5"
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "F.eks. 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5"
             }
           }
         ]
@@ -672,11 +1695,31 @@
         "id": "day_period_is",
         "title": {
           "en": "It !{{is|isn't}}...",
-          "nl": "Het !{{is|is geen}}..."
+          "nl": "Het !{{is|is geen}}...",
+          "de": "Es !{{ist|ist nicht}}...",
+          "fr": "Il !{{est|n’est pas}}...",
+          "it": "È !{{|non è}}...",
+          "sv": "Det !{{är|är inte}}...",
+          "no": "Det !{{er|er ikke}}...",
+          "es": "Es !{{|no es}}...",
+          "da": "Det !{{er|er ikke}}...",
+          "ru": "Это !{{есть|не есть}}...",
+          "pl": "Jest !{{|nie jest}}...",
+          "ko": "지금 !{{은|은 아닌}}..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} [[value]]",
-          "nl": "Het !{{is|is geen}} [[value]]"
+          "nl": "Het !{{is|is geen}} [[value]]",
+          "de": "Es !{{ist|ist nicht}} [[value]]",
+          "fr": "Il !{{est|n’est pas}} [[value]]",
+          "it": "È !{{|non è}} [[value]]",
+          "sv": "Det !{{är|är inte}} [[value]]",
+          "no": "Det !{{er|er ikke}} [[value]]",
+          "es": "Es !{{|no es}} [[value]]",
+          "da": "Det !{{er|er ikke}} [[value]]",
+          "ru": "Это !{{есть|не есть}} [[value]]",
+          "pl": "Jest !{{|nie jest}} [[value]]",
+          "ko": "지금 !{{은|은 아닌}} [[value]]"
         },
         "args": [
           {
@@ -684,35 +1727,85 @@
             "name": "value",
             "title": {
               "en": "Day period",
-              "nl": "Dagperiode"
+              "nl": "Dagperiode",
+              "de": "Tageszeit",
+              "fr": "Période de la journée",
+              "it": "Periodo della giornata",
+              "sv": "Del av dagen",
+              "no": "Del av dagen",
+              "es": "Momento del día",
+              "da": "Dagens periode",
+              "ru": "Период дня",
+              "pl": "Pora dnia",
+              "ko": "시간대"
             },
             "values": [
               {
                 "id": "morning",
                 "title": {
                   "en": "Morning",
-                  "nl": "Ochtend"
+                  "nl": "Ochtend",
+                  "de": "Morgen",
+                  "fr": "Matin",
+                  "it": "Mattina",
+                  "sv": "Morgon",
+                  "no": "Morgen",
+                  "es": "Mañana",
+                  "da": "Morgen",
+                  "ru": "Утро",
+                  "pl": "Poranek",
+                  "ko": "아침"
                 }
               },
               {
                 "id": "afternoon",
                 "title": {
                   "en": "Afternoon",
-                  "nl": "Middag"
+                  "nl": "Middag",
+                  "de": "Nachmittag",
+                  "fr": "Après-midi",
+                  "it": "Pomeriggio",
+                  "sv": "Eftermiddag",
+                  "no": "Ettermiddag",
+                  "es": "Tarde",
+                  "da": "Eftermiddag",
+                  "ru": "День",
+                  "pl": "Popołudnie",
+                  "ko": "오후"
                 }
               },
               {
                 "id": "evening",
                 "title": {
-                  "en": "evening",
-                  "nl": "Avond"
+                  "en": "Evening",
+                  "nl": "Avond",
+                  "de": "Abend",
+                  "fr": "Soir",
+                  "it": "Sera",
+                  "sv": "Kväll",
+                  "no": "Kveld",
+                  "es": "Noche temprana",
+                  "da": "Aften",
+                  "ru": "Вечер",
+                  "pl": "Wieczór",
+                  "ko": "저녁"
                 }
               },
               {
                 "id": "night",
                 "title": {
                   "en": "Night",
-                  "nl": "Nacht"
+                  "nl": "Nacht",
+                  "de": "Nacht",
+                  "fr": "Nuit",
+                  "it": "Notte",
+                  "sv": "Natt",
+                  "no": "Natt",
+                  "es": "Noche",
+                  "da": "Nat",
+                  "ru": "Ночь",
+                  "pl": "Noc",
+                  "ko": "밤"
                 }
               }
             ]
@@ -723,15 +1816,45 @@
         "id": "flag_is",
         "title": {
           "en": "Flag is active",
-          "nl": "Flag is actief"
+          "nl": "Flag is actief",
+          "de": "Flag ist aktiv",
+          "fr": "Le drapeau est actif",
+          "it": "La flag è attiva",
+          "sv": "Flaggan är aktiv",
+          "no": "Flagget er aktivt",
+          "es": "La bandera está activa",
+          "da": "Flaget er aktivt",
+          "ru": "Флаг активен",
+          "pl": "Flaga jest aktywna",
+          "ko": "플래그가 활성화됨"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] is !{{active|inactive}}",
-          "nl": "Flag [[flag]] is !{{actief|inactief}}"
+          "nl": "Flag [[flag]] is !{{actief|inactief}}",
+          "de": "Flag [[flag]] ist !{{aktiv|inaktiv}}",
+          "fr": "Le drapeau [[flag]] est !{{actif|inactif}}",
+          "it": "La flag [[flag]] è !{{attiva|inattiva}}",
+          "sv": "Flaggan [[flag]] är !{{aktiv|inaktiv}}",
+          "no": "Flagget [[flag]] er !{{aktivt|inaktivt}}",
+          "es": "La bandera [[flag]] está !{{activa|inactiva}}",
+          "da": "Flaget [[flag]] er !{{aktivt|inaktivt}}",
+          "ru": "Флаг [[flag]] !{{активен|неактивен}}",
+          "pl": "Flaga [[flag]] jest !{{aktywna|nieaktywna}}",
+          "ko": "플래그 [[flag]]는 !{{활성|비활성}} 상태입니다"
         },
         "hint": {
           "en": "Checks if a flag is activated.",
-          "nl": "Controleert of een flag is geactiveerd."
+          "nl": "Controleert of een flag is geactiveerd.",
+          "de": "Prüft, ob eine Flag aktiviert ist.",
+          "fr": "Vérifie si un drapeau est activé.",
+          "it": "Verifica se una flag è attivata.",
+          "sv": "Kontrollerar om en flagga är aktiverad.",
+          "no": "Sjekker om et flagg er aktivert.",
+          "es": "Comprueba si una bandera está activada.",
+          "da": "Kontrollerer om et flag er aktiveret.",
+          "ru": "Проверяет, активирован ли флаг.",
+          "pl": "Sprawdza, czy flaga jest aktywowana.",
+          "ko": "플래그가 활성화되었는지 확인합니다."
         },
         "args": [
           {
@@ -739,7 +1862,17 @@
             "name": "flag",
             "title": {
               "en": "Flag",
-              "nl": "Flag"
+              "nl": "Flag",
+              "de": "Flagge",
+              "fr": "Drapeau",
+              "it": "Flag",
+              "sv": "Flagga",
+              "no": "Flagg",
+              "es": "Bandera",
+              "da": "Flag",
+              "ru": "Флаг",
+              "pl": "Flaga",
+              "ko": "플래그"
             }
           }
         ]
@@ -748,15 +1881,45 @@
         "id": "mode_is",
         "title": {
           "en": "Mode is active",
-          "nl": "Stand is actief"
+          "nl": "Stand is actief",
+          "de": "Modus ist aktiv",
+          "fr": "Le mode est actif",
+          "it": "La modalità è attiva",
+          "sv": "Läget är aktivt",
+          "no": "Modus er aktiv",
+          "es": "El modo está activo",
+          "da": "Tilstand er aktiv",
+          "ru": "Режим активен",
+          "pl": "Tryb jest aktywny",
+          "ko": "모드가 활성화됨"
         },
         "titleFormatted": {
           "en": "[[name]] is !{{active|inactive}}",
-          "nl": "[[name]] is !{{actief|inactief}}"
+          "nl": "[[name]] is !{{actief|inactief}}",
+          "de": "[[name]] ist !{{aktiv|inaktiv}}",
+          "fr": "[[name]] est !{{actif|inactif}}",
+          "it": "[[name]] è !{{attivo|inattivo}}",
+          "sv": "[[name]] är !{{aktiv|inaktiv}}",
+          "no": "[[name]] er !{{aktiv|inaktiv}}",
+          "es": "[[name]] está !{{activo|inactivo}}",
+          "da": "[[name]] er !{{aktiv|inaktiv}}",
+          "ru": "[[name]] !{{активен|неактивен}}",
+          "pl": "[[name]] jest !{{aktywny|nieaktywny}}",
+          "ko": "[[name]]는 !{{활성|비활성}} 상태입니다"
         },
         "hint": {
           "en": "Checks if a mode is activated.",
-          "nl": "Controleert of een stand is geactiveerd."
+          "nl": "Controleert of een stand is geactiveerd.",
+          "de": "Prüft, ob ein Modus aktiviert ist.",
+          "fr": "Vérifie si un mode est activé.",
+          "it": "Verifica se una modalità è attiva.",
+          "sv": "Kontrollerar om ett läge är aktiverat.",
+          "no": "Sjekker om en modus er aktivert.",
+          "es": "Comprueba si un modo está activado.",
+          "da": "Kontrollerer om en tilstand er aktiveret.",
+          "ru": "Проверяет, активирован ли режим.",
+          "pl": "Sprawdza, czy tryb jest aktywowany.",
+          "ko": "모드가 활성화되었는지 확인합니다."
         },
         "args": [
           {
@@ -764,7 +1927,17 @@
             "name": "name",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Название",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -773,15 +1946,45 @@
         "id": "no_repeat_window",
         "title": {
           "en": "No repeat within time window",
-          "nl": "Geen herhaling binnen tijdsvenster"
+          "nl": "Geen herhaling binnen tijdsvenster",
+          "de": "Keine Wiederholung innerhalb des Zeitfensters",
+          "fr": "Pas de répétition dans la fenêtre temporelle",
+          "it": "Nessuna ripetizione entro la finestra temporale",
+          "sv": "Ingen upprepning inom tidsfönster",
+          "no": "Ingen gjentakelse innen tidsvindu",
+          "es": "Sin repetición dentro de la ventana de tiempo",
+          "da": "Ingen gentagelse inden for tidsvindue",
+          "ru": "Нет повторов в пределах временного окна",
+          "pl": "Brak powtórzeń w oknie czasowym",
+          "ko": "시간 창 내 반복 없음"
         },
         "titleFormatted": {
           "en": "No repeat of [[window]] within [[duration]] [[unit]]",
-          "nl": "Geen herhaling van [[window]] binnen [[duration]] [[unit]]"
+          "nl": "Geen herhaling van [[window]] binnen [[duration]] [[unit]]",
+          "de": "Keine Wiederholung von [[window]] innerhalb von [[duration]] [[unit]]",
+          "fr": "Aucune répétition de [[window]] dans les [[duration]] [[unit]]",
+          "it": "Nessuna ripetizione di [[window]] entro [[duration]] [[unit]]",
+          "sv": "Ingen upprepning av [[window]] inom [[duration]] [[unit]]",
+          "no": "Ingen gjentakelse av [[window]] innen [[duration]] [[unit]]",
+          "es": "Sin repetición de [[window]] dentro de [[duration]] [[unit]]",
+          "da": "Ingen gentagelse af [[window]] inden for [[duration]] [[unit]]",
+          "ru": "Нет повторов [[window]] в течение [[duration]] [[unit]]",
+          "pl": "Brak powtórzeń [[window]] w ciągu [[duration]] [[unit]]",
+          "ko": "[[duration]] [[unit]] 내 [[window]] 반복 없음"
         },
         "hint": {
           "en": "Returns true if this card has not been triggered again within the given time window.",
-          "nl": "Geeft waar terug als deze kaart niet opnieuw is uitgevoerd binnen het opgegeven tijdsvenster."
+          "nl": "Geeft waar terug als deze kaart niet opnieuw is uitgevoerd binnen het opgegeven tijdsvenster.",
+          "de": "Gibt wahr zurück, wenn diese Karte nicht erneut innerhalb des Zeitfensters ausgelöst wurde.",
+          "fr": "Renvoie vrai si cette carte n’a pas été déclenchée de nouveau dans la fenêtre temporelle.",
+          "it": "Restituisce vero se questa scheda non è stata attivata di nuovo entro la finestra temporale.",
+          "sv": "Returnerar sant om kortet inte har körts igen inom tidsfönstret.",
+          "no": "Returnerer sann hvis dette kortet ikke har blitt utløst igjen innen tidsvinduet.",
+          "es": "Devuelve verdadero si esta tarjeta no se ha ejecutado de nuevo dentro de la ventana de tiempo.",
+          "da": "Returnerer sandt hvis dette kort ikke er blevet udløst igen inden for tidsvinduet.",
+          "ru": "Возвращает true, если карточка не была снова выполнена в пределах временного окна.",
+          "pl": "Zwraca prawdę, jeśli ta karta nie została ponownie wywołana w podanym oknie czasowym.",
+          "ko": "이 카드가 지정된 시간 창 내에서 다시 실행되지 않은 경우 true를 반환합니다."
         },
         "args": [
           {
@@ -789,7 +1992,17 @@
             "name": "window",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Название",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -799,11 +2012,31 @@
             "step": 1,
             "title": {
               "en": "Duration",
-              "nl": "Looptijd"
+              "nl": "Looptijd",
+              "de": "Dauer",
+              "fr": "Durée",
+              "it": "Durata",
+              "sv": "Varaktighet",
+              "no": "Varighet",
+              "es": "Duración",
+              "da": "Varighed",
+              "ru": "Длительность",
+              "pl": "Czas trwania",
+              "ko": "지속시간"
             },
             "placeholder": {
               "en": "E.g. 10",
-              "nl": "Bijv. 10"
+              "nl": "Bijv. 10",
+              "de": "Z. B. 10",
+              "fr": "Ex. 10",
+              "it": "Es. 10",
+              "sv": "T.ex. 10",
+              "no": "F.eks. 10",
+              "es": "Ej. 10",
+              "da": "Fx 10",
+              "ru": "Напр. 10",
+              "pl": "Np. 10",
+              "ko": "예: 10"
             }
           },
           {
@@ -811,35 +2044,85 @@
             "name": "unit",
             "title": {
               "en": "Unit",
-              "nl": "Eenheid"
+              "nl": "Eenheid",
+              "de": "Einheit",
+              "fr": "Unité",
+              "it": "Unità",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Unidad",
+              "da": "Enhed",
+              "ru": "Ед. измерения",
+              "pl": "Jednostka",
+              "ko": "단위"
             },
             "values": [
               {
                 "id": "seconds",
                 "title": {
                   "en": "seconds",
-                  "nl": "seconden"
+                  "nl": "seconden",
+                  "de": "Sekunden",
+                  "fr": "secondes",
+                  "it": "secondi",
+                  "sv": "sekunder",
+                  "no": "sekunder",
+                  "es": "segundos",
+                  "da": "sekunder",
+                  "ru": "секунды",
+                  "pl": "sekundy",
+                  "ko": "초"
                 }
               },
               {
                 "id": "minutes",
                 "title": {
                   "en": "minutes",
-                  "nl": "minuten"
+                  "nl": "minuten",
+                  "de": "Minuten",
+                  "fr": "minutes",
+                  "it": "minuti",
+                  "sv": "minuter",
+                  "no": "minutter",
+                  "es": "minutos",
+                  "da": "minutter",
+                  "ru": "минуты",
+                  "pl": "minuty",
+                  "ko": "분"
                 }
               },
               {
                 "id": "hours",
                 "title": {
                   "en": "hours",
-                  "nl": "uren"
+                  "nl": "uren",
+                  "de": "Stunden",
+                  "fr": "heures",
+                  "it": "ore",
+                  "sv": "timmar",
+                  "no": "timer",
+                  "es": "horas",
+                  "da": "timer",
+                  "ru": "часы",
+                  "pl": "godziny",
+                  "ko": "시간"
                 }
               },
               {
                 "id": "days",
                 "title": {
                   "en": "days",
-                  "nl": "dagen"
+                  "nl": "dagen",
+                  "de": "Tage",
+                  "fr": "jours",
+                  "it": "giorni",
+                  "sv": "dagar",
+                  "no": "dager",
+                  "es": "días",
+                  "da": "dage",
+                  "ru": "дни",
+                  "pl": "dni",
+                  "ko": "일"
                 }
               }
             ]
@@ -850,15 +2133,45 @@
         "id": "school_holiday_is",
         "title": {
           "en": "It is a school holiday",
-          "nl": "Het is een schoolvakantie"
+          "nl": "Het is een schoolvakantie",
+          "de": "Es ist ein Schulferien",
+          "fr": "C’est un congé scolaire",
+          "it": "È una vacanza scolastica",
+          "sv": "Det är ett skollov",
+          "no": "Det er en skoleferie",
+          "es": "Es un día de vacaciones escolares",
+          "da": "Det er en skoleferie",
+          "ru": "Школьные каникулы",
+          "pl": "Są ferie szkolne",
+          "ko": "학교 휴일입니다"
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} [[holiday]] in region [[region]]",
-          "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]"
+          "nl": "Het !{{is|is geen}} [[holiday]] in regio [[region]]",
+          "de": "Es !{{ist|ist nicht}} [[holiday]] in der Region [[region]]",
+          "fr": "C’est !{{le|pas le}} [[holiday]] dans la région [[region]]",
+          "it": "È !{{|non è}} [[holiday]] nella regione [[region]]",
+          "sv": "Det !{{är|är inte}} [[holiday]] i region [[region]]",
+          "no": "Det !{{er|er ikke}} [[holiday]] i region [[region]]",
+          "es": "Es !{{|no es}} [[holiday]] en la región [[region]]",
+          "da": "Det !{{er|er ikke}} [[holiday]] i region [[region]]",
+          "ru": "Это !{{есть|нет}} [[holiday]] в регионе [[region]]",
+          "pl": "To !{{jest|nie jest}} [[holiday]] w regionie [[region]]",
+          "ko": "해당 지역([[region]])은 [[holiday]]가 !{{맞습니다|아닙니다}}"
         },
         "hint": {
           "en": "Checks if it is a school holiday in the Netherlands.",
-          "nl": "Checkt of het een schoolvakantie is."
+          "nl": "Checkt of het een schoolvakantie is.",
+          "de": "Prüft, ob es sich um Schulferien in den Niederlanden handelt.",
+          "fr": "Vérifie s’il s’agit de vacances scolaires aux Pays-Bas.",
+          "it": "Verifica se si tratta di una vacanza scolastica nei Paesi Bassi.",
+          "sv": "Kontrollerar om det är ett skollov i Nederländerna.",
+          "no": "Sjekker om det er skoleferie i Nederland.",
+          "es": "Comprueba si es un día de vacaciones escolares en los Países Bajos.",
+          "da": "Tjekker om det er en skoleferie i Nederlandene.",
+          "ru": "Проверяет, являются ли это школьные каникулы в Нидерландах.",
+          "pl": "Sprawdza, czy są ferie szkolne w Niderlandach.",
+          "ko": "네덜란드의 학교 휴일인지 확인합니다."
         },
         "args": [
           {
@@ -866,7 +2179,17 @@
             "name": "holiday",
             "title": {
               "en": "School holiday",
-              "nl": "Schoolvakatie"
+              "nl": "Schoolvakatie",
+              "de": "Schulferien",
+              "fr": "Vacances scolaires",
+              "it": "Vacanze scolastiche",
+              "sv": "Skollov",
+              "no": "Skoleferie",
+              "es": "Vacaciones escolares",
+              "da": "Skoleferie",
+              "ru": "Школьные каникулы",
+              "pl": "Ferie szkolne",
+              "ko": "학교 휴일"
             }
           },
           {
@@ -874,28 +2197,68 @@
             "name": "region",
             "title": {
               "en": "Region",
-              "nl": "Regio"
+              "nl": "Regio",
+              "de": "Region",
+              "fr": "Région",
+              "it": "Regione",
+              "sv": "Region",
+              "no": "Region",
+              "es": "Región",
+              "da": "Region",
+              "ru": "Регион",
+              "pl": "Region",
+              "ko": "지역"
             },
             "values": [
               {
                 "id": "north",
                 "title": {
                   "en": "north",
-                  "nl": "noord"
+                  "nl": "noord",
+                  "de": "Norden",
+                  "fr": "nord",
+                  "it": "nord",
+                  "sv": "norr",
+                  "no": "nord",
+                  "es": "norte",
+                  "da": "nord",
+                  "ru": "север",
+                  "pl": "północ",
+                  "ko": "북부"
                 }
               },
               {
                 "id": "middle",
                 "title": {
                   "en": "middle",
-                  "nl": "midden"
+                  "nl": "midden",
+                  "de": "Mitte",
+                  "fr": "centre",
+                  "it": "centro",
+                  "sv": "mitt",
+                  "no": "midt",
+                  "es": "centro",
+                  "da": "midt",
+                  "ru": "центр",
+                  "pl": "środek",
+                  "ko": "중부"
                 }
               },
               {
                 "id": "south",
                 "title": {
                   "en": "south",
-                  "nl": "zuid"
+                  "nl": "zuid",
+                  "de": "Süden",
+                  "fr": "sud",
+                  "it": "sud",
+                  "sv": "söder",
+                  "no": "sør",
+                  "es": "sur",
+                  "da": "syd",
+                  "ru": "юг",
+                  "pl": "południe",
+                  "ko": "남부"
                 }
               }
             ]
@@ -906,11 +2269,31 @@
         "id": "timer_duration",
         "title": {
           "en": "Timer has more than ... left",
-          "nl": "Timer heeft nog meer dan ... looptijd"
+          "nl": "Timer heeft nog meer dan ... looptijd",
+          "de": "Timer hat mehr als ... übrig",
+          "fr": "Le minuteur a plus de ... restant",
+          "it": "Il timer ha più di ... rimanenti",
+          "sv": "Timern har mer än ... kvar",
+          "no": "Tidsur har mer enn ... igjen",
+          "es": "El temporizador tiene más de ... restante",
+          "da": "Timeren har mere end ... tilbage",
+          "ru": "Таймер имеет больше чем ... осталось",
+          "pl": "Timer ma więcej niż ... pozostało",
+          "ko": "타이머에 ... 이상 남음"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] has !{{more|less}} than [[duration]] [[unit]] left",
-          "nl": "Timer [[timer]] heeft nog !{{meer|minder}} dan [[duration]] [[unit]] looptijd"
+          "nl": "Timer [[timer]] heeft nog !{{meer|minder}} dan [[duration]] [[unit]] looptijd",
+          "de": "Timer [[timer]] hat !{{mehr|weniger}} als [[duration]] [[unit]] übrig",
+          "fr": "Le minuteur [[timer]] a !{{plus|moins}} de [[duration]] [[unit]] restant",
+          "it": "Il timer [[timer]] ha !{{più|meno}} di [[duration]] [[unit]] rimanenti",
+          "sv": "Timern [[timer]] har !{{mer|mindre}} än [[duration]] [[unit]] kvar",
+          "no": "Tidsur [[timer]] har !{{mer|mindre}} enn [[duration]] [[unit]] igjen",
+          "es": "El temporizador [[timer]] tiene !{{más|menos}} de [[duration]] [[unit]] restante",
+          "da": "Timeren [[timer]] har !{{mere|mindre}} end [[duration]] [[unit]] tilbage",
+          "ru": "Таймер [[timer]] имеет !{{больше|меньше}} чем [[duration]] [[unit]] осталось",
+          "pl": "Timer [[timer]] ma !{{więcej|mniej}} niż [[duration]] [[unit]] pozostało",
+          "ko": "타이머 [[timer]]는 [[duration]] [[unit]]보다 !{{더 많음|더 적음}}"
         },
         "args": [
           {
@@ -918,7 +2301,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -928,11 +2321,31 @@
             "step": 1,
             "title": {
               "en": "Duration",
-              "nl": "Looptijd"
+              "nl": "Looptijd",
+              "de": "Dauer",
+              "fr": "Durée",
+              "it": "Durata",
+              "sv": "Varaktighet",
+              "no": "Varighet",
+              "es": "Duración",
+              "da": "Varighed",
+              "ru": "Длительность",
+              "pl": "Czas trwania",
+              "ko": "지속 시간"
             },
             "placeholder": {
               "en": "E.g. 10",
-              "nl": "Bijv. 10"
+              "nl": "Bijv. 10",
+              "de": "Z. B. 10",
+              "fr": "Ex. 10",
+              "it": "Es. 10",
+              "sv": "T.ex. 10",
+              "no": "F.eks. 10",
+              "es": "Ej. 10",
+              "da": "Fx 10",
+              "ru": "Напр. 10",
+              "pl": "Np. 10",
+              "ko": "예: 10"
             }
           },
           {
@@ -940,35 +2353,85 @@
             "name": "unit",
             "title": {
               "en": "Unit",
-              "nl": "Eenheid"
+              "nl": "Eenheid",
+              "de": "Einheit",
+              "fr": "Unité",
+              "it": "Unità",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Unidad",
+              "da": "Enhed",
+              "ru": "Единица",
+              "pl": "Jednostka",
+              "ko": "단위"
             },
             "values": [
               {
                 "id": "seconds",
                 "title": {
                   "en": "seconds",
-                  "nl": "seconden"
+                  "nl": "seconden",
+                  "de": "Sekunden",
+                  "fr": "secondes",
+                  "it": "secondi",
+                  "sv": "sekunder",
+                  "no": "sekunder",
+                  "es": "segundos",
+                  "da": "sekunder",
+                  "ru": "секунды",
+                  "pl": "sekundy",
+                  "ko": "초"
                 }
               },
               {
                 "id": "minutes",
                 "title": {
                   "en": "minutes",
-                  "nl": "minuten"
+                  "nl": "minuten",
+                  "de": "Minuten",
+                  "fr": "minutes",
+                  "it": "minuti",
+                  "sv": "minuter",
+                  "no": "minutter",
+                  "es": "minutos",
+                  "da": "minutter",
+                  "ru": "минуты",
+                  "pl": "minuty",
+                  "ko": "분"
                 }
               },
               {
                 "id": "hours",
                 "title": {
                   "en": "hours",
-                  "nl": "uren"
+                  "nl": "uren",
+                  "de": "Stunden",
+                  "fr": "heures",
+                  "it": "ore",
+                  "sv": "timmar",
+                  "no": "timer",
+                  "es": "horas",
+                  "da": "timer",
+                  "ru": "часы",
+                  "pl": "godziny",
+                  "ko": "시간"
                 }
               },
               {
                 "id": "days",
                 "title": {
                   "en": "days",
-                  "nl": "dagen"
+                  "nl": "dagen",
+                  "de": "Tage",
+                  "fr": "jours",
+                  "it": "giorni",
+                  "sv": "dagar",
+                  "no": "dager",
+                  "es": "días",
+                  "da": "dage",
+                  "ru": "дни",
+                  "pl": "dni",
+                  "ko": "일"
                 }
               }
             ]
@@ -979,11 +2442,31 @@
         "id": "timer_finished",
         "title": {
           "en": "Timer is finished",
-          "nl": "Timer is afgelopen"
+          "nl": "Timer is afgelopen",
+          "de": "Timer ist beendet",
+          "fr": "Le minuteur est terminé",
+          "it": "Il timer è terminato",
+          "sv": "Timern är klar",
+          "no": "Tidsur er ferdig",
+          "es": "El temporizador ha terminado",
+          "da": "Timeren er færdig",
+          "ru": "Таймер завершен",
+          "pl": "Timer się zakończył",
+          "ko": "타이머가 종료됨"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] is finished",
-          "nl": "Timer [[timer]] is afgelopen"
+          "nl": "Timer [[timer]] is afgelopen",
+          "de": "Timer [[timer]] ist beendet",
+          "fr": "Le minuteur [[timer]] est terminé",
+          "it": "Il timer [[timer]] è terminato",
+          "sv": "Timern [[timer]] är klar",
+          "no": "Tidsur [[timer]] er ferdig",
+          "es": "El temporizador [[timer]] ha terminado",
+          "da": "Timeren [[timer]] er færdig",
+          "ru": "Таймер [[timer]] завершен",
+          "pl": "Timer [[timer]] się zakończył",
+          "ko": "타이머 [[timer]]가 종료됨"
         },
         "args": [
           {
@@ -991,7 +2474,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -1000,11 +2493,31 @@
         "id": "timer_paused",
         "title": {
           "en": "Timer is paused",
-          "nl": "Timer is gepauzeerd"
+          "nl": "Timer is gepauzeerd",
+          "de": "Timer ist pausiert",
+          "fr": "Le minuteur est en pause",
+          "it": "Il timer è in pausa",
+          "sv": "Timern är pausad",
+          "no": "Tidsur er satt på pause",
+          "es": "El temporizador está en pausa",
+          "da": "Timeren er sat på pause",
+          "ru": "Таймер на паузе",
+          "pl": "Timer jest wstrzymany",
+          "ko": "타이머가 일시 중지됨"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] is paused",
-          "nl": "Timer [[timer]] is gepauzeerd"
+          "nl": "Timer [[timer]] is gepauzeerd",
+          "de": "Timer [[timer]] ist pausiert",
+          "fr": "Le minuteur [[timer]] est en pause",
+          "it": "Il timer [[timer]] è in pausa",
+          "sv": "Timern [[timer]] är pausad",
+          "no": "Tidsur [[timer]] er satt på pause",
+          "es": "El temporizador [[timer]] está en pausa",
+          "da": "Timeren [[timer]] er sat på pause",
+          "ru": "Таймер [[timer]] поставлен на паузу",
+          "pl": "Timer [[timer]] jest wstrzymany",
+          "ko": "타이머 [[timer]]가 일시 중지됨"
         },
         "args": [
           {
@@ -1012,7 +2525,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -1021,11 +2544,31 @@
         "id": "timer_running",
         "title": {
           "en": "Timer is running",
-          "nl": "Timer loopt"
+          "nl": "Timer loopt",
+          "de": "Timer läuft",
+          "fr": "Le minuteur est en cours",
+          "it": "Il timer è in esecuzione",
+          "sv": "Timern är igång",
+          "no": "Tidsur kjører",
+          "es": "El temporizador está en marcha",
+          "da": "Timeren kører",
+          "ru": "Таймер запущен",
+          "pl": "Timer jest uruchomiony",
+          "ko": "타이머가 실행 중임"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] is running",
-          "nl": "Timer [[timer]] loopt"
+          "nl": "Timer [[timer]] loopt",
+          "de": "Timer [[timer]] läuft",
+          "fr": "Le minuteur [[timer]] est en cours",
+          "it": "Il timer [[timer]] è in esecuzione",
+          "sv": "Timern [[timer]] är igång",
+          "no": "Tidsur [[timer]] kjører",
+          "es": "El temporizador [[timer]] está en marcha",
+          "da": "Timeren [[timer]] kører",
+          "ru": "Таймер [[timer]] запущен",
+          "pl": "Timer [[timer]] jest uruchomiony",
+          "ko": "타이머 [[timer]]가 실행 중임"
         },
         "args": [
           {
@@ -1033,7 +2576,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -1042,11 +2595,31 @@
         "id": "continue_with_chance",
         "title": {
           "en": "Continue with chance",
-          "nl": "Ga door met kans"
+          "nl": "Ga door met kans",
+          "de": "Mit Wahrscheinlichkeit fortfahren",
+          "fr": "Continuer avec une chance",
+          "it": "Continua con probabilità",
+          "sv": "Fortsätt med sannolikhet",
+          "no": "Fortsett med sannsynlighet",
+          "es": "Continuar con probabilidad",
+          "da": "Fortsæt med sandsynlighed",
+          "ru": "Продолжить с шансом",
+          "pl": "Kontynuuj z szansą",
+          "ko": "확률로 계속"
         },
         "titleFormatted": {
           "en": "Continue with [[chance]] chance",
-          "nl": "Ga door met [[chance]] kans"
+          "nl": "Ga door met [[chance]] kans",
+          "de": "Mit [[chance]] Wahrscheinlichkeit fortfahren",
+          "fr": "Continuer avec [[chance]] de chance",
+          "it": "Continua con [[chance]] probabilità",
+          "sv": "Fortsätt med [[chance]] sannolikhet",
+          "no": "Fortsett med [[chance]] sannsynlighet",
+          "es": "Continuar con [[chance]] probabilidad",
+          "da": "Fortsæt med [[chance]] sandsynlighed",
+          "ru": "Продолжить с шансом [[chance]]",
+          "pl": "Kontynuuj z [[chance]] szansą",
+          "ko": "[[chance]] 확률로 계속"
         },
         "args": [
           {
@@ -1054,7 +2627,17 @@
             "name": "chance",
             "title": {
               "en": "Chance",
-              "nl": "Kans"
+              "nl": "Kans",
+              "de": "Wahrscheinlichkeit",
+              "fr": "Chance",
+              "it": "Probabilità",
+              "sv": "Sannolikhet",
+              "no": "Sannsynlighet",
+              "es": "Probabilidad",
+              "da": "Sandsynlighed",
+              "ru": "Шанс",
+              "pl": "Szansa",
+              "ko": "확률"
             },
             "min": 1,
             "max": 100,
@@ -1068,11 +2651,31 @@
         "id": "dice_rolls",
         "title": {
           "en": "Roll a dice",
-          "nl": "Gooi een dobbelsteen"
+          "nl": "Gooi een dobbelsteen",
+          "de": "Würfel werfen",
+          "fr": "Lancer un dé",
+          "it": "Lancia un dado",
+          "sv": "Kasta en tärning",
+          "no": "Kast en terning",
+          "es": "Lanzar un dado",
+          "da": "Slå med en terning",
+          "ru": "Бросить кубик",
+          "pl": "Rzuć kostką",
+          "ko": "주사위를 굴리기"
         },
         "titleFormatted": {
           "en": "Dice rolls [[result]]",
-          "nl": "Dobbelsteen gooit [[result]]"
+          "nl": "Dobbelsteen gooit [[result]]",
+          "de": "Der Würfel zeigt [[result]]",
+          "fr": "Le dé affiche [[result]]",
+          "it": "Il dado mostra [[result]]",
+          "sv": "Tärningen visar [[result]]",
+          "no": "Terningen viser [[result]]",
+          "es": "El dado muestra [[result]]",
+          "da": "Terningen viser [[result]]",
+          "ru": "Кубик показывает [[result]]",
+          "pl": "Kostka pokazuje [[result]]",
+          "ko": "주사위 결과 [[result]]"
         },
         "args": [
           {
@@ -1080,7 +2683,17 @@
             "name": "result",
             "title": {
               "en": "Result",
-              "nl": "Ogen"
+              "nl": "Ogen",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
             },
             "min": 1,
             "max": 6,
@@ -1093,11 +2706,31 @@
         "id": "moon_phase_is",
         "title": {
           "en": "The moon phase !{{is|isn't}}...",
-          "nl": "De maanfase !{{is|is niet}}..."
+          "nl": "De maanfase !{{is|is niet}}...",
+          "de": "Die Mondphase !{{ist|ist nicht}}...",
+          "fr": "La phase de la lune !{{est|n'est pas}}...",
+          "it": "La fase lunare !{{è|non è}}...",
+          "sv": "Månfasen !{{är|är inte}}...",
+          "no": "Månefasen !{{er|er ikke}}...",
+          "es": "La fase lunar !{{es|no es}}...",
+          "da": "Månefasen !{{er|er ikke}}...",
+          "ru": "Фаза Луны !{{есть|не является}}...",
+          "pl": "Faza Księżyca !{{jest|nie jest}}...",
+          "ko": "달의 위상 !{{이다|아니다}}..."
         },
         "titleFormatted": {
           "en": "The moon phase !{{is|isn't}} [[value]]",
-          "nl": "De maanfase !{{is|is niet}} [[value]]"
+          "nl": "De maanfase !{{is|is niet}} [[value]]",
+          "de": "Die Mondphase !{{ist|ist nicht}} [[value]]",
+          "fr": "La phase de la lune !{{est|n'est pas}} [[value]]",
+          "it": "La fase lunare !{{è|non è}} [[value]]",
+          "sv": "Månfasen !{{är|är inte}} [[value]]",
+          "no": "Månefasen !{{er|er ikke}} [[value]]",
+          "es": "La fase lunar !{{es|no es}} [[value]]",
+          "da": "Månefasen !{{er|er ikke}} [[value]]",
+          "ru": "Фаза Луны !{{есть|не является}} [[value]]",
+          "pl": "Faza Księżyca !{{jest|nie jest}} [[value]]",
+          "ko": "달의 위상 !{{이다|아니다}} [[value]]"
         },
         "args": [
           {
@@ -1105,63 +2738,153 @@
             "name": "value",
             "title": {
               "en": "Moon phase",
-              "nl": "Maanfase"
+              "nl": "Maanfase",
+              "de": "Mondphase",
+              "fr": "Phase de la lune",
+              "it": "Fase lunare",
+              "sv": "Månfas",
+              "no": "Månefase",
+              "es": "Fase lunar",
+              "da": "Månens fase",
+              "ru": "Фаза Луны",
+              "pl": "Faza Księżyca",
+              "ko": "달의 위상"
             },
             "values": [
               {
                 "id": "new_moon",
                 "title": {
                   "en": "New Moon",
-                  "nl": "Nieuwe maan"
+                  "nl": "Nieuwe maan",
+                  "de": "Neumond",
+                  "fr": "Nouvelle lune",
+                  "it": "Luna nuova",
+                  "sv": "Nymåne",
+                  "no": "Nymåne",
+                  "es": "Luna nueva",
+                  "da": "Nymåne",
+                  "ru": "Новолуние",
+                  "pl": "Nów",
+                  "ko": "삭"
                 }
               },
               {
                 "id": "waxing_crescent",
                 "title": {
                   "en": "Waxing Crescent",
-                  "nl": "Wassende sikkel"
+                  "nl": "Wassende sikkel",
+                  "de": "Zunehmende Sichel",
+                  "fr": "Croissant croissant",
+                  "it": "Falce crescente",
+                  "sv": "Tilltagande skära",
+                  "no": "Voksende sigd",
+                  "es": "Creciente",
+                  "da": "Tiltagende segl",
+                  "ru": "Молодой месяц",
+                  "pl": "Sierp przybywający",
+                  "ko": "초승달"
                 }
               },
               {
                 "id": "first_quarter",
                 "title": {
                   "en": "First Quarter",
-                  "nl": "Eerste kwartier"
+                  "nl": "Eerste kwartier",
+                  "de": "Erstes Viertel",
+                  "fr": "Premier quartier",
+                  "it": "Primo quarto",
+                  "sv": "Första kvarteret",
+                  "no": "Første kvarter",
+                  "es": "Cuarto creciente",
+                  "da": "Første kvarter",
+                  "ru": "Первая четверть",
+                  "pl": "Pierwsza kwadra",
+                  "ko": "상현달"
                 }
               },
               {
                 "id": "waxing_gibbous",
                 "title": {
                   "en": "Waxing Gibbous",
-                  "nl": "Wassende maan"
+                  "nl": "Wassende maan",
+                  "de": "Zunehmender Dreiviertelmond",
+                  "fr": "Gibbeuse croissante",
+                  "it": "Gibbosa crescente",
+                  "sv": "Tilltagande gibbe",
+                  "no": "Voksende måne",
+                  "es": "Gibosa creciente",
+                  "da": "Tiltagende måne",
+                  "ru": "Растущая Луна",
+                  "pl": "Przybywająca garbata",
+                  "ko": "상현과 보름 사이"
                 }
               },
               {
                 "id": "full_moon",
                 "title": {
                   "en": "Full Moon",
-                  "nl": "Volle maan"
+                  "nl": "Volle maan",
+                  "de": "Vollmond",
+                  "fr": "Pleine lune",
+                  "it": "Luna piena",
+                  "sv": "Fullmåne",
+                  "no": "Fullmåne",
+                  "es": "Luna llena",
+                  "da": "Fuldmåne",
+                  "ru": "Полнолуние",
+                  "pl": "Pełnia",
+                  "ko": "보름달"
                 }
               },
               {
                 "id": "waning_gibbous",
                 "title": {
                   "en": "Waning Gibbous",
-                  "nl": "Afnemende maan"
+                  "nl": "Afnemende maan",
+                  "de": "Abnehmender Dreiviertelmond",
+                  "fr": "Gibbeuse décroissante",
+                  "it": "Gibbosa calante",
+                  "sv": "Avtagande gibbe",
+                  "no": "Avtagende måne",
+                  "es": "Gibosa menguante",
+                  "da": "Aftagende måne",
+                  "ru": "Убывающая Луна",
+                  "pl": "Garbus ubywający",
+                  "ko": "보름과 하현 사이"
                 }
               },
               {
                 "id": "last_quarter",
                 "title": {
                   "en": "Last Quarter",
-                  "nl": "Laatste kwartier"
+                  "nl": "Laatste kwartier",
+                  "de": "Letztes Viertel",
+                  "fr": "Dernier quartier",
+                  "it": "Ultimo quarto",
+                  "sv": "Sista kvarteret",
+                  "no": "Siste kvarter",
+                  "es": "Cuarto menguante",
+                  "da": "Sidste kvarter",
+                  "ru": "Последняя четверть",
+                  "pl": "Ostatnia kwadra",
+                  "ko": "하현달"
                 }
               },
               {
                 "id": "waning_crescent",
                 "title": {
                   "en": "Waning Crescent",
-                  "nl": "Afnemende sikkel"
+                  "nl": "Afnemende sikkel",
+                  "de": "Abnehmende Sichel",
+                  "fr": "Croissant décroissant",
+                  "it": "Falce calante",
+                  "sv": "Avtagande skära",
+                  "no": "Avtagende sigd",
+                  "es": "Creciente menguante",
+                  "da": "Aftagende segl",
+                  "ru": "Старый месяц",
+                  "pl": "Sierp ubywający",
+                  "ko": "그믐달"
                 }
               }
             ]
@@ -1172,11 +2895,31 @@
         "id": "zodiac_sign_is",
         "title": {
           "en": "The current zodiac sign !{{is|isn't}}...",
-          "nl": "Het huidige sterrenbeeld !{{is|is niet}}..."
+          "nl": "Het huidige sterrenbeeld !{{is|is niet}}...",
+          "de": "Das aktuelle Sternzeichen !{{ist|ist nicht}}...",
+          "fr": "Le signe du zodiaque actuel !{{est|n’est pas}}...",
+          "it": "Il segno zodiacale attuale !{{è|non è}}...",
+          "sv": "Det aktuella stjärntecknet !{{är|är inte}}...",
+          "no": "Det nåværende stjernetegnet !{{er|er ikke}}...",
+          "es": "El signo zodiacal actual !{{es|no es}}...",
+          "da": "Det aktuelle stjernetegn !{{er|er ikke}}...",
+          "ru": "Текущее знак зодиака !{{является|не является}}...",
+          "pl": "Aktualny znak zodiaku !{{jest|nie jest}}...",
+          "ko": "현재 별자리 !{{입니다|아닙니다}}..."
         },
         "titleFormatted": {
           "en": "The zodiac sign !{{is|isn't}} [[value]]",
-          "nl": "Het sterrenbeeld !{{is|is niet}} [[value]]"
+          "nl": "Het sterrenbeeld !{{is|is niet}} [[value]]",
+          "de": "Das Sternzeichen !{{ist|ist nicht}} [[value]]",
+          "fr": "Le signe du zodiaque !{{est|n’est pas}} [[value]]",
+          "it": "Il segno zodiacale !{{è|non è}} [[value]]",
+          "sv": "Stjärntecknet !{{är|är inte}} [[value]]",
+          "no": "Stjernetegnet !{{er|er ikke}} [[value]]",
+          "es": "El signo del zodiaco !{{es|no es}} [[value]]",
+          "da": "Stjernetegnet !{{er|er ikke}} [[value]]",
+          "ru": "Знак зодиака !{{является|не является}} [[value]]",
+          "pl": "Znak zodiaku !{{jest|nie jest}} [[value]]",
+          "ko": "별자리 [[value]]는(은) !{{입니다|아닙니다}}"
         },
         "args": [
           {
@@ -1184,91 +2927,221 @@
             "name": "value",
             "title": {
               "en": "Zodiac sign",
-              "nl": "Sterrenbeeld"
+              "nl": "Sterrenbeeld",
+              "de": "Sternzeichen",
+              "fr": "Signe du zodiaque",
+              "it": "Segno zodiacale",
+              "sv": "Stjärntecken",
+              "no": "Stjernetegn",
+              "es": "Signo del zodiaco",
+              "da": "Stjernetegn",
+              "ru": "Знак зодиака",
+              "pl": "Znak zodiaku",
+              "ko": "별자리"
             },
             "values": [
               {
                 "id": "aries",
                 "title": {
                   "en": "Aries",
-                  "nl": "Ram"
+                  "nl": "Ram",
+                  "de": "Widder",
+                  "fr": "Bélier",
+                  "it": "Ariete",
+                  "sv": "Väduren",
+                  "no": "Væren",
+                  "es": "Aries",
+                  "da": "Vædderen",
+                  "ru": "Овен",
+                  "pl": "Baran",
+                  "ko": "양자리"
                 }
               },
               {
                 "id": "taurus",
                 "title": {
                   "en": "Taurus",
-                  "nl": "Stier"
+                  "nl": "Stier",
+                  "de": "Stier",
+                  "fr": "Taureau",
+                  "it": "Toro",
+                  "sv": "Oxen",
+                  "no": "Tyren",
+                  "es": "Tauro",
+                  "da": "Tyren",
+                  "ru": "Телец",
+                  "pl": "Byk",
+                  "ko": "황소자리"
                 }
               },
               {
                 "id": "gemini",
                 "title": {
                   "en": "Gemini",
-                  "nl": "Tweelingen"
+                  "nl": "Tweelingen",
+                  "de": "Zwillinge",
+                  "fr": "Gémeaux",
+                  "it": "Gemelli",
+                  "sv": "Tvillingarna",
+                  "no": "Tvillingene",
+                  "es": "Géminis",
+                  "da": "Tvillingen",
+                  "ru": "Близнецы",
+                  "pl": "Bliźnięta",
+                  "ko": "쌍둥이자리"
                 }
               },
               {
                 "id": "cancer",
                 "title": {
                   "en": "Cancer",
-                  "nl": "Kreeft"
+                  "nl": "Kreeft",
+                  "de": "Krebs",
+                  "fr": "Cancer",
+                  "it": "Cancro",
+                  "sv": "Kräftan",
+                  "no": "Krepsen",
+                  "es": "Cáncer",
+                  "da": "Krebsen",
+                  "ru": "Рак",
+                  "pl": "Rak",
+                  "ko": "게자리"
                 }
               },
               {
                 "id": "leo",
                 "title": {
                   "en": "Leo",
-                  "nl": "Leeuw"
+                  "nl": "Leeuw",
+                  "de": "Löwe",
+                  "fr": "Lion",
+                  "it": "Leone",
+                  "sv": "Lejonet",
+                  "no": "Løven",
+                  "es": "Leo",
+                  "da": "Løven",
+                  "ru": "Лев",
+                  "pl": "Lew",
+                  "ko": "사자자리"
                 }
               },
               {
                 "id": "virgo",
                 "title": {
                   "en": "Virgo",
-                  "nl": "Maagd"
+                  "nl": "Maagd",
+                  "de": "Jungfrau",
+                  "fr": "Vierge",
+                  "it": "Vergine",
+                  "sv": "Jungfrun",
+                  "no": "Jomfruen",
+                  "es": "Virgo",
+                  "da": "Jomfruen",
+                  "ru": "Дева",
+                  "pl": "Panna",
+                  "ko": "처녀자리"
                 }
               },
               {
                 "id": "libra",
                 "title": {
                   "en": "Libra",
-                  "nl": "Weegschaal"
+                  "nl": "Weegschaal",
+                  "de": "Waage",
+                  "fr": "Balance",
+                  "it": "Bilancia",
+                  "sv": "Vågen",
+                  "no": "Vekten",
+                  "es": "Libra",
+                  "da": "Vægten",
+                  "ru": "Весы",
+                  "pl": "Waga",
+                  "ko": "천칭자리"
                 }
               },
               {
                 "id": "scorpio",
                 "title": {
                   "en": "Scorpio",
-                  "nl": "Schorpioen"
+                  "nl": "Schorpioen",
+                  "de": "Skorpion",
+                  "fr": "Scorpion",
+                  "it": "Scorpione",
+                  "sv": "Skorpionen",
+                  "no": "Skorpionen",
+                  "es": "Escorpio",
+                  "da": "Skorpionen",
+                  "ru": "Скорпион",
+                  "pl": "Skorpion",
+                  "ko": "전갈자리"
                 }
               },
               {
                 "id": "sagittarius",
                 "title": {
                   "en": "Sagittarius",
-                  "nl": "Boogschutter"
+                  "nl": "Boogschutter",
+                  "de": "Schütze",
+                  "fr": "Sagittaire",
+                  "it": "Sagittario",
+                  "sv": "Skytten",
+                  "no": "Skytten",
+                  "es": "Sagitario",
+                  "da": "Skytte",
+                  "ru": "Стрелец",
+                  "pl": "Strzelec",
+                  "ko": "사수자리"
                 }
               },
               {
                 "id": "capricorn",
                 "title": {
                   "en": "Capricorn",
-                  "nl": "Steenbok"
+                  "nl": "Steenbok",
+                  "de": "Steinbock",
+                  "fr": "Capricorne",
+                  "it": "Capricorno",
+                  "sv": "Stenbocken",
+                  "no": "Steinbukken",
+                  "es": "Capricornio",
+                  "da": "Stenbukken",
+                  "ru": "Козерог",
+                  "pl": "Koziorożec",
+                  "ko": "염소자리"
                 }
               },
               {
                 "id": "aquarius",
                 "title": {
                   "en": "Aquarius",
-                  "nl": "Waterman"
+                  "nl": "Waterman",
+                  "de": "Wassermann",
+                  "fr": "Verseau",
+                  "it": "Acquario",
+                  "sv": "Vattumannen",
+                  "no": "Vannmannen",
+                  "es": "Acuario",
+                  "da": "Vandmanden",
+                  "ru": "Водолей",
+                  "pl": "Wodnik",
+                  "ko": "물병자리"
                 }
               },
               {
                 "id": "pisces",
                 "title": {
                   "en": "Pisces",
-                  "nl": "Vissen"
+                  "nl": "Vissen",
+                  "de": "Fische",
+                  "fr": "Poissons",
+                  "it": "Pesci",
+                  "sv": "Fiskarna",
+                  "no": "Fiskene",
+                  "es": "Piscis",
+                  "da": "Fiskene",
+                  "ru": "Рыбы",
+                  "pl": "Ryby",
+                  "ko": "물고기자리"
                 }
               }
             ]
@@ -1281,15 +3154,45 @@
         "id": "cycle",
         "title": {
           "en": "Next step in sequence",
-          "nl": "Volgende stap in stappenreeks"
+          "nl": "Volgende stap in stappenreeks",
+          "de": "Nächster Schritt in der Sequenz",
+          "fr": "Étape suivante dans la séquence",
+          "it": "Passo successivo nella sequenza",
+          "sv": "Nästa steg i sekvensen",
+          "no": "Neste trinn i sekvensen",
+          "es": "Siguiente paso en la secuencia",
+          "da": "Næste trin i sekvensen",
+          "ru": "Следующий шаг в последовательности",
+          "pl": "Następny krok w sekwencji",
+          "ko": "시퀀스의 다음 단계"
         },
         "titleFormatted": {
           "en": "Next step in [[name]] ( 1—[[max_value]])",
-          "nl": "Volgende stap in [[name]] ( 1—[[max_value]])"
+          "nl": "Volgende stap in [[name]] ( 1—[[max_value]])",
+          "de": "Nächster Schritt in [[name]] (1—[[max_value]])",
+          "fr": "Étape suivante dans [[name]] (1—[[max_value]])",
+          "it": "Passo successivo in [[name]] (1—[[max_value]])",
+          "sv": "Nästa steg i [[name]] (1—[[max_value]])",
+          "no": "Neste trinn i [[name]] (1—[[max_value]])",
+          "es": "Siguiente paso en [[name]] (1—[[max_value]])",
+          "da": "Næste trin i [[name]] (1—[[max_value]])",
+          "ru": "Следующий шаг в [[name]] (1—[[max_value]])",
+          "pl": "Następny krok w [[name]] (1—[[max_value]])",
+          "ko": "[[name]]의 다음 단계 (1—[[max_value]])"
         },
         "hint": {
           "en": "Go to the next step in a sequence. When the last value is reached, the sequence starts from the beginning.",
-          "nl": "Ga naar de volgende stap in een stappenreeks. Bij de laatste waarde begint de reeks opnieuw."
+          "nl": "Ga naar de volgende stap in een stappenreeks. Bij de laatste waarde begint de reeks opnieuw.",
+          "de": "Zum nächsten Schritt der Sequenz wechseln. Erreicht der Wert das Ende, beginnt die Sequenz erneut.",
+          "fr": "Aller à l’étape suivante d’une séquence. Une fois la dernière valeur atteinte, la séquence recommence.",
+          "it": "Vai al passo successivo di una sequenza. Quando si raggiunge l’ultimo valore, la sequenza riparte dall’inizio.",
+          "sv": "Gå till nästa steg i en sekvens. När sista värdet nås startar sekvensen om.",
+          "no": "Gå til neste trinn i en sekvens. Når siste verdi er nådd starter sekvensen på nytt.",
+          "es": "Ir al siguiente paso de una secuencia. Cuando se alcanza el último valor, la secuencia empieza de nuevo.",
+          "da": "Gå til næste trin i en sekvens. Når sidste værdi er nået starter sekvensen forfra.",
+          "ru": "Перейти к следующему шагу последовательности. Когда достигнуто последнее значение, последовательность начинается заново.",
+          "pl": "Przejdź do następnego kroku sekwencji. Po osiągnięciu ostatniej wartości sekwencja zaczyna się od początku.",
+          "ko": "시퀀스의 다음 단계로 이동합니다. 마지막 값에 도달하면 시퀀스가 처음부터 다시 시작됩니다."
         },
         "args": [
           {
@@ -1297,7 +3200,17 @@
             "name": "name",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -1307,11 +3220,31 @@
             "step": 1,
             "title": {
               "en": "Max",
-              "nl": "Maximum"
+              "nl": "Maximum",
+              "de": "Maximum",
+              "fr": "Maximum",
+              "it": "Massimo",
+              "sv": "Maxvärde",
+              "no": "Maks",
+              "es": "Máximo",
+              "da": "Maks",
+              "ru": "Максимум",
+              "pl": "Maksimum",
+              "ko": "최대"
             },
             "placeholder": {
               "en": "E.g. 5",
-              "nl": "Bijv. 5"
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "F.eks. 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5"
             }
           }
         ]
@@ -1320,15 +3253,45 @@
         "id": "cycle_between",
         "title": {
           "en": "Next step in sequence",
-          "nl": "Volgende stap in stappenreeks"
+          "nl": "Volgende stap in stappenreeks",
+          "de": "Nächster Schritt in der Sequenz",
+          "fr": "Étape suivante dans la séquence",
+          "it": "Passo successivo nella sequenza",
+          "sv": "Nästa steg i sekvensen",
+          "no": "Neste trinn i sekvensen",
+          "es": "Siguiente paso en la secuencia",
+          "da": "Næste trin i sekvensen",
+          "ru": "Следующий шаг в последовательности",
+          "pl": "Następny krok w sekwencji",
+          "ko": "시퀀스의 다음 단계"
         },
         "titleFormatted": {
           "en": "Next step in [[name]] ([[min_value]]—[[max_value]])",
-          "nl": "Volgende stap in [[name]] ([[min_value]]—[[max_value]])"
+          "nl": "Volgende stap in [[name]] ([[min_value]]—[[max_value]])",
+          "de": "Nächster Schritt in [[name]] ([[min_value]]—[[max_value]])",
+          "fr": "Étape suivante dans [[name]] ([[min_value]]—[[max_value]])",
+          "it": "Passo successivo in [[name]] ([[min_value]]—[[max_value]])",
+          "sv": "Nästa steg i [[name]] ([[min_value]]—[[max_value]])",
+          "no": "Neste trinn i [[name]] ([[min_value]]—[[max_value]])",
+          "es": "Siguiente paso en [[name]] ([[min_value]]—[[max_value]])",
+          "da": "Næste trin i [[name]] ([[min_value]]—[[max_value]])",
+          "ru": "Следующий шаг в [[name]] ([[min_value]]—[[max_value]])",
+          "pl": "Następny krok w [[name]] ([[min_value]]—[[max_value]])",
+          "ko": "[[name]]의 다음 단계 ([[min_value]]—[[max_value]])"
         },
         "hint": {
           "en": "Go to the next step in a sequence. When the last value is reached, the sequence starts from the beginning.",
-          "nl": "Ga naar de volgende stap in een stappenreeks. Bij de laatste waarde begint de reeks opnieuw."
+          "nl": "Ga naar de volgende stap in een stappenreeks. Bij de laatste waarde begint de reeks opnieuw.",
+          "de": "Zum nächsten Schritt der Sequenz wechseln. Erreicht der Wert das Ende, beginnt die Sequenz erneut.",
+          "fr": "Aller à l’étape suivante d’une séquence. Une fois la dernière valeur atteinte, la séquence recommence.",
+          "it": "Vai al passo successivo di una sequenza. Quando si raggiunge l’ultimo valore, la sequenza riparte dall’inizio.",
+          "sv": "Gå till nästa steg i en sekvens. När sista värdet nås startar sekvensen om.",
+          "no": "Gå til neste trinn i en sekvens. Når siste verdi er nådd starter sekvensen på nytt.",
+          "es": "Ir al siguiente paso de una secuencia. Cuando se alcanza el último valor, la secuencia empieza de nuevo.",
+          "da": "Gå til næste trin i en sekvens. Når sidste værdi er nået starter sekvensen forfra.",
+          "ru": "Перейти к следующему шагу последовательности. Когда достигнуто последнее значение, последовательность начинается заново.",
+          "pl": "Przejdź do następnego kroku sekwencji. Po osiągnięciu ostatniej wartości sekwencja zaczyna się od początku.",
+          "ko": "시퀀스의 다음 단계로 이동합니다. 마지막 값에 도달하면 시퀀스가 처음부터 다시 시작됩니다."
         },
         "args": [
           {
@@ -1336,7 +3299,17 @@
             "name": "name",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -1346,11 +3319,31 @@
             "step": 1,
             "title": {
               "en": "Max",
-              "nl": "Maximum"
+              "nl": "Maximum",
+              "de": "Maximum",
+              "fr": "Maximum",
+              "it": "Massimo",
+              "sv": "Maxvärde",
+              "no": "Maks",
+              "es": "Máximo",
+              "da": "Maks",
+              "ru": "Максимум",
+              "pl": "Maksimum",
+              "ko": "최대"
             },
             "placeholder": {
               "en": "E.g. 5",
-              "nl": "Bijv. 5"
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "F.eks. 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5"
             }
           },
           {
@@ -1360,11 +3353,31 @@
             "step": 1,
             "title": {
               "en": "Min",
-              "nl": "Minimum"
+              "nl": "Minimum",
+              "de": "Minimum",
+              "fr": "Minimum",
+              "it": "Minimo",
+              "sv": "Minvärde",
+              "no": "Min",
+              "es": "Mínimo",
+              "da": "Min",
+              "ru": "Минимум",
+              "pl": "Minimum",
+              "ko": "최소"
             },
             "placeholder": {
               "en": "E.g. 5",
-              "nl": "Bijv. -5"
+              "nl": "Bijv. -5",
+              "de": "Z. B. -5",
+              "fr": "P. ex. -5",
+              "it": "Es. -5",
+              "sv": "T.ex. -5",
+              "no": "F.eks. -5",
+              "es": "P. ej. -5",
+              "da": "F.eks. -5",
+              "ru": "Напр. -5",
+              "pl": "Np. -5",
+              "ko": "예: -5"
             }
           }
         ]
@@ -1373,15 +3386,45 @@
         "id": "cycle_to",
         "title": {
           "en": "Set sequence to",
-          "nl": "Stel stappenreeks in op"
+          "nl": "Stel stappenreeks in op",
+          "de": "Sequenz einstellen auf",
+          "fr": "Définir la séquence sur",
+          "it": "Imposta la sequenza su",
+          "sv": "Ställ in sekvens till",
+          "no": "Sett sekvens til",
+          "es": "Establecer secuencia en",
+          "da": "Indstil sekvens til",
+          "ru": "Установить последовательность на",
+          "pl": "Ustaw sekwencję na",
+          "ko": "시퀀스를 설정"
         },
         "titleFormatted": {
           "en": "Set sequence [[name]] to [[value]]",
-          "nl": "Stel stappenreeks [[name]] in op [[value]]"
+          "nl": "Stel stappenreeks [[name]] in op [[value]]",
+          "de": "Setze Sequenz [[name]] auf [[value]]",
+          "fr": "Définir la séquence [[name]] sur [[value]]",
+          "it": "Imposta la sequenza [[name]] su [[value]]",
+          "sv": "Ställ in sekvens [[name]] till [[value]]",
+          "no": "Sett sekvens [[name]] til [[value]]",
+          "es": "Establecer secuencia [[name]] en [[value]]",
+          "da": "Indstil sekvens [[name]] til [[value]]",
+          "ru": "Установить последовательность [[name]] на [[value]]",
+          "pl": "Ustaw sekwencję [[name]] na [[value]]",
+          "ko": "시퀀스 [[name]]을(를) [[value]]로 설정"
         },
         "hint": {
           "en": "Jump directly to a step in the sequence.",
-          "nl": "Spring direct naar de gewenste stap in de reeks."
+          "nl": "Spring direct naar de gewenste stap in de reeks.",
+          "de": "Springe direkt zu einem Schritt in der Sequenz.",
+          "fr": "Aller directement à une étape de la séquence.",
+          "it": "Vai direttamente a un passo della sequenza.",
+          "sv": "Hoppa direkt till ett steg i sekvensen.",
+          "no": "Hopp direkte til et trinn i sekvensen.",
+          "es": "Saltar directamente a un paso de la secuencia.",
+          "da": "Hop direkte til et trin i sekvensen.",
+          "ru": "Перейти напрямую к шагу в последовательности.",
+          "pl": "Przejdź bezpośrednio do kroku w sekwencji.",
+          "ko": "시퀀스의 특정 단계로 바로 이동합니다."
         },
         "args": [
           {
@@ -1389,7 +3432,17 @@
             "name": "name",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -1399,11 +3452,31 @@
             "step": 1,
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 5",
-              "nl": "Bijv. 5"
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "F.eks. 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5"
             }
           }
         ]
@@ -1412,15 +3485,45 @@
         "id": "flag_activate",
         "title": {
           "en": "Activate flag",
-          "nl": "Activeer flag"
+          "nl": "Activeer flag",
+          "de": "Flag aktivieren",
+          "fr": "Activer le flag",
+          "it": "Attiva flag",
+          "sv": "Aktivera flagga",
+          "no": "Aktiver flagg",
+          "es": "Activar flag",
+          "da": "Aktivér flag",
+          "ru": "Активировать флаг",
+          "pl": "Aktywuj flagę",
+          "ko": "플래그 활성화"
         },
         "titleFormatted": {
           "en": "Activate flag [[flag]]",
-          "nl": "Activeer flag [[flag]]"
+          "nl": "Activeer flag [[flag]]",
+          "de": "Aktiviere Flag [[flag]]",
+          "fr": "Activer le flag [[flag]]",
+          "it": "Attiva flag [[flag]]",
+          "sv": "Aktivera flagga [[flag]]",
+          "no": "Aktiver flagg [[flag]]",
+          "es": "Activar flag [[flag]]",
+          "da": "Aktivér flag [[flag]]",
+          "ru": "Активировать флаг [[flag]]",
+          "pl": "Aktywuj flagę [[flag]]",
+          "ko": "플래그 [[flag]] 활성화"
         },
         "hint": {
           "en": "Activates a defined flag.",
-          "nl": "Activeer een gedefinieerde flag."
+          "nl": "Activeer een gedefinieerde flag.",
+          "de": "Aktiviert einen definierten Flag.",
+          "fr": "Active un flag défini.",
+          "it": "Attiva un flag definito.",
+          "sv": "Aktiverar en definierad flagga.",
+          "no": "Aktiverer en definert flagg.",
+          "es": "Activa un flag definido.",
+          "da": "Aktiverer et defineret flag.",
+          "ru": "Активирует определенный флаг.",
+          "pl": "Aktywuje zdefiniowaną flagę.",
+          "ko": "정의된 플래그를 활성화합니다."
         },
         "args": [
           {
@@ -1428,7 +3531,17 @@
             "name": "flag",
             "title": {
               "en": "Flag",
-              "nl": "Flag"
+              "nl": "Flag",
+              "de": "Flag",
+              "fr": "Flag",
+              "it": "Flag",
+              "sv": "Flagga",
+              "no": "Flagg",
+              "es": "Flag",
+              "da": "Flag",
+              "ru": "Флаг",
+              "pl": "Flaga",
+              "ko": "플래그"
             }
           }
         ]
@@ -1437,15 +3550,45 @@
         "id": "flag_deactivate",
         "title": {
           "en": "Deactivate flag",
-          "nl": "Deactiveer flag"
+          "nl": "Deactiveer flag",
+          "de": "Flag deaktivieren",
+          "fr": "Désactiver le flag",
+          "it": "Disattiva flag",
+          "sv": "Inaktivera flagga",
+          "no": "Deaktiver flagg",
+          "es": "Desactivar flag",
+          "da": "Deaktivér flag",
+          "ru": "Деактивировать флаг",
+          "pl": "Dezaktywuj flagę",
+          "ko": "플래그 비활성화"
         },
         "titleFormatted": {
           "en": "Deactivate flag [[flag]]",
-          "nl": "Deactiveer flag [[flag]]"
+          "nl": "Deactiveer flag [[flag]]",
+          "de": "Deaktiviere Flag [[flag]]",
+          "fr": "Désactiver le flag [[flag]]",
+          "it": "Disattiva flag [[flag]]",
+          "sv": "Inaktivera flagga [[flag]]",
+          "no": "Deaktiver flagg [[flag]]",
+          "es": "Desactivar flag [[flag]]",
+          "da": "Deaktivér flag [[flag]]",
+          "ru": "Деактивировать флаг [[flag]]",
+          "pl": "Dezaktywuj flagę [[flag]]",
+          "ko": "플래그 [[flag]] 비활성화"
         },
         "hint": {
           "en": "Deactivates a defined flag.",
-          "nl": "Deactiveer een gedefinieerde flag."
+          "nl": "Deactiveer een gedefinieerde flag.",
+          "de": "Deaktiviert einen definierten Flag.",
+          "fr": "Désactive un flag défini.",
+          "it": "Disattiva un flag definito.",
+          "sv": "Inaktiverar en definierad flagga.",
+          "no": "Deaktiverer en definert flagg.",
+          "es": "Desactiva un flag definido.",
+          "da": "Deaktiverer et defineret flag.",
+          "ru": "Деактивирует определенный флаг.",
+          "pl": "Dezaktywuje zdefiniowaną flagę.",
+          "ko": "정의된 플래그를 비활성화합니다."
         },
         "args": [
           {
@@ -1453,7 +3596,17 @@
             "name": "flag",
             "title": {
               "en": "Flag",
-              "nl": "Flag"
+              "nl": "Flag",
+              "de": "Flag",
+              "fr": "Flag",
+              "it": "Flag",
+              "sv": "Flagga",
+              "no": "Flagg",
+              "es": "Flag",
+              "da": "Flag",
+              "ru": "Флаг",
+              "pl": "Flaga",
+              "ko": "플래그"
             }
           }
         ]
@@ -1462,15 +3615,45 @@
         "id": "flag_toggle",
         "title": {
           "en": "Toggle flag",
-          "nl": "Schakel flag om"
+          "nl": "Schakel flag om",
+          "de": "Flag umschalten",
+          "fr": "Basculer le flag",
+          "it": "Attiva/disattiva flag",
+          "sv": "Växla flagga",
+          "no": "Veksle flagg",
+          "es": "Alternar flag",
+          "da": "Skift flag",
+          "ru": "Переключить флаг",
+          "pl": "Przełącz flagę",
+          "ko": "플래그 전환"
         },
         "titleFormatted": {
           "en": "Toggle flag [[flag]]",
-          "nl": "Schakel flag [[flag]] om"
+          "nl": "Schakel flag [[flag]] om",
+          "de": "Flag [[flag]] umschalten",
+          "fr": "Basculer le flag [[flag]]",
+          "it": "Attiva/disattiva flag [[flag]]",
+          "sv": "Växla flagga [[flag]]",
+          "no": "Veksle flagg [[flag]]",
+          "es": "Alternar flag [[flag]]",
+          "da": "Skift flag [[flag]]",
+          "ru": "Переключить флаг [[flag]]",
+          "pl": "Przełącz flagę [[flag]]",
+          "ko": "플래그 [[flag]] 전환"
         },
         "hint": {
           "en": "Turns the flag on if it’s off, and off if it’s on.",
-          "nl": "Schakelt de flag aan als deze uit is, en uit als deze aan is."
+          "nl": "Schakelt de flag aan als deze uit is, en uit als deze aan is.",
+          "de": "Schaltet den Flag ein wenn er aus ist und aus wenn er an ist.",
+          "fr": "Active le flag s’il est désactivé et le désactive s’il est activé.",
+          "it": "Attiva il flag se è disattivato e lo disattiva se è attivo.",
+          "sv": "Slår på flaggan om den är av och av om den är på.",
+          "no": "Slår flagget på hvis det er av og av hvis det er på.",
+          "es": "Activa el flag si está apagado y lo apaga si está encendido.",
+          "da": "Tænder flaget hvis det er slukket og slukker det hvis det er tændt.",
+          "ru": "Включает флаг если он выключен и выключает если он включён.",
+          "pl": "Włącza flagę gdy jest wyłączona i wyłącza gdy jest włączona.",
+          "ko": "플래그가 꺼져 있으면 켜고 켜져 있으면 끕니다."
         },
         "args": [
           {
@@ -1478,7 +3661,17 @@
             "name": "flag",
             "title": {
               "en": "Flag",
-              "nl": "Flag"
+              "nl": "Flag",
+              "de": "Flag",
+              "fr": "Flag",
+              "it": "Flag",
+              "sv": "Flagga",
+              "no": "Flagg",
+              "es": "Flag",
+              "da": "Flag",
+              "ru": "Флаг",
+              "pl": "Flaga",
+              "ko": "플래그"
             }
           }
         ]
@@ -1487,15 +3680,45 @@
         "id": "mode_activate",
         "title": {
           "en": "Activate mode",
-          "nl": "Activeer stand"
+          "nl": "Activeer stand",
+          "de": "Modus aktivieren",
+          "fr": "Activer le mode",
+          "it": "Attiva modalità",
+          "sv": "Aktivera läge",
+          "no": "Aktiver modus",
+          "es": "Activar modo",
+          "da": "Aktivér tilstand",
+          "ru": "Активировать режим",
+          "pl": "Aktywuj tryb",
+          "ko": "모드 활성화"
         },
         "titleFormatted": {
           "en": "Activate [[name]]",
-          "nl": "Activeer [[name]]"
+          "nl": "Activeer [[name]]",
+          "de": "Aktiviere [[name]]",
+          "fr": "Activer [[name]]",
+          "it": "Attiva [[name]]",
+          "sv": "Aktivera [[name]]",
+          "no": "Aktiver [[name]]",
+          "es": "Activar [[name]]",
+          "da": "Aktivér [[name]]",
+          "ru": "Активировать [[name]]",
+          "pl": "Aktywuj [[name]]",
+          "ko": "[[name]] 활성화"
         },
         "hint": {
           "en": "Activates a defined mode and deactivates all other modes.",
-          "nl": "Activeer een gedefinieerde stand en deactiveer alle andere standen."
+          "nl": "Activeer een gedefinieerde stand en deactiveer alle andere standen.",
+          "de": "Aktiviert einen definierten Modus und deaktiviert alle anderen Modi.",
+          "fr": "Active un mode défini et désactive tous les autres modes.",
+          "it": "Attiva una modalità definita e disattiva tutte le altre modalità.",
+          "sv": "Aktiverar ett definierat läge och inaktiverar alla andra lägen.",
+          "no": "Aktiverer en definert modus og deaktiverer alle andre modi.",
+          "es": "Activa un modo definido y desactiva todos los demás modos.",
+          "da": "Aktiverer en defineret tilstand og deaktiverer alle andre tilstande.",
+          "ru": "Активирует определенный режим и деактивирует все остальные режимы.",
+          "pl": "Aktywuje zdefiniowany tryb i dezaktywuje wszystkie inne tryby.",
+          "ko": "정의된 모드를 활성화하고 다른 모든 모드를 비활성화합니다."
         },
         "args": [
           {
@@ -1503,7 +3726,17 @@
             "name": "name",
             "title": {
               "en": "Mode",
-              "nl": "Stand"
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
             }
           }
         ]
@@ -1512,15 +3745,45 @@
         "id": "mode_deactivate",
         "title": {
           "en": "Deactivate mode",
-          "nl": "Deactiveer stand"
+          "nl": "Deactiveer stand",
+          "de": "Modus deaktivieren",
+          "fr": "Désactiver le mode",
+          "it": "Disattiva modalità",
+          "sv": "Inaktivera läge",
+          "no": "Deaktiver modus",
+          "es": "Desactivar modo",
+          "da": "Deaktivér tilstand",
+          "ru": "Деактивировать режим",
+          "pl": "Dezaktywuj tryb",
+          "ko": "모드 비활성화"
         },
         "titleFormatted": {
           "en": "Deactivate [[name]]",
-          "nl": "Deactiveer [[name]]"
+          "nl": "Deactiveer [[name]]",
+          "de": "Deaktiviere [[name]]",
+          "fr": "Désactiver [[name]]",
+          "it": "Disattiva [[name]]",
+          "sv": "Inaktivera [[name]]",
+          "no": "Deaktiver [[name]]",
+          "es": "Desactivar [[name]]",
+          "da": "Deaktivér [[name]]",
+          "ru": "Деактивировать [[name]]",
+          "pl": "Dezaktywuj [[name]]",
+          "ko": "[[name]] 비활성화"
         },
         "hint": {
           "en": "Deactivates a defined mode.",
-          "nl": "Deactiveer een gedefinieerde stand."
+          "nl": "Deactiveer een gedefinieerde stand.",
+          "de": "Deaktiviert einen definierten Modus.",
+          "fr": "Désactive un mode défini.",
+          "it": "Disattiva una modalità definita.",
+          "sv": "Inaktiverar ett definierat läge.",
+          "no": "Deaktiverer en definert modus.",
+          "es": "Desactiva un modo definido.",
+          "da": "Deaktiverer en defineret tilstand.",
+          "ru": "Деактивирует определенный режим.",
+          "pl": "Dezaktywuje zdefiniowany tryb.",
+          "ko": "정의된 모드를 비활성화합니다."
         },
         "args": [
           {
@@ -1528,7 +3791,17 @@
             "name": "name",
             "title": {
               "en": "Mode",
-              "nl": "Stand"
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
             }
           }
         ]
@@ -1537,15 +3810,45 @@
         "id": "mode_toggle",
         "title": {
           "en": "Toggle mode",
-          "nl": "Schakel stand om"
+          "nl": "Schakel stand om",
+          "de": "Modus umschalten",
+          "fr": "Basculer le mode",
+          "it": "Commuta modalità",
+          "sv": "Växla läge",
+          "no": "Veksle modus",
+          "es": "Alternar modo",
+          "da": "Skift tilstand",
+          "ru": "Переключить режим",
+          "pl": "Przełącz tryb",
+          "ko": "모드 전환"
         },
         "titleFormatted": {
           "en": "Toggle [[name]]",
-          "nl": "Schakel [[name]] om"
+          "nl": "Schakel [[name]] om",
+          "de": "Schalte [[name]] um",
+          "fr": "Basculer [[name]]",
+          "it": "Commuta [[name]]",
+          "sv": "Växla [[name]]",
+          "no": "Veksle [[name]]",
+          "es": "Alternar [[name]]",
+          "da": "Skift [[name]]",
+          "ru": "Переключить [[name]]",
+          "pl": "Przełącz [[name]]",
+          "ko": "[[name]] 전환"
         },
         "hint": {
           "en": "Turns the mode on if it’s off, and off if it’s on.",
-          "nl": "Schakelt de stand aan als deze uit is, en uit als deze aan is."
+          "nl": "Schakelt de stand aan als deze uit is, en uit als deze aan is.",
+          "de": "Schaltet den Modus ein wenn er aus ist und aus wenn er an ist.",
+          "fr": "Active le mode s’il est désactivé et le désactive s’il est activé.",
+          "it": "Attiva la modalità se è disattivata e la disattiva se è attivata.",
+          "sv": "Aktiverar läget om det är av och inaktiverar det om det är på.",
+          "no": "Aktiverer moduset hvis det er av og deaktiverer det hvis det er på.",
+          "es": "Activa el modo si está desactivado y lo desactiva si está activado.",
+          "da": "Aktiverer tilstanden hvis den er slukket og deaktiverer den hvis den er tændt.",
+          "ru": "Включает режим если он выключен и выключает если он включен.",
+          "pl": "Włącza tryb jeśli jest wyłączony i wyłącza jeśli jest włączony.",
+          "ko": "모드가 꺼져 있으면 켜고 켜져 있으면 끕니다."
         },
         "args": [
           {
@@ -1553,7 +3856,17 @@
             "name": "name",
             "title": {
               "en": "Mode",
-              "nl": "Stand"
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
             }
           }
         ]
@@ -1562,15 +3875,45 @@
         "id": "no_repeat_clear",
         "title": {
           "en": "Reset no-repeat window",
-          "nl": "Reset geen-herhalingvenster"
+          "nl": "Reset geen-herhalingvenster",
+          "de": "No-Repeat-Fenster zurücksetzen",
+          "fr": "Réinitialiser la fenêtre anti-répétition",
+          "it": "Reimposta finestra no-repeat",
+          "sv": "Återställ no-repeat-fönster",
+          "no": "Tilbakestill no-repeat-vindu",
+          "es": "Restablecer ventana sin repetición",
+          "da": "Nulstil no-repeat-vindue",
+          "ru": "Сбросить окно без повторов",
+          "pl": "Zresetuj okno braku powtórzeń",
+          "ko": "반복 금지 창 재설정"
         },
         "titleFormatted": {
           "en": "Reset no-repeat window for [[window]]",
-          "nl": "Reset geen-herhalingvenster voor [[window]]"
+          "nl": "Reset geen-herhalingvenster voor [[window]]",
+          "de": "No-Repeat-Fenster für [[window]] zurücksetzen",
+          "fr": "Réinitialiser la fenêtre anti-répétition pour [[window]]",
+          "it": "Reimposta la finestra no-repeat per [[window]]",
+          "sv": "Återställ no-repeat-fönster för [[window]]",
+          "no": "Tilbakestill no-repeat-vindu for [[window]]",
+          "es": "Restablecer ventana sin repetición para [[window]]",
+          "da": "Nulstil no-repeat-vindue for [[window]]",
+          "ru": "Сбросить окно без повторов для [[window]]",
+          "pl": "Zresetuj okno braku powtórzeń dla [[window]]",
+          "ko": "[[window]]의 반복 금지 창 재설정"
         },
         "hint": {
           "en": "Clears the stored timestamp for the given identifier.",
-          "nl": "Leegt de opgeslagen timestamp voor de opgegeven naam."
+          "nl": "Leegt de opgeslagen timestamp voor de opgegeven naam.",
+          "de": "Löscht den gespeicherten Zeitstempel für den angegebenen Bezeichner.",
+          "fr": "Efface l’horodatage stocké pour l’identifiant donné.",
+          "it": "Cancella il timestamp memorizzato per l’identificatore indicato.",
+          "sv": "Rensar det sparade tidsstämpeln för den angivna identifieraren.",
+          "no": "Tømmer den lagrede tidsstempelet for den angitte identifikatoren.",
+          "es": "Limpia la marca de tiempo almacenada para el identificador dado.",
+          "da": "Rydder det gemte tidsstempel for den angivne identifikator.",
+          "ru": "Очищает сохранённую временную метку для указанного идентификатора.",
+          "pl": "Czyści zapisany znacznik czasu dla podanego identyfikatora.",
+          "ko": "지정된 식별자의 저장된 타임스탬프를 지웁니다."
         },
         "args": [
           {
@@ -1578,7 +3921,17 @@
             "name": "window",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -1587,11 +3940,31 @@
         "id": "random_fact",
         "title": {
           "en": "Give a random fact",
-          "nl": "Geef een willekeurig feitje"
+          "nl": "Geef een willekeurig feitje",
+          "de": "Gib eine zufällige Tatsache",
+          "fr": "Donner un fait aléatoire",
+          "it": "Fornisci un fatto casuale",
+          "sv": "Ge ett slumpmässigt faktum",
+          "no": "Gi en tilfeldig fakta",
+          "es": "Da un dato aleatorio",
+          "da": "Giv et tilfældigt faktum",
+          "ru": "Дай случайный факт",
+          "pl": "Podaj losowy fakt",
+          "ko": "무작위 사실 제공"
         },
         "titleFormatted": {
           "en": "Give a random fact",
-          "nl": "Geef een willekeurig feitje"
+          "nl": "Geef een willekeurig feitje",
+          "de": "Gib eine zufällige Tatsache",
+          "fr": "Donner un fait aléatoire",
+          "it": "Fornisci un fatto casuale",
+          "sv": "Ge ett slumpmässigt faktum",
+          "no": "Gi en tilfeldig fakta",
+          "es": "Da un dato aleatorio",
+          "da": "Giv et tilfældigt faktum",
+          "ru": "Дай случайный факт",
+          "pl": "Podaj losowy fakt",
+          "ko": "무작위 사실 제공"
         },
         "tokens": [
           {
@@ -1599,7 +3972,17 @@
             "type": "string",
             "title": {
               "en": "Random fact",
-              "nl": "Willekeurig feitje"
+              "nl": "Willekeurig feitje",
+              "de": "Zufällige Tatsache",
+              "fr": "Fait aléatoire",
+              "it": "Fatto casuale",
+              "sv": "Slumpmässigt faktum",
+              "no": "Tilfeldig fakta",
+              "es": "Dato aleatorio",
+              "da": "Tilfældigt faktum",
+              "ru": "Случайный факт",
+              "pl": "Losowy fakt",
+              "ko": "무작위 사실"
             }
           }
         ]
@@ -1608,15 +3991,45 @@
         "id": "signal_send",
         "title": {
           "en": "Send signal",
-          "nl": "Stuur signaal"
+          "nl": "Stuur signaal",
+          "de": "Signal senden",
+          "fr": "Envoyer un signal",
+          "it": "Invia segnale",
+          "sv": "Skicka signal",
+          "no": "Send signal",
+          "es": "Enviar señal",
+          "da": "Send signal",
+          "ru": "Отправить сигнал",
+          "pl": "Wyślij sygnał",
+          "ko": "신호 보내기"
         },
         "titleFormatted": {
           "en": "Send signal [[signal]]",
-          "nl": "Stuur signaal [[signal]]"
+          "nl": "Stuur signaal [[signal]]",
+          "de": "Sende Signal [[signal]]",
+          "fr": "Envoyer le signal [[signal]]",
+          "it": "Invia il segnale [[signal]]",
+          "sv": "Skicka signalen [[signal]]",
+          "no": "Send signalet [[signal]]",
+          "es": "Enviar la señal [[signal]]",
+          "da": "Send signalet [[signal]]",
+          "ru": "Отправить сигнал [[signal]]",
+          "pl": "Wyślij sygnał [[signal]]",
+          "ko": "신호 [[signal]] 보내기"
         },
         "hint": {
           "en": "Sends a signal that can be received by the 'Receive signal' card.",
-          "nl": "Stuur een signaal dat vervolgens ontvangen kan worden door de 'Ontvang signaal' kaart."
+          "nl": "Stuur een signaal dat vervolgens ontvangen kan worden door de 'Ontvang signaal' kaart.",
+          "de": "Sendet ein Signal das von der Karte „Signal empfangen“ empfangen werden kann.",
+          "fr": "Envoie un signal qui peut être reçu par la carte « Recevoir un signal ».",
+          "it": "Invia un segnale che può essere ricevuto dalla scheda \"Ricevi segnale\".",
+          "sv": "Skickar en signal som kan tas emot av kortet \"Ta emot signal\".",
+          "no": "Sender et signal som kan mottas av «Motta signal»-kortet.",
+          "es": "Envía una señal que puede ser recibida por la tarjeta «Recibir señal».",
+          "da": "Sender et signal der kan modtages af kortet \"Modtag signal\".",
+          "ru": "Отправляет сигнал который может быть получен картой «Получить сигнал».",
+          "pl": "Wysyła sygnał który może zostać odebrany przez kartę „Odbierz sygnał”.",
+          "ko": "‘신호 받기’ 카드에서 받을 수 있는 신호를 보냅니다."
         },
         "args": [
           {
@@ -1624,7 +4037,17 @@
             "name": "signal",
             "title": {
               "en": "Signal",
-              "nl": "Signaal"
+              "nl": "Signaal",
+              "de": "Signal",
+              "fr": "Signal",
+              "it": "Segnale",
+              "sv": "Signal",
+              "no": "Signal",
+              "es": "Señal",
+              "da": "Signal",
+              "ru": "Сигнал",
+              "pl": "Sygnał",
+              "ko": "신호"
             }
           }
         ]
@@ -1633,11 +4056,31 @@
         "id": "timer_pause",
         "title": {
           "en": "Pause timer",
-          "nl": "Pauzeer timer"
+          "nl": "Pauzeer timer",
+          "de": "Timer pausieren",
+          "fr": "Mettre le minuteur en pause",
+          "it": "Metti in pausa il timer",
+          "sv": "Pausa timer",
+          "no": "Sett timer på pause",
+          "es": "Pausar temporizador",
+          "da": "Sæt timer på pause",
+          "ru": "Пауза таймера",
+          "pl": "Wstrzymaj timer",
+          "ko": "타이머 일시정지"
         },
         "titleFormatted": {
           "en": "Pause timer [[timer]]",
-          "nl": "Pauzeer timer [[timer]]"
+          "nl": "Pauzeer timer [[timer]]",
+          "de": "Pausiere Timer [[timer]]",
+          "fr": "Mettre en pause le minuteur [[timer]]",
+          "it": "Metti in pausa il timer [[timer]]",
+          "sv": "Pausa timern [[timer]]",
+          "no": "Sett timeren [[timer]] på pause",
+          "es": "Pausar el temporizador [[timer]]",
+          "da": "Sæt timeren [[timer]] på pause",
+          "ru": "Поставить таймер [[timer]] на паузу",
+          "pl": "Wstrzymaj timer [[timer]]",
+          "ko": "[[timer]] 타이머 일시정지"
         },
         "args": [
           {
@@ -1645,7 +4088,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -1654,11 +4107,31 @@
         "id": "timer_resume",
         "title": {
           "en": "Resume timer",
-          "nl": "Hervat timer"
+          "nl": "Hervat timer",
+          "de": "Timer fortsetzen",
+          "fr": "Reprendre le minuteur",
+          "it": "Riprendi il timer",
+          "sv": "Återuppta timer",
+          "no": "Gjenoppta timer",
+          "es": "Reanudar temporizador",
+          "da": "Genoptag timer",
+          "ru": "Возобновить таймер",
+          "pl": "Wznów timer",
+          "ko": "타이머 재개"
         },
         "titleFormatted": {
           "en": "Resume timer [[timer]]",
-          "nl": "Hervat timer [[timer]]"
+          "nl": "Hervat timer [[timer]]",
+          "de": "Setze Timer [[timer]] fort",
+          "fr": "Reprendre le minuteur [[timer]]",
+          "it": "Riprendi il timer [[timer]]",
+          "sv": "Återuppta timern [[timer]]",
+          "no": "Gjenoppta timeren [[timer]]",
+          "es": "Reanudar el temporizador [[timer]]",
+          "da": "Genoptag timeren [[timer]]",
+          "ru": "Возобновить таймер [[timer]]",
+          "pl": "Wznów timer [[timer]]",
+          "ko": "[[timer]] 타이머 재개"
         },
         "args": [
           {
@@ -1666,7 +4139,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -1675,15 +4158,45 @@
         "id": "timer_set",
         "title": {
           "en": "Set timer",
-          "nl": "Stel timer in"
+          "nl": "Stel timer in",
+          "de": "Timer einstellen",
+          "fr": "Régler le minuteur",
+          "it": "Imposta timer",
+          "sv": "Ställ in timer",
+          "no": "Still inn timer",
+          "es": "Configurar temporizador",
+          "da": "Indstil timer",
+          "ru": "Установить таймер",
+          "pl": "Ustaw timer",
+          "ko": "타이머 설정"
         },
         "titleFormatted": {
           "en": "Set timer [[timer]] to [[duration]] [[unit]]",
-          "nl": "Stel timer [[timer]] in op [[duration]] [[unit]]"
+          "nl": "Stel timer [[timer]] in op [[duration]] [[unit]]",
+          "de": "Stelle Timer [[timer]] auf [[duration]] [[unit]]",
+          "fr": "Régler le minuteur [[timer]] sur [[duration]] [[unit]]",
+          "it": "Imposta il timer [[timer]] su [[duration]] [[unit]]",
+          "sv": "Ställ in timern [[timer]] på [[duration]] [[unit]]",
+          "no": "Still inn timeren [[timer]] til [[duration]] [[unit]]",
+          "es": "Configurar el temporizador [[timer]] a [[duration]] [[unit]]",
+          "da": "Indstil timeren [[timer]] til [[duration]] [[unit]]",
+          "ru": "Установить таймер [[timer]] на [[duration]] [[unit]]",
+          "pl": "Ustaw timer [[timer]] na [[duration]] [[unit]]",
+          "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 설정"
         },
         "hint": {
           "en": "Sets the remaining time of the timer.",
-          "nl": "Wijzigt de resterende tijd van de timer."
+          "nl": "Wijzigt de resterende tijd van de timer.",
+          "de": "Setzt die verbleibende Zeit des Timers.",
+          "fr": "Définit le temps restant du minuteur.",
+          "it": "Imposta il tempo rimanente del timer.",
+          "sv": "Ställer in återstående tid för timern.",
+          "no": "Setter gjenværende tid for timeren.",
+          "es": "Establece el tiempo restante del temporizador.",
+          "da": "Indstiller den resterende tid på timeren.",
+          "ru": "Устанавливает оставшееся время таймера.",
+          "pl": "Ustawia pozostały czas timera.",
+          "ko": "타이머의 남은 시간을 설정합니다."
         },
         "args": [
           {
@@ -1691,7 +4204,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -1701,11 +4224,31 @@
             "step": 1,
             "title": {
               "en": "Duration",
-              "nl": "Looptijd"
+              "nl": "Looptijd",
+              "de": "Dauer",
+              "fr": "Durée",
+              "it": "Durata",
+              "sv": "Varaktighet",
+              "no": "Varighet",
+              "es": "Duración",
+              "da": "Varighed",
+              "ru": "Длительность",
+              "pl": "Czas trwania",
+              "ko": "지속 시간"
             },
             "placeholder": {
               "en": "E.g. 10",
-              "nl": "Bijv. 10"
+              "nl": "Bijv. 10",
+              "de": "Z. B. 10",
+              "fr": "Ex. 10",
+              "it": "Es. 10",
+              "sv": "T.ex. 10",
+              "no": "F.eks. 10",
+              "es": "P. ej. 10",
+              "da": "Fx 10",
+              "ru": "Напр. 10",
+              "pl": "Np. 10",
+              "ko": "예: 10"
             }
           },
           {
@@ -1713,35 +4256,85 @@
             "name": "unit",
             "title": {
               "en": "Unit",
-              "nl": "Eenheid"
+              "nl": "Eenheid",
+              "de": "Einheit",
+              "fr": "Unité",
+              "it": "Unità",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Unidad",
+              "da": "Enhed",
+              "ru": "Единица",
+              "pl": "Jednostka",
+              "ko": "단위"
             },
             "values": [
               {
                 "id": "seconds",
                 "title": {
                   "en": "seconds",
-                  "nl": "seconden"
+                  "nl": "seconden",
+                  "de": "Sekunden",
+                  "fr": "secondes",
+                  "it": "secondi",
+                  "sv": "sekunder",
+                  "no": "sekunder",
+                  "es": "segundos",
+                  "da": "sekunder",
+                  "ru": "секунды",
+                  "pl": "sekundy",
+                  "ko": "초"
                 }
               },
               {
                 "id": "minutes",
                 "title": {
                   "en": "minutes",
-                  "nl": "minuten"
+                  "nl": "minuten",
+                  "de": "Minuten",
+                  "fr": "minutes",
+                  "it": "minuti",
+                  "sv": "minuter",
+                  "no": "minutter",
+                  "es": "minutos",
+                  "da": "minutter",
+                  "ru": "минуты",
+                  "pl": "minuty",
+                  "ko": "분"
                 }
               },
               {
                 "id": "hours",
                 "title": {
                   "en": "hours",
-                  "nl": "uren"
+                  "nl": "uren",
+                  "de": "Stunden",
+                  "fr": "heures",
+                  "it": "ore",
+                  "sv": "timmar",
+                  "no": "timer",
+                  "es": "horas",
+                  "da": "timer",
+                  "ru": "часы",
+                  "pl": "godziny",
+                  "ko": "시간"
                 }
               },
               {
                 "id": "days",
                 "title": {
                   "en": "days",
-                  "nl": "dagen"
+                  "nl": "dagen",
+                  "de": "Tage",
+                  "fr": "jours",
+                  "it": "giorni",
+                  "sv": "dagar",
+                  "no": "dager",
+                  "es": "días",
+                  "da": "dage",
+                  "ru": "дни",
+                  "pl": "dni",
+                  "ko": "일"
                 }
               }
             ]
@@ -1752,15 +4345,45 @@
         "id": "timer_start",
         "title": {
           "en": "Start timer",
-          "nl": "Start timer"
+          "nl": "Start timer",
+          "de": "Timer starten",
+          "fr": "Démarrer le minuteur",
+          "it": "Avvia timer",
+          "sv": "Starta timer",
+          "no": "Start timer",
+          "es": "Iniciar temporizador",
+          "da": "Start timer",
+          "ru": "Запустить таймер",
+          "pl": "Uruchom timer",
+          "ko": "타이머 시작"
         },
         "titleFormatted": {
           "en": "Start timer [[timer]] with [[duration]] [[unit]]",
-          "nl": "Start timer [[timer]] met [[duration]] [[unit]]"
+          "nl": "Start timer [[timer]] met [[duration]] [[unit]]",
+          "de": "Starte Timer [[timer]] mit [[duration]] [[unit]]",
+          "fr": "Démarrer le minuteur [[timer]] avec [[duration]] [[unit]]",
+          "it": "Avvia il timer [[timer]] per [[duration]] [[unit]]",
+          "sv": "Starta timern [[timer]] med [[duration]] [[unit]]",
+          "no": "Start timeren [[timer]] med [[duration]] [[unit]]",
+          "es": "Iniciar el temporizador [[timer]] con [[duration]] [[unit]]",
+          "da": "Start timeren [[timer]] med [[duration]] [[unit]]",
+          "ru": "Запустить таймер [[timer]] на [[duration]] [[unit]]",
+          "pl": "Uruchom timer [[timer]] na [[duration]] [[unit]]",
+          "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 시작"
         },
         "hint": {
           "en": "Starts a fresh timer with the specified duration.",
-          "nl": "Start een nieuwe timer met de opgegeven looptijd."
+          "nl": "Start een nieuwe timer met de opgegeven looptijd.",
+          "de": "Startet einen neuen Timer mit der angegebenen Dauer.",
+          "fr": "Démarre un nouveau minuteur avec la durée spécifiée.",
+          "it": "Avvia un nuovo timer con la durata specificata.",
+          "sv": "Startar en ny timer med angiven varaktighet.",
+          "no": "Starter en ny timer med angitt varighet.",
+          "es": "Inicia un nuevo temporizador con la duración indicada.",
+          "da": "Starter en ny timer med den angivne varighed.",
+          "ru": "Запускает новый таймер с указанной длительностью.",
+          "pl": "Uruchamia nowy timer z podanym czasem trwania.",
+          "ko": "지정된 시간으로 새 타이머를 시작합니다."
         },
         "args": [
           {
@@ -1768,7 +4391,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           },
           {
@@ -1778,11 +4411,31 @@
             "step": 1,
             "title": {
               "en": "Duration",
-              "nl": "Looptijd"
+              "nl": "Looptijd",
+              "de": "Dauer",
+              "fr": "Durée",
+              "it": "Durata",
+              "sv": "Varaktighet",
+              "no": "Varighet",
+              "es": "Duración",
+              "da": "Varighed",
+              "ru": "Длительность",
+              "pl": "Czas trwania",
+              "ko": "지속 시간"
             },
             "placeholder": {
               "en": "E.g. 10",
-              "nl": "Bijv. 10"
+              "nl": "Bijv. 10",
+              "de": "Z. B. 10",
+              "fr": "Ex. 10",
+              "it": "Es. 10",
+              "sv": "T.ex. 10",
+              "no": "F.eks. 10",
+              "es": "P. ej. 10",
+              "da": "Fx 10",
+              "ru": "Напр. 10",
+              "pl": "Np. 10",
+              "ko": "예: 10"
             }
           },
           {
@@ -1790,35 +4443,85 @@
             "name": "unit",
             "title": {
               "en": "Unit",
-              "nl": "Eenheid"
+              "nl": "Eenheid",
+              "de": "Einheit",
+              "fr": "Unité",
+              "it": "Unità",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Unidad",
+              "da": "Enhed",
+              "ru": "Единица",
+              "pl": "Jednostka",
+              "ko": "단위"
             },
             "values": [
               {
                 "id": "seconds",
                 "title": {
                   "en": "seconds",
-                  "nl": "seconden"
+                  "nl": "seconden",
+                  "de": "Sekunden",
+                  "fr": "secondes",
+                  "it": "secondi",
+                  "sv": "sekunder",
+                  "no": "sekunder",
+                  "es": "segundos",
+                  "da": "sekunder",
+                  "ru": "секунды",
+                  "pl": "sekundy",
+                  "ko": "초"
                 }
               },
               {
                 "id": "minutes",
                 "title": {
                   "en": "minutes",
-                  "nl": "minuten"
+                  "nl": "minuten",
+                  "de": "Minuten",
+                  "fr": "minutes",
+                  "it": "minuti",
+                  "sv": "minuter",
+                  "no": "minutter",
+                  "es": "minutos",
+                  "da": "minutter",
+                  "ru": "минуты",
+                  "pl": "minuty",
+                  "ko": "분"
                 }
               },
               {
                 "id": "hours",
                 "title": {
                   "en": "hours",
-                  "nl": "uren"
+                  "nl": "uren",
+                  "de": "Stunden",
+                  "fr": "heures",
+                  "it": "ore",
+                  "sv": "timmar",
+                  "no": "timer",
+                  "es": "horas",
+                  "da": "timer",
+                  "ru": "часы",
+                  "pl": "godziny",
+                  "ko": "시간"
                 }
               },
               {
                 "id": "days",
                 "title": {
                   "en": "days",
-                  "nl": "dagen"
+                  "nl": "dagen",
+                  "de": "Tage",
+                  "fr": "jours",
+                  "it": "giorni",
+                  "sv": "dagar",
+                  "no": "dager",
+                  "es": "días",
+                  "da": "dage",
+                  "ru": "дни",
+                  "pl": "dni",
+                  "ko": "일"
                 }
               }
             ]
@@ -1829,11 +4532,31 @@
         "id": "timer_stop",
         "title": {
           "en": "Stop timer",
-          "nl": "Stop timer"
+          "nl": "Stop timer",
+          "de": "Timer stoppen",
+          "fr": "Arrêter le minuteur",
+          "it": "Ferma timer",
+          "sv": "Stoppa timer",
+          "no": "Stopp timer",
+          "es": "Detener temporizador",
+          "da": "Stop timer",
+          "ru": "Остановить таймер",
+          "pl": "Zatrzymaj timer",
+          "ko": "타이머 중지"
         },
         "titleFormatted": {
           "en": "Stop timer [[timer]]",
-          "nl": "Stop timer [[timer]]"
+          "nl": "Stop timer [[timer]]",
+          "de": "Stoppe Timer [[timer]]",
+          "fr": "Arrêter le minuteur [[timer]]",
+          "it": "Ferma il timer [[timer]]",
+          "sv": "Stoppa timern [[timer]]",
+          "no": "Stopp timeren [[timer]]",
+          "es": "Detener el temporizador [[timer]]",
+          "da": "Stop timeren [[timer]]",
+          "ru": "Остановить таймер [[timer]]",
+          "pl": "Zatrzymaj timer [[timer]]",
+          "ko": "타이머 [[timer]] 중지"
         },
         "args": [
           {
@@ -1841,7 +4564,17 @@
             "name": "timer",
             "title": {
               "en": "Name",
-              "nl": "Naam"
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름"
             }
           }
         ]
@@ -1850,15 +4583,45 @@
         "id": "z_math_make_negative",
         "title": {
           "en": "Make negative",
-          "nl": "Maak negatief"
+          "nl": "Maak negatief",
+          "de": "Negativ machen",
+          "fr": "Rendre négatif",
+          "it": "Rendi negativo",
+          "sv": "Gör negativ",
+          "no": "Gjør negativ",
+          "es": "Hacer negativo",
+          "da": "Gør negativ",
+          "ru": "Сделать отрицательным",
+          "pl": "Uczyń ujemnym",
+          "ko": "음수로 만들기"
         },
         "titleFormatted": {
           "en": "Make [[value]] negative",
-          "nl": "Maak [[value]] negatief"
+          "nl": "Maak [[value]] negatief",
+          "de": "Mache [[value]] negativ",
+          "fr": "Rendre [[value]] négatif",
+          "it": "Rendi [[value]] negativo",
+          "sv": "Gör [[value]] negativ",
+          "no": "Gjør [[value]] negativ",
+          "es": "Hacer [[value]] negativo",
+          "da": "Gør [[value]] negativ",
+          "ru": "Сделать [[value]] отрицательным",
+          "pl": "Uczyń [[value]] ujemnym",
+          "ko": "[[value]] 음수로 만들기"
         },
         "hint": {
           "en": "Makes the value negative.",
-          "nl": "Maakt de waarde negatief"
+          "nl": "Maakt de waarde negatief",
+          "de": "Macht den Wert negativ.",
+          "fr": "Rend la valeur négative.",
+          "it": "Rende il valore negativo.",
+          "sv": "Gör värdet negativt.",
+          "no": "Gjør verdien negativ.",
+          "es": "Hace el valor negativo.",
+          "da": "Gør værdien negativ.",
+          "ru": "Делает значение отрицательным.",
+          "pl": "Ustawia wartość jako ujemną.",
+          "ko": "값을 음수로 만듭니다."
         },
         "args": [
           {
@@ -1866,11 +4629,31 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 13",
-              "nl": "Bijv. 13"
+              "nl": "Bijv. 13",
+              "de": "Z. B. 13",
+              "fr": "P. ex. 13",
+              "it": "Es. 13",
+              "sv": "T.ex. 13",
+              "no": "F.eks. 13",
+              "es": "P. ej. 13",
+              "da": "F.eks. 13",
+              "ru": "Напр. 13",
+              "pl": "Np. 13",
+              "ko": "예: 13"
             }
           }
         ],
@@ -1880,7 +4663,17 @@
             "type": "number",
             "title": {
               "en": "Result",
-              "nl": "Resultaat"
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
             }
           }
         ]
@@ -1889,15 +4682,45 @@
         "id": "z_math_make_positive",
         "title": {
           "en": "Make positive",
-          "nl": "Maak positief"
+          "nl": "Maak positief",
+          "de": "Positiv machen",
+          "fr": "Rendre positif",
+          "it": "Rendi positivo",
+          "sv": "Gör positiv",
+          "no": "Gjør positiv",
+          "es": "Hacer positivo",
+          "da": "Gør positiv",
+          "ru": "Сделать положительным",
+          "pl": "Uczyń dodatnim",
+          "ko": "양수로 만들기"
         },
         "titleFormatted": {
           "en": "Make [[value]] positive",
-          "nl": "Maak [[value]] positief"
+          "nl": "Maak [[value]] positief",
+          "de": "Mache [[value]] positiv",
+          "fr": "Rendre [[value]] positif",
+          "it": "Rendi [[value]] positivo",
+          "sv": "Gör [[value]] positiv",
+          "no": "Gjør [[value]] positiv",
+          "es": "Hacer [[value]] positivo",
+          "da": "Gør [[value]] positiv",
+          "ru": "Сделать [[value]] положительным",
+          "pl": "Uczyń [[value]] dodatnim",
+          "ko": "[[value]] 양수로 만들기"
         },
         "hint": {
           "en": "Takes the absolute value of a number.",
-          "nl": "Neem de absolute waarde van een getal"
+          "nl": "Neem de absolute waarde van een getal",
+          "de": "Nimmt den Absolutwert einer Zahl.",
+          "fr": "Prend la valeur absolue d’un nombre.",
+          "it": "Prende il valore assoluto di un numero.",
+          "sv": "Tar absolutbeloppet av ett tal.",
+          "no": "Tar absoluttverdien av et tall.",
+          "es": "Toma el valor absoluto de un número.",
+          "da": "Tager den absolutte værdi af et tal.",
+          "ru": "Берет абсолютное значение числа.",
+          "pl": "Pobiera wartość bezwzględną liczby.",
+          "ko": "숫자의 절댓값을 사용합니다."
         },
         "args": [
           {
@@ -1905,11 +4728,31 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 13",
-              "nl": "Bijv. 13"
+              "nl": "Bijv. 13",
+              "de": "Z. B. 13",
+              "fr": "P. ex. 13",
+              "it": "Es. 13",
+              "sv": "T.ex. 13",
+              "no": "F.eks. 13",
+              "es": "P. ej. 13",
+              "da": "F.eks. 13",
+              "ru": "Напр. 13",
+              "pl": "Np. 13",
+              "ko": "예: 13"
             }
           }
         ],
@@ -1919,7 +4762,17 @@
             "type": "number",
             "title": {
               "en": "Result",
-              "nl": "Resultaat"
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
             }
           }
         ]
@@ -1928,11 +4781,31 @@
         "id": "z_math_round",
         "title": {
           "en": "Round",
-          "nl": "Rond af"
+          "nl": "Rond af",
+          "de": "Runden",
+          "fr": "Arrondir",
+          "it": "Arrotonda",
+          "sv": "Avrunda",
+          "no": "Avrund",
+          "es": "Redondear",
+          "da": "Afrund",
+          "ru": "Округлить",
+          "pl": "Zaokrąglij",
+          "ko": "반올림"
         },
         "titleFormatted": {
           "en": "Round [[value]]",
-          "nl": "Rond [[value]] af"
+          "nl": "Rond [[value]] af",
+          "de": "Runde [[value]]",
+          "fr": "Arrondir [[value]]",
+          "it": "Arrotonda [[value]]",
+          "sv": "Avrunda [[value]]",
+          "no": "Avrund [[value]]",
+          "es": "Redondear [[value]]",
+          "da": "Afrund [[value]]",
+          "ru": "Округлить [[value]]",
+          "pl": "Zaokrąglij [[value]]",
+          "ko": "[[value]] 반올림"
         },
         "args": [
           {
@@ -1940,11 +4813,31 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 13",
-              "nl": "Bijv. 13"
+              "nl": "Bijv. 13",
+              "de": "Z. B. 13",
+              "fr": "P. ex. 13",
+              "it": "Es. 13",
+              "sv": "T.ex. 13",
+              "no": "F.eks. 13",
+              "es": "P. ej. 13",
+              "da": "F.eks. 13",
+              "ru": "Напр. 13",
+              "pl": "Np. 13",
+              "ko": "예: 13"
             }
           }
         ],
@@ -1954,7 +4847,17 @@
             "name": "result",
             "title": {
               "en": "Result",
-              "nl": "Resultaat"
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
             }
           }
         ]
@@ -1963,15 +4866,45 @@
         "id": "z_math_round_down",
         "title": {
           "en": "Round down",
-          "nl": "Rond af naar beneden"
+          "nl": "Rond af naar beneden",
+          "de": "Abrunden",
+          "fr": "Arrondir vers le bas",
+          "it": "Arrotonda per difetto",
+          "sv": "Avrunda nedåt",
+          "no": "Avrund ned",
+          "es": "Redondear hacia abajo",
+          "da": "Afrund ned",
+          "ru": "Округлить вниз",
+          "pl": "Zaokrąglij w dół",
+          "ko": "내림"
         },
         "titleFormatted": {
           "en": "Round [[value]] down",
-          "nl": "Rond [[value]] af naar beneden"
+          "nl": "Rond [[value]] af naar beneden",
+          "de": "Runde [[value]] ab",
+          "fr": "Arrondir [[value]] vers le bas",
+          "it": "Arrotonda [[value]] per difetto",
+          "sv": "Avrunda [[value]] nedåt",
+          "no": "Avrund [[value]] ned",
+          "es": "Redondear [[value]] hacia abajo",
+          "da": "Afrund [[value]] ned",
+          "ru": "Округлить [[value]] вниз",
+          "pl": "Zaokrąglij [[value]] w dół",
+          "ko": "[[value]] 내림"
         },
         "hint": {
           "en": "Rounds down to the nearest integer.",
-          "nl": "Rond omlaag af naar het dichtsbijzijnde geheel."
+          "nl": "Rond omlaag af naar het dichtsbijzijnde geheel.",
+          "de": "Rundet auf die nächstkleinere ganze Zahl ab.",
+          "fr": "Arrondit vers le bas à l’entier le plus proche.",
+          "it": "Arrotonda per difetto al numero intero più vicino.",
+          "sv": "Avrundar nedåt till närmaste heltal.",
+          "no": "Avrunder ned til nærmeste heltall.",
+          "es": "Redondea hacia abajo al número entero más cercano.",
+          "da": "Afrunder ned til nærmeste heltal.",
+          "ru": "Округляет вниз до ближайшего целого.",
+          "pl": "Zaokrągla w dół do najbliższej liczby całkowitej.",
+          "ko": "가장 가까운 정수로 내림합니다."
         },
         "args": [
           {
@@ -1979,11 +4912,31 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 13",
-              "nl": "Bijv. 13"
+              "nl": "Bijv. 13",
+              "de": "Z. B. 13",
+              "fr": "P. ex. 13",
+              "it": "Es. 13",
+              "sv": "T.ex. 13",
+              "no": "F.eks. 13",
+              "es": "P. ej. 13",
+              "da": "F.eks. 13",
+              "ru": "Напр. 13",
+              "pl": "Np. 13",
+              "ko": "예: 13"
             }
           }
         ],
@@ -1993,7 +4946,17 @@
             "name": "result",
             "title": {
               "en": "Result",
-              "nl": "Resultaat"
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
             }
           }
         ]
@@ -2002,15 +4965,45 @@
         "id": "z_math_round_step",
         "title": {
           "en": "Round to step",
-          "nl": "Rond af op stapgrootte"
+          "nl": "Rond af op stapgrootte",
+          "de": "Auf Schritt runden",
+          "fr": "Arrondir à l’incrément",
+          "it": "Arrotonda allo step",
+          "sv": "Avrunda till steg",
+          "no": "Avrund til steg",
+          "es": "Redondear al incremento",
+          "da": "Afrund til trin",
+          "ru": "Округлить по шагу",
+          "pl": "Zaokrąglij do kroku",
+          "ko": "스텝 단위로 반올림"
         },
         "titleFormatted": {
           "en": "Round [[value]] to [[step]]",
-          "nl": "Rond [[value]] af op [[step]]"
+          "nl": "Rond [[value]] af op [[step]]",
+          "de": "Runde [[value]] auf [[step]]",
+          "fr": "Arrondir [[value]] à [[step]]",
+          "it": "Arrotonda [[value]] a [[step]]",
+          "sv": "Avrunda [[value]] till [[step]]",
+          "no": "Avrund [[value]] til [[step]]",
+          "es": "Redondear [[value]] a [[step]]",
+          "da": "Afrund [[value]] til [[step]]",
+          "ru": "Округлить [[value]] по [[step]]",
+          "pl": "Zaokrąglij [[value]] do [[step]]",
+          "ko": "[[value]]을(를) [[step]] 단위로 반올림"
         },
         "hint": {
           "en": "Rounds to the nearest multiple of the step.",
-          "nl": "Rond af naar een veelvoud van de stapgrootte."
+          "nl": "Rond af naar een veelvoud van de stapgrootte.",
+          "de": "Rundet auf das nächste Vielfache des Schritts.",
+          "fr": "Arrondit au multiple le plus proche de l’incrément.",
+          "it": "Arrotonda al multiplo più vicino dello step.",
+          "sv": "Avrundar till närmaste multipel av steget.",
+          "no": "Avrunder til nærmeste multiplum av steget.",
+          "es": "Redondea al múltiplo más cercano del incremento.",
+          "da": "Afrunder til nærmeste multiplum af trinnet.",
+          "ru": "Округляет до ближайшего кратного шагу.",
+          "pl": "Zaokrągla do najbliższego wielokrotności kroku.",
+          "ko": "스텝의 가장 가까운 배수로 반올림합니다."
         },
         "args": [
           {
@@ -2018,11 +5011,31 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 13",
-              "nl": "Bijv. 13"
+              "nl": "Bijv. 13",
+              "de": "Z. B. 13",
+              "fr": "P. ex. 13",
+              "it": "Es. 13",
+              "sv": "T.ex. 13",
+              "no": "F.eks. 13",
+              "es": "P. ej. 13",
+              "da": "F.eks. 13",
+              "ru": "Напр. 13",
+              "pl": "Np. 13",
+              "ko": "예: 13"
             }
           },
           {
@@ -2031,11 +5044,31 @@
             "min": 0,
             "title": {
               "en": "Step",
-              "nl": "Stapgrootte"
+              "nl": "Stapgrootte",
+              "de": "Schritt",
+              "fr": "Incrément",
+              "it": "Step",
+              "sv": "Steg",
+              "no": "Steg",
+              "es": "Incremento",
+              "da": "Trin",
+              "ru": "Шаг",
+              "pl": "Krok",
+              "ko": "스텝"
             },
             "placeholder": {
               "en": "E.g. 5",
-              "nl": "Bijv. 5"
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "F.eks. 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5"
             }
           }
         ],
@@ -2045,7 +5078,17 @@
             "name": "result",
             "title": {
               "en": "Result",
-              "nl": "Resultaat"
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
             }
           }
         ]
@@ -2054,15 +5097,45 @@
         "id": "z_math_round_up",
         "title": {
           "en": "Round up",
-          "nl": "Rond af naar boven"
+          "nl": "Rond af naar boven",
+          "de": "Aufrunden",
+          "fr": "Arrondir vers le haut",
+          "it": "Arrotonda per eccesso",
+          "sv": "Avrunda uppåt",
+          "no": "Avrund opp",
+          "es": "Redondear hacia arriba",
+          "da": "Afrund opad",
+          "ru": "Округлить вверх",
+          "pl": "Zaokrąglij w górę",
+          "ko": "올림"
         },
         "titleFormatted": {
           "en": "Round [[value]] up",
-          "nl": "Rond [[value]] af naar boven"
+          "nl": "Rond [[value]] af naar boven",
+          "de": "Runde [[value]] auf",
+          "fr": "Arrondir [[value]] vers le haut",
+          "it": "Arrotonda [[value]] per eccesso",
+          "sv": "Avrunda [[value]] uppåt",
+          "no": "Avrund [[value]] opp",
+          "es": "Redondear [[value]] hacia arriba",
+          "da": "Afrund [[value]] opad",
+          "ru": "Округлить [[value]] вверх",
+          "pl": "Zaokrąglij [[value]] w górę",
+          "ko": "[[value]] 올림"
         },
         "hint": {
           "en": "Rounds up to the nearest integer.",
-          "nl": "Rond omhoog af naar het dichtsbijzijnde geheel."
+          "nl": "Rond omhoog af naar het dichtsbijzijnde geheel.",
+          "de": "Rundet auf die nächste ganze Zahl auf.",
+          "fr": "Arrondit à l’entier supérieur.",
+          "it": "Arrotonda al numero intero superiore.",
+          "sv": "Avrundar till närmaste heltal uppåt.",
+          "no": "Avrunder til nærmeste hele tall opp.",
+          "es": "Redondea al entero superior más cercano.",
+          "da": "Afrunder til nærmeste hele tal opad.",
+          "ru": "Округляет до ближайшего большего целого.",
+          "pl": "Zaokrągla do najbliższej większej liczby całkowitej.",
+          "ko": "가장 가까운 큰 정수로 올림합니다."
         },
         "args": [
           {
@@ -2070,11 +5143,31 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
             },
             "placeholder": {
               "en": "E.g. 13",
-              "nl": "Bijv. 13"
+              "nl": "Bijv. 13",
+              "de": "Z. B. 13",
+              "fr": "P. ex. 13",
+              "it": "Es. 13",
+              "sv": "T.ex. 13",
+              "no": "F.eks. 13",
+              "es": "P. ej. 13",
+              "da": "F.eks. 13",
+              "ru": "Напр. 13",
+              "pl": "Np. 13",
+              "ko": "예: 13"
             }
           }
         ],
@@ -2084,7 +5177,17 @@
             "name": "result",
             "title": {
               "en": "Result",
-              "nl": "Resultaat"
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
             }
           }
         ]

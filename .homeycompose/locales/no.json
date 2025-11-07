@@ -1,0 +1,28 @@
+{
+    "autocomplete": {
+        "cycle_new": "Ny teller i dette flyten",
+        "flag_new": "Nytt flagg i dette flyten",
+        "mode_new": "Ny modus i dette flyten",
+        "no_repeat_new": "Nytt ikke-repeterende vindu i dette flyten",
+        "signal_new": "Ny signal i dette flyten",
+        "timer_new": "Ny timer i dette flyten"
+    },
+    "notification": {
+        "mode_activated": "**__name__** er aktivert.",
+        "mode_deactivated": "**__name__** er deaktivert."
+    },
+    "token": {
+        "day_period": "Dagsperiode (rå)",
+        "day_period_translated": "Dagsperiode",
+        "moon_phase": "Månefase (rå)",
+        "moon_phase_translated": "Månefase",
+        "zodiac_sign": "Stjernetegn (rå)",
+        "zodiac_sign_translated": "Stjernetegn"
+    },
+    "day_period": {
+        "morning": "Morgen",
+        "afternoon": "Ettermiddag",
+        "evening": "Kveld",
+        "night": "Natt"
+    }
+}

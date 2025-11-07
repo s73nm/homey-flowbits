@@ -2,15 +2,45 @@
     "id": "mode_deactivated",
     "title": {
         "en": "Mode deactivated",
-        "nl": "Stand gedeactiveerd"
+        "nl": "Stand gedeactiveerd",
+        "de": "Modus deaktiviert",
+        "fr": "Mode désactivé",
+        "it": "Modalità disattivata",
+        "sv": "Läge inaktiverat",
+        "no": "Modus deaktivert",
+        "es": "Modo desactivado",
+        "da": "Tilstand deaktiveret",
+        "ru": "Режим деактивирован",
+        "pl": "Tryb dezaktywowany",
+        "ko": "모드 비활성화됨"
     },
     "titleFormatted": {
         "en": "[[name]] is deactivated",
-        "nl": "[[name]] is gedeactiveerd"
+        "nl": "[[name]] is gedeactiveerd",
+        "de": "[[name]] ist deaktiviert",
+        "fr": "[[name]] est désactivé",
+        "it": "[[name]] è disattivato",
+        "sv": "[[name]] är inaktiverat",
+        "no": "[[name]] er deaktivert",
+        "es": "[[name]] está desactivado",
+        "da": "[[name]] er deaktiveret",
+        "ru": "[[name]] деактивирован",
+        "pl": "[[name]] jest dezaktywowany",
+        "ko": "[[name]] 비활성화됨"
     },
     "hint": {
         "en": "Triggers when a mode gets deactivated.",
-        "nl": "Triggert wanneer een stand is gedeactiveerd."
+        "nl": "Triggert wanneer een stand is gedeactiveerd.",
+        "de": "Löst aus, wenn ein Modus deaktiviert wird.",
+        "fr": "Se déclenche lorsqu’un mode est désactivé.",
+        "it": "Si attiva quando una modalità viene disattivata.",
+        "sv": "Utlöses när ett läge inaktiveras.",
+        "no": "Utløses når en modus deaktiveres.",
+        "es": "Se activa cuando un modo se desactiva.",
+        "da": "Udløses når en tilstand deaktiveres.",
+        "ru": "Срабатывает при деактивации режима.",
+        "pl": "Wyzwalane, gdy tryb zostaje dezaktywowany.",
+        "ko": "모드가 비활성화될 때 트리거됨."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Mode",
-                "nl": "Stand"
+                "nl": "Stand",
+                "de": "Modus",
+                "fr": "Mode",
+                "it": "Modalità",
+                "sv": "Läge",
+                "no": "Modus",
+                "es": "Modo",
+                "da": "Tilstand",
+                "ru": "Режим",
+                "pl": "Tryb",
+                "ko": "모드"
             }
         }
     ]

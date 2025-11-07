@@ -2,15 +2,45 @@
     "id": "z_math_round_up",
     "title": {
         "en": "Round up",
-        "nl": "Rond af naar boven"
+        "nl": "Rond af naar boven",
+        "de": "Aufrunden",
+        "fr": "Arrondir vers le haut",
+        "it": "Arrotonda per eccesso",
+        "sv": "Avrunda uppåt",
+        "no": "Avrund opp",
+        "es": "Redondear hacia arriba",
+        "da": "Afrund opad",
+        "ru": "Округлить вверх",
+        "pl": "Zaokrąglij w górę",
+        "ko": "올림"
     },
     "titleFormatted": {
         "en": "Round [[value]] up",
-        "nl": "Rond [[value]] af naar boven"
+        "nl": "Rond [[value]] af naar boven",
+        "de": "Runde [[value]] auf",
+        "fr": "Arrondir [[value]] vers le haut",
+        "it": "Arrotonda [[value]] per eccesso",
+        "sv": "Avrunda [[value]] uppåt",
+        "no": "Avrund [[value]] opp",
+        "es": "Redondear [[value]] hacia arriba",
+        "da": "Afrund [[value]] opad",
+        "ru": "Округлить [[value]] вверх",
+        "pl": "Zaokrąglij [[value]] w górę",
+        "ko": "[[value]] 올림"
     },
     "hint": {
         "en": "Rounds up to the nearest integer.",
-        "nl": "Rond omhoog af naar het dichtsbijzijnde geheel."
+        "nl": "Rond omhoog af naar het dichtsbijzijnde geheel.",
+        "de": "Rundet auf die nächste ganze Zahl auf.",
+        "fr": "Arrondit à l’entier supérieur.",
+        "it": "Arrotonda al numero intero superiore.",
+        "sv": "Avrundar till närmaste heltal uppåt.",
+        "no": "Avrunder til nærmeste hele tall opp.",
+        "es": "Redondea al entero superior más cercano.",
+        "da": "Afrunder til nærmeste hele tal opad.",
+        "ru": "Округляет до ближайшего большего целого.",
+        "pl": "Zaokrągla do najbliższej większej liczby całkowitej.",
+        "ko": "가장 가까운 큰 정수로 올림합니다."
     },
     "args": [
         {
@@ -18,11 +48,31 @@
             "name": "value",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 13",
-                "nl": "Bijv. 13"
+                "nl": "Bijv. 13",
+                "de": "Z. B. 13",
+                "fr": "P. ex. 13",
+                "it": "Es. 13",
+                "sv": "T.ex. 13",
+                "no": "F.eks. 13",
+                "es": "P. ej. 13",
+                "da": "F.eks. 13",
+                "ru": "Напр. 13",
+                "pl": "Np. 13",
+                "ko": "예: 13"
             }
         }
     ],
@@ -32,7 +82,17 @@
             "name": "result",
             "title": {
                 "en": "Result",
-                "nl": "Resultaat"
+                "nl": "Resultaat",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
             }
         }
     ]

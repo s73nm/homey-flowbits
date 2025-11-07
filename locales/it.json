@@ -1,0 +1,28 @@
+{
+  "autocomplete": {
+    "cycle_new": "Nuovo contatore in questo flusso",
+    "flag_new": "Nuovo flag in questo flusso",
+    "mode_new": "Nuova modalità in questo flusso",
+    "no_repeat_new": "Nuova finestra senza ripetizione in questo flusso",
+    "signal_new": "Nuovo segnale in questo flusso",
+    "timer_new": "Nuovo timer in questo flusso"
+  },
+  "notification": {
+    "mode_activated": "**__name__** è attivato.",
+    "mode_deactivated": "**__name__** è disattivato."
+  },
+  "token": {
+    "day_period": "Periodo del giorno (raw)",
+    "day_period_translated": "Periodo del giorno",
+    "moon_phase": "Fase lunare (raw)",
+    "moon_phase_translated": "Fase lunare",
+    "zodiac_sign": "Segno zodiacale (raw)",
+    "zodiac_sign_translated": "Segno zodiacale"
+  },
+  "day_period": {
+    "morning": "Mattina",
+    "afternoon": "Pomeriggio",
+    "evening": "Sera",
+    "night": "Notte"
+  }
+}

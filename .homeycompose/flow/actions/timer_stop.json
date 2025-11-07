@@ -2,11 +2,31 @@
     "id": "timer_stop",
     "title": {
         "en": "Stop timer",
-        "nl": "Stop timer"
+        "nl": "Stop timer",
+        "de": "Timer stoppen",
+        "fr": "Arrêter le minuteur",
+        "it": "Ferma timer",
+        "sv": "Stoppa timer",
+        "no": "Stopp timer",
+        "es": "Detener temporizador",
+        "da": "Stop timer",
+        "ru": "Остановить таймер",
+        "pl": "Zatrzymaj timer",
+        "ko": "타이머 중지"
     },
     "titleFormatted": {
         "en": "Stop timer [[timer]]",
-        "nl": "Stop timer [[timer]]"
+        "nl": "Stop timer [[timer]]",
+        "de": "Stoppe Timer [[timer]]",
+        "fr": "Arrêter le minuteur [[timer]]",
+        "it": "Ferma il timer [[timer]]",
+        "sv": "Stoppa timern [[timer]]",
+        "no": "Stopp timeren [[timer]]",
+        "es": "Detener el temporizador [[timer]]",
+        "da": "Stop timeren [[timer]]",
+        "ru": "Остановить таймер [[timer]]",
+        "pl": "Zatrzymaj timer [[timer]]",
+        "ko": "타이머 [[timer]] 중지"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

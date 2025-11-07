@@ -2,15 +2,45 @@
     "id": "mode_is",
     "title": {
         "en": "Mode is active",
-        "nl": "Stand is actief"
+        "nl": "Stand is actief",
+        "de": "Modus ist aktiv",
+        "fr": "Le mode est actif",
+        "it": "La modalità è attiva",
+        "sv": "Läget är aktivt",
+        "no": "Modus er aktiv",
+        "es": "El modo está activo",
+        "da": "Tilstand er aktiv",
+        "ru": "Режим активен",
+        "pl": "Tryb jest aktywny",
+        "ko": "모드가 활성화됨"
     },
     "titleFormatted": {
         "en": "[[name]] is !{{active|inactive}}",
-        "nl": "[[name]] is !{{actief|inactief}}"
+        "nl": "[[name]] is !{{actief|inactief}}",
+        "de": "[[name]] ist !{{aktiv|inaktiv}}",
+        "fr": "[[name]] est !{{actif|inactif}}",
+        "it": "[[name]] è !{{attivo|inattivo}}",
+        "sv": "[[name]] är !{{aktiv|inaktiv}}",
+        "no": "[[name]] er !{{aktiv|inaktiv}}",
+        "es": "[[name]] está !{{activo|inactivo}}",
+        "da": "[[name]] er !{{aktiv|inaktiv}}",
+        "ru": "[[name]] !{{активен|неактивен}}",
+        "pl": "[[name]] jest !{{aktywny|nieaktywny}}",
+        "ko": "[[name]]는 !{{활성|비활성}} 상태입니다"
     },
     "hint": {
         "en": "Checks if a mode is activated.",
-        "nl": "Controleert of een stand is geactiveerd."
+        "nl": "Controleert of een stand is geactiveerd.",
+        "de": "Prüft, ob ein Modus aktiviert ist.",
+        "fr": "Vérifie si un mode est activé.",
+        "it": "Verifica se una modalità è attiva.",
+        "sv": "Kontrollerar om ett läge är aktiverat.",
+        "no": "Sjekker om en modus er aktivert.",
+        "es": "Comprueba si un modo está activado.",
+        "da": "Kontrollerer om en tilstand er aktiveret.",
+        "ru": "Проверяет, активирован ли режим.",
+        "pl": "Sprawdza, czy tryb jest aktywowany.",
+        "ko": "모드가 활성화되었는지 확인합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Название",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

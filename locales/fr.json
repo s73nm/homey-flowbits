@@ -1,0 +1,28 @@
+{
+  "autocomplete": {
+    "cycle_new": "Nouveau compteur dans ce flux",
+    "flag_new": "Nouveau drapeau dans ce flux",
+    "mode_new": "Nouveau mode dans ce flux",
+    "no_repeat_new": "Nouvelle fenêtre sans répétition dans ce flux",
+    "signal_new": "Nouveau signal dans ce flux",
+    "timer_new": "Nouveau minuteur dans ce flux"
+  },
+  "notification": {
+    "mode_activated": "**__name__** est activé.",
+    "mode_deactivated": "**__name__** est désactivé."
+  },
+  "token": {
+    "day_period": "Période de la journée (brut)",
+    "day_period_translated": "Période de la journée",
+    "moon_phase": "Phase de la lune (brute)",
+    "moon_phase_translated": "Phase de la lune",
+    "zodiac_sign": "Signe du zodiaque (brut)",
+    "zodiac_sign_translated": "Signe du zodiaque"
+  },
+  "day_period": {
+    "morning": "Matin",
+    "afternoon": "Après-midi",
+    "evening": "Soir",
+    "night": "Nuit"
+  }
+}

@@ -2,15 +2,45 @@
     "id": "no_repeat_clear",
     "title": {
         "en": "Reset no-repeat window",
-        "nl": "Reset geen-herhalingvenster"
+        "nl": "Reset geen-herhalingvenster",
+        "de": "No-Repeat-Fenster zurücksetzen",
+        "fr": "Réinitialiser la fenêtre anti-répétition",
+        "it": "Reimposta finestra no-repeat",
+        "sv": "Återställ no-repeat-fönster",
+        "no": "Tilbakestill no-repeat-vindu",
+        "es": "Restablecer ventana sin repetición",
+        "da": "Nulstil no-repeat-vindue",
+        "ru": "Сбросить окно без повторов",
+        "pl": "Zresetuj okno braku powtórzeń",
+        "ko": "반복 금지 창 재설정"
     },
     "titleFormatted": {
         "en": "Reset no-repeat window for [[window]]",
-        "nl": "Reset geen-herhalingvenster voor [[window]]"
+        "nl": "Reset geen-herhalingvenster voor [[window]]",
+        "de": "No-Repeat-Fenster für [[window]] zurücksetzen",
+        "fr": "Réinitialiser la fenêtre anti-répétition pour [[window]]",
+        "it": "Reimposta la finestra no-repeat per [[window]]",
+        "sv": "Återställ no-repeat-fönster för [[window]]",
+        "no": "Tilbakestill no-repeat-vindu for [[window]]",
+        "es": "Restablecer ventana sin repetición para [[window]]",
+        "da": "Nulstil no-repeat-vindue for [[window]]",
+        "ru": "Сбросить окно без повторов для [[window]]",
+        "pl": "Zresetuj okno braku powtórzeń dla [[window]]",
+        "ko": "[[window]]의 반복 금지 창 재설정"
     },
     "hint": {
         "en": "Clears the stored timestamp for the given identifier.",
-        "nl": "Leegt de opgeslagen timestamp voor de opgegeven naam."
+        "nl": "Leegt de opgeslagen timestamp voor de opgegeven naam.",
+        "de": "Löscht den gespeicherten Zeitstempel für den angegebenen Bezeichner.",
+        "fr": "Efface l’horodatage stocké pour l’identifiant donné.",
+        "it": "Cancella il timestamp memorizzato per l’identificatore indicato.",
+        "sv": "Rensar det sparade tidsstämpeln för den angivna identifieraren.",
+        "no": "Tømmer den lagrede tidsstempelet for den angitte identifikatoren.",
+        "es": "Limpia la marca de tiempo almacenada para el identificador dado.",
+        "da": "Rydder det gemte tidsstempel for den angivne identifikator.",
+        "ru": "Очищает сохранённую временную метку для указанного идентификатора.",
+        "pl": "Czyści zapisany znacznik czasu dla podanego identyfikatora.",
+        "ko": "지정된 식별자의 저장된 타임스탬프를 지웁니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "window",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

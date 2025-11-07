@@ -2,15 +2,45 @@
     "id": "flag_activated",
     "title": {
         "en": "Flag activated",
-        "nl": "Flag geactiveerd"
+        "nl": "Flag geactiveerd",
+        "de": "Flag aktiviert",
+        "fr": "Drapeau activé",
+        "it": "Flag attivato",
+        "sv": "Flagga aktiverad",
+        "no": "Flagg aktivert",
+        "es": "Bandera activada",
+        "da": "Flag aktiveret",
+        "ru": "Флаг активирован",
+        "pl": "Flaga aktywowana",
+        "ko": "플래그 활성화됨"
     },
     "titleFormatted": {
         "en": "Flag [[flag]] is activated",
-        "nl": "Flag [[flag]] is geactiveerd"
+        "nl": "Flag [[flag]] is geactiveerd",
+        "de": "Flag [[flag]] ist aktiviert",
+        "fr": "Le drapeau [[flag]] est activé",
+        "it": "La flag [[flag]] è attivata",
+        "sv": "Flaggan [[flag]] är aktiverad",
+        "no": "Flagget [[flag]] er aktivert",
+        "es": "La bandera [[flag]] está activada",
+        "da": "Flaget [[flag]] er aktiveret",
+        "ru": "Флаг [[flag]] активирован",
+        "pl": "Flaga [[flag]] została aktywowana",
+        "ko": "플래그 [[flag]]이 활성화됨"
     },
     "hint": {
         "en": "Triggers when a flag gets activated.",
-        "nl": "Triggert wanneer een flag is geactiveerd."
+        "nl": "Triggert wanneer een flag is geactiveerd.",
+        "de": "Löst aus, wenn ein Flag aktiviert wird.",
+        "fr": "Se déclenche lorsqu’un drapeau est activé.",
+        "it": "Si attiva quando una flag viene attivata.",
+        "sv": "Utlöses när en flagga aktiveras.",
+        "no": "Utøses når et flagg aktiveres.",
+        "es": "Se activa cuando una bandera es activada.",
+        "da": "Udløses når et flag aktiveres.",
+        "ru": "Срабатывает при активации флага.",
+        "pl": "Wyzwalane gdy flaga zostanie aktywowana.",
+        "ko": "플래그가 활성화될 때 트리거됨."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "flag",
             "title": {
                 "en": "Flag",
-                "nl": "Flag"
+                "nl": "Flag",
+                "de": "Flag",
+                "fr": "Drapeau",
+                "it": "Flag",
+                "sv": "Flagga",
+                "no": "Flagg",
+                "es": "Bandera",
+                "da": "Flag",
+                "ru": "Флаг",
+                "pl": "Flaga",
+                "ko": "플래그"
             }
         }
     ]

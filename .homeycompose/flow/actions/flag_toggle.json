@@ -2,15 +2,45 @@
     "id": "flag_toggle",
     "title": {
         "en": "Toggle flag",
-        "nl": "Schakel flag om"
+        "nl": "Schakel flag om",
+        "de": "Flag umschalten",
+        "fr": "Basculer le flag",
+        "it": "Attiva/disattiva flag",
+        "sv": "Växla flagga",
+        "no": "Veksle flagg",
+        "es": "Alternar flag",
+        "da": "Skift flag",
+        "ru": "Переключить флаг",
+        "pl": "Przełącz flagę",
+        "ko": "플래그 전환"
     },
     "titleFormatted": {
         "en": "Toggle flag [[flag]]",
-        "nl": "Schakel flag [[flag]] om"
+        "nl": "Schakel flag [[flag]] om",
+        "de": "Flag [[flag]] umschalten",
+        "fr": "Basculer le flag [[flag]]",
+        "it": "Attiva/disattiva flag [[flag]]",
+        "sv": "Växla flagga [[flag]]",
+        "no": "Veksle flagg [[flag]]",
+        "es": "Alternar flag [[flag]]",
+        "da": "Skift flag [[flag]]",
+        "ru": "Переключить флаг [[flag]]",
+        "pl": "Przełącz flagę [[flag]]",
+        "ko": "플래그 [[flag]] 전환"
     },
     "hint": {
         "en": "Turns the flag on if it’s off, and off if it’s on.",
-        "nl": "Schakelt de flag aan als deze uit is, en uit als deze aan is."
+        "nl": "Schakelt de flag aan als deze uit is, en uit als deze aan is.",
+        "de": "Schaltet den Flag ein wenn er aus ist und aus wenn er an ist.",
+        "fr": "Active le flag s’il est désactivé et le désactive s’il est activé.",
+        "it": "Attiva il flag se è disattivato e lo disattiva se è attivo.",
+        "sv": "Slår på flaggan om den är av och av om den är på.",
+        "no": "Slår flagget på hvis det er av og av hvis det er på.",
+        "es": "Activa el flag si está apagado y lo apaga si está encendido.",
+        "da": "Tænder flaget hvis det er slukket og slukker det hvis det er tændt.",
+        "ru": "Включает флаг если он выключен и выключает если он включён.",
+        "pl": "Włącza flagę gdy jest wyłączona i wyłącza gdy jest włączona.",
+        "ko": "플래그가 꺼져 있으면 켜고 켜져 있으면 끕니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "flag",
             "title": {
                 "en": "Flag",
-                "nl": "Flag"
+                "nl": "Flag",
+                "de": "Flag",
+                "fr": "Flag",
+                "it": "Flag",
+                "sv": "Flagga",
+                "no": "Flagg",
+                "es": "Flag",
+                "da": "Flag",
+                "ru": "Флаг",
+                "pl": "Flaga",
+                "ko": "플래그"
             }
         }
     ]

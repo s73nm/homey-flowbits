@@ -2,11 +2,31 @@
     "id": "continue_with_chance",
     "title": {
         "en": "Continue with chance",
-        "nl": "Ga door met kans"
+        "nl": "Ga door met kans",
+        "de": "Mit Wahrscheinlichkeit fortfahren",
+        "fr": "Continuer avec une chance",
+        "it": "Continua con probabilità",
+        "sv": "Fortsätt med sannolikhet",
+        "no": "Fortsett med sannsynlighet",
+        "es": "Continuar con probabilidad",
+        "da": "Fortsæt med sandsynlighed",
+        "ru": "Продолжить с шансом",
+        "pl": "Kontynuuj z szansą",
+        "ko": "확률로 계속"
     },
     "titleFormatted": {
         "en": "Continue with [[chance]] chance",
-        "nl": "Ga door met [[chance]] kans"
+        "nl": "Ga door met [[chance]] kans",
+        "de": "Mit [[chance]] Wahrscheinlichkeit fortfahren",
+        "fr": "Continuer avec [[chance]] de chance",
+        "it": "Continua con [[chance]] probabilità",
+        "sv": "Fortsätt med [[chance]] sannolikhet",
+        "no": "Fortsett med [[chance]] sannsynlighet",
+        "es": "Continuar con [[chance]] probabilidad",
+        "da": "Fortsæt med [[chance]] sandsynlighed",
+        "ru": "Продолжить с шансом [[chance]]",
+        "pl": "Kontynuuj z [[chance]] szansą",
+        "ko": "[[chance]] 확률로 계속"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "chance",
             "title": {
                 "en": "Chance",
-                "nl": "Kans"
+                "nl": "Kans",
+                "de": "Wahrscheinlichkeit",
+                "fr": "Chance",
+                "it": "Probabilità",
+                "sv": "Sannolikhet",
+                "no": "Sannsynlighet",
+                "es": "Probabilidad",
+                "da": "Sandsynlighed",
+                "ru": "Шанс",
+                "pl": "Szansa",
+                "ko": "확률"
             },
             "min": 1,
             "max": 100,

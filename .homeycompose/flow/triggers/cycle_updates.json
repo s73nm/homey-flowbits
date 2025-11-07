@@ -2,15 +2,45 @@
     "id": "cycle_updates",
     "title": {
         "en": "Sequence updates value",
-        "nl": "Stappenreeks veranderd van waarde"
+        "nl": "Stappenreeks verandert van waarde",
+        "de": "Sequenz aktualisiert Wert",
+        "fr": "La séquence met à jour la valeur",
+        "it": "La sequenza aggiorna il valore",
+        "sv": "Sekvensen uppdaterar värdet",
+        "no": "Sekvensen oppdaterer verdien",
+        "es": "La secuencia actualiza el valor",
+        "da": "Sekvensen opdaterer værdien",
+        "ru": "Последовательность обновляет значение",
+        "pl": "Sekwencja aktualizuje wartość",
+        "ko": "시퀀스가 값을 업데이트함"
     },
     "titleFormatted": {
         "en": "Sequence [[name]] updates value",
-        "nl": "Stappenreeks [[name]] veranderd van waarde"
+        "nl": "Stappenreeks [[name]] verandert van waarde",
+        "de": "Sequenz [[name]] aktualisiert Wert",
+        "fr": "La séquence [[name]] met à jour la valeur",
+        "it": "La sequenza [[name]] aggiorna il valore",
+        "sv": "Sekvensen [[name]] uppdaterar värdet",
+        "no": "Sekvensen [[name]] oppdaterer verdien",
+        "es": "La secuencia [[name]] actualiza el valor",
+        "da": "Sekvensen [[name]] opdaterer værdien",
+        "ru": "Последовательность [[name]] обновляет значение",
+        "pl": "Sekwencja [[name]] aktualizuje wartość",
+        "ko": "시퀀스 [[name]]이(가) 값을 업데이트함"
     },
     "hint": {
         "en": "Triggers when a sequence updates its value.",
-        "nl": "Triggert wanneer een stappenreeks zijn waarde veranderd."
+        "nl": "Triggert wanneer een stappenreeks zijn waarde verandert.",
+        "de": "Löst aus, wenn eine Sequenz ihren Wert aktualisiert.",
+        "fr": "Déclenche lorsque la séquence met à jour sa valeur.",
+        "it": "Attiva quando la sequenza aggiorna il proprio valore.",
+        "sv": "Utlöses när en sekvens uppdaterar sitt värde.",
+        "no": "Utøses når en sekvens oppdaterer verdien sin.",
+        "es": "Se activa cuando una secuencia actualiza su valor.",
+        "da": "Udløses når en sekvens opdaterer sin værdi.",
+        "ru": "Срабатывает, когда последовательность обновляет свое значение.",
+        "pl": "Wyzwalane, gdy sekwencja aktualizuje swoją wartość.",
+        "ko": "시퀀스가 값을 업데이트할 때 트리거됨."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Название",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ],
@@ -28,7 +68,17 @@
             "type": "number",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             }
         }
     ]

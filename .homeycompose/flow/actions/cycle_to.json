@@ -2,15 +2,45 @@
     "id": "cycle_to",
     "title": {
         "en": "Set sequence to",
-        "nl": "Stel stappenreeks in op"
+        "nl": "Stel stappenreeks in op",
+        "de": "Sequenz einstellen auf",
+        "fr": "Définir la séquence sur",
+        "it": "Imposta la sequenza su",
+        "sv": "Ställ in sekvens till",
+        "no": "Sett sekvens til",
+        "es": "Establecer secuencia en",
+        "da": "Indstil sekvens til",
+        "ru": "Установить последовательность на",
+        "pl": "Ustaw sekwencję na",
+        "ko": "시퀀스를 설정"
     },
     "titleFormatted": {
         "en": "Set sequence [[name]] to [[value]]",
-        "nl": "Stel stappenreeks [[name]] in op [[value]]"
+        "nl": "Stel stappenreeks [[name]] in op [[value]]",
+        "de": "Setze Sequenz [[name]] auf [[value]]",
+        "fr": "Définir la séquence [[name]] sur [[value]]",
+        "it": "Imposta la sequenza [[name]] su [[value]]",
+        "sv": "Ställ in sekvens [[name]] till [[value]]",
+        "no": "Sett sekvens [[name]] til [[value]]",
+        "es": "Establecer secuencia [[name]] en [[value]]",
+        "da": "Indstil sekvens [[name]] til [[value]]",
+        "ru": "Установить последовательность [[name]] на [[value]]",
+        "pl": "Ustaw sekwencję [[name]] na [[value]]",
+        "ko": "시퀀스 [[name]]을(를) [[value]]로 설정"
     },
     "hint": {
         "en": "Jump directly to a step in the sequence.",
-        "nl": "Spring direct naar de gewenste stap in de reeks."
+        "nl": "Spring direct naar de gewenste stap in de reeks.",
+        "de": "Springe direkt zu einem Schritt in der Sequenz.",
+        "fr": "Aller directement à une étape de la séquence.",
+        "it": "Vai direttamente a un passo della sequenza.",
+        "sv": "Hoppa direkt till ett steg i sekvensen.",
+        "no": "Hopp direkte til et trinn i sekvensen.",
+        "es": "Saltar directamente a un paso de la secuencia.",
+        "da": "Hop direkte til et trin i sekvensen.",
+        "ru": "Перейти напрямую к шагу в последовательности.",
+        "pl": "Przejdź bezpośrednio do kroku w sekwencji.",
+        "ko": "시퀀스의 특정 단계로 바로 이동합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         },
         {
@@ -28,11 +68,31 @@
             "step": 1,
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 5",
-                "nl": "Bijv. 5"
+                "nl": "Bijv. 5",
+                "de": "Z. B. 5",
+                "fr": "P. ex. 5",
+                "it": "Es. 5",
+                "sv": "T.ex. 5",
+                "no": "F.eks. 5",
+                "es": "P. ej. 5",
+                "da": "F.eks. 5",
+                "ru": "Напр. 5",
+                "pl": "Np. 5",
+                "ko": "예: 5"
             }
         }
     ]

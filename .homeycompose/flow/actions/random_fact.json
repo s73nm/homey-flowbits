@@ -2,11 +2,31 @@
     "id": "random_fact",
     "title": {
         "en": "Give a random fact",
-        "nl": "Geef een willekeurig feitje"
+        "nl": "Geef een willekeurig feitje",
+        "de": "Gib eine zufällige Tatsache",
+        "fr": "Donner un fait aléatoire",
+        "it": "Fornisci un fatto casuale",
+        "sv": "Ge ett slumpmässigt faktum",
+        "no": "Gi en tilfeldig fakta",
+        "es": "Da un dato aleatorio",
+        "da": "Giv et tilfældigt faktum",
+        "ru": "Дай случайный факт",
+        "pl": "Podaj losowy fakt",
+        "ko": "무작위 사실 제공"
     },
     "titleFormatted": {
         "en": "Give a random fact",
-        "nl": "Geef een willekeurig feitje"
+        "nl": "Geef een willekeurig feitje",
+        "de": "Gib eine zufällige Tatsache",
+        "fr": "Donner un fait aléatoire",
+        "it": "Fornisci un fatto casuale",
+        "sv": "Ge ett slumpmässigt faktum",
+        "no": "Gi en tilfeldig fakta",
+        "es": "Da un dato aleatorio",
+        "da": "Giv et tilfældigt faktum",
+        "ru": "Дай случайный факт",
+        "pl": "Podaj losowy fakt",
+        "ko": "무작위 사실 제공"
     },
     "tokens": [
         {
@@ -14,7 +34,17 @@
             "type": "string",
             "title": {
                 "en": "Random fact",
-                "nl": "Willekeurig feitje"
+                "nl": "Willekeurig feitje",
+                "de": "Zufällige Tatsache",
+                "fr": "Fait aléatoire",
+                "it": "Fatto casuale",
+                "sv": "Slumpmässigt faktum",
+                "no": "Tilfeldig fakta",
+                "es": "Dato aleatorio",
+                "da": "Tilfældigt faktum",
+                "ru": "Случайный факт",
+                "pl": "Losowy fakt",
+                "ko": "무작위 사실"
             }
         }
     ]

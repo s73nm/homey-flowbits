@@ -2,11 +2,31 @@
     "id": "timer_pause",
     "title": {
         "en": "Pause timer",
-        "nl": "Pauzeer timer"
+        "nl": "Pauzeer timer",
+        "de": "Timer pausieren",
+        "fr": "Mettre le minuteur en pause",
+        "it": "Metti in pausa il timer",
+        "sv": "Pausa timer",
+        "no": "Sett timer på pause",
+        "es": "Pausar temporizador",
+        "da": "Sæt timer på pause",
+        "ru": "Пауза таймера",
+        "pl": "Wstrzymaj timer",
+        "ko": "타이머 일시정지"
     },
     "titleFormatted": {
         "en": "Pause timer [[timer]]",
-        "nl": "Pauzeer timer [[timer]]"
+        "nl": "Pauzeer timer [[timer]]",
+        "de": "Pausiere Timer [[timer]]",
+        "fr": "Mettre en pause le minuteur [[timer]]",
+        "it": "Metti in pausa il timer [[timer]]",
+        "sv": "Pausa timern [[timer]]",
+        "no": "Sett timeren [[timer]] på pause",
+        "es": "Pausar el temporizador [[timer]]",
+        "da": "Sæt timeren [[timer]] på pause",
+        "ru": "Поставить таймер [[timer]] на паузу",
+        "pl": "Wstrzymaj timer [[timer]]",
+        "ko": "[[timer]] 타이머 일시정지"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

@@ -2,15 +2,45 @@
     "id": "flag_deactivate",
     "title": {
         "en": "Deactivate flag",
-        "nl": "Deactiveer flag"
+        "nl": "Deactiveer flag",
+        "de": "Flag deaktivieren",
+        "fr": "Désactiver le flag",
+        "it": "Disattiva flag",
+        "sv": "Inaktivera flagga",
+        "no": "Deaktiver flagg",
+        "es": "Desactivar flag",
+        "da": "Deaktivér flag",
+        "ru": "Деактивировать флаг",
+        "pl": "Dezaktywuj flagę",
+        "ko": "플래그 비활성화"
     },
     "titleFormatted": {
         "en": "Deactivate flag [[flag]]",
-        "nl": "Deactiveer flag [[flag]]"
+        "nl": "Deactiveer flag [[flag]]",
+        "de": "Deaktiviere Flag [[flag]]",
+        "fr": "Désactiver le flag [[flag]]",
+        "it": "Disattiva flag [[flag]]",
+        "sv": "Inaktivera flagga [[flag]]",
+        "no": "Deaktiver flagg [[flag]]",
+        "es": "Desactivar flag [[flag]]",
+        "da": "Deaktivér flag [[flag]]",
+        "ru": "Деактивировать флаг [[flag]]",
+        "pl": "Dezaktywuj flagę [[flag]]",
+        "ko": "플래그 [[flag]] 비활성화"
     },
     "hint": {
         "en": "Deactivates a defined flag.",
-        "nl": "Deactiveer een gedefinieerde flag."
+        "nl": "Deactiveer een gedefinieerde flag.",
+        "de": "Deaktiviert einen definierten Flag.",
+        "fr": "Désactive un flag défini.",
+        "it": "Disattiva un flag definito.",
+        "sv": "Inaktiverar en definierad flagga.",
+        "no": "Deaktiverer en definert flagg.",
+        "es": "Desactiva un flag definido.",
+        "da": "Deaktiverer et defineret flag.",
+        "ru": "Деактивирует определенный флаг.",
+        "pl": "Dezaktywuje zdefiniowaną flagę.",
+        "ko": "정의된 플래그를 비활성화합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "flag",
             "title": {
                 "en": "Flag",
-                "nl": "Flag"
+                "nl": "Flag",
+                "de": "Flag",
+                "fr": "Flag",
+                "it": "Flag",
+                "sv": "Flagga",
+                "no": "Flagg",
+                "es": "Flag",
+                "da": "Flag",
+                "ru": "Флаг",
+                "pl": "Flaga",
+                "ko": "플래그"
             }
         }
     ]

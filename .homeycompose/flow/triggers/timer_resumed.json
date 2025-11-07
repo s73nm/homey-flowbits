@@ -2,11 +2,31 @@
     "id": "timer_resumed",
     "title": {
         "en": "Timer resumed",
-        "nl": "Timer is hervat"
+        "nl": "Timer is hervat",
+        "de": "Timer fortgesetzt",
+        "fr": "Minuteur repris",
+        "it": "Timer ripreso",
+        "sv": "Timer återupptagen",
+        "no": "Timer gjenopptatt",
+        "es": "Temporizador reanudado",
+        "da": "Timer genoptaget",
+        "ru": "Таймер возобновлён",
+        "pl": "Timer wznowiony",
+        "ko": "타이머 재개됨"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] resumed",
-        "nl": "Timer [[timer]] is hervat"
+        "nl": "Timer [[timer]] is hervat",
+        "de": "Timer [[timer]] fortgesetzt",
+        "fr": "Minuteur [[timer]] repris",
+        "it": "Timer [[timer]] ripreso",
+        "sv": "Timer [[timer]] återupptagen",
+        "no": "Timer [[timer]] gjenopptatt",
+        "es": "Temporizador [[timer]] reanudado",
+        "da": "Timer [[timer]] genoptaget",
+        "ru": "Таймер [[timer]] возобновлён",
+        "pl": "Timer [[timer]] wznowiony",
+        "ko": "타이머 [[timer]] 재개됨"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

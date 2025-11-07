@@ -2,15 +2,45 @@
     "id": "timer_set",
     "title": {
         "en": "Set timer",
-        "nl": "Stel timer in"
+        "nl": "Stel timer in",
+        "de": "Timer einstellen",
+        "fr": "Régler le minuteur",
+        "it": "Imposta timer",
+        "sv": "Ställ in timer",
+        "no": "Still inn timer",
+        "es": "Configurar temporizador",
+        "da": "Indstil timer",
+        "ru": "Установить таймер",
+        "pl": "Ustaw timer",
+        "ko": "타이머 설정"
     },
     "titleFormatted": {
         "en": "Set timer [[timer]] to [[duration]] [[unit]]",
-        "nl": "Stel timer [[timer]] in op [[duration]] [[unit]]"
+        "nl": "Stel timer [[timer]] in op [[duration]] [[unit]]",
+        "de": "Stelle Timer [[timer]] auf [[duration]] [[unit]]",
+        "fr": "Régler le minuteur [[timer]] sur [[duration]] [[unit]]",
+        "it": "Imposta il timer [[timer]] su [[duration]] [[unit]]",
+        "sv": "Ställ in timern [[timer]] på [[duration]] [[unit]]",
+        "no": "Still inn timeren [[timer]] til [[duration]] [[unit]]",
+        "es": "Configurar el temporizador [[timer]] a [[duration]] [[unit]]",
+        "da": "Indstil timeren [[timer]] til [[duration]] [[unit]]",
+        "ru": "Установить таймер [[timer]] на [[duration]] [[unit]]",
+        "pl": "Ustaw timer [[timer]] na [[duration]] [[unit]]",
+        "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 설정"
     },
     "hint": {
         "en": "Sets the remaining time of the timer.",
-        "nl": "Wijzigt de resterende tijd van de timer."
+        "nl": "Wijzigt de resterende tijd van de timer.",
+        "de": "Setzt die verbleibende Zeit des Timers.",
+        "fr": "Définit le temps restant du minuteur.",
+        "it": "Imposta il tempo rimanente del timer.",
+        "sv": "Ställer in återstående tid för timern.",
+        "no": "Setter gjenværende tid for timeren.",
+        "es": "Establece el tiempo restante del temporizador.",
+        "da": "Indstiller den resterende tid på timeren.",
+        "ru": "Устанавливает оставшееся время таймера.",
+        "pl": "Ustawia pozostały czas timera.",
+        "ko": "타이머의 남은 시간을 설정합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         },
         {
@@ -28,11 +68,31 @@
             "step": 1,
             "title": {
                 "en": "Duration",
-                "nl": "Looptijd"
+                "nl": "Looptijd",
+                "de": "Dauer",
+                "fr": "Durée",
+                "it": "Durata",
+                "sv": "Varaktighet",
+                "no": "Varighet",
+                "es": "Duración",
+                "da": "Varighed",
+                "ru": "Длительность",
+                "pl": "Czas trwania",
+                "ko": "지속 시간"
             },
             "placeholder": {
                 "en": "E.g. 10",
-                "nl": "Bijv. 10"
+                "nl": "Bijv. 10",
+                "de": "Z. B. 10",
+                "fr": "Ex. 10",
+                "it": "Es. 10",
+                "sv": "T.ex. 10",
+                "no": "F.eks. 10",
+                "es": "P. ej. 10",
+                "da": "Fx 10",
+                "ru": "Напр. 10",
+                "pl": "Np. 10",
+                "ko": "예: 10"
             }
         },
         {
@@ -40,35 +100,85 @@
             "name": "unit",
             "title": {
                 "en": "Unit",
-                "nl": "Eenheid"
+                "nl": "Eenheid",
+                "de": "Einheit",
+                "fr": "Unité",
+                "it": "Unità",
+                "sv": "Enhet",
+                "no": "Enhet",
+                "es": "Unidad",
+                "da": "Enhed",
+                "ru": "Единица",
+                "pl": "Jednostka",
+                "ko": "단위"
             },
             "values": [
                 {
                     "id": "seconds",
                     "title": {
                         "en": "seconds",
-                        "nl": "seconden"
+                        "nl": "seconden",
+                        "de": "Sekunden",
+                        "fr": "secondes",
+                        "it": "secondi",
+                        "sv": "sekunder",
+                        "no": "sekunder",
+                        "es": "segundos",
+                        "da": "sekunder",
+                        "ru": "секунды",
+                        "pl": "sekundy",
+                        "ko": "초"
                     }
                 },
                 {
                     "id": "minutes",
                     "title": {
                         "en": "minutes",
-                        "nl": "minuten"
+                        "nl": "minuten",
+                        "de": "Minuten",
+                        "fr": "minutes",
+                        "it": "minuti",
+                        "sv": "minuter",
+                        "no": "minutter",
+                        "es": "minutos",
+                        "da": "minutter",
+                        "ru": "минуты",
+                        "pl": "minuty",
+                        "ko": "분"
                     }
                 },
                 {
                     "id": "hours",
                     "title": {
                         "en": "hours",
-                        "nl": "uren"
+                        "nl": "uren",
+                        "de": "Stunden",
+                        "fr": "heures",
+                        "it": "ore",
+                        "sv": "timmar",
+                        "no": "timer",
+                        "es": "horas",
+                        "da": "timer",
+                        "ru": "часы",
+                        "pl": "godziny",
+                        "ko": "시간"
                     }
                 },
                 {
                     "id": "days",
                     "title": {
                         "en": "days",
-                        "nl": "dagen"
+                        "nl": "dagen",
+                        "de": "Tage",
+                        "fr": "jours",
+                        "it": "giorni",
+                        "sv": "dagar",
+                        "no": "dager",
+                        "es": "días",
+                        "da": "dage",
+                        "ru": "дни",
+                        "pl": "dni",
+                        "ko": "일"
                     }
                 }
             ]

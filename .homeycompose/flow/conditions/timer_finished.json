@@ -2,11 +2,31 @@
     "id": "timer_finished",
     "title": {
         "en": "Timer is finished",
-        "nl": "Timer is afgelopen"
+        "nl": "Timer is afgelopen",
+        "de": "Timer ist beendet",
+        "fr": "Le minuteur est terminé",
+        "it": "Il timer è terminato",
+        "sv": "Timern är klar",
+        "no": "Tidsur er ferdig",
+        "es": "El temporizador ha terminado",
+        "da": "Timeren er færdig",
+        "ru": "Таймер завершен",
+        "pl": "Timer się zakończył",
+        "ko": "타이머가 종료됨"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] is finished",
-        "nl": "Timer [[timer]] is afgelopen"
+        "nl": "Timer [[timer]] is afgelopen",
+        "de": "Timer [[timer]] ist beendet",
+        "fr": "Le minuteur [[timer]] est terminé",
+        "it": "Il timer [[timer]] è terminato",
+        "sv": "Timern [[timer]] är klar",
+        "no": "Tidsur [[timer]] er ferdig",
+        "es": "El temporizador [[timer]] ha terminado",
+        "da": "Timeren [[timer]] er færdig",
+        "ru": "Таймер [[timer]] завершен",
+        "pl": "Timer [[timer]] się zakończył",
+        "ko": "타이머 [[timer]]가 종료됨"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

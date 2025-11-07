@@ -2,11 +2,31 @@
     "id": "timer_running",
     "title": {
         "en": "Timer is running",
-        "nl": "Timer loopt"
+        "nl": "Timer loopt",
+        "de": "Timer läuft",
+        "fr": "Le minuteur est en cours",
+        "it": "Il timer è in esecuzione",
+        "sv": "Timern är igång",
+        "no": "Tidsur kjører",
+        "es": "El temporizador está en marcha",
+        "da": "Timeren kører",
+        "ru": "Таймер запущен",
+        "pl": "Timer jest uruchomiony",
+        "ko": "타이머가 실행 중임"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] is running",
-        "nl": "Timer [[timer]] loopt"
+        "nl": "Timer [[timer]] loopt",
+        "de": "Timer [[timer]] läuft",
+        "fr": "Le minuteur [[timer]] est en cours",
+        "it": "Il timer [[timer]] è in esecuzione",
+        "sv": "Timern [[timer]] är igång",
+        "no": "Tidsur [[timer]] kjører",
+        "es": "El temporizador [[timer]] está en marcha",
+        "da": "Timeren [[timer]] kører",
+        "ru": "Таймер [[timer]] запущен",
+        "pl": "Timer [[timer]] jest uruchomiony",
+        "ko": "타이머 [[timer]]가 실행 중임"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

@@ -1,0 +1,28 @@
+{
+  "autocomplete": {
+    "cycle_new": "Nowy licznik w tym przepływie",
+    "flag_new": "Nowa flaga w tym przepływie",
+    "mode_new": "Nowy tryb w tym przepływie",
+    "no_repeat_new": "Nowe okno bez powtórzeń w tym przepływie",
+    "signal_new": "Nowy sygnał w tym przepływie",
+    "timer_new": "Nowy timer w tym przepływie"
+  },
+  "notification": {
+    "mode_activated": "**__name__** jest aktywowany.",
+    "mode_deactivated": "**__name__** jest dezaktywowany."
+  },
+  "token": {
+    "day_period": "Część dnia (surowa)",
+    "day_period_translated": "Część dnia",
+    "moon_phase": "Faza księżyca (surowa)",
+    "moon_phase_translated": "Faza księżyca",
+    "zodiac_sign": "Znak zodiaku (surowy)",
+    "zodiac_sign_translated": "Znak zodiaku"
+  },
+  "day_period": {
+    "morning": "Rano",
+    "afternoon": "Popołudnie",
+    "evening": "Wieczór",
+    "night": "Noc"
+  }
+}

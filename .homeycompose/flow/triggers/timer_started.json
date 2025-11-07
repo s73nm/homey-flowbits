@@ -2,11 +2,31 @@
     "id": "timer_started",
     "title": {
         "en": "Timer started",
-        "nl": "Timer is gestart"
+        "nl": "Timer is gestart",
+        "de": "Timer gestartet",
+        "fr": "Minuteur démarré",
+        "it": "Timer avviato",
+        "sv": "Timer startad",
+        "no": "Timer startet",
+        "es": "Temporizador iniciado",
+        "da": "Timer startet",
+        "ru": "Таймер запущен",
+        "pl": "Timer rozpoczęty",
+        "ko": "타이머 시작됨"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] started",
-        "nl": "Timer [[timer]] is gestart"
+        "nl": "Timer [[timer]] is gestart",
+        "de": "Timer [[timer]] gestartet",
+        "fr": "Minuteur [[timer]] démarré",
+        "it": "Timer [[timer]] avviato",
+        "sv": "Timer [[timer]] startad",
+        "no": "Timer [[timer]] startet",
+        "es": "Temporizador [[timer]] iniciado",
+        "da": "Timer [[timer]] startet",
+        "ru": "Таймер [[timer]] запущен",
+        "pl": "Timer [[timer]] rozpoczęty",
+        "ko": "타이머 [[timer]] 시작됨"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

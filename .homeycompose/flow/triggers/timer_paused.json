@@ -2,11 +2,31 @@
     "id": "timer_paused",
     "title": {
         "en": "Timer paused",
-        "nl": "Timer is gepauzeerd"
+        "nl": "Timer is gepauzeerd",
+        "de": "Timer pausiert",
+        "fr": "Minuteur en pause",
+        "it": "Timer in pausa",
+        "sv": "Timer pausad",
+        "no": "Timer pausert",
+        "es": "Temporizador en pausa",
+        "da": "Timer sat på pause",
+        "ru": "Таймер на паузе",
+        "pl": "Timer wstrzymany",
+        "ko": "타이머 일시정지"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] paused",
-        "nl": "Timer [[timer]] is gepauzeerd"
+        "nl": "Timer [[timer]] is gepauzeerd",
+        "de": "Timer [[timer]] pausiert",
+        "fr": "Minuteur [[timer]] en pause",
+        "it": "Timer [[timer]] in pausa",
+        "sv": "Timer [[timer]] pausad",
+        "no": "Timer [[timer]] pausert",
+        "es": "Temporizador [[timer]] en pausa",
+        "da": "Timer [[timer]] sat på pause",
+        "ru": "Таймер [[timer]] на паузе",
+        "pl": "Timer [[timer]] wstrzymany",
+        "ko": "타이머 [[timer]] 일시정지"
     },
     "args": [
         {
@@ -14,7 +34,17 @@
             "name": "timer",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Имя",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         }
     ]

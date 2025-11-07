@@ -2,15 +2,45 @@
     "id": "mode_toggle",
     "title": {
         "en": "Toggle mode",
-        "nl": "Schakel stand om"
+        "nl": "Schakel stand om",
+        "de": "Modus umschalten",
+        "fr": "Basculer le mode",
+        "it": "Commuta modalità",
+        "sv": "Växla läge",
+        "no": "Veksle modus",
+        "es": "Alternar modo",
+        "da": "Skift tilstand",
+        "ru": "Переключить режим",
+        "pl": "Przełącz tryb",
+        "ko": "모드 전환"
     },
     "titleFormatted": {
         "en": "Toggle [[name]]",
-        "nl": "Schakel [[name]] om"
+        "nl": "Schakel [[name]] om",
+        "de": "Schalte [[name]] um",
+        "fr": "Basculer [[name]]",
+        "it": "Commuta [[name]]",
+        "sv": "Växla [[name]]",
+        "no": "Veksle [[name]]",
+        "es": "Alternar [[name]]",
+        "da": "Skift [[name]]",
+        "ru": "Переключить [[name]]",
+        "pl": "Przełącz [[name]]",
+        "ko": "[[name]] 전환"
     },
     "hint": {
         "en": "Turns the mode on if it’s off, and off if it’s on.",
-        "nl": "Schakelt de stand aan als deze uit is, en uit als deze aan is."
+        "nl": "Schakelt de stand aan als deze uit is, en uit als deze aan is.",
+        "de": "Schaltet den Modus ein wenn er aus ist und aus wenn er an ist.",
+        "fr": "Active le mode s’il est désactivé et le désactive s’il est activé.",
+        "it": "Attiva la modalità se è disattivata e la disattiva se è attivata.",
+        "sv": "Aktiverar läget om det är av och inaktiverar det om det är på.",
+        "no": "Aktiverer moduset hvis det er av og deaktiverer det hvis det er på.",
+        "es": "Activa el modo si está desactivado y lo desactiva si está activado.",
+        "da": "Aktiverer tilstanden hvis den er slukket og deaktiverer den hvis den er tændt.",
+        "ru": "Включает режим если он выключен и выключает если он включен.",
+        "pl": "Włącza tryb jeśli jest wyłączony i wyłącza jeśli jest włączony.",
+        "ko": "모드가 꺼져 있으면 켜고 켜져 있으면 끕니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "name",
             "title": {
                 "en": "Mode",
-                "nl": "Stand"
+                "nl": "Stand",
+                "de": "Modus",
+                "fr": "Mode",
+                "it": "Modalità",
+                "sv": "Läge",
+                "no": "Modus",
+                "es": "Modo",
+                "da": "Tilstand",
+                "ru": "Режим",
+                "pl": "Tryb",
+                "ko": "모드"
             }
         }
     ]

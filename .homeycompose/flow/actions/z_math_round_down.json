@@ -2,15 +2,45 @@
     "id": "z_math_round_down",
     "title": {
         "en": "Round down",
-        "nl": "Rond af naar beneden"
+        "nl": "Rond af naar beneden",
+        "de": "Abrunden",
+        "fr": "Arrondir vers le bas",
+        "it": "Arrotonda per difetto",
+        "sv": "Avrunda nedåt",
+        "no": "Avrund ned",
+        "es": "Redondear hacia abajo",
+        "da": "Afrund ned",
+        "ru": "Округлить вниз",
+        "pl": "Zaokrąglij w dół",
+        "ko": "내림"
     },
     "titleFormatted": {
         "en": "Round [[value]] down",
-        "nl": "Rond [[value]] af naar beneden"
+        "nl": "Rond [[value]] af naar beneden",
+        "de": "Runde [[value]] ab",
+        "fr": "Arrondir [[value]] vers le bas",
+        "it": "Arrotonda [[value]] per difetto",
+        "sv": "Avrunda [[value]] nedåt",
+        "no": "Avrund [[value]] ned",
+        "es": "Redondear [[value]] hacia abajo",
+        "da": "Afrund [[value]] ned",
+        "ru": "Округлить [[value]] вниз",
+        "pl": "Zaokrąglij [[value]] w dół",
+        "ko": "[[value]] 내림"
     },
     "hint": {
         "en": "Rounds down to the nearest integer.",
-        "nl": "Rond omlaag af naar het dichtsbijzijnde geheel."
+        "nl": "Rond omlaag af naar het dichtsbijzijnde geheel.",
+        "de": "Rundet auf die nächstkleinere ganze Zahl ab.",
+        "fr": "Arrondit vers le bas à l’entier le plus proche.",
+        "it": "Arrotonda per difetto al numero intero più vicino.",
+        "sv": "Avrundar nedåt till närmaste heltal.",
+        "no": "Avrunder ned til nærmeste heltall.",
+        "es": "Redondea hacia abajo al número entero más cercano.",
+        "da": "Afrunder ned til nærmeste heltal.",
+        "ru": "Округляет вниз до ближайшего целого.",
+        "pl": "Zaokrągla w dół do najbliższej liczby całkowitej.",
+        "ko": "가장 가까운 정수로 내림합니다."
     },
     "args": [
         {
@@ -18,11 +48,31 @@
             "name": "value",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
             },
             "placeholder": {
                 "en": "E.g. 13",
-                "nl": "Bijv. 13"
+                "nl": "Bijv. 13",
+                "de": "Z. B. 13",
+                "fr": "P. ex. 13",
+                "it": "Es. 13",
+                "sv": "T.ex. 13",
+                "no": "F.eks. 13",
+                "es": "P. ej. 13",
+                "da": "F.eks. 13",
+                "ru": "Напр. 13",
+                "pl": "Np. 13",
+                "ko": "예: 13"
             }
         }
     ],
@@ -32,7 +82,17 @@
             "name": "result",
             "title": {
                 "en": "Result",
-                "nl": "Resultaat"
+                "nl": "Resultaat",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
             }
         }
     ]

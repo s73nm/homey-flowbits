@@ -2,15 +2,45 @@
     "id": "no_repeat_window",
     "title": {
         "en": "No repeat within time window",
-        "nl": "Geen herhaling binnen tijdsvenster"
+        "nl": "Geen herhaling binnen tijdsvenster",
+        "de": "Keine Wiederholung innerhalb des Zeitfensters",
+        "fr": "Pas de répétition dans la fenêtre temporelle",
+        "it": "Nessuna ripetizione entro la finestra temporale",
+        "sv": "Ingen upprepning inom tidsfönster",
+        "no": "Ingen gjentakelse innen tidsvindu",
+        "es": "Sin repetición dentro de la ventana de tiempo",
+        "da": "Ingen gentagelse inden for tidsvindue",
+        "ru": "Нет повторов в пределах временного окна",
+        "pl": "Brak powtórzeń w oknie czasowym",
+        "ko": "시간 창 내 반복 없음"
     },
     "titleFormatted": {
         "en": "No repeat of [[window]] within [[duration]] [[unit]]",
-        "nl": "Geen herhaling van [[window]] binnen [[duration]] [[unit]]"
+        "nl": "Geen herhaling van [[window]] binnen [[duration]] [[unit]]",
+        "de": "Keine Wiederholung von [[window]] innerhalb von [[duration]] [[unit]]",
+        "fr": "Aucune répétition de [[window]] dans les [[duration]] [[unit]]",
+        "it": "Nessuna ripetizione di [[window]] entro [[duration]] [[unit]]",
+        "sv": "Ingen upprepning av [[window]] inom [[duration]] [[unit]]",
+        "no": "Ingen gjentakelse av [[window]] innen [[duration]] [[unit]]",
+        "es": "Sin repetición de [[window]] dentro de [[duration]] [[unit]]",
+        "da": "Ingen gentagelse af [[window]] inden for [[duration]] [[unit]]",
+        "ru": "Нет повторов [[window]] в течение [[duration]] [[unit]]",
+        "pl": "Brak powtórzeń [[window]] w ciągu [[duration]] [[unit]]",
+        "ko": "[[duration]] [[unit]] 내 [[window]] 반복 없음"
     },
     "hint": {
         "en": "Returns true if this card has not been triggered again within the given time window.",
-        "nl": "Geeft waar terug als deze kaart niet opnieuw is uitgevoerd binnen het opgegeven tijdsvenster."
+        "nl": "Geeft waar terug als deze kaart niet opnieuw is uitgevoerd binnen het opgegeven tijdsvenster.",
+        "de": "Gibt wahr zurück, wenn diese Karte nicht erneut innerhalb des Zeitfensters ausgelöst wurde.",
+        "fr": "Renvoie vrai si cette carte n’a pas été déclenchée de nouveau dans la fenêtre temporelle.",
+        "it": "Restituisce vero se questa scheda non è stata attivata di nuovo entro la finestra temporale.",
+        "sv": "Returnerar sant om kortet inte har körts igen inom tidsfönstret.",
+        "no": "Returnerer sann hvis dette kortet ikke har blitt utløst igjen innen tidsvinduet.",
+        "es": "Devuelve verdadero si esta tarjeta no se ha ejecutado de nuevo dentro de la ventana de tiempo.",
+        "da": "Returnerer sandt hvis dette kort ikke er blevet udløst igen inden for tidsvinduet.",
+        "ru": "Возвращает true, если карточка не была снова выполнена в пределах временного окна.",
+        "pl": "Zwraca prawdę, jeśli ta karta nie została ponownie wywołana w podanym oknie czasowym.",
+        "ko": "이 카드가 지정된 시간 창 내에서 다시 실행되지 않은 경우 true를 반환합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "window",
             "title": {
                 "en": "Name",
-                "nl": "Naam"
+                "nl": "Naam",
+                "de": "Name",
+                "fr": "Nom",
+                "it": "Nome",
+                "sv": "Namn",
+                "no": "Navn",
+                "es": "Nombre",
+                "da": "Navn",
+                "ru": "Название",
+                "pl": "Nazwa",
+                "ko": "이름"
             }
         },
         {
@@ -28,11 +68,31 @@
             "step": 1,
             "title": {
                 "en": "Duration",
-                "nl": "Looptijd"
+                "nl": "Looptijd",
+                "de": "Dauer",
+                "fr": "Durée",
+                "it": "Durata",
+                "sv": "Varaktighet",
+                "no": "Varighet",
+                "es": "Duración",
+                "da": "Varighed",
+                "ru": "Длительность",
+                "pl": "Czas trwania",
+                "ko": "지속시간"
             },
             "placeholder": {
                 "en": "E.g. 10",
-                "nl": "Bijv. 10"
+                "nl": "Bijv. 10",
+                "de": "Z. B. 10",
+                "fr": "Ex. 10",
+                "it": "Es. 10",
+                "sv": "T.ex. 10",
+                "no": "F.eks. 10",
+                "es": "Ej. 10",
+                "da": "Fx 10",
+                "ru": "Напр. 10",
+                "pl": "Np. 10",
+                "ko": "예: 10"
             }
         },
         {
@@ -40,35 +100,85 @@
             "name": "unit",
             "title": {
                 "en": "Unit",
-                "nl": "Eenheid"
+                "nl": "Eenheid",
+                "de": "Einheit",
+                "fr": "Unité",
+                "it": "Unità",
+                "sv": "Enhet",
+                "no": "Enhet",
+                "es": "Unidad",
+                "da": "Enhed",
+                "ru": "Ед. измерения",
+                "pl": "Jednostka",
+                "ko": "단위"
             },
             "values": [
                 {
                     "id": "seconds",
                     "title": {
                         "en": "seconds",
-                        "nl": "seconden"
+                        "nl": "seconden",
+                        "de": "Sekunden",
+                        "fr": "secondes",
+                        "it": "secondi",
+                        "sv": "sekunder",
+                        "no": "sekunder",
+                        "es": "segundos",
+                        "da": "sekunder",
+                        "ru": "секунды",
+                        "pl": "sekundy",
+                        "ko": "초"
                     }
                 },
                 {
                     "id": "minutes",
                     "title": {
                         "en": "minutes",
-                        "nl": "minuten"
+                        "nl": "minuten",
+                        "de": "Minuten",
+                        "fr": "minutes",
+                        "it": "minuti",
+                        "sv": "minuter",
+                        "no": "minutter",
+                        "es": "minutos",
+                        "da": "minutter",
+                        "ru": "минуты",
+                        "pl": "minuty",
+                        "ko": "분"
                     }
                 },
                 {
                     "id": "hours",
                     "title": {
                         "en": "hours",
-                        "nl": "uren"
+                        "nl": "uren",
+                        "de": "Stunden",
+                        "fr": "heures",
+                        "it": "ore",
+                        "sv": "timmar",
+                        "no": "timer",
+                        "es": "horas",
+                        "da": "timer",
+                        "ru": "часы",
+                        "pl": "godziny",
+                        "ko": "시간"
                     }
                 },
                 {
                     "id": "days",
                     "title": {
                         "en": "days",
-                        "nl": "dagen"
+                        "nl": "dagen",
+                        "de": "Tage",
+                        "fr": "jours",
+                        "it": "giorni",
+                        "sv": "dagar",
+                        "no": "dager",
+                        "es": "días",
+                        "da": "dage",
+                        "ru": "дни",
+                        "pl": "dni",
+                        "ko": "일"
                     }
                 }
             ]
