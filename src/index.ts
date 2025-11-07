@@ -51,6 +51,7 @@ export default class FlowBitsApp extends Homey.App {
         this.#brain.registry.action(Actions.ModeActivate);
         this.#brain.registry.action(Actions.ModeDeactivate);
         this.#brain.registry.action(Actions.ModeToggle);
+        this.#brain.registry.action(Actions.NoRepeatClear);
         this.#brain.registry.action(Actions.RandomFact);
         this.#brain.registry.action(Actions.SignalSend);
         this.#brain.registry.action(Actions.TimerPause);
@@ -75,6 +76,7 @@ export default class FlowBitsApp extends Homey.App {
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Cycle);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Flag);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Mode);
+        this.#brain.registry.autocompleteProvider(AutocompleteProviders.NoRepeat);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.SchoolVacation);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Signal);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Timer);
@@ -88,6 +90,7 @@ export default class FlowBitsApp extends Homey.App {
         this.#brain.registry.condition(Conditions.FlagIs);
         this.#brain.registry.condition(Conditions.ModeIs);
         this.#brain.registry.condition(Conditions.MoonPhaseIs);
+        this.#brain.registry.condition(Conditions.NoRepeatWindow);
         this.#brain.registry.condition(Conditions.SchoolHolidayIs);
         this.#brain.registry.condition(Conditions.TimerDuration);
         this.#brain.registry.condition(Conditions.TimerFinished);

@@ -5,6 +5,7 @@ export { default as DiceRolls } from './diceRolls';
 export { default as FlagIs } from './flagIs';
 export { default as ModeIs } from './modeIs';
 export { default as MoonPhaseIs } from './moonPhaseIs';
+export { default as NoRepeatWindow } from './noRepeatWindow';
 export { default as SchoolHolidayIs } from './schoolHolidayIs';
 export { default as TimerDuration } from './timerDuration';
 export { default as TimerFinished } from './timerFinished';

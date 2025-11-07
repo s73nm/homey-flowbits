@@ -2,6 +2,7 @@ import type Homey from 'homey/lib/Homey';
 import Cycles from './cycles';
 import Flags from './flags';
 import Modes from './modes';
+import NoRepeat from './noRepeat';
 import Registry from './registry';
 import Timers from './timers';
 import Tokens from './tokens';
@@ -24,6 +25,10 @@ export default class {
         return this.#modes;
     }
 
+    get noRepeat(): NoRepeat {
+        return this.#noRepeat;
+    }
+
     get registry(): Registry {
         return this.#registry;
     }
@@ -44,6 +49,7 @@ export default class {
     readonly #cycles: Cycles;
     readonly #flags: Flags;
     readonly #modes: Modes;
+    readonly #noRepeat: NoRepeat;
     readonly #registry: Registry;
     readonly #timers: Timers;
     readonly #tokens: Tokens;
@@ -54,6 +60,7 @@ export default class {
         this.#cycles = new Cycles(this);
         this.#flags = new Flags(this);
         this.#modes = new Modes(this);
+        this.#noRepeat = new NoRepeat(this);
         this.#registry = new Registry(this);
         this.#timers = new Timers(this);
         this.#tokens = new Tokens(this);

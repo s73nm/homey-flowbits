@@ -4,6 +4,7 @@ import type Brain from './brain';
 import type Cycles from './cycles';
 import type Flags from './flags';
 import type Modes from './modes';
+import type NoRepeat from './noRepeat';
 import type Registry from './registry';
 import type Timers from './timers';
 import type Tokens from './tokens';
@@ -40,6 +41,10 @@ export default class BrainAware {
 
     get modes(): Modes {
         return this.brain.modes;
+    }
+
+    get noRepeat(): NoRepeat {
+        return this.brain.noRepeat;
     }
 
     get registry(): Registry {

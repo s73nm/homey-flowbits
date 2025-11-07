@@ -1,0 +1,25 @@
+{
+    "id": "no_repeat_clear",
+    "title": {
+        "en": "Reset no-repeat window",
+        "nl": "Reset geen-herhalingvenster"
+    },
+    "titleFormatted": {
+        "en": "Reset no-repeat window for [[window]]",
+        "nl": "Reset geen-herhalingvenster voor [[window]]"
+    },
+    "hint": {
+        "en": "Clears the stored timestamp for the given identifier.",
+        "nl": "Leegt de opgeslagen timestamp voor de opgegeven naam."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "window",
+            "title": {
+                "en": "Name",
+                "nl": "Naam"
+            }
+        }
+    ]
+}

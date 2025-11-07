@@ -1,6 +1,6 @@
 import { DateTime } from 'luxon';
 import type { ClockState, ClockUnit } from '../types';
-import { slugify } from '../util';
+import { convertDurationToSeconds, slugify } from '../util';
 import BrainAware from './aware';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
@@ -85,7 +85,7 @@ export default class extends BrainAware {
             return false;
         }
 
-        const checkDuration = this.#convertDurationToSeconds(duration, unit);
+        const checkDuration = convertDurationToSeconds(duration, unit);
         const now = DateTime.now().toSeconds();
 
         return timer.target - now > checkDuration;
@@ -107,22 +107,6 @@ export default class extends BrainAware {
         const timer = await this.#find(name);
 
         return timer?.status === 'running';
-    }
-
-    #convertDurationToSeconds(duration: number, unit: ClockUnit): number {
-        switch (unit) {
-            case 'seconds':
-                return duration;
-
-            case 'minutes':
-                return duration * 60;
-
-            case 'hours':
-                return duration * 3600;
-
-            case 'days':
-                return duration * 86400;
-        }
     }
 
     #id(name: string): string {
@@ -195,7 +179,7 @@ export default class extends BrainAware {
 
     async #save(name: string, duration: number, unit: ClockUnit, status: ClockState): Promise<void> {
         const now = DateTime.now().toSeconds();
-        const remaining = this.#convertDurationToSeconds(duration, unit);
+        const remaining = convertDurationToSeconds(duration, unit);
         const target = now + remaining;
 
         await this.#update(name, remaining, remaining, target, status);
@@ -229,7 +213,7 @@ export default class extends BrainAware {
                 );
 
                 for (const trigger of triggers) {
-                    const triggerDuration = this.#convertDurationToSeconds(trigger.duration, trigger.unit);
+                    const triggerDuration = convertDurationToSeconds(trigger.duration, trigger.unit);
                     const triggerDiff = Math.abs(triggerDuration - diff);
 
                     if (triggerDiff < 0) {

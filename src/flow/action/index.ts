@@ -7,6 +7,7 @@ export { default as FlagToggle } from './flagToggle';
 export { default as ModeActivate } from './modeActivate';
 export { default as ModeDeactivate } from './modeDeactivate';
 export { default as ModeToggle } from './modeToggle';
+export { default as NoRepeatClear } from './noRepeatClear';
 export { default as RandomFact } from './randomFact';
 export { default as SignalSend } from './signalSend';
 export { default as TimerPause } from './timerPause';

@@ -3,6 +3,7 @@ export type { Action, AutocompleteProvider, Condition, Trigger } from './registr
 export type { default as Cycles } from './cycles';
 export type { default as Flags } from './flags';
 export type { default as Modes } from './modes';
+export type { default as NoRepeat } from './noRepeat';
 export type { default as Registry } from './registry';
 export type { default as Timers } from './timers';
 export type { default as Tokens } from './tokens';

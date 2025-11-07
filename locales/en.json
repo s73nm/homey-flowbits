@@ -12,7 +12,9 @@
     "mode_new": "New mode in this flow",
     "signal_new": "New signal in this flow",
     "timer_new": "new timer in this flow",
-    "flag_new": "New flag in this flow"
+    "flag_new": "New flag in this flow",
+    "no_repeat": "New no-repeat window in this flow",
+    "no_repeat_new": "New no-repeat window in this flow"
   },
   "day_period": {
     "afternoon": "Afternoon",

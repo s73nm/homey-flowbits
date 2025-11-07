@@ -770,6 +770,83 @@
         ]
       },
       {
+        "id": "no_repeat_window",
+        "title": {
+          "en": "No repeat within time window",
+          "nl": "Geen herhaling binnen tijdsvenster"
+        },
+        "titleFormatted": {
+          "en": "No repeat of [[window]] within [[duration]] [[unit]]",
+          "nl": "Geen herhaling van [[window]] binnen [[duration]] [[unit]]"
+        },
+        "hint": {
+          "en": "Returns true if this card has not been triggered again within the given time window.",
+          "nl": "Geeft waar terug als deze kaart niet opnieuw is uitgevoerd binnen het opgegeven tijdsvenster."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "window",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
+            }
+          },
+          {
+            "type": "number",
+            "name": "duration",
+            "min": 1,
+            "step": 1,
+            "title": {
+              "en": "Duration",
+              "nl": "Looptijd"
+            },
+            "placeholder": {
+              "en": "E.g. 10",
+              "nl": "Bijv. 10"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+              "en": "Unit",
+              "nl": "Eenheid"
+            },
+            "values": [
+              {
+                "id": "seconds",
+                "title": {
+                  "en": "seconds",
+                  "nl": "seconden"
+                }
+              },
+              {
+                "id": "minutes",
+                "title": {
+                  "en": "minutes",
+                  "nl": "minuten"
+                }
+              },
+              {
+                "id": "hours",
+                "title": {
+                  "en": "hours",
+                  "nl": "uren"
+                }
+              },
+              {
+                "id": "days",
+                "title": {
+                  "en": "days",
+                  "nl": "dagen"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "school_holiday_is",
         "title": {
           "en": "It is a school holiday",
@@ -1477,6 +1554,31 @@
             "title": {
               "en": "Mode",
               "nl": "Stand"
+            }
+          }
+        ]
+      },
+      {
+        "id": "no_repeat_clear",
+        "title": {
+          "en": "Reset no-repeat window",
+          "nl": "Reset geen-herhalingvenster"
+        },
+        "titleFormatted": {
+          "en": "Reset no-repeat window for [[window]]",
+          "nl": "Reset geen-herhalingvenster voor [[window]]"
+        },
+        "hint": {
+          "en": "Clears the stored timestamp for the given identifier.",
+          "nl": "Leegt de opgeslagen timestamp voor de opgegeven naam."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "window",
+            "title": {
+              "en": "Name",
+              "nl": "Naam"
             }
           }
         ]

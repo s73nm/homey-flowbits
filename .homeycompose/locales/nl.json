@@ -3,6 +3,7 @@
         "cycle_new": "Nieuwe teller in deze flow",
         "flag_new": "Nieuwe flag in deze flow",
         "mode_new": "Nieuwe stand in deze flow",
+        "no_repeat_new": "Nieuwe geen-herhalingvenster in deze flow",
         "signal_new": "Nieuw signaal in deze flow",
         "timer_new": "Nieuwe timer in deze flow"
     },
