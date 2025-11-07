@@ -63,8 +63,6 @@ export default class extends BrainAware {
 
         const candidate = knownModes.find(item => (item as any)[this.language].includes(normalized));
 
-        this.log({mode, normalized, candidate, prefix, suffix});
-
         if (candidate) {
             return {
                 color: candidate.color,

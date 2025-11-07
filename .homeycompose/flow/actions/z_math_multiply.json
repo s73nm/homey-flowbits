@@ -1,0 +1,92 @@
+{
+    "id": "z_math_multiply",
+    "title": {
+        "en": "Multiply",
+        "nl": "Vermenigvuldig",
+        "de": "Multiplizieren",
+        "fr": "Multiplier",
+        "it": "Moltiplica",
+        "sv": "Multiplicera",
+        "no": "Multipliser",
+        "es": "Multiplicar",
+        "da": "Multiplicer",
+        "ru": "Умножить",
+        "pl": "Pomnóż",
+        "ko": "곱하기"
+    },
+    "titleFormatted": {
+        "en": "Multiply [[value]] by [[factor]]",
+        "nl": "Vermenigvuldig [[value]] met [[factor]]",
+        "de": "Multipliziere [[value]] mit [[factor]]",
+        "fr": "Multiplier [[value]] par [[factor]]",
+        "it": "Moltiplica [[value]] per [[factor]]",
+        "sv": "Multiplicera [[value]] med [[factor]]",
+        "no": "Multipliser [[value]] med [[factor]]",
+        "es": "Multiplicar [[value]] por [[factor]]",
+        "da": "Multiplicer [[value]] med [[factor]]",
+        "ru": "Умножить [[value]] на [[factor]]",
+        "pl": "Pomnóż [[value]] przez [[factor]]",
+        "ko": "[[value]]에 [[factor]] 곱하기"
+    },
+    "args": [
+        {
+            "type": "number",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
+            }
+        },
+        {
+            "type": "number",
+            "name": "factor",
+            "default": 1,
+            "min": 0.01,
+            "step": 0.01,
+            "title": {
+                "en": "Factor",
+                "nl": "Factor",
+                "de": "Faktor",
+                "fr": "Facteur",
+                "it": "Fattore",
+                "sv": "Faktor",
+                "no": "Faktor",
+                "es": "Factor",
+                "da": "Faktor",
+                "ru": "Множитель",
+                "pl": "Mnożnik",
+                "ko": "인수"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "type": "number",
+            "name": "result",
+            "title": {
+                "en": "Result",
+                "nl": "Resultaat",
+                "de": "Ergebnis",
+                "fr": "Résultat",
+                "it": "Risultato",
+                "sv": "Resultat",
+                "no": "Resultat",
+                "es": "Resultado",
+                "da": "Resultat",
+                "ru": "Результат",
+                "pl": "Wynik",
+                "ko": "결과"
+            }
+        }
+    ]
+}

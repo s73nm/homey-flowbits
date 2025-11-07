@@ -4699,6 +4699,98 @@
         ]
       },
       {
+        "id": "z_math_divide",
+        "title": {
+          "en": "Divide",
+          "nl": "Deel",
+          "de": "Teilen",
+          "fr": "Diviser",
+          "it": "Dividi",
+          "sv": "Dividera",
+          "no": "Divider",
+          "es": "Dividir",
+          "da": "Divider",
+          "ru": "Делить",
+          "pl": "Podziel",
+          "ko": "나누기"
+        },
+        "titleFormatted": {
+          "en": "Divide [[value]] by [[divisor]]",
+          "nl": "Deel [[value]] door [[divisor]]",
+          "de": "Teile [[value]] durch [[divisor]]",
+          "fr": "Diviser [[value]] par [[divisor]]",
+          "it": "Dividi [[value]] per [[divisor]]",
+          "sv": "Dividera [[value]] med [[divisor]]",
+          "no": "Divider [[value]] med [[divisor]]",
+          "es": "Dividir [[value]] entre [[divisor]]",
+          "da": "Divider [[value]] med [[divisor]]",
+          "ru": "Делить [[value]] на [[divisor]]",
+          "pl": "Podziel [[value]] przez [[divisor]]",
+          "ko": "[[value]]를 [[divisor]]로 나누기"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
+            }
+          },
+          {
+            "type": "number",
+            "name": "divisor",
+            "default": 1,
+            "min": 0.01,
+            "step": 0.01,
+            "title": {
+              "en": "Divisor",
+              "nl": "Deler",
+              "de": "Teiler",
+              "fr": "Diviseur",
+              "it": "Divisore",
+              "sv": "Nämnare",
+              "no": "Nevner",
+              "es": "Divisor",
+              "da": "Divisor",
+              "ru": "Делитель",
+              "pl": "Dzielnik",
+              "ko": "나누는 수"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "result",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
+            }
+          }
+        ]
+      },
+      {
         "id": "z_math_increment",
         "title": {
           "en": "Increment",
@@ -4998,6 +5090,98 @@
           {
             "name": "result",
             "type": "number",
+            "title": {
+              "en": "Result",
+              "nl": "Resultaat",
+              "de": "Ergebnis",
+              "fr": "Résultat",
+              "it": "Risultato",
+              "sv": "Resultat",
+              "no": "Resultat",
+              "es": "Resultado",
+              "da": "Resultat",
+              "ru": "Результат",
+              "pl": "Wynik",
+              "ko": "결과"
+            }
+          }
+        ]
+      },
+      {
+        "id": "z_math_multiply",
+        "title": {
+          "en": "Multiply",
+          "nl": "Vermenigvuldig",
+          "de": "Multiplizieren",
+          "fr": "Multiplier",
+          "it": "Moltiplica",
+          "sv": "Multiplicera",
+          "no": "Multipliser",
+          "es": "Multiplicar",
+          "da": "Multiplicer",
+          "ru": "Умножить",
+          "pl": "Pomnóż",
+          "ko": "곱하기"
+        },
+        "titleFormatted": {
+          "en": "Multiply [[value]] by [[factor]]",
+          "nl": "Vermenigvuldig [[value]] met [[factor]]",
+          "de": "Multipliziere [[value]] mit [[factor]]",
+          "fr": "Multiplier [[value]] par [[factor]]",
+          "it": "Moltiplica [[value]] per [[factor]]",
+          "sv": "Multiplicera [[value]] med [[factor]]",
+          "no": "Multipliser [[value]] med [[factor]]",
+          "es": "Multiplicar [[value]] por [[factor]]",
+          "da": "Multiplicer [[value]] med [[factor]]",
+          "ru": "Умножить [[value]] на [[factor]]",
+          "pl": "Pomnóż [[value]] przez [[factor]]",
+          "ko": "[[value]]에 [[factor]] 곱하기"
+        },
+        "args": [
+          {
+            "type": "number",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
+            }
+          },
+          {
+            "type": "number",
+            "name": "factor",
+            "default": 1,
+            "min": 0.01,
+            "step": 0.01,
+            "title": {
+              "en": "Factor",
+              "nl": "Factor",
+              "de": "Faktor",
+              "fr": "Facteur",
+              "it": "Fattore",
+              "sv": "Faktor",
+              "no": "Faktor",
+              "es": "Factor",
+              "da": "Faktor",
+              "ru": "Множитель",
+              "pl": "Mnożnik",
+              "ko": "인수"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "type": "number",
+            "name": "result",
             "title": {
               "en": "Result",
               "nl": "Resultaat",
