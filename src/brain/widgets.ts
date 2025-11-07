@@ -59,9 +59,11 @@ export default class extends BrainAware {
     async getModeIcon(mode: string, prefix: string, suffix: string): Promise<ModeIcon | null> {
         let normalized = mode.toLowerCase();
         normalized = normalized.startsWith(prefix) ? normalized.substring(prefix.length) : normalized;
-        normalized = normalized.endsWith(suffix) ? normalized.substring(0, -suffix.length) : normalized;
+        normalized = normalized.endsWith(suffix) ? normalized.substring(0, normalized.length - suffix.length) : normalized;
 
         const candidate = knownModes.find(item => (item as any)[this.language].includes(normalized));
+
+        this.log({mode, normalized, candidate, prefix, suffix});
 
         if (candidate) {
             return {
