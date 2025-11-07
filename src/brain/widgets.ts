@@ -22,8 +22,15 @@ export default class extends BrainAware {
             return [];
         }
 
+        const icons: Record<string, ModeIcon | null> = {};
+
+        for (const flag of flags) {
+            icons[flag.name] = await this.getModeIcon(flag.name, this.translate('widget.current_mode.prefix'), this.translate('widget.current_mode.suffix'));
+        }
+
         return flags.map(flag => ({
             active: current.includes(flag.name),
+            icon: icons[flag.name] ?? null,
             name: flag.name
         }));
     }
@@ -80,8 +87,15 @@ export default class extends BrainAware {
             return [];
         }
 
+        const icons: Record<string, ModeIcon | null> = {};
+
+        for (const mode of modes) {
+            icons[mode.name] = await this.getModeIcon(mode.name, this.translate('widget.current_mode.prefix'), this.translate('widget.current_mode.suffix'));
+        }
+
         return modes.map(mode => ({
             active: current === mode.name,
+            icon: icons[mode.name] ?? null,
             name: mode.name
         }));
     }
@@ -106,7 +120,7 @@ export default class extends BrainAware {
     async initializeFlagOnOff(): Promise<void> {
         const widget = this.dashboards.getWidget('flag_onoff');
 
-        widget.registerSettingAutocompleteListener('flag', async (query, settings) => {
+        widget.registerSettingAutocompleteListener('flag', async () => {
             const flags = await this.getFlags();
 
             return flags.map(flag => ({
@@ -118,11 +132,13 @@ export default class extends BrainAware {
 
 type Flag = {
     readonly active: boolean;
+    readonly icon: ModeIcon | null;
     readonly name: string;
 };
 
 type Mode = {
     readonly active: boolean;
+    readonly icon: ModeIcon | null;
     readonly name: string;
 };
 

@@ -14,10 +14,8 @@
             padding: var(--homey-su-4);
             align-items: center;
             flex-flow: row;
-            gap: var(--homey-su-2);
+            gap: var(--homey-su-3);
             justify-content: start;
-            background: var(--homey-background-color);
-            border-radius: var(--homey-border-radius-default);
         }
 
         .flag-on-off-name {
@@ -65,6 +63,31 @@
             scale: 0.95;
         }
 
+        .flag-on-off-icon {
+            --color: #64748b;
+            --icon: url(shapes.svg);
+
+            display: flex;
+            height: 42px;
+            width: 42px;
+            align-items: center;
+            justify-content: center;
+            border-radius: 24px;
+            background: var(--color);
+            -webkit-mask-image: var(--icon);
+            -webkit-mask-position: center;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: 42px 42px;
+            mask-image: var(--icon);
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: 42px 42px;
+        }
+
+        .flag-on-off-icon:not(.on) {
+            --color: var(--homey-color-mono-200) !important;
+        }
+
         .homey-custom-icon-power {
             --homey-icon-size: 24px;
 
@@ -79,6 +102,8 @@
 <div
     class="flag-on-off"
     id="flag-on-off">
+    <div class="flag-on-off-icon"></div>
+
     <strong class="homey-text-bold flag-on-off-name"></strong>
 
     <button class="flag-on-off-power">
@@ -88,6 +113,11 @@
 
 <script type="text/javascript">
     function onHomeyReady(Homey) {
+        const onoff = document.getElementById('flag-on-off');
+        const name = onoff.getElementsByClassName('flag-on-off-name')[0];
+        const icon = onoff.getElementsByClassName('flag-on-off-icon')[0];
+        const power = onoff.getElementsByClassName('flag-on-off-power')[0];
+
         let loading = false;
         let ready = false;
 
@@ -97,9 +127,6 @@
             Homey.on('flowbits-flags-update', update);
 
             await update();
-
-            const onoff = document.getElementById('flag-on-off');
-            const power = onoff.getElementsByClassName('flag-on-off-power')[0];
 
             power.addEventListener('click', async () => {
                 const flag = settings.flag.name;
@@ -113,8 +140,10 @@
                 Homey.hapticFeedback();
 
                 if (power.classList.contains('on')) {
+                    icon.classList.remove('on');
                     power.classList.remove('on');
                 } else {
+                    icon.classList.add('on');
                     power.classList.add('on');
                 }
 
@@ -125,19 +154,25 @@
         }
 
         async function update() {
-            const onoff = document.getElementById('flag-on-off');
-            const name = onoff.getElementsByClassName('flag-on-off-name')[0];
-            const power = onoff.getElementsByClassName('flag-on-off-power')[0];
-
             const flag = settings.flag.name;
             name.innerHTML = flag;
 
             const state = await Homey.api('GET', `/?flag=${flag}`);
 
-            if (state) {
+            if (state.active) {
+                icon.classList.add('on');
                 power.classList.add('on');
             } else {
+                icon.classList.remove('on');
                 power.classList.remove('on');
+            }
+
+            if (state?.icon) {
+                icon.style.setProperty('--color', state.icon.color);
+                icon.style.setProperty('--icon', `url(${state.icon.url})`);
+            } else {
+                icon.style.removeProperty('--color');
+                icon.style.removeProperty('--icon');
             }
 
             const height = onoff.getBoundingClientRect().height;

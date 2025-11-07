@@ -5,6 +5,7 @@
     <style>
         body {
             -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
+            -webkit-user-select: none;
             user-select: none;
         }
 
@@ -20,16 +21,16 @@
             align-items: center;
             flex-flow: row;
             justify-content: start;
-            gap: var(--homey-su-4);
+            gap: var(--homey-su-3);
             background: var(--homey-background-color);
             border: 0;
             border-radius: var(--homey-border-radius-default);
+            line-height: 1;
             outline: 0;
+            overflow: hidden;
             text-align: left;
             transition: 150ms cubic-bezier(0.55, 0, 0.1, 1);
             transition-property: background, scale;
-            -webkit-user-select: none;
-            user-select: none;
             will-change: transform;
         }
 
@@ -43,15 +44,44 @@
             align-items: stretch;
             flex-flow: column;
             flex-grow: 1;
+            flex-shrink: 1;
+            overflow: hidden;
+        }
+
+        .grid-item-caption .homey-text-medium {
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
+        }
+
+        .grid-item-icon {
+            --color: #64748b;
+            --icon: url(shapes.svg);
+
+            display: flex;
+            height: 24px;
+            margin: -3px;
+            width: 24px;
+            align-items: center;
+            flex-shrink: 0;
+            justify-content: center;
+            border-radius: 24px;
+            background: var(--color);
+            -webkit-mask-image: var(--icon);
+            -webkit-mask-position: center;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: 42px 42px;
+            mask-image: var(--icon);
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: 24px 24px;
         }
 
         .homey-custom-icon-check {
             --homey-icon-color: var(--homey-icon-color-blue);
             --homey-icon-size: 24px;
 
+            flex-shrink: 0;
             -webkit-mask-image: url(check.svg);
             mask-image: url(check.svg);
         }
@@ -64,6 +94,8 @@
 
 <script type="text/javascript">
     function onHomeyReady(Homey) {
+        const settings = Homey.getSettings();
+
         let lastResult = null;
         let ready = false;
 
@@ -94,6 +126,14 @@
                 const button = document.createElement('button');
                 button.className = 'homey-widget grid-item';
                 button.onclick = () => onClickFlag(result);
+
+                if (settings.show_icons && result.icon) {
+                    const icon = document.createElement('div');
+                    icon.className = 'grid-item-icon';
+                    icon.style.setProperty('--color', result.icon.color);
+                    icon.style.setProperty('--icon', `url(${result.icon.url})`);
+                    button.appendChild(icon);
+                }
 
                 const caption = document.createElement('div');
                 caption.className = 'grid-item-caption';

@@ -15,7 +15,27 @@
     },
     "height": 120,
     "transparent": true,
-    "settings": [],
+    "settings": [
+        {
+            "id": "show_icons",
+            "type": "checkbox",
+            "value": true,
+            "title": {
+                "en": "Show icons",
+                "nl": "Toon icoontjes",
+                "de": "Symbole anzeigen",
+                "fr": "Afficher les icônes",
+                "it": "Mostra icone",
+                "sv": "Visa ikoner",
+                "no": "Vis ikoner",
+                "es": "Mostrar iconos",
+                "da": "Vis ikoner",
+                "ru": "Показать иконки",
+                "pl": "Pokaż ikony",
+                "ko": "아이콘 표시"
+            }
+        }
+    ],
     "api": {
         "list": {
             "method": "GET",
