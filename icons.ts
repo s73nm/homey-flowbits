@@ -6,6 +6,14 @@ const ICONS = modes
     .map(mode => mode.icon)
     .sort();
 
+ICONS.push('lightbulb');
+ICONS.push('lightbulb-on');
+ICONS.push('headphones');
+ICONS.push('music');
+ICONS.push('music-note');
+ICONS.push('tv-music');
+ICONS.push('play');
+
 for (const icon of ICONS) {
     const src = `${ROOT}/${icon}.svg`;
     const dst = `assets/icons/${icon}.svg`;

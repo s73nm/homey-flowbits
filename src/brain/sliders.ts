@@ -15,14 +15,14 @@ export default class extends BrainAware {
         return this.values[name] ?? null;
     }
 
-    async setValue(name: string, value: number): Promise<void> {
+    async setValue(name: string, value: number, widgetId?: string): Promise<void> {
         const values = this.values;
         values[name] = value;
 
         this.values = values;
 
         await this.#triggerChanged(name, value);
-        await this.#triggerRealtime(name, value);
+        await this.#triggerRealtime(name, value, widgetId);
     }
 
     async #triggerChanged(slider: string, value: number): Promise<void> {
@@ -31,7 +31,7 @@ export default class extends BrainAware {
             ?.trigger({slider}, {value});
     }
 
-    async #triggerRealtime(slider: string, value: number): Promise<void> {
-        this.realtime('flowbits-slider-update', {slider, value});
+    async #triggerRealtime(slider: string, value: number, widgetId?: string): Promise<void> {
+        this.realtime('flowbits-slider-update', {slider, value, widgetId});
     }
 }

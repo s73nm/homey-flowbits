@@ -124,8 +124,8 @@ export default class extends BrainAware {
         return await this.sliders.getValue(sliderName);
     }
 
-    async setSliderValue(sliderName: string, value: number): Promise<void> {
-        await this.sliders.setValue(sliderName, value);
+    async setSliderValue(sliderName: string, value: number, widgetId?: string): Promise<void> {
+        await this.sliders.setValue(sliderName, value, widgetId);
     }
 
     async initializeFlagOnOff(): Promise<void> {

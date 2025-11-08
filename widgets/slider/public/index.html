@@ -220,6 +220,10 @@
                 return;
             }
 
+            if (event.widgetId === Homey.getWidgetInstanceId()) {
+                return;
+            }
+
             await setValueRaw(event.value);
         }
 

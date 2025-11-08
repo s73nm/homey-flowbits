@@ -5,8 +5,8 @@ export async function get({homey, query}: WidgetRequest): Promise<number | null>
     return await homey.app.widgets.getSliderValue(query.slider);
 }
 
-export async function set({homey, query, body}: WidgetRequest): Promise<boolean> {
-    await homey.app.widgets.setSliderValue(query.slider, body.value);
+export async function set({homey, query, body, widgetInstanceId}: WidgetRequest): Promise<boolean> {
+    await homey.app.widgets.setSliderValue(query.slider, body.value, widgetInstanceId);
 
     return true;
 }
