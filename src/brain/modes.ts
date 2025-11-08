@@ -68,7 +68,7 @@ export default class extends BrainAware {
             .findTrigger(Triggers.ModeActivated)
             ?.trigger({name});
 
-        // await this.notify(this.translate('notification.mode_activated', {name}));
+        await this.notify(this.translate('notification.mode_activated', {name}));
     }
 
     async #triggerChanged(name: string, active: boolean): Promise<void> {
@@ -82,6 +82,6 @@ export default class extends BrainAware {
             .findTrigger(Triggers.ModeDeactivated)
             ?.trigger({name});
 
-        // await this.notify(this.translate('notification.mode_deactivated', {name}));
+        await this.notify(this.translate('notification.mode_deactivated', {name}));
     }
 }
