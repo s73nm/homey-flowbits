@@ -20,7 +20,8 @@
     "timer_new": "Nieuwe timer in deze flow",
     "flag_new": "Nieuwe flag in deze flow",
     "no_repeat": "Nieuwe geen-herhalingvenster in deze flow",
-    "no_repeat_new": "Nieuwe geen-herhalingvenster in deze flow"
+    "no_repeat_new": "Nieuwe geen-herhalingvenster in deze flow",
+    "slider_new": "Nieuwe slider in deze flow"
   },
   "notification": {
     "mode_activated": "**__name__** is geactiveerd.",

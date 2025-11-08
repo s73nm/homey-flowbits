@@ -5,7 +5,8 @@
     "mode_new": "Nytt läge i detta flöde",
     "no_repeat_new": "Nytt icke-repetitionsfönster i detta flöde",
     "signal_new": "Ny signal i detta flöde",
-    "timer_new": "Ny timer i detta flöde"
+    "timer_new": "Ny timer i detta flöde",
+    "slider_new": "Ny slider i detta flöde"
   },
   "notification": {
     "mode_activated": "**__name__** är aktiverad.",

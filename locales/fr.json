@@ -5,7 +5,8 @@
     "mode_new": "Nouveau mode dans ce flux",
     "no_repeat_new": "Nouvelle fenêtre sans répétition dans ce flux",
     "signal_new": "Nouveau signal dans ce flux",
-    "timer_new": "Nouveau minuteur dans ce flux"
+    "timer_new": "Nouveau minuteur dans ce flux",
+    "slider_new": "Nouveau curseur dans ce flow"
   },
   "notification": {
     "mode_activated": "**__name__** est activé.",

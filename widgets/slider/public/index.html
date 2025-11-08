@@ -1,0 +1,231 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <title>Current mode</title>
+    <style>
+        body {
+            -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
+            -webkit-user-select: none;
+            user-select: none;
+        }
+
+        .mount {
+            display: flex;
+            padding: var(--homey-su-4);
+            align-items: stretch;
+            flex-flow: column;
+            gap: var(--homey-su-3);
+        }
+
+        .slider {
+            --red: #ef4444;
+            --orange: #f97316;
+            --amber: #f59e0b;
+            --yellow: #eab308;
+            --lime: #84cc16;
+            --green: #22c55e;
+            --emerald: #10b981;
+            --teal: #14b8a6;
+            --cyan: #06b6d4;
+            --sky: #0ea5e9;
+            --blue: #3b82f6;
+            --indigo: #6366f1;
+            --violet: #8b5cf6;
+            --purple: #a855f7;
+            --fuchsia: #d946ef;
+            --pink: #ec4899;
+            --rose: #f43f5e;
+
+            --color: var(--pink);
+            --icon: ;
+            --value: 0;
+
+            position: relative;
+            height: 54px;
+            background: var(--homey-color-mono-025);
+            border-radius: var(--homey-border-radius-small);
+            box-shadow: inset 0 0 0 1px var(--homey-color-mono-050);
+            overflow: hidden;
+        }
+
+        .slider-icon {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            aspect-ratio: 1;
+            -webkit-mask-image: var(--icon);
+            -webkit-mask-position: center;
+            -webkit-mask-repeat: no-repeat;
+            -webkit-mask-size: 30px 30px;
+            mask-image: var(--icon);
+            mask-position: center;
+            mask-repeat: no-repeat;
+            mask-size: 30px 30px;
+            transition: 210ms cubic-bezier(0.55, 0, 0.1, 1);
+            transition-property: opacity, scale;
+            will-change: opacity;
+        }
+
+        .slider-icon.start {
+            left: 0;
+            background: var(--homey-background-color);
+        }
+
+        .slider-icon.end {
+            left: calc(var(--value) * 1%);
+            background: var(--color);
+        }
+
+        .slider-knob {
+            position: absolute;
+            height: 24px;
+            width: 4px;
+            top: calc(50% - 12px);
+            right: 6px;
+            background: var(--homey-background-color);
+            border-radius: 2px;
+        }
+
+        .slider-value {
+            position: absolute;
+            top: 0;
+            left: 0;
+            height: 100%;
+            width: calc(var(--value) * 1%);
+            background: var(--color);
+            border-radius: inherit;
+        }
+
+        .slider:not(.active) .slider-value {
+            transition: width 210ms cubic-bezier(0.55, 0, 0.1, 1);
+            will-change: width;
+        }
+
+        .slider.low .slider-icon.start {
+            opacity: 0;
+            scale: .5;
+        }
+
+        .slider:not(.low) .slider-icon.end {
+            opacity: 0;
+            scale: .5;
+        }
+    </style>
+</head>
+
+<body class="homey-widget-full">
+
+<div class="mount">
+    <div class="name homey-text-bold"></div>
+
+    <div class="slider">
+        <div class="slider-value">
+            <div class="slider-knob"></div>
+        </div>
+        <div class="slider-icon start"></div>
+        <div class="slider-icon end"></div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function onHomeyReady(Homey) {
+        const formatter = new Intl.NumberFormat(navigator.language, {minimumFractionDigits: 0, maximumFractionDigits: 1, style: 'percent'});
+        const settings = Homey.getSettings();
+
+        /** @type HTMLElement */
+        const mount = document.querySelector('.mount');
+        /** @type HTMLElement */
+        const name = document.querySelector('.name');
+        /** @type HTMLElement */
+        const slider = document.querySelector('.slider');
+
+        async function init() {
+            name.innerText = settings.slider.name;
+
+            slider.style.setProperty('--color', `var(--${settings.color})`);
+            slider.style.setProperty('--icon', `url(../../assets/icons/${settings.icon.id}.svg)`);
+
+            let active = false;
+
+            slider.addEventListener('pointerdown', e => {
+                active = true;
+                slider.setPointerCapture(e.pointerId);
+                slider.classList.add('active');
+
+                setValue(e.clientX);
+
+                e.preventDefault();
+                e.stopPropagation();
+            });
+
+            slider.addEventListener('pointermove', e => {
+                if (!active) {
+                    return;
+                }
+
+                setValue(e.clientX);
+
+                e.preventDefault();
+                e.stopPropagation();
+            });
+
+            slider.addEventListener('pointerup', e => {
+                active = false;
+                slider.releasePointerCapture(e.pointerId);
+                slider.classList.remove('active');
+
+                setValue(e.clientX, true);
+
+                e.preventDefault();
+                e.stopPropagation();
+            });
+
+            await update();
+
+            Homey.on('flowbits-slider-update', onUpdate);
+            Homey.ready({height: mount.getBoundingClientRect().height});
+        }
+
+        async function setValue(clientX, push = false) {
+            const rect = slider.getBoundingClientRect();
+            const x = Math.min(Math.max(clientX - rect.left, 0), rect.width);
+            const ratio = x / rect.width;
+            const v = Math.round(ratio * 100);
+
+            await setValueRaw(v);
+
+            if (push) {
+                await Homey.api('POST', `/?slider=${settings.slider.name}`, {value: v});
+            }
+        }
+
+        async function setValueRaw(value) {
+            slider.style.setProperty('--value', String(value));
+            name.innerText = `${settings.slider.name}: ${formatter.format(value / 100)}`;
+
+            if (value >= 15) {
+                slider.classList.remove('low');
+            } else {
+                slider.classList.add('low');
+            }
+        }
+
+        async function update() {
+            const value = await Homey.api('GET', `/?slider=${settings.slider.name}`);
+            await setValueRaw(value);
+        }
+
+        async function onUpdate(event) {
+            if (event.slider !== settings.slider.name) {
+                return;
+            }
+
+            await setValueRaw(event.value);
+        }
+
+        init();
+    }
+</script>
+
+</body>
+</html>

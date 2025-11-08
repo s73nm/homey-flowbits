@@ -8,7 +8,7 @@ const ICONS = modes
 
 for (const icon of ICONS) {
     const src = `${ROOT}/${icon}.svg`;
-    const dst = `assets/modes/${icon}.svg`;
+    const dst = `assets/icons/${icon}.svg`;
 
     // @ts-ignore
     await copyFile(src, dst);

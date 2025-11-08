@@ -57,6 +57,7 @@ export default class FlowBitsApp extends Homey.App {
         this.#brain.registry.action(Actions.NoRepeatClear);
         this.#brain.registry.action(Actions.RandomFact);
         this.#brain.registry.action(Actions.SignalSend);
+        this.#brain.registry.action(Actions.SliderSet);
         this.#brain.registry.action(Actions.TimerPause);
         this.#brain.registry.action(Actions.TimerResume);
         this.#brain.registry.action(Actions.TimerSet);
@@ -84,6 +85,7 @@ export default class FlowBitsApp extends Homey.App {
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.NoRepeat);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.SchoolVacation);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Signal);
+        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Slider);
         this.#brain.registry.autocompleteProvider(AutocompleteProviders.Timer);
     }
 
@@ -116,6 +118,7 @@ export default class FlowBitsApp extends Homey.App {
         this.#brain.registry.trigger(Triggers.ModeChanged);
         this.#brain.registry.trigger(Triggers.ModeDeactivated);
         this.#brain.registry.trigger(Triggers.SignalReceive);
+        this.#brain.registry.trigger(Triggers.SliderChanged);
         this.#brain.registry.trigger(Triggers.TimerFinished);
         this.#brain.registry.trigger(Triggers.TimerPaused);
         this.#brain.registry.trigger(Triggers.TimerRemaining);

@@ -4,6 +4,7 @@ import Flags from './flags';
 import Modes from './modes';
 import NoRepeat from './noRepeat';
 import Registry from './registry';
+import Sliders from './sliders';
 import Timers from './timers';
 import Tokens from './tokens';
 import Widgets from './widgets';
@@ -33,6 +34,10 @@ export default class {
         return this.#registry;
     }
 
+    get sliders(): Sliders {
+        return this.#sliders;
+    }
+
     get timers(): Timers {
         return this.#timers;
     }
@@ -51,17 +56,19 @@ export default class {
     readonly #modes: Modes;
     readonly #noRepeat: NoRepeat;
     readonly #registry: Registry;
+    readonly #sliders: Sliders;
     readonly #timers: Timers;
     readonly #tokens: Tokens;
     readonly #widgets: Widgets;
 
     constructor(homey: Homey) {
         this.#homey = homey;
+        this.#registry = new Registry(this);
         this.#cycles = new Cycles(this);
         this.#flags = new Flags(this);
         this.#modes = new Modes(this);
         this.#noRepeat = new NoRepeat(this);
-        this.#registry = new Registry(this);
+        this.#sliders = new Sliders(this);
         this.#timers = new Timers(this);
         this.#tokens = new Tokens(this);
         this.#widgets = new Widgets(this);

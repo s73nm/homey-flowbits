@@ -1,3 +1,5 @@
+import { readdir } from 'node:fs/promises';
+import { resolve } from 'node:path';
 import BrainAware from './aware';
 import knownModes from '../../assets/modes/known.json';
 
@@ -6,6 +8,7 @@ import * as AutocompleteProviders from '../flow/autocomplete';
 export default class extends BrainAware {
     async initialize(): Promise<void> {
         await this.initializeFlagOnOff();
+        await this.initializeSlider();
     }
 
     async getFlags(): Promise<Flag[]> {
@@ -66,7 +69,7 @@ export default class extends BrainAware {
         if (candidate) {
             return {
                 color: candidate.color,
-                url: `../../assets/modes/${candidate.icon}.svg`
+                url: `../../assets/icons/${candidate.icon}.svg`
             };
         }
 
@@ -117,6 +120,14 @@ export default class extends BrainAware {
         return true;
     }
 
+    async getSliderValue(sliderName: string): Promise<number | null> {
+        return await this.sliders.getValue(sliderName);
+    }
+
+    async setSliderValue(sliderName: string, value: number): Promise<void> {
+        await this.sliders.setValue(sliderName, value);
+    }
+
     async initializeFlagOnOff(): Promise<void> {
         const widget = this.dashboards.getWidget('flag_onoff');
 
@@ -126,6 +137,38 @@ export default class extends BrainAware {
             return flags.map(flag => ({
                 name: flag.name
             }));
+        });
+    }
+
+    async initializeSlider(): Promise<void> {
+        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Slider);
+
+        if (!autocompleteProvider) {
+            throw new Error('Failed to get the slider autocomplete provider.');
+        }
+
+        const contents = await readdir(resolve(__dirname, '../../assets/icons'));
+        const icons: string[] = contents.map(file => file.replace('.svg', ''));
+        const widget = this.dashboards.getWidget('slider');
+
+        widget.registerSettingAutocompleteListener('slider', async (query) => {
+            const sliders = await autocompleteProvider.find(query);
+
+            return sliders.map(slider => ({
+                name: slider.name
+            }));
+        });
+
+        widget.registerSettingAutocompleteListener('icon', async (query) => {
+            const results = icons.map(icon => ({
+                id: icon,
+                name: (' ' + icon)
+                    .replaceAll('-', ' ')
+                    .replace(/ \w/g, a => a.toLocaleUpperCase())
+                    .trim()
+            }));
+
+            return results.filter(result => result.name.toLowerCase().includes(query.toLowerCase()));
         });
     }
 }

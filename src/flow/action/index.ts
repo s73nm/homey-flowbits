@@ -11,6 +11,7 @@ export { default as ModeToggle } from './modeToggle';
 export { default as NoRepeatClear } from './noRepeatClear';
 export { default as RandomFact } from './randomFact';
 export { default as SignalSend } from './signalSend';
+export { default as SliderSet } from './sliderSet';
 export { default as TimerPause } from './timerPause';
 export { default as TimerResume } from './timerResume';
 export { default as TimerSet } from './timerSet';

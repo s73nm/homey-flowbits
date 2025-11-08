@@ -1,0 +1,89 @@
+{
+    "id": "slider_changed",
+    "title": {
+        "en": "Slider changed",
+        "nl": "Slider gewijzigd",
+        "de": "Slider geändert",
+        "fr": "Curseur modifié",
+        "it": "Slider modificato",
+        "sv": "Slider ändrad",
+        "no": "Skyver endret",
+        "es": "Deslizador cambiado",
+        "da": "Skyder ændret",
+        "ru": "Ползунок изменён",
+        "pl": "Suwak zmieniony",
+        "ko": "슬라이더 변경됨"
+    },
+    "titleFormatted": {
+        "en": "Slider [[slider]] changed",
+        "nl": "Slider [[slider]] is gewijzigd",
+        "de": "Slider [[slider]] geändert",
+        "fr": "Curseur [[slider]] modifié",
+        "it": "Slider [[slider]] modificato",
+        "sv": "Slider [[slider]] ändrad",
+        "no": "Skyver [[slider]] endret",
+        "es": "Deslizador [[slider]] cambiado",
+        "da": "Skyder [[slider]] ændret",
+        "ru": "Ползунок [[slider]] изменён",
+        "pl": "Suwak [[slider]] zmieniony",
+        "ko": "슬라이더 [[slider]] 변경됨"
+    },
+    "hint": {
+        "en": "Triggers when the slider value changes.",
+        "nl": "Triggert wanneer de sliderwaarde verandert.",
+        "de": "Löst aus, wenn sich der Sliderwert ändert.",
+        "fr": "Déclenche lorsque la valeur du curseur change.",
+        "it": "Attiva quando il valore dello slider cambia.",
+        "sv": "Utlöses när sliderns värde ändras.",
+        "no": "Ut­løs­es når skyververdien endres.",
+        "es": "Se activa cuando cambia el valor del deslizador.",
+        "da": "Udløses når skyderens værdi ændres.",
+        "ru": "Срабатывает при изменении значения ползунка.",
+        "pl": "Wyzwalany, gdy wartość suwaka się zmienia.",
+        "ko": "슬라이더 값이 변경될 때 트리거됨."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "slider",
+            "title": {
+                "en": "Slider",
+                "nl": "Slider",
+                "de": "Slider",
+                "fr": "Curseur",
+                "it": "Slider",
+                "sv": "Slider",
+                "no": "Skyver",
+                "es": "Deslizador",
+                "da": "Skyder",
+                "ru": "Ползунок",
+                "pl": "Suwak",
+                "ko": "슬라이더"
+            }
+        }
+    ],
+    "tokens": [
+        {
+            "name": "value",
+            "type": "number",
+            "min": 0,
+            "max": 100,
+            "step": 0.5,
+            "value": 50,
+            "title": {
+                "en": "Value",
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
+            }
+        }
+    ]
+}

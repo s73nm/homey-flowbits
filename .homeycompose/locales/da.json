@@ -5,6 +5,7 @@
         "mode_new": "Ny tilstand i dette flow",
         "no_repeat_new": "Nyt ingen- gentagelses vindue i dette flow",
         "signal_new": "Ny signal i dette flow",
+        "slider_new": "Ny skyder i dette flow",
         "timer_new": "Ny timer i dette flow"
     },
     "notification": {

@@ -5,6 +5,7 @@
         "mode_new": "Ny modus i dette flyten",
         "no_repeat_new": "Nytt ikke-repeterende vindu i dette flyten",
         "signal_new": "Ny signal i dette flyten",
+        "slider_new": "Ny skyver i denne flyten",
         "timer_new": "Ny timer i dette flyten"
     },
     "notification": {

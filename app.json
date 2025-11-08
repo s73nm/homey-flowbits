@@ -1177,6 +1177,95 @@
         ]
       },
       {
+        "id": "slider_changed",
+        "title": {
+          "en": "Slider changed",
+          "nl": "Slider gewijzigd",
+          "de": "Slider geändert",
+          "fr": "Curseur modifié",
+          "it": "Slider modificato",
+          "sv": "Slider ändrad",
+          "no": "Skyver endret",
+          "es": "Deslizador cambiado",
+          "da": "Skyder ændret",
+          "ru": "Ползунок изменён",
+          "pl": "Suwak zmieniony",
+          "ko": "슬라이더 변경됨"
+        },
+        "titleFormatted": {
+          "en": "Slider [[slider]] changed",
+          "nl": "Slider [[slider]] is gewijzigd",
+          "de": "Slider [[slider]] geändert",
+          "fr": "Curseur [[slider]] modifié",
+          "it": "Slider [[slider]] modificato",
+          "sv": "Slider [[slider]] ändrad",
+          "no": "Skyver [[slider]] endret",
+          "es": "Deslizador [[slider]] cambiado",
+          "da": "Skyder [[slider]] ændret",
+          "ru": "Ползунок [[slider]] изменён",
+          "pl": "Suwak [[slider]] zmieniony",
+          "ko": "슬라이더 [[slider]] 변경됨"
+        },
+        "hint": {
+          "en": "Triggers when the slider value changes.",
+          "nl": "Triggert wanneer de sliderwaarde verandert.",
+          "de": "Löst aus, wenn sich der Sliderwert ändert.",
+          "fr": "Déclenche lorsque la valeur du curseur change.",
+          "it": "Attiva quando il valore dello slider cambia.",
+          "sv": "Utlöses när sliderns värde ändras.",
+          "no": "Ut­løs­es når skyververdien endres.",
+          "es": "Se activa cuando cambia el valor del deslizador.",
+          "da": "Udløses når skyderens værdi ændres.",
+          "ru": "Срабатывает при изменении значения ползунка.",
+          "pl": "Wyzwalany, gdy wartość suwaka się zmienia.",
+          "ko": "슬라이더 값이 변경될 때 트리거됨."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "slider",
+            "title": {
+              "en": "Slider",
+              "nl": "Slider",
+              "de": "Slider",
+              "fr": "Curseur",
+              "it": "Slider",
+              "sv": "Slider",
+              "no": "Skyver",
+              "es": "Deslizador",
+              "da": "Skyder",
+              "ru": "Ползунок",
+              "pl": "Suwak",
+              "ko": "슬라이더"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "number",
+            "min": 0,
+            "max": 100,
+            "step": 0.5,
+            "value": 50,
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
+            }
+          }
+        ]
+      },
+      {
         "id": "timer_finished",
         "title": {
           "en": "Timer finished",
@@ -4118,6 +4207,95 @@
         ]
       },
       {
+        "id": "slider_set",
+        "title": {
+          "en": "Set slider value",
+          "nl": "Stel sliderwaarde in",
+          "de": "Slider-Wert setzen",
+          "fr": "Définir la valeur du curseur",
+          "it": "Imposta valore dello slider",
+          "sv": "Ställ in sliderns värde",
+          "no": "Sett skyververdi",
+          "es": "Establecer valor del deslizador",
+          "da": "Sæt skydeværdi",
+          "ru": "Установить значение ползунка",
+          "pl": "Ustaw wartość suwaka",
+          "ko": "슬라이더 값 설정"
+        },
+        "titleFormatted": {
+          "en": "Set slider [[slider]] to [[value]]",
+          "nl": "Stel slider [[slider]] in op [[value]]",
+          "de": "Setze Slider [[slider]] auf [[value]]",
+          "fr": "Définir le curseur [[slider]] sur [[value]]",
+          "it": "Imposta lo slider [[slider]] a [[value]]",
+          "sv": "Ställ in slider [[slider]] till [[value]]",
+          "no": "Sett skyver [[slider]] til [[value]]",
+          "es": "Establecer el deslizador [[slider]] en [[value]]",
+          "da": "Sæt skyderen [[slider]] til [[value]]",
+          "ru": "Установить ползунок [[slider]] на [[value]]",
+          "pl": "Ustaw suwak [[slider]] na [[value]]",
+          "ko": "슬라이더 [[slider]]를 [[value]]로 설정"
+        },
+        "hint": {
+          "en": "Sets the selected slider widget to a numeric value.",
+          "nl": "Stelt de geselecteerde slider-widget in op een numerieke waarde.",
+          "de": "Setzt das ausgewählte Slider-Widget auf einen numerischen Wert.",
+          "fr": "Définit le widget curseur sélectionné sur une valeur numérique.",
+          "it": "Imposta lo slider selezionato su un valore numerico.",
+          "sv": "Ställer den valda slidern på ett numeriskt värde.",
+          "no": "Setter den valgte skyver-widgeten til en numerisk verdi.",
+          "es": "Configura el deslizador seleccionado en un valor numérico.",
+          "da": "Sætter den valgte skyder-widget til en numerisk værdi.",
+          "ru": "Устанавливает выбранный ползунок на числовое значение.",
+          "pl": "Ustawia wybrany suwak na wartość liczbową.",
+          "ko": "선택한 슬라이더 위젯을 숫자 값으로 설정합니다."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "slider",
+            "title": {
+              "en": "Slider",
+              "nl": "Slider",
+              "de": "Slider",
+              "fr": "Curseur",
+              "it": "Slider",
+              "sv": "Slider",
+              "no": "Skyver",
+              "es": "Deslizador",
+              "da": "Skyder",
+              "ru": "Ползунок",
+              "pl": "Suwak",
+              "ko": "슬라이더"
+            }
+          },
+          {
+            "type": "range",
+            "name": "value",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "%",
+            "labelDecimals": 0,
+            "value": 50,
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값"
+            }
+          }
+        ]
+      },
+      {
         "id": "timer_pause",
         "title": {
           "en": "Pause timer",
@@ -5962,6 +6140,382 @@
         }
       },
       "id": "modes"
+    },
+    "slider": {
+      "name": {
+        "en": "Slider",
+        "nl": "Slider",
+        "de": "Slider",
+        "fr": "Curseur",
+        "it": "Slider",
+        "sv": "Slider",
+        "no": "Skyver",
+        "es": "Deslizador",
+        "da": "Skyder",
+        "ru": "Ползунок",
+        "pl": "Suwak",
+        "ko": "슬라이더"
+      },
+      "height": 120,
+      "settings": [
+        {
+          "id": "slider",
+          "type": "autocomplete",
+          "title": {
+            "en": "Slider",
+            "nl": "Slider",
+            "de": "Slider",
+            "fr": "Curseur",
+            "it": "Slider",
+            "sv": "Slider",
+            "no": "Skyver",
+            "es": "Deslizador",
+            "da": "Skyder",
+            "ru": "Ползунок",
+            "pl": "Suwak",
+            "ko": "슬라이더"
+          }
+        },
+        {
+          "id": "color",
+          "type": "dropdown",
+          "title": {
+            "en": "Color",
+            "nl": "Kleur",
+            "de": "Farbe",
+            "fr": "Couleur",
+            "it": "Colore",
+            "sv": "Färg",
+            "no": "Farge",
+            "es": "Color",
+            "da": "Farve",
+            "ru": "Цвет",
+            "pl": "Kolor",
+            "ko": "색상"
+          },
+          "value": "blue",
+          "values": [
+            {
+              "id": "red",
+              "title": {
+                "en": "Red",
+                "nl": "Rood",
+                "de": "Rot",
+                "fr": "Rouge",
+                "it": "Rosso",
+                "sv": "Röd",
+                "no": "Rød",
+                "es": "Rojo",
+                "da": "Rød",
+                "ru": "Красный",
+                "pl": "Czerwony",
+                "ko": "빨강"
+              }
+            },
+            {
+              "id": "orange",
+              "title": {
+                "en": "Orange",
+                "nl": "Oranje",
+                "de": "Orange",
+                "fr": "Orange",
+                "it": "Arancione",
+                "sv": "Orange",
+                "no": "Oransje",
+                "es": "Naranja",
+                "da": "Orange",
+                "ru": "Оранжевый",
+                "pl": "Pomarańczowy",
+                "ko": "주황"
+              }
+            },
+            {
+              "id": "amber",
+              "title": {
+                "en": "Amber",
+                "nl": "Amber",
+                "de": "Bernstein",
+                "fr": "Ambre",
+                "it": "Ambra",
+                "sv": "Bärnsten",
+                "no": "Rav",
+                "es": "Ámbar",
+                "da": "Rav",
+                "ru": "Янтарный",
+                "pl": "Bursztynowy",
+                "ko": "호박색"
+              }
+            },
+            {
+              "id": "yellow",
+              "title": {
+                "en": "Yellow",
+                "nl": "Geel",
+                "de": "Gelb",
+                "fr": "Jaune",
+                "it": "Giallo",
+                "sv": "Gul",
+                "no": "Gul",
+                "es": "Amarillo",
+                "da": "Gul",
+                "ru": "Жёлтый",
+                "pl": "Żółty",
+                "ko": "노랑"
+              }
+            },
+            {
+              "id": "lime",
+              "title": {
+                "en": "Lime",
+                "nl": "Limoen",
+                "de": "Limette",
+                "fr": "Citron vert",
+                "it": "Lime",
+                "sv": "Lime",
+                "no": "Lime",
+                "es": "Lima",
+                "da": "Lime",
+                "ru": "Лайм",
+                "pl": "Limonkowy",
+                "ko": "라임"
+              }
+            },
+            {
+              "id": "green",
+              "title": {
+                "en": "Green",
+                "nl": "Groen",
+                "de": "Grün",
+                "fr": "Vert",
+                "it": "Verde",
+                "sv": "Grön",
+                "no": "Grønn",
+                "es": "Verde",
+                "da": "Grøn",
+                "ru": "Зелёный",
+                "pl": "Zielony",
+                "ko": "초록"
+              }
+            },
+            {
+              "id": "emerald",
+              "title": {
+                "en": "Emerald",
+                "nl": "Smaragd",
+                "de": "Smaragd",
+                "fr": "Émeraude",
+                "it": "Smeraldo",
+                "sv": "Smaragd",
+                "no": "Smaragd",
+                "es": "Esmeralda",
+                "da": "Smaragd",
+                "ru": "Изумрудный",
+                "pl": "Szmaragdowy",
+                "ko": "에메랄드"
+              }
+            },
+            {
+              "id": "teal",
+              "title": {
+                "en": "Teal",
+                "nl": "Blauwgroen",
+                "de": "Blaugrün",
+                "fr": "Sarcelle",
+                "it": "Foglia di tè",
+                "sv": "Teal",
+                "no": "Blågrønn",
+                "es": "Verde azulado",
+                "da": "Blågrøn",
+                "ru": "Сине-зелёный",
+                "pl": "Morski",
+                "ko": "청록"
+              }
+            },
+            {
+              "id": "cyan",
+              "title": {
+                "en": "Cyan",
+                "nl": "Cyaan",
+                "de": "Cyan",
+                "fr": "Cyan",
+                "it": "Ciano",
+                "sv": "Cyan",
+                "no": "Cyan",
+                "es": "Cian",
+                "da": "Cyan",
+                "ru": "Бирюзовый",
+                "pl": "Cyjan",
+                "ko": "청록색"
+              }
+            },
+            {
+              "id": "sky",
+              "title": {
+                "en": "Sky",
+                "nl": "Lucht",
+                "de": "Himmelblau",
+                "fr": "Ciel",
+                "it": "Cielo",
+                "sv": "Himmel",
+                "no": "Himmel",
+                "es": "Cielo",
+                "da": "Himmel",
+                "ru": "Небесный",
+                "pl": "Niebieskie niebo",
+                "ko": "하늘"
+              }
+            },
+            {
+              "id": "blue",
+              "title": {
+                "en": "Blue",
+                "nl": "Blauw",
+                "de": "Blau",
+                "fr": "Bleu",
+                "it": "Blu",
+                "sv": "Blå",
+                "no": "Blå",
+                "es": "Azul",
+                "da": "Blå",
+                "ru": "Синий",
+                "pl": "Niebieski",
+                "ko": "파랑"
+              }
+            },
+            {
+              "id": "indigo",
+              "title": {
+                "en": "Indigo",
+                "nl": "Indigo",
+                "de": "Indigo",
+                "fr": "Indigo",
+                "it": "Indaco",
+                "sv": "Indigo",
+                "no": "Indigo",
+                "es": "Índigo",
+                "da": "Indigo",
+                "ru": "Индиго",
+                "pl": "Indygo",
+                "ko": "남색"
+              }
+            },
+            {
+              "id": "violet",
+              "title": {
+                "en": "Violet",
+                "nl": "Violet",
+                "de": "Violett",
+                "fr": "Violet",
+                "it": "Viola",
+                "sv": "Violett",
+                "no": "Fiolett",
+                "es": "Violeta",
+                "da": "Violet",
+                "ru": "Фиолетовый",
+                "pl": "Fioletowy",
+                "ko": "보라"
+              }
+            },
+            {
+              "id": "purple",
+              "title": {
+                "en": "Purple",
+                "nl": "Paars",
+                "de": "Lila",
+                "fr": "Pourpre",
+                "it": "Porpora",
+                "sv": "Lila",
+                "no": "Lilla",
+                "es": "Púrpura",
+                "da": "Lilla",
+                "ru": "Пурпурный",
+                "pl": "Purpurowy",
+                "ko": "자주"
+              }
+            },
+            {
+              "id": "fuchsia",
+              "title": {
+                "en": "Fuchsia",
+                "nl": "Fuchsia",
+                "de": "Fuchsie",
+                "fr": "Fuchsia",
+                "it": "Fucsia",
+                "sv": "Fuchsia",
+                "no": "Fuksia",
+                "es": "Fucsia",
+                "da": "Fuchsia",
+                "ru": "Фуксия",
+                "pl": "Fuksja",
+                "ko": "후시아"
+              }
+            },
+            {
+              "id": "pink",
+              "title": {
+                "en": "Pink",
+                "nl": "Roze",
+                "de": "Rosa",
+                "fr": "Rose",
+                "it": "Rosa",
+                "sv": "Rosa",
+                "no": "Rosa",
+                "es": "Rosa",
+                "da": "Pink",
+                "ru": "Розовый",
+                "pl": "Różowy",
+                "ko": "핑크"
+              }
+            },
+            {
+              "id": "rose",
+              "title": {
+                "en": "Rose",
+                "nl": "Roos",
+                "de": "Rosé",
+                "fr": "Rose clair",
+                "it": "Rosa tenue",
+                "sv": "Ros",
+                "no": "Rose",
+                "es": "Rosa claro",
+                "da": "Rosa",
+                "ru": "Розовый светлый",
+                "pl": "Jasnoróżowy",
+                "ko": "로즈"
+              }
+            }
+          ]
+        },
+        {
+          "id": "icon",
+          "type": "autocomplete",
+          "title": {
+            "en": "Icon",
+            "nl": "Icoon",
+            "de": "Symbol",
+            "fr": "Icône",
+            "it": "Icona",
+            "sv": "Ikon",
+            "no": "Ikon",
+            "es": "Icono",
+            "da": "Ikon",
+            "ru": "Иконка",
+            "pl": "Ikona",
+            "ko": "아이콘"
+          }
+        }
+      ],
+      "api": {
+        "get": {
+          "method": "GET",
+          "path": "/"
+        },
+        "set": {
+          "method": "POST",
+          "path": "/"
+        }
+      },
+      "id": "slider"
     }
   }
 }

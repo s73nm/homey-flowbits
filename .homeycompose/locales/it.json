@@ -5,6 +5,7 @@
         "mode_new": "Nuova modalità in questo flusso",
         "no_repeat_new": "Nuova finestra senza ripetizione in questo flusso",
         "signal_new": "Nuovo segnale in questo flusso",
+        "slider_new": "Nuovo slider in questo flow",
         "timer_new": "Nuovo timer in questo flusso"
     },
     "notification": {

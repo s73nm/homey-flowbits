@@ -6,6 +6,7 @@ import type Flags from './flags';
 import type Modes from './modes';
 import type NoRepeat from './noRepeat';
 import type Registry from './registry';
+import type Sliders from './sliders';
 import type Timers from './timers';
 import type Tokens from './tokens';
 import type Widgets from './widgets';
@@ -49,6 +50,10 @@ export default class BrainAware {
 
     get registry(): Registry {
         return this.brain.registry;
+    }
+
+    get sliders(): Sliders {
+        return this.brain.sliders;
     }
 
     get timers(): Timers {

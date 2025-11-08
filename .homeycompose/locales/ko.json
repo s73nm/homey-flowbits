@@ -5,6 +5,7 @@
         "mode_new": "이 플로우에 새로운 모드",
         "no_repeat_new": "이 플로우에 새로운 반복 없음 창",
         "signal_new": "이 플로우에 새로운 신호",
+        "slider_new": "이 플로우의 새 슬라이더",
         "timer_new": "이 플로우에 새로운 타이머"
     },
     "notification": {

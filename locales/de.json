@@ -5,7 +5,8 @@
     "mode_new": "Neuer Modus in diesem Flow",
     "no_repeat_new": "Neues No-Repeat-Fenster in diesem Flow",
     "signal_new": "Neues Signal in diesem Flow",
-    "timer_new": "Neuer Timer in diesem Flow"
+    "timer_new": "Neuer Timer in diesem Flow",
+    "slider_new": "Neuer Slider in diesem Flow"
   },
   "notification": {
     "mode_activated": "**__name__** ist aktiviert.",

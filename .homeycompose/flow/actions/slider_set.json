@@ -1,0 +1,89 @@
+{
+    "id": "slider_set",
+    "title": {
+        "en": "Set slider value",
+        "nl": "Stel sliderwaarde in",
+        "de": "Slider-Wert setzen",
+        "fr": "Définir la valeur du curseur",
+        "it": "Imposta valore dello slider",
+        "sv": "Ställ in sliderns värde",
+        "no": "Sett skyververdi",
+        "es": "Establecer valor del deslizador",
+        "da": "Sæt skydeværdi",
+        "ru": "Установить значение ползунка",
+        "pl": "Ustaw wartość suwaka",
+        "ko": "슬라이더 값 설정"
+    },
+    "titleFormatted": {
+        "en": "Set slider [[slider]] to [[value]]",
+        "nl": "Stel slider [[slider]] in op [[value]]",
+        "de": "Setze Slider [[slider]] auf [[value]]",
+        "fr": "Définir le curseur [[slider]] sur [[value]]",
+        "it": "Imposta lo slider [[slider]] a [[value]]",
+        "sv": "Ställ in slider [[slider]] till [[value]]",
+        "no": "Sett skyver [[slider]] til [[value]]",
+        "es": "Establecer el deslizador [[slider]] en [[value]]",
+        "da": "Sæt skyderen [[slider]] til [[value]]",
+        "ru": "Установить ползунок [[slider]] на [[value]]",
+        "pl": "Ustaw suwak [[slider]] na [[value]]",
+        "ko": "슬라이더 [[slider]]를 [[value]]로 설정"
+    },
+    "hint": {
+        "en": "Sets the selected slider widget to a numeric value.",
+        "nl": "Stelt de geselecteerde slider-widget in op een numerieke waarde.",
+        "de": "Setzt das ausgewählte Slider-Widget auf einen numerischen Wert.",
+        "fr": "Définit le widget curseur sélectionné sur une valeur numérique.",
+        "it": "Imposta lo slider selezionato su un valore numerico.",
+        "sv": "Ställer den valda slidern på ett numeriskt värde.",
+        "no": "Setter den valgte skyver-widgeten til en numerisk verdi.",
+        "es": "Configura el deslizador seleccionado en un valor numérico.",
+        "da": "Sætter den valgte skyder-widget til en numerisk værdi.",
+        "ru": "Устанавливает выбранный ползунок на числовое значение.",
+        "pl": "Ustawia wybrany suwak na wartość liczbową.",
+        "ko": "선택한 슬라이더 위젯을 숫자 값으로 설정합니다."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "slider",
+            "title": {
+                "en": "Slider",
+                "nl": "Slider",
+                "de": "Slider",
+                "fr": "Curseur",
+                "it": "Slider",
+                "sv": "Slider",
+                "no": "Skyver",
+                "es": "Deslizador",
+                "da": "Skyder",
+                "ru": "Ползунок",
+                "pl": "Suwak",
+                "ko": "슬라이더"
+            }
+        },
+        {
+            "type": "range",
+            "name": "value",
+            "min": 0,
+            "max": 100,
+            "step": 1,
+            "label": "%",
+            "labelDecimals": 0,
+            "value": 50,
+            "title": {
+                "en": "Value",
+                "nl": "Waarde",
+                "de": "Wert",
+                "fr": "Valeur",
+                "it": "Valore",
+                "sv": "Värde",
+                "no": "Verdi",
+                "es": "Valor",
+                "da": "Værdi",
+                "ru": "Значение",
+                "pl": "Wartość",
+                "ko": "값"
+            }
+        }
+    ]
+}
