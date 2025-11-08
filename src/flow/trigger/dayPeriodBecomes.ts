@@ -1,3 +1,5 @@
+// @ts-ignore
+import type { DayPeriod } from '@basmilius/utils';
 import { BaseTrigger } from '../base';
 import { trigger } from '../decorator';
 
@@ -9,11 +11,9 @@ export default class extends BaseTrigger<Args, State> {
 }
 
 type Args = {
-    // @ts-ignore
-    readonly value: import('@basmilius/utils').DayPeriod;
+    readonly value: DayPeriod;
 };
 
 type State = {
-    // @ts-ignore
-    readonly value: import('@basmilius/utils').DayPeriod;
+    readonly value: DayPeriod;
 };

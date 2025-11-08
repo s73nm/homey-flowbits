@@ -1,3 +1,5 @@
+// @ts-ignore
+import { roundStep } from '@basmilius/utils';
 import Homey from 'homey';
 import { Settings } from 'luxon';
 import { Brain, type Widgets } from './brain';
@@ -63,8 +65,6 @@ export default class FlowBitsApp extends Homey.App {
     }
 
     async #registerActionFunctions(): Promise<void> {
-        const {roundStep} = await import('@basmilius/utils');
-
         this.#brain.registry.actionFunction('z_math_decrement', args => ({result: args.value - args.step}));
         this.#brain.registry.actionFunction('z_math_divide', args => ({result: args.value / args.divisor}));
         this.#brain.registry.actionFunction('z_math_increment', args => ({result: args.value + args.step}));

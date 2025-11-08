@@ -3807,6 +3807,71 @@
         ]
       },
       {
+        "id": "mode_reactivate",
+        "title": {
+          "en": "Reactivate mode",
+          "nl": "Activeer stand opnieuw",
+          "de": "Modus erneut aktivieren",
+          "fr": "Réactiver le mode",
+          "it": "Riattiva modalità",
+          "sv": "Aktivera läge igen",
+          "no": "Aktiver modus på nytt",
+          "es": "Reactivar modo",
+          "da": "Genaktivér tilstand",
+          "ru": "Повторно активировать режим",
+          "pl": "Ponownie aktywuj tryb",
+          "ko": "모드를 다시 활성화"
+        },
+        "titleFormatted": {
+          "en": "Reactivate [[name]]",
+          "nl": "Activeer [[name]] opnieuw",
+          "de": "Aktiviere [[name]] erneut",
+          "fr": "Réactiver [[name]]",
+          "it": "Riattiva [[name]]",
+          "sv": "Aktivera [[name]] igen",
+          "no": "Aktiver [[name]] på nytt",
+          "es": "Reactivar [[name]]",
+          "da": "Genaktivér [[name]]",
+          "ru": "Повторно активировать [[name]]",
+          "pl": "Ponownie aktywuj [[name]]",
+          "ko": "[[name]] 다시 활성화"
+        },
+        "hint": {
+          "en": "Re-triggers all 'mode is activated' cards.",
+          "nl": "Trigger alle 'stand is geactiveerd' kaarten opnieuw.",
+          "de": "Löst alle 'Modus ist aktiviert'-Karten erneut aus.",
+          "fr": "Relance toutes les cartes « mode est activé ».",
+          "it": "Riattiva tutte le schede « modalità è attivata ».",
+          "sv": "Triggar alla 'läge är aktiverat'-kort igen.",
+          "no": "Gjenutløser alle «modus er aktivert» kort.",
+          "es": "Vuelve a activar todas las tarjetas «modo está activado».",
+          "da": "Gentrigger alle 'tilstand er aktiveret'-kort.",
+          "ru": "Повторно запускает все карточки «режим активирован».",
+          "pl": "Ponownie wyzwala wszystkie karty «tryb jest aktywowany».",
+          "ko": "모든 '모드가 활성화되었습니다' 카드를 다시 트리거합니다."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Mode",
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
+            }
+          }
+        ]
+      },
+      {
         "id": "mode_toggle",
         "title": {
           "en": "Toggle mode",

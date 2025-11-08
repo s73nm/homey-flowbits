@@ -1,3 +1,5 @@
+// @ts-ignore
+import { getZodiacSign, type ZodiacSign } from '@basmilius/utils';
 import { DateTime } from 'luxon';
 import { BaseCondition } from '../base';
 import { condition } from '../decorator';
@@ -5,8 +7,6 @@ import { condition } from '../decorator';
 @condition('zodiac_sign_is')
 export default class extends BaseCondition<Args, never> {
     async onRun(args: Args, _: never): Promise<boolean> {
-        const {getZodiacSign} = await import('@basmilius/utils');
-
         const now = DateTime.now();
         const zodiacSign = await getZodiacSign(now);
 
@@ -15,6 +15,5 @@ export default class extends BaseCondition<Args, never> {
 }
 
 type Args = {
-    // @ts-ignore
-    readonly value: import('@basmilius/utils').ZodiacSign;
+    readonly value: ZodiacSign;
 };
