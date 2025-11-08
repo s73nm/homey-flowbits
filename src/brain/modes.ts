@@ -43,6 +43,14 @@ export default class extends BrainAware {
         await this.triggerRealtimeUpdate();
     }
 
+    async reactivate(mode: string): Promise<void> {
+        this.currentMode = mode;
+
+        await this.#triggerActivated(mode);
+        await this.#triggerChanged(mode, true);
+        await this.triggerRealtimeUpdate();
+    }
+
     async toggle(mode: string): Promise<void> {
         if (this.currentMode === mode) {
             await this.deactivate(mode);

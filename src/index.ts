@@ -50,6 +50,7 @@ export default class FlowBitsApp extends Homey.App {
         this.#brain.registry.action(Actions.FlagToggle);
         this.#brain.registry.action(Actions.ModeActivate);
         this.#brain.registry.action(Actions.ModeDeactivate);
+        this.#brain.registry.action(Actions.ModeReactivate);
         this.#brain.registry.action(Actions.ModeToggle);
         this.#brain.registry.action(Actions.NoRepeatClear);
         this.#brain.registry.action(Actions.RandomFact);
