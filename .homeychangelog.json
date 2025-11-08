@@ -82,5 +82,8 @@
   },
   "1.4.3": {
     "en": "This update introduces a new no-repeat flow card as well as a new current mode dashboard widget."
+  },
+  "1.5.0": {
+    "en": "Introduces no-repeat and clear-no-repeat flow cards, a new slider widget that can be controlled from flows via the slider-set and slider-changed cards, and a new widget that shows the current mode."
   }
 }
