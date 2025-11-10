@@ -1,5 +1,3 @@
-// @ts-ignore
-import { getDayPeriod, getMoonPhase, getZodiacSign } from '@basmilius/utils';
 import type { FlowToken } from 'homey';
 import { DateTime } from 'luxon';
 import BrainAware from './aware';
@@ -30,6 +28,8 @@ export default class extends BrainAware {
     readonly #values: Record<string, string | boolean | number> = {};
 
     async initialize(): Promise<void> {
+        const {getDayPeriod, getMoonPhase, getZodiacSign} = await import('@basmilius/utils');
+
         const state = await this.#state();
 
         await this.#create('day_period', 'string', state, ({now}) => getDayPeriod(now), value => this.translate(`day_period.${value}`));

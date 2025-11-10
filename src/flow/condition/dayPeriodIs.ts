@@ -1,5 +1,5 @@
 // @ts-ignore
-import { type DayPeriod, getDayPeriod } from '@basmilius/utils';
+import type { DayPeriod } from '@basmilius/utils';
 import { DateTime } from 'luxon';
 import { BaseCondition } from '../base';
 import { condition } from '../decorator';
@@ -7,6 +7,8 @@ import { condition } from '../decorator';
 @condition('day_period_is')
 export default class extends BaseCondition<Args, never> {
     async onRun(args: Args): Promise<boolean> {
+        const {getDayPeriod} = await import('@basmilius/utils');
+
         const now = DateTime.now();
         const dayPeriod = await getDayPeriod(now);
 
