@@ -73,7 +73,7 @@ export default class extends BrainAware {
             return;
         }
 
-        await this.#clear(timer.id);
+        await this.#clear(timer);
         await this.#remove(timer.id);
         await this.#triggerStopped(timer.name);
     }
@@ -113,13 +113,7 @@ export default class extends BrainAware {
         return `flowbits-timer:${slugify(name)}`;
     }
 
-    async #clear(name: string): Promise<void> {
-        const timer = await this.#find(name);
-
-        if (!timer) {
-            return;
-        }
-
+    async #clear(timer: Timer): Promise<void> {
         const timeouts = this.#timeouts[timer.id];
 
         if (!timeouts) {
@@ -193,7 +187,7 @@ export default class extends BrainAware {
         this.#timers = {};
 
         for (const timer of timers) {
-            await this.#clear(timer.id);
+            await this.#clear(timer);
 
             const diff = Math.floor(timer.target - now);
             const triggers = remainingTriggers
