@@ -16,13 +16,13 @@ export default class extends BrainAware {
     }
 
     async setValue(name: string, value: number, widgetId?: string): Promise<void> {
-        const values = this.values;
-        values[name] = value;
+        this.values = {
+            ...this.values,
+            [name]: value
+        };
 
-        this.values = values;
-
-        await this.#triggerChanged(name, value);
         await this.#triggerRealtime(name, value, widgetId);
+        await this.#triggerChanged(name, value);
     }
 
     async #triggerChanged(slider: string, value: number): Promise<void> {

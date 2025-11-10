@@ -24,8 +24,10 @@ export default class extends BrainAware {
     async cycleTo(name: string, value: number): Promise<void> {
         this.#set(name, value);
 
-        await this.#triggerCycleBecomes(name, value);
-        await this.#triggerCycleUpdates(name, value);
+        await Promise.allSettled([
+            this.#triggerCycleBecomes(name, value),
+            this.#triggerCycleUpdates(name, value)
+        ]);
     }
 
     async getValue(name: string): Promise<number | null> {

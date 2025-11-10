@@ -24,9 +24,11 @@ export default class extends BrainAware {
 
         this.currentMode = mode;
 
-        await this.#triggerActivated(mode);
-        await this.#triggerChanged(mode, true);
-        await this.triggerRealtimeUpdate();
+        await Promise.allSettled([
+            this.#triggerRealtime(),
+            this.#triggerActivated(mode),
+            this.#triggerChanged(mode, true)
+        ]);
     }
 
     async deactivate(mode: string): Promise<void> {
@@ -38,17 +40,21 @@ export default class extends BrainAware {
 
         this.currentMode = null;
 
-        await this.#triggerDeactivated(mode);
-        await this.#triggerChanged(mode, false);
-        await this.triggerRealtimeUpdate();
+        await Promise.allSettled([
+            this.#triggerRealtime(),
+            this.#triggerDeactivated(mode),
+            this.#triggerChanged(mode, false)
+        ]);
     }
 
     async reactivate(mode: string): Promise<void> {
         this.currentMode = mode;
 
-        await this.#triggerActivated(mode);
-        await this.#triggerChanged(mode, true);
-        await this.triggerRealtimeUpdate();
+        await Promise.allSettled([
+            this.#triggerRealtime(),
+            this.#triggerActivated(mode),
+            this.#triggerChanged(mode, true)
+        ]);
     }
 
     async toggle(mode: string): Promise<void> {
@@ -59,8 +65,8 @@ export default class extends BrainAware {
         }
     }
 
-    async triggerRealtimeUpdate(): Promise<void> {
-        this.realtime('flowbits-mode-update');
+    async update(): Promise<void> {
+        await this.#triggerRealtime();
     }
 
     async #triggerActivated(name: string): Promise<void> {
@@ -83,5 +89,9 @@ export default class extends BrainAware {
             ?.trigger({name});
 
         await this.notify(this.translate('notification.mode_deactivated', {name}));
+    }
+
+    async #triggerRealtime(): Promise<void> {
+        this.realtime('flowbits-mode-update');
     }
 }

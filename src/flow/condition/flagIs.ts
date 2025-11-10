@@ -16,7 +16,7 @@ export default class extends BaseCondition<Args, never> {
     }
 
     async onUpdate(): Promise<void> {
-        await this.flags.triggerRealtimeUpdate();
+        await this.flags.update();
     }
 }
 

@@ -120,8 +120,9 @@ export default class extends BrainAware {
             return;
         }
 
-        this.log(`Clear timer timeout ${timer.name}.`);
+        this.log(`Clear timer timeouts for ${timer.name}.`);
         timeouts.forEach(timeout => this.clearTimeout(timeout));
+        delete this.#timeouts[timer.id];
     }
 
     async #find(name: string): Promise<Timer | null> {

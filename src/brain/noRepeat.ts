@@ -33,7 +33,7 @@ export default class extends BrainAware {
         const windows = this.windows;
 
         const now = DateTime.now();
-        const last = this.windows[window] ?? null;
+        const last = windows[window] ?? null;
         windows[window] = now;
 
         this.windows = windows;

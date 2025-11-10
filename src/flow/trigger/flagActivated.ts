@@ -16,7 +16,7 @@ export default class extends BaseTrigger<Args, State> {
     }
 
     async onUpdate(): Promise<void> {
-        await this.flags.triggerRealtimeUpdate();
+        await this.flags.update();
     }
 }
 
