@@ -210,7 +210,7 @@ export default class extends BrainAware {
                     const triggerDuration = convertDurationToSeconds(trigger.duration, trigger.unit);
                     const triggerDiff = Math.abs(triggerDuration - diff);
 
-                    if (triggerDiff < 0) {
+                    if (triggerDiff <= 0) {
                         continue;
                     }
 
