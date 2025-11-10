@@ -85,5 +85,8 @@
   },
   "1.5.0": {
     "en": "Introduces no-repeat and clear-no-repeat flow cards, a new slider widget that can be controlled from flows via the slider-set and slider-changed cards, and a new widget that shows the current mode."
+  },
+  "1.5.1": {
+    "en": "Fixed an app startup crash."
   }
 }
