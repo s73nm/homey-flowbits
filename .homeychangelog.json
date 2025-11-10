@@ -88,5 +88,8 @@
   },
   "1.5.1": {
     "en": "Fixed an app startup crash."
+  },
+  "1.5.2": {
+    "en": "Fixed a bug where the stop timer card did not properly remove a timer from the scheduler."
   }
 }
