@@ -91,5 +91,8 @@
   },
   "1.5.2": {
     "en": "Fixed a bug where the stop timer card did not properly remove a timer from the scheduler."
+  },
+  "1.5.3": {
+    "en": "This update optimizes the performance of certain flag and mode trigger execution. It also fixes a bug where the timer remaining action flow card could fire twice when a timer was paused on that exact moment."
   }
 }
