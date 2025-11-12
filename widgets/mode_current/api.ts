@@ -28,7 +28,8 @@ type Result = {
 
 type ModeIcon = {
     readonly color: string;
-    readonly url: string;
+    readonly unicode: string;
+    readonly unicodeSecondary: string;
 };
 
 type WidgetRequest = {

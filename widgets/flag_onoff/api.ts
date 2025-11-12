@@ -23,7 +23,8 @@ async function icon(homey: WidgetRequest['homey'], mode: string): Promise<ModeIc
 
 type ModeIcon = {
     readonly color: string;
-    readonly url: string;
+    readonly unicode: string;
+    readonly unicodeSecondary: string;
 };
 
 type Result = {

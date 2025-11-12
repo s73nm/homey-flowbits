@@ -1,0 +1,95 @@
+@import '../../assets/app/icons.css';
+
+body {
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.flag-on-off {
+    display: flex;
+    padding: var(--homey-su-4);
+    align-items: center;
+    flex-flow: row;
+    gap: var(--homey-su-3);
+    justify-content: start;
+}
+
+.flag-on-off-name {
+    flex-grow: 1;
+}
+
+.flag-on-off-power {
+    --homey-icon-color: var(--homey-color-mono-400);
+
+    display: flex;
+    height: 48px;
+    width: 48px;
+    align-items: center;
+    justify-content: center;
+    background: var(--homey-color-mono-050);
+    border: 0;
+    border-radius: 24px;
+    font-family: 'font-awesome', sans-serif;
+    transition: 150ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition-property: background, scale;
+    -webkit-user-select: none;
+    user-select: none;
+    will-change: transform;
+}
+
+.homey-dark-mode .flag-on-off-power {
+    background: var(--homey-color-mono-200);
+    color: var(--homey-color-mono-600);
+    font-size: 20px;
+}
+
+.flag-on-off-power.on,
+.homey-dark-mode .flag-on-off-power.on {
+    background: var(--homey-icon-color-green);
+    color: white;
+}
+
+.flag-on-off-power:active {
+    background: rgb(from var(--homey-color-mono-200) r g b / .5);
+    scale: 0.95;
+}
+
+.homey-dark-mode .flag-on-off-power:active {
+    background: rgb(from var(--homey-color-mono-300) r g b / .5);
+    scale: 0.95;
+}
+
+.flag-on-off-icon {
+    --color: #64748b;
+    --icon: '';
+    --icon-secondary: '';
+
+    display: grid;
+    height: 42px;
+    width: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.flag-on-off-icon::before,
+.flag-on-off-icon::after {
+    grid-column: 1;
+    grid-row: 1;
+    color: var(--color);
+    font-family: 'font-awesome', sans-serif;
+    font-size: 42px;
+}
+
+.flag-on-off-icon::before {
+    content: var(--icon);
+}
+
+.flag-on-off-icon::after {
+    content: var(--icon-secondary);
+    opacity: .2;
+}
+
+.flag-on-off-icon:not(.on) {
+    --color: var(--homey-color-mono-200) !important;
+}

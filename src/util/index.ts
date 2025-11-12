@@ -4,5 +4,6 @@ export { default as getDayPeriodRange } from './getDayPeriodRange';
 export { default as getMoonPhase, type MoonPhase } from './getMoonPhase';
 export { default as getZodiacSign, type ZodiacSign } from './getZodiacSign';
 export { default as roundStep } from './roundStep';
+export { default as searchIcons } from './searchIcons';
 export { default as slugify } from './slugify';
 export { default as svgToDataUrl } from './svgToDataUrl';

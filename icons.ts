@@ -1,25 +1,26 @@
-import { copyFile } from 'node:fs/promises';
-import modes from './assets/modes/known.json';
+// @ts-nocheck
 
-const ROOT = '/Users/bas/Downloads/Assets/Font Awesome/fontawesome-pro-7.1.0-web/svgs-full/duotone-regular';
-const ICONS = modes
-    .map(mode => mode.icon)
-    .sort();
+import { file } from 'bun';
+import { join } from 'node:path';
 
-ICONS.push('lightbulb');
-ICONS.push('lightbulb-on');
-ICONS.push('headphones');
-ICONS.push('music');
-ICONS.push('music-note');
-ICONS.push('tv-music');
-ICONS.push('play');
+const ROOT = '/Users/bas/Downloads/Assets/Font Awesome/fontawesome-pro-7.1.0-web';
+const TARGET = join(__dirname, 'assets');
 
-for (const icon of ICONS) {
-    const src = `${ROOT}/${icon}.svg`;
-    const dst = `assets/icons/${icon}.svg`;
+const metadataFile = join(ROOT, 'metadata/icons.json');
+const metadata = await file(metadataFile).json();
+const icons = Object.entries<any>(metadata);
 
-    // @ts-ignore
-    await copyFile(src, dst);
+const minified = icons
+    .filter(([, icon]) => icon.label !== '00')
+    .filter(([, icon]) => icon.styles.includes('duotone'))
+    .filter(([, icon]) => !icon.search.terms.some(t => t.startsWith('Digit ')))
+    .filter(([, icon]) => !icon.search.terms.includes('letter'))
+    .map(([id, icon]) => [
+        id,
+        icon.label,
+        String.fromCharCode(parseInt(icon.unicode, 16))
+    ]);
 
-    console.log(`Copied ${icon}`);
-}
+await file(join(TARGET, 'icons.json')).write(JSON.stringify(minified));
+
+console.log(`Done, ${minified.length} icons.`);

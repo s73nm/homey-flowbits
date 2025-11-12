@@ -1,0 +1,123 @@
+@import '../../assets/app/icons.css';
+
+body {
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.mount {
+    display: flex;
+    padding: var(--homey-su-4);
+    align-items: stretch;
+    flex-flow: column;
+    gap: var(--homey-su-3);
+}
+
+.slider {
+    --red: #ef4444;
+    --orange: #f97316;
+    --amber: #f59e0b;
+    --yellow: #eab308;
+    --lime: #84cc16;
+    --green: #22c55e;
+    --emerald: #10b981;
+    --teal: #14b8a6;
+    --cyan: #06b6d4;
+    --sky: #0ea5e9;
+    --blue: #3b82f6;
+    --indigo: #6366f1;
+    --violet: #8b5cf6;
+    --purple: #a855f7;
+    --fuchsia: #d946ef;
+    --pink: #ec4899;
+    --rose: #f43f5e;
+
+    --color: var(--pink);
+    --icon: '';
+    --icon-secondary: '';
+    --value: 0;
+
+    position: relative;
+    height: 54px;
+    background: var(--homey-color-mono-025);
+    border-radius: var(--homey-border-radius-small);
+    box-shadow: inset 0 0 0 1px var(--homey-color-mono-050);
+    overflow: hidden;
+}
+
+.slider-icon {
+    position: absolute;
+    display: grid;
+    top: 0;
+    bottom: 0;
+    align-items: center;
+    aspect-ratio: 1;
+    justify-content: center;
+    transition: 210ms cubic-bezier(0.55, 0, 0.1, 1);
+    transition-property: opacity, scale;
+    will-change: opacity;
+}
+
+.slider-icon::before,
+.slider-icon::after {
+    position: relative;
+    grid-column: 1;
+    grid-row: 1;
+    font-family: 'font-awesome', sans-serif;
+    font-size: 24px;
+}
+
+.slider-icon::before {
+    content: var(--icon);
+}
+
+.slider-icon::after {
+    content: var(--icon-secondary);
+    opacity: .2;
+}
+
+.slider-icon.start {
+    left: 0;
+    color: var(--homey-background-color);
+}
+
+.slider-icon.end {
+    left: calc(var(--value) * 1%);
+    color: var(--color);
+}
+
+.slider-knob {
+    position: absolute;
+    height: 24px;
+    width: 4px;
+    top: calc(50% - 12px);
+    right: 6px;
+    background: var(--homey-background-color);
+    border-radius: 2px;
+}
+
+.slider-value {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: calc(var(--value) * 1%);
+    background: var(--color);
+    border-radius: inherit;
+}
+
+.slider:not(.active) .slider-value {
+    transition: width 210ms cubic-bezier(0.55, 0, 0.1, 1);
+    will-change: width;
+}
+
+.slider.low .slider-icon.start {
+    opacity: 0;
+    scale: .5;
+}
+
+.slider:not(.low) .slider-icon.end {
+    opacity: 0;
+    scale: .5;
+}

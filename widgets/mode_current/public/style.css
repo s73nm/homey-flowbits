@@ -1,0 +1,55 @@
+@import '../../assets/app/icons.css';
+
+body {
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.current-mode {
+    display: flex;
+    align-items: center;
+    flex-flow: row;
+    gap: var(--homey-su-3);
+}
+
+.current-mode-caption {
+    display: flex;
+    align-items: flex-start;
+    flex-flow: column;
+    flex-grow: 1;
+}
+
+.current-mode-name {
+    text-transform: capitalize;
+}
+
+.current-mode-icon {
+    --color: #64748b;
+    --icon: '';
+    --icon-secondary: '';
+
+    display: grid;
+    height: 42px;
+    width: 42px;
+    align-items: center;
+    justify-content: center;
+}
+
+.current-mode-icon::before,
+.current-mode-icon::after {
+    grid-column: 1;
+    grid-row: 1;
+    color: var(--color);
+    font-family: 'font-awesome', sans-serif;
+    font-size: 42px;
+}
+
+.current-mode-icon::before {
+    content: var(--icon);
+}
+
+.current-mode-icon::after {
+    content: var(--icon-secondary);
+    opacity: .2;
+}

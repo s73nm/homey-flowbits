@@ -2,110 +2,10 @@
 <html>
 <head lang="en">
     <title>Modes</title>
-    <style>
-        body {
-            -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
-            -webkit-user-select: none;
-            user-select: none;
-        }
 
-        .grid,
-        .list {
-            display: grid;
-            gap: 1px;
-            grid-auto-rows: 1fr;
-            background: var(--homey-color-mono-025);
-        }
-
-        .grid {
-            grid-template-columns: 1fr 1fr;
-
-            &:has(> .item:last-child:nth-child(odd)) {
-                &::after {
-                    display: flex;
-                    content: '';
-                    background: var(--homey-background-color);
-                }
-            }
-        }
-
-        .list {
-            grid-template-columns: 1fr;
-        }
-
-        .homey-dark-mode .grid {
-            background: var(--homey-color-mono-100);
-        }
-
-        .item {
-            display: flex;
-            align-items: center;
-            flex-flow: row;
-            justify-content: start;
-            gap: var(--homey-su-3);
-            background: var(--homey-background-color);
-            border: 0;
-            line-height: 1;
-            outline: 0;
-            overflow: hidden;
-            text-align: left;
-            transition: 150ms cubic-bezier(0.55, 0, 0.1, 1);
-            transition-property: background, border-radius, scale;
-            will-change: transform;
-        }
-
-        .item:active {
-            background: rgb(from var(--homey-background-color) r g b / .5);
-            border-radius: var(--homey-border-radius-default);
-            scale: 0.975;
-        }
-
-        .item-caption {
-            display: flex;
-            align-items: stretch;
-            flex-flow: column;
-            flex-grow: 1;
-            flex-shrink: 1;
-            overflow: hidden;
-        }
-
-        .item-caption .homey-text-medium {
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-
-        .item-icon {
-            --color: #64748b;
-            --icon: url(shapes.svg);
-
-            display: flex;
-            height: 24px;
-            margin: -3px;
-            width: 24px;
-            align-items: center;
-            flex-shrink: 0;
-            justify-content: center;
-            background: var(--color);
-            -webkit-mask-image: var(--icon);
-            -webkit-mask-position: center;
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: 24px 24px;
-            mask-image: var(--icon);
-            mask-position: center;
-            mask-repeat: no-repeat;
-            mask-size: 24px 24px;
-        }
-
-        .homey-custom-icon-check {
-            --homey-icon-color: var(--homey-icon-color-green);
-            --homey-icon-size: 24px;
-
-            flex-shrink: 0;
-            -webkit-mask-image: url(check.svg);
-            mask-image: url(check.svg);
-        }
-    </style>
+    <link
+        rel="stylesheet"
+        href="style.css">
 </head>
 
 <body class="homey-widget-full">
@@ -144,14 +44,15 @@
 
             for (const result of results) {
                 const button = document.createElement('button');
-                button.className = 'homey-widget item';
+                button.className = 'homey-widget item' + (result.active ? ' active' : '');
                 button.onclick = () => onClickMode(result);
 
                 if (settings.show_icons && result.icon) {
                     const icon = document.createElement('div');
                     icon.className = 'item-icon';
                     icon.style.setProperty('--color', result.icon.color);
-                    icon.style.setProperty('--icon', `url(${result.icon.url})`);
+                    icon.style.setProperty('--icon', result.icon.unicode);
+                    icon.style.setProperty('--icon-secondary', result.icon.unicodeSecondary);
                     button.appendChild(icon);
                 }
 
@@ -163,12 +64,6 @@
                 name.className = 'homey-text-medium';
                 name.textContent = result.name;
                 caption.appendChild(name);
-
-                if (result.active) {
-                    const icon = document.createElement('div');
-                    icon.className = 'homey-custom-icon-check';
-                    button.appendChild(icon);
-                }
 
                 elements.push(button);
             }

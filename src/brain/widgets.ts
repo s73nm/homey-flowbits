@@ -1,7 +1,7 @@
-import { readdir } from 'node:fs/promises';
-import { resolve } from 'node:path';
+import { searchIcons } from '../util';
 import BrainAware from './aware';
-import knownModes from '../../assets/modes/known.json';
+import knownIcons from '../../assets/app/icons.json';
+import knownModes from '../../assets/app/modes.json';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 
@@ -67,10 +67,15 @@ export default class extends BrainAware {
         const candidate = knownModes.find(item => (item as any)[this.language].includes(normalized));
 
         if (candidate) {
-            return {
-                color: candidate.color,
-                url: `../../assets/icons/${candidate.icon}.svg`
-            };
+            const icon = knownIcons.find(icon => icon[0] === candidate.icon);
+
+            if (icon) {
+                return {
+                    color: candidate.color,
+                    unicode: JSON.stringify(icon[2]),
+                    unicodeSecondary: JSON.stringify(icon[2] + icon[2])
+                };
+            }
         }
 
         return null;
@@ -147,8 +152,6 @@ export default class extends BrainAware {
             throw new Error('Failed to get the slider autocomplete provider.');
         }
 
-        const contents = await readdir(resolve(__dirname, '../../assets/icons'));
-        const icons: string[] = contents.map(file => file.replace('.svg', ''));
         const widget = this.dashboards.getWidget('slider');
 
         widget.registerSettingAutocompleteListener('slider', async (query) => {
@@ -159,17 +162,7 @@ export default class extends BrainAware {
             }));
         });
 
-        widget.registerSettingAutocompleteListener('icon', async (query) => {
-            const results = icons.map(icon => ({
-                id: icon,
-                name: (' ' + icon)
-                    .replaceAll('-', ' ')
-                    .replace(/ \w/g, a => a.toLocaleUpperCase())
-                    .trim()
-            }));
-
-            return results.filter(result => result.name.toLowerCase().includes(query.toLowerCase()));
-        });
+        widget.registerSettingAutocompleteListener('icon', searchIcons);
     }
 }
 
@@ -187,5 +180,6 @@ type Mode = {
 
 type ModeIcon = {
     readonly color: string;
-    readonly url: string;
+    readonly unicode: string;
+    readonly unicodeSecondary: string;
 };

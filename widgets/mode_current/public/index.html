@@ -2,61 +2,28 @@
 <html>
 <head lang="en">
     <title>Current mode</title>
-    <style>
-        body {
-            -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
-            -webkit-user-select: none;
-            user-select: none;
-        }
 
-        .current-mode {
-            display: flex;
-            align-items: center;
-            flex-flow: row;
-            gap: var(--homey-su-3);
-        }
-
-        .current-mode-caption {
-            display: flex;
-            align-items: flex-start;
-            flex-flow: column;
-            flex-grow: 1;
-        }
-
-        .current-mode-name {
-            text-transform: capitalize;
-        }
-
-        .current-mode-icon {
-            --color: #64748b;
-            --icon: url(shapes.svg);
-
-            display: flex;
-            height: 42px;
-            width: 42px;
-            align-items: center;
-            justify-content: center;
-            background: var(--color);
-            -webkit-mask-image: var(--icon);
-            -webkit-mask-position: center;
-            -webkit-mask-repeat: no-repeat;
-            -webkit-mask-size: 42px 42px;
-            mask-image: var(--icon);
-            mask-position: center;
-            mask-repeat: no-repeat;
-            mask-size: 42px 42px;
-        }
-    </style>
+    <link
+        rel="stylesheet"
+        href="style.css">
 </head>
 
 <body class="homey-widget">
 
 <div class="current-mode">
-    <div class="current-mode-icon" id="current-mode-icon"></div>
+    <div
+        class="current-mode-icon"
+        id="current-mode-icon"></div>
 
     <div class="current-mode-caption">
-        <div class="current-mode-label homey-text-small-light" data-i18n="widget.current_mode.label"></div>
-        <div class="current-mode-name homey-text-bold" id="current-mode-name">&mdash;</div>
+        <div
+            class="current-mode-label homey-text-small-light"
+            data-i18n="widget.current_mode.label"></div>
+        <div
+            class="current-mode-name homey-text-bold"
+            id="current-mode-name">
+            &mdash;
+        </div>
     </div>
 </div>
 
@@ -79,10 +46,12 @@
 
             if (currentMode?.icon) {
                 currentModeIcon.style.setProperty('--color', currentMode.icon.color);
-                currentModeIcon.style.setProperty('--icon', `url(${currentMode.icon.url})`);
+                currentModeIcon.style.setProperty('--icon', currentMode.icon.unicode);
+                currentModeIcon.style.setProperty('--icon-secondary', currentMode.icon.unicodeSecondary);
             } else {
                 currentModeIcon.style.removeProperty('--color');
                 currentModeIcon.style.removeProperty('--icon');
+                currentModeIcon.style.removeProperty('--icon-secondary');
             }
 
             const height = document.body.getBoundingClientRect().height;

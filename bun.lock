@@ -9,6 +9,7 @@
       },
       "devDependencies": {
         "@tsconfig/node18": "^18.2.4",
+        "@types/bun": "^1.3.2",
         "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
         "@types/luxon": "^3.7.1",
         "@types/node": "^24.9.1",
@@ -19,11 +20,19 @@
   "packages": {
     "@tsconfig/node18": ["@tsconfig/node18@18.2.4", "", {}, "sha512-5xxU8vVs9/FNcvm3gE07fPbn9tl6tqGGWA9tSlwsUEkBxtRnTsNmwrV8gasZ9F/EobaSv9+nu8AxUKccw77JpQ=="],
 
+    "@types/bun": ["@types/bun@1.3.2", "", { "dependencies": { "bun-types": "1.3.2" } }, "sha512-t15P7k5UIgHKkxwnMNkJbWlh/617rkDGEdSsDbu+qNHTaz9SKf7aC8fiIlUdD5RPpH6GEkP0cK7WlvmrEBRtWg=="],
+
     "@types/homey": ["homey-apps-sdk-v3-types@0.3.12", "", { "dependencies": { "@types/node": "^14.14.20" } }, "sha512-xr275VoF7FAiTi6PzElqHWpuGgSBY9hZFZsKeCTA4rluopf8sVk6zUPa+giSRSTiTrN3N3QjmHD5lUoNVwYd4g=="],
 
     "@types/luxon": ["@types/luxon@3.7.1", "", {}, "sha512-H3iskjFIAn5SlJU7OuxUmTEpebK6TKB8rxZShDslBMZJ5u9S//KM1sbdAisiSrqwLQncVjnpi2OK2J51h+4lsg=="],
 
     "@types/node": ["@types/node@24.9.1", "", { "dependencies": { "undici-types": "~7.16.0" } }, "sha512-QoiaXANRkSXK6p0Duvt56W208du4P9Uye9hWLWgGMDTEoKPhuenzNcC4vGUmrNkiOKTlIrBoyNQYNpSwfEZXSg=="],
+
+    "@types/react": ["@types/react@19.2.3", "", { "dependencies": { "csstype": "^3.0.2" } }, "sha512-k5dJVszUiNr1DSe8Cs+knKR6IrqhqdhpUwzqhkS8ecQTSf3THNtbfIp/umqHMpX2bv+9dkx3fwDv/86LcSfvSg=="],
+
+    "bun-types": ["bun-types@1.3.2", "", { "dependencies": { "@types/node": "*" }, "peerDependencies": { "@types/react": "^19" } }, "sha512-i/Gln4tbzKNuxP70OWhJRZz1MRfvqExowP7U6JKoI8cntFrtxg7RJK3jvz7wQW54UuvNC8tbKHHri5fy74FVqg=="],
+
+    "csstype": ["csstype@3.1.3", "", {}, "sha512-M1uQkMl8rQK/szD0LNhtqxIPLpimGm8sOBwU7lLnCpSbTyY3yeU1Vc7l4KT5zT4s/yOxHH5O7tIuuLOCnLADRw=="],
 
     "luxon": ["luxon@3.7.2", "", {}, "sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew=="],
 
