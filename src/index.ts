@@ -1,6 +1,7 @@
 import Homey from 'homey';
 import { Settings } from 'luxon';
 import { Brain, type Widgets } from './brain';
+import { roundStep } from './util';
 
 import * as Actions from './flow/action';
 import * as AutocompleteProviders from './flow/autocomplete';
@@ -64,8 +65,6 @@ export default class FlowBitsApp extends Homey.App {
     }
 
     async #registerActionFunctions(): Promise<void> {
-        const {roundStep} = await import('@basmilius/utils');
-
         this.#brain.registry.actionFunction('z_math_decrement', args => ({result: args.value - args.step}));
         this.#brain.registry.actionFunction('z_math_divide', args => ({result: args.value / args.divisor}));
         this.#brain.registry.actionFunction('z_math_increment', args => ({result: args.value + args.step}));

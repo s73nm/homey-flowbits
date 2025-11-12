@@ -1,5 +1,4 @@
-// @ts-ignore
-import type { DayPeriod } from '@basmilius/utils';
+import type { DayPeriod } from '../../util';
 import { BaseTrigger } from '../base';
 import { trigger } from '../decorator';
 
