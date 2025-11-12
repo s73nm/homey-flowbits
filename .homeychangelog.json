@@ -94,5 +94,8 @@
   },
   "1.5.3": {
     "en": "This update optimizes the performance of certain flag and mode trigger execution. It also fixes a bug where the timer remaining action flow card could fire twice when a timer was paused on that exact moment."
+  },
+  "1.5.4": {
+    "en": "This update removes an obsolete library that was used."
   }
 }
