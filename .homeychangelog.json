@@ -97,5 +97,8 @@
   },
   "1.5.4": {
     "en": "This update removes an obsolete library that was used."
+  },
+  "1.5.5": {
+    "en": "Reworked how icons are loaded."
   }
 }
