@@ -71,5 +71,29 @@
     "fuchsia": "Fuksja",
     "pink": "Różowy",
     "rose": "Róż jasny"
+  },
+  "moon_phase": {
+    "new_moon": "Nów",
+    "waxing_crescent": "Przybywający sierp",
+    "first_quarter": "Pierwsza kwadra",
+    "waxing_gibbous": "Przybywający garbaty",
+    "full_moon": "Pełnia",
+    "waning_gibbous": "Ubywający garbaty",
+    "last_quarter": "Ostatnia kwadra",
+    "waning_crescent": "Ubywający sierp"
+  },
+  "zodiac_sign": {
+    "aquarius": "Wodnik",
+    "aries": "Baran",
+    "cancer": "Rak",
+    "capricorn": "Koziorożec",
+    "gemini": "Bliźnięta",
+    "leo": "Lew",
+    "libra": "Waga",
+    "pisces": "Ryby",
+    "sagittarius": "Strzelec",
+    "scorpio": "Skorpion",
+    "taurus": "Byk",
+    "virgo": "Panna"
   }
 }

@@ -26,6 +26,30 @@
         "evening": "Вечер",
         "night": "Ночь"
     },
+    "moon_phase": {
+        "new_moon": "Новолуние",
+        "waxing_crescent": "Растущий серп",
+        "first_quarter": "Первая четверть",
+        "waxing_gibbous": "Растущая Луна",
+        "full_moon": "Полнолуние",
+        "waning_gibbous": "Убывающая Луна",
+        "last_quarter": "Последняя четверть",
+        "waning_crescent": "Убывающий серп"
+    },
+    "zodiac_sign": {
+        "aquarius": "Водолей",
+        "aries": "Овен",
+        "cancer": "Рак",
+        "capricorn": "Козерог",
+        "gemini": "Близнецы",
+        "leo": "Лев",
+        "libra": "Весы",
+        "pisces": "Рыбы",
+        "sagittarius": "Стрелец",
+        "scorpio": "Скорпион",
+        "taurus": "Телец",
+        "virgo": "Дева"
+    },
     "widget": {
         "current_mode": {
             "label": "Текущий режим",

@@ -71,5 +71,29 @@
     "fuchsia": "Fuchsia",
     "pink": "Pink",
     "rose": "Rosa"
+  },
+  "moon_phase": {
+    "new_moon": "Nymåne",
+    "waxing_crescent": "Tiltagende segl",
+    "first_quarter": "Første kvarter",
+    "waxing_gibbous": "Tiltagende måne",
+    "full_moon": "Fuldmåne",
+    "waning_gibbous": "Aftagende måne",
+    "last_quarter": "Sidste kvarter",
+    "waning_crescent": "Aftagende segl"
+  },
+  "zodiac_sign": {
+    "aquarius": "Vandmanden",
+    "aries": "Vædderen",
+    "cancer": "Krebsen",
+    "capricorn": "Stenbukken",
+    "gemini": "Tvillingerne",
+    "leo": "Løven",
+    "libra": "Vægten",
+    "pisces": "Fiskene",
+    "sagittarius": "Skytten",
+    "scorpio": "Skorpionen",
+    "taurus": "Tyren",
+    "virgo": "Jomfruen"
   }
 }

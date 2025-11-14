@@ -26,6 +26,30 @@
         "morning": "Ochtend",
         "night": "Nacht"
     },
+    "moon_phase": {
+        "new_moon": "Nieuwe maan",
+        "waxing_crescent": "Wassende maan (sikkel)",
+        "first_quarter": "Eerste kwartier",
+        "waxing_gibbous": "Wassende maan",
+        "full_moon": "Volle maan",
+        "waning_gibbous": "Afnemende maan",
+        "last_quarter": "Laatste kwartier",
+        "waning_crescent": "Afnemende maan (sikkel)"
+    },
+    "zodiac_sign": {
+        "aquarius": "Waterman",
+        "aries": "Ram",
+        "cancer": "Kreeft",
+        "capricorn": "Steenbok",
+        "gemini": "Tweelingen",
+        "leo": "Leeuw",
+        "libra": "Weegschaal",
+        "pisces": "Vissen",
+        "sagittarius": "Boogschutter",
+        "scorpio": "Schorpioen",
+        "taurus": "Stier",
+        "virgo": "Maagd"
+    },
     "widget": {
         "current_mode": {
             "label": "Huidige stand",

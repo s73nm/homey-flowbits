@@ -26,6 +26,30 @@
         "evening": "Noche",
         "night": "Noche profunda"
     },
+    "moon_phase": {
+        "new_moon": "Luna nueva",
+        "waxing_crescent": "Luna creciente",
+        "first_quarter": "Cuarto creciente",
+        "waxing_gibbous": "Gibosa creciente",
+        "full_moon": "Luna llena",
+        "waning_gibbous": "Gibosa menguante",
+        "last_quarter": "Cuarto menguante",
+        "waning_crescent": "Luna menguante"
+    },
+    "zodiac_sign": {
+        "aquarius": "Acuario",
+        "aries": "Aries",
+        "cancer": "Cáncer",
+        "capricorn": "Capricornio",
+        "gemini": "Géminis",
+        "leo": "Leo",
+        "libra": "Libra",
+        "pisces": "Piscis",
+        "sagittarius": "Sagitario",
+        "scorpio": "Escorpio",
+        "taurus": "Tauro",
+        "virgo": "Virgo"
+    },
     "widget": {
         "current_mode": {
             "label": "Modo actual",

@@ -26,6 +26,30 @@
         "evening": "Kveld",
         "night": "Natt"
     },
+    "moon_phase": {
+        "new_moon": "Nymåne",
+        "waxing_crescent": "Tiltagende halvmåne",
+        "first_quarter": "Første kvarter",
+        "waxing_gibbous": "Tiltagende måne",
+        "full_moon": "Fullmåne",
+        "waning_gibbous": "Avtagende måne",
+        "last_quarter": "Siste kvarter",
+        "waning_crescent": "Avtagende halvmåne"
+    },
+    "zodiac_sign": {
+        "aquarius": "Vannmannen",
+        "aries": "Væren",
+        "cancer": "Krepsen",
+        "capricorn": "Steinbukken",
+        "gemini": "Tvillingene",
+        "leo": "Løven",
+        "libra": "Vekten",
+        "pisces": "Fiskene",
+        "sagittarius": "Skytten",
+        "scorpio": "Skorpionen",
+        "taurus": "Tyren",
+        "virgo": "Jomfruen"
+    },
     "widget": {
         "current_mode": {
             "label": "Nåværende modus",

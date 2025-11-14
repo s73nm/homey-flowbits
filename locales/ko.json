@@ -71,5 +71,29 @@
     "fuchsia": "푸시아",
     "pink": "핑크",
     "rose": "로즈"
+  },
+  "moon_phase": {
+    "new_moon": "삭",
+    "waxing_crescent": "초승달",
+    "first_quarter": "상현달",
+    "waxing_gibbous": "상현 보름달",
+    "full_moon": "보름달",
+    "waning_gibbous": "하현 보름달",
+    "last_quarter": "하현달",
+    "waning_crescent": "그믐달"
+  },
+  "zodiac_sign": {
+    "aquarius": "물병자리",
+    "aries": "양자리",
+    "cancer": "게자리",
+    "capricorn": "염소자리",
+    "gemini": "쌍둥이자리",
+    "leo": "사자자리",
+    "libra": "천칭자리",
+    "pisces": "물고기자리",
+    "sagittarius": "사수자리",
+    "scorpio": "전갈자리",
+    "taurus": "황소자리",
+    "virgo": "처녀자리"
   }
 }

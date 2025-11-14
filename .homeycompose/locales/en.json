@@ -26,6 +26,30 @@
         "morning": "Morning",
         "night": "Night"
     },
+    "moon_phase": {
+        "new_moon": "New Moon",
+        "waxing_crescent": "Waxing Crescent",
+        "first_quarter": "First Quarter",
+        "waxing_gibbous": "Waxing Gibbous",
+        "full_moon": "Full Moon",
+        "waning_gibbous": "Waning Gibbous",
+        "last_quarter": "Last Quarter",
+        "waning_crescent": "Waning Crescent"
+    },
+    "zodiac_sign": {
+        "aquarius": "Aquarius",
+        "aries": "Aries",
+        "cancer": "Cancer",
+        "capricorn": "Capricorn",
+        "gemini": "Gemini",
+        "leo": "Leo",
+        "libra": "Libra",
+        "pisces": "Pisces",
+        "sagittarius": "Sagittarius",
+        "scorpio": "Scorpio",
+        "taurus": "Taurus",
+        "virgo": "Virgo"
+    },
     "widget": {
         "current_mode": {
             "label": "Current mode",
@@ -56,20 +80,20 @@
     "color": {
         "red": "Red",
         "orange": "Orange",
-        "amber":  "Amber",
+        "amber": "Amber",
         "yellow": "Yellow",
-        "lime":  "Lime",
+        "lime": "Lime",
         "green": "Green",
-        "emerald":  "Emerald",
+        "emerald": "Emerald",
         "teal": "Teal",
-        "cyan":  "Cyan",
+        "cyan": "Cyan",
         "sky": "Sky",
-        "blue":  "Blue",
+        "blue": "Blue",
         "indigo": "Indigo",
-        "violet":  "Violet",
+        "violet": "Violet",
         "purple": "Purple",
-        "fuchsia":  "Fuchsia",
+        "fuchsia": "Fuchsia",
         "pink": "Pink",
-        "rose":  "Rose"
+        "rose": "Rose"
     }
 }

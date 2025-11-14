@@ -26,6 +26,30 @@
         "evening": "Kväll",
         "night": "Natt"
     },
+    "moon_phase": {
+        "new_moon": "Nymåne",
+        "waxing_crescent": "Tilltagande skära",
+        "first_quarter": "Första kvartalet",
+        "waxing_gibbous": "Tilltagande måne",
+        "full_moon": "Fullmåne",
+        "waning_gibbous": "Avtagande måne",
+        "last_quarter": "Sista kvartalet",
+        "waning_crescent": "Avtagande skära"
+    },
+    "zodiac_sign": {
+        "aquarius": "Vattumannen",
+        "aries": "Väduren",
+        "cancer": "Kräftan",
+        "capricorn": "Stenbocken",
+        "gemini": "Tvillingarna",
+        "leo": "Lejonet",
+        "libra": "Vågen",
+        "pisces": "Fiskarna",
+        "sagittarius": "Skytten",
+        "scorpio": "Skorpionen",
+        "taurus": "Oxen",
+        "virgo": "Jungfrun"
+    },
     "widget": {
         "current_mode": {
             "label": "Aktuellt läge",

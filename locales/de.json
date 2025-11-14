@@ -71,5 +71,29 @@
     "fuchsia": "Fuchsie",
     "pink": "Rosa",
     "rose": "Rosé"
+  },
+  "moon_phase": {
+    "new_moon": "Neumond",
+    "waxing_crescent": "Zunehmende Mondsichel",
+    "first_quarter": "Erstes Viertel",
+    "waxing_gibbous": "Zunehmender Mond",
+    "full_moon": "Vollmond",
+    "waning_gibbous": "Abnehmender Mond",
+    "last_quarter": "Letztes Viertel",
+    "waning_crescent": "Abnehmende Mondsichel"
+  },
+  "zodiac_sign": {
+    "aquarius": "Wassermann",
+    "aries": "Widder",
+    "cancer": "Krebs",
+    "capricorn": "Steinbock",
+    "gemini": "Zwillinge",
+    "leo": "Löwe",
+    "libra": "Waage",
+    "pisces": "Fische",
+    "sagittarius": "Schütze",
+    "scorpio": "Skorpion",
+    "taurus": "Stier",
+    "virgo": "Jungfrau"
   }
 }
