@@ -25,5 +25,51 @@
     "afternoon": "오후",
     "evening": "저녁",
     "night": "밤"
+  },
+  "widget": {
+    "current_mode": {
+      "label": "현재 모드",
+      "suffix": "모드"
+    }
+  },
+  "settings": {
+    "title": "설정",
+    "subtitle": "FlowBits를 원하는 대로 설정하세요.",
+    "close": "닫기",
+    "save": "저장",
+    "search": "검색",
+    "edit": {
+      "color": "색상",
+      "icon": "아이콘"
+    },
+    "flags": {
+      "title": "플래그",
+      "description": "여러 플래그가 동시에 활성화될 수 있습니다. 플로우에서 플래그 작업, 조건, 트리거를 사용해 플래그를 생성하고 관리하세요.",
+      "empty": "아직 생성된 플래그가 없습니다."
+    },
+    "modes": {
+      "title": "모드",
+      "description": "한 번에 하나의 모드만 활성화될 수 있습니다. 플로우 내 작업, 조건, 트리거를 사용해 모드를 생성하고 관리하세요.",
+      "empty": "아직 생성된 모드가 없습니다."
+    }
+  },
+  "color": {
+    "red": "빨강",
+    "orange": "주황",
+    "amber": "호박색",
+    "yellow": "노랑",
+    "lime": "라임",
+    "green": "초록",
+    "emerald": "에메랄드",
+    "teal": "청록",
+    "cyan": "시안",
+    "sky": "하늘색",
+    "blue": "파랑",
+    "indigo": "남색",
+    "violet": "보라",
+    "purple": "자주",
+    "fuchsia": "푸시아",
+    "pink": "핑크",
+    "rose": "로즈"
   }
 }

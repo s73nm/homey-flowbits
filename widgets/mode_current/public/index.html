@@ -44,12 +44,16 @@
 
             currentModeName.innerText = currentMode?.name ?? '—';
 
-            if (currentMode?.icon) {
-                currentModeIcon.style.setProperty('--color', currentMode.icon.color);
-                currentModeIcon.style.setProperty('--icon', currentMode.icon.unicode);
-                currentModeIcon.style.setProperty('--icon-secondary', currentMode.icon.unicodeSecondary);
+            if (currentMode?.color) {
+                currentModeIcon.style.setProperty('--color', currentMode.color);
             } else {
                 currentModeIcon.style.removeProperty('--color');
+            }
+
+            if (currentMode?.icon) {
+                currentModeIcon.style.setProperty('--icon', JSON.stringify(currentMode.icon));
+                currentModeIcon.style.setProperty('--icon-secondary', JSON.stringify(currentMode.icon + currentMode.icon));
+            } else {
                 currentModeIcon.style.removeProperty('--icon');
                 currentModeIcon.style.removeProperty('--icon-secondary');
             }

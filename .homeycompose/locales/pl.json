@@ -25,5 +25,51 @@
         "afternoon": "Popołudnie",
         "evening": "Wieczór",
         "night": "Noc"
+    },
+    "widget": {
+        "current_mode": {
+            "label": "Aktualny tryb",
+            "suffix": "tryb"
+        }
+    },
+    "settings": {
+        "title": "Ustawienia",
+        "subtitle": "Skonfiguruj FlowBits według własnych preferencji.",
+        "close": "Zamknij",
+        "save": "Zapisz",
+        "search": "Szukaj",
+        "edit": {
+            "color": "Kolor",
+            "icon": "Ikona"
+        },
+        "flags": {
+            "title": "Flagi",
+            "description": "Kilka flag może być aktywnych jednocześnie. Twórz i zarządzaj flagami za pomocą akcji, warunków i wyzwalaczy w swoich flow.",
+            "empty": "Nie utworzono jeszcze żadnych flag."
+        },
+        "modes": {
+            "title": "Tryby",
+            "description": "Tylko jeden tryb może być aktywny w danym momencie. Twórz i zarządzaj trybami za pomocą akcji, warunków i wyzwalaczy.",
+            "empty": "Nie utworzono jeszcze żadnych trybów."
+        }
+    },
+    "color": {
+        "red": "Czerwony",
+        "orange": "Pomarańczowy",
+        "amber": "Bursztynowy",
+        "yellow": "Żółty",
+        "lime": "Limonkowy",
+        "green": "Zielony",
+        "emerald": "Szmaragdowy",
+        "teal": "Morski",
+        "cyan": "Cyjan",
+        "sky": "Niebieski jasny",
+        "blue": "Niebieski",
+        "indigo": "Indygo",
+        "violet": "Fioletowy",
+        "purple": "Purpurowy",
+        "fuchsia": "Fuksja",
+        "pink": "Różowy",
+        "rose": "Róż jasny"
     }
 }

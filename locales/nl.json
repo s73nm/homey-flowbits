@@ -40,5 +40,45 @@
       "label": "Huidige stand",
       "suffix": "stand"
     }
+  },
+  "settings": {
+    "title": "Instellingen",
+    "subtitle": "Stel FlowBits in zoals jij dat wilt.",
+    "flags": {
+      "title": "Flags",
+      "description": "Meerdere flags kunnen tegelijk actief zijn. Maak en beheer flags via flag-acties, -voorwaarden en -triggers in je flows.",
+      "empty": "Er zijn nog geen flags aangemaakt."
+    },
+    "modes": {
+      "title": "Standen",
+      "description": "Er kan maar één stand tegelijk actief zijn. Maak en beheer standen via stand-acties, -voorwaarden en -triggers in je flows.",
+      "empty": "Er zijn nog geen standen aangemaakt."
+    },
+    "close": "Sluiten",
+    "save": "Opslaan",
+    "search": "Zoeken",
+    "edit": {
+      "color": "Kleur",
+      "icon": "Icoon"
+    }
+  },
+  "color": {
+    "red": "Rood",
+    "orange": "Oranje",
+    "amber": "Amber",
+    "yellow": "Geel",
+    "lime": "Limoen",
+    "green": "Groen",
+    "emerald": "Smaragd",
+    "teal": "Teal",
+    "cyan": "Cyaan",
+    "sky": "Hemelsblauw",
+    "blue": "Blauw",
+    "indigo": "Indigo",
+    "violet": "Violet",
+    "purple": "Paars",
+    "fuchsia": "Fuchsia",
+    "pink": "Roze",
+    "rose": "Roze (licht)"
   }
 }

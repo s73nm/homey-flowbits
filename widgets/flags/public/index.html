@@ -50,9 +50,9 @@
                 if (settings.show_icons && result.icon) {
                     const icon = document.createElement('div');
                     icon.className = 'item-icon';
-                    icon.style.setProperty('--color', result.icon.color);
-                    icon.style.setProperty('--icon', result.icon.unicode);
-                    icon.style.setProperty('--icon-secondary', result.icon.unicodeSecondary);
+                    icon.style.setProperty('--color', result.color);
+                    icon.style.setProperty('--icon', JSON.stringify(result.icon));
+                    icon.style.setProperty('--icon-secondary', JSON.stringify(result.icon + result.icon));
                     button.appendChild(icon);
                 }
 

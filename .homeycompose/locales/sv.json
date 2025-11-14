@@ -25,5 +25,51 @@
         "afternoon": "Eftermiddag",
         "evening": "Kväll",
         "night": "Natt"
+    },
+    "widget": {
+        "current_mode": {
+            "label": "Aktuellt läge",
+            "suffix": "läge"
+        }
+    },
+    "settings": {
+        "title": "Inställningar",
+        "subtitle": "Konfigurera FlowBits som du vill.",
+        "close": "Stäng",
+        "save": "Spara",
+        "search": "Sök",
+        "edit": {
+            "color": "Färg",
+            "icon": "Ikon"
+        },
+        "flags": {
+            "title": "Flaggor",
+            "description": "Flera flaggor kan vara aktiva samtidigt. Skapa och hantera flaggor med hjälp av åtgärder, villkor och triggers i dina flöden.",
+            "empty": "Inga flaggor har skapats ännu."
+        },
+        "modes": {
+            "title": "Lägen",
+            "description": "Endast ett läge kan vara aktivt åt gången. Skapa och hantera lägen i dina flöden.",
+            "empty": "Inga lägen har skapats ännu."
+        }
+    },
+    "color": {
+        "red": "Röd",
+        "orange": "Orange",
+        "amber": "Bärnsten",
+        "yellow": "Gul",
+        "lime": "Lime",
+        "green": "Grön",
+        "emerald": "Smaragd",
+        "teal": "Teal",
+        "cyan": "Cyan",
+        "sky": "Himmelsblå",
+        "blue": "Blå",
+        "indigo": "Indigo",
+        "violet": "Violett",
+        "purple": "Lila",
+        "fuchsia": "Fuchsia",
+        "pink": "Rosa",
+        "rose": "Rosé"
     }
 }

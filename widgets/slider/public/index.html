@@ -37,9 +37,14 @@
         async function init() {
             name.innerText = settings.slider.name;
 
+            let icon = settings.icon.unicode;
+            if (icon.startsWith('"')) {
+                icon = JSON.parse(icon);
+            }
+
             slider.style.setProperty('--color', `var(--${settings.color})`);
-            slider.style.setProperty('--icon', settings.icon.unicode);
-            slider.style.setProperty('--icon-secondary', settings.icon.unicodeSecondary);
+            slider.style.setProperty('--icon', JSON.stringify(icon));
+            slider.style.setProperty('--icon-secondary', JSON.stringify(icon + icon));
 
             let active = false;
 

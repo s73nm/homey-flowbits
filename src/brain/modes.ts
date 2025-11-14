@@ -1,3 +1,4 @@
+import type { Look } from '../types';
 import BrainAware from './aware';
 
 import * as Triggers from '../flow/trigger';
@@ -9,6 +10,14 @@ export default class extends BrainAware {
 
     set currentMode(value: string | null) {
         this.settings.set('flowbits-mode', value);
+    }
+
+    get looks(): Record<string, Look> {
+        return this.settings.get('flowbits-mode-looks') ?? {};
+    }
+
+    set looks(value: Record<string, Look>) {
+        this.settings.set('flowbits-mode-looks', value);
     }
 
     async activate(mode: string): Promise<void> {
@@ -63,6 +72,19 @@ export default class extends BrainAware {
         } else {
             await this.activate(mode);
         }
+    }
+
+    async getLook(mode: string): Promise<Look | null> {
+        return this.looks[mode] ?? null;
+    }
+
+    async setLook(mode: string, look: Look): Promise<void> {
+        this.looks = {
+            ...this.looks,
+            [mode]: look
+        };
+
+        await this.#triggerRealtime();
     }
 
     async update(): Promise<void> {

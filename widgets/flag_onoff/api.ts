@@ -3,10 +3,12 @@ import type App from '../../src/index';
 
 export async function state({homey, query}: WidgetRequest): Promise<Result> {
     const flags = await homey.app.widgets.getFlags();
+    const flag = flags.find(flag => flag.name === query.flag);
 
     return {
-        active: flags.some(flag => flag.active && flag.name === query.flag),
-        icon: await icon(homey, query.flag)
+        active: flag?.active ?? false,
+        color: flag?.color,
+        icon: flag?.icon
     };
 }
 
@@ -14,22 +16,10 @@ export async function toggle({homey, body}: WidgetRequest): Promise<boolean> {
     return await homey.app.widgets.toggleFlag(body.flag);
 }
 
-async function icon(homey: WidgetRequest['homey'], mode: string): Promise<ModeIcon | null> {
-    const prefix = homey.__('widget.current_mode.prefix');
-    const suffix = homey.__('widget.current_mode.suffix');
-
-    return await homey.app.widgets.getModeIcon(mode, prefix, suffix);
-}
-
-type ModeIcon = {
-    readonly color: string;
-    readonly unicode: string;
-    readonly unicodeSecondary: string;
-};
-
 type Result = {
     readonly active: boolean;
-    readonly icon: ModeIcon | null;
+    readonly color: string | undefined;
+    readonly icon: string | undefined;
 };
 
 type WidgetRequest = {

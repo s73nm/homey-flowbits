@@ -25,5 +25,51 @@
         "afternoon": "Pomeriggio",
         "evening": "Sera",
         "night": "Notte"
+    },
+    "widget": {
+        "current_mode": {
+            "label": "Modalità attuale",
+            "suffix": "modalità"
+        }
+    },
+    "settings": {
+        "title": "Impostazioni",
+        "subtitle": "Configura FlowBits come preferisci.",
+        "close": "Chiudi",
+        "save": "Salva",
+        "search": "Cerca",
+        "edit": {
+            "color": "Colore",
+            "icon": "Icona"
+        },
+        "flags": {
+            "title": "Flag",
+            "description": "Più flag possono essere attivi contemporaneamente. Crea e gestisci i flag tramite azioni, condizioni e trigger nei tuoi flow.",
+            "empty": "Nessun flag è stato ancora creato."
+        },
+        "modes": {
+            "title": "Modalità",
+            "description": "Solo una modalità può essere attiva alla volta. Crea e gestisci le modalità tramite azioni, condizioni e trigger nei tuoi flow.",
+            "empty": "Nessuna modalità è stata ancora creata."
+        }
+    },
+    "color": {
+        "red": "Rosso",
+        "orange": "Arancione",
+        "amber": "Ambra",
+        "yellow": "Giallo",
+        "lime": "Lime",
+        "green": "Verde",
+        "emerald": "Smeraldo",
+        "teal": "Verde acqua",
+        "cyan": "Ciano",
+        "sky": "Celeste",
+        "blue": "Blu",
+        "indigo": "Indaco",
+        "violet": "Viola",
+        "purple": "Porpora",
+        "fuchsia": "Fucsia",
+        "pink": "Rosa",
+        "rose": "Rosa tenue"
     }
 }

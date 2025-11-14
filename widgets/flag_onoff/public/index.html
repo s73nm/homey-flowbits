@@ -22,9 +22,13 @@
 
 <script type="text/javascript">
     function onHomeyReady(Homey) {
+        /** @type HTMLElement */
         const onoff = document.getElementById('flag-on-off');
+        /** @type HTMLElement */
         const name = onoff.getElementsByClassName('flag-on-off-name')[0];
+        /** @type HTMLElement */
         const icon = onoff.getElementsByClassName('flag-on-off-icon')[0];
+        /** @type HTMLElement */
         const power = onoff.getElementsByClassName('flag-on-off-power')[0];
 
         let loading = false;
@@ -76,12 +80,16 @@
                 power.classList.remove('on');
             }
 
-            if (state?.icon) {
-                icon.style.setProperty('--color', state.icon.color);
-                icon.style.setProperty('--icon', state.icon.unicode);
-                icon.style.setProperty('--icon-secondary', state.icon.unicodeSecondary);
+            if (state?.color) {
+                icon.style.setProperty('--color', state.color);
             } else {
                 icon.style.removeProperty('--color');
+            }
+
+            if (state?.icon) {
+                icon.style.setProperty('--icon', JSON.stringify(state.icon));
+                icon.style.setProperty('--icon-secondary', JSON.stringify(state.icon + state.icon));
+            } else {
                 icon.style.removeProperty('--icon');
                 icon.style.removeProperty('--icon-secondary');
             }

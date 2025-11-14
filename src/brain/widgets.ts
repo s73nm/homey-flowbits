@@ -1,7 +1,6 @@
+import type { Flag, Mode } from '../types';
 import { searchIcons } from '../util';
 import BrainAware from './aware';
-import knownIcons from '../../assets/app/icons.json';
-import knownModes from '../../assets/app/modes.json';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 
@@ -12,30 +11,7 @@ export default class extends BrainAware {
     }
 
     async getFlags(): Promise<Flag[]> {
-        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Flag);
-
-        if (!autocompleteProvider) {
-            throw new Error('Failed to get the flag autocomplete provider.');
-        }
-
-        const current = this.flags.currentFlags;
-        const flags = await autocompleteProvider.find('');
-
-        if (flags.length === 0) {
-            return [];
-        }
-
-        const icons: Record<string, ModeIcon | null> = {};
-
-        for (const flag of flags) {
-            icons[flag.name] = await this.getModeIcon(flag.name, this.translate('widget.current_mode.prefix'), this.translate('widget.current_mode.suffix'));
-        }
-
-        return flags.map(flag => ({
-            active: current.includes(flag.name),
-            icon: icons[flag.name] ?? null,
-            name: flag.name
-        }));
+        return await this.api.getFlags();
     }
 
     async toggleFlag(flagName: string): Promise<boolean> {
@@ -59,53 +35,8 @@ export default class extends BrainAware {
         return this.modes.currentMode;
     }
 
-    async getModeIcon(mode: string, prefix: string, suffix: string): Promise<ModeIcon | null> {
-        let normalized = mode.toLowerCase();
-        normalized = normalized.startsWith(prefix) ? normalized.substring(prefix.length) : normalized;
-        normalized = normalized.endsWith(suffix) ? normalized.substring(0, normalized.length - suffix.length) : normalized;
-
-        const candidate = knownModes.find(item => (item as any)[this.language].includes(normalized));
-
-        if (candidate) {
-            const icon = knownIcons.find(icon => icon[0] === candidate.icon);
-
-            if (icon) {
-                return {
-                    color: candidate.color,
-                    unicode: JSON.stringify(icon[2]),
-                    unicodeSecondary: JSON.stringify(icon[2] + icon[2])
-                };
-            }
-        }
-
-        return null;
-    }
-
     async getModes(): Promise<Mode[]> {
-        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Mode);
-
-        if (!autocompleteProvider) {
-            throw new Error('Failed to get the mode autocomplete provider.');
-        }
-
-        const current = this.modes.currentMode;
-        const modes = await autocompleteProvider.find('');
-
-        if (modes.length === 0) {
-            return [];
-        }
-
-        const icons: Record<string, ModeIcon | null> = {};
-
-        for (const mode of modes) {
-            icons[mode.name] = await this.getModeIcon(mode.name, this.translate('widget.current_mode.prefix'), this.translate('widget.current_mode.suffix'));
-        }
-
-        return modes.map(mode => ({
-            active: current === mode.name,
-            icon: icons[mode.name] ?? null,
-            name: mode.name
-        }));
+        return await this.api.getModes();
     }
 
     async toggleMode(modeName: string): Promise<boolean> {
@@ -165,21 +96,3 @@ export default class extends BrainAware {
         widget.registerSettingAutocompleteListener('icon', searchIcons);
     }
 }
-
-type Flag = {
-    readonly active: boolean;
-    readonly icon: ModeIcon | null;
-    readonly name: string;
-};
-
-type Mode = {
-    readonly active: boolean;
-    readonly icon: ModeIcon | null;
-    readonly name: string;
-};
-
-type ModeIcon = {
-    readonly color: string;
-    readonly unicode: string;
-    readonly unicodeSecondary: string;
-};

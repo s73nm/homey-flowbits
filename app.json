@@ -225,6 +225,48 @@
       }
     }
   },
+  "api": {
+    "activateFlag": {
+      "method": "PUT",
+      "path": "/flags"
+    },
+    "activateMode": {
+      "method": "PUT",
+      "path": "/modes"
+    },
+    "deactivateFlag": {
+      "method": "DELETE",
+      "path": "/flags"
+    },
+    "deactivateMode": {
+      "method": "DELETE",
+      "path": "/modes"
+    },
+    "getFlags": {
+      "method": "GET",
+      "path": "/flags"
+    },
+    "getModes": {
+      "method": "GET",
+      "path": "/modes"
+    },
+    "getColors": {
+      "method": "GET",
+      "path": "/colors"
+    },
+    "getIcons": {
+      "method": "GET",
+      "path": "/icons"
+    },
+    "setFlagLook": {
+      "method": "POST",
+      "path": "/flags/look"
+    },
+    "setModeLook": {
+      "method": "POST",
+      "path": "/modes/look"
+    }
+  },
   "flow": {
     "triggers": [
       {

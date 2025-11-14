@@ -1,5 +1,6 @@
 export type { Action, AutocompleteProvider, Condition, Trigger } from './registry';
 
+export type { default as Api } from './api';
 export type { default as Cycles } from './cycles';
 export type { default as Flags } from './flags';
 export type { default as Modes } from './modes';

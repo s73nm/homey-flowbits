@@ -25,5 +25,51 @@
         "afternoon": "Eftermiddag",
         "evening": "Aften",
         "night": "Nat"
+    },
+    "widget": {
+        "current_mode": {
+            "label": "Aktuel tilstand",
+            "suffix": "tilstand"
+        }
+    },
+    "settings": {
+        "title": "Indstillinger",
+        "subtitle": "Konfigurer FlowBits, som du ønsker.",
+        "close": "Luk",
+        "save": "Gem",
+        "search": "Søg",
+        "edit": {
+            "color": "Farve",
+            "icon": "Ikon"
+        },
+        "flags": {
+            "title": "Flag",
+            "description": "Flere flag kan være aktive samtidig. Opret og administrér flag via handlinger, betingelser og triggere i dine flows.",
+            "empty": "Der er endnu ikke oprettet nogen flag."
+        },
+        "modes": {
+            "title": "Tilstande",
+            "description": "Kun én tilstand kan være aktiv ad gangen. Opret og administrér tilstande via handlinger, betingelser og triggere i dine flows.",
+            "empty": "Der er endnu ikke oprettet nogen tilstande."
+        }
+    },
+    "color": {
+        "red": "Rød",
+        "orange": "Orange",
+        "amber": "Rav",
+        "yellow": "Gul",
+        "lime": "Lime",
+        "green": "Grøn",
+        "emerald": "Smaragd",
+        "teal": "Teal",
+        "cyan": "Cyan",
+        "sky": "Himmelblå",
+        "blue": "Blå",
+        "indigo": "Indigo",
+        "violet": "Violet",
+        "purple": "Lilla",
+        "fuchsia": "Fuchsia",
+        "pink": "Pink",
+        "rose": "Rosa"
     }
 }

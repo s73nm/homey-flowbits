@@ -1,6 +1,6 @@
 import Homey from 'homey';
 import { Settings } from 'luxon';
-import { Brain, type Widgets } from './brain';
+import { type Api, Brain, type Widgets } from './brain';
 import { roundStep } from './util';
 
 import * as Actions from './flow/action';
@@ -9,6 +9,10 @@ import * as Conditions from './flow/condition';
 import * as Triggers from './flow/trigger';
 
 export default class FlowBitsApp extends Homey.App {
+    get api(): Api {
+        return this.#brain.api;
+    }
+
     get widgets(): Widgets {
         return this.#brain.widgets;
     }

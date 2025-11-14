@@ -25,5 +25,51 @@
     "afternoon": "Tarde",
     "evening": "Noche",
     "night": "Noche profunda"
+  },
+  "widget": {
+    "current_mode": {
+      "label": "Modo actual",
+      "suffix": "modo"
+    }
+  },
+  "settings": {
+    "title": "Ajustes",
+    "subtitle": "Configura FlowBits a tu gusto.",
+    "close": "Cerrar",
+    "save": "Guardar",
+    "search": "Buscar",
+    "edit": {
+      "color": "Color",
+      "icon": "Icono"
+    },
+    "flags": {
+      "title": "Banderas",
+      "description": "Varias banderas pueden estar activas simultáneamente. Crea y gestiona banderas mediante acciones, condiciones y disparadores en tus flujos.",
+      "empty": "Aún no se han creado banderas."
+    },
+    "modes": {
+      "title": "Modos",
+      "description": "Solo un modo puede estar activo a la vez. Crea y gestiona modos mediante acciones, condiciones y disparadores en tus flujos.",
+      "empty": "Aún no se han creado modos."
+    }
+  },
+  "color": {
+    "red": "Rojo",
+    "orange": "Naranja",
+    "amber": "Ámbar",
+    "yellow": "Amarillo",
+    "lime": "Lima",
+    "green": "Verde",
+    "emerald": "Esmeralda",
+    "teal": "Verde azulado",
+    "cyan": "Cian",
+    "sky": "Celeste",
+    "blue": "Azul",
+    "indigo": "Índigo",
+    "violet": "Violeta",
+    "purple": "Púrpura",
+    "fuchsia": "Fucsia",
+    "pink": "Rosa",
+    "rose": "Rosa claro"
   }
 }

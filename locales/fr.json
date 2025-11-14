@@ -25,5 +25,51 @@
     "afternoon": "Après-midi",
     "evening": "Soir",
     "night": "Nuit"
+  },
+  "widget": {
+    "current_mode": {
+      "label": "Mode actuel",
+      "suffix": "mode"
+    }
+  },
+  "settings": {
+    "title": "Paramètres",
+    "subtitle": "Configurez FlowBits selon vos préférences.",
+    "close": "Fermer",
+    "save": "Enregistrer",
+    "search": "Rechercher",
+    "edit": {
+      "color": "Couleur",
+      "icon": "Icône"
+    },
+    "flags": {
+      "title": "Drapeaux",
+      "description": "Plusieurs drapeaux peuvent être actifs simultanément. Créez et gérez-les via les actions, conditions et déclencheurs dans vos flows.",
+      "empty": "Aucun drapeau n’a encore été créé."
+    },
+    "modes": {
+      "title": "Modes",
+      "description": "Un seul mode peut être actif à la fois. Créez et gérez les modes via les actions, conditions et déclencheurs dans vos flows.",
+      "empty": "Aucun mode n’a encore été créé."
+    }
+  },
+  "color": {
+    "red": "Rouge",
+    "orange": "Orange",
+    "amber": "Ambre",
+    "yellow": "Jaune",
+    "lime": "Citron vert",
+    "green": "Vert",
+    "emerald": "Émeraude",
+    "teal": "Sarcelle",
+    "cyan": "Cyan",
+    "sky": "Bleu ciel",
+    "blue": "Bleu",
+    "indigo": "Indigo",
+    "violet": "Violet",
+    "purple": "Pourpre",
+    "fuchsia": "Fuchsia",
+    "pink": "Rose",
+    "rose": "Rose pâle"
   }
 }

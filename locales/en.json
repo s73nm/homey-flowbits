@@ -40,5 +40,45 @@
       "label": "Current mode",
       "suffix": "mode"
     }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure FlowBits to your liking.",
+    "flags": {
+      "title": "Flags",
+      "description": "Multiple flags can be active simultaneously. Create and manage flags using flag actions, conditions, and triggers in your flows.",
+      "empty": "No flags have been created yet."
+    },
+    "modes": {
+      "title": "Modes",
+      "description": "Only one mode can be active at a time. Create and manage modes using mode actions, conditions, and triggers in your flows.",
+      "empty": "No modes have been created yet."
+    },
+    "close": "Close",
+    "edit": {
+      "color": "Color",
+      "icon": "Icon"
+    },
+    "save": "Save",
+    "search": "Search"
+  },
+  "color": {
+    "red": "Red",
+    "orange": "Orange",
+    "amber": "Amber",
+    "yellow": "Yellow",
+    "lime": "Lime",
+    "green": "Green",
+    "emerald": "Emerald",
+    "teal": "Teal",
+    "cyan": "Cyan",
+    "sky": "Sky",
+    "blue": "Blue",
+    "indigo": "Indigo",
+    "violet": "Violet",
+    "purple": "Purple",
+    "fuchsia": "Fuchsia",
+    "pink": "Pink",
+    "rose": "Rose"
   }
 }

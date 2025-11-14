@@ -2,34 +2,25 @@ import type Homey from 'homey/lib/Homey';
 import type App from '../../src/index';
 
 export async function get({homey}: WidgetRequest): Promise<Result | null> {
+    const modes = await homey.app.widgets.getModes();
     const mode = await homey.app.widgets.getCurrentMode();
+    const modeWithLook = modes.find(m => m.name === mode);
 
-    if (!mode) {
+    if (!modeWithLook) {
         return null;
     }
 
     return {
-        icon: await icon(homey, mode),
-        name: mode
+        color: modeWithLook.color,
+        icon: modeWithLook.icon,
+        name: modeWithLook.name
     };
 }
 
-async function icon(homey: WidgetRequest['homey'], mode: string): Promise<ModeIcon | null> {
-    const prefix = homey.__('widget.current_mode.prefix');
-    const suffix = homey.__('widget.current_mode.suffix');
-
-    return await homey.app.widgets.getModeIcon(mode, prefix, suffix);
-}
-
 type Result = {
-    readonly icon: ModeIcon | null;
+    readonly color: string | undefined;
+    readonly icon: string | undefined;
     readonly name: string;
-};
-
-type ModeIcon = {
-    readonly color: string;
-    readonly unicode: string;
-    readonly unicodeSecondary: string;
 };
 
 type WidgetRequest = {

@@ -1,12 +1,7 @@
+import type { Icon } from '../types';
 import icons from '../../assets/app/icons.json';
 
-type Result = {
-    readonly id: string;
-    readonly name: string;
-    readonly unicode: string;
-};
-
-export default async function (query: string): Promise<Result[]> {
+export default async function (query: string): Promise<Icon[]> {
     const normalizedQuery = query.toLowerCase().trim();
 
     return icons
@@ -15,7 +10,6 @@ export default async function (query: string): Promise<Result[]> {
         .map(icon => ({
             id: icon[0],
             name: icon[1],
-            unicode: JSON.stringify(icon[2]),
-            unicodeSecondary: JSON.stringify(icon[2] + icon[2])
+            unicode: icon[2]
         }));
 }
