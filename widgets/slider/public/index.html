@@ -17,8 +17,8 @@
         <div class="slider-value">
             <div class="slider-knob"></div>
         </div>
-        <div class="slider-icon start"></div>
-        <div class="slider-icon end"></div>
+        <div class="flowbits-icon slider-icon start"></div>
+        <div class="flowbits-icon slider-icon end"></div>
     </div>
 </div>
 
@@ -42,9 +42,9 @@
                 icon = JSON.parse(icon);
             }
 
-            slider.style.setProperty('--color', `var(--${settings.color})`);
-            slider.style.setProperty('--icon', JSON.stringify(icon));
-            slider.style.setProperty('--icon-secondary', JSON.stringify(icon + icon));
+            slider.style.setProperty('--slider-color', `var(--${settings.color})`);
+            slider.style.setProperty('--slider-icon', JSON.stringify(icon));
+            slider.style.setProperty('--slider-icon-secondary', JSON.stringify(icon + icon));
 
             let active = false;
 
@@ -101,7 +101,7 @@
         }
 
         async function setValueRaw(value) {
-            slider.style.setProperty('--value', String(value));
+            slider.style.setProperty('--slider-value', String(value));
             name.innerText = `${settings.slider.name}: ${formatter.format(value / 100)}`;
 
             if (value >= 15) {

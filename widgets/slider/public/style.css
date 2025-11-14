@@ -1,3 +1,4 @@
+@import '../../assets/app/base.css';
 @import '../../assets/app/icons.css';
 
 body {
@@ -15,28 +16,10 @@ body {
 }
 
 .slider {
-    --red: #ef4444;
-    --orange: #f97316;
-    --amber: #f59e0b;
-    --yellow: #eab308;
-    --lime: #84cc16;
-    --green: #22c55e;
-    --emerald: #10b981;
-    --teal: #14b8a6;
-    --cyan: #06b6d4;
-    --sky: #0ea5e9;
-    --blue: #3b82f6;
-    --indigo: #6366f1;
-    --violet: #8b5cf6;
-    --purple: #a855f7;
-    --fuchsia: #d946ef;
-    --pink: #ec4899;
-    --rose: #f43f5e;
-
-    --color: var(--pink);
-    --icon: '';
-    --icon-secondary: '';
-    --value: 0;
+    --slider-color: var(--pink);
+    --slider-icon: '';
+    --slider-icon-secondary: '';
+    --slider-value: 0;
 
     position: relative;
     height: 54px;
@@ -47,44 +30,30 @@ body {
 }
 
 .slider-icon {
+    --icon: var(--slider-icon);
+    --size: 24px;
+
     position: absolute;
-    display: grid;
     top: 0;
     bottom: 0;
-    align-items: center;
+    height: unset;
+    width: unset;
     aspect-ratio: 1;
-    justify-content: center;
     transition: 210ms cubic-bezier(0.55, 0, 0.1, 1);
     transition-property: opacity, scale;
     will-change: opacity;
 }
 
-.slider-icon::before,
-.slider-icon::after {
-    position: relative;
-    grid-column: 1;
-    grid-row: 1;
-    font-family: 'font-awesome', sans-serif;
-    font-size: 24px;
-}
-
-.slider-icon::before {
-    content: var(--icon);
-}
-
-.slider-icon::after {
-    content: var(--icon-secondary);
-    opacity: .2;
-}
-
 .slider-icon.start {
+    --color: var(--homey-background-color);
+
     left: 0;
-    color: var(--homey-background-color);
 }
 
 .slider-icon.end {
-    left: calc(var(--value) * 1%);
-    color: var(--color);
+    --color: var(--slider-color);
+
+    left: calc(var(--slider-value) * 1%);
 }
 
 .slider-knob {
@@ -102,8 +71,8 @@ body {
     top: 0;
     left: 0;
     height: 100%;
-    width: calc(var(--value) * 1%);
-    background: var(--color);
+    width: calc(var(--slider-value) * 1%);
+    background: var(--slider-color);
     border-radius: inherit;
 }
 

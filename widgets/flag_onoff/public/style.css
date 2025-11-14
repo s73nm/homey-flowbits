@@ -1,3 +1,4 @@
+@import '../../assets/app/base.css';
 @import '../../assets/app/icons.css';
 
 body {
@@ -58,36 +59,6 @@ body {
 .homey-dark-mode .flag-on-off-power:active {
     background: rgb(from var(--homey-color-mono-300) r g b / .5);
     scale: 0.95;
-}
-
-.flag-on-off-icon {
-    --color: #64748b;
-    --icon: '';
-    --icon-secondary: '';
-
-    display: grid;
-    height: 42px;
-    width: 42px;
-    align-items: center;
-    justify-content: center;
-}
-
-.flag-on-off-icon::before,
-.flag-on-off-icon::after {
-    grid-column: 1;
-    grid-row: 1;
-    color: var(--color);
-    font-family: 'font-awesome', sans-serif;
-    font-size: 42px;
-}
-
-.flag-on-off-icon::before {
-    content: var(--icon);
-}
-
-.flag-on-off-icon::after {
-    content: var(--icon-secondary);
-    opacity: .2;
 }
 
 .flag-on-off-icon:not(.on) {
