@@ -1,3 +1,6 @@
+import type Homey from 'homey/lib/Homey';
+import type App from './index';
+
 export type ClockState =
     | 'finished'
     | 'running'
@@ -8,6 +11,19 @@ export type ClockUnit =
     | 'minutes'
     | 'hours'
     | 'days';
+
+export type Language =
+    | 'en'
+    | 'nl'
+    | 'de'
+    | 'es'
+    | 'fr'
+    | 'it'
+    | 'ko'
+    | 'no'
+    | 'pl'
+    | 'ru'
+    | 'sv';
 
 export type Flag = {
     readonly active: boolean;
@@ -35,3 +51,29 @@ export type Icon = {
 };
 
 export type Look = [color: string, icon: string];
+
+export type Statistics = {
+    readonly currentFlags: string[];
+    readonly currentMode: string | null;
+    readonly numberOfCycles: number;
+    readonly numberOfFlags: number;
+    readonly numberOfModes: number;
+    readonly numberOfNoRepeats: number;
+    readonly numberOfSliders: number;
+    readonly numberOfTimers: number;
+    readonly runsPerFlowCard: Record<string, [string, number]>;
+    readonly usagePerFlowCard: Record<string, [string, number]>;
+};
+
+export type ApiRequest = {
+    readonly homey: Homey & {
+        readonly app: App;
+    };
+    readonly body: any;
+    readonly params: Record<string, unknown>;
+    readonly query: Record<string, string>;
+};
+
+export type WidgetApiRequest = ApiRequest & {
+    readonly widgetInstanceId: string;
+};

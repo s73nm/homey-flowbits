@@ -60,6 +60,20 @@
     "edit": {
       "color": "Kleur",
       "icon": "Icoon"
+    },
+    "statistics": {
+      "title": "Statistieken",
+      "description": "Dit zijn functiestatistieken voor FlowBits. Ze zijn gebaseerd op je flows.",
+      "cycles": "Stappenreeksen",
+      "flags": "Flags",
+      "modes": "Standen",
+      "no_repeats": "Geen-herhalingsvensters",
+      "sliders": "Sliders",
+      "timers": "Timers"
+    },
+    "card_statistics": {
+      "title": "Flowkaartstatistieken",
+      "description": "Dit zijn gebruiksstatistieken voor afzonderlijke flowkaarten."
     }
   },
   "color": {

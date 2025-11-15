@@ -14,6 +14,10 @@ export default class extends BrainAware {
         await this.#schedule();
     }
 
+    async getCount(): Promise<number> {
+        return Object.keys(this.#timers).length;
+    }
+
     async finish(timer: Timer): Promise<void> {
         await this.#update(timer.name, timer.duration, 0, timer.target, 'finished');
         await this.#triggerFinished(timer.name);

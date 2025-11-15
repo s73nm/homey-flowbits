@@ -75,6 +75,20 @@
             "title": "Moduser",
             "description": "Bare én modus kan være aktiv om gangen. Opprett og administrer moduser via handlinger, betingelser og triggere i dine flyter.",
             "empty": "Ingen moduser har blitt opprettet enda."
+        },
+        "statistics": {
+            "title": "Statistikk",
+            "description": "Dette er funksjonsstatistikk for FlowBits. De er basert på dine flyter.",
+            "cycles": "Sykluser",
+            "flags": "Flagg",
+            "modes": "Moduser",
+            "no_repeats": "Ingen-gjentakelsesvinduer",
+            "sliders": "Glidere",
+            "timers": "Tidtakere"
+        },
+        "card_statistics": {
+            "title": "Flytkortstatistikk",
+            "description": "Dette er bruksstatistikk for individuelle flytkort."
         }
     },
     "color": {

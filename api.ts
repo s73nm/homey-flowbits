@@ -1,52 +1,53 @@
-import type Homey from 'homey/lib/Homey';
-import type { Color, Flag, Icon, Mode } from './src/types';
-import type App from './src/index';
+import type { ApiRequest, Color, Flag, Icon, Mode, Statistics } from './src/types';
 
-export async function activateFlag({homey, body}: Request): Promise<boolean> {
+export async function activateFlag({homey, body}: ApiRequest): Promise<boolean> {
     return await homey.app.api.activateFlag(body.flag);
 }
 
-export async function activateMode({homey, body}: Request): Promise<boolean> {
+export async function activateMode({homey, body}: ApiRequest): Promise<boolean> {
     return await homey.app.api.activateMode(body.mode);
 }
 
-export async function deactivateFlag({homey, body}: Request): Promise<boolean> {
+export async function deactivateFlag({homey, body}: ApiRequest): Promise<boolean> {
     return await homey.app.api.deactivateFlag(body.flag);
 }
 
-export async function deactivateMode({homey, body}: Request): Promise<boolean> {
+export async function deactivateMode({homey, body}: ApiRequest): Promise<boolean> {
     return await homey.app.api.deactivateMode(body.mode);
 }
 
-export async function getFlags({homey}: Request): Promise<Flag[]> {
+export async function toggleFlag({homey, body}: ApiRequest): Promise<boolean> {
+    return await homey.app.api.toggleFlag(body.flag);
+}
+
+export async function toggleMode({homey, body}: ApiRequest): Promise<boolean> {
+    return await homey.app.api.toggleMode(body.mode);
+}
+
+export async function getFlags({homey}: ApiRequest): Promise<Flag[]> {
     return await homey.app.widgets.getFlags();
 }
 
-export async function getModes({homey}: Request): Promise<Mode[]> {
+export async function getModes({homey}: ApiRequest): Promise<Mode[]> {
     return await homey.app.widgets.getModes();
 }
 
-export async function getColors({homey}: Request): Promise<Color[]> {
+export async function getColors({homey}: ApiRequest): Promise<Color[]> {
     return await homey.app.api.getColors();
 }
 
-export async function getIcons({homey}: Request): Promise<Icon[]> {
+export async function getIcons({homey}: ApiRequest): Promise<Icon[]> {
     return await homey.app.api.getIcons();
 }
 
-export async function setFlagLook({homey, body}: Request): Promise<boolean> {
+export async function setFlagLook({homey, body}: ApiRequest): Promise<boolean> {
     return await homey.app.api.setFlagLook(body.name, body.color, body.icon);
 }
 
-export async function setModeLook({homey, body}: Request): Promise<boolean> {
+export async function setModeLook({homey, body}: ApiRequest): Promise<boolean> {
     return await homey.app.api.setModeLook(body.name, body.color, body.icon);
 }
 
-type Request = {
-    readonly homey: Homey & {
-        readonly app: App;
-    };
-    readonly body: any;
-    readonly params: Record<string, unknown>;
-    readonly query: Record<string, string>;
-};
+export async function getStatistics({homey}: ApiRequest): Promise<Statistics> {
+    return await homey.app.api.getStatistics();
+}

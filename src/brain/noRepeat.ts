@@ -23,18 +23,18 @@ export default class extends BrainAware {
         );
     }
 
-    async clear(window: string): Promise<void> {
+    async clear(name: string): Promise<void> {
         const windows = this.windows;
-        delete windows[window];
+        delete windows[name];
         this.windows = windows;
     }
 
-    async check(window: string, duration: number, unit: ClockUnit): Promise<boolean> {
+    async check(name: string, duration: number, unit: ClockUnit): Promise<boolean> {
         const windows = this.windows;
 
         const now = DateTime.now();
-        const last = windows[window] ?? null;
-        windows[window] = now;
+        const last = windows[name] ?? null;
+        windows[name] = now;
 
         this.windows = windows;
 
@@ -45,5 +45,9 @@ export default class extends BrainAware {
         const seconds = convertDurationToSeconds(duration, unit);
 
         return last.plus({seconds}) <= now;
+    }
+
+    async getCount(): Promise<number> {
+        return Object.keys(this.windows).length;
     }
 }

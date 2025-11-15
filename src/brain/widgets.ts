@@ -6,8 +6,8 @@ import * as AutocompleteProviders from '../flow/autocomplete';
 
 export default class extends BrainAware {
     async initialize(): Promise<void> {
-        await this.initializeFlagOnOff();
-        await this.initializeSlider();
+        await this.#initializeFlagOnOff();
+        await this.#initializeSlider();
     }
 
     async getFlags(): Promise<Flag[]> {
@@ -15,24 +15,11 @@ export default class extends BrainAware {
     }
 
     async toggleFlag(flagName: string): Promise<boolean> {
-        const flags = await this.getFlags();
-        const flag = flags.find(m => m.name === flagName);
-
-        if (!flag) {
-            throw new Error('Flag not found.');
-        }
-
-        if (flag.active) {
-            await this.flags.deactivate(flag.name);
-        } else {
-            await this.flags.activate(flag.name);
-        }
-
-        return true;
+        return await this.api.toggleFlag(flagName);
     }
 
     async getCurrentMode(): Promise<string | null> {
-        return this.modes.currentMode;
+        return await this.api.getCurrentMode();
     }
 
     async getModes(): Promise<Mode[]> {
@@ -40,20 +27,7 @@ export default class extends BrainAware {
     }
 
     async toggleMode(modeName: string): Promise<boolean> {
-        const modes = await this.getModes();
-        const mode = modes.find(m => m.name === modeName);
-
-        if (!mode) {
-            throw new Error('Mode not found.');
-        }
-
-        if (mode.active) {
-            await this.modes.deactivate(mode.name);
-        } else {
-            await this.modes.activate(mode.name);
-        }
-
-        return true;
+        return await this.api.toggleMode(modeName);
     }
 
     async getSliderValue(sliderName: string): Promise<number | null> {
@@ -64,7 +38,7 @@ export default class extends BrainAware {
         await this.sliders.setValue(sliderName, value, widgetId);
     }
 
-    async initializeFlagOnOff(): Promise<void> {
+    async #initializeFlagOnOff(): Promise<void> {
         const widget = this.dashboards.getWidget('flag_onoff');
 
         widget.registerSettingAutocompleteListener('flag', async () => {
@@ -76,7 +50,7 @@ export default class extends BrainAware {
         });
     }
 
-    async initializeSlider(): Promise<void> {
+    async #initializeSlider(): Promise<void> {
         const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Slider);
 
         if (!autocompleteProvider) {

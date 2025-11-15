@@ -242,6 +242,14 @@
       "method": "DELETE",
       "path": "/modes"
     },
+    "toggleFlag": {
+      "method": "POST",
+      "path": "/flags"
+    },
+    "toggleMode": {
+      "method": "POST",
+      "path": "/modes"
+    },
     "getFlags": {
       "method": "GET",
       "path": "/flags"
@@ -265,6 +273,10 @@
     "setModeLook": {
       "method": "POST",
       "path": "/modes/look"
+    },
+    "getStatistics": {
+      "method": "GET",
+      "path": "/statistics"
     }
   },
   "flow": {

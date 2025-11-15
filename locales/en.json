@@ -60,7 +60,21 @@
       "icon": "Icon"
     },
     "save": "Save",
-    "search": "Search"
+    "search": "Search",
+    "statistics": {
+      "cycles": "Cycles",
+      "flags": "Flags",
+      "modes": "Modes",
+      "no_repeats": "No-repeat windows",
+      "sliders": "Sliders",
+      "timers": "Timers",
+      "title": "Statistics",
+      "description": "These are feature statistics for FlowBits. They are based on your flows."
+    },
+    "card_statistics": {
+      "title": "Flow card statistics",
+      "description": "These are usage statistics for individual flow cards."
+    }
   },
   "color": {
     "red": "Red",

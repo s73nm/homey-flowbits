@@ -75,6 +75,20 @@
             "title": "Modes",
             "description": "Un seul mode peut être actif à la fois. Créez et gérez les modes via les actions, conditions et déclencheurs dans vos flows.",
             "empty": "Aucun mode n’a encore été créé."
+        },
+        "statistics": {
+            "title": "Statistiques",
+            "description": "Voici les statistiques des fonctionnalités de FlowBits. Elles sont basées sur vos flux.",
+            "cycles": "Cycles",
+            "flags": "Drapeaux",
+            "modes": "Modes",
+            "no_repeats": "Fenêtres sans répétition",
+            "sliders": "Curseurs",
+            "timers": "Minuteries"
+        },
+        "card_statistics": {
+            "title": "Statistiques des cartes de flux",
+            "description": "Voici les statistiques d'utilisation des cartes de flux individuelles."
         }
     },
     "color": {

@@ -1,5 +1,6 @@
 import type Homey from 'homey/lib/Homey';
 import type ManagerDashboards from 'homey/manager/dashboards';
+import type { Language } from '../types';
 import type Api from './api';
 import type Brain from './brain';
 import type Cycles from './cycles';
@@ -29,8 +30,8 @@ export default class BrainAware {
         return this.homey.settings;
     }
 
-    get language(): string {
-        return this.homey.i18n.getLanguage();
+    get language(): Language {
+        return this.homey.i18n.getLanguage() as Language;
     }
 
     get api(): Api {

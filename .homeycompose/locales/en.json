@@ -75,6 +75,20 @@
             "title": "Modes",
             "description": "Only one mode can be active at a time. Create and manage modes using mode actions, conditions, and triggers in your flows.",
             "empty": "No modes have been created yet."
+        },
+        "statistics": {
+            "title": "Statistics",
+            "description": "These are feature statistics for FlowBits. They are based on your flows.",
+            "cycles": "Cycles",
+            "flags": "Flags",
+            "modes": "Modes",
+            "no_repeats": "No-repeat windows",
+            "sliders": "Sliders",
+            "timers": "Timers"
+        },
+        "card_statistics": {
+            "title": "Flow card statistics",
+            "description": "These are usage statistics for individual flow cards."
         }
     },
     "color": {

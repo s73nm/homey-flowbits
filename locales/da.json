@@ -51,6 +51,20 @@
       "title": "Tilstande",
       "description": "Kun én tilstand kan være aktiv ad gangen. Opret og administrér tilstande via handlinger, betingelser og triggere i dine flows.",
       "empty": "Der er endnu ikke oprettet nogen tilstande."
+    },
+    "statistics": {
+      "title": "Statistik",
+      "description": "Dette er funktionsstatistik for FlowBits. De er baseret på dine flows.",
+      "cycles": "Cyklusser",
+      "flags": "Flag",
+      "modes": "Tilstande",
+      "no_repeats": "Ingen-gentagelsesvinduer",
+      "sliders": "Skydeknapper",
+      "timers": "Timere"
+    },
+    "card_statistics": {
+      "title": "Flowkortstatistik",
+      "description": "Dette er brugsstatistik for individuelle flowkort."
     }
   },
   "color": {

@@ -51,6 +51,20 @@
       "title": "Tryby",
       "description": "Tylko jeden tryb może być aktywny w danym momencie. Twórz i zarządzaj trybami za pomocą akcji, warunków i wyzwalaczy.",
       "empty": "Nie utworzono jeszcze żadnych trybów."
+    },
+    "statistics": {
+      "title": "Statystyki",
+      "description": "To są statystyki funkcji FlowBits, oparte na twoich przepływach.",
+      "cycles": "Cyklе",
+      "flags": "Flagi",
+      "modes": "Tryby",
+      "no_repeats": "Okna bez powtórzeń",
+      "sliders": "Suwaki",
+      "timers": "Timery"
+    },
+    "card_statistics": {
+      "title": "Statystyki kart przepływów",
+      "description": "To są statystyki użycia dla poszczególnych kart przepływów."
     }
   },
   "color": {

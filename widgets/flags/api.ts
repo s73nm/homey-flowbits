@@ -1,25 +1,14 @@
-import type Homey from 'homey';
-import type App from '../../src/index';
+import type { WidgetApiRequest } from '../../src/types';
 
-export async function list({homey}: WidgetRequest): Promise<Flag[]> {
+export async function list({homey}: WidgetApiRequest): Promise<Flag[]> {
     return await homey.app.widgets.getFlags();
 }
 
-export async function toggle({homey, body}: WidgetRequest): Promise<boolean> {
+export async function toggle({homey, body}: WidgetApiRequest): Promise<boolean> {
     return await homey.app.widgets.toggleFlag(body.flag);
 }
 
 type Flag = {
     readonly active: boolean;
     readonly name: string;
-};
-
-type WidgetRequest = {
-    readonly homey: typeof Homey & {
-        readonly app: App;
-    };
-    readonly body: any;
-    readonly params: Record<string, unknown>;
-    readonly query: Record<string, string>;
-    readonly widgetInstanceId: string;
 };

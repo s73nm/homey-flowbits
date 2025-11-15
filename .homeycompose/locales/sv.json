@@ -75,6 +75,20 @@
             "title": "Lägen",
             "description": "Endast ett läge kan vara aktivt åt gången. Skapa och hantera lägen i dina flöden.",
             "empty": "Inga lägen har skapats ännu."
+        },
+        "statistics": {
+            "title": "Statistik",
+            "description": "Detta är funktionsstatistik för FlowBits. De baseras på dina flöden.",
+            "cycles": "Cykl­er",
+            "flags": "Flaggor",
+            "modes": "Lägen",
+            "no_repeats": "Inga-upprepningsfönster",
+            "sliders": "Reglage",
+            "timers": "Timers"
+        },
+        "card_statistics": {
+            "title": "Flödeskortsstatistik",
+            "description": "Detta är användningsstatistik för individuella flödeskort."
         }
     },
     "color": {

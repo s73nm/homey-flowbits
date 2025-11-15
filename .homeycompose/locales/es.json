@@ -75,6 +75,20 @@
             "title": "Modos",
             "description": "Solo un modo puede estar activo a la vez. Crea y gestiona modos mediante acciones, condiciones y disparadores en tus flujos.",
             "empty": "Aún no se han creado modos."
+        },
+        "statistics": {
+            "title": "Estadísticas",
+            "description": "Estas son estadísticas de funciones de FlowBits. Se basan en tus flujos.",
+            "cycles": "Ciclos",
+            "flags": "Banderas",
+            "modes": "Modos",
+            "no_repeats": "Ventanas sin repetición",
+            "sliders": "Deslizadores",
+            "timers": "Temporizadores"
+        },
+        "card_statistics": {
+            "title": "Estadísticas de tarjetas de flujo",
+            "description": "Estas son estadísticas de uso de tarjetas de flujo individuales."
         }
     },
     "color": {

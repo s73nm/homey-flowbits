@@ -1,6 +1,8 @@
-import type { Look } from '../types';
+import type { Flag, Look, Mode } from '../types';
+import { getBuiltinLook } from '../util';
 import BrainAware from './aware';
 
+import * as AutocompleteProviders from '../flow/autocomplete';
 import * as Triggers from '../flow/trigger';
 
 export default class extends BrainAware {
@@ -20,54 +22,98 @@ export default class extends BrainAware {
         this.settings.set('flowbits-flag-looks', value);
     }
 
-    async activate(flag: string): Promise<void> {
+    async activate(name: string): Promise<void> {
         const current = this.currentFlags;
 
-        if (current.includes(flag)) {
+        if (current.includes(name)) {
             return;
         }
 
-        this.currentFlags = [...current, flag];
+        this.currentFlags = [...current, name];
 
         await Promise.allSettled([
             this.#triggerRealtime(),
-            this.#triggerActivated(flag),
-            this.#triggerChanged(flag, true)
+            this.#triggerActivated(name),
+            this.#triggerChanged(name, true)
         ]);
     }
 
-    async deactivate(flag: string): Promise<void> {
+    async deactivate(name: string): Promise<void> {
         const current = this.currentFlags;
 
-        if (!current.includes(flag)) {
+        if (!current.includes(name)) {
             return;
         }
 
-        this.currentFlags = current.filter(f => f !== flag);
+        this.currentFlags = current.filter(f => f !== name);
 
         await Promise.allSettled([
             this.#triggerRealtime(),
-            this.#triggerDeactivated(flag),
-            this.#triggerChanged(flag, false)
+            this.#triggerDeactivated(name),
+            this.#triggerChanged(name, false)
         ]);
     }
 
-    async toggle(flag: string): Promise<void> {
-        if (this.currentFlags.includes(flag)) {
-            await this.deactivate(flag);
+    async toggle(name: string): Promise<void> {
+        if (this.currentFlags.includes(name)) {
+            await this.deactivate(name);
         } else {
-            await this.activate(flag);
+            await this.activate(name);
         }
     }
 
-    async getLook(flag: string): Promise<Look | null> {
-        return this.looks[flag] ?? null;
+    async find(name: string): Promise<Flag | null> {
+        const flags = await this.getFlags();
+        const flag = flags.find(flag => flag.name === name);
+
+        return flag ?? null;
     }
 
-    async setLook(flag: string, look: Look): Promise<void> {
+    async getCount(): Promise<number> {
+        const flags = await this.getFlags();
+
+        return flags.length;
+    }
+
+    async getFlags(): Promise<Flag[]> {
+        const provider = this.#autocompleteProvider();
+        const current = this.flags.currentFlags;
+        const flags = await provider.find('');
+
+        if (flags.length === 0) {
+            return [];
+        }
+
+        const prefix = this.translate('widget.current_mode.prefix');
+        const suffix = this.translate('widget.current_mode.suffix');
+        const results: Mode[] = [];
+
+        for (const flag of flags) {
+            let look = await this.flags.getLook(flag.name);
+
+            if (!look) {
+                look = await getBuiltinLook(flag.name, this.language, prefix, suffix);
+            }
+
+            results.push({
+                active: current.includes(flag.name),
+                color: look?.[0],
+                icon: look?.[1],
+                name: flag.name
+            });
+        }
+
+        return results;
+    }
+
+    async getLook(name: string): Promise<Look | null> {
+        return this.looks[name] ?? null;
+    }
+
+    async setLook(name: string, look: Look): Promise<void> {
         this.looks = {
             ...this.looks,
-            [flag]: look
+            [name]: look
         };
 
         await this.#triggerRealtime();
@@ -97,5 +143,15 @@ export default class extends BrainAware {
 
     async #triggerRealtime(): Promise<void> {
         this.realtime('flowbits-flags-update');
+    }
+
+    #autocompleteProvider(): AutocompleteProviders.Flag {
+        const provider = this.registry.findAutocompleteProvider(AutocompleteProviders.Flag);
+
+        if (!provider) {
+            throw new Error('Failed to get the flag autocomplete provider.');
+        }
+
+        return provider;
     }
 }

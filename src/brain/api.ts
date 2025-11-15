@@ -1,15 +1,11 @@
-import type { Color, Flag, Icon, Look, Mode } from '../types';
+import type { Color, Flag, Icon, Mode, Statistics } from '../types';
 import BrainAware from './aware';
 
-import * as AutocompleteProviders from '../flow/autocomplete';
-
 import knownIcons from '../../assets/app/icons.json';
-import knownModes from '../../assets/app/modes.json';
 
 export default class extends BrainAware {
     async activateFlag(flagName: string): Promise<boolean> {
-        const flags = await this.getFlags();
-        const flag = flags.find(m => m.name === flagName);
+        const flag = await this.flags.find(flagName);
 
         if (!flag || flag.active) {
             return false;
@@ -21,8 +17,7 @@ export default class extends BrainAware {
     }
 
     async deactivateFlag(flagName: string): Promise<boolean> {
-        const flags = await this.getFlags();
-        const flag = flags.find(m => m.name === flagName);
+        const flag = await this.flags.find(flagName);
 
         if (!flag || !flag.active) {
             return false;
@@ -33,52 +28,40 @@ export default class extends BrainAware {
         return true;
     }
 
-    async getFlags(): Promise<Flag[]> {
-        const provider = this.#flagAutocompleteProvider();
-        const current = this.flags.currentFlags;
-        const flags = await provider.find('');
+    async toggleFlag(flagName: string): Promise<boolean> {
+        const flag = await this.flags.find(flagName);
 
-        if (flags.length === 0) {
-            return [];
-        }
-
-        const prefix = this.translate('widget.current_mode.prefix');
-        const suffix = this.translate('widget.current_mode.suffix');
-        const results: Mode[] = [];
-
-        for (const flag of flags) {
-            let look = await this.flags.getLook(flag.name);
-
-            if (!look) {
-                look = await this.getBuiltinLook(flag.name, prefix, suffix);
-            }
-
-            results.push({
-                active: current.includes(flag.name),
-                color: look?.[0],
-                icon: look?.[1],
-                name: flag.name
-            });
-        }
-
-        return results;
-    }
-
-    async setFlagLook(flagName: string, color: string, icon: string): Promise<boolean> {
-        const flags = await this.getFlags();
-
-        if (!flags.find(f => f.name === flagName)) {
+        if (!flag) {
             return false;
         }
 
-        await this.flags.setLook(flagName, [color, icon]);
+        if (flag.active) {
+            await this.flags.deactivate(flag.name);
+        } else {
+            await this.flags.activate(flag.name);
+        }
+
+        return true;
+    }
+
+    async getFlags(): Promise<Flag[]> {
+        return await this.flags.getFlags();
+    }
+
+    async setFlagLook(flagName: string, color: string, icon: string): Promise<boolean> {
+        const flag = await this.flags.find(flagName);
+
+        if (!flag) {
+            return false;
+        }
+
+        await this.flags.setLook(flag.name, [color, icon]);
 
         return true;
     }
 
     async activateMode(modeName: string): Promise<boolean> {
-        const modes = await this.getModes();
-        const mode = modes.find(m => m.name === modeName);
+        const mode = await this.modes.find(modeName);
 
         if (!mode || mode.active) {
             return false;
@@ -90,8 +73,7 @@ export default class extends BrainAware {
     }
 
     async deactivateMode(modeName: string): Promise<boolean> {
-        const modes = await this.getModes();
-        const mode = modes.find(m => m.name === modeName);
+        const mode = await this.modes.find(modeName);
 
         if (!mode || !mode.active) {
             return false;
@@ -102,45 +84,38 @@ export default class extends BrainAware {
         return true;
     }
 
-    async getModes(): Promise<Mode[]> {
-        const provider = this.#modeAutocompleteProvider();
-        const current = this.modes.currentMode;
-        const modes = await provider.find('');
+    async toggleMode(modeName: string): Promise<boolean> {
+        const mode = await this.modes.find(modeName);
 
-        if (modes.length === 0) {
-            return [];
-        }
-
-        const prefix = this.translate('widget.current_mode.prefix');
-        const suffix = this.translate('widget.current_mode.suffix');
-        const results: Mode[] = [];
-
-        for (const mode of modes) {
-            let look = await this.modes.getLook(mode.name);
-
-            if (!look) {
-                look = await this.getBuiltinLook(mode.name, prefix, suffix);
-            }
-
-            results.push({
-                active: current === mode.name,
-                color: look?.[0],
-                icon: look?.[1],
-                name: mode.name
-            });
-        }
-
-        return results;
-    }
-
-    async setModeLook(modeName: string, color: string, icon: string): Promise<boolean> {
-        const modes = await this.getModes();
-
-        if (!modes.find(m => m.name === modeName)) {
+        if (!mode) {
             return false;
         }
 
-        await this.modes.setLook(modeName, [color, icon]);
+        if (mode.active) {
+            await this.modes.deactivate(mode.name);
+        } else {
+            await this.modes.activate(mode.name);
+        }
+
+        return true;
+    }
+
+    async getCurrentMode(): Promise<string | null> {
+        return this.modes.currentMode;
+    }
+
+    async getModes(): Promise<Mode[]> {
+        return await this.modes.getModes();
+    }
+
+    async setModeLook(modeName: string, color: string, icon: string): Promise<boolean> {
+        const mode = await this.modes.find(modeName);
+
+        if (!mode) {
+            return false;
+        }
+
+        await this.modes.setLook(mode.name, [color, icon]);
 
         return true;
     }
@@ -175,41 +150,47 @@ export default class extends BrainAware {
         }));
     }
 
-    async getBuiltinLook(name: string, prefix: string, suffix: string): Promise<Look | null> {
-        let normalized = name.toLowerCase();
-        normalized = normalized.startsWith(prefix) ? normalized.substring(prefix.length) : normalized;
-        normalized = normalized.endsWith(suffix) ? normalized.substring(0, normalized.length - suffix.length) : normalized;
+    async getStatistics(): Promise<Statistics> {
+        const flags = await this.flags.getFlags();
+        const modes = await this.modes.getModes();
 
-        const candidate = knownModes.find(item => (item as any)[this.language].includes(normalized));
+        return {
+            currentFlags: flags.filter(flag => flag.active).map(flag => flag.name),
+            currentMode: modes.find(mode => mode.active)?.name ?? null,
 
-        if (candidate) {
-            const icon = knownIcons.find(icon => icon[0] === candidate.icon);
+            numberOfCycles: await this.cycles.getCount(),
+            numberOfFlags: await this.flags.getCount(),
+            numberOfModes: await this.modes.getCount(),
+            numberOfNoRepeats: await this.noRepeat.getCount(),
+            numberOfSliders: await this.sliders.getCount(),
+            numberOfTimers: await this.timers.getCount(),
 
-            if (icon) {
-                return [candidate.color, icon[2]];
-            }
-        }
-
-        return null;
+            runsPerFlowCard: {},
+            usagePerFlowCard: await this.#getStatisticsUsagePerFlowCard()
+        };
     }
 
-    #flagAutocompleteProvider(): AutocompleteProviders.Flag {
-        const provider = this.registry.findAutocompleteProvider(AutocompleteProviders.Flag);
+    async #getStatisticsUsagePerFlowCard(): Promise<Record<string, [string, number]>> {
+        const result: Record<string, [string, number]> = {};
 
-        if (!provider) {
-            throw new Error('Failed to get the flag autocomplete provider.');
+        for (const action of this.registry.actions) {
+            const values = await action.card.getArgumentValues();
+            result[action.id] = [action.card.manifest.titleFormatted[this.language], values.length];
         }
 
-        return provider;
-    }
-
-    #modeAutocompleteProvider(): AutocompleteProviders.Mode {
-        const provider = this.registry.findAutocompleteProvider(AutocompleteProviders.Mode);
-
-        if (!provider) {
-            throw new Error('Failed to get the mode autocomplete provider.');
+        for (const condition of this.registry.conditions) {
+            const values = await condition.card.getArgumentValues();
+            result[condition.id] = [condition.card.manifest.titleFormatted[this.language], values.length];
         }
 
-        return provider;
+        for (const trigger of this.registry.triggers) {
+            const values = await trigger.card.getArgumentValues();
+            result[trigger.id] = [trigger.card.manifest.titleFormatted[this.language], values.length];
+        }
+
+        return Object.fromEntries(
+            Object.entries(result)
+                .sort(([a], [b]) => a.localeCompare(b))
+        );
     }
 }

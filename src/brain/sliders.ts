@@ -11,6 +11,10 @@ export default class extends BrainAware {
         this.settings.set('flowbits-sliders', value);
     }
 
+    async getCount(): Promise<number> {
+        return Object.keys(this.values).length;
+    }
+
     async getValue(name: string): Promise<number | null> {
         return this.values[name] ?? null;
     }

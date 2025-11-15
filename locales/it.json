@@ -51,6 +51,20 @@
       "title": "Modalità",
       "description": "Solo una modalità può essere attiva alla volta. Crea e gestisci le modalità tramite azioni, condizioni e trigger nei tuoi flow.",
       "empty": "Nessuna modalità è stata ancora creata."
+    },
+    "statistics": {
+      "title": "Statistiche",
+      "description": "Queste sono statistiche delle funzionalità di FlowBits. Si basano sui tuoi flow.",
+      "cycles": "Cicli",
+      "flags": "Flag",
+      "modes": "Modalità",
+      "no_repeats": "Finestre senza ripetizione",
+      "sliders": "Slider",
+      "timers": "Timer"
+    },
+    "card_statistics": {
+      "title": "Statistiche delle schede flow",
+      "description": "Queste sono statistiche di utilizzo per le singole schede flow."
     }
   },
   "color": {

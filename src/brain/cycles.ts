@@ -30,6 +30,13 @@ export default class extends BrainAware {
         ]);
     }
 
+    async getCount(): Promise<number> {
+        return this.settings
+            .getKeys()
+            .filter(setting => setting.startsWith('flowbits-cycle:'))
+            .length;
+    }
+
     async getValue(name: string): Promise<number | null> {
         return this.#get(name);
     }
