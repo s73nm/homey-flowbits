@@ -1,4 +1,4 @@
-import { flush, logger, metrics } from '@sentry/node';
+import { flush, logger, metrics } from '@sentry/browser';
 import BrainAware from './aware';
 
 export default class extends BrainAware {
