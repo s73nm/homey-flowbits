@@ -8,6 +8,8 @@ import * as AutocompleteProviders from './flow/autocomplete';
 import * as Conditions from './flow/condition';
 import * as Triggers from './flow/trigger';
 
+import './instrument';
+
 export default class FlowBitsApp extends Homey.App {
     get api(): Api {
         return this.#brain.api;
@@ -39,6 +41,7 @@ export default class FlowBitsApp extends Homey.App {
             await this.#brain.timers.initialize();
             await this.#brain.tokens.initialize();
             await this.#brain.widgets.initialize();
+            await this.#brain.metric.initialize();
 
             this.log('FlowBits has been initialized!');
         } catch (err) {

@@ -9,6 +9,7 @@ import Sliders from './sliders';
 import Timers from './timers';
 import Tokens from './tokens';
 import Widgets from './widgets';
+import Metric from './metric';
 
 export default class {
     get homey(): Homey {
@@ -55,6 +56,10 @@ export default class {
         return this.#widgets;
     }
 
+    get metric(): Metric {
+        return this.#metric;
+    }
+
     readonly #homey: Homey;
     readonly #api: Api;
     readonly #cycles: Cycles;
@@ -66,6 +71,7 @@ export default class {
     readonly #timers: Timers;
     readonly #tokens: Tokens;
     readonly #widgets: Widgets;
+    readonly #metric: Metric;
 
     constructor(homey: Homey) {
         this.#homey = homey;
@@ -79,5 +85,6 @@ export default class {
         this.#timers = new Timers(this);
         this.#tokens = new Tokens(this);
         this.#widgets = new Widgets(this);
+        this.#metric = new Metric(this);
     }
 }
