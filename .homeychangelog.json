@@ -112,5 +112,8 @@
   },
   "1.6.3": {
     "en": "This update adds the ability to customize icons and colors for flags and modes. You may customize these from app settings."
+  },
+  "1.6.4": {
+    "en": "No significant changes, just some internal refactorings."
   }
 }
