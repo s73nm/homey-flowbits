@@ -1,14 +1,15 @@
+import { REALTIME_SLIDER_UPDATE, SETTING_SLIDERS } from '../const';
 import BrainAware from './aware';
 
 import * as Triggers from '../flow/trigger';
 
 export default class extends BrainAware {
     get values(): Record<string, number> {
-        return this.settings.get('flowbits-sliders') ?? {};
+        return this.settings.get(SETTING_SLIDERS) ?? {};
     }
 
     set values(value: Record<string, number>) {
-        this.settings.set('flowbits-sliders', value);
+        this.settings.set(SETTING_SLIDERS, value);
     }
 
     async getCount(): Promise<number> {
@@ -36,6 +37,6 @@ export default class extends BrainAware {
     }
 
     async #triggerRealtime(slider: string, value: number, widgetId?: string): Promise<void> {
-        this.realtime('flowbits-slider-update', {slider, value, widgetId});
+        this.realtime(REALTIME_SLIDER_UPDATE, {slider, value, widgetId});
     }
 }

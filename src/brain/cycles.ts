@@ -1,3 +1,4 @@
+import { SETTING_CYCLE_PREFIX } from '../const';
 import { slugify } from '../util';
 import BrainAware from './aware';
 
@@ -33,7 +34,7 @@ export default class extends BrainAware {
     async getCount(): Promise<number> {
         return this.settings
             .getKeys()
-            .filter(setting => setting.startsWith('flowbits-cycle:'))
+            .filter(setting => setting.startsWith(SETTING_CYCLE_PREFIX))
             .length;
     }
 
@@ -42,7 +43,7 @@ export default class extends BrainAware {
     }
 
     #id(name: string): string {
-        return `flowbits-cycle:${slugify(name)}`;
+        return `${SETTING_CYCLE_PREFIX}${slugify(name)}`;
     }
 
     #get(name: string): number | null {

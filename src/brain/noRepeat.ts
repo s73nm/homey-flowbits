@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon';
+import { SETTING_NO_REPEAT_WINDOWS } from '../const';
 import type { ClockUnit } from '../types';
 import { convertDurationToSeconds } from '../util';
 import BrainAware from './aware';
@@ -6,7 +7,7 @@ import BrainAware from './aware';
 export default class extends BrainAware {
     get windows(): Record<string, DateTime> {
         return Object.fromEntries(
-            Object.entries<string>(this.settings.get('flowbits-no-repeat-windows') ?? {})
+            Object.entries<string>(this.settings.get(SETTING_NO_REPEAT_WINDOWS) ?? {})
                 .filter(([, value]) => value !== null)
                 .map(([key, value]) => [key, DateTime.fromISO(value)])
         );
@@ -14,7 +15,7 @@ export default class extends BrainAware {
 
     set windows(value: Record<string, DateTime>) {
         this.settings.set(
-            'flowbits-no-repeat-windows',
+            SETTING_NO_REPEAT_WINDOWS,
             Object.fromEntries(
                 Object.entries(value)
                     .filter(([, value]) => value !== null)

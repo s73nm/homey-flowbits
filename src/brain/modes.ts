@@ -1,3 +1,4 @@
+import { REALTIME_MODE_UPDATE, SETTING_MODE, SETTING_MODE_LOOKS } from '../const';
 import type { Flag, Look, Mode } from '../types';
 import { getBuiltinLook } from '../util';
 import BrainAware from './aware';
@@ -7,19 +8,19 @@ import * as Triggers from '../flow/trigger';
 
 export default class extends BrainAware {
     get currentMode(): string | null {
-        return this.settings.get('flowbits-mode');
+        return this.settings.get(SETTING_MODE);
     }
 
     set currentMode(value: string | null) {
-        this.settings.set('flowbits-mode', value);
+        this.settings.set(SETTING_MODE, value);
     }
 
     get looks(): Record<string, Look> {
-        return this.settings.get('flowbits-mode-looks') ?? {};
+        return this.settings.get(SETTING_MODE_LOOKS) ?? {};
     }
 
     set looks(value: Record<string, Look>) {
-        this.settings.set('flowbits-mode-looks', value);
+        this.settings.set(SETTING_MODE_LOOKS, value);
     }
 
     async activate(name: string): Promise<void> {
@@ -160,7 +161,7 @@ export default class extends BrainAware {
     }
 
     async #triggerRealtime(): Promise<void> {
-        this.realtime('flowbits-mode-update');
+        this.realtime(REALTIME_MODE_UPDATE);
     }
 
     #autocompleteProvider(): AutocompleteProviders.Mode {

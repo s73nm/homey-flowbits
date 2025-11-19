@@ -1,4 +1,5 @@
 import { DateTime } from 'luxon';
+import { SETTING_TIMER_PREFIX } from '../const';
 import type { ClockState, ClockUnit } from '../types';
 import { convertDurationToSeconds, slugify } from '../util';
 import BrainAware from './aware';
@@ -114,7 +115,7 @@ export default class extends BrainAware {
     }
 
     #id(name: string): string {
-        return `flowbits-timer:${slugify(name)}`;
+        return `${SETTING_TIMER_PREFIX}${slugify(name)}`;
     }
 
     async #clear(timer: Timer): Promise<void> {
@@ -146,7 +147,7 @@ export default class extends BrainAware {
         const checkKeys: (keyof Timer)[] = ['name', 'duration', 'remaining', 'target', 'status'];
 
         for (const setting of allSettings) {
-            if (!setting.startsWith('flowbits-timer:')) {
+            if (!setting.startsWith(SETTING_TIMER_PREFIX)) {
                 continue;
             }
 
