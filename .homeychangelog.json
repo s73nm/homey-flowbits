@@ -115,5 +115,8 @@
   },
   "1.6.4": {
     "en": "No significant changes, just some internal refactorings."
+  },
+  "1.6.5": {
+    "en": "Fixed a bug where non-standard languages could not properly initialize."
   }
 }
