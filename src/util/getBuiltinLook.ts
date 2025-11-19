@@ -8,7 +8,7 @@ export default async function (name: string, language: Language, prefix: string,
     normalized = normalized.startsWith(prefix) ? normalized.substring(prefix.length) : normalized;
     normalized = normalized.endsWith(suffix) ? normalized.substring(0, normalized.length - suffix.length) : normalized;
 
-    const candidate = knownModes.find(item => item[language].includes(normalized));
+    const candidate = knownModes.find(item => (item[language] ?? item.en).includes(normalized));
 
     if (candidate) {
         const icon = knownIcons.find(icon => icon[0] === candidate.icon);
