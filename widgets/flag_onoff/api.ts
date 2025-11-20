@@ -1,7 +1,7 @@
 import type { WidgetApiRequest } from '../../src/types';
 
 export async function state({homey, query}: WidgetApiRequest): Promise<Result> {
-    const flags = await homey.app.widgets.getFlags();
+    const flags = await homey.app.api.getFlags();
     const flag = flags.find(flag => flag.name === query.flag);
 
     return {
@@ -12,7 +12,7 @@ export async function state({homey, query}: WidgetApiRequest): Promise<Result> {
 }
 
 export async function toggle({homey, body}: WidgetApiRequest): Promise<boolean> {
-    return await homey.app.widgets.toggleFlag(body.flag);
+    return await homey.app.api.toggleFlag(body.flag);
 }
 
 type Result = {

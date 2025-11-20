@@ -25,11 +25,11 @@ export async function toggleMode({homey, body}: ApiRequest): Promise<boolean> {
 }
 
 export async function getFlags({homey}: ApiRequest): Promise<Flag[]> {
-    return await homey.app.widgets.getFlags();
+    return await homey.app.api.getFlags();
 }
 
 export async function getModes({homey}: ApiRequest): Promise<Mode[]> {
-    return await homey.app.widgets.getModes();
+    return await homey.app.api.getModes();
 }
 
 export async function getColors({homey}: ApiRequest): Promise<Color[]> {

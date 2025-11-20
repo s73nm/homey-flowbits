@@ -1,4 +1,3 @@
-import type { Flag, Mode } from '../types';
 import { searchIcons } from '../util';
 import BrainAware from './aware';
 
@@ -8,26 +7,6 @@ export default class extends BrainAware {
     async initialize(): Promise<void> {
         await this.#initializeFlagOnOff();
         await this.#initializeSlider();
-    }
-
-    async getFlags(): Promise<Flag[]> {
-        return await this.api.getFlags();
-    }
-
-    async toggleFlag(flagName: string): Promise<boolean> {
-        return await this.api.toggleFlag(flagName);
-    }
-
-    async getCurrentMode(): Promise<string | null> {
-        return await this.api.getCurrentMode();
-    }
-
-    async getModes(): Promise<Mode[]> {
-        return await this.api.getModes();
-    }
-
-    async toggleMode(modeName: string): Promise<boolean> {
-        return await this.api.toggleMode(modeName);
     }
 
     async getSliderValue(sliderName: string): Promise<number | null> {
@@ -42,7 +21,7 @@ export default class extends BrainAware {
         const widget = this.dashboards.getWidget('flag_onoff');
 
         widget.registerSettingAutocompleteListener('flag', async () => {
-            const flags = await this.getFlags();
+            const flags = await this.api.getFlags();
 
             return flags.map(flag => ({
                 name: flag.name

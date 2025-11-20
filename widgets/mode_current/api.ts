@@ -1,8 +1,8 @@
 import type { WidgetApiRequest } from '../../src/types';
 
 export async function get({homey}: WidgetApiRequest): Promise<Result | null> {
-    const modes = await homey.app.widgets.getModes();
-    const mode = await homey.app.widgets.getCurrentMode();
+    const modes = await homey.app.api.getModes();
+    const mode = await homey.app.api.getCurrentMode();
     const modeWithLook = modes.find(m => m.name === mode);
 
     if (!modeWithLook) {
