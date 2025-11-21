@@ -118,5 +118,8 @@
   },
   "1.6.5": {
     "en": "Fixed a bug where non-standard languages could not properly initialize."
+  },
+  "1.6.6": {
+    "en": "Simplified code a bit."
   }
 }
