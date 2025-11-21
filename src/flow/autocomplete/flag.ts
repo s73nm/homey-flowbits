@@ -1,9 +1,9 @@
+import { autocomplete, FlowAutocompleteProvider } from '@basmilius/homey-common';
 import type { FlowCard } from 'homey';
-import { BaseAutocompleteProvider } from '../base';
-import { autocomplete } from '../decorator';
+import type { FlowBitsApp } from '../../types';
 
 @autocomplete('flag')
-export default class extends BaseAutocompleteProvider {
+export default class extends FlowAutocompleteProvider<FlowBitsApp> {
     #values: string[] = [];
 
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
@@ -29,12 +29,12 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.getActionCard('flag_activate').getArgumentValues(),
-                await this.getActionCard('flag_deactivate').getArgumentValues(),
-                await this.getConditionCard('flag_is').getArgumentValues(),
-                await this.getTriggerCard('flag_activated').getArgumentValues(),
-                await this.getTriggerCard('flag_changed').getArgumentValues(),
-                await this.getTriggerCard('flag_deactivated').getArgumentValues()
+                await this.flow.getActionCard('flag_activate').getArgumentValues(),
+                await this.flow.getActionCard('flag_deactivate').getArgumentValues(),
+                await this.flow.getConditionCard('flag_is').getArgumentValues(),
+                await this.flow.getTriggerCard('flag_activated').getArgumentValues(),
+                await this.flow.getTriggerCard('flag_changed').getArgumentValues(),
+                await this.flow.getTriggerCard('flag_deactivated').getArgumentValues()
             ])
             .then(allValues => allValues
                 .filter(values => values.status === 'fulfilled')

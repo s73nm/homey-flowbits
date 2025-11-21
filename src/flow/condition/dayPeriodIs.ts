@@ -1,10 +1,10 @@
+import { condition, FlowConditionEntity } from '@basmilius/homey-common';
 import { DateTime } from 'luxon';
+import type { FlowBitsApp } from '../../types';
 import { type DayPeriod, getDayPeriod } from '../../util';
-import { BaseCondition } from '../base';
-import { condition } from '../decorator';
 
 @condition('day_period_is')
-export default class extends BaseCondition<Args, never> {
+export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {
     async onRun(args: Args): Promise<boolean> {
         const now = DateTime.now();
         const dayPeriod = getDayPeriod(now);

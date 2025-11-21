@@ -1,9 +1,9 @@
+import { autocomplete, FlowAutocompleteProvider } from '@basmilius/homey-common';
 import type { FlowCard } from 'homey';
-import { BaseAutocompleteProvider } from '../base';
-import { autocomplete } from '../decorator';
+import type { FlowBitsApp } from '../../types';
 
 @autocomplete('cycle')
-export default class extends BaseAutocompleteProvider {
+export default class extends FlowAutocompleteProvider<FlowBitsApp> {
     #values: string[] = [];
 
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
@@ -29,12 +29,12 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.getActionCard('cycle').getArgumentValues(),
-                await this.getActionCard('cycle_between').getArgumentValues(),
-                await this.getActionCard('cycle_to').getArgumentValues(),
-                await this.getConditionCard('cycle_has_value').getArgumentValues(),
-                await this.getTriggerCard('cycle_becomes').getArgumentValues(),
-                await this.getTriggerCard('cycle_updates').getArgumentValues()
+                await this.flow.getActionCard('cycle').getArgumentValues(),
+                await this.flow.getActionCard('cycle_between').getArgumentValues(),
+                await this.flow.getActionCard('cycle_to').getArgumentValues(),
+                await this.flow.getConditionCard('cycle_has_value').getArgumentValues(),
+                await this.flow.getTriggerCard('cycle_becomes').getArgumentValues(),
+                await this.flow.getTriggerCard('cycle_updates').getArgumentValues()
             ])
             .then(allValues => allValues
                 .filter(values => values.status === 'fulfilled')

@@ -5,6 +5,7 @@
         "build": "tsc"
     },
     "dependencies": {
+        "@basmilius/homey-common": "^1.0.0",
         "@sentry/browser": "^10.25.0",
         "luxon": "^3.7.2"
     },

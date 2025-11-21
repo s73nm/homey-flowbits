@@ -1,27 +1,28 @@
+import { Shortcuts } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../types';
 import { searchIcons } from '../util';
-import BrainAware from './aware';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     async initialize(): Promise<void> {
         await this.#initializeFlagOnOff();
         await this.#initializeSlider();
     }
 
     async getSliderValue(sliderName: string): Promise<number | null> {
-        return await this.sliders.getValue(sliderName);
+        return await this.app.sliders.getValue(sliderName);
     }
 
     async setSliderValue(sliderName: string, value: number, widgetId?: string): Promise<void> {
-        await this.sliders.setValue(sliderName, value, widgetId);
+        await this.app.sliders.setValue(sliderName, value, widgetId);
     }
 
     async #initializeFlagOnOff(): Promise<void> {
         const widget = this.dashboards.getWidget('flag_onoff');
 
         widget.registerSettingAutocompleteListener('flag', async () => {
-            const flags = await this.api.getFlags();
+            const flags = await this.app.api.getFlags();
 
             return flags.map(flag => ({
                 name: flag.name

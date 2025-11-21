@@ -1,10 +1,10 @@
-import { BaseAction } from '../base';
-import { action } from '../decorator';
+import { action, FlowActionEntity } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @action('no_repeat_clear')
-export default class extends BaseAction<Args, never> {
+export default class extends FlowActionEntity<FlowBitsApp, Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('window', AutocompleteProviders.NoRepeat);
 
@@ -12,7 +12,7 @@ export default class extends BaseAction<Args, never> {
     }
 
     async onRun(args: Args): Promise<void> {
-        await this.noRepeat.clear(args.window.name);
+        await this.app.noRepeat.clear(args.window.name);
     }
 }
 

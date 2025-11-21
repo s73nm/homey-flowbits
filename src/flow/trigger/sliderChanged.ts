@@ -1,10 +1,10 @@
-import { BaseTrigger } from '../base';
-import { trigger } from '../decorator';
+import { FlowTriggerEntity, trigger } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @trigger('slider_changed')
-export default class extends BaseTrigger<Args, State> {
+export default class extends FlowTriggerEntity<FlowBitsApp, Args, State> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('slider', AutocompleteProviders.Slider);
 

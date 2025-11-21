@@ -1,10 +1,10 @@
-import { BaseCondition } from '../base';
-import { condition } from '../decorator';
+import { condition, FlowConditionEntity } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @condition('mode_is')
-export default class extends BaseCondition<Args, never> {
+export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', AutocompleteProviders.Mode);
 
@@ -12,11 +12,11 @@ export default class extends BaseCondition<Args, never> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        return this.modes.currentMode === args.name.name;
+        return this.app.modes.currentMode === args.name.name;
     }
 
     async onUpdate(): Promise<void> {
-        await this.modes.update();
+        await this.app.modes.update();
     }
 }
 

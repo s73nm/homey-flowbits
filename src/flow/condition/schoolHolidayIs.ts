@@ -1,12 +1,12 @@
+import { condition, FlowConditionEntity } from '@basmilius/homey-common';
 import { DateTime } from 'luxon';
-import { BaseCondition } from '../base';
-import { condition } from '../decorator';
+import type { FlowBitsApp } from '../../types';
 import schoolHolidays from '../../data/schoolHolidays';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @condition('school_holiday_is')
-export default class extends BaseCondition<Args, never> {
+export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('holiday', AutocompleteProviders.SchoolVacation);
 

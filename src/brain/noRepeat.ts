@@ -1,10 +1,10 @@
+import { Shortcuts } from '@basmilius/homey-common';
 import { DateTime } from 'luxon';
 import { SETTING_NO_REPEAT_WINDOWS } from '../const';
-import type { ClockUnit } from '../types';
+import type { ClockUnit, FlowBitsApp } from '../types';
 import { convertDurationToSeconds } from '../util';
-import BrainAware from './aware';
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     get windows(): Record<string, DateTime> {
         return Object.fromEntries(
             Object.entries<string>(this.settings.get(SETTING_NO_REPEAT_WINDOWS) ?? {})

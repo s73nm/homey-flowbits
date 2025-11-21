@@ -1,12 +1,12 @@
+import { Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_FLAGS_UPDATE, SETTING_FLAG_LOOKS, SETTING_FLAGS } from '../const';
-import type { Flag, Look, Mode } from '../types';
+import type { Flag, FlowBitsApp, Look, Mode } from '../types';
 import { getBuiltinLook } from '../util';
-import BrainAware from './aware';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 import * as Triggers from '../flow/trigger';
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     get currentFlags(): string[] {
         return this.settings.get(SETTING_FLAGS) ?? [];
     }
@@ -78,7 +78,7 @@ export default class extends BrainAware {
 
     async getFlags(): Promise<Flag[]> {
         const provider = this.#autocompleteProvider();
-        const current = this.flags.currentFlags;
+        const current = this.app.flags.currentFlags;
         const flags = await provider.find('');
 
         if (flags.length === 0) {
@@ -90,7 +90,7 @@ export default class extends BrainAware {
         const results: Mode[] = [];
 
         for (const flag of flags) {
-            let look = await this.flags.getLook(flag.name);
+            let look = await this.app.flags.getLook(flag.name);
 
             if (!look) {
                 look = await getBuiltinLook(flag.name, this.language, prefix, suffix);

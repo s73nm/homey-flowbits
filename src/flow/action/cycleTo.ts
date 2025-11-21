@@ -1,10 +1,10 @@
-import { BaseAction } from '../base';
-import { action } from '../decorator';
+import { action, FlowActionEntity } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @action('cycle_to')
-export default class extends BaseAction<Args> {
+export default class extends FlowActionEntity<FlowBitsApp, Args> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('name', AutocompleteProviders.Cycle);
 
@@ -12,7 +12,7 @@ export default class extends BaseAction<Args> {
     }
 
     async onRun(args: Args): Promise<void> {
-        await this.cycles.cycleTo(args.name.name, args.value);
+        await this.app.cycles.cycleTo(args.name.name, args.value);
     }
 }
 

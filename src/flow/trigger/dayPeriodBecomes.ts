@@ -1,9 +1,9 @@
+import { FlowTriggerEntity, trigger } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
 import type { DayPeriod } from '../../util';
-import { BaseTrigger } from '../base';
-import { trigger } from '../decorator';
 
 @trigger('day_period_becomes')
-export default class extends BaseTrigger<Args, State> {
+export default class extends FlowTriggerEntity<FlowBitsApp, Args, State> {
     async onRun(args: Args, state: State): Promise<boolean> {
         return args.value === state.value;
     }

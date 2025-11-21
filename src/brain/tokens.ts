@@ -1,8 +1,8 @@
+import { Shortcuts, Trigger } from '@basmilius/homey-common';
 import type { FlowToken } from 'homey';
 import { DateTime } from 'luxon';
+import type { FlowBitsApp } from '../types';
 import { getDayPeriod, getMoonPhase, getZodiacSign } from '../util';
-import BrainAware from './aware';
-import type { Trigger } from './registry';
 
 import * as Triggers from '../flow/trigger';
 
@@ -17,14 +17,14 @@ type RawToken = [FlowToken, Provider<string | boolean | number>];
 type TranslatedToken = [...RawToken, FlowToken, Translator<any>];
 type Token = RawToken | TranslatedToken;
 
-const TRIGGERS: Record<string, Trigger<any>[]> = {
+const TRIGGERS: Record<string, Trigger<FlowBitsApp, any>[]> = {
     day_period: [
         Triggers.DayPeriodBecomes,
         Triggers.DayPeriodOver
     ]
 };
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     readonly #tokens: Record<string, Token> = {};
     readonly #values: Record<string, string | boolean | number> = {};
 

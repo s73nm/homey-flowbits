@@ -1,10 +1,11 @@
-import type { WidgetApiRequest } from '../../src/types';
+import type { WidgetApiRequest } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../src/types';
 
-export async function get({homey, query}: WidgetApiRequest): Promise<number | null> {
+export async function get({homey, query}: WidgetApiRequest<FlowBitsApp>): Promise<number | null> {
     return await homey.app.widgets.getSliderValue(query.slider);
 }
 
-export async function set({homey, query, body, widgetInstanceId}: WidgetApiRequest): Promise<boolean> {
+export async function set({homey, query, body, widgetInstanceId}: WidgetApiRequest<FlowBitsApp>): Promise<boolean> {
     await homey.app.widgets.setSliderValue(query.slider, body.value, widgetInstanceId);
 
     return true;

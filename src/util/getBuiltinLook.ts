@@ -1,6 +1,7 @@
-import type { Language, Look } from '../types';
+import type { Language } from '@basmilius/homey-common';
+import { icons } from '@basmilius/homey-common';
+import type { Look } from '../types';
 
-import knownIcons from '../../assets/app/icons.json';
 import knownModes from '../../assets/app/modes.json';
 
 export default async function (name: string, language: Language, prefix: string, suffix: string): Promise<Look | null> {
@@ -11,10 +12,10 @@ export default async function (name: string, language: Language, prefix: string,
     const candidate = knownModes.find(item => (item[language] ?? item.en).includes(normalized));
 
     if (candidate) {
-        const icon = knownIcons.find(icon => icon[0] === candidate.icon);
+        const icon = icons.find(icon => icon.id === candidate.icon);
 
         if (icon) {
-            return [candidate.color, icon[2]];
+            return [candidate.color, icon.unicode];
         }
     }
 

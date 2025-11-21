@@ -1,7 +1,8 @@
+import { Shortcuts } from '@basmilius/homey-common';
 import { flush, logger, metrics } from '@sentry/browser';
-import BrainAware from './aware';
+import type { FlowBitsApp } from '../types';
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     async initialize(): Promise<void> {
         await this.#start();
         await this.#update();
@@ -14,7 +15,7 @@ export default class extends BrainAware {
     }
 
     async #update(): Promise<void> {
-        const {numberOfCycles, numberOfFlags, numberOfModes, numberOfNoRepeats, numberOfSliders, numberOfTimers} = await this.api.getStatistics();
+        const {numberOfCycles, numberOfFlags, numberOfModes, numberOfNoRepeats, numberOfSliders, numberOfTimers} = await this.app.api.getStatistics();
 
         logger.info(`Running with ${numberOfCycles} cycles, ${numberOfFlags} flags, ${numberOfModes} modes, ${numberOfNoRepeats} no repeats, ${numberOfSliders} sliders and ${numberOfTimers} timers.`);
 

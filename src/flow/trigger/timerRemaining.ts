@@ -1,11 +1,10 @@
-import type { ClockUnit } from '../../types';
-import { BaseTrigger } from '../base';
-import { trigger } from '../decorator';
+import { FlowTriggerEntity, trigger } from '@basmilius/homey-common';
+import type { ClockUnit, FlowBitsApp } from '../../types';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @trigger('timer_remaining')
-export default class extends BaseTrigger<Args, State> {
+export default class extends FlowTriggerEntity<FlowBitsApp, Args, State> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('timer', AutocompleteProviders.Timer);
 

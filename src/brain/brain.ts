@@ -1,21 +1,17 @@
-import type Homey from 'homey/lib/Homey';
+import { Shortcuts } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../types';
 import Api from './api';
 import Cycles from './cycles';
 import Flags from './flags';
 import Modes from './modes';
 import NoRepeat from './noRepeat';
-import Registry from './registry';
 import Sliders from './sliders';
 import Timers from './timers';
 import Tokens from './tokens';
 import Widgets from './widgets';
 import Metric from './metric';
 
-export default class {
-    get homey(): Homey {
-        return this.#homey;
-    }
-
+export default class extends Shortcuts<FlowBitsApp> {
     get api(): Api {
         return this.#api;
     }
@@ -34,10 +30,6 @@ export default class {
 
     get noRepeat(): NoRepeat {
         return this.#noRepeat;
-    }
-
-    get registry(): Registry {
-        return this.#registry;
     }
 
     get sliders(): Sliders {
@@ -60,31 +52,29 @@ export default class {
         return this.#metric;
     }
 
-    readonly #homey: Homey;
     readonly #api: Api;
     readonly #cycles: Cycles;
     readonly #flags: Flags;
     readonly #modes: Modes;
     readonly #noRepeat: NoRepeat;
-    readonly #registry: Registry;
     readonly #sliders: Sliders;
     readonly #timers: Timers;
     readonly #tokens: Tokens;
     readonly #widgets: Widgets;
     readonly #metric: Metric;
 
-    constructor(homey: Homey) {
-        this.#homey = homey;
-        this.#registry = new Registry(this);
-        this.#api = new Api(this);
-        this.#cycles = new Cycles(this);
-        this.#flags = new Flags(this);
-        this.#modes = new Modes(this);
-        this.#noRepeat = new NoRepeat(this);
-        this.#sliders = new Sliders(this);
-        this.#timers = new Timers(this);
-        this.#tokens = new Tokens(this);
-        this.#widgets = new Widgets(this);
-        this.#metric = new Metric(this);
+    constructor(app: FlowBitsApp) {
+        super(app);
+
+        this.#api = new Api(app);
+        this.#cycles = new Cycles(app);
+        this.#flags = new Flags(app);
+        this.#modes = new Modes(app);
+        this.#noRepeat = new NoRepeat(app);
+        this.#sliders = new Sliders(app);
+        this.#timers = new Timers(app);
+        this.#tokens = new Tokens(app);
+        this.#widgets = new Widgets(app);
+        this.#metric = new Metric(app);
     }
 }

@@ -1,11 +1,10 @@
-import type { ClockUnit } from '../../types';
-import { BaseCondition } from '../base';
-import { condition } from '../decorator';
+import { condition, FlowConditionEntity } from '@basmilius/homey-common';
+import type { ClockUnit, FlowBitsApp } from '../../types';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @condition('timer_duration')
-export default class extends BaseCondition<Args> {
+export default class extends FlowConditionEntity<FlowBitsApp, Args> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('timer', AutocompleteProviders.Timer);
 
@@ -13,7 +12,7 @@ export default class extends BaseCondition<Args> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        return await this.timers.isDuration(args.timer.name, args.duration, args.unit);
+        return await this.app.timers.isDuration(args.timer.name, args.duration, args.unit);
     }
 }
 

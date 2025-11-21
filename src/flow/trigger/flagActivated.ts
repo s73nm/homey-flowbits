@@ -1,10 +1,10 @@
-import { BaseTrigger } from '../base';
-import { trigger } from '../decorator';
+import { FlowTriggerEntity, trigger } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
 
 import * as AutocompleteProviders from '../autocomplete';
 
 @trigger('flag_activated')
-export default class extends BaseTrigger<Args, State> {
+export default class extends FlowTriggerEntity<FlowBitsApp, Args, State> {
     async onInit(): Promise<void> {
         this.registerAutocomplete('flag', AutocompleteProviders.Flag);
 
@@ -16,7 +16,7 @@ export default class extends BaseTrigger<Args, State> {
     }
 
     async onUpdate(): Promise<void> {
-        await this.flags.update();
+        await this.app.flags.update();
     }
 }
 

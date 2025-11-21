@@ -1,10 +1,11 @@
+import { Shortcuts } from '@basmilius/homey-common';
 import { SETTING_CYCLE_PREFIX } from '../const';
+import type { FlowBitsApp } from '../types';
 import { slugify } from '../util';
-import BrainAware from './aware';
 
 import * as Triggers from '../flow/trigger';
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     async cycle(name: string, minValue: number, maxValue: number): Promise<void> {
         let value = this.#get(name);
 

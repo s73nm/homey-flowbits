@@ -1,6 +1,7 @@
-import Homey from 'homey';
+import { App } from '@basmilius/homey-common';
 import { Settings } from 'luxon';
-import { type Api, Brain, type Widgets } from './brain';
+import type { Api, Cycles, Flags, Metric, Modes, NoRepeat, Sliders, Timers, Tokens, Widgets } from './brain';
+import { Brain } from './brain';
 import { roundStep } from './util';
 
 import * as Actions from './flow/action';
@@ -10,9 +11,41 @@ import * as Triggers from './flow/trigger';
 
 import './instrument';
 
-export default class FlowBitsApp extends Homey.App {
+export default class FlowBitsApp extends App<FlowBitsApp> {
     get api(): Api {
         return this.#brain.api;
+    }
+
+    get cycles(): Cycles {
+        return this.#brain.cycles;
+    }
+
+    get flags(): Flags {
+        return this.#brain.flags;
+    }
+
+    get metric(): Metric {
+        return this.#brain.metric;
+    }
+
+    get modes(): Modes {
+        return this.#brain.modes;
+    }
+
+    get noRepeat(): NoRepeat {
+        return this.#brain.noRepeat;
+    }
+
+    get sliders(): Sliders {
+        return this.#brain.sliders;
+    }
+
+    get timers(): Timers {
+        return this.#brain.timers;
+    }
+
+    get tokens(): Tokens {
+        return this.#brain.tokens;
     }
 
     get widgets(): Widgets {
@@ -23,7 +56,7 @@ export default class FlowBitsApp extends Homey.App {
 
     async onInit(): Promise<void> {
         try {
-            this.#brain = new Brain(this.homey);
+            this.#brain = new Brain(this);
 
             Settings.defaultZone = this.homey.clock.getTimezone();
 
@@ -31,17 +64,16 @@ export default class FlowBitsApp extends Homey.App {
             this.#registerActions();
             this.#registerConditions();
             this.#registerTriggers();
+            this.#registerActionFunctions();
 
-            await this.#registerActionFunctions();
-
-            for (const provider of this.#brain.registry.autocompleteProviders) {
+            for (const provider of this.registry.autocompleteProviders) {
                 await provider.onInit();
             }
 
-            await this.#brain.timers.initialize();
-            await this.#brain.tokens.initialize();
-            await this.#brain.widgets.initialize();
-            await this.#brain.metric.initialize();
+            await this.timers.initialize();
+            await this.tokens.initialize();
+            await this.widgets.initialize();
+            await this.metric.initialize();
 
             this.log('FlowBits has been initialized!');
         } catch (err) {
@@ -50,86 +82,86 @@ export default class FlowBitsApp extends Homey.App {
     }
 
     #registerActions(): void {
-        this.#brain.registry.action(Actions.Cycle);
-        this.#brain.registry.action(Actions.CycleBetween);
-        this.#brain.registry.action(Actions.CycleTo);
-        this.#brain.registry.action(Actions.FlagActivate);
-        this.#brain.registry.action(Actions.FlagDeactivate);
-        this.#brain.registry.action(Actions.FlagToggle);
-        this.#brain.registry.action(Actions.ModeActivate);
-        this.#brain.registry.action(Actions.ModeDeactivate);
-        this.#brain.registry.action(Actions.ModeReactivate);
-        this.#brain.registry.action(Actions.ModeToggle);
-        this.#brain.registry.action(Actions.NoRepeatClear);
-        this.#brain.registry.action(Actions.RandomFact);
-        this.#brain.registry.action(Actions.SignalSend);
-        this.#brain.registry.action(Actions.SliderSet);
-        this.#brain.registry.action(Actions.TimerPause);
-        this.#brain.registry.action(Actions.TimerResume);
-        this.#brain.registry.action(Actions.TimerSet);
-        this.#brain.registry.action(Actions.TimerStart);
-        this.#brain.registry.action(Actions.TimerStop);
+        this.registry.action(Actions.Cycle);
+        this.registry.action(Actions.CycleBetween);
+        this.registry.action(Actions.CycleTo);
+        this.registry.action(Actions.FlagActivate);
+        this.registry.action(Actions.FlagDeactivate);
+        this.registry.action(Actions.FlagToggle);
+        this.registry.action(Actions.ModeActivate);
+        this.registry.action(Actions.ModeDeactivate);
+        this.registry.action(Actions.ModeReactivate);
+        this.registry.action(Actions.ModeToggle);
+        this.registry.action(Actions.NoRepeatClear);
+        this.registry.action(Actions.RandomFact);
+        this.registry.action(Actions.SignalSend);
+        this.registry.action(Actions.SliderSet);
+        this.registry.action(Actions.TimerPause);
+        this.registry.action(Actions.TimerResume);
+        this.registry.action(Actions.TimerSet);
+        this.registry.action(Actions.TimerStart);
+        this.registry.action(Actions.TimerStop);
     }
 
-    async #registerActionFunctions(): Promise<void> {
-        this.#brain.registry.actionFunction('z_math_decrement', args => ({result: args.value - args.step}));
-        this.#brain.registry.actionFunction('z_math_divide', args => ({result: args.value / args.divisor}));
-        this.#brain.registry.actionFunction('z_math_increment', args => ({result: args.value + args.step}));
-        this.#brain.registry.actionFunction('z_math_make_negative', args => ({result: args.value < 0 ? args.value : -args.value}));
-        this.#brain.registry.actionFunction('z_math_make_positive', args => ({result: Math.abs(args.value)}));
-        this.#brain.registry.actionFunction('z_math_multiply', args => ({result: args.value * args.factor}));
-        this.#brain.registry.actionFunction('z_math_round', args => ({result: Math.round(args.value)}));
-        this.#brain.registry.actionFunction('z_math_round_down', args => ({result: Math.floor(args.value)}));
-        this.#brain.registry.actionFunction('z_math_round_step', args => ({result: roundStep(args.value, args.step)}));
-        this.#brain.registry.actionFunction('z_math_round_up', args => ({result: Math.ceil(args.value)}));
+    #registerActionFunctions(): void {
+        this.registry.actionFunction('z_math_decrement', args => ({result: args.value - args.step}));
+        this.registry.actionFunction('z_math_divide', args => ({result: args.value / args.divisor}));
+        this.registry.actionFunction('z_math_increment', args => ({result: args.value + args.step}));
+        this.registry.actionFunction('z_math_make_negative', args => ({result: args.value < 0 ? args.value : -args.value}));
+        this.registry.actionFunction('z_math_make_positive', args => ({result: Math.abs(args.value)}));
+        this.registry.actionFunction('z_math_multiply', args => ({result: args.value * args.factor}));
+        this.registry.actionFunction('z_math_round', args => ({result: Math.round(args.value)}));
+        this.registry.actionFunction('z_math_round_down', args => ({result: Math.floor(args.value)}));
+        this.registry.actionFunction('z_math_round_step', args => ({result: roundStep(args.value, args.step)}));
+        this.registry.actionFunction('z_math_round_up', args => ({result: Math.ceil(args.value)}));
     }
 
     #registerAutocompleteProviders(): void {
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Cycle);
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Flag);
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Mode);
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.NoRepeat);
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.SchoolVacation);
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Signal);
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Slider);
-        this.#brain.registry.autocompleteProvider(AutocompleteProviders.Timer);
+        this.registry.autocompleteProvider(AutocompleteProviders.Cycle);
+        this.registry.autocompleteProvider(AutocompleteProviders.Flag);
+        this.registry.autocompleteProvider(AutocompleteProviders.Mode);
+        this.registry.autocompleteProvider(AutocompleteProviders.NoRepeat);
+        this.registry.autocompleteProvider(AutocompleteProviders.SchoolVacation);
+        this.registry.autocompleteProvider(AutocompleteProviders.Signal);
+        this.registry.autocompleteProvider(AutocompleteProviders.Slider);
+        this.registry.autocompleteProvider(AutocompleteProviders.Timer);
     }
 
     #registerConditions(): void {
-        this.#brain.registry.condition(Conditions.ContinueWithChance);
-        this.#brain.registry.condition(Conditions.CycleHasValue);
-        this.#brain.registry.condition(Conditions.DayPeriodIs);
-        this.#brain.registry.condition(Conditions.DiceRolls);
-        this.#brain.registry.condition(Conditions.FlagIs);
-        this.#brain.registry.condition(Conditions.ModeIs);
-        this.#brain.registry.condition(Conditions.MoonPhaseIs);
-        this.#brain.registry.condition(Conditions.NoRepeatWindow);
-        this.#brain.registry.condition(Conditions.SchoolHolidayIs);
-        this.#brain.registry.condition(Conditions.TimerDuration);
-        this.#brain.registry.condition(Conditions.TimerFinished);
-        this.#brain.registry.condition(Conditions.TimerPaused);
-        this.#brain.registry.condition(Conditions.TimerRunning);
-        this.#brain.registry.condition(Conditions.ZodiacSignIs);
+        this.registry.condition(Conditions.ContinueWithChance);
+        this.registry.condition(Conditions.CycleHasValue);
+        this.registry.condition(Conditions.DayPeriodIs);
+        this.registry.condition(Conditions.DiceRolls);
+        this.registry.condition(Conditions.FlagIs);
+        this.registry.condition(Conditions.ModeIs);
+        this.registry.condition(Conditions.MoonPhaseIs);
+        this.registry.condition(Conditions.NoRepeatWindow);
+        this.registry.condition(Conditions.SchoolHolidayIs);
+        this.registry.condition(Conditions.TimerDuration);
+        this.registry.condition(Conditions.TimerFinished);
+        this.registry.condition(Conditions.TimerPaused);
+        this.registry.condition(Conditions.TimerRunning);
+        this.registry.condition(Conditions.ZodiacSignIs);
     }
 
     #registerTriggers(): void {
-        this.#brain.registry.trigger(Triggers.CycleBecomes);
-        this.#brain.registry.trigger(Triggers.CycleUpdates);
-        this.#brain.registry.trigger(Triggers.DayPeriodBecomes);
-        this.#brain.registry.trigger(Triggers.DayPeriodOver);
-        this.#brain.registry.trigger(Triggers.FlagActivated);
-        this.#brain.registry.trigger(Triggers.FlagChanged);
-        this.#brain.registry.trigger(Triggers.FlagDeactivated);
-        this.#brain.registry.trigger(Triggers.ModeActivated);
-        this.#brain.registry.trigger(Triggers.ModeChanged);
-        this.#brain.registry.trigger(Triggers.ModeDeactivated);
-        this.#brain.registry.trigger(Triggers.SignalReceive);
-        this.#brain.registry.trigger(Triggers.SliderChanged);
-        this.#brain.registry.trigger(Triggers.TimerFinished);
-        this.#brain.registry.trigger(Triggers.TimerPaused);
-        this.#brain.registry.trigger(Triggers.TimerRemaining);
-        this.#brain.registry.trigger(Triggers.TimerResumed);
-        this.#brain.registry.trigger(Triggers.TimerStarted);
-        this.#brain.registry.trigger(Triggers.TimerStopped);
+        this.registry.trigger(Triggers.CycleBecomes);
+        this.registry.trigger(Triggers.CycleUpdates);
+        this.registry.trigger(Triggers.DayPeriodBecomes);
+        this.registry.trigger(Triggers.DayPeriodOver);
+        this.registry.trigger(Triggers.FlagActivated);
+        this.registry.trigger(Triggers.FlagChanged);
+        this.registry.trigger(Triggers.FlagDeactivated);
+        this.registry.trigger(Triggers.ModeActivated);
+        this.registry.trigger(Triggers.ModeChanged);
+        this.registry.trigger(Triggers.ModeDeactivated);
+        this.registry.trigger(Triggers.SignalReceive);
+        this.registry.trigger(Triggers.SliderChanged);
+        this.registry.trigger(Triggers.TimerFinished);
+        this.registry.trigger(Triggers.TimerPaused);
+        this.registry.trigger(Triggers.TimerRemaining);
+        this.registry.trigger(Triggers.TimerResumed);
+        this.registry.trigger(Triggers.TimerStarted);
+        this.registry.trigger(Triggers.TimerStopped);
     }
 }

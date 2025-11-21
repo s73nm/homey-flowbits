@@ -1,9 +1,9 @@
+import { autocomplete, FlowAutocompleteProvider } from '@basmilius/homey-common';
 import type { FlowCard } from 'homey';
-import { BaseAutocompleteProvider } from '../base';
-import { autocomplete } from '../decorator';
+import type { FlowBitsApp } from '../../types';
 
 @autocomplete('signal')
-export default class extends BaseAutocompleteProvider {
+export default class extends FlowAutocompleteProvider<FlowBitsApp> {
     #values: string[] = [];
 
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
@@ -29,8 +29,8 @@ export default class extends BaseAutocompleteProvider {
     async update(): Promise<void> {
         this.#values = await Promise
             .allSettled([
-                await this.getActionCard('signal_send').getArgumentValues(),
-                await this.getTriggerCard('signal_receive').getArgumentValues()
+                await this.flow.getActionCard('signal_send').getArgumentValues(),
+                await this.flow.getTriggerCard('signal_receive').getArgumentValues()
             ])
             .then(allValues => allValues
                 .filter(values => values.status === 'fulfilled')

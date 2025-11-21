@@ -1,9 +1,9 @@
 import { randomInt } from 'node:crypto';
-import { BaseCondition } from '../base';
-import { condition } from '../decorator';
+import { condition, FlowConditionEntity } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
 
 @condition('dice_rolls')
-export default class extends BaseCondition<Args, never> {
+export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {
     async onRun(args: Args): Promise<boolean> {
         return randomInt(1, 6) === args.result;
     }

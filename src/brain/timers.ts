@@ -1,13 +1,13 @@
+import { Shortcuts } from '@basmilius/homey-common';
 import { DateTime } from 'luxon';
 import { SETTING_TIMER_PREFIX } from '../const';
-import type { ClockState, ClockUnit } from '../types';
+import type { ClockState, ClockUnit, FlowBitsApp } from '../types';
 import { convertDurationToSeconds, slugify } from '../util';
-import BrainAware from './aware';
 
 import * as AutocompleteProviders from '../flow/autocomplete';
 import * as Triggers from '../flow/trigger';
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     #timeouts: Record<string, NodeJS.Timeout[]> = {};
     #timers: Record<string, Timer> = {};
 

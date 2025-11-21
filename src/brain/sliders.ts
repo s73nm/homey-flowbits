@@ -1,9 +1,10 @@
+import { Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_SLIDER_UPDATE, SETTING_SLIDERS } from '../const';
-import BrainAware from './aware';
+import type { FlowBitsApp } from '../types';
 
 import * as Triggers from '../flow/trigger';
 
-export default class extends BrainAware {
+export default class extends Shortcuts<FlowBitsApp> {
     get values(): Record<string, number> {
         return this.settings.get(SETTING_SLIDERS) ?? {};
     }
