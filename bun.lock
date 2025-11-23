@@ -5,7 +5,7 @@
     "": {
       "name": "com.basmilius.flowbits",
       "dependencies": {
-        "@basmilius/homey-common": "^1.0.0",
+        "@basmilius/homey-common": "^1.0.1",
         "@sentry/browser": "^10.25.0",
         "luxon": "^3.7.2",
       },
@@ -20,7 +20,7 @@
     },
   },
   "packages": {
-    "@basmilius/homey-common": ["@basmilius/homey-common@1.0.0", "", {}, "sha512-ztYdJC7E2edCjuI7KucgswAX0c+iQFeeEaAEt6326e0DFUHHm742zBNrq/rP5tb54hwQaNv+TVI8UIKvcAro0g=="],
+    "@basmilius/homey-common": ["@basmilius/homey-common@1.0.1", "", {}, "sha512-LroOb6iIeo7FNxb5SHCsQcv5FTnkUgnUIo/ZKImRLxNh5iw3uxeawcfEKMPQM7ajDGvpEtbocCVZIgbcmKEeeA=="],
 
     "@sentry-internal/browser-utils": ["@sentry-internal/browser-utils@10.25.0", "", { "dependencies": { "@sentry/core": "10.25.0" } }, "sha512-wzg1ITZxrRtQouHPCgpt3tl1GiNAWFVy2RYK2KstFEhpYBAOUn9BAdP7KU9UyHBFKqbAvV4oGtAT8H2/Y4+leA=="],
 
