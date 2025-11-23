@@ -121,5 +121,8 @@
   },
   "1.6.6": {
     "en": "Simplified code a bit."
+  },
+  "1.6.9": {
+    "en": "No significant changes, just some internal refactorings."
   }
 }
