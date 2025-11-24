@@ -2,12 +2,8 @@ import { App } from '@basmilius/homey-common';
 import { Settings } from 'luxon';
 import type { Api, Cycles, Flags, Metric, Modes, NoRepeat, Sliders, Timers, Tokens, Widgets } from './brain';
 import { Brain } from './brain';
+import { Actions, AutocompleteProviders, Conditions, Triggers } from './flow';
 import { roundStep } from './util';
-
-import * as Actions from './flow/action';
-import * as AutocompleteProviders from './flow/autocomplete';
-import * as Conditions from './flow/condition';
-import * as Triggers from './flow/trigger';
 
 import './instrument';
 

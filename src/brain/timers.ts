@@ -1,11 +1,9 @@
 import { Shortcuts } from '@basmilius/homey-common';
 import { DateTime } from 'luxon';
 import { SETTING_TIMER_PREFIX } from '../const';
+import { AutocompleteProviders, Triggers } from '../flow';
 import type { ClockState, ClockUnit, FlowBitsApp } from '../types';
 import { convertDurationToSeconds, slugify } from '../util';
-
-import * as AutocompleteProviders from '../flow/autocomplete';
-import * as Triggers from '../flow/trigger';
 
 export default class extends Shortcuts<FlowBitsApp> {
     #timeouts: Record<string, NodeJS.Timeout[]> = {};

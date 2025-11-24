@@ -1,7 +1,6 @@
 import { condition, FlowConditionEntity } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../types';
-
-import * as AutocompleteProviders from '../autocomplete';
+import { AutocompleteProviders } from '..';
 
 @condition('cycle_has_value')
 export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {

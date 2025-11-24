@@ -1,7 +1,6 @@
 import { condition, FlowConditionEntity } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../types';
-
-import * as AutocompleteProviders from '../autocomplete';
+import { AutocompleteProviders } from '..';
 
 @condition('timer_paused')
 export default class extends FlowConditionEntity<FlowBitsApp, Args> {

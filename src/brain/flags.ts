@@ -1,10 +1,8 @@
 import { Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_FLAGS_UPDATE, SETTING_FLAG_LOOKS, SETTING_FLAGS } from '../const';
+import { AutocompleteProviders, Triggers } from '../flow';
 import type { Flag, FlowBitsApp, Look, Mode } from '../types';
 import { getBuiltinLook } from '../util';
-
-import * as AutocompleteProviders from '../flow/autocomplete';
-import * as Triggers from '../flow/trigger';
 
 export default class extends Shortcuts<FlowBitsApp> {
     get currentFlags(): string[] {

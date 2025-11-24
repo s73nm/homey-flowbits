@@ -1,7 +1,6 @@
 import { FlowTriggerEntity, trigger } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../types';
-
-import * as AutocompleteProviders from '../autocomplete';
+import { AutocompleteProviders } from '..';
 
 @trigger('slider_changed')
 export default class extends FlowTriggerEntity<FlowBitsApp, Args, State> {

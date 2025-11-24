@@ -1,9 +1,8 @@
 import { Shortcuts } from '@basmilius/homey-common';
 import { SETTING_CYCLE_PREFIX } from '../const';
+import { Triggers } from '../flow';
 import type { FlowBitsApp } from '../types';
 import { slugify } from '../util';
-
-import * as Triggers from '../flow/trigger';
 
 export default class extends Shortcuts<FlowBitsApp> {
     async cycle(name: string, minValue: number, maxValue: number): Promise<void> {

@@ -2,8 +2,7 @@ import { condition, FlowConditionEntity } from '@basmilius/homey-common';
 import { DateTime } from 'luxon';
 import type { FlowBitsApp } from '../../types';
 import schoolHolidays from '../../data/schoolHolidays';
-
-import * as AutocompleteProviders from '../autocomplete';
+import { AutocompleteProviders } from '..';
 
 @condition('school_holiday_is')
 export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {

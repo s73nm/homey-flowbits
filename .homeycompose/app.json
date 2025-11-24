@@ -217,6 +217,7 @@
   "homepage": "https://bas.dev",
   "source": "https://github.com/basmilius/homey-flowbits",
   "support": "https://github.com/basmilius/homey-flowbits/issues",
+  "homeyCommunityTopicId": 145855,
   "contributing": {
     "donate": {
       "githubSponsors": {

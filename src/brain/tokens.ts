@@ -1,10 +1,9 @@
 import { Shortcuts, Trigger } from '@basmilius/homey-common';
 import type { FlowToken } from 'homey';
 import { DateTime } from 'luxon';
+import { Triggers } from '../flow';
 import type { FlowBitsApp } from '../types';
 import { getDayPeriod, getMoonPhase, getZodiacSign } from '../util';
-
-import * as Triggers from '../flow/trigger';
 
 type Provider<T extends string | boolean | number> = (state: State) => T;
 type Translator<T> = (value: T) => string;

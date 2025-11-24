@@ -1,7 +1,6 @@
 import { action, FlowActionEntity } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../types';
-
-import * as AutocompleteProviders from '../autocomplete';
+import { AutocompleteProviders } from '..';
 
 @action('timer_pause')
 export default class extends FlowActionEntity<FlowBitsApp, Args> {

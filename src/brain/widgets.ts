@@ -1,8 +1,7 @@
 import { Shortcuts } from '@basmilius/homey-common';
+import { AutocompleteProviders } from '../flow';
 import type { FlowBitsApp } from '../types';
 import { searchIcons } from '../util';
-
-import * as AutocompleteProviders from '../flow/autocomplete';
 
 export default class extends Shortcuts<FlowBitsApp> {
     async initialize(): Promise<void> {

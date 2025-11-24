@@ -1,8 +1,6 @@
 import { action, FlowActionEntity } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../types';
-
-import * as AutocompleteProviders from '../autocomplete';
-import * as Triggers from '../trigger';
+import { AutocompleteProviders, Triggers } from '..';
 
 @action('signal_send')
 export default class extends FlowActionEntity<FlowBitsApp, Args> {

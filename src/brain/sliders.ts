@@ -1,8 +1,7 @@
 import { Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_SLIDER_UPDATE, SETTING_SLIDERS } from '../const';
+import { Triggers } from '../flow';
 import type { FlowBitsApp } from '../types';
-
-import * as Triggers from '../flow/trigger';
 
 export default class extends Shortcuts<FlowBitsApp> {
     get values(): Record<string, number> {
