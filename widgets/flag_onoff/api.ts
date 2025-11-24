@@ -1,8 +1,8 @@
 import type { WidgetApiRequest } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../src/types';
 
-export async function state({homey, query}: WidgetApiRequest<FlowBitsApp>): Promise<Result> {
-    const flags = await homey.app.api.getFlags();
+export async function state({homey: {app}, query}: WidgetApiRequest<FlowBitsApp, never, never, Query>): Promise<Result> {
+    const flags = await app.api.getFlags();
     const flag = flags.find(flag => flag.name === query.flag);
 
     return {
@@ -12,12 +12,20 @@ export async function state({homey, query}: WidgetApiRequest<FlowBitsApp>): Prom
     };
 }
 
-export async function toggle({homey, body}: WidgetApiRequest<FlowBitsApp>): Promise<boolean> {
-    return await homey.app.api.toggleFlag(body.flag);
+export async function toggle({homey: {app}, body}: WidgetApiRequest<FlowBitsApp, Body>): Promise<boolean> {
+    return await app.api.toggleFlag(body.flag);
 }
 
 type Result = {
     readonly active: boolean;
     readonly color: string | undefined;
     readonly icon: string | undefined;
+};
+
+type Body = {
+    readonly flag: string;
+};
+
+type Query = {
+    readonly flag: string;
 };
