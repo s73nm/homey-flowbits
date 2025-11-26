@@ -1,0 +1,12 @@
+:root {
+    --vp-font-family-base: inter-variable;
+    --vp-font-family-mono: jetbrains-mono;
+
+    --vp-c-brand-1: #204ef6;
+    --vp-c-brand-2: #1335e2;
+    --vp-c-brand-3: #316cff;
+}
+
+p {
+    text-wrap: pretty;
+}

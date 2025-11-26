@@ -124,5 +124,8 @@
   },
   "1.6.9": {
     "en": "No significant changes, just some internal refactorings."
+  },
+  "1.6.10": {
+    "en": "Add Homey Community Topic ID."
   }
 }
