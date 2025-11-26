@@ -65,6 +65,11 @@ export default defineConfig({
                                 {text: 'Step sequences', link: '/guide/step-sequences'},
                                 {text: 'Timers', link: '/guide/timers'}
                             ]
+                        },
+                        {
+                            items: [
+                                {text: 'Miscellaneous cards', link: '/guide/miscellaneous-cards'}
+                            ]
                         }
                     ],
                     '/widgets/': [

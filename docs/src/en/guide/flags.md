@@ -30,7 +30,29 @@ Flags are ideal for:
 
 ## Flow cards
 
-_TODO_
+These flow cards allow you to set, clear, toggle, or evaluate flags from within your flows, giving you a simple way to mark and use boolean state.
+
+### Actions
+
+<FlowCards>
+    <FlowCard type="action">Activate flag <strong>Partytime</strong></FlowCard>
+    <FlowCard type="action">Deactivate flag <strong>Cleaning</strong></FlowCard>
+    <FlowCard type="action">Toggle flag <strong>Vacation</strong></FlowCard>
+</FlowCards>
+
+### Conditions
+
+<FlowCards>
+    <FlowCard type="condition">Flag <strong>Cleaning</strong> is active</FlowCard>
+</FlowCards>
+
+### Triggers
+
+<FlowCards>
+    <FlowCard type="trigger">Flag <strong>Partytime</strong> is activated</FlowCard>
+    <FlowCard type="trigger">Flag <strong>Vacation</strong> changed</FlowCard>
+    <FlowCard type="trigger">Flag <strong>Clearning</strong> is deactivated</FlowCard>
+</FlowCards>
 
 ## Examples
 

@@ -19,9 +19,21 @@ When the value changes, a flow card triggers so you can respond to that update.
 - Consistent 0–100 range for all sliders.
 - Suitable for fine-tuned control.
 
-## Flow Cards
+## Flow cards
 
-_TODO_
+These flow cards let you set or react to slider values, enabling simple numeric control within a fixed 0–100 range.
+
+### Actions
+
+<FlowCards>
+    <FlowCard type="action">Set slider <strong>Volume</strong> to <strong>75%</strong></FlowCard>
+</FlowCards>
+
+### Triggers
+
+<FlowCards>
+    <FlowCard type="trigger">Slider <strong>Volume</strong> changed</FlowCard>
+</FlowCards>
 
 ## Examples
 

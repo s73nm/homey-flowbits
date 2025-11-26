@@ -27,9 +27,21 @@ No-repeat windows help stabilize flows by preventing:
 - Multiple button presses.
 - Flapping device states.
 
-## Flow Cards
+## Flow cards
 
-_TODO_
+These flow cards allow you to check, or clear a no-repeat window, helping you prevent repeated executions within a defined time span.
+
+### Actions
+
+<FlowCards>
+    <FlowCard type="action">Reset no-repeat window for <strong>Toilet lights</strong></FlowCard>
+</FlowCards>
+
+### Triggers
+
+<FlowCards>
+    <FlowCard type="trigger">No repeat of <strong>Toilet lights</strong> within <strong>30</strong> <strong>seconds</strong></FlowCard>
+</FlowCards>
 
 ## Examples
 

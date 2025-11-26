@@ -24,7 +24,28 @@ If the sequence reaches the maximum value, the next increment returns it to the 
 
 ## Flow cards
 
-_TODO_
+These flow cards let you move through, reset, or evaluate step sequences, making it easy to cycle through ordered stages in your flows.
+
+### Actions
+
+<FlowCards>
+    <FlowCard type="action">Next step in <strong>Hall switch</strong> ( 1 &ndash; <strong>3</strong> )</FlowCard>
+    <FlowCard type="action">Next step in <strong>Channel</strong> ( <strong>5</strong> &ndash; <strong>10</strong> )</FlowCard>
+    <FlowCard type="action">Set sequence <strong>Hall switch</strong> to <strong>0</strong></FlowCard>
+</FlowCards>
+
+### Conditions
+
+<FlowCards>
+    <FlowCard type="condition">Sequence <strong>Hall switch</strong> equals <strong>1</strong></FlowCard>
+</FlowCards>
+
+### Triggers
+
+<FlowCards>
+    <FlowCard type="trigger">Sequence <strong>Hall switch</strong> reaches <strong>3</strong></FlowCard>
+    <FlowCard type="trigger">Sequence <strong>Channel</strong> updates value</FlowCard>
+</FlowCards>
 
 ## Examples
 

@@ -30,9 +30,21 @@ Examples include:
 
 Use signals whenever you want to broadcast that *something happened* without maintaining a long-lasting state.
 
-## Flow Cards
+## Flow cards
 
-_TODO_
+These flow cards allow you to send and listen for lightweight signals, making it easy to orchestrate communication between flows.
+
+### Actions
+
+<FlowCards>
+    <FlowCard type="action">Send signal <strong>Hall lights on/off</strong></FlowCard>
+</FlowCards>
+
+### Triggers
+
+<FlowCards>
+    <FlowCard type="trigger">Receive signal <strong>Hall lights on/off</strong></FlowCard>
+</FlowCards>
 
 ## Examples
 

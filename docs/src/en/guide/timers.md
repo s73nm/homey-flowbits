@@ -34,9 +34,39 @@ Common uses include:
 
 Timers help keep flows clean by centralizing timing logic.
 
-## Flow Cards
+## Flow cards
 
-_TODO_
+These flow cards allow you to start, stop, reset, or check timers, enabling precise time-based control in your flows.
+
+### Actions
+
+<FlowCards>
+    <FlowCard type="action">Pause timer <strong>Hall lights</strong></FlowCard>
+    <FlowCard type="action">Resume timer <strong>Alarm cooldown</strong></FlowCard>
+    <FlowCard type="action">Set timer <strong>Hall lights</strong> to <strong>5</strong> <strong>minutes</strong></FlowCard>
+    <FlowCard type="action">Start timer <strong>Hall lights</strong> with <strong>5</strong> <strong>minutes</strong></FlowCard>
+    <FlowCard type="action">Stop timer <strong>Hall lights</strong></FlowCard>
+</FlowCards>
+
+### Conditions
+
+<FlowCards>
+    <FlowCard type="condition">Timer <strong>Alarm cooldown</strong> has more than <strong>30</strong> <strong>seconds</strong> left</FlowCard>
+    <FlowCard type="condition">Timer <strong>Hall lights</strong> is finished</FlowCard>
+    <FlowCard type="condition">Timer <strong>Alarm cooldown</strong> is paused</FlowCard>
+    <FlowCard type="condition">Timer <strong>Hall lights</strong> is running</FlowCard>
+</FlowCards>
+
+### Triggers
+
+<FlowCards>
+    <FlowCard type="trigger">Timer <strong>Hall lights</strong> finished</FlowCard>
+    <FlowCard type="trigger">Timer <strong>Hall lights</strong> paused</FlowCard>
+    <FlowCard type="trigger"><strong>30</strong> <strong>seconds</strong> remaining for timer <strong>Hall lights</strong></FlowCard>
+    <FlowCard type="trigger">Timer <strong>Hall lights</strong> resumed</FlowCard>
+    <FlowCard type="trigger">Timer <strong>Hall lights</strong> started</FlowCard>
+    <FlowCard type="trigger">Timer <strong>Hall lights</strong> stopped</FlowCard>
+</FlowCards>
 
 ## Examples
 

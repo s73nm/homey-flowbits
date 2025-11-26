@@ -10,3 +10,7 @@
 p {
     text-wrap: pretty;
 }
+
+.VPContent.is-home .image-container {
+    scale: 1.25;
+}

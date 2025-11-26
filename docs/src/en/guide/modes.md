@@ -23,9 +23,32 @@ Modes are useful for:
 
 Modes are not tied to any specific device. They represent the state of your home as a whole.
 
-## Flow Cards
+## Flow cards
 
-_TODO_
+These flow cards let you manage modes directly from your flows, enabling you to activate, deactivate, toggle, or check any mode.
+
+### Actions
+
+<FlowCards>
+    <FlowCard type="action">Activate <strong>Morning</strong></FlowCard>
+    <FlowCard type="action">Deactivate <strong>Night</strong></FlowCard>
+    <FlowCard type="action">Reactivate <strong>Dinner</strong></FlowCard>
+    <FlowCard type="action">Toggle <strong>Evening</strong></FlowCard>
+</FlowCards>
+
+### Conditions
+
+<FlowCards>
+    <FlowCard type="condition"><strong>Night</strong> is active</FlowCard>
+</FlowCards>
+
+### Triggers
+
+<FlowCards>
+    <FlowCard type="trigger"><strong>Partytime</strong> is activated</FlowCard>
+    <FlowCard type="trigger"><strong>Vacation</strong> changed</FlowCard>
+    <FlowCard type="trigger"><strong>Clearning</strong> is deactivated</FlowCard>
+</FlowCards>
 
 ## Examples
 
