@@ -1,11 +1,9 @@
 import { App } from '@basmilius/homey-common';
 import { Settings } from 'luxon';
-import type { Api, Cycles, Flags, Metric, Modes, NoRepeat, Sliders, Timers, Tokens, Widgets } from './brain';
+import type { Api, Cycles, Flags, Modes, NoRepeat, Sliders, Timers, Tokens, Widgets } from './brain';
 import { Brain } from './brain';
 import { Actions, AutocompleteProviders, Conditions, Triggers } from './flow';
 import { roundStep } from './util';
-
-import './instrument';
 
 export default class FlowBitsApp extends App<FlowBitsApp> {
     get api(): Api {
@@ -18,10 +16,6 @@ export default class FlowBitsApp extends App<FlowBitsApp> {
 
     get flags(): Flags {
         return this.#brain.flags;
-    }
-
-    get metric(): Metric {
-        return this.#brain.metric;
     }
 
     get modes(): Modes {
@@ -69,7 +63,6 @@ export default class FlowBitsApp extends App<FlowBitsApp> {
             await this.timers.initialize();
             await this.tokens.initialize();
             await this.widgets.initialize();
-            await this.metric.initialize();
 
             this.log('FlowBits has been initialized!');
         } catch (err) {

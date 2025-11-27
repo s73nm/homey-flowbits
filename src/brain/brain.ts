@@ -9,7 +9,6 @@ import Sliders from './sliders';
 import Timers from './timers';
 import Tokens from './tokens';
 import Widgets from './widgets';
-import Metric from './metric';
 
 export default class extends Shortcuts<FlowBitsApp> {
     get api(): Api {
@@ -48,10 +47,6 @@ export default class extends Shortcuts<FlowBitsApp> {
         return this.#widgets;
     }
 
-    get metric(): Metric {
-        return this.#metric;
-    }
-
     readonly #api: Api;
     readonly #cycles: Cycles;
     readonly #flags: Flags;
@@ -61,7 +56,6 @@ export default class extends Shortcuts<FlowBitsApp> {
     readonly #timers: Timers;
     readonly #tokens: Tokens;
     readonly #widgets: Widgets;
-    readonly #metric: Metric;
 
     constructor(app: FlowBitsApp) {
         super(app);
@@ -75,6 +69,5 @@ export default class extends Shortcuts<FlowBitsApp> {
         this.#timers = new Timers(app);
         this.#tokens = new Tokens(app);
         this.#widgets = new Widgets(app);
-        this.#metric = new Metric(app);
     }
 }
