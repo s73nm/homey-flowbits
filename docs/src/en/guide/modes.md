@@ -30,24 +30,40 @@ These flow cards let you manage modes directly from your flows, enabling you to 
 ### Actions
 
 <FlowCards>
-    <FlowCard type="action">Activate <strong>Morning</strong></FlowCard>
-    <FlowCard type="action">Deactivate <strong>Night</strong></FlowCard>
-    <FlowCard type="action">Reactivate <strong>Dinner</strong></FlowCard>
-    <FlowCard type="action">Toggle <strong>Evening</strong></FlowCard>
+    <FlowCardExplainer content="Activate a mode, but only if it's not already active.">
+        <FlowCard type="action">Activate <strong>Morning</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Deactivate a mode, but only if it's active.">
+        <FlowCard type="action">Deactivate <strong>Night</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Reactivate a mode, even if it's already active. This will trigger any flows that have the mode activated trigger.">
+        <FlowCard type="action">Reactivate <strong>Dinner</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Toggle a mode, regardless of its current state.">
+        <FlowCard type="action">Toggle <strong>Evening</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Conditions
 
 <FlowCards>
-    <FlowCard type="condition"><strong>Night</strong> is active</FlowCard>
+    <FlowCardExplainer content="Checks if a mode is active.">
+        <FlowCard type="condition"><strong>Night</strong> is active</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Triggers
 
 <FlowCards>
-    <FlowCard type="trigger"><strong>Partytime</strong> is activated</FlowCard>
-    <FlowCard type="trigger"><strong>Vacation</strong> changed</FlowCard>
-    <FlowCard type="trigger"><strong>Clearning</strong> is deactivated</FlowCard>
+    <FlowCardExplainer content="Triggers when a mode is activated.">
+        <FlowCard type="trigger"><strong>Partytime</strong> is activated</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when a mode is activated or deactivated.">
+        <FlowCard type="trigger"><strong>Vacation</strong> changed</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when a mode is deactivated.">
+        <FlowCard type="trigger"><strong>Clearning</strong> is deactivated</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ## Examples

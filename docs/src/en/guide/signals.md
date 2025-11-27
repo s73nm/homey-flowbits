@@ -37,13 +37,17 @@ These flow cards allow you to send and listen for lightweight signals, making it
 ### Actions
 
 <FlowCards>
-    <FlowCard type="action">Send signal <strong>Hall lights on/off</strong></FlowCard>
+    <FlowCardExplainer content="Sends a signal to all flows listening for it.">
+        <FlowCard type="action">Send signal <strong>Hall lights on/off</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Triggers
 
 <FlowCards>
-    <FlowCard type="trigger">Receive signal <strong>Hall lights on/off</strong></FlowCard>
+    <FlowCardExplainer content="Receives a signal from any flow.">
+        <FlowCard type="trigger">Receive signal <strong>Hall lights on/off</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ## Examples

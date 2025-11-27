@@ -29,22 +29,34 @@ These flow cards let you move through, reset, or evaluate step sequences, making
 ### Actions
 
 <FlowCards>
-    <FlowCard type="action">Next step in <strong>Hall switch</strong> ( 1 &ndash; <strong>3</strong> )</FlowCard>
-    <FlowCard type="action">Next step in <strong>Channel</strong> ( <strong>5</strong> &ndash; <strong>10</strong> )</FlowCard>
-    <FlowCard type="action">Set sequence <strong>Hall switch</strong> to <strong>0</strong></FlowCard>
+    <FlowCardExplainer content="Cycles to the next step in the step sequence. When it reaches the last step, it wraps back to the first step.">
+        <FlowCard type="action">Next step in <strong>Hall switch</strong> ( 1 &ndash; <strong>3</strong> )</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Cycles to the next step in the step sequence. When it reaches the last step, it wraps back to the first step.">
+        <FlowCard type="action">Next step in <strong>Channel</strong> ( <strong>5</strong> &ndash; <strong>10</strong> )</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Sets the step sequence to a particular value.">
+        <FlowCard type="action">Set sequence <strong>Hall switch</strong> to <strong>0</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Conditions
 
 <FlowCards>
-    <FlowCard type="condition">Sequence <strong>Hall switch</strong> equals <strong>1</strong></FlowCard>
+    <FlowCardExplainer content="Checks if the current step in the step sequence is equal to a particular value.">
+        <FlowCard type="condition">Sequence <strong>Hall switch</strong> equals <strong>1</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Triggers
 
 <FlowCards>
-    <FlowCard type="trigger">Sequence <strong>Hall switch</strong> reaches <strong>3</strong></FlowCard>
-    <FlowCard type="trigger">Sequence <strong>Channel</strong> updates value</FlowCard>
+    <FlowCardExplainer content="Triggers when the step sequence reaches a particular value.">
+        <FlowCard type="trigger">Sequence <strong>Hall switch</strong> reaches <strong>3</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when the step sequence updates its value.">
+        <FlowCard type="trigger">Sequence <strong>Channel</strong> updates value</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ## Examples

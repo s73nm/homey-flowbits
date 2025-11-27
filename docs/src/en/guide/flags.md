@@ -35,23 +35,37 @@ These flow cards allow you to set, clear, toggle, or evaluate flags from within 
 ### Actions
 
 <FlowCards>
-    <FlowCard type="action">Activate flag <strong>Partytime</strong></FlowCard>
-    <FlowCard type="action">Deactivate flag <strong>Cleaning</strong></FlowCard>
-    <FlowCard type="action">Toggle flag <strong>Vacation</strong></FlowCard>
+    <FlowCardExplainer content="Activate a flag, but only if it is not already active.">
+        <FlowCard type="action">Activate flag <strong>Partytime</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Deactivate a flag, but only if it is active.">
+        <FlowCard type="action">Deactivate flag <strong>Cleaning</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Toggle a flag, regardless of its current state.">
+        <FlowCard type="action">Toggle flag <strong>Vacation</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Conditions
 
 <FlowCards>
-    <FlowCard type="condition">Flag <strong>Cleaning</strong> is active</FlowCard>
+    <FlowCardExplainer content="Check if a flag is active.">
+        <FlowCard type="condition">Flag <strong>Cleaning</strong> is active</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Triggers
 
 <FlowCards>
-    <FlowCard type="trigger">Flag <strong>Partytime</strong> is activated</FlowCard>
-    <FlowCard type="trigger">Flag <strong>Vacation</strong> changed</FlowCard>
-    <FlowCard type="trigger">Flag <strong>Clearning</strong> is deactivated</FlowCard>
+    <FlowCardExplainer content="Triggers when a flag is activated.">
+        <FlowCard type="trigger">Flag <strong>Partytime</strong> is activated</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when a flag is activated or deactivated.">
+        <FlowCard type="trigger">Flag <strong>Vacation</strong> changed</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when a flag is deactivated.">
+        <FlowCard type="trigger">Flag <strong>Clearning</strong> is deactivated</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ## Examples

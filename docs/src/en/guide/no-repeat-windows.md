@@ -34,13 +34,17 @@ These flow cards allow you to check, or clear a no-repeat window, helping you pr
 ### Actions
 
 <FlowCards>
-    <FlowCard type="action">Reset no-repeat window for <strong>Toilet lights</strong></FlowCard>
+    <FlowCardExplainer content="This lets you clear a no-repeat window, the next trigger will be allowed.">
+        <FlowCard type="action">Reset no-repeat window for <strong>Toilet lights</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
-### Triggers
+### Conditions
 
 <FlowCards>
-    <FlowCard type="trigger">No repeat of <strong>Toilet lights</strong> within <strong>30</strong> <strong>seconds</strong></FlowCard>
+    <FlowCardExplainer content="Checks if the no-repeat window allows the next trigger.">
+        <FlowCard type="condition">No repeat of <strong>Toilet lights</strong> within <strong>30</strong> <strong>seconds</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ## Examples

@@ -2,6 +2,7 @@ import type { Theme } from 'vitepress';
 import DefaultTheme from 'vitepress/theme';
 
 import FlowCard from './component/FlowCard.vue';
+import FlowCardExplainer from './component/FlowCardExplainer.vue';
 import FlowCards from './component/FlowCards.vue';
 
 import './style.css';
@@ -11,6 +12,7 @@ export default {
 
     enhanceApp({app}) {
         app.component('FlowCard', FlowCard);
+        app.component('FlowCardExplainer', FlowCardExplainer);
         app.component('FlowCards', FlowCards);
     }
 } satisfies Theme;

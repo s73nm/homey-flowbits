@@ -41,31 +41,61 @@ These flow cards allow you to start, stop, reset, or check timers, enabling prec
 ### Actions
 
 <FlowCards>
-    <FlowCard type="action">Pause timer <strong>Hall lights</strong></FlowCard>
-    <FlowCard type="action">Resume timer <strong>Alarm cooldown</strong></FlowCard>
-    <FlowCard type="action">Set timer <strong>Hall lights</strong> to <strong>5</strong> <strong>minutes</strong></FlowCard>
-    <FlowCard type="action">Start timer <strong>Hall lights</strong> with <strong>5</strong> <strong>minutes</strong></FlowCard>
-    <FlowCard type="action">Stop timer <strong>Hall lights</strong></FlowCard>
+    <FlowCardExplainer content="Pauses the timer, if it is running.">
+        <FlowCard type="action">Pause timer <strong>Hall lights</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Resumes the timer, if it is paused.">
+        <FlowCard type="action">Resume timer <strong>Alarm cooldown</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Sets the timer to a new duration.">
+        <FlowCard type="action">Set timer <strong>Hall lights</strong> to <strong>5</strong> <strong>minutes</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Starts the timer with the provided duration. Replaces any existing timer with the same name.">
+        <FlowCard type="action">Start timer <strong>Hall lights</strong> with <strong>5</strong> <strong>minutes</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Stops the timer, if it is running.">
+        <FlowCard type="action">Stop timer <strong>Hall lights</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Conditions
 
 <FlowCards>
-    <FlowCard type="condition">Timer <strong>Alarm cooldown</strong> has more than <strong>30</strong> <strong>seconds</strong> left</FlowCard>
-    <FlowCard type="condition">Timer <strong>Hall lights</strong> is finished</FlowCard>
-    <FlowCard type="condition">Timer <strong>Alarm cooldown</strong> is paused</FlowCard>
-    <FlowCard type="condition">Timer <strong>Hall lights</strong> is running</FlowCard>
+    <FlowCardExplainer content="Checks if the timer has the specified duration left.">
+        <FlowCard type="condition">Timer <strong>Alarm cooldown</strong> has more than <strong>30</strong> <strong>seconds</strong> left</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Checks if the timer is finished.">
+        <FlowCard type="condition">Timer <strong>Hall lights</strong> is finished</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Checks if the timer is paused.">
+        <FlowCard type="condition">Timer <strong>Alarm cooldown</strong> is paused</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Checks if the timer is running.">
+        <FlowCard type="condition">Timer <strong>Hall lights</strong> is running</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Triggers
 
 <FlowCards>
-    <FlowCard type="trigger">Timer <strong>Hall lights</strong> finished</FlowCard>
-    <FlowCard type="trigger">Timer <strong>Hall lights</strong> paused</FlowCard>
-    <FlowCard type="trigger"><strong>30</strong> <strong>seconds</strong> remaining for timer <strong>Hall lights</strong></FlowCard>
-    <FlowCard type="trigger">Timer <strong>Hall lights</strong> resumed</FlowCard>
-    <FlowCard type="trigger">Timer <strong>Hall lights</strong> started</FlowCard>
-    <FlowCard type="trigger">Timer <strong>Hall lights</strong> stopped</FlowCard>
+    <FlowCardExplainer content="Triggers when the timer finishes.">
+        <FlowCard type="trigger">Timer <strong>Hall lights</strong> finished</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when the timer is paused.">
+        <FlowCard type="trigger">Timer <strong>Hall lights</strong> paused</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when the timer is running and has reached the specified duration.">
+        <FlowCard type="trigger"><strong>30</strong> <strong>seconds</strong> remaining for timer <strong>Hall lights</strong></FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when the timer is resumed after being paused.">
+        <FlowCard type="trigger">Timer <strong>Hall lights</strong> resumed</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when the timer starts.">
+        <FlowCard type="trigger">Timer <strong>Hall lights</strong> started</FlowCard>
+    </FlowCardExplainer>
+    <FlowCardExplainer content="Triggers when the timer stops.">
+        <FlowCard type="trigger">Timer <strong>Hall lights</strong> stopped</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ## Examples

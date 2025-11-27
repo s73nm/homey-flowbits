@@ -26,13 +26,17 @@ These flow cards let you set or react to slider values, enabling simple numeric 
 ### Actions
 
 <FlowCards>
-    <FlowCard type="action">Set slider <strong>Volume</strong> to <strong>75%</strong></FlowCard>
+    <FlowCardExplainer content="Updates the value of a slider.">
+        <FlowCard type="action">Set slider <strong>Volume</strong> to <strong>75%</strong></FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ### Triggers
 
 <FlowCards>
-    <FlowCard type="trigger">Slider <strong>Volume</strong> changed</FlowCard>
+    <FlowCardExplainer content="Triggers when the value of a slider changes.">
+        <FlowCard type="trigger">Slider <strong>Volume</strong> changed</FlowCard>
+    </FlowCardExplainer>
 </FlowCards>
 
 ## Examples
