@@ -127,5 +127,8 @@
   },
   "1.6.10": {
     "en": "Add Homey Community Topic ID."
+  },
+  "1.6.11": {
+    "en": "Internal optimization."
   }
 }
