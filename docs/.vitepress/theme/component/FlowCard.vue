@@ -1,6 +1,6 @@
 <template>
     <svg
-        v-if="connectorPath && connectorViewBox"
+        v-if="!inFlow && connectorPath && connectorViewBox"
         xmlns="http://www.w3.org/2000/svg"
         height="100%"
         width="100%"
@@ -11,7 +11,7 @@
     </svg>
 
     <div
-        :class="className"
+        :class="[className, inFlow && $style.flowCardInFlow]"
         :id="id"
         :style="{
             '--color': color,
@@ -46,7 +46,8 @@
     lang="ts"
     setup>
     import { inBrowser } from 'vitepress';
-    import { computed, ref, useCssModule, watch, watchEffect } from 'vue';
+    import { computed, inject, ref, useCssModule, watch, watchEffect } from 'vue';
+    import { IN_FLOW } from '../symbols';
 
     const {
         app = 'FlowBits',
@@ -61,6 +62,8 @@
         readonly logo?: string;
         readonly type: 'action' | 'condition' | 'trigger';
     }>();
+
+    const inFlow = inject(IN_FLOW);
 
     const $style = useCssModule();
 
@@ -326,7 +329,16 @@
 
     .flowCardConnectorSvg path {
         fill: none;
-        stroke: var(--vp-c-gray-2);
+        stroke: var(--vp-c-gray-3);
         stroke-width: 3px;
+    }
+
+    .flowCardInFlow {
+        align-self: unset;
+        border-radius: 15px;
+    }
+
+    .flowCardInFlow .flowCardConnector {
+        display: none;
     }
 </style>
