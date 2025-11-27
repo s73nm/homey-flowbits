@@ -1,5 +1,4 @@
-import type { Color, Icon } from '@basmilius/homey-common';
-import { colors, icons, Shortcuts } from '@basmilius/homey-common';
+import { Shortcuts } from '@basmilius/homey-common';
 import type { Flag, FlowBitsApp, Mode, Statistics } from '../types';
 
 export default class extends Shortcuts<FlowBitsApp> {
@@ -117,14 +116,6 @@ export default class extends Shortcuts<FlowBitsApp> {
         await this.app.modes.setLook(mode.name, [color, icon]);
 
         return true;
-    }
-
-    async getColors(): Promise<Color[]> {
-        return colors;
-    }
-
-    async getIcons(): Promise<Icon[]> {
-        return icons;
     }
 
     async getStatistics(): Promise<Statistics> {

@@ -1,4 +1,5 @@
 import type { ApiRequest, Color, Icon } from '@basmilius/homey-common';
+import { colors, icons } from '@basmilius/homey-common';
 import type { Flag, FlowBitsApp, Mode, Statistics } from './src/types';
 
 export async function activateFlag({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyFlag>): Promise<boolean> {
@@ -33,12 +34,12 @@ export async function getModes({homey: {app}}: ApiRequest<FlowBitsApp>): Promise
     return await app.api.getModes();
 }
 
-export async function getColors({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Color[]> {
-    return await app.api.getColors();
+export async function getColors(): Promise<Color[]> {
+    return colors;
 }
 
-export async function getIcons({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Icon[]> {
-    return await app.api.getIcons();
+export async function getIcons(): Promise<Icon[]> {
+    return icons;
 }
 
 export async function setFlagLook({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyLook>): Promise<boolean> {
