@@ -130,5 +130,8 @@
   },
   "1.6.11": {
     "en": "Internal optimization."
+  },
+  "1.6.12": {
+    "en": "This update introduces a new flow trigger for when the current mode changes."
   }
 }
