@@ -1102,6 +1102,41 @@
         ]
       },
       {
+        "id": "mode_current_changed",
+        "title": {
+          "en": "The current mode changed",
+          "nl": "De huidige stand is gewijzigd"
+        },
+        "titleFormatted": {
+          "en": "The current mode changed",
+          "nl": "De huidige stand is gewijzigd"
+        },
+        "hint": {
+          "en": "Triggers when the current mode is changed.",
+          "nl": "Triggert wanneer de huidige stand is gewijzigd."
+        },
+        "tokens": [
+          {
+            "name": "mode",
+            "type": "string",
+            "title": {
+              "en": "Mode",
+              "nl": "Stand",
+              "de": "Modus",
+              "fr": "Mode",
+              "it": "Modalità",
+              "sv": "Läge",
+              "no": "Modus",
+              "es": "Modo",
+              "da": "Tilstand",
+              "ru": "Режим",
+              "pl": "Tryb",
+              "ko": "모드"
+            }
+          }
+        ]
+      },
+      {
         "id": "mode_deactivated",
         "title": {
           "en": "Mode deactivated",

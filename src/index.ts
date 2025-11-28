@@ -143,6 +143,7 @@ export default class FlowBitsApp extends App<FlowBitsApp> {
         this.registry.trigger(Triggers.FlagDeactivated);
         this.registry.trigger(Triggers.ModeActivated);
         this.registry.trigger(Triggers.ModeChanged);
+        this.registry.trigger(Triggers.ModeCurrentChanged);
         this.registry.trigger(Triggers.ModeDeactivated);
         this.registry.trigger(Triggers.SignalReceive);
         this.registry.trigger(Triggers.SliderChanged);
