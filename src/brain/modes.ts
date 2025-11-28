@@ -147,7 +147,7 @@ export default class extends Shortcuts<FlowBitsApp> {
     async #triggerChanged(name: string, active: boolean): Promise<void> {
         this.registry
             .findTrigger(Triggers.ModeCurrentChanged)
-            ?.trigger({}, {mode: name});
+            ?.trigger({}, {mode: active ? name : '-'});
 
         this.registry
             .findTrigger(Triggers.ModeChanged)
