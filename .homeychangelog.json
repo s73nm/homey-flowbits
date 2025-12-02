@@ -136,5 +136,8 @@
   },
   "1.6.13": {
     "en": "This update adds the ability to invert the cycle has value, timer is finished, timer is paused and timer is running conditions."
+  },
+  "1.6.14": {
+    "en": "This update fixes a bug where modes could not be activated or deactivated while timeline notifications were disabled."
   }
 }
