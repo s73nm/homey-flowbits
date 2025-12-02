@@ -133,5 +133,8 @@
   },
   "1.6.12": {
     "en": "This update introduces a new flow trigger for when the current mode changes."
+  },
+  "1.6.13": {
+    "en": "This update adds the ability to invert the cycle has value, timer is finished, timer is paused and timer is running conditions."
   }
 }
