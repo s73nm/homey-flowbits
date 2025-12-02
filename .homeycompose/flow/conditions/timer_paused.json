@@ -15,18 +15,18 @@
         "ko": "타이머가 일시 중지됨"
     },
     "titleFormatted": {
-        "en": "Timer [[timer]] is paused",
-        "nl": "Timer [[timer]] is gepauzeerd",
-        "de": "Timer [[timer]] ist pausiert",
-        "fr": "Le minuteur [[timer]] est en pause",
-        "it": "Il timer [[timer]] è in pausa",
-        "sv": "Timern [[timer]] är pausad",
-        "no": "Tidsur [[timer]] er satt på pause",
-        "es": "El temporizador [[timer]] está en pausa",
-        "da": "Timeren [[timer]] er sat på pause",
-        "ru": "Таймер [[timer]] поставлен на паузу",
-        "pl": "Timer [[timer]] jest wstrzymany",
-        "ko": "타이머 [[timer]]가 일시 중지됨"
+        "en": "Timer [[timer]] !{{is|is not}} paused",
+        "nl": "Timer [[timer]] !{{is|is niet}} gepauzeerd",
+        "de": "Timer [[timer]] !{{ist|ist nicht}} pausiert",
+        "fr": "Minuteur [[timer]] !{{est|n’est pas}} en pause",
+        "it": "Timer [[timer]] !{{è|non è}} in pausa",
+        "sv": "Timer [[timer]] !{{är|är inte}} pausad",
+        "no": "Tidsur [[timer]] !{{er|er ikke}} satt på pause",
+        "es": "Temporizador [[timer]] !{{está|no está}} en pausa",
+        "da": "Timer [[timer]] !{{er|er ikke}} på pause",
+        "ru": "Таймер [[timer]] !{{поставлен на паузу|не поставлен на паузу}}",
+        "pl": "Timer [[timer]] !{{jest|nie jest}} wstrzymany",
+        "ko": "타이머 [[timer]] !{{일시 중지됨|일시 중지되지 않음}}"
     },
     "args": [
         {

@@ -15,18 +15,18 @@
         "ko": "타이머가 종료됨"
     },
     "titleFormatted": {
-        "en": "Timer [[timer]] is finished",
-        "nl": "Timer [[timer]] is afgelopen",
-        "de": "Timer [[timer]] ist beendet",
-        "fr": "Le minuteur [[timer]] est terminé",
-        "it": "Il timer [[timer]] è terminato",
-        "sv": "Timern [[timer]] är klar",
-        "no": "Tidsur [[timer]] er ferdig",
-        "es": "El temporizador [[timer]] ha terminado",
-        "da": "Timeren [[timer]] er færdig",
-        "ru": "Таймер [[timer]] завершен",
-        "pl": "Timer [[timer]] się zakończył",
-        "ko": "타이머 [[timer]]가 종료됨"
+        "en": "Timer [[timer]] !{{is|is not}} finished",
+        "nl": "Timer [[timer]] !{{is|is niet}} afgelopen",
+        "de": "Timer [[timer]] !{{ist|ist nicht}} beendet",
+        "fr": "Minuteur [[timer]] !{{est|n’est pas}} terminé",
+        "it": "Timer [[timer]] !{{è|non è}} terminato",
+        "sv": "Timer [[timer]] !{{är|är inte}} klar",
+        "no": "Tidsur [[timer]] !{{er|er ikke}} ferdig",
+        "es": "Temporizador [[timer]] !{{está|no está}} finalizado",
+        "da": "Timer [[timer]] !{{er|er ikke}} færdig",
+        "ru": "Таймер [[timer]] !{{завершён|не завершён}}",
+        "pl": "Timer [[timer]] !{{jest|nie jest}} zakończony",
+        "ko": "타이머 [[timer]] !{{완료됨|완료되지 않음}}"
     },
     "args": [
         {

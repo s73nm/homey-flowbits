@@ -15,18 +15,18 @@
         "ko": "타이머가 실행 중임"
     },
     "titleFormatted": {
-        "en": "Timer [[timer]] is running",
-        "nl": "Timer [[timer]] loopt",
-        "de": "Timer [[timer]] läuft",
-        "fr": "Le minuteur [[timer]] est en cours",
-        "it": "Il timer [[timer]] è in esecuzione",
-        "sv": "Timern [[timer]] är igång",
-        "no": "Tidsur [[timer]] kjører",
-        "es": "El temporizador [[timer]] está en marcha",
-        "da": "Timeren [[timer]] kører",
-        "ru": "Таймер [[timer]] запущен",
-        "pl": "Timer [[timer]] jest uruchomiony",
-        "ko": "타이머 [[timer]]가 실행 중임"
+        "en": "Timer [[timer]] !{{is|is not}} running",
+        "nl": "Timer [[timer]] !{{loopt|loopt niet}}",
+        "de": "Timer [[timer]] !{{läuft|läuft nicht}}",
+        "fr": "Minuteur [[timer]] !{{est|n’est pas}} en cours d’exécution",
+        "it": "Timer [[timer]] !{{è|non è}} in esecuzione",
+        "sv": "Timer [[timer]] !{{är|är inte}} igång",
+        "no": "Tidsur [[timer]] !{{kjører|kjører ikke}}",
+        "es": "Temporizador [[timer]] !{{está|no está}} en ejecución",
+        "da": "Timer [[timer]] !{{kører|kører ikke}}",
+        "ru": "Таймер [[timer]] !{{запущен|не запущен}}",
+        "pl": "Timer [[timer]] !{{działa|nie działa}}",
+        "ko": "타이머 [[timer]] !{{실행 중|실행 중 아님}}"
     },
     "args": [
         {

@@ -1821,29 +1821,29 @@
           "en": "Sequence equals",
           "nl": "Stappenreeks is gelijk aan",
           "de": "Sequenz ist gleich",
-          "fr": "La séquence est égale à",
-          "it": "La sequenza è uguale a",
+          "fr": "Séquence est égale",
+          "it": "Sequenza è uguale",
           "sv": "Sekvens är lika med",
           "no": "Sekvens er lik",
-          "es": "La secuencia es igual a",
+          "es": "Secuencia es igual",
           "da": "Sekvens er lig med",
           "ru": "Последовательность равна",
           "pl": "Sekwencja równa się",
           "ko": "시퀀스가 동일함"
         },
         "titleFormatted": {
-          "en": "Sequence [[name]] equals [[value]]",
-          "nl": "Stappenreeks [[name]] is gelijk aan [[value]]",
-          "de": "Sequenz [[name]] ist gleich [[value]]",
-          "fr": "La séquence [[name]] est égale à [[value]]",
-          "it": "La sequenza [[name]] è uguale a [[value]]",
-          "sv": "Sekvens [[name]] är lika med [[value]]",
-          "no": "Sekvens [[name]] er lik [[value]]",
-          "es": "La secuencia [[name]] es igual a [[value]]",
-          "da": "Sekvens [[name]] er lig med [[value]]",
-          "ru": "Последовательность [[name]] равна [[value]]",
-          "pl": "Sekwencja [[name]] równa się [[value]]",
-          "ko": "시퀀스 [[name]] 이(가) [[value]] 와 동일함"
+          "en": "Sequence [[name]] !{{equals|does not equal}} [[value]]",
+          "nl": "Stappenreeks [[name]] is !{{gelijk|niet gelijk}} aan [[value]]",
+          "de": "Sequenz [[name]] !{{ist gleich|ist nicht gleich}} [[value]]",
+          "fr": "Séquence [[name]] !{{est égale|n’est pas égale}} à [[value]]",
+          "it": "Sequenza [[name]] !{{è uguale|non è uguale}} a [[value]]",
+          "sv": "Sekvens [[name]] !{{är lika med|är inte lika med}} [[value]]",
+          "no": "Sekvens [[name]] !{{er lik|er ikke lik}} [[value]]",
+          "es": "Secuencia [[name]] !{{es igual|no es igual}} a [[value]]",
+          "da": "Sekvens [[name]] !{{er lig med|er ikke lig med}} [[value]]",
+          "ru": "Последовательность [[name]] !{{равна|не равна}} [[value]]",
+          "pl": "Sekwencja [[name]] !{{jest równa|nie jest równa}} [[value]]",
+          "ko": "시퀀스 [[name]] !{{같음|같지 않음}} [[value]]"
         },
         "args": [
           {
@@ -2664,18 +2664,18 @@
           "ko": "타이머가 종료됨"
         },
         "titleFormatted": {
-          "en": "Timer [[timer]] is finished",
-          "nl": "Timer [[timer]] is afgelopen",
-          "de": "Timer [[timer]] ist beendet",
-          "fr": "Le minuteur [[timer]] est terminé",
-          "it": "Il timer [[timer]] è terminato",
-          "sv": "Timern [[timer]] är klar",
-          "no": "Tidsur [[timer]] er ferdig",
-          "es": "El temporizador [[timer]] ha terminado",
-          "da": "Timeren [[timer]] er færdig",
-          "ru": "Таймер [[timer]] завершен",
-          "pl": "Timer [[timer]] się zakończył",
-          "ko": "타이머 [[timer]]가 종료됨"
+          "en": "Timer [[timer]] !{{is|is not}} finished",
+          "nl": "Timer [[timer]] !{{is|is niet}} afgelopen",
+          "de": "Timer [[timer]] !{{ist|ist nicht}} beendet",
+          "fr": "Minuteur [[timer]] !{{est|n’est pas}} terminé",
+          "it": "Timer [[timer]] !{{è|non è}} terminato",
+          "sv": "Timer [[timer]] !{{är|är inte}} klar",
+          "no": "Tidsur [[timer]] !{{er|er ikke}} ferdig",
+          "es": "Temporizador [[timer]] !{{está|no está}} finalizado",
+          "da": "Timer [[timer]] !{{er|er ikke}} færdig",
+          "ru": "Таймер [[timer]] !{{завершён|не завершён}}",
+          "pl": "Timer [[timer]] !{{jest|nie jest}} zakończony",
+          "ko": "타이머 [[timer]] !{{완료됨|완료되지 않음}}"
         },
         "args": [
           {
@@ -2715,18 +2715,18 @@
           "ko": "타이머가 일시 중지됨"
         },
         "titleFormatted": {
-          "en": "Timer [[timer]] is paused",
-          "nl": "Timer [[timer]] is gepauzeerd",
-          "de": "Timer [[timer]] ist pausiert",
-          "fr": "Le minuteur [[timer]] est en pause",
-          "it": "Il timer [[timer]] è in pausa",
-          "sv": "Timern [[timer]] är pausad",
-          "no": "Tidsur [[timer]] er satt på pause",
-          "es": "El temporizador [[timer]] está en pausa",
-          "da": "Timeren [[timer]] er sat på pause",
-          "ru": "Таймер [[timer]] поставлен на паузу",
-          "pl": "Timer [[timer]] jest wstrzymany",
-          "ko": "타이머 [[timer]]가 일시 중지됨"
+          "en": "Timer [[timer]] !{{is|is not}} paused",
+          "nl": "Timer [[timer]] !{{is|is niet}} gepauzeerd",
+          "de": "Timer [[timer]] !{{ist|ist nicht}} pausiert",
+          "fr": "Minuteur [[timer]] !{{est|n’est pas}} en pause",
+          "it": "Timer [[timer]] !{{è|non è}} in pausa",
+          "sv": "Timer [[timer]] !{{är|är inte}} pausad",
+          "no": "Tidsur [[timer]] !{{er|er ikke}} satt på pause",
+          "es": "Temporizador [[timer]] !{{está|no está}} en pausa",
+          "da": "Timer [[timer]] !{{er|er ikke}} på pause",
+          "ru": "Таймер [[timer]] !{{поставлен на паузу|не поставлен на паузу}}",
+          "pl": "Timer [[timer]] !{{jest|nie jest}} wstrzymany",
+          "ko": "타이머 [[timer]] !{{일시 중지됨|일시 중지되지 않음}}"
         },
         "args": [
           {
@@ -2766,18 +2766,18 @@
           "ko": "타이머가 실행 중임"
         },
         "titleFormatted": {
-          "en": "Timer [[timer]] is running",
-          "nl": "Timer [[timer]] loopt",
-          "de": "Timer [[timer]] läuft",
-          "fr": "Le minuteur [[timer]] est en cours",
-          "it": "Il timer [[timer]] è in esecuzione",
-          "sv": "Timern [[timer]] är igång",
-          "no": "Tidsur [[timer]] kjører",
-          "es": "El temporizador [[timer]] está en marcha",
-          "da": "Timeren [[timer]] kører",
-          "ru": "Таймер [[timer]] запущен",
-          "pl": "Timer [[timer]] jest uruchomiony",
-          "ko": "타이머 [[timer]]가 실행 중임"
+          "en": "Timer [[timer]] !{{is|is not}} running",
+          "nl": "Timer [[timer]] !{{loopt|loopt niet}}",
+          "de": "Timer [[timer]] !{{läuft|läuft nicht}}",
+          "fr": "Minuteur [[timer]] !{{est|n’est pas}} en cours d’exécution",
+          "it": "Timer [[timer]] !{{è|non è}} in esecuzione",
+          "sv": "Timer [[timer]] !{{är|är inte}} igång",
+          "no": "Tidsur [[timer]] !{{kjører|kjører ikke}}",
+          "es": "Temporizador [[timer]] !{{está|no está}} en ejecución",
+          "da": "Timer [[timer]] !{{kører|kører ikke}}",
+          "ru": "Таймер [[timer]] !{{запущен|не запущен}}",
+          "pl": "Timer [[timer]] !{{działa|nie działa}}",
+          "ko": "타이머 [[timer]] !{{실행 중|실행 중 아님}}"
         },
         "args": [
           {
