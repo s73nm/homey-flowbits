@@ -1,5 +1,4 @@
-import { condition, FlowConditionEntity } from '@basmilius/homey-common';
-import { DateTime } from 'luxon';
+import { condition, DateTime, FlowConditionEntity } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../types';
 import { getZodiacSign, type ZodiacSign } from '../../util';
 

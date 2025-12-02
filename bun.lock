@@ -5,14 +5,12 @@
     "": {
       "name": "com.basmilius.flowbits",
       "dependencies": {
-        "@basmilius/homey-common": "^1.0.2",
-        "luxon": "^3.7.2",
+        "@basmilius/homey-common": "^1.0.11",
       },
       "devDependencies": {
         "@tsconfig/node18": "^18.2.6",
         "@types/bun": "^1.3.3",
         "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
-        "@types/luxon": "^3.7.1",
         "@types/node": "^24.10.1",
         "typescript": "^5.9.3",
         "vitepress": "^2.0.0-alpha.15",
@@ -28,7 +26,7 @@
 
     "@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
 
-    "@basmilius/homey-common": ["@basmilius/homey-common@1.0.2", "", {}, "sha512-QnT2eiTNhqsfEyBzk6jmWIIBhI13tfwynCNPGWfhEfdWdSQksGCAMX9S/+r/jRqycE9ysOt/uemlFfaMR1coog=="],
+    "@basmilius/homey-common": ["@basmilius/homey-common@1.0.11", "", { "dependencies": { "@types/luxon": "^3.7.1" } }, "sha512-ulVdibzTve7j/iAks0p90O6YFVJ1uL71u9Ghsd//y3hM3MVJy+ZeqS4gvMOY4ilGnODXtYYmMWFJMmgQZI7ZVw=="],
 
     "@docsearch/css": ["@docsearch/css@4.3.2", "", {}, "sha512-K3Yhay9MgkBjJJ0WEL5MxnACModX9xuNt3UlQQkDEDZJZ0+aeWKtOkxHNndMRkMBnHdYvQjxkm6mdlneOtU1IQ=="],
 
@@ -259,8 +257,6 @@
     "html-void-elements": ["html-void-elements@3.0.0", "", {}, "sha512-bEqo66MRXsUGxWHV5IP0PUiAWwoEjba4VCzg0LjFJBpchPaTfyfCKTG6bc5F8ucKec3q5y6qOdGyYTSBEvhCrg=="],
 
     "is-what": ["is-what@5.5.0", "", {}, "sha512-oG7cgbmg5kLYae2N5IVd3jm2s+vldjxJzK1pcu9LfpGuQ93MQSzo0okvRna+7y5ifrD+20FE8FvjusyGaz14fw=="],
-
-    "luxon": ["luxon@3.7.2", "", {}, "sha512-vtEhXh/gNjI9Yg1u4jX/0YVPMvxzHuGgCm6tC5kZyb08yjGWGnqAjGJvcXbqQR2P3MyMEFnRbpcdFS6PBcLqew=="],
 
     "magic-string": ["magic-string@0.30.21", "", { "dependencies": { "@jridgewell/sourcemap-codec": "^1.5.5" } }, "sha512-vd2F4YUyEXKGcLHoq+TEyCjxueSeHnFxyyjNp80yg0XV4vUhnDer/lvvlqM/arB5bXQN5K2/3oinyCRyx8T2CQ=="],
 

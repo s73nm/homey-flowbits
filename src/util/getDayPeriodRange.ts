@@ -1,4 +1,4 @@
-import { DateTime } from 'luxon';
+import { DateTime } from '@basmilius/homey-common';
 import type { DayPeriod } from './getDayPeriod';
 
 export default function (period: DayPeriod): [DateTime, DateTime] {

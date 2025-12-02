@@ -1,5 +1,4 @@
-import { Shortcuts } from '@basmilius/homey-common';
-import { DateTime } from 'luxon';
+import { DateTime, Shortcuts } from '@basmilius/homey-common';
 import { SETTING_TIMER_PREFIX } from '../const';
 import { AutocompleteProviders, Triggers } from '../flow';
 import type { ClockState, ClockUnit, FlowBitsApp } from '../types';

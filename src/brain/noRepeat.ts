@@ -1,5 +1,4 @@
-import { Shortcuts } from '@basmilius/homey-common';
-import { DateTime } from 'luxon';
+import { DateTime, Shortcuts } from '@basmilius/homey-common';
 import { SETTING_NO_REPEAT_WINDOWS } from '../const';
 import type { ClockUnit, FlowBitsApp } from '../types';
 import { convertDurationToSeconds } from '../util';

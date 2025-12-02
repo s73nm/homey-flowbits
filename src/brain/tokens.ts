@@ -1,6 +1,5 @@
-import { Shortcuts, Trigger } from '@basmilius/homey-common';
+import { DateTime, Shortcuts, Trigger } from '@basmilius/homey-common';
 import type { FlowToken } from 'homey';
-import { DateTime } from 'luxon';
 import { Triggers } from '../flow';
 import type { FlowBitsApp } from '../types';
 import { getDayPeriod, getMoonPhase, getZodiacSign } from '../util';

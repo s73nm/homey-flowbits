@@ -1,5 +1,4 @@
-import { App } from '@basmilius/homey-common';
-import { Settings } from 'luxon';
+import { App, Luxon } from '@basmilius/homey-common';
 import type { Api, Cycles, Flags, Modes, NoRepeat, Sliders, Timers, Tokens, Widgets } from './brain';
 import { Brain } from './brain';
 import { Actions, AutocompleteProviders, Conditions, Triggers } from './flow';
@@ -48,7 +47,7 @@ export default class FlowBitsApp extends App<FlowBitsApp> {
         try {
             this.#brain = new Brain(this);
 
-            Settings.defaultZone = this.homey.clock.getTimezone();
+            Luxon.defaultZone = this.homey.clock.getTimezone();
 
             this.#registerAutocompleteProviders();
             this.#registerActions();
