@@ -5,12 +5,13 @@
     "": {
       "name": "com.basmilius.flowbits",
       "dependencies": {
-        "@basmilius/homey-common": "^1.0.11",
+        "@basmilius/homey-common": "^1.0.12",
       },
       "devDependencies": {
         "@tsconfig/node18": "^18.2.6",
         "@types/bun": "^1.3.3",
         "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
+        "@types/luxon": "^3.7.1",
         "@types/node": "^24.10.1",
         "typescript": "^5.9.3",
         "vitepress": "^2.0.0-alpha.15",
@@ -26,7 +27,7 @@
 
     "@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
 
-    "@basmilius/homey-common": ["@basmilius/homey-common@1.0.11", "", { "dependencies": { "@types/luxon": "^3.7.1" } }, "sha512-ulVdibzTve7j/iAks0p90O6YFVJ1uL71u9Ghsd//y3hM3MVJy+ZeqS4gvMOY4ilGnODXtYYmMWFJMmgQZI7ZVw=="],
+    "@basmilius/homey-common": ["@basmilius/homey-common@1.0.12", "", {}, "sha512-ho/jZ1oU9v63753NCqBoTvyDZXycquiKZuEXvU8eg5GfFId8kodI8gDT1ZvCBanU+HxCpaXhLUBgq3dywgqnHA=="],
 
     "@docsearch/css": ["@docsearch/css@4.3.2", "", {}, "sha512-K3Yhay9MgkBjJJ0WEL5MxnACModX9xuNt3UlQQkDEDZJZ0+aeWKtOkxHNndMRkMBnHdYvQjxkm6mdlneOtU1IQ=="],
 
