@@ -139,5 +139,8 @@
   },
   "1.6.14": {
     "en": "This update fixes a bug where modes could not be activated or deactivated while timeline notifications were disabled."
+  },
+  "1.6.15": {
+    "en": "Fixed a typo."
   }
 }
