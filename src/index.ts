@@ -41,12 +41,16 @@ export default class FlowBitsApp extends App<FlowBitsApp> {
         return this.#brain.widgets;
     }
 
-    #brain!: Brain;
+    readonly #brain: Brain;
+
+    constructor(...args: any[]) {
+        super(...args);
+
+        this.#brain = new Brain(this);
+    }
 
     async onInit(): Promise<void> {
         try {
-            this.#brain = new Brain(this);
-
             Luxon.defaultZone = this.homey.clock.getTimezone();
 
             this.#registerAutocompleteProviders();
