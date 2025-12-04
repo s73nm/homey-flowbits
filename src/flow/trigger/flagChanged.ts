@@ -16,6 +16,7 @@ export default class extends FlowTriggerEntity<FlowBitsApp, Args, State> {
 
     async onUpdate(): Promise<void> {
         await this.app.flags.update();
+        await super.onUpdate();
     }
 }
 

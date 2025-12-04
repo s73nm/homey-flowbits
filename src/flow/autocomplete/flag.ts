@@ -7,8 +7,6 @@ export default class extends FlowAutocompleteProvider<FlowBitsApp> {
     #values: string[] = [];
 
     async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
-        await this.update();
-
         const hasQuery = query.trim().length > 0;
 
         const results: FlowCard.ArgumentAutocompleteResults = this.#values

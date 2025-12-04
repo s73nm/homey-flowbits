@@ -16,6 +16,7 @@ export default class extends FlowActionEntity<FlowBitsApp, Args> {
 
     async onUpdate(): Promise<void> {
         await this.app.modes.update();
+        await super.onUpdate();
     }
 }
 

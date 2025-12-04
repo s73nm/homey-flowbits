@@ -1,6 +1,9 @@
 export { default as Cycle } from './cycle';
 export { default as CycleBetween } from './cycleBetween';
 export { default as CycleTo } from './cycleTo';
+export { default as EventClear } from './eventClear';
+export { default as EventClearAll } from './eventClearAll';
+export { default as EventTrigger } from './eventTrigger';
 export { default as FlagActivate } from './flagActivate';
 export { default as FlagDeactivate } from './flagDeactivate';
 export { default as FlagToggle } from './flagToggle';

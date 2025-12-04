@@ -16,6 +16,7 @@ export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {
 
     async onUpdate(): Promise<void> {
         await this.app.modes.update();
+        await super.onUpdate();
     }
 }
 
