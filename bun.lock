@@ -5,7 +5,7 @@
     "": {
       "name": "com.basmilius.flowbits",
       "dependencies": {
-        "@basmilius/homey-common": "^1.1.1",
+        "@basmilius/homey-common": "^1.2.1",
       },
       "devDependencies": {
         "@tsconfig/node18": "^18.2.6",
@@ -27,7 +27,7 @@
 
     "@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
 
-    "@basmilius/homey-common": ["@basmilius/homey-common@1.1.1", "", {}, "sha512-AfamOWYS8LzqEDbHvVLslz5atXC5hD6PSBTCQpPS1nNyi30RiPkXQPVb0RbZnqVmKAYz6oy0pGYlio8Wjy5DJg=="],
+    "@basmilius/homey-common": ["@basmilius/homey-common@1.2.1", "", {}, "sha512-1xNpSDohJtS1gblheiZN9gGJ5QdTUsY0zK2IKCy6a3FjqGpxFZr6IgE5Li22T5FkPbWl8lVme+X0bxA/rMeKOA=="],
 
     "@docsearch/css": ["@docsearch/css@4.3.2", "", {}, "sha512-K3Yhay9MgkBjJJ0WEL5MxnACModX9xuNt3UlQQkDEDZJZ0+aeWKtOkxHNndMRkMBnHdYvQjxkm6mdlneOtU1IQ=="],
 

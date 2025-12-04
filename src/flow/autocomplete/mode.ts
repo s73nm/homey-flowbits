@@ -1,20 +1,18 @@
-import { autocomplete, FlowAutocompleteProvider } from '@basmilius/homey-common';
-import type { FlowCard } from 'homey';
+import { autocomplete, FlowAutocompleteArgumentProvider, type FlowCard } from '@basmilius/homey-common';
+import type Homey from 'homey';
 import type { FlowBitsApp } from '../../types';
 
 @autocomplete('mode')
-export default class extends FlowAutocompleteProvider<FlowBitsApp> {
-    #values: string[] = [];
-
-    async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
+export default class extends FlowAutocompleteArgumentProvider<FlowBitsApp> {
+    async find(query: string): Promise<Homey.FlowCard.ArgumentAutocompleteResults> {
         const hasQuery = query.trim().length > 0;
 
-        const results: FlowCard.ArgumentAutocompleteResults = this.#values
+        const results: Homey.FlowCard.ArgumentAutocompleteResults = this.values
             .filter(name => !hasQuery || name.toLowerCase().includes(query.toLowerCase()))
             .map(name => ({name}))
             .sort((a, b) => a.name.localeCompare(b.name));
 
-        if (hasQuery && !this.#values.some(name => query === name)) {
+        if (hasQuery && !this.values.some(name => query === name)) {
             results.unshift({
                 name: query,
                 description: this.translate('autocomplete.mode_new')
@@ -24,21 +22,18 @@ export default class extends FlowAutocompleteProvider<FlowBitsApp> {
         return results;
     }
 
-    async update(): Promise<void> {
-        this.#values = await Promise
-            .allSettled([
-                await this.flow.getActionCard('mode_activate').getArgumentValues(),
-                await this.flow.getActionCard('mode_deactivate').getArgumentValues(),
-                await this.flow.getConditionCard('mode_is').getArgumentValues(),
-                await this.flow.getTriggerCard('mode_activated').getArgumentValues(),
-                await this.flow.getTriggerCard('mode_changed').getArgumentValues(),
-                await this.flow.getTriggerCard('mode_deactivated').getArgumentValues()
-            ])
-            .then(allValues => allValues
-                .filter(values => values.status === 'fulfilled')
-                .map(values => values.value)
-                .reduce((acc, curr) => acc.concat(curr))
-                .map(value => value.name.name)
-                .filter((value, index, arr) => arr.indexOf(value) === index));
+    getCards(): FlowCard[] {
+        return [
+            this.flow.getActionCard('mode_activate'),
+            this.flow.getActionCard('mode_deactivate'),
+            this.flow.getConditionCard('mode_is'),
+            this.flow.getTriggerCard('mode_activated'),
+            this.flow.getTriggerCard('mode_changed'),
+            this.flow.getTriggerCard('mode_deactivated')
+        ];
+    }
+
+    mapArgument(value: any): string {
+        return value.name.name;
     }
 }

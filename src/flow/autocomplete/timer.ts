@@ -1,20 +1,18 @@
-import { autocomplete, FlowAutocompleteProvider } from '@basmilius/homey-common';
-import type { FlowCard } from 'homey';
+import { autocomplete, FlowAutocompleteArgumentProvider, type FlowCard } from '@basmilius/homey-common';
+import type Homey from 'homey';
 import type { FlowBitsApp } from '../../types';
 
 @autocomplete('timer')
-export default class extends FlowAutocompleteProvider<FlowBitsApp> {
-    #values: string[] = [];
-
-    async find(query: string): Promise<FlowCard.ArgumentAutocompleteResults> {
+export default class extends FlowAutocompleteArgumentProvider<FlowBitsApp> {
+    async find(query: string): Promise<Homey.FlowCard.ArgumentAutocompleteResults> {
         const hasQuery = query.trim().length > 0;
 
-        const results: FlowCard.ArgumentAutocompleteResults = this.#values
+        const results: Homey.FlowCard.ArgumentAutocompleteResults = this.values
             .filter(name => !hasQuery || name.toLowerCase().includes(query.toLowerCase()))
             .map(name => ({name}))
             .sort((a, b) => a.name.localeCompare(b.name));
 
-        if (hasQuery && !this.#values.some(name => query === name)) {
+        if (hasQuery && !this.values.some(name => query === name)) {
             results.unshift({
                 name: query,
                 description: this.translate('autocomplete.timer_new')
@@ -24,30 +22,27 @@ export default class extends FlowAutocompleteProvider<FlowBitsApp> {
         return results;
     }
 
-    async update(): Promise<void> {
-        this.#values = await Promise
-            .allSettled([
-                await this.flow.getActionCard('timer_pause').getArgumentValues(),
-                await this.flow.getActionCard('timer_resume').getArgumentValues(),
-                await this.flow.getActionCard('timer_set').getArgumentValues(),
-                await this.flow.getActionCard('timer_start').getArgumentValues(),
-                await this.flow.getActionCard('timer_stop').getArgumentValues(),
-                await this.flow.getConditionCard('timer_duration').getArgumentValues(),
-                await this.flow.getConditionCard('timer_finished').getArgumentValues(),
-                await this.flow.getConditionCard('timer_paused').getArgumentValues(),
-                await this.flow.getConditionCard('timer_running').getArgumentValues(),
-                await this.flow.getTriggerCard('timer_finished').getArgumentValues(),
-                await this.flow.getTriggerCard('timer_paused').getArgumentValues(),
-                await this.flow.getTriggerCard('timer_remaining').getArgumentValues(),
-                await this.flow.getTriggerCard('timer_resumed').getArgumentValues(),
-                await this.flow.getTriggerCard('timer_started').getArgumentValues(),
-                await this.flow.getTriggerCard('timer_stopped').getArgumentValues()
-            ])
-            .then(allValues => allValues
-                .filter(values => values.status === 'fulfilled')
-                .map(values => values.value)
-                .reduce((acc, curr) => acc.concat(curr))
-                .map(value => value.timer.name)
-                .filter((value, index, arr) => arr.indexOf(value) === index));
+    getCards(): FlowCard[] {
+        return [
+            this.flow.getActionCard('timer_pause'),
+            this.flow.getActionCard('timer_resume'),
+            this.flow.getActionCard('timer_set'),
+            this.flow.getActionCard('timer_start'),
+            this.flow.getActionCard('timer_stop'),
+            this.flow.getConditionCard('timer_duration'),
+            this.flow.getConditionCard('timer_finished'),
+            this.flow.getConditionCard('timer_paused'),
+            this.flow.getConditionCard('timer_running'),
+            this.flow.getTriggerCard('timer_finished'),
+            this.flow.getTriggerCard('timer_paused'),
+            this.flow.getTriggerCard('timer_remaining'),
+            this.flow.getTriggerCard('timer_resumed'),
+            this.flow.getTriggerCard('timer_started'),
+            this.flow.getTriggerCard('timer_stopped')
+        ];
+    }
+
+    mapArgument(value: any): string {
+        return value.timer.name;
     }
 }
