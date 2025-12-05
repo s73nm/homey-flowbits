@@ -251,9 +251,17 @@
       "method": "POST",
       "path": "/modes"
     },
+    "getEvents": {
+      "method": "GET",
+      "path": "/events"
+    },
     "getFlags": {
       "method": "GET",
       "path": "/flags"
+    },
+    "getLabels": {
+      "method": "GET",
+      "path": "/labels"
     },
     "getModes": {
       "method": "GET",
@@ -267,9 +275,17 @@
       "method": "GET",
       "path": "/icons"
     },
+    "setEventLook": {
+      "method": "POST",
+      "path": "/events/look"
+    },
     "setFlagLook": {
       "method": "POST",
       "path": "/flags/look"
+    },
+    "setLabelLook": {
+      "method": "POST",
+      "path": "/labels/look"
     },
     "setModeLook": {
       "method": "POST",
@@ -737,6 +753,48 @@
         ]
       },
       {
+        "id": "event_cleared",
+        "title": {
+          "en": "Event cleared",
+          "nl": "Gebeurtenis geleegd"
+        },
+        "titleFormatted": {
+          "en": "Event [[event]] is cleared",
+          "nl": "Gebeurtenis [[event]] is geleegd"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          }
+        ]
+      },
+      {
+        "id": "event_triggered",
+        "title": {
+          "en": "Event triggered",
+          "nl": "Gebeurtenis getriggerd"
+        },
+        "titleFormatted": {
+          "en": "Event [[event]] is triggered",
+          "nl": "Gebeurtenis [[event]] is getriggerd"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          }
+        ]
+      },
+      {
         "id": "flag_activated",
         "title": {
           "en": "Flag activated",
@@ -952,6 +1010,56 @@
         ]
       },
       {
+        "id": "label_becomes",
+        "title": {
+          "en": "Label becomes",
+          "nl": "Label verandert in"
+        },
+        "titleFormatted": {
+          "en": "Label [[label]] becomes [[value]]",
+          "nl": "Label [[label]] verandert in [[value]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+              "en": "Label",
+              "nl": "Label"
+            }
+          },
+          {
+            "type": "text",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            }
+          }
+        ]
+      },
+      {
+        "id": "label_changed",
+        "title": {
+          "en": "Label changed",
+          "nl": "Label gewijzigd"
+        },
+        "titleFormatted": {
+          "en": "Label [[label]] changed",
+          "nl": "Label [[label]] is gewijzigd"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+              "en": "Label",
+              "nl": "Label"
+            }
+          }
+        ]
+      },
+      {
         "id": "mode_activated",
         "title": {
           "en": "Mode activated",
@@ -968,18 +1076,18 @@
           "ko": "모드 활성화됨"
         },
         "titleFormatted": {
-          "en": "[[name]] is activated",
-          "nl": "[[name]] is geactiveerd",
-          "de": "[[name]] ist aktiviert",
-          "fr": "[[name]] est activé",
-          "it": "[[name]] è attivata",
-          "sv": "[[name]] är aktiverat",
-          "no": "[[name]] er aktivert",
-          "es": "[[name]] está activado",
-          "da": "[[name]] er aktiveret",
-          "ru": "[[name]] активирован",
-          "pl": "[[name]] został aktywowany",
-          "ko": "[[name]]가 활성화됨"
+          "en": "Mode [[name]] is activated",
+          "nl": "Stand [[name]] is geactiveerd",
+          "de": "Modus [[name]] ist aktiviert",
+          "fr": "Mode [[name]] est activé",
+          "it": "Modalità [[name]] è attivata",
+          "sv": "Läge [[name]] är aktiverat",
+          "no": "Modus [[name]] er aktivert",
+          "es": "Modo [[name]] está activado",
+          "da": "Tilstand [[name]] er aktiveret",
+          "ru": "Режим [[name]] активирован",
+          "pl": "Tryb [[name]] został aktywowany",
+          "ko": "모드 [[name]]가 활성화됨"
         },
         "hint": {
           "en": "Triggers when a mode gets activated.",
@@ -1183,18 +1291,18 @@
           "ko": "모드 비활성화됨"
         },
         "titleFormatted": {
-          "en": "[[name]] is deactivated",
-          "nl": "[[name]] is gedeactiveerd",
-          "de": "[[name]] ist deaktiviert",
-          "fr": "[[name]] est désactivé",
-          "it": "[[name]] è disattivato",
-          "sv": "[[name]] är inaktiverat",
-          "no": "[[name]] er deaktivert",
-          "es": "[[name]] está desactivado",
-          "da": "[[name]] er deaktiveret",
-          "ru": "[[name]] деактивирован",
-          "pl": "[[name]] jest dezaktywowany",
-          "ko": "[[name]] 비활성화됨"
+          "en": "Mode [[name]] is deactivated",
+          "nl": "Stand [[name]] is gedeactiveerd",
+          "de": "Modus [[name]] ist deaktiviert",
+          "fr": "Mode [[name]] est désactivé",
+          "it": "Modalità [[name]] è disattivato",
+          "sv": "Läge [[name]] är inaktiverat",
+          "no": "Modus [[name]] er deaktivert",
+          "es": "Modo [[name]] está desactivado",
+          "da": "Tilstand [[name]] er deaktiveret",
+          "ru": "Режим [[name]] деактивирован",
+          "pl": "Tryb [[name]] jest dezaktywowany",
+          "ko": "모드 [[name]] 비활성화됨"
         },
         "hint": {
           "en": "Triggers when a mode gets deactivated.",
@@ -1504,7 +1612,7 @@
           "ko": "타이머 남은 시간"
         },
         "titleFormatted": {
-          "en": "[[duration]] [[unit]] remaining for timer [[timer]]",
+          "en": "Timer [[timer]] reaches [[duration]] [[unit]] remaining",
           "nl": "Timer [[timer]] bereikt [[duration]] [[unit]]",
           "de": "[[duration]] [[unit]] verbleibend für Timer [[timer]]",
           "fr": "[[duration]] [[unit]] restant pour le minuteur [[timer]]",
@@ -1812,48 +1920,6 @@
             }
           }
         ]
-      },
-      {
-        "id": "event_cleared",
-        "title": {
-          "en": "Event cleared",
-          "nl": "Gebeurtenis geleegd"
-        },
-        "titleFormatted": {
-          "en": "Event [[event]] is cleared",
-          "nl": "Gebeurtenis [[event]] is geleegd"
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          }
-        ]
-      },
-      {
-        "id": "event_triggered",
-        "title": {
-          "en": "Event triggered",
-          "nl": "Gebeurtenis getriggerd"
-        },
-        "titleFormatted": {
-          "en": "Event [[event]] is triggered",
-          "nl": "Gebeurtenis [[event]] is getriggerd"
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          }
-        ]
       }
     ],
     "conditions": [
@@ -2064,6 +2130,397 @@
         ]
       },
       {
+        "id": "event_happened",
+        "title": {
+          "en": "Event happened",
+          "nl": "Gebeurtenis is gebeurd"
+        },
+        "titleFormatted": {
+          "en": "Event [[event]] happened",
+          "nl": "Gebeurtenis [[event]] is gebeurd"
+        },
+        "hint": {
+          "en": "Checks if the event has ever happened.",
+          "nl": "Controleert of de gebeurtenis ooit is gebeurd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          }
+        ]
+      },
+      {
+        "id": "event_happened_times_today",
+        "title": {
+          "en": "Event happened N times today",
+          "nl": "Gebeurtenis is vandaag N keer gebeurd"
+        },
+        "titleFormatted": {
+          "en": "Event [[event]] happened [[times]] times today",
+          "nl": "Gebeurtenis [[event]] is vandaag [[times]] keer gebeurd"
+        },
+        "hint": {
+          "en": "Checks if the event has happened N times today.",
+          "nl": "Controleert of de gebeurtenis vandaag N keer is gebeurd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          },
+          {
+            "type": "number",
+            "name": "times",
+            "title": {
+              "en": "Number of times",
+              "nl": "Aantal"
+            },
+            "min": 1,
+            "step": 1,
+            "labelDecimals": 0
+          }
+        ]
+      },
+      {
+        "id": "event_happened_times_within",
+        "title": {
+          "en": "Event happened N times within",
+          "nl": "Gebeurtenis is N keer gebeurd binnen"
+        },
+        "titleFormatted": {
+          "en": "Event [[event]] happened [[times]] times within [[duration]] [[unit]]",
+          "nl": "Gebeurtenis [[event]] is [[times]] keer gebeurd binnen [[duration]] [[unit]]"
+        },
+        "hint": {
+          "en": "Checks if the event has happened N times within the given period.",
+          "nl": "Controleert of de gebeurtenis N keer is gebeurd binnen het opgegeven periode."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          },
+          {
+            "type": "number",
+            "name": "times",
+            "title": {
+              "en": "Number of times",
+              "nl": "Aantal"
+            },
+            "min": 1,
+            "step": 1,
+            "labelDecimals": 0
+          },
+          {
+            "type": "number",
+            "name": "duration",
+            "min": 1,
+            "step": 1,
+            "title": {
+              "en": "Duration",
+              "nl": "Looptijd",
+              "de": "Dauer",
+              "fr": "Durée",
+              "it": "Durata",
+              "sv": "Varaktighet",
+              "no": "Varighet",
+              "es": "Duración",
+              "da": "Varighed",
+              "ru": "Длительность",
+              "pl": "Czas trwania",
+              "ko": "지속 시간"
+            },
+            "placeholder": {
+              "en": "E.g. 10",
+              "nl": "Bijv. 10",
+              "de": "Z. B. 10",
+              "fr": "Ex. 10",
+              "it": "Es. 10",
+              "sv": "T.ex. 10",
+              "no": "F.eks. 10",
+              "es": "P. ej. 10",
+              "da": "Fx 10",
+              "ru": "Напр. 10",
+              "pl": "Np. 10",
+              "ko": "예: 10"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+              "en": "Unit",
+              "nl": "Eenheid",
+              "de": "Einheit",
+              "fr": "Unité",
+              "it": "Unità",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Unidad",
+              "da": "Enhed",
+              "ru": "Единица",
+              "pl": "Jednostka",
+              "ko": "단위"
+            },
+            "values": [
+              {
+                "id": "seconds",
+                "title": {
+                  "en": "seconds",
+                  "nl": "seconden",
+                  "de": "Sekunden",
+                  "fr": "secondes",
+                  "it": "secondi",
+                  "sv": "sekunder",
+                  "no": "sekunder",
+                  "es": "segundos",
+                  "da": "sekunder",
+                  "ru": "секунды",
+                  "pl": "sekundy",
+                  "ko": "초"
+                }
+              },
+              {
+                "id": "minutes",
+                "title": {
+                  "en": "minutes",
+                  "nl": "minuten",
+                  "de": "Minuten",
+                  "fr": "minutes",
+                  "it": "minuti",
+                  "sv": "minuter",
+                  "no": "minutter",
+                  "es": "minutos",
+                  "da": "minutter",
+                  "ru": "минуты",
+                  "pl": "minuty",
+                  "ko": "분"
+                }
+              },
+              {
+                "id": "hours",
+                "title": {
+                  "en": "hours",
+                  "nl": "uren",
+                  "de": "Stunden",
+                  "fr": "heures",
+                  "it": "ore",
+                  "sv": "timmar",
+                  "no": "timer",
+                  "es": "horas",
+                  "da": "timer",
+                  "ru": "часы",
+                  "pl": "godziny",
+                  "ko": "시간"
+                }
+              },
+              {
+                "id": "days",
+                "title": {
+                  "en": "days",
+                  "nl": "dagen",
+                  "de": "Tage",
+                  "fr": "jours",
+                  "it": "giorni",
+                  "sv": "dagar",
+                  "no": "dager",
+                  "es": "días",
+                  "da": "dage",
+                  "ru": "дни",
+                  "pl": "dni",
+                  "ko": "일"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "event_happened_today",
+        "title": {
+          "en": "Event happened today",
+          "nl": "Gebeurtenis is vandaag gebeurd"
+        },
+        "titleFormatted": {
+          "en": "Event [[event]] happened today",
+          "nl": "Gebeurtenis [[event]] is vandaag gebeurd"
+        },
+        "hint": {
+          "en": "Checks if the event has happened at least once today.",
+          "nl": "Controleert of de gebeurtenis vandaag minstens één keer is gebeurd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          }
+        ]
+      },
+      {
+        "id": "event_happened_within",
+        "title": {
+          "en": "Event happened within",
+          "nl": "Gebeurtenis is gebeurd binnen"
+        },
+        "titleFormatted": {
+          "en": "Event [[event]] happened within [[duration]] [[unit]]",
+          "nl": "Gebeurtenis [[event]] is gebeurd binnen [[duration]] [[unit]]"
+        },
+        "hint": {
+          "en": "Checks if the event has happened within the given period.",
+          "nl": "Controleert of de gebeurtenis binnen het opgegeven periode is gebeurd."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          },
+          {
+            "type": "number",
+            "name": "duration",
+            "min": 1,
+            "step": 1,
+            "title": {
+              "en": "Duration",
+              "nl": "Looptijd",
+              "de": "Dauer",
+              "fr": "Durée",
+              "it": "Durata",
+              "sv": "Varaktighet",
+              "no": "Varighet",
+              "es": "Duración",
+              "da": "Varighed",
+              "ru": "Длительность",
+              "pl": "Czas trwania",
+              "ko": "지속 시간"
+            },
+            "placeholder": {
+              "en": "E.g. 10",
+              "nl": "Bijv. 10",
+              "de": "Z. B. 10",
+              "fr": "Ex. 10",
+              "it": "Es. 10",
+              "sv": "T.ex. 10",
+              "no": "F.eks. 10",
+              "es": "P. ej. 10",
+              "da": "Fx 10",
+              "ru": "Напр. 10",
+              "pl": "Np. 10",
+              "ko": "예: 10"
+            }
+          },
+          {
+            "type": "dropdown",
+            "name": "unit",
+            "title": {
+              "en": "Unit",
+              "nl": "Eenheid",
+              "de": "Einheit",
+              "fr": "Unité",
+              "it": "Unità",
+              "sv": "Enhet",
+              "no": "Enhet",
+              "es": "Unidad",
+              "da": "Enhed",
+              "ru": "Единица",
+              "pl": "Jednostka",
+              "ko": "단위"
+            },
+            "values": [
+              {
+                "id": "seconds",
+                "title": {
+                  "en": "seconds",
+                  "nl": "seconden",
+                  "de": "Sekunden",
+                  "fr": "secondes",
+                  "it": "secondi",
+                  "sv": "sekunder",
+                  "no": "sekunder",
+                  "es": "segundos",
+                  "da": "sekunder",
+                  "ru": "секунды",
+                  "pl": "sekundy",
+                  "ko": "초"
+                }
+              },
+              {
+                "id": "minutes",
+                "title": {
+                  "en": "minutes",
+                  "nl": "minuten",
+                  "de": "Minuten",
+                  "fr": "minutes",
+                  "it": "minuti",
+                  "sv": "minuter",
+                  "no": "minutter",
+                  "es": "minutos",
+                  "da": "minutter",
+                  "ru": "минуты",
+                  "pl": "minuty",
+                  "ko": "분"
+                }
+              },
+              {
+                "id": "hours",
+                "title": {
+                  "en": "hours",
+                  "nl": "uren",
+                  "de": "Stunden",
+                  "fr": "heures",
+                  "it": "ore",
+                  "sv": "timmar",
+                  "no": "timer",
+                  "es": "horas",
+                  "da": "timer",
+                  "ru": "часы",
+                  "pl": "godziny",
+                  "ko": "시간"
+                }
+              },
+              {
+                "id": "days",
+                "title": {
+                  "en": "days",
+                  "nl": "dagen",
+                  "de": "Tage",
+                  "fr": "jours",
+                  "it": "giorni",
+                  "sv": "dagar",
+                  "no": "dager",
+                  "es": "días",
+                  "da": "dage",
+                  "ru": "дни",
+                  "pl": "dni",
+                  "ko": "일"
+                }
+              }
+            ]
+          }
+        ]
+      },
+      {
         "id": "flag_is",
         "title": {
           "en": "Flag is active",
@@ -2129,6 +2586,35 @@
         ]
       },
       {
+        "id": "label_has_value",
+        "title": {
+          "en": "Label has value",
+          "nl": "Label heeft waarde"
+        },
+        "titleFormatted": {
+          "en": "Label [[label]] has value [[value]]",
+          "nl": "Label [[label]] heeft waarde [[value]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+              "en": "Label",
+              "nl": "Label"
+            }
+          },
+          {
+            "type": "text",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
+            }
+          }
+        ]
+      },
+      {
         "id": "mode_is",
         "title": {
           "en": "Mode is active",
@@ -2145,18 +2631,18 @@
           "ko": "모드가 활성화됨"
         },
         "titleFormatted": {
-          "en": "[[name]] is !{{active|inactive}}",
-          "nl": "[[name]] is !{{actief|inactief}}",
-          "de": "[[name]] ist !{{aktiv|inaktiv}}",
-          "fr": "[[name]] est !{{actif|inactif}}",
-          "it": "[[name]] è !{{attivo|inattivo}}",
-          "sv": "[[name]] är !{{aktiv|inaktiv}}",
-          "no": "[[name]] er !{{aktiv|inaktiv}}",
-          "es": "[[name]] está !{{activo|inactivo}}",
-          "da": "[[name]] er !{{aktiv|inaktiv}}",
-          "ru": "[[name]] !{{активен|неактивен}}",
-          "pl": "[[name]] jest !{{aktywny|nieaktywny}}",
-          "ko": "[[name]]는 !{{활성|비활성}} 상태입니다"
+          "en": "Mode [[name]] is !{{active|inactive}}",
+          "nl": "Stand [[name]] is !{{actief|inactief}}",
+          "de": "Modus [[name]] ist !{{aktiv|inaktiv}}",
+          "fr": "Mode [[name]] est !{{actif|inactif}}",
+          "it": "Modalità [[name]] è !{{attivo|inattivo}}",
+          "sv": "Läge [[name]] är !{{aktiv|inaktiv}}",
+          "no": "Modus [[name]] er !{{aktiv|inaktiv}}",
+          "es": "Modo [[name]] está !{{activo|inactivo}}",
+          "da": "Tilstand [[name]] er !{{aktiv|inaktiv}}",
+          "ru": "Режим [[name]] !{{активен|неактивен}}",
+          "pl": "Tryb [[name]] jest !{{aktywny|nieaktywny}}",
+          "ko": "모드 [[name]]는 !{{활성|비활성}} 상태입니다"
         },
         "hint": {
           "en": "Checks if a mode is activated.",
@@ -2954,397 +3440,6 @@
         ]
       },
       {
-        "id": "event_happened",
-        "title": {
-          "en": "Event happened",
-          "nl": "Gebeurtenis is gebeurd"
-        },
-        "titleFormatted": {
-          "en": "Event [[event]] happened",
-          "nl": "Gebeurtenis [[event]] is gebeurd"
-        },
-        "hint": {
-          "en": "Checks if the event has ever happened.",
-          "nl": "Controleert of de gebeurtenis ooit is gebeurd."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          }
-        ]
-      },
-      {
-        "id": "event_happened_times_today",
-        "title": {
-          "en": "Event happened N times today",
-          "nl": "Gebeurtenis is vandaag N keer gebeurd"
-        },
-        "titleFormatted": {
-          "en": "Event [[event]] happened [[times]] times today",
-          "nl": "Gebeurtenis [[event]] is vandaag [[times]] keer gebeurd"
-        },
-        "hint": {
-          "en": "Checks if the event has happened N times today.",
-          "nl": "Controleert of de gebeurtenis vandaag N keer is gebeurd."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          },
-          {
-            "type": "number",
-            "name": "times",
-            "title": {
-              "en": "Number of times",
-              "nl": "Aantal"
-            },
-            "min": 1,
-            "step": 1,
-            "labelDecimals": 0
-          }
-        ]
-      },
-      {
-        "id": "event_happened_times_within",
-        "title": {
-          "en": "Event happened N times within",
-          "nl": "Gebeurtenis is N keer gebeurd binnen"
-        },
-        "titleFormatted": {
-          "en": "Event [[event]] happened [[times]] times within [[duration]] [[unit]]",
-          "nl": "Gebeurtenis [[event]] is [[times]] keer gebeurd binnen [[duration]] [[unit]]"
-        },
-        "hint": {
-          "en": "Checks if the event has happened N times within the given period.",
-          "nl": "Controleert of de gebeurtenis N keer is gebeurd binnen het opgegeven periode."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          },
-          {
-            "type": "number",
-            "name": "times",
-            "title": {
-              "en": "Number of times",
-              "nl": "Aantal"
-            },
-            "min": 1,
-            "step": 1,
-            "labelDecimals": 0
-          },
-          {
-            "type": "number",
-            "name": "duration",
-            "min": 1,
-            "step": 1,
-            "title": {
-              "en": "Duration",
-              "nl": "Looptijd",
-              "de": "Dauer",
-              "fr": "Durée",
-              "it": "Durata",
-              "sv": "Varaktighet",
-              "no": "Varighet",
-              "es": "Duración",
-              "da": "Varighed",
-              "ru": "Длительность",
-              "pl": "Czas trwania",
-              "ko": "지속 시간"
-            },
-            "placeholder": {
-              "en": "E.g. 10",
-              "nl": "Bijv. 10",
-              "de": "Z. B. 10",
-              "fr": "Ex. 10",
-              "it": "Es. 10",
-              "sv": "T.ex. 10",
-              "no": "F.eks. 10",
-              "es": "P. ej. 10",
-              "da": "Fx 10",
-              "ru": "Напр. 10",
-              "pl": "Np. 10",
-              "ko": "예: 10"
-            }
-          },
-          {
-            "type": "dropdown",
-            "name": "unit",
-            "title": {
-              "en": "Unit",
-              "nl": "Eenheid",
-              "de": "Einheit",
-              "fr": "Unité",
-              "it": "Unità",
-              "sv": "Enhet",
-              "no": "Enhet",
-              "es": "Unidad",
-              "da": "Enhed",
-              "ru": "Единица",
-              "pl": "Jednostka",
-              "ko": "단위"
-            },
-            "values": [
-              {
-                "id": "seconds",
-                "title": {
-                  "en": "seconds",
-                  "nl": "seconden",
-                  "de": "Sekunden",
-                  "fr": "secondes",
-                  "it": "secondi",
-                  "sv": "sekunder",
-                  "no": "sekunder",
-                  "es": "segundos",
-                  "da": "sekunder",
-                  "ru": "секунды",
-                  "pl": "sekundy",
-                  "ko": "초"
-                }
-              },
-              {
-                "id": "minutes",
-                "title": {
-                  "en": "minutes",
-                  "nl": "minuten",
-                  "de": "Minuten",
-                  "fr": "minutes",
-                  "it": "minuti",
-                  "sv": "minuter",
-                  "no": "minutter",
-                  "es": "minutos",
-                  "da": "minutter",
-                  "ru": "минуты",
-                  "pl": "minuty",
-                  "ko": "분"
-                }
-              },
-              {
-                "id": "hours",
-                "title": {
-                  "en": "hours",
-                  "nl": "uren",
-                  "de": "Stunden",
-                  "fr": "heures",
-                  "it": "ore",
-                  "sv": "timmar",
-                  "no": "timer",
-                  "es": "horas",
-                  "da": "timer",
-                  "ru": "часы",
-                  "pl": "godziny",
-                  "ko": "시간"
-                }
-              },
-              {
-                "id": "days",
-                "title": {
-                  "en": "days",
-                  "nl": "dagen",
-                  "de": "Tage",
-                  "fr": "jours",
-                  "it": "giorni",
-                  "sv": "dagar",
-                  "no": "dager",
-                  "es": "días",
-                  "da": "dage",
-                  "ru": "дни",
-                  "pl": "dni",
-                  "ko": "일"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
-        "id": "event_happened_today",
-        "title": {
-          "en": "Event happened today",
-          "nl": "Gebeurtenis is vandaag gebeurd"
-        },
-        "titleFormatted": {
-          "en": "Event [[event]] happened today",
-          "nl": "Gebeurtenis [[event]] is vandaag gebeurd"
-        },
-        "hint": {
-          "en": "Checks if the event has happened at least once today.",
-          "nl": "Controleert of de gebeurtenis vandaag minstens één keer is gebeurd."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          }
-        ]
-      },
-      {
-        "id": "event_happened_within",
-        "title": {
-          "en": "Event happened within",
-          "nl": "Gebeurtenis is gebeurd binnen"
-        },
-        "titleFormatted": {
-          "en": "Event [[event]] happened within [[duration]] [[unit]]",
-          "nl": "Gebeurtenis [[event]] is gebeurd binnen [[duration]] [[unit]]"
-        },
-        "hint": {
-          "en": "Checks if the event has happened within the given period.",
-          "nl": "Controleert of de gebeurtenis binnen het opgegeven periode is gebeurd."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          },
-          {
-            "type": "number",
-            "name": "duration",
-            "min": 1,
-            "step": 1,
-            "title": {
-              "en": "Duration",
-              "nl": "Looptijd",
-              "de": "Dauer",
-              "fr": "Durée",
-              "it": "Durata",
-              "sv": "Varaktighet",
-              "no": "Varighet",
-              "es": "Duración",
-              "da": "Varighed",
-              "ru": "Длительность",
-              "pl": "Czas trwania",
-              "ko": "지속 시간"
-            },
-            "placeholder": {
-              "en": "E.g. 10",
-              "nl": "Bijv. 10",
-              "de": "Z. B. 10",
-              "fr": "Ex. 10",
-              "it": "Es. 10",
-              "sv": "T.ex. 10",
-              "no": "F.eks. 10",
-              "es": "P. ej. 10",
-              "da": "Fx 10",
-              "ru": "Напр. 10",
-              "pl": "Np. 10",
-              "ko": "예: 10"
-            }
-          },
-          {
-            "type": "dropdown",
-            "name": "unit",
-            "title": {
-              "en": "Unit",
-              "nl": "Eenheid",
-              "de": "Einheit",
-              "fr": "Unité",
-              "it": "Unità",
-              "sv": "Enhet",
-              "no": "Enhet",
-              "es": "Unidad",
-              "da": "Enhed",
-              "ru": "Единица",
-              "pl": "Jednostka",
-              "ko": "단위"
-            },
-            "values": [
-              {
-                "id": "seconds",
-                "title": {
-                  "en": "seconds",
-                  "nl": "seconden",
-                  "de": "Sekunden",
-                  "fr": "secondes",
-                  "it": "secondi",
-                  "sv": "sekunder",
-                  "no": "sekunder",
-                  "es": "segundos",
-                  "da": "sekunder",
-                  "ru": "секунды",
-                  "pl": "sekundy",
-                  "ko": "초"
-                }
-              },
-              {
-                "id": "minutes",
-                "title": {
-                  "en": "minutes",
-                  "nl": "minuten",
-                  "de": "Minuten",
-                  "fr": "minutes",
-                  "it": "minuti",
-                  "sv": "minuter",
-                  "no": "minutter",
-                  "es": "minutos",
-                  "da": "minutter",
-                  "ru": "минуты",
-                  "pl": "minuty",
-                  "ko": "분"
-                }
-              },
-              {
-                "id": "hours",
-                "title": {
-                  "en": "hours",
-                  "nl": "uren",
-                  "de": "Stunden",
-                  "fr": "heures",
-                  "it": "ore",
-                  "sv": "timmar",
-                  "no": "timer",
-                  "es": "horas",
-                  "da": "timer",
-                  "ru": "часы",
-                  "pl": "godziny",
-                  "ko": "시간"
-                }
-              },
-              {
-                "id": "days",
-                "title": {
-                  "en": "days",
-                  "nl": "dagen",
-                  "de": "Tage",
-                  "fr": "jours",
-                  "it": "giorni",
-                  "sv": "dagar",
-                  "no": "dager",
-                  "es": "días",
-                  "da": "dage",
-                  "ru": "дни",
-                  "pl": "dni",
-                  "ko": "일"
-                }
-              }
-            ]
-          }
-        ]
-      },
-      {
         "id": "moon_phase_is",
         "title": {
           "en": "The moon phase !{{is|isn't}}...",
@@ -4124,6 +4219,71 @@
         ]
       },
       {
+        "id": "event_clear",
+        "title": {
+          "en": "Clear event",
+          "nl": "Leeg gebeurtenis"
+        },
+        "titleFormatted": {
+          "en": "Clear event [[event]]",
+          "nl": "Leeg gebeurtenis [[event]]"
+        },
+        "hint": {
+          "en": "Clears all stored history for the event.",
+          "nl": "Leeft alle opgeslagen geschiedenis voor de gebeurtenis."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          }
+        ]
+      },
+      {
+        "id": "event_clear_all",
+        "title": {
+          "en": "Clear all events",
+          "nl": "Leeg alle gebeurtenissen"
+        },
+        "titleFormatted": {
+          "en": "Clear all events",
+          "nl": "Leeg alle gebeurtenissen"
+        },
+        "hint": {
+          "en": "Clears all stored history for all events.",
+          "nl": "Leeft alle opgeslagen geschiedenis voor alle gebeurtenissen."
+        }
+      },
+      {
+        "id": "event_trigger",
+        "title": {
+          "en": "Trigger event",
+          "nl": "Trigger gebeurtenis"
+        },
+        "titleFormatted": {
+          "en": "Trigger event [[event]]",
+          "nl": "Trigger gebeurtenis [[event]]"
+        },
+        "hint": {
+          "en": "Triggers the event and leaves a history entry.",
+          "nl": "Triggert de gebeurtenis en slaat een geschiedenis-item op."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+              "en": "Event",
+              "nl": "Gebeurtenis"
+            }
+          }
+        ]
+      },
+      {
         "id": "flag_activate",
         "title": {
           "en": "Activate flag",
@@ -4314,6 +4474,56 @@
               "ru": "Флаг",
               "pl": "Flaga",
               "ko": "플래그"
+            }
+          }
+        ]
+      },
+      {
+        "id": "label_clear",
+        "title": {
+          "en": "Clear label",
+          "nl": "Maak label leeg"
+        },
+        "titleFormatted": {
+          "en": "Clear label [[label]]",
+          "nl": "Maak label [[label]] leeg"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+              "en": "label",
+              "nl": "Label"
+            }
+          }
+        ]
+      },
+      {
+        "id": "label_set",
+        "title": {
+          "en": "Set label",
+          "nl": "Stel label in"
+        },
+        "titleFormatted": {
+          "en": "Set label [[label]] to [[value]]",
+          "nl": "Stel label [[label]] in op [[value]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+              "en": "label",
+              "nl": "Label"
+            }
+          },
+          {
+            "type": "text",
+            "name": "value",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde"
             }
           }
         ]
@@ -5371,71 +5581,6 @@
               "ru": "Имя",
               "pl": "Nazwa",
               "ko": "이름"
-            }
-          }
-        ]
-      },
-      {
-        "id": "event_clear",
-        "title": {
-          "en": "Clear event",
-          "nl": "Leeg gebeurtenis"
-        },
-        "titleFormatted": {
-          "en": "Clear event [[event]]",
-          "nl": "Leeg gebeurtenis [[event]]"
-        },
-        "hint": {
-          "en": "Clears all stored history for the event.",
-          "nl": "Leeft alle opgeslagen geschiedenis voor de gebeurtenis."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
-            }
-          }
-        ]
-      },
-      {
-        "id": "event_clear_all",
-        "title": {
-          "en": "Clear all events",
-          "nl": "Leeg alle gebeurtenissen"
-        },
-        "titleFormatted": {
-          "en": "Clear all events",
-          "nl": "Leeg alle gebeurtenissen"
-        },
-        "hint": {
-          "en": "Clears all stored history for all events.",
-          "nl": "Leeft alle opgeslagen geschiedenis voor alle gebeurtenissen."
-        }
-      },
-      {
-        "id": "event_trigger",
-        "title": {
-          "en": "Trigger event",
-          "nl": "Trigger gebeurtenis"
-        },
-        "titleFormatted": {
-          "en": "Trigger event [[event]]",
-          "nl": "Trigger gebeurtenis [[event]]"
-        },
-        "hint": {
-          "en": "Triggers the event and leaves a history entry.",
-          "nl": "Triggert de gebeurtenis en slaat een geschiedenis-item op."
-        },
-        "args": [
-          {
-            "type": "autocomplete",
-            "name": "event",
-            "title": {
-              "en": "Event",
-              "nl": "Gebeurtenis"
             }
           }
         ]

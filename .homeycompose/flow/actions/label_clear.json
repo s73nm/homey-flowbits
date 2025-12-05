@@ -1,0 +1,21 @@
+{
+    "id": "label_clear",
+    "title": {
+        "en": "Clear label",
+        "nl": "Maak label leeg"
+    },
+    "titleFormatted": {
+        "en": "Clear label [[label]]",
+        "nl": "Maak label [[label]] leeg"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+                "en": "label",
+                "nl": "Label"
+            }
+        }
+    ]
+}

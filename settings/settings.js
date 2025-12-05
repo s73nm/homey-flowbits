@@ -24,6 +24,40 @@
         };
     }
 
+    function useIcons() {
+        const items = ref([]);
+        const isLoading = ref(true);
+
+        const load = async () => {
+            isLoading.value = true;
+            items.value = await Homey.api('GET', '/icons');
+            isLoading.value = false;
+        };
+
+        return {
+            isLoading,
+            items,
+            load
+        };
+    }
+
+    function useEvents() {
+        const items = ref([]);
+        const isLoading = ref(true);
+
+        const load = async () => {
+            isLoading.value = true;
+            items.value = await Homey.api('GET', '/events');
+            isLoading.value = false;
+        };
+
+        return {
+            isLoading,
+            items,
+            load
+        };
+    }
+
     function useFlags() {
         const items = ref([]);
         const isLoading = ref(true);
@@ -41,13 +75,13 @@
         };
     }
 
-    function useIcons() {
+    function useLabels() {
         const items = ref([]);
         const isLoading = ref(true);
 
         const load = async () => {
             isLoading.value = true;
-            items.value = await Homey.api('GET', '/icons');
+            items.value = await Homey.api('GET', '/labels');
             isLoading.value = false;
         };
 
@@ -98,7 +132,7 @@
         template: `
             <fieldset class="homey-form-fieldset">
                 <legend class="homey-form-legend">{{ title }}</legend>
-                <div v-if="description" class="homey-form-group" style="margin-top: 6px">{{ description }}</div>
+                <div v-if="description" class="homey-form-group" style="margin-top: 6px; text-wrap: pretty">{{ description }}</div>
                 <div v-if="$slots.before" class="homey-form-group"><slot name="before"/></div>
                 <div class="homey-form-group"><slot/></div>
             </fieldset>
@@ -264,6 +298,41 @@
         }
     });
 
+    const Events = defineComponent({
+        components: {
+            FormGroup,
+            Item
+        },
+
+        props: ['items'],
+
+        template: `
+            <FormGroup :title="t('settings.events.title')" :description="t('settings.events.description')">
+                <div v-if="items.length > 0" class="items">
+                    <Item
+                        v-for="item of items"
+                        :active="item.active"
+                        :name="item.name"
+                        :color="item.color"
+                        :icon="item.icon"
+                        @click="onClick(item)"/>
+                </div>
+                
+                <div v-else class="items-empty">
+                    {{ t('settings.events.empty') }}
+                </div>
+            </FormGroup>
+        `,
+
+        setup(_, {emit}) {
+            const onClick = item => emit('edit', item);
+
+            return {
+                onClick
+            };
+        }
+    });
+
     const Flags = defineComponent({
         components: {
             FormGroup,
@@ -291,7 +360,42 @@
         `,
 
         setup(_, {emit}) {
-            const onClick = flag => emit('edit', flag);
+            const onClick = item => emit('edit', item);
+
+            return {
+                onClick
+            };
+        }
+    });
+
+    const Labels = defineComponent({
+        components: {
+            FormGroup,
+            Item
+        },
+
+        props: ['items'],
+
+        template: `
+            <FormGroup :title="t('settings.labels.title')" :description="t('settings.labels.description')">
+                <div v-if="items.length > 0" class="items">
+                    <Item
+                        v-for="item of items"
+                        :active="item.active"
+                        :name="item.name"
+                        :color="item.color"
+                        :icon="item.icon"
+                        @click="onClick(item)"/>
+                </div>
+
+                <div v-else class="items-empty">
+                    {{ t('settings.labels.empty') }}
+                </div>
+            </FormGroup>
+        `,
+
+        setup(_, {emit}) {
+            const onClick = item => emit('edit', item);
 
             return {
                 onClick
@@ -326,7 +430,7 @@
         `,
 
         setup(_, {emit}) {
-            const onClick = mode => emit('edit', mode);
+            const onClick = item => emit('edit', item);
 
             return {
                 onClick
@@ -367,7 +471,9 @@
                 <FormGroup :title="t('settings.statistics.title')" :description="t('settings.statistics.description')">
                     <div class="statistics-grid">
                         <Statistic icon="" :name="t('settings.statistics.cycles')" :value="result.numberOfCycles"/>
+                        <Statistic icon="" :name="t('settings.statistics.events')" :value="result.numberOfEvents"/>
                         <Statistic icon="" :name="t('settings.statistics.flags')" :value="result.numberOfFlags"/>
+                        <Statistic icon="" :name="t('settings.statistics.labels')" :value="result.numberOfLabels"/>
                         <Statistic icon="" :name="t('settings.statistics.modes')" :value="result.numberOfModes"/>
                         <Statistic icon="" :name="t('settings.statistics.no_repeats')" :value="result.numberOfNoRepeats"/>
                         <Statistic icon="" :name="t('settings.statistics.sliders')" :value="result.numberOfSliders"/>
@@ -401,7 +507,9 @@
     const Settings = defineComponent({
         components: {
             Edit,
+            Events,
             Flags,
+            Labels,
             Modes,
             Statistics
         },
@@ -413,20 +521,40 @@
             </header>
             
             <form class="homey-form">
-                <Flags :items="flags" @edit="onEditFlag"/>
-                <Modes :items="modes" @edit="onEditMode"/>
+                <Modes v-if="modes.length > 0" :items="modes" @edit="onEditMode"/>
+                <Flags v-if="flags.length > 0" :items="flags" @edit="onEditFlag"/>
+                <Labels v-if="labels.length > 0" :items="labels" @edit="onEditLabel"/>
+                <Events v-if="events.length > 0" :items="events" @edit="onEditEvent"/>
                 <Statistics/>
             </form>
             
             <Transition name="edit">
                 <Edit
-                    v-if="editingFlag"
+                    v-if="editingEvent"
+                    :name="editingEvent.name"
+                    :color="editingEvent.color"
+                    :icon="editingEvent.icon"
+                    :saving="isSaving"
+                    @close="editingEvent = null"
+                    @save="form => onSaveEvent(editingEvent.name, form)"/>
+                
+                <Edit
+                    v-else-if="editingFlag"
                     :name="editingFlag.name"
                     :color="editingFlag.color"
                     :icon="editingFlag.icon"
                     :saving="isSaving"
                     @close="editingFlag = null"
                     @save="form => onSaveFlag(editingFlag.name, form)"/>
+                
+                <Edit
+                    v-else-if="editingLabel"
+                    :name="editingLabel.name"
+                    :color="editingLabel.color"
+                    :icon="editingLabel.icon"
+                    :saving="isSaving"
+                    @close="editingLabel = null"
+                    @save="form => onSaveLabel(editingLabel.name, form)"/>
                 
                 <Edit
                     v-else-if="editingMode"
@@ -440,24 +568,47 @@
         `,
 
         setup() {
+            const {items: events, load: loadEvents} = useEvents();
             const {items: flags, load: loadFlags} = useFlags();
+            const {items: labels, load: loadLabels} = useLabels();
             const {items: modes, load: loadModes} = useModes();
             const {items: colors, load: loadColors} = useColors();
             const {items: icons, load: loadIcons} = useIcons();
 
+            const editingEvent = ref(null);
             const editingFlag = ref(null);
+            const editingLabel = ref(null);
             const editingMode = ref(null);
             const isSaving = ref(false);
 
             onMounted(async () => {
                 await loadColors();
                 await loadIcons();
+                await loadEvents();
                 await loadFlags();
+                await loadLabels();
                 await loadModes();
             });
 
+            const onEditEvent = event => editingEvent.value = event;
             const onEditFlag = flag => editingFlag.value = flag;
+            const onEditLabel = label => editingLabel.value = label;
             const onEditMode = mode => editingMode.value = mode;
+
+            const onSaveEvent = async (name, {color, icon}) => {
+                isSaving.value = true;
+
+                await Homey.api('POST', '/events/look', {
+                    name,
+                    color,
+                    icon
+                });
+
+                await loadEvents();
+
+                editingEvent.value = null;
+                isSaving.value = false;
+            };
 
             const onSaveFlag = async (name, {color, icon}) => {
                 isSaving.value = true;
@@ -471,6 +622,21 @@
                 await loadFlags();
 
                 editingFlag.value = null;
+                isSaving.value = false;
+            };
+
+            const onSaveLabel = async (name, {color, icon}) => {
+                isSaving.value = true;
+
+                await Homey.api('POST', '/labels/look', {
+                    name,
+                    color,
+                    icon
+                });
+
+                await loadLabels();
+
+                editingLabel.value = null;
                 isSaving.value = false;
             };
 
@@ -493,14 +659,22 @@
             provide(ICONS, icons);
 
             return {
+                editingEvent,
                 editingFlag,
+                editingLabel,
                 editingMode,
+                events,
                 flags,
+                labels,
                 modes,
                 isSaving,
+                onEditEvent,
                 onEditFlag,
+                onEditLabel,
                 onEditMode,
+                onSaveEvent,
                 onSaveFlag,
+                onSaveLabel,
                 onSaveMode
             };
         }

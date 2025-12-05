@@ -1,0 +1,25 @@
+{
+    "id": "event_trigger",
+    "title": {
+        "en": "Trigger event",
+        "nl": "Trigger gebeurtenis"
+    },
+    "titleFormatted": {
+        "en": "Trigger event [[event]]",
+        "nl": "Trigger gebeurtenis [[event]]"
+    },
+    "hint": {
+        "en": "Triggers the event and leaves a history entry.",
+        "nl": "Triggert de gebeurtenis en slaat een geschiedenis-item op."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis"
+            }
+        }
+    ]
+}

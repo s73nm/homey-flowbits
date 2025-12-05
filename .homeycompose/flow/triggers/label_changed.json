@@ -1,0 +1,21 @@
+{
+    "id": "label_changed",
+    "title": {
+        "en": "Label changed",
+        "nl": "Label gewijzigd"
+    },
+    "titleFormatted": {
+        "en": "Label [[label]] changed",
+        "nl": "Label [[label]] is gewijzigd"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+                "en": "Label",
+                "nl": "Label"
+            }
+        }
+    ]
+}

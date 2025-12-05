@@ -21,7 +21,9 @@
     "flag_new": "Nieuwe flag in deze flow",
     "no_repeat": "Nieuwe geen-herhalingvenster in deze flow",
     "no_repeat_new": "Nieuwe geen-herhalingvenster in deze flow",
-    "slider_new": "Nieuwe slider in deze flow"
+    "slider_new": "Nieuwe slider in deze flow",
+    "event_new": "Nieuwe gebeurtenis in deze flow",
+    "label_new": "Nieuwe label in deze flow"
   },
   "notification": {
     "mode_activated": "**__name__** is geactiveerd.",
@@ -69,11 +71,23 @@
       "modes": "Standen",
       "no_repeats": "Geen-herhalingsvensters",
       "sliders": "Sliders",
-      "timers": "Timers"
+      "timers": "Timers",
+      "events": "Gebeurtenissen",
+      "labels": "Labels"
     },
     "card_statistics": {
       "title": "Flowkaartstatistieken",
       "description": "Dit zijn gebruiksstatistieken voor afzonderlijke flowkaarten."
+    },
+    "events": {
+      "title": "Gebeurtenissen",
+      "description": "Gebeurtenissen houden bij wanneer iets gebeurt en bewaren een geschiedenis van tijdstempels. Gebruik gebeurtenis-acties, -voorwaarden en -triggers in je flows om voorvallen bij te houden en te controleren hoe vaak of wanneer gebeurtenissen plaatsvonden.",
+      "empty": "Er zijn nog geen gebeurtenissen aangemaakt."
+    },
+    "labels": {
+      "title": "Labels",
+      "description": "Labels slaan sleutel-waardeparen op voor gebruik in je flows. Gebruik label-acties, -voorwaarden en -triggers om waarden dynamisch in te stellen, op te halen en te controleren.",
+      "empty": "Er zijn nog geen labels aangemaakt."
     }
   },
   "color": {

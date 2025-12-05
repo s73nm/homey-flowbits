@@ -1,0 +1,21 @@
+{
+    "id": "event_cleared",
+    "title": {
+        "en": "Event cleared",
+        "nl": "Gebeurtenis geleegd"
+    },
+    "titleFormatted": {
+        "en": "Event [[event]] is cleared",
+        "nl": "Gebeurtenis [[event]] is geleegd"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis"
+            }
+        }
+    ]
+}

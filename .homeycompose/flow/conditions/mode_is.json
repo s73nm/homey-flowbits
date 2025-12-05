@@ -15,18 +15,18 @@
         "ko": "모드가 활성화됨"
     },
     "titleFormatted": {
-        "en": "[[name]] is !{{active|inactive}}",
-        "nl": "[[name]] is !{{actief|inactief}}",
-        "de": "[[name]] ist !{{aktiv|inaktiv}}",
-        "fr": "[[name]] est !{{actif|inactif}}",
-        "it": "[[name]] è !{{attivo|inattivo}}",
-        "sv": "[[name]] är !{{aktiv|inaktiv}}",
-        "no": "[[name]] er !{{aktiv|inaktiv}}",
-        "es": "[[name]] está !{{activo|inactivo}}",
-        "da": "[[name]] er !{{aktiv|inaktiv}}",
-        "ru": "[[name]] !{{активен|неактивен}}",
-        "pl": "[[name]] jest !{{aktywny|nieaktywny}}",
-        "ko": "[[name]]는 !{{활성|비활성}} 상태입니다"
+        "en": "Mode [[name]] is !{{active|inactive}}",
+        "nl": "Stand [[name]] is !{{actief|inactief}}",
+        "de": "Modus [[name]] ist !{{aktiv|inaktiv}}",
+        "fr": "Mode [[name]] est !{{actif|inactif}}",
+        "it": "Modalità [[name]] è !{{attivo|inattivo}}",
+        "sv": "Läge [[name]] är !{{aktiv|inaktiv}}",
+        "no": "Modus [[name]] er !{{aktiv|inaktiv}}",
+        "es": "Modo [[name]] está !{{activo|inactivo}}",
+        "da": "Tilstand [[name]] er !{{aktiv|inaktiv}}",
+        "ru": "Режим [[name]] !{{активен|неактивен}}",
+        "pl": "Tryb [[name]] jest !{{aktywny|nieaktywny}}",
+        "ko": "모드 [[name]]는 !{{활성|비활성}} 상태입니다"
     },
     "hint": {
         "en": "Checks if a mode is activated.",

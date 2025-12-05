@@ -15,7 +15,9 @@
     "flag_new": "New flag in this flow",
     "no_repeat": "New no-repeat window in this flow",
     "no_repeat_new": "New no-repeat window in this flow",
-    "slider_new": "New slider in this flow"
+    "slider_new": "New slider in this flow",
+    "event_new": "New event in this flow",
+    "label_new": "New label in this flow"
   },
   "day_period": {
     "afternoon": "Afternoon",
@@ -69,11 +71,23 @@
       "sliders": "Sliders",
       "timers": "Timers",
       "title": "Statistics",
-      "description": "These are feature statistics for FlowBits. They are based on your flows."
+      "description": "These are feature statistics for FlowBits. They are based on your flows.",
+      "events": "Events",
+      "labels": "Labels"
     },
     "card_statistics": {
       "title": "Flow card statistics",
       "description": "These are usage statistics for individual flow cards."
+    },
+    "events": {
+      "title": "Events",
+      "description": "Events track when something happens and keep a history of timestamps. Use event actions, conditions, and triggers in your flows to track occurrences and check how often or when events happened.",
+      "empty": "No events have been created yet."
+    },
+    "labels": {
+      "title": "Labels",
+      "description": "Labels store key-value pairs for use in your flows. Use label actions, conditions, and triggers to set, get, and check values dynamically.",
+      "empty": "No labels have been created yet."
     }
   },
   "color": {
@@ -118,5 +132,9 @@
     "scorpio": "Scorpio",
     "taurus": "Taurus",
     "virgo": "Virgo"
+  },
+  "event": {
+    "builtin": "Built-in",
+    "mode": "Mode __name__ activated"
   }
 }

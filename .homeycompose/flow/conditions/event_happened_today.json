@@ -1,0 +1,25 @@
+{
+    "id": "event_happened_today",
+    "title": {
+        "en": "Event happened today",
+        "nl": "Gebeurtenis is vandaag gebeurd"
+    },
+    "titleFormatted": {
+        "en": "Event [[event]] happened today",
+        "nl": "Gebeurtenis [[event]] is vandaag gebeurd"
+    },
+    "hint": {
+        "en": "Checks if the event has happened at least once today.",
+        "nl": "Controleert of de gebeurtenis vandaag minstens één keer is gebeurd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis"
+            }
+        }
+    ]
+}

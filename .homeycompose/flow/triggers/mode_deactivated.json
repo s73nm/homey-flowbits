@@ -15,18 +15,18 @@
         "ko": "모드 비활성화됨"
     },
     "titleFormatted": {
-        "en": "[[name]] is deactivated",
-        "nl": "[[name]] is gedeactiveerd",
-        "de": "[[name]] ist deaktiviert",
-        "fr": "[[name]] est désactivé",
-        "it": "[[name]] è disattivato",
-        "sv": "[[name]] är inaktiverat",
-        "no": "[[name]] er deaktivert",
-        "es": "[[name]] está desactivado",
-        "da": "[[name]] er deaktiveret",
-        "ru": "[[name]] деактивирован",
-        "pl": "[[name]] jest dezaktywowany",
-        "ko": "[[name]] 비활성화됨"
+        "en": "Mode [[name]] is deactivated",
+        "nl": "Stand [[name]] is gedeactiveerd",
+        "de": "Modus [[name]] ist deaktiviert",
+        "fr": "Mode [[name]] est désactivé",
+        "it": "Modalità [[name]] è disattivato",
+        "sv": "Läge [[name]] är inaktiverat",
+        "no": "Modus [[name]] er deaktivert",
+        "es": "Modo [[name]] está desactivado",
+        "da": "Tilstand [[name]] er deaktiveret",
+        "ru": "Режим [[name]] деактивирован",
+        "pl": "Tryb [[name]] jest dezaktywowany",
+        "ko": "모드 [[name]] 비활성화됨"
     },
     "hint": {
         "en": "Triggers when a mode gets deactivated.",

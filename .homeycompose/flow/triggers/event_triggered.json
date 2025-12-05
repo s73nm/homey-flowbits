@@ -1,0 +1,21 @@
+{
+    "id": "event_triggered",
+    "title": {
+        "en": "Event triggered",
+        "nl": "Gebeurtenis getriggerd"
+    },
+    "titleFormatted": {
+        "en": "Event [[event]] is triggered",
+        "nl": "Gebeurtenis [[event]] is getriggerd"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis"
+            }
+        }
+    ]
+}

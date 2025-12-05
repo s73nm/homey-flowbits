@@ -1,0 +1,25 @@
+{
+    "id": "event_happened",
+    "title": {
+        "en": "Event happened",
+        "nl": "Gebeurtenis is gebeurd"
+    },
+    "titleFormatted": {
+        "en": "Event [[event]] happened",
+        "nl": "Gebeurtenis [[event]] is gebeurd"
+    },
+    "hint": {
+        "en": "Checks if the event has ever happened.",
+        "nl": "Controleert of de gebeurtenis ooit is gebeurd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis"
+            }
+        }
+    ]
+}

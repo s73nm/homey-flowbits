@@ -76,7 +76,7 @@ export default class extends Shortcuts<FlowBitsApp> {
 
     async getFlags(): Promise<Flag[]> {
         const provider = this.#autocompleteProvider();
-        const current = this.app.flags.currentFlags;
+        const current = this.currentFlags;
         const flags = await provider.find('');
 
         if (flags.length === 0) {
@@ -88,7 +88,7 @@ export default class extends Shortcuts<FlowBitsApp> {
         const results: Mode[] = [];
 
         for (const flag of flags) {
-            let look = await this.app.flags.getLook(flag.name);
+            let look = await this.getLook(flag.name);
 
             if (!look) {
                 look = await getBuiltinLook(flag.name, this.language, prefix, suffix);

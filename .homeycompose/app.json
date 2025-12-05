@@ -250,9 +250,17 @@
       "method": "POST",
       "path": "/modes"
     },
+    "getEvents": {
+      "method": "GET",
+      "path": "/events"
+    },
     "getFlags": {
       "method": "GET",
       "path": "/flags"
+    },
+    "getLabels": {
+      "method": "GET",
+      "path": "/labels"
     },
     "getModes": {
       "method": "GET",
@@ -266,9 +274,17 @@
       "method": "GET",
       "path": "/icons"
     },
+    "setEventLook": {
+      "method": "POST",
+      "path": "/events/look"
+    },
     "setFlagLook": {
       "method": "POST",
       "path": "/flags/look"
+    },
+    "setLabelLook": {
+      "method": "POST",
+      "path": "/labels/look"
     },
     "setModeLook": {
       "method": "POST",

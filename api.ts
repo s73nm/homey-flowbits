@@ -1,6 +1,6 @@
 import type { ApiRequest, Color, Icon } from '@basmilius/homey-common';
 import { colors, icons } from '@basmilius/homey-common';
-import type { Flag, FlowBitsApp, Mode, Statistics } from './src/types';
+import type { Event, Flag, FlowBitsApp, Label, Mode, Statistics } from './src/types';
 
 export async function activateFlag({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyFlag>): Promise<boolean> {
     return await app.api.activateFlag(body.flag);
@@ -26,8 +26,16 @@ export async function toggleMode({homey: {app}, body}: ApiRequest<FlowBitsApp, B
     return await app.api.toggleMode(body.mode);
 }
 
+export async function getEvents({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Event[]> {
+    return await app.api.getEvents();
+}
+
 export async function getFlags({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Flag[]> {
     return await app.api.getFlags();
+}
+
+export async function getLabels({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Label[]> {
+    return await app.api.getLabels();
 }
 
 export async function getModes({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Mode[]> {
@@ -42,8 +50,16 @@ export async function getIcons(): Promise<Icon[]> {
     return icons;
 }
 
+export async function setEventLook({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyLook>): Promise<boolean> {
+    return await app.api.setEventLook(body.name, body.color, body.icon);
+}
+
 export async function setFlagLook({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyLook>): Promise<boolean> {
     return await app.api.setFlagLook(body.name, body.color, body.icon);
+}
+
+export async function setLabelLook({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyLook>): Promise<boolean> {
+    return await app.api.setLabelLook(body.name, body.color, body.icon);
 }
 
 export async function setModeLook({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyLook>): Promise<boolean> {

@@ -1,0 +1,29 @@
+{
+    "id": "label_has_value",
+    "title": {
+        "en": "Label has value",
+        "nl": "Label heeft waarde"
+    },
+    "titleFormatted": {
+        "en": "Label [[label]] has value [[value]]",
+        "nl": "Label [[label]] heeft waarde [[value]]"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+                "en": "Label",
+                "nl": "Label"
+            }
+        },
+        {
+            "type": "text",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde"
+            }
+        }
+    ]
+}

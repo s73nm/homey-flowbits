@@ -1,0 +1,29 @@
+{
+    "id": "label_set",
+    "title": {
+        "en": "Set label",
+        "nl": "Stel label in"
+    },
+    "titleFormatted": {
+        "en": "Set label [[label]] to [[value]]",
+        "nl": "Stel label [[label]] in op [[value]]"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+                "en": "label",
+                "nl": "Label"
+            }
+        },
+        {
+            "type": "text",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde"
+            }
+        }
+    ]
+}

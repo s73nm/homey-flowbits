@@ -1,7 +1,23 @@
 import { Shortcuts } from '@basmilius/homey-common';
-import type { Flag, FlowBitsApp, Mode, Statistics } from '../types';
+import type { Event, Flag, FlowBitsApp, Label, Mode, Statistics } from '../types';
 
 export default class extends Shortcuts<FlowBitsApp> {
+    async getEvents(): Promise<Event[]> {
+        return await this.app.events.getEvents();
+    }
+
+    async setEventLook(eventName: string, color: string, icon: string): Promise<boolean> {
+        const event = await this.app.events.find(eventName);
+
+        if (!event) {
+            return false;
+        }
+
+        await this.app.events.setLook(event.name, [color, icon]);
+
+        return true;
+    }
+
     async activateFlag(flagName: string): Promise<boolean> {
         const flag = await this.app.flags.find(flagName);
 
@@ -54,6 +70,22 @@ export default class extends Shortcuts<FlowBitsApp> {
         }
 
         await this.app.flags.setLook(flag.name, [color, icon]);
+
+        return true;
+    }
+
+    async getLabels(): Promise<Label[]> {
+        return await this.app.labels.getLabels();
+    }
+
+    async setLabelLook(labelName: string, color: string, icon: string): Promise<boolean> {
+        const label = await this.app.labels.find(labelName);
+
+        if (!label) {
+            return false;
+        }
+
+        await this.app.labels.setLook(label.name, [color, icon]);
 
         return true;
     }
@@ -127,7 +159,9 @@ export default class extends Shortcuts<FlowBitsApp> {
             currentMode: modes.find(mode => mode.active)?.name ?? null,
 
             numberOfCycles: await this.app.cycles.getCount(),
+            numberOfEvents: await this.app.events.getCount(),
             numberOfFlags: await this.app.flags.getCount(),
+            numberOfLabels: 0,
             numberOfModes: await this.app.modes.getCount(),
             numberOfNoRepeats: await this.app.noRepeat.getCount(),
             numberOfSliders: await this.app.sliders.getCount(),

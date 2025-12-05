@@ -1,0 +1,36 @@
+{
+    "id": "event_happened_times_today",
+    "title": {
+        "en": "Event happened N times today",
+        "nl": "Gebeurtenis is vandaag N keer gebeurd"
+    },
+    "titleFormatted": {
+        "en": "Event [[event]] happened [[times]] times today",
+        "nl": "Gebeurtenis [[event]] is vandaag [[times]] keer gebeurd"
+    },
+    "hint": {
+        "en": "Checks if the event has happened N times today.",
+        "nl": "Controleert of de gebeurtenis vandaag N keer is gebeurd."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis"
+            }
+        },
+        {
+            "type": "number",
+            "name": "times",
+            "title": {
+                "en": "Number of times",
+                "nl": "Aantal"
+            },
+            "min": 1,
+            "step": 1,
+            "labelDecimals": 0
+        }
+    ]
+}

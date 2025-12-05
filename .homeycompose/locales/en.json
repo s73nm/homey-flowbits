@@ -1,7 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "New counter in this flow",
+        "event_new": "New event in this flow",
         "flag_new": "New flag in this flow",
+        "label_new": "New label in this flow",
         "mode_new": "New mode in this flow",
         "no_repeat_new": "New no-repeat window in this flow",
         "signal_new": "New signal in this flow",
@@ -66,10 +68,20 @@
             "color": "Color",
             "icon": "Icon"
         },
+        "events": {
+            "title": "Events",
+            "description": "Events track when something happens and keep a history of timestamps. Use event actions, conditions, and triggers in your flows to track occurrences and check how often or when events happened.",
+            "empty": "No events have been created yet."
+        },
         "flags": {
             "title": "Flags",
             "description": "Multiple flags can be active simultaneously. Create and manage flags using flag actions, conditions, and triggers in your flows.",
             "empty": "No flags have been created yet."
+        },
+        "labels": {
+            "title": "Labels",
+            "description": "Labels store key-value pairs for use in your flows. Use label actions, conditions, and triggers to set, get, and check values dynamically.",
+            "empty": "No labels have been created yet."
         },
         "modes": {
             "title": "Modes",
@@ -80,7 +92,9 @@
             "title": "Statistics",
             "description": "These are feature statistics for FlowBits. They are based on your flows.",
             "cycles": "Cycles",
+            "events": "Events",
             "flags": "Flags",
+            "labels": "Labels",
             "modes": "Modes",
             "no_repeats": "No-repeat windows",
             "sliders": "Sliders",

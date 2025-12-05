@@ -15,18 +15,18 @@
         "ko": "모드 활성화됨"
     },
     "titleFormatted": {
-        "en": "[[name]] is activated",
-        "nl": "[[name]] is geactiveerd",
-        "de": "[[name]] ist aktiviert",
-        "fr": "[[name]] est activé",
-        "it": "[[name]] è attivata",
-        "sv": "[[name]] är aktiverat",
-        "no": "[[name]] er aktivert",
-        "es": "[[name]] está activado",
-        "da": "[[name]] er aktiveret",
-        "ru": "[[name]] активирован",
-        "pl": "[[name]] został aktywowany",
-        "ko": "[[name]]가 활성화됨"
+        "en": "Mode [[name]] is activated",
+        "nl": "Stand [[name]] is geactiveerd",
+        "de": "Modus [[name]] ist aktiviert",
+        "fr": "Mode [[name]] est activé",
+        "it": "Modalità [[name]] è attivata",
+        "sv": "Läge [[name]] är aktiverat",
+        "no": "Modus [[name]] er aktivert",
+        "es": "Modo [[name]] está activado",
+        "da": "Tilstand [[name]] er aktiveret",
+        "ru": "Режим [[name]] активирован",
+        "pl": "Tryb [[name]] został aktywowany",
+        "ko": "모드 [[name]]가 활성화됨"
     },
     "hint": {
         "en": "Triggers when a mode gets activated.",

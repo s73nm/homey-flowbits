@@ -7,6 +7,8 @@ export { default as EventTrigger } from './eventTrigger';
 export { default as FlagActivate } from './flagActivate';
 export { default as FlagDeactivate } from './flagDeactivate';
 export { default as FlagToggle } from './flagToggle';
+export { default as LabelClear } from './labelClear';
+export { default as LabelSet } from './labelSet';
 export { default as ModeActivate } from './modeActivate';
 export { default as ModeDeactivate } from './modeDeactivate';
 export { default as ModeReactivate } from './modeReactivate';

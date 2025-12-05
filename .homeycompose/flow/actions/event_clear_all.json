@@ -1,0 +1,15 @@
+{
+    "id": "event_clear_all",
+    "title": {
+        "en": "Clear all events",
+        "nl": "Leeg alle gebeurtenissen"
+    },
+    "titleFormatted": {
+        "en": "Clear all events",
+        "nl": "Leeg alle gebeurtenissen"
+    },
+    "hint": {
+        "en": "Clears all stored history for all events.",
+        "nl": "Leeft alle opgeslagen geschiedenis voor alle gebeurtenissen."
+    }
+}

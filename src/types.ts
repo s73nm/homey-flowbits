@@ -13,8 +13,21 @@ export type ClockUnit =
     | 'hours'
     | 'days';
 
+export type Event = {
+    readonly color: string | undefined;
+    readonly icon: string | undefined;
+    readonly lastUpdate: string | undefined;
+    readonly name: string;
+};
+
 export type Flag = {
     readonly active: boolean;
+    readonly color: string | undefined;
+    readonly icon: string | undefined;
+    readonly name: string;
+};
+
+export type Label = {
     readonly color: string | undefined;
     readonly icon: string | undefined;
     readonly name: string;
@@ -33,7 +46,9 @@ export type Statistics = {
     readonly currentFlags: string[];
     readonly currentMode: string | null;
     readonly numberOfCycles: number;
+    readonly numberOfEvents: number;
     readonly numberOfFlags: number;
+    readonly numberOfLabels: number;
     readonly numberOfModes: number;
     readonly numberOfNoRepeats: number;
     readonly numberOfSliders: number;

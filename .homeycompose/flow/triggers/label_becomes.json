@@ -1,0 +1,29 @@
+{
+    "id": "label_becomes",
+    "title": {
+        "en": "Label becomes",
+        "nl": "Label verandert in"
+    },
+    "titleFormatted": {
+        "en": "Label [[label]] becomes [[value]]",
+        "nl": "Label [[label]] verandert in [[value]]"
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+                "en": "Label",
+                "nl": "Label"
+            }
+        },
+        {
+            "type": "text",
+            "name": "value",
+            "title": {
+                "en": "Value",
+                "nl": "Waarde"
+            }
+        }
+    ]
+}

@@ -1,0 +1,25 @@
+{
+    "id": "event_clear",
+    "title": {
+        "en": "Clear event",
+        "nl": "Leeg gebeurtenis"
+    },
+    "titleFormatted": {
+        "en": "Clear event [[event]]",
+        "nl": "Leeg gebeurtenis [[event]]"
+    },
+    "hint": {
+        "en": "Clears all stored history for the event.",
+        "nl": "Leeft alle opgeslagen geschiedenis voor de gebeurtenis."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "event",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis"
+            }
+        }
+    ]
+}

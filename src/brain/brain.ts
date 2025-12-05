@@ -2,7 +2,9 @@ import { Shortcuts } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../types';
 import Api from './api';
 import Cycles from './cycles';
+import Events from './events';
 import Flags from './flags';
+import Labels from './labels';
 import Modes from './modes';
 import NoRepeat from './noRepeat';
 import Sliders from './sliders';
@@ -19,8 +21,16 @@ export default class extends Shortcuts<FlowBitsApp> {
         return this.#cycles;
     }
 
+    get events(): Events {
+        return this.#events;
+    }
+
     get flags(): Flags {
         return this.#flags;
+    }
+
+    get labels(): Labels {
+        return this.#labels;
     }
 
     get modes(): Modes {
@@ -49,7 +59,9 @@ export default class extends Shortcuts<FlowBitsApp> {
 
     readonly #api: Api;
     readonly #cycles: Cycles;
+    readonly #events: Events;
     readonly #flags: Flags;
+    readonly #labels: Labels;
     readonly #modes: Modes;
     readonly #noRepeat: NoRepeat;
     readonly #sliders: Sliders;
@@ -62,7 +74,9 @@ export default class extends Shortcuts<FlowBitsApp> {
 
         this.#api = new Api(app);
         this.#cycles = new Cycles(app);
+        this.#events = new Events(app);
         this.#flags = new Flags(app);
+        this.#labels = new Labels(app);
         this.#modes = new Modes(app);
         this.#noRepeat = new NoRepeat(app);
         this.#sliders = new Sliders(app);

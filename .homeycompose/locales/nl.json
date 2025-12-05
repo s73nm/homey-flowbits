@@ -1,7 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "Nieuwe teller in deze flow",
+        "event_new": "Nieuwe gebeurtenis in deze flow",
         "flag_new": "Nieuwe flag in deze flow",
+        "label_new": "Nieuwe label in deze flow",
         "mode_new": "Nieuwe stand in deze flow",
         "no_repeat_new": "Nieuwe geen-herhalingvenster in deze flow",
         "signal_new": "Nieuw signaal in deze flow",
@@ -66,10 +68,20 @@
             "color": "Kleur",
             "icon": "Icoon"
         },
+        "events": {
+            "title": "Gebeurtenissen",
+            "description": "Gebeurtenissen houden bij wanneer iets gebeurt en bewaren een geschiedenis van tijdstempels. Gebruik gebeurtenis-acties, -voorwaarden en -triggers in je flows om voorvallen bij te houden en te controleren hoe vaak of wanneer gebeurtenissen plaatsvonden.",
+            "empty": "Er zijn nog geen gebeurtenissen aangemaakt."
+        },
         "flags": {
             "title": "Flags",
             "description": "Meerdere flags kunnen tegelijk actief zijn. Maak en beheer flags via flag-acties, -voorwaarden en -triggers in je flows.",
             "empty": "Er zijn nog geen flags aangemaakt."
+        },
+        "labels": {
+            "title": "Labels",
+            "description": "Labels slaan sleutel-waardeparen op voor gebruik in je flows. Gebruik label-acties, -voorwaarden en -triggers om waarden dynamisch in te stellen, op te halen en te controleren.",
+            "empty": "Er zijn nog geen labels aangemaakt."
         },
         "modes": {
             "title": "Standen",
@@ -80,7 +92,9 @@
             "title": "Statistieken",
             "description": "Dit zijn functiestatistieken voor FlowBits. Ze zijn gebaseerd op je flows.",
             "cycles": "Stappenreeksen",
+            "events": "Gebeurtenissen",
             "flags": "Flags",
+            "labels": "Labels",
             "modes": "Standen",
             "no_repeats": "Geen-herhalingsvensters",
             "sliders": "Sliders",
