@@ -142,5 +142,8 @@
   },
   "1.6.15": {
     "en": "Fixed a typo."
+  },
+  "1.7.0": {
+    "en": "This update introduces labels, events and corresponding widgets. It also adds support for Arabic."
   }
 }
