@@ -2,11 +2,33 @@
     "id": "label_clear",
     "title": {
         "en": "Clear label",
-        "nl": "Maak label leeg"
+        "nl": "Maak label leeg",
+        "da": "Ryd etiket",
+        "de": "Etikett löschen",
+        "es": "Limpiar etiqueta",
+        "fr": "Effacer l'étiquette",
+        "it": "Cancella etichetta",
+        "no": "Tøm etikett",
+        "sv": "Rensa etikett",
+        "pl": "Wyczyść etykietę",
+        "ru": "Очистить метку",
+        "ko": "라벨 지우기",
+        "ar": "مسح الملصق"
     },
     "titleFormatted": {
         "en": "Clear label [[label]]",
-        "nl": "Maak label [[label]] leeg"
+        "nl": "Maak label [[label]] leeg",
+        "da": "Ryd etiket [[label]]",
+        "de": "Etikett löschen [[label]]",
+        "es": "Limpiar etiqueta [[label]]",
+        "fr": "Effacer l'étiquette [[label]]",
+        "it": "Cancella etichetta [[label]]",
+        "no": "Tøm etikett [[label]]",
+        "sv": "Rensa etikett [[label]]",
+        "pl": "Wyczyść etykietę [[label]]",
+        "ru": "Очистить метку [[label]]",
+        "ko": "라벨 지우기 [[label]]",
+        "ar": "مسح الملصق [[label]]"
     },
     "args": [
         {
@@ -14,7 +36,18 @@
             "name": "label",
             "title": {
                 "en": "label",
-                "nl": "Label"
+                "nl": "Label",
+                "da": "etiket",
+                "de": "Etikett",
+                "es": "etiqueta",
+                "fr": "étiquette",
+                "it": "etichetta",
+                "no": "etikett",
+                "sv": "etikett",
+                "pl": "etykieta",
+                "ru": "метка",
+                "ko": "라벨",
+                "ar": "ملصق"
             }
         }
     ]

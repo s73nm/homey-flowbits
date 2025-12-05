@@ -6,7 +6,9 @@
     "no_repeat_new": "Nyt ingen- gentagelses vindue i dette flow",
     "signal_new": "Ny signal i dette flow",
     "timer_new": "Ny timer i dette flow",
-    "slider_new": "Ny skyder i dette flow"
+    "slider_new": "Ny skyder i dette flow",
+    "event_new": "Ny begivenhed i dette flow",
+    "label_new": "Ny etiket i dette flow"
   },
   "notification": {
     "mode_activated": "**__name__** er aktiveret.",
@@ -30,6 +32,9 @@
     "current_mode": {
       "label": "Aktuel tilstand",
       "suffix": "tilstand"
+    },
+    "event": {
+      "now": "Nu"
     }
   },
   "settings": {

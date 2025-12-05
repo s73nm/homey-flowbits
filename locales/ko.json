@@ -6,7 +6,9 @@
     "no_repeat_new": "이 플로우에 새로운 반복 없음 창",
     "signal_new": "이 플로우에 새로운 신호",
     "timer_new": "이 플로우에 새로운 타이머",
-    "slider_new": "이 플로우의 새 슬라이더"
+    "slider_new": "이 플로우의 새 슬라이더",
+    "event_new": "이 흐름의 새로운 이벤트",
+    "label_new": "이 흐름의 새로운 레이블"
   },
   "notification": {
     "mode_activated": "**__name__** 활성화됨.",
@@ -30,6 +32,9 @@
     "current_mode": {
       "label": "현재 모드",
       "suffix": "모드"
+    },
+    "event": {
+      "now": "지금"
     }
   },
   "settings": {

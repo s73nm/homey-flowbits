@@ -2,14 +2,47 @@
     "id": "event_clear_all",
     "title": {
         "en": "Clear all events",
-        "nl": "Leeg alle gebeurtenissen"
+        "nl": "Leeg alle gebeurtenissen",
+        "da": "Ryd alle begivenheder",
+        "de": "Alle Ereignisse löschen",
+        "es": "Borrar todos los eventos",
+        "fr": "Effacer tous les événements",
+        "it": "Cancella tutti gli eventi",
+        "no": "Tøm alle hendelser",
+        "sv": "Rensa alla händelser",
+        "pl": "Wyczyść wszystkie wydarzenia",
+        "ru": "Очистить все события",
+        "ko": "모든 이벤트 지우기",
+        "ar": "مسح جميع الأحداث"
     },
     "titleFormatted": {
         "en": "Clear all events",
-        "nl": "Leeg alle gebeurtenissen"
+        "nl": "Leeg alle gebeurtenissen",
+        "da": "Ryd alle begivenheder",
+        "de": "Alle Ereignisse löschen",
+        "es": "Borrar todos los eventos",
+        "fr": "Effacer tous les événements",
+        "it": "Cancella tutti gli eventi",
+        "no": "Tøm alle hendelser",
+        "sv": "Rensa alla händelser",
+        "pl": "Wyczyść wszystkie wydarzenia",
+        "ru": "Очистить все события",
+        "ko": "모든 이벤트 지우기",
+        "ar": "مسح جميع الأحداث"
     },
     "hint": {
         "en": "Clears all stored history for all events.",
-        "nl": "Leeft alle opgeslagen geschiedenis voor alle gebeurtenissen."
+        "nl": "Leeft alle opgeslagen geschiedenis voor alle gebeurtenissen.",
+        "da": "Rydder al gemt historie for alle begivenheder.",
+        "de": "Löscht den gesamten gespeicherten Verlauf für alle Ereignisse.",
+        "es": "Borra todo el historial almacenado para todos los eventos.",
+        "fr": "Efface tout l'historique stocké pour tous les événements.",
+        "it": "Cancella tutta la cronologia memorizzata per tutti gli eventi.",
+        "no": "Sletter all lagret historie for alle hendelser.",
+        "sv": "Rensar all sparad historik för alla händelser.",
+        "pl": "Czyści całą zapisaną historię dla wszystkich wydarzeń.",
+        "ru": "Стирает всю сохраненную историю для всех событий.",
+        "ko": "모든 이벤트에 대한 저장된 기록을 지웁니다.",
+        "ar": "يمسح جميع السجل المحفوظ لجميع الأحداث."
     }
 }

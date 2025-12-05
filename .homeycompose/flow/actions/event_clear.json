@@ -2,15 +2,48 @@
     "id": "event_clear",
     "title": {
         "en": "Clear event",
-        "nl": "Leeg gebeurtenis"
+        "nl": "Leeg gebeurtenis",
+        "da": "Ryd begivenhed",
+        "de": "Ereignis löschen",
+        "es": "Borrar evento",
+        "fr": "Effacer l'événement",
+        "it": "Cancella evento",
+        "no": "Slett hendelse",
+        "sv": "Rensa händelse",
+        "pl": "Wyczyść wydarzenie",
+        "ru": "Очистить событие",
+        "ko": "이벤트 지우기",
+        "ar": "مسح الحدث"
     },
     "titleFormatted": {
         "en": "Clear event [[event]]",
-        "nl": "Leeg gebeurtenis [[event]]"
+        "nl": "Leeg gebeurtenis [[event]]",
+        "da": "Ryd begivenhed [[event]]",
+        "de": "Ereignis löschen [[event]]",
+        "es": "Borrar evento [[event]]",
+        "fr": "Effacer l'événement [[event]]",
+        "it": "Cancella evento [[event]]",
+        "no": "Slett hendelse [[event]]",
+        "sv": "Rensa händelse [[event]]",
+        "pl": "Wyczyść wydarzenie [[event]]",
+        "ru": "Очистить событие [[event]]",
+        "ko": "이벤트 지우기 [[event]]",
+        "ar": "مسح الحدث [[event]]"
     },
     "hint": {
         "en": "Clears all stored history for the event.",
-        "nl": "Leeft alle opgeslagen geschiedenis voor de gebeurtenis."
+        "nl": "Leeft alle opgeslagen geschiedenis voor de gebeurtenis.",
+        "da": "Nulstiller al gemt historik for begivenheden.",
+        "de": "Löscht den gesamten gespeicherten Verlauf für das Ereignis.",
+        "es": "Borra todo el historial almacenado para el evento.",
+        "fr": "Efface tout l'historique enregistré pour l'événement.",
+        "it": "Cancella tutta la cronologia memorizzata per l'evento.",
+        "no": "Sletter all lagret historikk for hendelsen.",
+        "sv": "Rensar all sparad historik för händelsen.",
+        "pl": "Czyści całą zapisaną historię dla wydarzenia.",
+        "ru": "Очищает всю сохранённую историю для события.",
+        "ko": "이벤트에 대한 저장된 모든 기록을 지웁니다.",
+        "ar": "يمسح كل التاريخ المخزن للحدث."
     },
     "args": [
         {
@@ -18,7 +51,18 @@
             "name": "event",
             "title": {
                 "en": "Event",
-                "nl": "Gebeurtenis"
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Ereignis",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Hendelse",
+                "sv": "Händelse",
+                "pl": "Wydarzenie",
+                "ru": "Событие",
+                "ko": "이벤트",
+                "ar": "حدث"
             }
         }
     ]

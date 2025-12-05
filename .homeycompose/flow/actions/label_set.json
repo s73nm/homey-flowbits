@@ -2,11 +2,33 @@
     "id": "label_set",
     "title": {
         "en": "Set label",
-        "nl": "Stel label in"
+        "nl": "Stel label in",
+        "da": "Indstil etiket",
+        "de": "Label festlegen",
+        "es": "Establecer etiqueta",
+        "fr": "Définir l'étiquette",
+        "it": "Imposta etichetta",
+        "no": "Sett etikett",
+        "sv": "Ställ in etikett",
+        "pl": "Ustaw etykietę",
+        "ru": "Установить ярлык",
+        "ko": "레이블 설정",
+        "ar": "تعيين الملصق"
     },
     "titleFormatted": {
         "en": "Set label [[label]] to [[value]]",
-        "nl": "Stel label [[label]] in op [[value]]"
+        "nl": "Stel label [[label]] in op [[value]]",
+        "da": "Indstil etiket [[label]] til [[value]]",
+        "de": "Label [[label]] auf [[value]] festlegen",
+        "es": "Establecer etiqueta [[label]] a [[value]]",
+        "fr": "Définir l'étiquette [[label]] sur [[value]]",
+        "it": "Imposta etichetta [[label]] su [[value]]",
+        "no": "Sett etikett [[label]] til [[value]]",
+        "sv": "Ställ in etikett [[label]] till [[value]]",
+        "pl": "Ustaw etykietę [[label]] na [[value]]",
+        "ru": "Установить ярлык [[label]] на [[value]]",
+        "ko": "[[label]] 레이블을 [[value]]으로 설정",
+        "ar": "تعيين الملصق [[label]] إلى [[value]]"
     },
     "args": [
         {
@@ -14,7 +36,18 @@
             "name": "label",
             "title": {
                 "en": "label",
-                "nl": "Label"
+                "nl": "Label",
+                "da": "etiket",
+                "de": "Label",
+                "es": "etiqueta",
+                "fr": "étiquette",
+                "it": "etichetta",
+                "no": "etikett",
+                "sv": "etikett",
+                "pl": "etykieta",
+                "ru": "ярлык",
+                "ko": "레이블",
+                "ar": "ملصق"
             }
         },
         {
@@ -22,7 +55,18 @@
             "name": "value",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "da": "Værdi",
+                "de": "Wert",
+                "es": "Valor",
+                "fr": "Valeur",
+                "it": "Valore",
+                "no": "Verdi",
+                "sv": "Värde",
+                "pl": "Wartość",
+                "ru": "Значение",
+                "ko": "값",
+                "ar": "قيمة"
             }
         }
     ]

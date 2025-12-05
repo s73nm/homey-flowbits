@@ -12,7 +12,8 @@
         "da": "Timer startet",
         "ru": "Таймер запущен",
         "pl": "Timer rozpoczęty",
-        "ko": "타이머 시작됨"
+        "ko": "타이머 시작됨",
+        "ar": "تم تشغيل المؤقت"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] started",
@@ -26,7 +27,8 @@
         "da": "Timer [[timer]] startet",
         "ru": "Таймер [[timer]] запущен",
         "pl": "Timer [[timer]] rozpoczęty",
-        "ko": "타이머 [[timer]] 시작됨"
+        "ko": "타이머 [[timer]] 시작됨",
+        "ar": "تم تشغيل المؤقت [[timer]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         }
     ]

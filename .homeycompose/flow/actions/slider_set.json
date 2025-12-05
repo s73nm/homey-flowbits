@@ -12,7 +12,8 @@
         "da": "Sæt skydeværdi",
         "ru": "Установить значение ползунка",
         "pl": "Ustaw wartość suwaka",
-        "ko": "슬라이더 값 설정"
+        "ko": "슬라이더 값 설정",
+        "ar": "تعيين قيمة المنزلق"
     },
     "titleFormatted": {
         "en": "Set slider [[slider]] to [[value]]",
@@ -26,7 +27,8 @@
         "da": "Sæt skyderen [[slider]] til [[value]]",
         "ru": "Установить ползунок [[slider]] на [[value]]",
         "pl": "Ustaw suwak [[slider]] na [[value]]",
-        "ko": "슬라이더 [[slider]]를 [[value]]로 설정"
+        "ko": "슬라이더 [[slider]]를 [[value]]로 설정",
+        "ar": "تعيين المنزلق [[slider]] إلى [[value]]"
     },
     "hint": {
         "en": "Sets the selected slider widget to a numeric value.",
@@ -40,7 +42,8 @@
         "da": "Sætter den valgte skyder-widget til en numerisk værdi.",
         "ru": "Устанавливает выбранный ползунок на числовое значение.",
         "pl": "Ustawia wybrany suwak na wartość liczbową.",
-        "ko": "선택한 슬라이더 위젯을 숫자 값으로 설정합니다."
+        "ko": "선택한 슬라이더 위젯을 숫자 값으로 설정합니다.",
+        "ar": "يضبط عنصر واجهة المنزلق المحدد على قيمة رقمية."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Skyder",
                 "ru": "Ползунок",
                 "pl": "Suwak",
-                "ko": "슬라이더"
+                "ko": "슬라이더",
+                "ar": "المنزلق"
             }
         },
         {
@@ -82,7 +86,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "القيمة"
             }
         }
     ]

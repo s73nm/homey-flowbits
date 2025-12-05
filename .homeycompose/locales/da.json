@@ -1,7 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "Ny tæller i dette flow",
+        "event_new": "Ny begivenhed i dette flow",
         "flag_new": "Nyt flag i dette flow",
+        "label_new": "Ny etiket i dette flow",
         "mode_new": "Ny tilstand i dette flow",
         "no_repeat_new": "Nyt ingen- gentagelses vindue i dette flow",
         "signal_new": "Ny signal i dette flow",
@@ -54,6 +56,9 @@
         "current_mode": {
             "label": "Aktuel tilstand",
             "suffix": "tilstand"
+        },
+        "event": {
+            "now": "Nu"
         }
     },
     "settings": {

@@ -12,7 +12,8 @@
         "da": "Afrund opad",
         "ru": "Округлить вверх",
         "pl": "Zaokrąglij w górę",
-        "ko": "올림"
+        "ko": "올림",
+        "ar": "تقريب لأعلى"
     },
     "titleFormatted": {
         "en": "Round [[value]] up",
@@ -26,7 +27,8 @@
         "da": "Afrund [[value]] opad",
         "ru": "Округлить [[value]] вверх",
         "pl": "Zaokrąglij [[value]] w górę",
-        "ko": "[[value]] 올림"
+        "ko": "[[value]] 올림",
+        "ar": "تقريب [[value]] لأعلى"
     },
     "hint": {
         "en": "Rounds up to the nearest integer.",
@@ -40,7 +42,8 @@
         "da": "Afrunder til nærmeste hele tal opad.",
         "ru": "Округляет до ближайшего большего целого.",
         "pl": "Zaokrągla do najbliższej większej liczby całkowitej.",
-        "ko": "가장 가까운 큰 정수로 올림합니다."
+        "ko": "가장 가까운 큰 정수로 올림합니다.",
+        "ar": "يقرب لأقرب عدد صحيح."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "القيمة"
             },
             "placeholder": {
                 "en": "E.g. 13",
@@ -72,7 +76,8 @@
                 "da": "F.eks. 13",
                 "ru": "Напр. 13",
                 "pl": "Np. 13",
-                "ko": "예: 13"
+                "ko": "예: 13",
+                "ar": "مثال: 13"
             }
         }
     ],
@@ -92,7 +97,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "النتيجة"
             }
         }
     ]

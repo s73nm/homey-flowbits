@@ -1,7 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "Ny räknare i detta flöde",
+        "event_new": "Ny händelse i detta flöde",
         "flag_new": "Ny flagga i detta flöde",
+        "label_new": "Ny etikett i detta flöde",
         "mode_new": "Nytt läge i detta flöde",
         "no_repeat_new": "Nytt icke-repetitionsfönster i detta flöde",
         "signal_new": "Ny signal i detta flöde",
@@ -54,6 +56,9 @@
         "current_mode": {
             "label": "Aktuellt läge",
             "suffix": "läge"
+        },
+        "event": {
+            "now": "Nu"
         }
     },
     "settings": {

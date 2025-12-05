@@ -6,7 +6,9 @@
     "no_repeat_new": "Nytt icke-repetitionsfönster i detta flöde",
     "signal_new": "Ny signal i detta flöde",
     "timer_new": "Ny timer i detta flöde",
-    "slider_new": "Ny slider i detta flöde"
+    "slider_new": "Ny slider i detta flöde",
+    "event_new": "Ny händelse i detta flöde",
+    "label_new": "Ny etikett i detta flöde"
   },
   "notification": {
     "mode_activated": "**__name__** är aktiverad.",
@@ -30,6 +32,9 @@
     "current_mode": {
       "label": "Aktuellt läge",
       "suffix": "läge"
+    },
+    "event": {
+      "now": "Nu"
     }
   },
   "settings": {

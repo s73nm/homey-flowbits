@@ -12,7 +12,8 @@
         "da": "Multiplicer",
         "ru": "Умножить",
         "pl": "Pomnóż",
-        "ko": "곱하기"
+        "ko": "곱하기",
+        "ar": "ضرب"
     },
     "titleFormatted": {
         "en": "Multiply [[value]] by [[factor]]",
@@ -26,7 +27,8 @@
         "da": "Multiplicer [[value]] med [[factor]]",
         "ru": "Умножить [[value]] на [[factor]]",
         "pl": "Pomnóż [[value]] przez [[factor]]",
-        "ko": "[[value]]에 [[factor]] 곱하기"
+        "ko": "[[value]]에 [[factor]] 곱하기",
+        "ar": "اضرب [[value]] في [[factor]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "القيمة"
             }
         },
         {
@@ -65,7 +68,8 @@
                 "da": "Faktor",
                 "ru": "Множитель",
                 "pl": "Mnożnik",
-                "ko": "인수"
+                "ko": "인수",
+                "ar": "عامل"
             }
         }
     ],
@@ -85,7 +89,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "النتيجة"
             }
         }
     ]

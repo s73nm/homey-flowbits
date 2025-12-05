@@ -12,7 +12,8 @@
         "da": "Sekvensen har værdien ...",
         "ru": "Последовательность имеет значение ...",
         "pl": "Sekwencja ma wartość ...",
-        "ko": "시퀀스의 값 ..."
+        "ko": "시퀀스의 값 ...",
+        "ar": "التسلسل له القيمة ..."
     },
     "titleFormatted": {
         "en": "Sequence [[name]] reaches [[value]]",
@@ -26,7 +27,8 @@
         "da": "Sekvensen [[name]] når værdien [[value]]",
         "ru": "Последовательность [[name]] достигает значения [[value]]",
         "pl": "Sekwencja [[name]] osiąga wartość [[value]]",
-        "ko": "시퀀스 [[name]]이(가) [[value]] 값에 도달"
+        "ko": "시퀀스 [[name]]이(가) [[value]] 값에 도달",
+        "ar": "التسلسل [[name]] يصل إلى القيمة [[value]]"
     },
     "hint": {
         "en": "Triggers when a sequence reaches the specified value.",
@@ -40,7 +42,8 @@
         "da": "Udløses når en sekvens når den angivne værdi.",
         "ru": "Срабатывает, когда последовательность достигает указанного значения.",
         "pl": "Wyzwalane, gdy sekwencja osiągnie podaną wartość.",
-        "ko": "시퀀스가 지정된 값에 도달하면 트리거됩니다."
+        "ko": "시퀀스가 지정된 값에 도달하면 트리거됩니다.",
+        "ar": "يتم التحفيز عندما يصل التسلسل إلى القيمة المحددة."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Navn",
                 "ru": "Название",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "اسم"
             }
         },
         {
@@ -78,7 +82,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "قيمة"
             },
             "placeholder": {
                 "en": "E.g. 5",
@@ -92,7 +97,8 @@
                 "da": "Fx 5",
                 "ru": "Напр. 5",
                 "pl": "Np. 5",
-                "ko": "예: 5"
+                "ko": "예: 5",
+                "ar": "على سبيل المثال 5"
             }
         }
     ]

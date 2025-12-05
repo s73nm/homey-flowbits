@@ -12,7 +12,8 @@
         "da": "Skift tilstand",
         "ru": "Переключить режим",
         "pl": "Przełącz tryb",
-        "ko": "모드 전환"
+        "ko": "모드 전환",
+        "ar": "تبديل الوضع"
     },
     "titleFormatted": {
         "en": "Toggle [[name]]",
@@ -26,7 +27,8 @@
         "da": "Skift [[name]]",
         "ru": "Переключить [[name]]",
         "pl": "Przełącz [[name]]",
-        "ko": "[[name]] 전환"
+        "ko": "[[name]] 전환",
+        "ar": "تبديل [[name]]"
     },
     "hint": {
         "en": "Turns the mode on if it’s off, and off if it’s on.",
@@ -39,8 +41,9 @@
         "es": "Activa el modo si está desactivado y lo desactiva si está activado.",
         "da": "Aktiverer tilstanden hvis den er slukket og deaktiverer den hvis den er tændt.",
         "ru": "Включает режим если он выключен и выключает если он включен.",
-        "pl": "Włącza tryb jeśli jest wyłączony i wyłącza jeśli jest włączony.",
-        "ko": "모드가 꺼져 있으면 켜고 켜져 있으면 끕니다."
+        "pl": "Włącza tryb jeśli jest wyłączony i wyłącza если jest włączony.",
+        "ko": "모드가 꺼져 있으면 켜고 켜져 있으면 끕니다.",
+        "ar": "يشغل الوضع إذا كان مغلقًا، ويغلقه إذا كان مفتوحًا."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "وضع"
             }
         }
     ]

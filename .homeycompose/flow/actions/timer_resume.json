@@ -12,7 +12,8 @@
         "da": "Genoptag timer",
         "ru": "Возобновить таймер",
         "pl": "Wznów timer",
-        "ko": "타이머 재개"
+        "ko": "타이머 재개",
+        "ar": "استئناف المؤقت"
     },
     "titleFormatted": {
         "en": "Resume timer [[timer]]",
@@ -26,7 +27,8 @@
         "da": "Genoptag timeren [[timer]]",
         "ru": "Возобновить таймер [[timer]]",
         "pl": "Wznów timer [[timer]]",
-        "ko": "[[timer]] 타이머 재개"
+        "ko": "[[timer]] 타이머 재개",
+        "ar": "استئناف المؤقت [[timer]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         }
     ]

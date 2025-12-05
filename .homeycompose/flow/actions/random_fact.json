@@ -12,7 +12,8 @@
         "da": "Giv et tilfældigt faktum",
         "ru": "Дай случайный факт",
         "pl": "Podaj losowy fakt",
-        "ko": "무작위 사실 제공"
+        "ko": "무작위 사실 제공",
+        "ar": "أعط حقيقة عشوائية"
     },
     "titleFormatted": {
         "en": "Give a random fact",
@@ -26,7 +27,8 @@
         "da": "Giv et tilfældigt faktum",
         "ru": "Дай случайный факт",
         "pl": "Podaj losowy fakt",
-        "ko": "무작위 사실 제공"
+        "ko": "무작위 사실 제공",
+        "ar": "أعط حقيقة عشوائية"
     },
     "tokens": [
         {
@@ -44,7 +46,8 @@
                 "da": "Tilfældigt faktum",
                 "ru": "Случайный факт",
                 "pl": "Losowy fakt",
-                "ko": "무작위 사실"
+                "ko": "무작위 사실",
+                "ar": "حقيقة عشوائية"
             }
         }
     ]

@@ -12,7 +12,8 @@
         "da": "Start timer",
         "ru": "Запустить таймер",
         "pl": "Uruchom timer",
-        "ko": "타이머 시작"
+        "ko": "타이머 시작",
+        "ar": "ابدأ المؤقت"
     },
     "titleFormatted": {
         "en": "Start timer [[timer]] with [[duration]] [[unit]]",
@@ -26,7 +27,8 @@
         "da": "Start timeren [[timer]] med [[duration]] [[unit]]",
         "ru": "Запустить таймер [[timer]] на [[duration]] [[unit]]",
         "pl": "Uruchom timer [[timer]] na [[duration]] [[unit]]",
-        "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 시작"
+        "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 시작",
+        "ar": "ابدأ المؤقت [[timer]] بمدة [[duration]] [[unit]]"
     },
     "hint": {
         "en": "Starts a fresh timer with the specified duration.",
@@ -40,7 +42,8 @@
         "da": "Starter en ny timer med den angivne varighed.",
         "ru": "Запускает новый таймер с указанной длительностью.",
         "pl": "Uruchamia nowy timer z podanym czasem trwania.",
-        "ko": "지정된 시간으로 새 타이머를 시작합니다."
+        "ko": "지정된 시간으로 새 타이머를 시작합니다.",
+        "ar": "يبدأ مؤقتًا جديدًا بالمدة المحددة."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         },
         {
@@ -78,7 +82,8 @@
                 "da": "Varighed",
                 "ru": "Длительность",
                 "pl": "Czas trwania",
-                "ko": "지속 시간"
+                "ko": "지속 시간",
+                "ar": "المدة"
             },
             "placeholder": {
                 "en": "E.g. 10",
@@ -92,7 +97,8 @@
                 "da": "Fx 10",
                 "ru": "Напр. 10",
                 "pl": "Np. 10",
-                "ko": "예: 10"
+                "ko": "예: 10",
+                "ar": "مثال: 10"
             }
         },
         {
@@ -110,7 +116,8 @@
                 "da": "Enhed",
                 "ru": "Единица",
                 "pl": "Jednostka",
-                "ko": "단위"
+                "ko": "단위",
+                "ar": "الوحدة"
             },
             "values": [
                 {
@@ -127,7 +134,8 @@
                         "da": "sekunder",
                         "ru": "секунды",
                         "pl": "sekundy",
-                        "ko": "초"
+                        "ko": "초",
+                        "ar": "ثواني"
                     }
                 },
                 {
@@ -144,7 +152,8 @@
                         "da": "minutter",
                         "ru": "минуты",
                         "pl": "minuty",
-                        "ko": "분"
+                        "ko": "분",
+                        "ar": "دقائق"
                     }
                 },
                 {
@@ -161,7 +170,8 @@
                         "da": "timer",
                         "ru": "часы",
                         "pl": "godziny",
-                        "ko": "시간"
+                        "ko": "시간",
+                        "ar": "ساعات"
                     }
                 },
                 {
@@ -178,7 +188,8 @@
                         "da": "dage",
                         "ru": "дни",
                         "pl": "dni",
-                        "ko": "일"
+                        "ko": "일",
+                        "ar": "أيام"
                     }
                 }
             ]

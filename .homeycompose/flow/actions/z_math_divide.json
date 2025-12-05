@@ -12,7 +12,8 @@
         "da": "Divider",
         "ru": "Делить",
         "pl": "Podziel",
-        "ko": "나누기"
+        "ko": "나누기",
+        "ar": "اقسم"
     },
     "titleFormatted": {
         "en": "Divide [[value]] by [[divisor]]",
@@ -26,7 +27,8 @@
         "da": "Divider [[value]] med [[divisor]]",
         "ru": "Делить [[value]] на [[divisor]]",
         "pl": "Podziel [[value]] przez [[divisor]]",
-        "ko": "[[value]]를 [[divisor]]로 나누기"
+        "ko": "[[value]]를 [[divisor]]로 나누기",
+        "ar": "اقسم [[value]] على [[divisor]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "قيمة"
             }
         },
         {
@@ -65,7 +68,8 @@
                 "da": "Divisor",
                 "ru": "Делитель",
                 "pl": "Dzielnik",
-                "ko": "나누는 수"
+                "ko": "나누는 수",
+                "ar": "مقسوم"
             }
         }
     ],
@@ -85,7 +89,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "نتيجة"
             }
         }
     ]

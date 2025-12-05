@@ -12,7 +12,8 @@
         "da": "Indstil sekvens til",
         "ru": "Установить последовательность на",
         "pl": "Ustaw sekwencję na",
-        "ko": "시퀀스를 설정"
+        "ko": "시퀀스를 설정",
+        "ar": "تعيين التسلسل إلى"
     },
     "titleFormatted": {
         "en": "Set sequence [[name]] to [[value]]",
@@ -26,7 +27,8 @@
         "da": "Indstil sekvens [[name]] til [[value]]",
         "ru": "Установить последовательность [[name]] на [[value]]",
         "pl": "Ustaw sekwencję [[name]] na [[value]]",
-        "ko": "시퀀스 [[name]]을(를) [[value]]로 설정"
+        "ko": "시퀀스 [[name]]을(를) [[value]]로 설정",
+        "ar": "تعيين التسلسل [[name]] إلى [[value]]"
     },
     "hint": {
         "en": "Jump directly to a step in the sequence.",
@@ -40,7 +42,8 @@
         "da": "Hop direkte til et trin i sekvensen.",
         "ru": "Перейти напрямую к шагу в последовательности.",
         "pl": "Przejdź bezpośrednio do kroku w sekwencji.",
-        "ko": "시퀀스의 특정 단계로 바로 이동합니다."
+        "ko": "시퀀스의 특정 단계로 바로 이동합니다.",
+        "ar": "انتقل مباشرة إلى خطوة في التسلسل."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "اسم"
             }
         },
         {
@@ -78,7 +82,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "قيمة"
             },
             "placeholder": {
                 "en": "E.g. 5",
@@ -92,7 +97,8 @@
                 "da": "F.eks. 5",
                 "ru": "Напр. 5",
                 "pl": "Np. 5",
-                "ko": "예: 5"
+                "ko": "예: 5",
+                "ar": "مثال 5"
             }
         }
     ]

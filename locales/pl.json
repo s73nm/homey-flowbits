@@ -6,7 +6,9 @@
     "no_repeat_new": "Nowe okno bez powtórzeń w tym przepływie",
     "signal_new": "Nowy sygnał w tym przepływie",
     "timer_new": "Nowy timer w tym przepływie",
-    "slider_new": "Nowy suwak w tym przepływie"
+    "slider_new": "Nowy suwak w tym przepływie",
+    "event_new": "Nowe zdarzenie w tym przepływie",
+    "label_new": "Nowa etykieta w tym przepływie"
   },
   "notification": {
     "mode_activated": "**__name__** jest aktywowany.",
@@ -30,6 +32,9 @@
     "current_mode": {
       "label": "Aktualny tryb",
       "suffix": "tryb"
+    },
+    "event": {
+      "now": "Teraz"
     }
   },
   "settings": {

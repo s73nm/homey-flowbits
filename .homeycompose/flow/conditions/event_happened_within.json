@@ -2,15 +2,45 @@
     "id": "event_happened_within",
     "title": {
         "en": "Event happened within",
-        "nl": "Gebeurtenis is gebeurd binnen"
+        "nl": "Gebeurtenis is gebeurd binnen",
+        "da": "Begivenhed skete inden for",
+        "de": "Ereignis trat innerhalb",
+        "es": "El evento ocurrió dentro de",
+        "fr": "L'événement s'est produit dans",
+        "it": "Evento avvenuto entro",
+        "no": "Hendelsen skjedde innen",
+        "sv": "Händelse inträffade inom",
+        "pl": "Wydarzenie miało miejsce w ciągu",
+        "ru": "Событие произошло в течение",
+        "ko": "이벤트가 발생한 시간"
     },
     "titleFormatted": {
         "en": "Event [[event]] happened within [[duration]] [[unit]]",
-        "nl": "Gebeurtenis [[event]] is gebeurd binnen [[duration]] [[unit]]"
+        "nl": "Gebeurtenis [[event]] is gebeurd binnen [[duration]] [[unit]]",
+        "da": "Begivenhed [[event]] skete inden for [[duration]] [[unit]]",
+        "de": "Ereignis [[event]] trat innerhalb von [[duration]] [[unit]] ein",
+        "es": "El evento [[event]] ocurrió dentro de [[duration]] [[unit]]",
+        "fr": "L'événement [[event]] s'est produit dans [[duration]] [[unit]]",
+        "it": "L'evento [[event]] è avvenuto entro [[duration]] [[unit]]",
+        "no": "Hendelsen [[event]] skjedde innen [[duration]] [[unit]]",
+        "sv": "Händelsen [[event]] inträffade inom [[duration]] [[unit]]",
+        "pl": "Wydarzenie [[event]] miało miejsce w ciągu [[duration]] [[unit]]",
+        "ru": "Событие [[event]] произошло в течение [[duration]] [[unit]]",
+        "ko": "이벤트 [[event]]가 [[duration]] [[unit]] 내에 발생했습니다"
     },
     "hint": {
         "en": "Checks if the event has happened within the given period.",
-        "nl": "Controleert of de gebeurtenis binnen het opgegeven periode is gebeurd."
+        "nl": "Controleert of de gebeurtenis binnen het opgegeven periode is gebeurd.",
+        "da": "Kontrollerer, om begivenheden er sket inden for den angivne periode.",
+        "de": "Prüft, ob das Ereignis innerhalb des angegebenen Zeitraums stattgefunden hat.",
+        "es": "Comprueba si el evento ha ocurrido dentro del período dado.",
+        "fr": "Vérifie si l'événement s'est produit dans la période donnée.",
+        "it": "Verifica se l'evento è avvenuto entro il periodo dato.",
+        "no": "Sjekker om hendelsen har skjedd innenfor den gitte perioden.",
+        "sv": "Kontrollerar om händelsen har inträffat inom den angivna perioden.",
+        "pl": "Sprawdza, czy zdarzenie miało miejsce w podanym okresie.",
+        "ru": "Проверяет, произошло ли событие в указанный период.",
+        "ko": "주어진 기간 내에 이벤트가 발생했는지 확인합니다."
     },
     "args": [
         {
@@ -18,7 +48,17 @@
             "name": "event",
             "title": {
                 "en": "Event",
-                "nl": "Gebeurtenis"
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Ereignis",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Hendelse",
+                "sv": "Händelse",
+                "pl": "Wydarzenie",
+                "ru": "Событие",
+                "ko": "이벤트"
             }
         },
         {

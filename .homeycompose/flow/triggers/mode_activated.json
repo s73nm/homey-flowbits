@@ -12,7 +12,8 @@
         "da": "Tilstand aktiveret",
         "ru": "Режим активирован",
         "pl": "Tryb aktywowany",
-        "ko": "모드 활성화됨"
+        "ko": "모드 활성화됨",
+        "ar": "تم تفعيل الوضع"
     },
     "titleFormatted": {
         "en": "Mode [[name]] is activated",
@@ -26,7 +27,8 @@
         "da": "Tilstand [[name]] er aktiveret",
         "ru": "Режим [[name]] активирован",
         "pl": "Tryb [[name]] został aktywowany",
-        "ko": "모드 [[name]]가 활성화됨"
+        "ko": "모드 [[name]]가 활성화됨",
+        "ar": "تم تفعيل وضع [[name]]"
     },
     "hint": {
         "en": "Triggers when a mode gets activated.",
@@ -40,7 +42,8 @@
         "da": "Udløses når en tilstand aktiveres.",
         "ru": "Срабатывает при активации режима.",
         "pl": "Wyzwalane, gdy tryb zostaje aktywowany.",
-        "ko": "모드가 활성화될 때 트리거됨."
+        "ko": "모드가 활성화될 때 트리거됨.",
+        "ar": "يتم التفعيل عند تفعيل الوضع."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "وضع"
             }
         }
     ]

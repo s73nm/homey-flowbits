@@ -12,7 +12,8 @@
         "da": "Aktivér tilstand",
         "ru": "Активировать режим",
         "pl": "Aktywuj tryb",
-        "ko": "모드 활성화"
+        "ko": "모드 활성화",
+        "ar": "تفعيل الوضع"
     },
     "titleFormatted": {
         "en": "Activate [[name]]",
@@ -26,7 +27,8 @@
         "da": "Aktivér [[name]]",
         "ru": "Активировать [[name]]",
         "pl": "Aktywuj [[name]]",
-        "ko": "[[name]] 활성화"
+        "ko": "[[name]] 활성화",
+        "ar": "تفعيل [[name]]"
     },
     "hint": {
         "en": "Activates a defined mode and deactivates all other modes.",
@@ -40,7 +42,8 @@
         "da": "Aktiverer en defineret tilstand og deaktiverer alle andre tilstande.",
         "ru": "Активирует определенный режим и деактивирует все остальные режимы.",
         "pl": "Aktywuje zdefiniowany tryb i dezaktywuje wszystkie inne tryby.",
-        "ko": "정의된 모드를 활성화하고 다른 모든 모드를 비활성화합니다."
+        "ko": "정의된 모드를 활성화하고 다른 모든 모드를 비활성화합니다.",
+        "ar": "يقوم بتفعيل وضع مُحدد وإلغاء تفعيل كل الأوضاع الأخرى."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "وضع"
             }
         }
     ]

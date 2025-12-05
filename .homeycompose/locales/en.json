@@ -8,7 +8,7 @@
         "no_repeat_new": "New no-repeat window in this flow",
         "signal_new": "New signal in this flow",
         "slider_new": "New slider in this flow",
-        "timer_new": "new timer in this flow"
+        "timer_new": "New timer in this flow"
     },
     "notification": {
         "mode_activated": "**__name__** is activated.",

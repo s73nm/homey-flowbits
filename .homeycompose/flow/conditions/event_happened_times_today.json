@@ -2,15 +2,48 @@
     "id": "event_happened_times_today",
     "title": {
         "en": "Event happened N times today",
-        "nl": "Gebeurtenis is vandaag N keer gebeurd"
+        "nl": "Gebeurtenis is vandaag N keer gebeurd",
+        "da": "Begivenhed skete N gange i dag",
+        "de": "Ereignis ist heute N Mal passiert",
+        "es": "El evento ocurrió N veces hoy",
+        "fr": "L'événement s'est produit N fois aujourd'hui",
+        "it": "L'evento è accaduto N volte oggi",
+        "no": "Hendelsen skjedde N ganger i dag",
+        "sv": "Händelsen inträffade N gånger idag",
+        "pl": "Wydarzenie miało miejsce N razy dzisiaj",
+        "ru": "Событие произошло N раз сегодня",
+        "ko": "이벤트가 오늘 N번 발생했습니다",
+        "ar": "حدث N مرة اليوم"
     },
     "titleFormatted": {
         "en": "Event [[event]] happened [[times]] times today",
-        "nl": "Gebeurtenis [[event]] is vandaag [[times]] keer gebeurd"
+        "nl": "Gebeurtenis [[event]] is vandaag [[times]] keer gebeurd",
+        "da": "Begivenhed [[event]] skete [[times]] gange i dag",
+        "de": "Ereignis [[event]] ist heute [[times]] Mal passiert",
+        "es": "El evento [[event]] ocurrió [[times]] veces hoy",
+        "fr": "L'événement [[event]] s'est produit [[times]] fois aujourd'hui",
+        "it": "L'evento [[event]] è accaduto [[times]] volte oggi",
+        "no": "Hendelsen [[event]] skjedde [[times]] ganger i dag",
+        "sv": "Händelsen [[event]] inträffade [[times]] gånger idag",
+        "pl": "Wydarzenie [[event]] miało miejsce [[times]] razy dzisiaj",
+        "ru": "Событие [[event]] произошло [[times]] раз сегодня",
+        "ko": "이벤트 [[event]]가 오늘 [[times]]번 발생했습니다",
+        "ar": "حدث [[event]] N [[times]] مرة اليوم"
     },
     "hint": {
         "en": "Checks if the event has happened N times today.",
-        "nl": "Controleert of de gebeurtenis vandaag N keer is gebeurd."
+        "nl": "Controleert of de gebeurtenis vandaag N keer is gebeurd.",
+        "da": "Tjekker om begivenheden er sket N gange i dag.",
+        "de": "Überprüft, ob das Ereignis heute N Mal passiert ist.",
+        "es": "Verifica si el evento ha ocurrido N veces hoy.",
+        "fr": "Vérifie si l'événement s'est produit N fois aujourd'hui.",
+        "it": "Controlla se l'evento è accaduto N volte oggi.",
+        "no": "Sjekker om hendelsen har skjedd N ganger i dag.",
+        "sv": "Kontrollerar om händelsen har inträffat N gånger idag.",
+        "pl": "Sprawdza, czy zdarzenie miało miejsce N razy dzisiaj.",
+        "ru": "Проверяет, произошло ли событие N раз сегодня.",
+        "ko": "이벤트가 오늘 N번 발생했는지 확인합니다.",
+        "ar": "يتحقق مما إذا كان الحدث قد حدث N مرة اليوم."
     },
     "args": [
         {
@@ -18,7 +51,18 @@
             "name": "event",
             "title": {
                 "en": "Event",
-                "nl": "Gebeurtenis"
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Ereignis",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Hendelse",
+                "sv": "Händelse",
+                "pl": "Wydarzenie",
+                "ru": "Событие",
+                "ko": "이벤트",
+                "ar": "حدث"
             }
         },
         {
@@ -26,7 +70,18 @@
             "name": "times",
             "title": {
                 "en": "Number of times",
-                "nl": "Aantal"
+                "nl": "Aantal",
+                "da": "Antal gange",
+                "de": "Anzahl der Male",
+                "es": "Número de veces",
+                "fr": "Nombre de fois",
+                "it": "Numero di volte",
+                "no": "Antall ganger",
+                "sv": "Antal gånger",
+                "pl": "Liczba razy",
+                "ru": "Количество раз",
+                "ko": "횟수",
+                "ar": "عدد المرات"
             },
             "min": 1,
             "step": 1,

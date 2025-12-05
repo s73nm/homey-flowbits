@@ -12,7 +12,8 @@
         "da": "Forøg",
         "ru": "Увеличить",
         "pl": "Zwiększ",
-        "ko": "증가"
+        "ko": "증가",
+        "ar": "ازدياد"
     },
     "titleFormatted": {
         "en": "Increment [[value]] by [[step]]",
@@ -26,7 +27,8 @@
         "da": "Forøg [[value]] med [[step]]",
         "ru": "Увеличить [[value]] на [[step]]",
         "pl": "Zwiększ [[value]] o [[step]]",
-        "ko": "[[value]]를 [[step]]만큼 증가"
+        "ko": "[[value]]를 [[step]]만큼 증가",
+        "ar": "زيادة [[value]] بمقدار [[step]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "قيمة"
             },
             "placeholder": {
                 "en": "E.g. 13",
@@ -58,7 +61,8 @@
                 "da": "F.eks. 13",
                 "ru": "Напр. 13",
                 "pl": "Np. 13",
-                "ko": "예: 13"
+                "ko": "예: 13",
+                "ar": "مثلاً 13"
             }
         },
         {
@@ -78,7 +82,8 @@
                 "da": "Trin",
                 "ru": "Шаг",
                 "pl": "Krok",
-                "ko": "단계"
+                "ko": "단계",
+                "ar": "خطوة"
             },
             "placeholder": {
                 "en": "E.g. 1",
@@ -92,7 +97,8 @@
                 "da": "F.eks. 1",
                 "ru": "Напр. 1",
                 "pl": "Np. 1",
-                "ko": "예: 1"
+                "ko": "예: 1",
+                "ar": "مثلاً 1"
             }
         }
     ],
@@ -112,7 +118,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "نتيجة"
             }
         }
     ]

@@ -12,7 +12,8 @@
         "da": "Tilstand er aktiv",
         "ru": "Режим активен",
         "pl": "Tryb jest aktywny",
-        "ko": "모드가 활성화됨"
+        "ko": "모드가 활성화됨",
+        "ar": "الوضع نشط"
     },
     "titleFormatted": {
         "en": "Mode [[name]] is !{{active|inactive}}",
@@ -26,7 +27,8 @@
         "da": "Tilstand [[name]] er !{{aktiv|inaktiv}}",
         "ru": "Режим [[name]] !{{активен|неактивен}}",
         "pl": "Tryb [[name]] jest !{{aktywny|nieaktywny}}",
-        "ko": "모드 [[name]]는 !{{활성|비활성}} 상태입니다"
+        "ko": "모드 [[name]]는 !{{활성|비활성}} 상태입니다",
+        "ar": "الوضع [[name]] هو !{{نشط|غير نشط}}"
     },
     "hint": {
         "en": "Checks if a mode is activated.",
@@ -40,7 +42,8 @@
         "da": "Kontrollerer om en tilstand er aktiveret.",
         "ru": "Проверяет, активирован ли режим.",
         "pl": "Sprawdza, czy tryb jest aktywowany.",
-        "ko": "모드가 활성화되었는지 확인합니다."
+        "ko": "모드가 활성화되었는지 확인합니다.",
+        "ar": "يتحقق مما إذا كان الوضع نشطًا."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "الوضع"
             }
         }
     ]

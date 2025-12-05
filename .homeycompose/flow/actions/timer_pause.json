@@ -12,7 +12,8 @@
         "da": "Sæt timer på pause",
         "ru": "Пауза таймера",
         "pl": "Wstrzymaj timer",
-        "ko": "타이머 일시정지"
+        "ko": "타이머 일시정지",
+        "ar": "إيقاف المؤقت مؤقتًا"
     },
     "titleFormatted": {
         "en": "Pause timer [[timer]]",
@@ -26,7 +27,8 @@
         "da": "Sæt timeren [[timer]] på pause",
         "ru": "Поставить таймер [[timer]] на паузу",
         "pl": "Wstrzymaj timer [[timer]]",
-        "ko": "[[timer]] 타이머 일시정지"
+        "ko": "[[timer]] 타이머 일시정지",
+        "ar": "إيقاف المؤقت [[timer]] مؤقتًا"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         }
     ]

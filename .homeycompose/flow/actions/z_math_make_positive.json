@@ -12,7 +12,8 @@
         "da": "Gør positiv",
         "ru": "Сделать положительным",
         "pl": "Uczyń dodatnim",
-        "ko": "양수로 만들기"
+        "ko": "양수로 만들기",
+        "ar": "اجعلها موجبة"
     },
     "titleFormatted": {
         "en": "Make [[value]] positive",
@@ -26,7 +27,8 @@
         "da": "Gør [[value]] positiv",
         "ru": "Сделать [[value]] положительным",
         "pl": "Uczyń [[value]] dodatnim",
-        "ko": "[[value]] 양수로 만들기"
+        "ko": "[[value]] 양수로 만들기",
+        "ar": "اجعل [[value]] موجبة"
     },
     "hint": {
         "en": "Takes the absolute value of a number.",
@@ -40,7 +42,8 @@
         "da": "Tager den absolutte værdi af et tal.",
         "ru": "Берет абсолютное значение числа.",
         "pl": "Pobiera wartość bezwzględną liczby.",
-        "ko": "숫자의 절댓값을 사용합니다."
+        "ko": "숫자의 절댓값을 사용합니다.",
+        "ar": "يأخذ القيمة المطلقة لعدد."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "القيمة"
             },
             "placeholder": {
                 "en": "E.g. 13",
@@ -72,7 +76,8 @@
                 "da": "F.eks. 13",
                 "ru": "Напр. 13",
                 "pl": "Np. 13",
-                "ko": "예: 13"
+                "ko": "예: 13",
+                "ar": "مثال: 13"
             }
         }
     ],
@@ -92,7 +97,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "النتيجة"
             }
         }
     ]

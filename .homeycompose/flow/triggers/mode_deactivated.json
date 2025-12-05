@@ -12,7 +12,8 @@
         "da": "Tilstand deaktiveret",
         "ru": "Режим деактивирован",
         "pl": "Tryb dezaktywowany",
-        "ko": "모드 비활성화됨"
+        "ko": "모드 비활성화됨",
+        "ar": "الوضع الصامت"
     },
     "titleFormatted": {
         "en": "Mode [[name]] is deactivated",
@@ -26,7 +27,8 @@
         "da": "Tilstand [[name]] er deaktiveret",
         "ru": "Режим [[name]] деактивирован",
         "pl": "Tryb [[name]] jest dezaktywowany",
-        "ko": "모드 [[name]] 비활성화됨"
+        "ko": "모드 [[name]] 비활성화됨",
+        "ar": "الوضع [[name]] معطل"
     },
     "hint": {
         "en": "Triggers when a mode gets deactivated.",
@@ -40,7 +42,8 @@
         "da": "Udløses når en tilstand deaktiveres.",
         "ru": "Срабатывает при деактивации режима.",
         "pl": "Wyzwalane, gdy tryb zostaje dezaktywowany.",
-        "ko": "모드가 비활성화될 때 트리거됨."
+        "ko": "모드가 비활성화될 때 트리거됨.",
+        "ar": "يتم تحفيزه عندما يتم تعطيل الوضع."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "وضع"
             }
         }
     ]

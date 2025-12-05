@@ -12,7 +12,8 @@
         "da": "Deaktivér tilstand",
         "ru": "Деактивировать режим",
         "pl": "Dezaktywuj tryb",
-        "ko": "모드 비활성화"
+        "ko": "모드 비활성화",
+        "ar": "إلغاء تنشيط الوضع"
     },
     "titleFormatted": {
         "en": "Deactivate [[name]]",
@@ -26,7 +27,8 @@
         "da": "Deaktivér [[name]]",
         "ru": "Деактивировать [[name]]",
         "pl": "Dezaktywuj [[name]]",
-        "ko": "[[name]] 비활성화"
+        "ko": "[[name]] 비활성화",
+        "ar": "إلغاء تنشيط [[name]]"
     },
     "hint": {
         "en": "Deactivates a defined mode.",
@@ -40,7 +42,8 @@
         "da": "Deaktiverer en defineret tilstand.",
         "ru": "Деактивирует определенный режим.",
         "pl": "Dezaktywuje zdefiniowany tryb.",
-        "ko": "정의된 모드를 비활성화합니다."
+        "ko": "정의된 모드를 비활성화합니다.",
+        "ar": "يلغي تنشيط وضع معين."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "وضع"
             }
         }
     ]

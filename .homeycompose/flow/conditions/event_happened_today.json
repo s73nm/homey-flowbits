@@ -2,15 +2,48 @@
     "id": "event_happened_today",
     "title": {
         "en": "Event happened today",
-        "nl": "Gebeurtenis is vandaag gebeurd"
+        "nl": "Gebeurtenis is vandaag gebeurd",
+        "da": "Begivenhed skete i dag",
+        "de": "Ereignis ist heute passiert",
+        "es": "El evento sucedió hoy",
+        "fr": "L'événement a eu lieu aujourd'hui",
+        "it": "Evento accaduto oggi",
+        "no": "Hendelse skjedde i dag",
+        "sv": "Händelse inträffade idag",
+        "pl": "Wydarzenie miało miejsce dzisiaj",
+        "ru": "Событие произошло сегодня",
+        "ko": "오늘 이벤트가 발생했습니다",
+        "ar": "حدث وقع اليوم"
     },
     "titleFormatted": {
         "en": "Event [[event]] happened today",
-        "nl": "Gebeurtenis [[event]] is vandaag gebeurd"
+        "nl": "Gebeurtenis [[event]] is vandaag gebeurd",
+        "da": "Begivenhed [[event]] skete i dag",
+        "de": "Ereignis [[event]] ist heute passiert",
+        "es": "El evento [[event]] sucedió hoy",
+        "fr": "L'événement [[event]] a eu lieu aujourd'hui",
+        "it": "Evento [[event]] accaduto oggi",
+        "no": "Hendelse [[event]] skjedde i dag",
+        "sv": "Händelse [[event]] inträffade idag",
+        "pl": "Wydarzenie [[event]] miało miejsce dzisiaj",
+        "ru": "Событие [[event]] произошло сегодня",
+        "ko": "오늘 [[event]] 이벤트가 발생했습니다",
+        "ar": "حدث [[event]] وقع اليوم"
     },
     "hint": {
         "en": "Checks if the event has happened at least once today.",
-        "nl": "Controleert of de gebeurtenis vandaag minstens één keer is gebeurd."
+        "nl": "Controleert of de gebeurtenis vandaag minstens één keer is gebeurd.",
+        "da": "Kontrollerer om begivenheden har fundet sted mindst én gang i dag.",
+        "de": "Prüft, ob das Ereignis heute mindestens einmal stattgefunden hat.",
+        "es": "Comprueba si el evento ha ocurrido al menos una vez hoy.",
+        "fr": "Vérifie si l'événement s'est produit au moins une fois aujourd'hui.",
+        "it": "Controlla se l'evento è avvenuto almeno una volta oggi.",
+        "no": "Sjekker om hendelsen har skjedd minst én gang i dag.",
+        "sv": "Kontrollerar om händelsen har inträffat minst en gång idag.",
+        "pl": "Sprawdza, czy wydarzenie miało miejsce przynajmniej raz dzisiaj.",
+        "ru": "Проверяет, произошло ли событие хотя бы один раз сегодня.",
+        "ko": "오늘 이벤트가 최소 한 번 발생했는지 확인합니다.",
+        "ar": "يتحقق مما إذا كان الحدث قد حدث مرة واحدة على الأقل اليوم."
     },
     "args": [
         {
@@ -18,7 +51,18 @@
             "name": "event",
             "title": {
                 "en": "Event",
-                "nl": "Gebeurtenis"
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Ereignis",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Hendelse",
+                "sv": "Händelse",
+                "pl": "Wydarzenie",
+                "ru": "Событие",
+                "ko": "이벤트",
+                "ar": "حدث"
             }
         }
     ]

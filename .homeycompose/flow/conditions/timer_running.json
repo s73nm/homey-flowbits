@@ -12,7 +12,8 @@
         "da": "Timeren kører",
         "ru": "Таймер запущен",
         "pl": "Timer jest uruchomiony",
-        "ko": "타이머가 실행 중임"
+        "ko": "타이머가 실행 중임",
+        "ar": "المؤقت يعمل"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] !{{is|is not}} running",
@@ -26,7 +27,8 @@
         "da": "Timer [[timer]] !{{kører|kører ikke}}",
         "ru": "Таймер [[timer]] !{{запущен|не запущен}}",
         "pl": "Timer [[timer]] !{{działa|nie działa}}",
-        "ko": "타이머 [[timer]] !{{실행 중|실행 중 아님}}"
+        "ko": "타이머 [[timer]] !{{실행 중|실행 중 아님}}",
+        "ar": "المؤقت [[timer]] !{{يعمل|لا يعمل}}"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         }
     ]

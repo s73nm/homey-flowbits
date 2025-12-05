@@ -12,7 +12,8 @@
         "da": "Genaktivér tilstand",
         "ru": "Повторно активировать режим",
         "pl": "Ponownie aktywuj tryb",
-        "ko": "모드를 다시 활성화"
+        "ko": "모드를 다시 활성화",
+        "ar": "أعد تفعيل النمط"
     },
     "titleFormatted": {
         "en": "Reactivate [[name]]",
@@ -26,7 +27,8 @@
         "da": "Genaktivér [[name]]",
         "ru": "Повторно активировать [[name]]",
         "pl": "Ponownie aktywuj [[name]]",
-        "ko": "[[name]] 다시 활성화"
+        "ko": "[[name]] 다시 활성화",
+        "ar": "أعد تفعيل [[name]]"
     },
     "hint": {
         "en": "Re-triggers all 'mode is activated' cards.",
@@ -40,7 +42,8 @@
         "da": "Gentrigger alle 'tilstand er aktiveret'-kort.",
         "ru": "Повторно запускает все карточки «режим активирован».",
         "pl": "Ponownie wyzwala wszystkie karty «tryb jest aktywowany».",
-        "ko": "모든 '모드가 활성화되었습니다' 카드를 다시 트리거합니다."
+        "ko": "모든 '모드가 활성화되었습니다' 카드를 다시 트리거합니다.",
+        "ar": "يعيد تفعيل جميع البطاقات \"تم تفعيل النمط\"."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "نمط"
             }
         }
     ]

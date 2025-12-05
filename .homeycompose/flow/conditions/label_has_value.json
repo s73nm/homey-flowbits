@@ -2,11 +2,33 @@
     "id": "label_has_value",
     "title": {
         "en": "Label has value",
-        "nl": "Label heeft waarde"
+        "nl": "Label heeft waarde",
+        "da": "Mærkat har værdi",
+        "de": "Etikett hat Wert",
+        "es": "La etiqueta tiene valor",
+        "fr": "L'étiquette a une valeur",
+        "it": "L'etichetta ha valore",
+        "no": "Etikett har verdi",
+        "sv": "Etikett har värde",
+        "pl": "Etykieta ma wartość",
+        "ru": "Метка имеет значение",
+        "ko": "레이블에 값이 있음",
+        "ar": "التسمية لديها قيمة"
     },
     "titleFormatted": {
         "en": "Label [[label]] has value [[value]]",
-        "nl": "Label [[label]] heeft waarde [[value]]"
+        "nl": "Label [[label]] heeft waarde [[value]]",
+        "da": "Mærkat [[label]] har værdi [[value]]",
+        "de": "Etikett [[label]] hat Wert [[value]]",
+        "es": "La etiqueta [[label]] tiene valor [[value]]",
+        "fr": "L'étiquette [[label]] a une valeur [[value]]",
+        "it": "L'etichetta [[label]] ha valore [[value]]",
+        "no": "Etikett [[label]] har verdi [[value]]",
+        "sv": "Etikett [[label]] har värde [[value]]",
+        "pl": "Etykieta [[label]] ma wartość [[value]]",
+        "ru": "Метка [[label]] имеет значение [[value]]",
+        "ko": "레이블 [[label]]에 값이 있음 [[value]]",
+        "ar": "التسمية [[label]] لديها قيمة [[value]]"
     },
     "args": [
         {
@@ -14,7 +36,18 @@
             "name": "label",
             "title": {
                 "en": "Label",
-                "nl": "Label"
+                "nl": "Label",
+                "da": "Mærkat",
+                "de": "Etikett",
+                "es": "Etiqueta",
+                "fr": "Étiquette",
+                "it": "Etichetta",
+                "no": "Etikett",
+                "sv": "Etikett",
+                "pl": "Etykieta",
+                "ru": "Метка",
+                "ko": "레이블",
+                "ar": "تسمية"
             }
         },
         {
@@ -22,7 +55,18 @@
             "name": "value",
             "title": {
                 "en": "Value",
-                "nl": "Waarde"
+                "nl": "Waarde",
+                "da": "Værdi",
+                "de": "Wert",
+                "es": "Valor",
+                "fr": "Valeur",
+                "it": "Valore",
+                "no": "Verdi",
+                "sv": "Värde",
+                "pl": "Wartość",
+                "ru": "Значение",
+                "ko": "값",
+                "ar": "قيمة"
             }
         }
     ]

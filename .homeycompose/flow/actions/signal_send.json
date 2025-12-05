@@ -12,7 +12,8 @@
         "da": "Send signal",
         "ru": "Отправить сигнал",
         "pl": "Wyślij sygnał",
-        "ko": "신호 보내기"
+        "ko": "신호 보내기",
+        "ar": "إرسال إشارة"
     },
     "titleFormatted": {
         "en": "Send signal [[signal]]",
@@ -26,7 +27,8 @@
         "da": "Send signalet [[signal]]",
         "ru": "Отправить сигнал [[signal]]",
         "pl": "Wyślij sygnał [[signal]]",
-        "ko": "신호 [[signal]] 보내기"
+        "ko": "신호 [[signal]] 보내기",
+        "ar": "إرسال إشارة [[signal]]"
     },
     "hint": {
         "en": "Sends a signal that can be received by the 'Receive signal' card.",
@@ -40,7 +42,8 @@
         "da": "Sender et signal der kan modtages af kortet \"Modtag signal\".",
         "ru": "Отправляет сигнал который может быть получен картой «Получить сигнал».",
         "pl": "Wysyła sygnał który może zostać odebrany przez kartę „Odbierz sygnał”.",
-        "ko": "‘신호 받기’ 카드에서 받을 수 있는 신호를 보냅니다."
+        "ko": "‘신호 받기’ 카드에서 받을 수 있는 신호를 보냅니다.",
+        "ar": "يرسل إشارة يمكن استقبالها بواسطة بطاقة \"استقبال الإشارة\"."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Signal",
                 "ru": "Сигнал",
                 "pl": "Sygnał",
-                "ko": "신호"
+                "ko": "신호",
+                "ar": "إشارة"
             }
         }
     ]

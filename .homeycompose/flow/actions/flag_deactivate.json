@@ -12,7 +12,8 @@
         "da": "Deaktivér flag",
         "ru": "Деактивировать флаг",
         "pl": "Dezaktywuj flagę",
-        "ko": "플래그 비활성화"
+        "ko": "플래그 비활성화",
+        "ar": "تعطيل العلم"
     },
     "titleFormatted": {
         "en": "Deactivate flag [[flag]]",
@@ -26,7 +27,8 @@
         "da": "Deaktivér flag [[flag]]",
         "ru": "Деактивировать флаг [[flag]]",
         "pl": "Dezaktywuj flagę [[flag]]",
-        "ko": "플래그 [[flag]] 비활성화"
+        "ko": "플래그 [[flag]] 비활성화",
+        "ar": "تعطيل العلم [[flag]]"
     },
     "hint": {
         "en": "Deactivates a defined flag.",
@@ -40,7 +42,8 @@
         "da": "Deaktiverer et defineret flag.",
         "ru": "Деактивирует определенный флаг.",
         "pl": "Dezaktywuje zdefiniowaną flagę.",
-        "ko": "정의된 플래그를 비활성화합니다."
+        "ko": "정의된 플래그를 비활성화합니다.",
+        "ar": "يعطل علم محدد."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Flag",
                 "ru": "Флаг",
                 "pl": "Flaga",
-                "ko": "플래그"
+                "ko": "플래그",
+                "ar": "علم"
             }
         }
     ]

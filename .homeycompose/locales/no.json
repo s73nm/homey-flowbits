@@ -1,7 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "Ny teller i dette flyten",
+        "event_new": "Ny hendelse i denne flyten",
         "flag_new": "Nytt flagg i dette flyten",
+        "label_new": "Ny etikett i denne flyten",
         "mode_new": "Ny modus i dette flyten",
         "no_repeat_new": "Nytt ikke-repeterende vindu i dette flyten",
         "signal_new": "Ny signal i dette flyten",
@@ -54,6 +56,9 @@
         "current_mode": {
             "label": "Nåværende modus",
             "suffix": "modus"
+        },
+        "event": {
+            "now": "Nå"
         }
     },
     "settings": {

@@ -12,7 +12,8 @@
         "da": "Timeren er færdig",
         "ru": "Таймер завершен",
         "pl": "Timer się zakończył",
-        "ko": "타이머가 종료됨"
+        "ko": "타이머가 종료됨",
+        "ar": "انتهى المؤقت"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] !{{is|is not}} finished",
@@ -26,7 +27,8 @@
         "da": "Timer [[timer]] !{{er|er ikke}} færdig",
         "ru": "Таймер [[timer]] !{{завершён|не завершён}}",
         "pl": "Timer [[timer]] !{{jest|nie jest}} zakończony",
-        "ko": "타이머 [[timer]] !{{완료됨|완료되지 않음}}"
+        "ko": "타이머 [[timer]] !{{완료됨|완료되지 않음}}",
+        "ar": "المؤقت [[timer]] !{{قد انتهى|لم ينته بعد}}"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         }
     ]

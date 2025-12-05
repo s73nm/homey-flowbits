@@ -12,7 +12,8 @@
         "da": "Sekvensen opdaterer værdien",
         "ru": "Последовательность обновляет значение",
         "pl": "Sekwencja aktualizuje wartość",
-        "ko": "시퀀스가 값을 업데이트함"
+        "ko": "시퀀스가 값을 업데이트함",
+        "ar": "التسلسل يقوم بتحديث القيمة"
     },
     "titleFormatted": {
         "en": "Sequence [[name]] updates value",
@@ -26,7 +27,8 @@
         "da": "Sekvensen [[name]] opdaterer værdien",
         "ru": "Последовательность [[name]] обновляет значение",
         "pl": "Sekwencja [[name]] aktualizuje wartość",
-        "ko": "시퀀스 [[name]]이(가) 값을 업데이트함"
+        "ko": "시퀀스 [[name]]이(가) 값을 업데이트함",
+        "ar": "التسلسل [[name]] يقوم بتحديث القيمة"
     },
     "hint": {
         "en": "Triggers when a sequence updates its value.",
@@ -40,7 +42,8 @@
         "da": "Udløses når en sekvens opdaterer sin værdi.",
         "ru": "Срабатывает, когда последовательность обновляет свое значение.",
         "pl": "Wyzwalane, gdy sekwencja aktualizuje swoją wartość.",
-        "ko": "시퀀스가 값을 업데이트할 때 트리거됨."
+        "ko": "시퀀스가 값을 업데이트할 때 트리거됨.",
+        "ar": "يتم التنشيط عندما يقوم التسلسل بتحديث قيمته."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Navn",
                 "ru": "Название",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "اسم"
             }
         }
     ],
@@ -78,7 +82,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "القيمة"
             }
         }
     ]

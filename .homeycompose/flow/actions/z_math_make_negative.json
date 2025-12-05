@@ -12,7 +12,8 @@
         "da": "Gør negativ",
         "ru": "Сделать отрицательным",
         "pl": "Uczyń ujemnym",
-        "ko": "음수로 만들기"
+        "ko": "음수로 만들기",
+        "ar": "اجعلها سلبية"
     },
     "titleFormatted": {
         "en": "Make [[value]] negative",
@@ -26,7 +27,8 @@
         "da": "Gør [[value]] negativ",
         "ru": "Сделать [[value]] отрицательным",
         "pl": "Uczyń [[value]] ujemnym",
-        "ko": "[[value]] 음수로 만들기"
+        "ko": "[[value]] 음수로 만들기",
+        "ar": "اجعل [[value]] سلبية"
     },
     "hint": {
         "en": "Makes the value negative.",
@@ -40,7 +42,8 @@
         "da": "Gør værdien negativ.",
         "ru": "Делает значение отрицательным.",
         "pl": "Ustawia wartość jako ujemną.",
-        "ko": "값을 음수로 만듭니다."
+        "ko": "값을 음수로 만듭니다.",
+        "ar": "يجعل القيمة سالبة."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "القيمة"
             },
             "placeholder": {
                 "en": "E.g. 13",
@@ -72,7 +76,8 @@
                 "da": "F.eks. 13",
                 "ru": "Напр. 13",
                 "pl": "Np. 13",
-                "ko": "예: 13"
+                "ko": "예: 13",
+                "ar": "مثال: 13"
             }
         }
     ],
@@ -92,7 +97,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "النتيجه"
             }
         }
     ]

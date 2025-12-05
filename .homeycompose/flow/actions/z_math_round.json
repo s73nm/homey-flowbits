@@ -12,7 +12,8 @@
         "da": "Afrund",
         "ru": "Округлить",
         "pl": "Zaokrąglij",
-        "ko": "반올림"
+        "ko": "반올림",
+        "ar": "تقريب"
     },
     "titleFormatted": {
         "en": "Round [[value]]",
@@ -26,7 +27,8 @@
         "da": "Afrund [[value]]",
         "ru": "Округлить [[value]]",
         "pl": "Zaokrąglij [[value]]",
-        "ko": "[[value]] 반올림"
+        "ko": "[[value]] 반올림",
+        "ar": "تقريب [[value]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "قيمة"
             },
             "placeholder": {
                 "en": "E.g. 13",
@@ -58,7 +61,8 @@
                 "da": "F.eks. 13",
                 "ru": "Напр. 13",
                 "pl": "Np. 13",
-                "ko": "예: 13"
+                "ko": "예: 13",
+                "ar": "مثال 13"
             }
         }
     ],
@@ -78,7 +82,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "نتيجة"
             }
         }
     ]

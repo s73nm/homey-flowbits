@@ -12,7 +12,8 @@
         "da": "Ingen gentagelse inden for tidsvindue",
         "ru": "Нет повторов в пределах временного окна",
         "pl": "Brak powtórzeń w oknie czasowym",
-        "ko": "시간 창 내 반복 없음"
+        "ko": "시간 창 내 반복 없음",
+        "ar": "لا تكرار داخل نافذة الوقت"
     },
     "titleFormatted": {
         "en": "No repeat of [[window]] within [[duration]] [[unit]]",
@@ -26,7 +27,8 @@
         "da": "Ingen gentagelse af [[window]] inden for [[duration]] [[unit]]",
         "ru": "Нет повторов [[window]] в течение [[duration]] [[unit]]",
         "pl": "Brak powtórzeń [[window]] w ciągu [[duration]] [[unit]]",
-        "ko": "[[duration]] [[unit]] 내 [[window]] 반복 없음"
+        "ko": "[[duration]] [[unit]] 내 [[window]] 반복 없음",
+        "ar": "لا تكرار لـ [[window]] خلال [[duration]] [[unit]]"
     },
     "hint": {
         "en": "Returns true if this card has not been triggered again within the given time window.",
@@ -40,7 +42,8 @@
         "da": "Returnerer sandt hvis dette kort ikke er blevet udløst igen inden for tidsvinduet.",
         "ru": "Возвращает true, если карточка не была снова выполнена в пределах временного окна.",
         "pl": "Zwraca prawdę, jeśli ta karta nie została ponownie wywołana w podanym oknie czasowym.",
-        "ko": "이 카드가 지정된 시간 창 내에서 다시 실행되지 않은 경우 true를 반환합니다."
+        "ko": "이 카드가 지정된 시간 창 내에서 다시 실행되지 않은 경우 true를 반환합니다.",
+        "ar": "يعيد true إذا لم تتم إعادة تشغيل هذه البطاقة داخل نافذة الوقت المحددة."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Navn",
                 "ru": "Название",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         },
         {
@@ -78,7 +82,8 @@
                 "da": "Varighed",
                 "ru": "Длительность",
                 "pl": "Czas trwania",
-                "ko": "지속시간"
+                "ko": "지속시간",
+                "ar": "المدة"
             },
             "placeholder": {
                 "en": "E.g. 10",
@@ -92,7 +97,8 @@
                 "da": "Fx 10",
                 "ru": "Напр. 10",
                 "pl": "Np. 10",
-                "ko": "예: 10"
+                "ko": "예: 10",
+                "ar": "مثال: 10"
             }
         },
         {
@@ -110,7 +116,8 @@
                 "da": "Enhed",
                 "ru": "Ед. измерения",
                 "pl": "Jednostka",
-                "ko": "단위"
+                "ko": "단위",
+                "ar": "الوحدة"
             },
             "values": [
                 {
@@ -127,7 +134,8 @@
                         "da": "sekunder",
                         "ru": "секунды",
                         "pl": "sekundy",
-                        "ko": "초"
+                        "ko": "초",
+                        "ar": "ثواني"
                     }
                 },
                 {
@@ -144,7 +152,8 @@
                         "da": "minutter",
                         "ru": "минуты",
                         "pl": "minuty",
-                        "ko": "분"
+                        "ko": "분",
+                        "ar": "دقائق"
                     }
                 },
                 {
@@ -161,7 +170,8 @@
                         "da": "timer",
                         "ru": "часы",
                         "pl": "godziny",
-                        "ko": "시간"
+                        "ko": "시간",
+                        "ar": "ساعات"
                     }
                 },
                 {
@@ -178,7 +188,8 @@
                         "da": "dage",
                         "ru": "дни",
                         "pl": "dni",
-                        "ko": "일"
+                        "ko": "일",
+                        "ar": "أيام"
                     }
                 }
             ]

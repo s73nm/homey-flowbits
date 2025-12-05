@@ -1,7 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "Nowy licznik w tym przepływie",
+        "event_new": "Nowe zdarzenie w tym przepływie",
         "flag_new": "Nowa flaga w tym przepływie",
+        "label_new": "Nowa etykieta w tym przepływie",
         "mode_new": "Nowy tryb w tym przepływie",
         "no_repeat_new": "Nowe okno bez powtórzeń w tym przepływie",
         "signal_new": "Nowy sygnał w tym przepływie",
@@ -54,6 +56,9 @@
         "current_mode": {
             "label": "Aktualny tryb",
             "suffix": "tryb"
+        },
+        "event": {
+            "now": "Teraz"
         }
     },
     "settings": {

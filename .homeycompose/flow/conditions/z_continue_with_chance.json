@@ -12,7 +12,8 @@
         "da": "Fortsæt med sandsynlighed",
         "ru": "Продолжить с шансом",
         "pl": "Kontynuuj z szansą",
-        "ko": "확률로 계속"
+        "ko": "확률로 계속",
+        "ar": "استمر مع فرصة"
     },
     "titleFormatted": {
         "en": "Continue with [[chance]] chance",
@@ -26,7 +27,8 @@
         "da": "Fortsæt med [[chance]] sandsynlighed",
         "ru": "Продолжить с шансом [[chance]]",
         "pl": "Kontynuuj z [[chance]] szansą",
-        "ko": "[[chance]] 확률로 계속"
+        "ko": "[[chance]] 확률로 계속",
+        "ar": "استمر مع [[chance]] فرصة"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Sandsynlighed",
                 "ru": "Шанс",
                 "pl": "Szansa",
-                "ko": "확률"
+                "ko": "확률",
+                "ar": "فرصة"
             },
             "min": 1,
             "max": 100,

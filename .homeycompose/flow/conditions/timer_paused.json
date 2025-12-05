@@ -12,7 +12,8 @@
         "da": "Timeren er sat på pause",
         "ru": "Таймер на паузе",
         "pl": "Timer jest wstrzymany",
-        "ko": "타이머가 일시 중지됨"
+        "ko": "타이머가 일시 중지됨",
+        "ar": "المؤقت متوقف مؤقتًا"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] !{{is|is not}} paused",
@@ -26,7 +27,8 @@
         "da": "Timer [[timer]] !{{er|er ikke}} på pause",
         "ru": "Таймер [[timer]] !{{поставлен на паузу|не поставлен на паузу}}",
         "pl": "Timer [[timer]] !{{jest|nie jest}} wstrzymany",
-        "ko": "타이머 [[timer]] !{{일시 중지됨|일시 중지되지 않음}}"
+        "ko": "타이머 [[timer]] !{{일시 중지됨|일시 중지되지 않음}}",
+        "ar": "المؤقت [[timer]] !{{متوقف مؤقتًا|غير متوقف مؤقتًا}}"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "اسم"
             }
         }
     ]

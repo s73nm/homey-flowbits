@@ -2,15 +2,48 @@
     "id": "event_trigger",
     "title": {
         "en": "Trigger event",
-        "nl": "Trigger gebeurtenis"
+        "nl": "Trigger gebeurtenis",
+        "da": "Udløs begivenhed",
+        "de": "Ereignis auslösen",
+        "es": "Activar evento",
+        "fr": "Déclencher événement",
+        "it": "Attiva evento",
+        "no": "Utløse hendelse",
+        "sv": "Utlös händelse",
+        "pl": "Wyzwól zdarzenie",
+        "ru": "Запустить событие",
+        "ko": "이벤트 트리거",
+        "ar": "تشغيل الحدث"
     },
     "titleFormatted": {
         "en": "Trigger event [[event]]",
-        "nl": "Trigger gebeurtenis [[event]]"
+        "nl": "Trigger gebeurtenis [[event]]",
+        "da": "Udløs begivenhed [[event]]",
+        "de": "Ereignis auslösen [[event]]",
+        "es": "Activar evento [[event]]",
+        "fr": "Déclencher événement [[event]]",
+        "it": "Attiva evento [[event]]",
+        "no": "Utøve hendelse [[event]]",
+        "sv": "Utlös händelse [[event]]",
+        "pl": "Wyzwól zdarzenie [[event]]",
+        "ru": "Запустить событие [[event]]",
+        "ko": "이벤트 트리거 [[event]]",
+        "ar": "تشغيل الحدث [[event]]"
     },
     "hint": {
         "en": "Triggers the event and leaves a history entry.",
-        "nl": "Triggert de gebeurtenis en slaat een geschiedenis-item op."
+        "nl": "Triggert de gebeurtenis en slaat een geschiedenis-item op.",
+        "da": "Udløser begivenheden og efterlader en historikpost.",
+        "de": "Löst das Ereignis aus und hinterlässt einen Verlaufseintrag.",
+        "es": "Activa el evento y deja una entrada en el historial.",
+        "fr": "Déclenche l'événement et laisse une entrée dans l'historique.",
+        "it": "Attiva l'evento e lascia una voce nella cronologia.",
+        "no": "Utløser hendelsen og registrerer et historikkinnlegg.",
+        "sv": "Utlöser händelsen och lämnar ett historikinlägg.",
+        "pl": "Wyzwala zdarzenie i pozostawia wpis w historii.",
+        "ru": "Активирует событие и оставляет запись в истории.",
+        "ko": "이벤트를 트리거하고 히스토리 항목을 남깁니다.",
+        "ar": "يشغل الحدث ويترك مدخلًا في السجل."
     },
     "args": [
         {
@@ -18,7 +51,18 @@
             "name": "event",
             "title": {
                 "en": "Event",
-                "nl": "Gebeurtenis"
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Ereignis",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Hendelse",
+                "sv": "Händelse",
+                "pl": "Zdarzenie",
+                "ru": "Событие",
+                "ko": "이벤트",
+                "ar": "حدث"
             }
         }
     ]

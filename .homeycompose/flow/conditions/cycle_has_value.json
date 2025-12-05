@@ -12,7 +12,8 @@
         "da": "Sekvens er lig med",
         "ru": "Последовательность равна",
         "pl": "Sekwencja równa się",
-        "ko": "시퀀스가 동일함"
+        "ko": "시퀀스가 동일함",
+        "ar": "التسلسل يساوي"
     },
     "titleFormatted": {
         "en": "Sequence [[name]] !{{equals|does not equal}} [[value]]",
@@ -26,7 +27,8 @@
         "da": "Sekvens [[name]] !{{er lig med|er ikke lig med}} [[value]]",
         "ru": "Последовательность [[name]] !{{равна|не равна}} [[value]]",
         "pl": "Sekwencja [[name]] !{{jest równa|nie jest równa}} [[value]]",
-        "ko": "시퀀스 [[name]] !{{같음|같지 않음}} [[value]]"
+        "ko": "시퀀스 [[name]] !{{같음|같지 않음}} [[value]]",
+        "ar": "التسلسل [[name]] !{{يساوي|لا يساوي}} [[value]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "اسم"
             }
         },
         {
@@ -64,7 +67,8 @@
                 "da": "Værdi",
                 "ru": "Значение",
                 "pl": "Wartość",
-                "ko": "값"
+                "ko": "값",
+                "ar": "قيمة"
             },
             "placeholder": {
                 "en": "E.g. 5",
@@ -78,7 +82,8 @@
                 "da": "F.eks. 5",
                 "ru": "Напр. 5",
                 "pl": "Np. 5",
-                "ko": "예: 5"
+                "ko": "예: 5",
+                "ar": "مثال 5"
             }
         }
     ]

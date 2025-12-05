@@ -1,7 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "Nuovo contatore in questo flusso",
+        "event_new": "Nuovo evento in questo flusso",
         "flag_new": "Nuovo flag in questo flusso",
+        "label_new": "Nuova etichetta in questo flusso",
         "mode_new": "Nuova modalità in questo flusso",
         "no_repeat_new": "Nuova finestra senza ripetizione in questo flusso",
         "signal_new": "Nuovo segnale in questo flusso",
@@ -54,6 +56,9 @@
         "current_mode": {
             "label": "Modalità attuale",
             "suffix": "modalità"
+        },
+        "event": {
+            "now": "Adesso"
         }
     },
     "settings": {

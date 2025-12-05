@@ -6,7 +6,9 @@
     "no_repeat_new": "Nytt ikke-repeterende vindu i dette flyten",
     "signal_new": "Ny signal i dette flyten",
     "timer_new": "Ny timer i dette flyten",
-    "slider_new": "Ny skyver i denne flyten"
+    "slider_new": "Ny skyver i denne flyten",
+    "event_new": "Ny hendelse i denne flyten",
+    "label_new": "Ny etikett i denne flyten"
   },
   "notification": {
     "mode_activated": "**__name__** er aktivert.",
@@ -30,6 +32,9 @@
     "current_mode": {
       "label": "Nåværende modus",
       "suffix": "modus"
+    },
+    "event": {
+      "now": "Nå"
     }
   },
   "settings": {

@@ -6,7 +6,9 @@
     "no_repeat_new": "Nueva ventana sin repetición en este flujo",
     "signal_new": "Nueva señal en este flujo",
     "timer_new": "Nuevo temporizador en este flujo",
-    "slider_new": "Nuevo deslizador en este flujo"
+    "slider_new": "Nuevo deslizador en este flujo",
+    "event_new": "Nuevo evento en este flujo",
+    "label_new": "Nueva etiqueta en este flujo"
   },
   "notification": {
     "mode_activated": "**__name__** está activado.",
@@ -30,6 +32,9 @@
     "current_mode": {
       "label": "Modo actual",
       "suffix": "modo"
+    },
+    "event": {
+      "now": "Ahora"
     }
   },
   "settings": {

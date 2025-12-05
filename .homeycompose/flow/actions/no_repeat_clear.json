@@ -12,7 +12,8 @@
         "da": "Nulstil no-repeat-vindue",
         "ru": "Сбросить окно без повторов",
         "pl": "Zresetuj okno braku powtórzeń",
-        "ko": "반복 금지 창 재설정"
+        "ko": "반복 금지 창 재설정",
+        "ar": "إعادة تعيين نافذة عدم التكرار"
     },
     "titleFormatted": {
         "en": "Reset no-repeat window for [[window]]",
@@ -26,7 +27,8 @@
         "da": "Nulstil no-repeat-vindue for [[window]]",
         "ru": "Сбросить окно без повторов для [[window]]",
         "pl": "Zresetuj okno braku powtórzeń dla [[window]]",
-        "ko": "[[window]]의 반복 금지 창 재설정"
+        "ko": "[[window]]의 반복 금지 창 재설정",
+        "ar": "إعادة تعيين نافذة عدم التكرار لـ [[window]]"
     },
     "hint": {
         "en": "Clears the stored timestamp for the given identifier.",
@@ -40,7 +42,8 @@
         "da": "Rydder det gemte tidsstempel for den angivne identifikator.",
         "ru": "Очищает сохранённую временную метку для указанного идентификатора.",
         "pl": "Czyści zapisany znacznik czasu dla podanego identyfikatora.",
-        "ko": "지정된 식별자의 저장된 타임스탬프를 지웁니다."
+        "ko": "지정된 식별자의 저장된 타임스탬프를 지웁니다.",
+        "ar": "يمسح الطابع الزمني المخزن للمعرّف المحدد."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "اسم"
             }
         }
     ]

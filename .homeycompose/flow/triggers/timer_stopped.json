@@ -12,7 +12,8 @@
         "da": "Timer stoppet",
         "ru": "Таймер остановлен",
         "pl": "Timer zatrzymany",
-        "ko": "타이머 중지됨"
+        "ko": "타이머 중지됨",
+        "ar": "المؤقت توقف"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] stopped",
@@ -26,7 +27,8 @@
         "da": "Timer [[timer]] stoppet",
         "ru": "Таймер [[timer]] остановлен",
         "pl": "Timer [[timer]] zatrzymany",
-        "ko": "타이머 [[timer]] 중지됨"
+        "ko": "타이머 [[timer]] 중지됨",
+        "ar": "المؤقت [[timer]] توقف"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         }
     ]

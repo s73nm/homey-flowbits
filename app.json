@@ -20,7 +20,8 @@
     "da": "FlowBits",
     "ru": "FlowBits",
     "pl": "FlowBits",
-    "ko": "FlowBits"
+    "ko": "FlowBits",
+    "ar": "FlowBits"
   },
   "description": {
     "en": "Small bits of logic, big difference in your Flows.",
@@ -34,7 +35,8 @@
     "da": "Små logikstykker, stor forskel i dine Flows.",
     "ru": "Малые логические блоки, большое влияние на ваши потоки.",
     "pl": "Małe elementy logiki, duża różnica w Twoich Flow.",
-    "ko": "작은 논리 조각, 당신의 흐름에 큰 차이를 만듭니다."
+    "ko": "작은 논리 조각, 당신의 흐름에 큰 차이를 만듭니다.",
+    "ar": "قطع صغيرة من المنطق، فرق كبير في تدفقاتك."
   },
   "category": [
     "tools"
@@ -200,6 +202,19 @@
       "모드들",
       "신호",
       "타이머"
+    ],
+    "ar": [
+      "تدفق",
+      "تدفق متقدم",
+      "بتات",
+      "دورة",
+      "راية",
+      "رايات",
+      "وضع",
+      "أوضاع",
+      "تكرار",
+      "إشارة",
+      "مؤقت"
     ]
   },
   "permissions": [],
@@ -312,7 +327,8 @@
           "da": "Sekvensen har værdien ...",
           "ru": "Последовательность имеет значение ...",
           "pl": "Sekwencja ma wartość ...",
-          "ko": "시퀀스의 값 ..."
+          "ko": "시퀀스의 값 ...",
+          "ar": "التسلسل له القيمة ..."
         },
         "titleFormatted": {
           "en": "Sequence [[name]] reaches [[value]]",
@@ -326,7 +342,8 @@
           "da": "Sekvensen [[name]] når værdien [[value]]",
           "ru": "Последовательность [[name]] достигает значения [[value]]",
           "pl": "Sekwencja [[name]] osiąga wartość [[value]]",
-          "ko": "시퀀스 [[name]]이(가) [[value]] 값에 도달"
+          "ko": "시퀀스 [[name]]이(가) [[value]] 값에 도달",
+          "ar": "التسلسل [[name]] يصل إلى القيمة [[value]]"
         },
         "hint": {
           "en": "Triggers when a sequence reaches the specified value.",
@@ -340,7 +357,8 @@
           "da": "Udløses når en sekvens når den angivne værdi.",
           "ru": "Срабатывает, когда последовательность достигает указанного значения.",
           "pl": "Wyzwalane, gdy sekwencja osiągnie podaną wartość.",
-          "ko": "시퀀스가 지정된 값에 도달하면 트리거됩니다."
+          "ko": "시퀀스가 지정된 값에 도달하면 트리거됩니다.",
+          "ar": "يتم التحفيز عندما يصل التسلسل إلى القيمة المحددة."
         },
         "args": [
           {
@@ -358,7 +376,8 @@
               "da": "Navn",
               "ru": "Название",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           },
           {
@@ -378,7 +397,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "قيمة"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -392,7 +412,8 @@
               "da": "Fx 5",
               "ru": "Напр. 5",
               "pl": "Np. 5",
-              "ko": "예: 5"
+              "ko": "예: 5",
+              "ar": "على سبيل المثال 5"
             }
           }
         ]
@@ -411,7 +432,8 @@
           "da": "Sekvensen opdaterer værdien",
           "ru": "Последовательность обновляет значение",
           "pl": "Sekwencja aktualizuje wartość",
-          "ko": "시퀀스가 값을 업데이트함"
+          "ko": "시퀀스가 값을 업데이트함",
+          "ar": "التسلسل يقوم بتحديث القيمة"
         },
         "titleFormatted": {
           "en": "Sequence [[name]] updates value",
@@ -425,7 +447,8 @@
           "da": "Sekvensen [[name]] opdaterer værdien",
           "ru": "Последовательность [[name]] обновляет значение",
           "pl": "Sekwencja [[name]] aktualizuje wartość",
-          "ko": "시퀀스 [[name]]이(가) 값을 업데이트함"
+          "ko": "시퀀스 [[name]]이(가) 값을 업데이트함",
+          "ar": "التسلسل [[name]] يقوم بتحديث القيمة"
         },
         "hint": {
           "en": "Triggers when a sequence updates its value.",
@@ -439,7 +462,8 @@
           "da": "Udløses når en sekvens opdaterer sin værdi.",
           "ru": "Срабатывает, когда последовательность обновляет свое значение.",
           "pl": "Wyzwalane, gdy sekwencja aktualizuje swoją wartość.",
-          "ko": "시퀀스가 값을 업데이트할 때 트리거됨."
+          "ko": "시퀀스가 값을 업데이트할 때 트리거됨.",
+          "ar": "يتم التنشيط عندما يقوم التسلسل بتحديث قيمته."
         },
         "args": [
           {
@@ -457,7 +481,8 @@
               "da": "Navn",
               "ru": "Название",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           }
         ],
@@ -477,7 +502,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             }
           }
         ]
@@ -496,7 +522,8 @@
           "da": "Det bliver ...",
           "ru": "Наступает ...",
           "pl": "Staje się ...",
-          "ko": "…이 됨"
+          "ko": "…이 됨",
+          "ar": "يصبح ..."
         },
         "titleFormatted": {
           "en": "It becomes [[value]]",
@@ -510,7 +537,8 @@
           "da": "Det bliver [[value]]",
           "ru": "Наступает [[value]]",
           "pl": "Staje się [[value]]",
-          "ko": "[[value]]이 됨"
+          "ko": "[[value]]이 됨",
+          "ar": "يصبح [[value]]"
         },
         "hint": {
           "en": "Triggers when the day period changes.",
@@ -524,7 +552,8 @@
           "da": "Udløses når dagens periode ændres.",
           "ru": "Срабатывает при смене периода дня.",
           "pl": "Wyzwalane przy zmianie pory dnia.",
-          "ko": "하루의 기간이 바뀔 때 트리거됨."
+          "ko": "하루의 기간이 바뀔 때 트리거됨.",
+          "ar": "يتم التفعيل عند تغيُّر فترة اليوم."
         },
         "args": [
           {
@@ -542,7 +571,8 @@
               "da": "Dagens periode",
               "ru": "Период дня",
               "pl": "Pora dnia",
-              "ko": "하루 기간"
+              "ko": "하루 기간",
+              "ar": "فترة اليوم"
             },
             "values": [
               {
@@ -559,7 +589,8 @@
                   "da": "Morgen",
                   "ru": "Утро",
                   "pl": "Poranek",
-                  "ko": "아침"
+                  "ko": "아침",
+                  "ar": "صباح"
                 }
               },
               {
@@ -576,7 +607,8 @@
                   "da": "Eftermiddag",
                   "ru": "День",
                   "pl": "Popołudnie",
-                  "ko": "오후"
+                  "ko": "오후",
+                  "ar": "ظهيرة"
                 }
               },
               {
@@ -593,7 +625,8 @@
                   "da": "Aften",
                   "ru": "Вечер",
                   "pl": "Wieczór",
-                  "ko": "저녁"
+                  "ko": "저녁",
+                  "ar": "مساء"
                 }
               },
               {
@@ -610,7 +643,8 @@
                   "da": "Nat",
                   "ru": "Ночь",
                   "pl": "Noc",
-                  "ko": "밤"
+                  "ko": "밤",
+                  "ar": "ليل"
                 }
               }
             ]
@@ -756,11 +790,33 @@
         "id": "event_cleared",
         "title": {
           "en": "Event cleared",
-          "nl": "Gebeurtenis geleegd"
+          "nl": "Gebeurtenis geleegd",
+          "da": "Begivenhed ryddet",
+          "de": "Ereignis gelöscht",
+          "es": "Evento despejado",
+          "fr": "Événement effacé",
+          "it": "Evento cancellato",
+          "no": "Hendelse ryddet",
+          "sv": "Händelse rensad",
+          "pl": "Wydarzenie usunięte",
+          "ru": "Событие очищено",
+          "ko": "이벤트가 지워졌습니다",
+          "ar": "تم مسح الحدث"
         },
         "titleFormatted": {
           "en": "Event [[event]] is cleared",
-          "nl": "Gebeurtenis [[event]] is geleegd"
+          "nl": "Gebeurtenis [[event]] is geleegd",
+          "da": "Begivenhed [[event]] er ryddet",
+          "de": "Ereignis [[event]] ist gelöscht",
+          "es": "El evento [[event]] está despejado",
+          "fr": "L'événement [[event]] est effacé",
+          "it": "L'evento [[event]] è cancellato",
+          "no": "Hendelse [[event]] er ryddet",
+          "sv": "Händelsen [[event]] är rensad",
+          "pl": "Wydarzenie [[event]] zostało usunięte",
+          "ru": "Событие [[event]] очищено",
+          "ko": "[[event]] 이벤트가 지워졌습니다",
+          "ar": "تم مسح الحدث [[event]]"
         },
         "args": [
           {
@@ -768,7 +824,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Wydarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           }
         ]
@@ -777,11 +844,33 @@
         "id": "event_triggered",
         "title": {
           "en": "Event triggered",
-          "nl": "Gebeurtenis getriggerd"
+          "nl": "Gebeurtenis getriggerd",
+          "da": "Begivenhed udløst",
+          "de": "Ereignis ausgelöst",
+          "es": "Evento activado",
+          "fr": "Événement déclenché",
+          "it": "Evento attivato",
+          "no": "Hendelse utløst",
+          "sv": "Händelse utlösts",
+          "pl": "Zdarzenie uruchomione",
+          "ru": "Событие сработало",
+          "ko": "이벤트가 발생했습니다",
+          "ar": "تم تحفيز الحدث"
         },
         "titleFormatted": {
           "en": "Event [[event]] is triggered",
-          "nl": "Gebeurtenis [[event]] is getriggerd"
+          "nl": "Gebeurtenis [[event]] is getriggerd",
+          "da": "Begivenhed [[event]] er udløst",
+          "de": "Ereignis [[event]] ist ausgelöst",
+          "es": "El evento [[event]] está activado",
+          "fr": "L'événement [[event]] est déclenché",
+          "it": "L'evento [[event]] è attivato",
+          "no": "Hendelse [[event]] er utløst",
+          "sv": "Händelse [[event]] är utlöst",
+          "pl": "Zdarzenie [[event]] zostało uruchomione",
+          "ru": "Событие [[event]] сработало",
+          "ko": "이벤트 [[event]]가 발생했습니다",
+          "ar": "تم تحفيز الحدث [[event]]"
         },
         "args": [
           {
@@ -789,7 +878,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Zdarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           }
         ]
@@ -808,7 +908,8 @@
           "da": "Flag aktiveret",
           "ru": "Флаг активирован",
           "pl": "Flaga aktywowana",
-          "ko": "플래그 활성화됨"
+          "ko": "플래그 활성화됨",
+          "ar": "العلم مفعّل"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] is activated",
@@ -822,7 +923,8 @@
           "da": "Flaget [[flag]] er aktiveret",
           "ru": "Флаг [[flag]] активирован",
           "pl": "Flaga [[flag]] została aktywowana",
-          "ko": "플래그 [[flag]]이 활성화됨"
+          "ko": "플래그 [[flag]]이 활성화됨",
+          "ar": "العلم [[flag]] مفعّل"
         },
         "hint": {
           "en": "Triggers when a flag gets activated.",
@@ -836,7 +938,8 @@
           "da": "Udløses når et flag aktiveres.",
           "ru": "Срабатывает при активации флага.",
           "pl": "Wyzwalane gdy flaga zostanie aktywowana.",
-          "ko": "플래그가 활성화될 때 트리거됨."
+          "ko": "플래그가 활성화될 때 트리거됨.",
+          "ar": "يتم التفعيل عند تنشيط العلم."
         },
         "args": [
           {
@@ -854,7 +957,8 @@
               "da": "Flag",
               "ru": "Флаг",
               "pl": "Flaga",
-              "ko": "플래그"
+              "ko": "플래그",
+              "ar": "العلم"
             }
           }
         ]
@@ -873,7 +977,8 @@
           "da": "Flag ændret",
           "ru": "Флаг изменён",
           "pl": "Flaga zmieniona",
-          "ko": "플래그 변경됨"
+          "ko": "플래그 변경됨",
+          "ar": "تم تغيير العلم"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] changed",
@@ -887,7 +992,8 @@
           "da": "Flaget [[flag]] blev ændret",
           "ru": "Флаг [[flag]] изменён",
           "pl": "Flaga [[flag]] została zmieniona",
-          "ko": "플래그 [[flag]]이 변경됨"
+          "ko": "플래그 [[flag]]이 변경됨",
+          "ar": "العلم [[flag]] تم تغييره"
         },
         "hint": {
           "en": "Triggers when a flag is activated or deactivated.",
@@ -901,7 +1007,8 @@
           "da": "Udløses når et flag aktiveres eller deaktiveres.",
           "ru": "Срабатывает при активации или деактивации флага.",
           "pl": "Wyzwalane gdy flaga zostaje aktywowana lub dezaktywowana.",
-          "ko": "플래그가 활성화되거나 비활성화될 때 트리거됨."
+          "ko": "플래그가 활성화되거나 비활성화될 때 트리거됨.",
+          "ar": "يتم تشغيله عندما يتم تنشيط أو إلغاء تنشيط العلم."
         },
         "args": [
           {
@@ -919,7 +1026,8 @@
               "da": "Flag",
               "ru": "Флаг",
               "pl": "Flaga",
-              "ko": "플래그"
+              "ko": "플래그",
+              "ar": "علم"
             }
           }
         ],
@@ -939,7 +1047,8 @@
               "da": "Aktiv",
               "ru": "Активен",
               "pl": "Aktywny",
-              "ko": "활성"
+              "ko": "활성",
+              "ar": "نشط"
             }
           }
         ]
@@ -958,7 +1067,8 @@
           "da": "Flag deaktiveret",
           "ru": "Флаг деактивирован",
           "pl": "Flaga dezaktywowana",
-          "ko": "플래그 비활성화됨"
+          "ko": "플래그 비활성화됨",
+          "ar": "العلم معطل"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] is deactivated",
@@ -972,7 +1082,8 @@
           "da": "Flaget [[flag]] er deaktiveret",
           "ru": "Флаг [[flag]] деактивирован",
           "pl": "Flaga [[flag]] została dezaktywowana",
-          "ko": "플래그 [[flag]]가 비활성화됨"
+          "ko": "플래그 [[flag]]가 비활성화됨",
+          "ar": "العلم [[flag]] معطل"
         },
         "hint": {
           "en": "Triggers when a flag gets deactivated.",
@@ -986,7 +1097,8 @@
           "da": "Udløses når et flag deaktiveres.",
           "ru": "Срабатывает при деактивации флага.",
           "pl": "Wyzwalane gdy flaga zostaje dezaktywowana.",
-          "ko": "플래그가 비활성화될 때 트리거됨."
+          "ko": "플래그가 비활성화될 때 트리거됨.",
+          "ar": "يتم التشغيل عندما يتم تعطيل العلم."
         },
         "args": [
           {
@@ -1004,7 +1116,8 @@
               "da": "Flag",
               "ru": "Флаг",
               "pl": "Flaga",
-              "ko": "플래그"
+              "ko": "플래그",
+              "ar": "علم"
             }
           }
         ]
@@ -1013,11 +1126,33 @@
         "id": "label_becomes",
         "title": {
           "en": "Label becomes",
-          "nl": "Label verandert in"
+          "nl": "Label verandert in",
+          "da": "Etiket bliver til",
+          "de": "Etikett wird zu",
+          "es": "Etiqueta se convierte en",
+          "fr": "L'étiquette devient",
+          "it": "L'etichetta diventa",
+          "no": "Etikett blir til",
+          "sv": "Etikett blir",
+          "pl": "Etykieta staje się",
+          "ru": "Метка становится",
+          "ko": "라벨이 [[value]]로 변경됨",
+          "ar": "تصبح التسمية"
         },
         "titleFormatted": {
           "en": "Label [[label]] becomes [[value]]",
-          "nl": "Label [[label]] verandert in [[value]]"
+          "nl": "Label [[label]] verandert in [[value]]",
+          "da": "Etiket [[label]] bliver til [[value]]",
+          "de": "Etikett [[label]] wird zu [[value]]",
+          "es": "Etiqueta [[label]] se convierte en [[value]]",
+          "fr": "L'étiquette [[label]] devient [[value]]",
+          "it": "L'etichetta [[label]] diventa [[value]]",
+          "no": "Etikett [[label]] blir til [[value]]",
+          "sv": "Etikett [[label]] blir [[value]]",
+          "pl": "Etykieta [[label]] staje się [[value]]",
+          "ru": "Метка [[label]] становится [[value]]",
+          "ko": "라벨 [[label]]이 [[value]]로 변경됨",
+          "ar": "التسمية [[label]] تصبح [[value]]"
         },
         "args": [
           {
@@ -1025,7 +1160,18 @@
             "name": "label",
             "title": {
               "en": "Label",
-              "nl": "Label"
+              "nl": "Label",
+              "da": "Etiket",
+              "de": "Etikett",
+              "es": "Etiqueta",
+              "fr": "Étiquette",
+              "it": "Etichetta",
+              "no": "Etikett",
+              "sv": "Etikett",
+              "pl": "Etykieta",
+              "ru": "Метка",
+              "ko": "라벨",
+              "ar": "تسمية"
             }
           },
           {
@@ -1033,7 +1179,18 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "da": "Værdi",
+              "de": "Wert",
+              "es": "Valor",
+              "fr": "Valeur",
+              "it": "Valore",
+              "no": "Verdi",
+              "sv": "Värde",
+              "pl": "Wartość",
+              "ru": "Значение",
+              "ko": "값",
+              "ar": "قيمة"
             }
           }
         ]
@@ -1042,11 +1199,33 @@
         "id": "label_changed",
         "title": {
           "en": "Label changed",
-          "nl": "Label gewijzigd"
+          "nl": "Label gewijzigd",
+          "da": "Etiket ændret",
+          "de": "Etikett geändert",
+          "es": "Etiqueta cambiada",
+          "fr": "Étiquette modifiée",
+          "it": "Etichetta modificata",
+          "no": "Etikett endret",
+          "sv": "Etikett ändrad",
+          "pl": "Etykieta zmieniona",
+          "ru": "Метка изменена",
+          "ko": "레이블 변경됨",
+          "ar": "تم تغيير التسمية"
         },
         "titleFormatted": {
           "en": "Label [[label]] changed",
-          "nl": "Label [[label]] is gewijzigd"
+          "nl": "Label [[label]] is gewijzigd",
+          "da": "Etiket [[label]] ændret",
+          "de": "Etikett [[label]] geändert",
+          "es": "Etiqueta [[label]] cambiada",
+          "fr": "Étiquette [[label]] modifiée",
+          "it": "Etichetta [[label]] modificata",
+          "no": "Etikett [[label]] endret",
+          "sv": "Etikett [[label]] ändrad",
+          "pl": "Etykieta [[label]] zmieniona",
+          "ru": "Метка [[label]] изменена",
+          "ko": "레이블 [[label]] 변경됨",
+          "ar": "تم تغيير التسمية [[label]]"
         },
         "args": [
           {
@@ -1054,7 +1233,18 @@
             "name": "label",
             "title": {
               "en": "Label",
-              "nl": "Label"
+              "nl": "Label",
+              "da": "Etiket",
+              "de": "Etikett",
+              "es": "Etiqueta",
+              "fr": "Étiquette",
+              "it": "Etichetta",
+              "no": "Etikett",
+              "sv": "Etikett",
+              "pl": "Etykieta",
+              "ru": "Метка",
+              "ko": "레이블",
+              "ar": "تسمية"
             }
           }
         ]
@@ -1073,7 +1263,8 @@
           "da": "Tilstand aktiveret",
           "ru": "Режим активирован",
           "pl": "Tryb aktywowany",
-          "ko": "모드 활성화됨"
+          "ko": "모드 활성화됨",
+          "ar": "تم تفعيل الوضع"
         },
         "titleFormatted": {
           "en": "Mode [[name]] is activated",
@@ -1087,7 +1278,8 @@
           "da": "Tilstand [[name]] er aktiveret",
           "ru": "Режим [[name]] активирован",
           "pl": "Tryb [[name]] został aktywowany",
-          "ko": "모드 [[name]]가 활성화됨"
+          "ko": "모드 [[name]]가 활성화됨",
+          "ar": "تم تفعيل وضع [[name]]"
         },
         "hint": {
           "en": "Triggers when a mode gets activated.",
@@ -1101,7 +1293,8 @@
           "da": "Udløses når en tilstand aktiveres.",
           "ru": "Срабатывает при активации режима.",
           "pl": "Wyzwalane, gdy tryb zostaje aktywowany.",
-          "ko": "모드가 활성화될 때 트리거됨."
+          "ko": "모드가 활성화될 때 트리거됨.",
+          "ar": "يتم التفعيل عند تفعيل الوضع."
         },
         "args": [
           {
@@ -1119,7 +1312,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "وضع"
             }
           }
         ]
@@ -1138,7 +1332,8 @@
           "da": "Tilstand ændret",
           "ru": "Режим изменён",
           "pl": "Tryb zmieniony",
-          "ko": "모드 변경됨"
+          "ko": "모드 변경됨",
+          "ar": "الوضع تغيّر"
         },
         "titleFormatted": {
           "en": "Mode [[name]] changed",
@@ -1152,7 +1347,8 @@
           "da": "Tilstand [[name]] ændret",
           "ru": "Режим [[name]] изменён",
           "pl": "Tryb [[name]] zmieniony",
-          "ko": "모드 [[name]] 변경됨"
+          "ko": "모드 [[name]] 변경됨",
+          "ar": "الوضع [[name]] تغيّر"
         },
         "hint": {
           "en": "Triggers when a mode is activated or deactivated.",
@@ -1166,7 +1362,8 @@
           "da": "Udløses når en tilstand aktiveres eller deaktiveres.",
           "ru": "Срабатывает при активации или деактивации режима.",
           "pl": "Wyzwalane, gdy tryb zostaje aktywowany lub dezaktywowany.",
-          "ko": "모드가 활성화되거나 비활성화될 때 트리거됨."
+          "ko": "모드가 활성화되거나 비활성화될 때 트리거됨.",
+          "ar": "يتم التفعيل عند تفعيل أو إلغاء تفعيل وضع."
         },
         "args": [
           {
@@ -1184,7 +1381,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "وضع"
             }
           }
         ],
@@ -1204,7 +1402,8 @@
               "da": "Aktiv",
               "ru": "Активный",
               "pl": "Aktywny",
-              "ko": "활성"
+              "ko": "활성",
+              "ar": "نشط"
             }
           }
         ]
@@ -1223,7 +1422,8 @@
           "da": "Den nuværende tilstand er blevet ændret",
           "ru": "Текущий режим был изменён",
           "pl": "Aktualny tryb został zmieniony",
-          "ko": "현재 모드가 변경되었습니다"
+          "ko": "현재 모드가 변경되었습니다",
+          "ar": "تم تغيير الوضع الحالي"
         },
         "titleFormatted": {
           "en": "The current mode changed",
@@ -1237,7 +1437,8 @@
           "da": "Den nuværende tilstand er blevet ændret",
           "ru": "Текущий режим был изменён",
           "pl": "Aktualny tryb został zmieniony",
-          "ko": "현재 모드가 변경되었습니다"
+          "ko": "현재 모드가 변경되었습니다",
+          "ar": "تم تغيير الوضع الحالي"
         },
         "hint": {
           "en": "Triggers when the current mode is changed.",
@@ -1251,7 +1452,8 @@
           "da": "Udløses, når den nuværende tilstand ændres.",
           "ru": "Срабатывает, когда текущий режим изменяется.",
           "pl": "Wyzwalane, gdy aktualny tryb zostaje zmieniony.",
-          "ko": "현재 모드가 변경될 때 트리거됩니다."
+          "ko": "현재 모드가 변경될 때 트리거됩니다.",
+          "ar": "يتم تشغيله عند تغيير الوضع الحالي."
         },
         "tokens": [
           {
@@ -1269,7 +1471,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "وضع"
             }
           }
         ]
@@ -1288,7 +1491,8 @@
           "da": "Tilstand deaktiveret",
           "ru": "Режим деактивирован",
           "pl": "Tryb dezaktywowany",
-          "ko": "모드 비활성화됨"
+          "ko": "모드 비활성화됨",
+          "ar": "الوضع الصامت"
         },
         "titleFormatted": {
           "en": "Mode [[name]] is deactivated",
@@ -1302,7 +1506,8 @@
           "da": "Tilstand [[name]] er deaktiveret",
           "ru": "Режим [[name]] деактивирован",
           "pl": "Tryb [[name]] jest dezaktywowany",
-          "ko": "모드 [[name]] 비활성화됨"
+          "ko": "모드 [[name]] 비활성화됨",
+          "ar": "الوضع [[name]] معطل"
         },
         "hint": {
           "en": "Triggers when a mode gets deactivated.",
@@ -1316,7 +1521,8 @@
           "da": "Udløses når en tilstand deaktiveres.",
           "ru": "Срабатывает при деактивации режима.",
           "pl": "Wyzwalane, gdy tryb zostaje dezaktywowany.",
-          "ko": "모드가 비활성화될 때 트리거됨."
+          "ko": "모드가 비활성화될 때 트리거됨.",
+          "ar": "يتم تحفيزه عندما يتم تعطيل الوضع."
         },
         "args": [
           {
@@ -1334,7 +1540,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "وضع"
             }
           }
         ]
@@ -1353,7 +1560,8 @@
           "da": "Modtag signal",
           "ru": "Получить сигнал",
           "pl": "Odbierz sygnał",
-          "ko": "신호 받기"
+          "ko": "신호 받기",
+          "ar": "استقبال الإشارة"
         },
         "titleFormatted": {
           "en": "Receive signal [[signal]]",
@@ -1367,7 +1575,8 @@
           "da": "Modtag signal [[signal]]",
           "ru": "Получить сигнал [[signal]]",
           "pl": "Odbierz sygnał [[signal]]",
-          "ko": "[[signal]] 신호 받기"
+          "ko": "[[signal]] 신호 받기",
+          "ar": "استقبال الإشارة [[signal]]"
         },
         "hint": {
           "en": "Receives a signal that was sent using the 'Send signal' card.",
@@ -1381,7 +1590,8 @@
           "da": "Modtager et signal, der blev sendt med 'Send signal'-kortet.",
           "ru": "Получает сигнал, отправленный с помощью карты 'Отправить сигнал'.",
           "pl": "Odbiera sygnał wysłany za pomocą karty 'Wyślij sygnał'.",
-          "ko": "'신호 보내기' 카드로 보낸 신호를 받습니다."
+          "ko": "'신호 보내기' 카드로 보낸 신호를 받습니다.",
+          "ar": "يستقبل إشارة تم إرسالها باستخدام بطاقة 'إرسال إشارة'."
         },
         "args": [
           {
@@ -1399,7 +1609,8 @@
               "da": "Signal",
               "ru": "Сигнал",
               "pl": "Sygnał",
-              "ko": "신호"
+              "ko": "신호",
+              "ar": "إشارة"
             }
           }
         ]
@@ -1446,7 +1657,8 @@
           "da": "Udløses når skyderens værdi ændres.",
           "ru": "Срабатывает при изменении значения ползунка.",
           "pl": "Wyzwalany, gdy wartość suwaka się zmienia.",
-          "ko": "슬라이더 값이 변경될 때 트리거됨."
+          "ko": "슬라이더 값이 변경될 때 트리거됨.",
+          "ar": "يتم التفعيل عند تغير قيمة المنزلق."
         },
         "args": [
           {
@@ -1464,7 +1676,8 @@
               "da": "Skyder",
               "ru": "Ползунок",
               "pl": "Suwak",
-              "ko": "슬라이더"
+              "ko": "슬라이더",
+              "ar": "المنزلق"
             }
           }
         ],
@@ -1488,7 +1701,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             }
           }
         ]
@@ -1507,7 +1721,8 @@
           "da": "Timer færdig",
           "ru": "Таймер завершён",
           "pl": "Zegar zakończony",
-          "ko": "타이머 종료"
+          "ko": "타이머 종료",
+          "ar": "انتهى المؤقت"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] finished",
@@ -1521,7 +1736,8 @@
           "da": "Timer [[timer]] færdig",
           "ru": "Таймер [[timer]] завершён",
           "pl": "Zegar [[timer]] zakończony",
-          "ko": "타이머 [[timer]] 종료"
+          "ko": "타이머 [[timer]] 종료",
+          "ar": "المؤقت [[timer]] انتهى"
         },
         "args": [
           {
@@ -1539,7 +1755,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -1558,7 +1775,8 @@
           "da": "Timer sat på pause",
           "ru": "Таймер на паузе",
           "pl": "Timer wstrzymany",
-          "ko": "타이머 일시정지"
+          "ko": "타이머 일시정지",
+          "ar": "المؤقت متوقف مؤقتًا"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] paused",
@@ -1572,7 +1790,8 @@
           "da": "Timer [[timer]] sat på pause",
           "ru": "Таймер [[timer]] на паузе",
           "pl": "Timer [[timer]] wstrzymany",
-          "ko": "타이머 [[timer]] 일시정지"
+          "ko": "타이머 [[timer]] 일시정지",
+          "ar": "المؤقت [[timer]] متوقف مؤقتًا"
         },
         "args": [
           {
@@ -1590,7 +1809,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           }
         ]
@@ -1609,7 +1829,8 @@
           "da": "Tid tilbage på timer",
           "ru": "Осталось времени таймера",
           "pl": "Pozostały czas timera",
-          "ko": "타이머 남은 시간"
+          "ko": "타이머 남은 시간",
+          "ar": "الوقت المتبقي للمؤقت"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] reaches [[duration]] [[unit]] remaining",
@@ -1622,8 +1843,9 @@
           "es": "[[duration]] [[unit]] restantes para el temporizador [[timer]]",
           "da": "[[duration]] [[unit]] tilbage for timer [[timer]]",
           "ru": "[[duration]] [[unit]] осталось для таймера [[timer]]",
-          "pl": "[[duration]] [[unit]] pozostało dla timera [[timer]]",
-          "ko": "타이머 [[timer]]에 [[duration]] [[unit]] 남음"
+          "pl": "[[duration]] [[unit]] pozostało для timera [[timer]]",
+          "ko": "타이머 [[timer]]에 [[duration]] [[unit]] 남음",
+          "ar": "المؤقت [[timer]] يحقق [[duration]] [[unit]] متبقية"
         },
         "args": [
           {
@@ -1641,7 +1863,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           },
           {
@@ -1661,7 +1884,8 @@
               "da": "Varighed",
               "ru": "Продолжительность",
               "pl": "Czas trwania",
-              "ko": "기간"
+              "ko": "기간",
+              "ar": "المدة"
             },
             "placeholder": {
               "en": "E.g. 10",
@@ -1675,7 +1899,8 @@
               "da": "F.eks. 10",
               "ru": "Напр. 10",
               "pl": "Np. 10",
-              "ko": "예: 10"
+              "ko": "예: 10",
+              "ar": "مثال: 10"
             }
           },
           {
@@ -1693,7 +1918,8 @@
               "da": "Enhed",
               "ru": "Единица",
               "pl": "Jednostka",
-              "ko": "단위"
+              "ko": "단위",
+              "ar": "الوحدة"
             },
             "values": [
               {
@@ -1710,7 +1936,8 @@
                   "da": "sekunder",
                   "ru": "секунды",
                   "pl": "sekundy",
-                  "ko": "초"
+                  "ko": "초",
+                  "ar": "ثواني"
                 }
               },
               {
@@ -1727,7 +1954,8 @@
                   "da": "minutter",
                   "ru": "минуты",
                   "pl": "minuty",
-                  "ko": "분"
+                  "ko": "분",
+                  "ar": "دقائق"
                 }
               },
               {
@@ -1744,7 +1972,8 @@
                   "da": "timer",
                   "ru": "часы",
                   "pl": "godziny",
-                  "ko": "시간"
+                  "ko": "시간",
+                  "ar": "ساعات"
                 }
               },
               {
@@ -1761,7 +1990,8 @@
                   "da": "dage",
                   "ru": "дни",
                   "pl": "dni",
-                  "ko": "일"
+                  "ko": "일",
+                  "ar": "أيام"
                 }
               }
             ]
@@ -1782,7 +2012,8 @@
           "da": "Timer genoptaget",
           "ru": "Таймер возобновлён",
           "pl": "Timer wznowiony",
-          "ko": "타이머 재개됨"
+          "ko": "타이머 재개됨",
+          "ar": "تم استئناف المؤقت"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] resumed",
@@ -1796,7 +2027,8 @@
           "da": "Timer [[timer]] genoptaget",
           "ru": "Таймер [[timer]] возобновлён",
           "pl": "Timer [[timer]] wznowiony",
-          "ko": "타이머 [[timer]] 재개됨"
+          "ko": "타이머 [[timer]] 재개됨",
+          "ar": "تم استئناف المؤقت [[timer]]"
         },
         "args": [
           {
@@ -1814,7 +2046,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           }
         ]
@@ -1833,7 +2066,8 @@
           "da": "Timer startet",
           "ru": "Таймер запущен",
           "pl": "Timer rozpoczęty",
-          "ko": "타이머 시작됨"
+          "ko": "타이머 시작됨",
+          "ar": "تم تشغيل المؤقت"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] started",
@@ -1847,7 +2081,8 @@
           "da": "Timer [[timer]] startet",
           "ru": "Таймер [[timer]] запущен",
           "pl": "Timer [[timer]] rozpoczęty",
-          "ko": "타이머 [[timer]] 시작됨"
+          "ko": "타이머 [[timer]] 시작됨",
+          "ar": "تم تشغيل المؤقت [[timer]]"
         },
         "args": [
           {
@@ -1865,7 +2100,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -1884,7 +2120,8 @@
           "da": "Timer stoppet",
           "ru": "Таймер остановлен",
           "pl": "Timer zatrzymany",
-          "ko": "타이머 중지됨"
+          "ko": "타이머 중지됨",
+          "ar": "المؤقت توقف"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] stopped",
@@ -1898,7 +2135,8 @@
           "da": "Timer [[timer]] stoppet",
           "ru": "Таймер [[timer]] остановлен",
           "pl": "Timer [[timer]] zatrzymany",
-          "ko": "타이머 [[timer]] 중지됨"
+          "ko": "타이머 [[timer]] 중지됨",
+          "ar": "المؤقت [[timer]] توقف"
         },
         "args": [
           {
@@ -1916,7 +2154,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -1937,7 +2176,8 @@
           "da": "Sekvens er lig med",
           "ru": "Последовательность равна",
           "pl": "Sekwencja równa się",
-          "ko": "시퀀스가 동일함"
+          "ko": "시퀀스가 동일함",
+          "ar": "التسلسل يساوي"
         },
         "titleFormatted": {
           "en": "Sequence [[name]] !{{equals|does not equal}} [[value]]",
@@ -1951,7 +2191,8 @@
           "da": "Sekvens [[name]] !{{er lig med|er ikke lig med}} [[value]]",
           "ru": "Последовательность [[name]] !{{равна|не равна}} [[value]]",
           "pl": "Sekwencja [[name]] !{{jest równa|nie jest równa}} [[value]]",
-          "ko": "시퀀스 [[name]] !{{같음|같지 않음}} [[value]]"
+          "ko": "시퀀스 [[name]] !{{같음|같지 않음}} [[value]]",
+          "ar": "التسلسل [[name]] !{{يساوي|لا يساوي}} [[value]]"
         },
         "args": [
           {
@@ -1969,7 +2210,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           },
           {
@@ -1989,7 +2231,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "قيمة"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -2003,7 +2246,8 @@
               "da": "F.eks. 5",
               "ru": "Напр. 5",
               "pl": "Np. 5",
-              "ko": "예: 5"
+              "ko": "예: 5",
+              "ar": "مثال 5"
             }
           }
         ]
@@ -2022,7 +2266,8 @@
           "da": "Det !{{er|er ikke}}...",
           "ru": "Это !{{есть|не есть}}...",
           "pl": "Jest !{{|nie jest}}...",
-          "ko": "지금 !{{은|은 아닌}}..."
+          "ko": "지금 !{{은|은 아닌}}...",
+          "ar": "إنه !{{هو|ليس}}..."
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} [[value]]",
@@ -2036,7 +2281,8 @@
           "da": "Det !{{er|er ikke}} [[value]]",
           "ru": "Это !{{есть|не есть}} [[value]]",
           "pl": "Jest !{{|nie jest}} [[value]]",
-          "ko": "지금 !{{은|은 아닌}} [[value]]"
+          "ko": "지금 !{{은|은 아닌}} [[value]]",
+          "ar": "إنه !{{هو|ليس}} [[value]]"
         },
         "args": [
           {
@@ -2054,7 +2300,8 @@
               "da": "Dagens periode",
               "ru": "Период дня",
               "pl": "Pora dnia",
-              "ko": "시간대"
+              "ko": "시간대",
+              "ar": "فترة اليوم"
             },
             "values": [
               {
@@ -2071,7 +2318,8 @@
                   "da": "Morgen",
                   "ru": "Утро",
                   "pl": "Poranek",
-                  "ko": "아침"
+                  "ko": "아침",
+                  "ar": "صباح"
                 }
               },
               {
@@ -2088,7 +2336,8 @@
                   "da": "Eftermiddag",
                   "ru": "День",
                   "pl": "Popołudnie",
-                  "ko": "오후"
+                  "ko": "오후",
+                  "ar": "بعد الظهر"
                 }
               },
               {
@@ -2105,7 +2354,8 @@
                   "da": "Aften",
                   "ru": "Вечер",
                   "pl": "Wieczór",
-                  "ko": "저녁"
+                  "ko": "저녁",
+                  "ar": "مساء"
                 }
               },
               {
@@ -2122,7 +2372,8 @@
                   "da": "Nat",
                   "ru": "Ночь",
                   "pl": "Noc",
-                  "ko": "밤"
+                  "ko": "밤",
+                  "ar": "ليل"
                 }
               }
             ]
@@ -2133,15 +2384,48 @@
         "id": "event_happened",
         "title": {
           "en": "Event happened",
-          "nl": "Gebeurtenis is gebeurd"
+          "nl": "Gebeurtenis is gebeurd",
+          "da": "Begivenhed skete",
+          "de": "Ereignis ist passiert",
+          "es": "Evento sucedido",
+          "fr": "Événement arrivé",
+          "it": "Evento successo",
+          "no": "Hendelse skjedde",
+          "sv": "Händelse inträffade",
+          "pl": "Wydarzenie się wydarzyło",
+          "ru": "Событие произошло",
+          "ko": "이벤트 발생",
+          "ar": "حدث قد وقع"
         },
         "titleFormatted": {
           "en": "Event [[event]] happened",
-          "nl": "Gebeurtenis [[event]] is gebeurd"
+          "nl": "Gebeurtenis [[event]] is gebeurd",
+          "da": "Begivenhed [[event]] skete",
+          "de": "Ereignis [[event]] ist passiert",
+          "es": "Evento [[event]] sucedido",
+          "fr": "Événement [[event]] arrivé",
+          "it": "Evento [[event]] successo",
+          "no": "Hendelse [[event]] skjedde",
+          "sv": "Händelse [[event]] inträffade",
+          "pl": "Wydarzenie [[event]] się wydarzyło",
+          "ru": "Событие [[event]] произошло",
+          "ko": "이벤트 [[event]] 발생",
+          "ar": "حدث [[event]] قد وقع"
         },
         "hint": {
           "en": "Checks if the event has ever happened.",
-          "nl": "Controleert of de gebeurtenis ooit is gebeurd."
+          "nl": "Controleert of de gebeurtenis ooit is gebeurd.",
+          "da": "Tjekker om begivenheden nogensinde er sket.",
+          "de": "Prüft, ob das Ereignis jemals passiert ist.",
+          "es": "Verifica si el evento ha sucedido alguna vez.",
+          "fr": "Vérifie si l'événement s'est déjà produit.",
+          "it": "Verifica se l'evento è mai successo.",
+          "no": "Sjekker om hendelsen noen gang har skjedd.",
+          "sv": "Kontrollerar om händelsen någonsin har inträffat.",
+          "pl": "Sprawdza, czy wydarzenie kiedykolwiek miało miejsce.",
+          "ru": "Проверяет, произошло ли когда-нибудь событие.",
+          "ko": "이벤트가 발생한 적이 있는지 확인합니다.",
+          "ar": "يتحقق مما إذا كان الحدث قد حدث من قبل."
         },
         "args": [
           {
@@ -2149,7 +2433,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Wydarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           }
         ]
@@ -2158,15 +2453,48 @@
         "id": "event_happened_times_today",
         "title": {
           "en": "Event happened N times today",
-          "nl": "Gebeurtenis is vandaag N keer gebeurd"
+          "nl": "Gebeurtenis is vandaag N keer gebeurd",
+          "da": "Begivenhed skete N gange i dag",
+          "de": "Ereignis ist heute N Mal passiert",
+          "es": "El evento ocurrió N veces hoy",
+          "fr": "L'événement s'est produit N fois aujourd'hui",
+          "it": "L'evento è accaduto N volte oggi",
+          "no": "Hendelsen skjedde N ganger i dag",
+          "sv": "Händelsen inträffade N gånger idag",
+          "pl": "Wydarzenie miało miejsce N razy dzisiaj",
+          "ru": "Событие произошло N раз сегодня",
+          "ko": "이벤트가 오늘 N번 발생했습니다",
+          "ar": "حدث N مرة اليوم"
         },
         "titleFormatted": {
           "en": "Event [[event]] happened [[times]] times today",
-          "nl": "Gebeurtenis [[event]] is vandaag [[times]] keer gebeurd"
+          "nl": "Gebeurtenis [[event]] is vandaag [[times]] keer gebeurd",
+          "da": "Begivenhed [[event]] skete [[times]] gange i dag",
+          "de": "Ereignis [[event]] ist heute [[times]] Mal passiert",
+          "es": "El evento [[event]] ocurrió [[times]] veces hoy",
+          "fr": "L'événement [[event]] s'est produit [[times]] fois aujourd'hui",
+          "it": "L'evento [[event]] è accaduto [[times]] volte oggi",
+          "no": "Hendelsen [[event]] skjedde [[times]] ganger i dag",
+          "sv": "Händelsen [[event]] inträffade [[times]] gånger idag",
+          "pl": "Wydarzenie [[event]] miało miejsce [[times]] razy dzisiaj",
+          "ru": "Событие [[event]] произошло [[times]] раз сегодня",
+          "ko": "이벤트 [[event]]가 오늘 [[times]]번 발생했습니다",
+          "ar": "حدث [[event]] N [[times]] مرة اليوم"
         },
         "hint": {
           "en": "Checks if the event has happened N times today.",
-          "nl": "Controleert of de gebeurtenis vandaag N keer is gebeurd."
+          "nl": "Controleert of de gebeurtenis vandaag N keer is gebeurd.",
+          "da": "Tjekker om begivenheden er sket N gange i dag.",
+          "de": "Überprüft, ob das Ereignis heute N Mal passiert ist.",
+          "es": "Verifica si el evento ha ocurrido N veces hoy.",
+          "fr": "Vérifie si l'événement s'est produit N fois aujourd'hui.",
+          "it": "Controlla se l'evento è accaduto N volte oggi.",
+          "no": "Sjekker om hendelsen har skjedd N ganger i dag.",
+          "sv": "Kontrollerar om händelsen har inträffat N gånger idag.",
+          "pl": "Sprawdza, czy zdarzenie miało miejsce N razy dzisiaj.",
+          "ru": "Проверяет, произошло ли событие N раз сегодня.",
+          "ko": "이벤트가 오늘 N번 발생했는지 확인합니다.",
+          "ar": "يتحقق مما إذا كان الحدث قد حدث N مرة اليوم."
         },
         "args": [
           {
@@ -2174,7 +2502,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Wydarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           },
           {
@@ -2182,7 +2521,18 @@
             "name": "times",
             "title": {
               "en": "Number of times",
-              "nl": "Aantal"
+              "nl": "Aantal",
+              "da": "Antal gange",
+              "de": "Anzahl der Male",
+              "es": "Número de veces",
+              "fr": "Nombre de fois",
+              "it": "Numero di volte",
+              "no": "Antall ganger",
+              "sv": "Antal gånger",
+              "pl": "Liczba razy",
+              "ru": "Количество раз",
+              "ko": "횟수",
+              "ar": "عدد المرات"
             },
             "min": 1,
             "step": 1,
@@ -2194,15 +2544,48 @@
         "id": "event_happened_times_within",
         "title": {
           "en": "Event happened N times within",
-          "nl": "Gebeurtenis is N keer gebeurd binnen"
+          "nl": "Gebeurtenis is N keer gebeurd binnen",
+          "da": "Begivenhed skete N gange inden for",
+          "de": "Ereignis ereignete sich N Mal innerhalb",
+          "es": "El evento ocurrió N veces dentro de",
+          "fr": "L'événement s'est produit N fois dans",
+          "it": "L'evento è accaduto N volte entro",
+          "no": "Hendelsen skjedde N ganger innenfor",
+          "sv": "Händelsen inträffade N gånger inom",
+          "pl": "Zdarzenie miało miejsce N razy w ciągu",
+          "ru": "Событие произошло N раз в течение",
+          "ko": "이벤트가 [[duration]] [[unit]] 내에 [[times]]회 발생했습니다",
+          "ar": "حدث N مرات داخل"
         },
         "titleFormatted": {
           "en": "Event [[event]] happened [[times]] times within [[duration]] [[unit]]",
-          "nl": "Gebeurtenis [[event]] is [[times]] keer gebeurd binnen [[duration]] [[unit]]"
+          "nl": "Gebeurtenis [[event]] is [[times]] keer gebeurd binnen [[duration]] [[unit]]",
+          "da": "Begivenhed [[event]] skete [[times]] gange inden for [[duration]] [[unit]]",
+          "de": "Ereignis [[event]] ereignete sich [[times]] Mal innerhalb [[duration]] [[unit]]",
+          "es": "El evento [[event]] ocurrió [[times]] veces dentro de [[duration]] [[unit]]",
+          "fr": "L'événement [[event]] s'est produit [[times]] fois dans [[duration]] [[unit]]",
+          "it": "L'evento [[event]] è accaduto [[times]] volte entro [[duration]] [[unit]]",
+          "no": "Hendelsen [[event]] skjedde [[times]] ganger innenfor [[duration]] [[unit]]",
+          "sv": "Händelsen [[event]] inträffade [[times]] gånger inom [[duration]] [[unit]]",
+          "pl": "Zdarzenie [[event]] miało miejsce [[times]] razy w ciągu [[duration]] [[unit]]",
+          "ru": "Событие [[event]] произошло [[times]] раз в течение [[duration]] [[unit]]",
+          "ko": "이벤트 [[event]]가 [[duration]] [[unit]] 내에 [[times]]회 발생했습니다",
+          "ar": "حدث [[event]] [[times]] مرات في غضون [[duration]] [[unit]]"
         },
         "hint": {
           "en": "Checks if the event has happened N times within the given period.",
-          "nl": "Controleert of de gebeurtenis N keer is gebeurd binnen het opgegeven periode."
+          "nl": "Controleert of de gebeurtenis N keer is gebeurd binnen het opgegeven periode.",
+          "da": "Kontrollerer, om begivenheder er sket N gange inden for den angivne periode.",
+          "de": "Prüft, ob das Ereignis N Mal innerhalb des angegebenen Zeitraums eingetreten ist.",
+          "es": "Verifica si el evento ha ocurrido N veces dentro del período dado.",
+          "fr": "Vérifie si l'événement s'est produit N fois dans la période donnée.",
+          "it": "Controlla se l'evento è accaduto N volte nel periodo dato.",
+          "no": "Sjekker om hendelsen har skjedd N ganger innenfor den gitte perioden.",
+          "sv": "Kontrollerar om händelsen inträffat N gånger inom den angivna perioden.",
+          "pl": "Sprawdza, czy wydarzenie miało miejsce N razy w ciągu podanego okresu.",
+          "ru": "Проверяет, произошло ли событие N раз в течение заданного периода.",
+          "ko": "지정된 기간 내에 이벤트가 N회 발생했는지 확인합니다.",
+          "ar": "يتحقق مما إذا كان الحدث قد حدث N مرات داخل الفترة المعطاة."
         },
         "args": [
           {
@@ -2210,7 +2593,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Wydarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           },
           {
@@ -2218,7 +2612,18 @@
             "name": "times",
             "title": {
               "en": "Number of times",
-              "nl": "Aantal"
+              "nl": "Aantal",
+              "da": "Antal gange",
+              "de": "Anzahl der Male",
+              "es": "Número de veces",
+              "fr": "Nombre de fois",
+              "it": "Numero di volte",
+              "no": "Antall ganger",
+              "sv": "Antal gånger",
+              "pl": "Liczba razy",
+              "ru": "Количество раз",
+              "ko": "횟수",
+              "ar": "عدد المرات"
             },
             "min": 1,
             "step": 1,
@@ -2241,7 +2646,8 @@
               "da": "Varighed",
               "ru": "Длительность",
               "pl": "Czas trwania",
-              "ko": "지속 시간"
+              "ko": "지속 시간",
+              "ar": "المدة"
             },
             "placeholder": {
               "en": "E.g. 10",
@@ -2255,7 +2661,8 @@
               "da": "Fx 10",
               "ru": "Напр. 10",
               "pl": "Np. 10",
-              "ko": "예: 10"
+              "ko": "예: 10",
+              "ar": "مثال: 10"
             }
           },
           {
@@ -2273,7 +2680,8 @@
               "da": "Enhed",
               "ru": "Единица",
               "pl": "Jednostka",
-              "ko": "단위"
+              "ko": "단위",
+              "ar": "وحدة"
             },
             "values": [
               {
@@ -2290,7 +2698,8 @@
                   "da": "sekunder",
                   "ru": "секунды",
                   "pl": "sekundy",
-                  "ko": "초"
+                  "ko": "초",
+                  "ar": "ثواني"
                 }
               },
               {
@@ -2307,7 +2716,8 @@
                   "da": "minutter",
                   "ru": "минуты",
                   "pl": "minuty",
-                  "ko": "분"
+                  "ko": "분",
+                  "ar": "دقائق"
                 }
               },
               {
@@ -2324,7 +2734,8 @@
                   "da": "timer",
                   "ru": "часы",
                   "pl": "godziny",
-                  "ko": "시간"
+                  "ko": "시간",
+                  "ar": "ساعات"
                 }
               },
               {
@@ -2341,7 +2752,8 @@
                   "da": "dage",
                   "ru": "дни",
                   "pl": "dni",
-                  "ko": "일"
+                  "ko": "일",
+                  "ar": "أيام"
                 }
               }
             ]
@@ -2352,15 +2764,48 @@
         "id": "event_happened_today",
         "title": {
           "en": "Event happened today",
-          "nl": "Gebeurtenis is vandaag gebeurd"
+          "nl": "Gebeurtenis is vandaag gebeurd",
+          "da": "Begivenhed skete i dag",
+          "de": "Ereignis ist heute passiert",
+          "es": "El evento sucedió hoy",
+          "fr": "L'événement a eu lieu aujourd'hui",
+          "it": "Evento accaduto oggi",
+          "no": "Hendelse skjedde i dag",
+          "sv": "Händelse inträffade idag",
+          "pl": "Wydarzenie miało miejsce dzisiaj",
+          "ru": "Событие произошло сегодня",
+          "ko": "오늘 이벤트가 발생했습니다",
+          "ar": "حدث وقع اليوم"
         },
         "titleFormatted": {
           "en": "Event [[event]] happened today",
-          "nl": "Gebeurtenis [[event]] is vandaag gebeurd"
+          "nl": "Gebeurtenis [[event]] is vandaag gebeurd",
+          "da": "Begivenhed [[event]] skete i dag",
+          "de": "Ereignis [[event]] ist heute passiert",
+          "es": "El evento [[event]] sucedió hoy",
+          "fr": "L'événement [[event]] a eu lieu aujourd'hui",
+          "it": "Evento [[event]] accaduto oggi",
+          "no": "Hendelse [[event]] skjedde i dag",
+          "sv": "Händelse [[event]] inträffade idag",
+          "pl": "Wydarzenie [[event]] miało miejsce dzisiaj",
+          "ru": "Событие [[event]] произошло сегодня",
+          "ko": "오늘 [[event]] 이벤트가 발생했습니다",
+          "ar": "حدث [[event]] وقع اليوم"
         },
         "hint": {
           "en": "Checks if the event has happened at least once today.",
-          "nl": "Controleert of de gebeurtenis vandaag minstens één keer is gebeurd."
+          "nl": "Controleert of de gebeurtenis vandaag minstens één keer is gebeurd.",
+          "da": "Kontrollerer om begivenheden har fundet sted mindst én gang i dag.",
+          "de": "Prüft, ob das Ereignis heute mindestens einmal stattgefunden hat.",
+          "es": "Comprueba si el evento ha ocurrido al menos una vez hoy.",
+          "fr": "Vérifie si l'événement s'est produit au moins une fois aujourd'hui.",
+          "it": "Controlla se l'evento è avvenuto almeno una volta oggi.",
+          "no": "Sjekker om hendelsen har skjedd minst én gang i dag.",
+          "sv": "Kontrollerar om händelsen har inträffat minst en gång idag.",
+          "pl": "Sprawdza, czy wydarzenie miało miejsce przynajmniej raz dzisiaj.",
+          "ru": "Проверяет, произошло ли событие хотя бы один раз сегодня.",
+          "ko": "오늘 이벤트가 최소 한 번 발생했는지 확인합니다.",
+          "ar": "يتحقق مما إذا كان الحدث قد حدث مرة واحدة على الأقل اليوم."
         },
         "args": [
           {
@@ -2368,7 +2813,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Wydarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           }
         ]
@@ -2377,15 +2833,45 @@
         "id": "event_happened_within",
         "title": {
           "en": "Event happened within",
-          "nl": "Gebeurtenis is gebeurd binnen"
+          "nl": "Gebeurtenis is gebeurd binnen",
+          "da": "Begivenhed skete inden for",
+          "de": "Ereignis trat innerhalb",
+          "es": "El evento ocurrió dentro de",
+          "fr": "L'événement s'est produit dans",
+          "it": "Evento avvenuto entro",
+          "no": "Hendelsen skjedde innen",
+          "sv": "Händelse inträffade inom",
+          "pl": "Wydarzenie miało miejsce w ciągu",
+          "ru": "Событие произошло в течение",
+          "ko": "이벤트가 발생한 시간"
         },
         "titleFormatted": {
           "en": "Event [[event]] happened within [[duration]] [[unit]]",
-          "nl": "Gebeurtenis [[event]] is gebeurd binnen [[duration]] [[unit]]"
+          "nl": "Gebeurtenis [[event]] is gebeurd binnen [[duration]] [[unit]]",
+          "da": "Begivenhed [[event]] skete inden for [[duration]] [[unit]]",
+          "de": "Ereignis [[event]] trat innerhalb von [[duration]] [[unit]] ein",
+          "es": "El evento [[event]] ocurrió dentro de [[duration]] [[unit]]",
+          "fr": "L'événement [[event]] s'est produit dans [[duration]] [[unit]]",
+          "it": "L'evento [[event]] è avvenuto entro [[duration]] [[unit]]",
+          "no": "Hendelsen [[event]] skjedde innen [[duration]] [[unit]]",
+          "sv": "Händelsen [[event]] inträffade inom [[duration]] [[unit]]",
+          "pl": "Wydarzenie [[event]] miało miejsce w ciągu [[duration]] [[unit]]",
+          "ru": "Событие [[event]] произошло в течение [[duration]] [[unit]]",
+          "ko": "이벤트 [[event]]가 [[duration]] [[unit]] 내에 발생했습니다"
         },
         "hint": {
           "en": "Checks if the event has happened within the given period.",
-          "nl": "Controleert of de gebeurtenis binnen het opgegeven periode is gebeurd."
+          "nl": "Controleert of de gebeurtenis binnen het opgegeven periode is gebeurd.",
+          "da": "Kontrollerer, om begivenheden er sket inden for den angivne periode.",
+          "de": "Prüft, ob das Ereignis innerhalb des angegebenen Zeitraums stattgefunden hat.",
+          "es": "Comprueba si el evento ha ocurrido dentro del período dado.",
+          "fr": "Vérifie si l'événement s'est produit dans la période donnée.",
+          "it": "Verifica se l'evento è avvenuto entro il periodo dato.",
+          "no": "Sjekker om hendelsen har skjedd innenfor den gitte perioden.",
+          "sv": "Kontrollerar om händelsen har inträffat inom den angivna perioden.",
+          "pl": "Sprawdza, czy zdarzenie miało miejsce w podanym okresie.",
+          "ru": "Проверяет, произошло ли событие в указанный период.",
+          "ko": "주어진 기간 내에 이벤트가 발생했는지 확인합니다."
         },
         "args": [
           {
@@ -2393,7 +2879,17 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Wydarzenie",
+              "ru": "Событие",
+              "ko": "이벤트"
             }
           },
           {
@@ -2534,7 +3030,8 @@
           "da": "Flaget er aktivt",
           "ru": "Флаг активен",
           "pl": "Flaga jest aktywna",
-          "ko": "플래그가 활성화됨"
+          "ko": "플래그가 활성화됨",
+          "ar": "العلم نشط"
         },
         "titleFormatted": {
           "en": "Flag [[flag]] is !{{active|inactive}}",
@@ -2548,7 +3045,8 @@
           "da": "Flaget [[flag]] er !{{aktivt|inaktivt}}",
           "ru": "Флаг [[flag]] !{{активен|неактивен}}",
           "pl": "Flaga [[flag]] jest !{{aktywna|nieaktywna}}",
-          "ko": "플래그 [[flag]]는 !{{활성|비활성}} 상태입니다"
+          "ko": "플래그 [[flag]]는 !{{활성|비활성}} 상태입니다",
+          "ar": "العلم [[flag]] هو !{{نشط|غير نشط}}"
         },
         "hint": {
           "en": "Checks if a flag is activated.",
@@ -2562,7 +3060,8 @@
           "da": "Kontrollerer om et flag er aktiveret.",
           "ru": "Проверяет, активирован ли флаг.",
           "pl": "Sprawdza, czy flaga jest aktywowana.",
-          "ko": "플래그가 활성화되었는지 확인합니다."
+          "ko": "플래그가 활성화되었는지 확인합니다.",
+          "ar": "يتحقق مما إذا كان العلم قد تم تفعيله."
         },
         "args": [
           {
@@ -2580,7 +3079,8 @@
               "da": "Flag",
               "ru": "Флаг",
               "pl": "Flaga",
-              "ko": "플래그"
+              "ko": "플래그",
+              "ar": "علم"
             }
           }
         ]
@@ -2589,11 +3089,33 @@
         "id": "label_has_value",
         "title": {
           "en": "Label has value",
-          "nl": "Label heeft waarde"
+          "nl": "Label heeft waarde",
+          "da": "Mærkat har værdi",
+          "de": "Etikett hat Wert",
+          "es": "La etiqueta tiene valor",
+          "fr": "L'étiquette a une valeur",
+          "it": "L'etichetta ha valore",
+          "no": "Etikett har verdi",
+          "sv": "Etikett har värde",
+          "pl": "Etykieta ma wartość",
+          "ru": "Метка имеет значение",
+          "ko": "레이블에 값이 있음",
+          "ar": "التسمية لديها قيمة"
         },
         "titleFormatted": {
           "en": "Label [[label]] has value [[value]]",
-          "nl": "Label [[label]] heeft waarde [[value]]"
+          "nl": "Label [[label]] heeft waarde [[value]]",
+          "da": "Mærkat [[label]] har værdi [[value]]",
+          "de": "Etikett [[label]] hat Wert [[value]]",
+          "es": "La etiqueta [[label]] tiene valor [[value]]",
+          "fr": "L'étiquette [[label]] a une valeur [[value]]",
+          "it": "L'etichetta [[label]] ha valore [[value]]",
+          "no": "Etikett [[label]] har verdi [[value]]",
+          "sv": "Etikett [[label]] har värde [[value]]",
+          "pl": "Etykieta [[label]] ma wartość [[value]]",
+          "ru": "Метка [[label]] имеет значение [[value]]",
+          "ko": "레이블 [[label]]에 값이 있음 [[value]]",
+          "ar": "التسمية [[label]] لديها قيمة [[value]]"
         },
         "args": [
           {
@@ -2601,7 +3123,18 @@
             "name": "label",
             "title": {
               "en": "Label",
-              "nl": "Label"
+              "nl": "Label",
+              "da": "Mærkat",
+              "de": "Etikett",
+              "es": "Etiqueta",
+              "fr": "Étiquette",
+              "it": "Etichetta",
+              "no": "Etikett",
+              "sv": "Etikett",
+              "pl": "Etykieta",
+              "ru": "Метка",
+              "ko": "레이블",
+              "ar": "تسمية"
             }
           },
           {
@@ -2609,7 +3142,18 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "da": "Værdi",
+              "de": "Wert",
+              "es": "Valor",
+              "fr": "Valeur",
+              "it": "Valore",
+              "no": "Verdi",
+              "sv": "Värde",
+              "pl": "Wartość",
+              "ru": "Значение",
+              "ko": "값",
+              "ar": "قيمة"
             }
           }
         ]
@@ -2628,7 +3172,8 @@
           "da": "Tilstand er aktiv",
           "ru": "Режим активен",
           "pl": "Tryb jest aktywny",
-          "ko": "모드가 활성화됨"
+          "ko": "모드가 활성화됨",
+          "ar": "الوضع نشط"
         },
         "titleFormatted": {
           "en": "Mode [[name]] is !{{active|inactive}}",
@@ -2642,7 +3187,8 @@
           "da": "Tilstand [[name]] er !{{aktiv|inaktiv}}",
           "ru": "Режим [[name]] !{{активен|неактивен}}",
           "pl": "Tryb [[name]] jest !{{aktywny|nieaktywny}}",
-          "ko": "모드 [[name]]는 !{{활성|비활성}} 상태입니다"
+          "ko": "모드 [[name]]는 !{{활성|비활성}} 상태입니다",
+          "ar": "الوضع [[name]] هو !{{نشط|غير نشط}}"
         },
         "hint": {
           "en": "Checks if a mode is activated.",
@@ -2656,7 +3202,8 @@
           "da": "Kontrollerer om en tilstand er aktiveret.",
           "ru": "Проверяет, активирован ли режим.",
           "pl": "Sprawdza, czy tryb jest aktywowany.",
-          "ko": "모드가 활성화되었는지 확인합니다."
+          "ko": "모드가 활성화되었는지 확인합니다.",
+          "ar": "يتحقق مما إذا كان الوضع نشطًا."
         },
         "args": [
           {
@@ -2674,7 +3221,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "الوضع"
             }
           }
         ]
@@ -2693,7 +3241,8 @@
           "da": "Ingen gentagelse inden for tidsvindue",
           "ru": "Нет повторов в пределах временного окна",
           "pl": "Brak powtórzeń w oknie czasowym",
-          "ko": "시간 창 내 반복 없음"
+          "ko": "시간 창 내 반복 없음",
+          "ar": "لا تكرار داخل نافذة الوقت"
         },
         "titleFormatted": {
           "en": "No repeat of [[window]] within [[duration]] [[unit]]",
@@ -2707,7 +3256,8 @@
           "da": "Ingen gentagelse af [[window]] inden for [[duration]] [[unit]]",
           "ru": "Нет повторов [[window]] в течение [[duration]] [[unit]]",
           "pl": "Brak powtórzeń [[window]] w ciągu [[duration]] [[unit]]",
-          "ko": "[[duration]] [[unit]] 내 [[window]] 반복 없음"
+          "ko": "[[duration]] [[unit]] 내 [[window]] 반복 없음",
+          "ar": "لا تكرار لـ [[window]] خلال [[duration]] [[unit]]"
         },
         "hint": {
           "en": "Returns true if this card has not been triggered again within the given time window.",
@@ -2721,7 +3271,8 @@
           "da": "Returnerer sandt hvis dette kort ikke er blevet udløst igen inden for tidsvinduet.",
           "ru": "Возвращает true, если карточка не была снова выполнена в пределах временного окна.",
           "pl": "Zwraca prawdę, jeśli ta karta nie została ponownie wywołana w podanym oknie czasowym.",
-          "ko": "이 카드가 지정된 시간 창 내에서 다시 실행되지 않은 경우 true를 반환합니다."
+          "ko": "이 카드가 지정된 시간 창 내에서 다시 실행되지 않은 경우 true를 반환합니다.",
+          "ar": "يعيد true إذا لم تتم إعادة تشغيل هذه البطاقة داخل نافذة الوقت المحددة."
         },
         "args": [
           {
@@ -2739,7 +3290,8 @@
               "da": "Navn",
               "ru": "Название",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           },
           {
@@ -2759,7 +3311,8 @@
               "da": "Varighed",
               "ru": "Длительность",
               "pl": "Czas trwania",
-              "ko": "지속시간"
+              "ko": "지속시간",
+              "ar": "المدة"
             },
             "placeholder": {
               "en": "E.g. 10",
@@ -2773,7 +3326,8 @@
               "da": "Fx 10",
               "ru": "Напр. 10",
               "pl": "Np. 10",
-              "ko": "예: 10"
+              "ko": "예: 10",
+              "ar": "مثال: 10"
             }
           },
           {
@@ -2791,7 +3345,8 @@
               "da": "Enhed",
               "ru": "Ед. измерения",
               "pl": "Jednostka",
-              "ko": "단위"
+              "ko": "단위",
+              "ar": "الوحدة"
             },
             "values": [
               {
@@ -2808,7 +3363,8 @@
                   "da": "sekunder",
                   "ru": "секунды",
                   "pl": "sekundy",
-                  "ko": "초"
+                  "ko": "초",
+                  "ar": "ثواني"
                 }
               },
               {
@@ -2825,7 +3381,8 @@
                   "da": "minutter",
                   "ru": "минуты",
                   "pl": "minuty",
-                  "ko": "분"
+                  "ko": "분",
+                  "ar": "دقائق"
                 }
               },
               {
@@ -2842,7 +3399,8 @@
                   "da": "timer",
                   "ru": "часы",
                   "pl": "godziny",
-                  "ko": "시간"
+                  "ko": "시간",
+                  "ar": "ساعات"
                 }
               },
               {
@@ -2859,7 +3417,8 @@
                   "da": "dage",
                   "ru": "дни",
                   "pl": "dni",
-                  "ko": "일"
+                  "ko": "일",
+                  "ar": "أيام"
                 }
               }
             ]
@@ -2880,7 +3439,8 @@
           "da": "Det er en skoleferie",
           "ru": "Школьные каникулы",
           "pl": "Są ferie szkolne",
-          "ko": "학교 휴일입니다"
+          "ko": "학교 휴일입니다",
+          "ar": "إنها عطلة مدرسية"
         },
         "titleFormatted": {
           "en": "It !{{is|isn't}} [[holiday]] in region [[region]]",
@@ -2894,7 +3454,8 @@
           "da": "Det !{{er|er ikke}} [[holiday]] i region [[region]]",
           "ru": "Это !{{есть|нет}} [[holiday]] в регионе [[region]]",
           "pl": "To !{{jest|nie jest}} [[holiday]] w regionie [[region]]",
-          "ko": "해당 지역([[region]])은 [[holiday]]가 !{{맞습니다|아닙니다}}"
+          "ko": "해당 지역([[region]])은 [[holiday]]가 !{{맞습니다|아닙니다}}",
+          "ar": "إنه !{{هو|ليس}} [[holiday]] في المنطقة [[region]]"
         },
         "hint": {
           "en": "Checks if it is a school holiday in the Netherlands.",
@@ -2908,7 +3469,8 @@
           "da": "Tjekker om det er en skoleferie i Nederlandene.",
           "ru": "Проверяет, являются ли это школьные каникулы в Нидерландах.",
           "pl": "Sprawdza, czy są ferie szkolne w Niderlandach.",
-          "ko": "네덜란드의 학교 휴일인지 확인합니다."
+          "ko": "네덜란드의 학교 휴일인지 확인합니다.",
+          "ar": "يتحقق مما إذا كانت عطلة مدرسية في هولندا."
         },
         "args": [
           {
@@ -2926,7 +3488,8 @@
               "da": "Skoleferie",
               "ru": "Школьные каникулы",
               "pl": "Ferie szkolne",
-              "ko": "학교 휴일"
+              "ko": "학교 휴일",
+              "ar": "عطلة مدرسية"
             }
           },
           {
@@ -2944,7 +3507,8 @@
               "da": "Region",
               "ru": "Регион",
               "pl": "Region",
-              "ko": "지역"
+              "ko": "지역",
+              "ar": "منطقة"
             },
             "values": [
               {
@@ -2961,7 +3525,8 @@
                   "da": "nord",
                   "ru": "север",
                   "pl": "północ",
-                  "ko": "북부"
+                  "ko": "북부",
+                  "ar": "شمال"
                 }
               },
               {
@@ -2978,7 +3543,8 @@
                   "da": "midt",
                   "ru": "центр",
                   "pl": "środek",
-                  "ko": "중부"
+                  "ko": "중부",
+                  "ar": "وسط"
                 }
               },
               {
@@ -2995,7 +3561,8 @@
                   "da": "syd",
                   "ru": "юг",
                   "pl": "południe",
-                  "ko": "남부"
+                  "ko": "남부",
+                  "ar": "جنوب"
                 }
               }
             ]
@@ -3189,7 +3756,8 @@
           "da": "Timeren er færdig",
           "ru": "Таймер завершен",
           "pl": "Timer się zakończył",
-          "ko": "타이머가 종료됨"
+          "ko": "타이머가 종료됨",
+          "ar": "انتهى المؤقت"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] !{{is|is not}} finished",
@@ -3203,7 +3771,8 @@
           "da": "Timer [[timer]] !{{er|er ikke}} færdig",
           "ru": "Таймер [[timer]] !{{завершён|не завершён}}",
           "pl": "Timer [[timer]] !{{jest|nie jest}} zakończony",
-          "ko": "타이머 [[timer]] !{{완료됨|완료되지 않음}}"
+          "ko": "타이머 [[timer]] !{{완료됨|완료되지 않음}}",
+          "ar": "المؤقت [[timer]] !{{قد انتهى|لم ينته بعد}}"
         },
         "args": [
           {
@@ -3221,7 +3790,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -3240,7 +3810,8 @@
           "da": "Timeren er sat på pause",
           "ru": "Таймер на паузе",
           "pl": "Timer jest wstrzymany",
-          "ko": "타이머가 일시 중지됨"
+          "ko": "타이머가 일시 중지됨",
+          "ar": "المؤقت متوقف مؤقتًا"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] !{{is|is not}} paused",
@@ -3254,7 +3825,8 @@
           "da": "Timer [[timer]] !{{er|er ikke}} på pause",
           "ru": "Таймер [[timer]] !{{поставлен на паузу|не поставлен на паузу}}",
           "pl": "Timer [[timer]] !{{jest|nie jest}} wstrzymany",
-          "ko": "타이머 [[timer]] !{{일시 중지됨|일시 중지되지 않음}}"
+          "ko": "타이머 [[timer]] !{{일시 중지됨|일시 중지되지 않음}}",
+          "ar": "المؤقت [[timer]] !{{متوقف مؤقتًا|غير متوقف مؤقتًا}}"
         },
         "args": [
           {
@@ -3272,7 +3844,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           }
         ]
@@ -3291,7 +3864,8 @@
           "da": "Timeren kører",
           "ru": "Таймер запущен",
           "pl": "Timer jest uruchomiony",
-          "ko": "타이머가 실행 중임"
+          "ko": "타이머가 실행 중임",
+          "ar": "المؤقت يعمل"
         },
         "titleFormatted": {
           "en": "Timer [[timer]] !{{is|is not}} running",
@@ -3305,7 +3879,8 @@
           "da": "Timer [[timer]] !{{kører|kører ikke}}",
           "ru": "Таймер [[timer]] !{{запущен|не запущен}}",
           "pl": "Timer [[timer]] !{{działa|nie działa}}",
-          "ko": "타이머 [[timer]] !{{실행 중|실행 중 아님}}"
+          "ko": "타이머 [[timer]] !{{실행 중|실행 중 아님}}",
+          "ar": "المؤقت [[timer]] !{{يعمل|لا يعمل}}"
         },
         "args": [
           {
@@ -3323,7 +3898,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -3342,7 +3918,8 @@
           "da": "Fortsæt med sandsynlighed",
           "ru": "Продолжить с шансом",
           "pl": "Kontynuuj z szansą",
-          "ko": "확률로 계속"
+          "ko": "확률로 계속",
+          "ar": "استمر مع فرصة"
         },
         "titleFormatted": {
           "en": "Continue with [[chance]] chance",
@@ -3356,7 +3933,8 @@
           "da": "Fortsæt med [[chance]] sandsynlighed",
           "ru": "Продолжить с шансом [[chance]]",
           "pl": "Kontynuuj z [[chance]] szansą",
-          "ko": "[[chance]] 확률로 계속"
+          "ko": "[[chance]] 확률로 계속",
+          "ar": "استمر مع [[chance]] فرصة"
         },
         "args": [
           {
@@ -3374,7 +3952,8 @@
               "da": "Sandsynlighed",
               "ru": "Шанс",
               "pl": "Szansa",
-              "ko": "확률"
+              "ko": "확률",
+              "ar": "فرصة"
             },
             "min": 1,
             "max": 100,
@@ -3398,7 +3977,8 @@
           "da": "Slå med en terning",
           "ru": "Бросить кубик",
           "pl": "Rzuć kostką",
-          "ko": "주사위를 굴리기"
+          "ko": "주사위를 굴리기",
+          "ar": "قم برمي النرد"
         },
         "titleFormatted": {
           "en": "Dice rolls [[result]]",
@@ -3412,7 +3992,8 @@
           "da": "Terningen viser [[result]]",
           "ru": "Кубик показывает [[result]]",
           "pl": "Kostka pokazuje [[result]]",
-          "ko": "주사위 결과 [[result]]"
+          "ko": "주사위 결과 [[result]]",
+          "ar": "النرد يوضح [[result]]"
         },
         "args": [
           {
@@ -3430,7 +4011,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "النتيجة"
             },
             "min": 1,
             "max": 6,
@@ -3453,7 +4035,8 @@
           "da": "Månefasen !{{er|er ikke}}...",
           "ru": "Фаза Луны !{{есть|не является}}...",
           "pl": "Faza Księżyca !{{jest|nie jest}}...",
-          "ko": "달의 위상 !{{이다|아니다}}..."
+          "ko": "달의 위상 !{{이다|아니다}}...",
+          "ar": "مرحلة القمر !{{هي|ليست}}..."
         },
         "titleFormatted": {
           "en": "The moon phase !{{is|isn't}} [[value]]",
@@ -3467,7 +4050,8 @@
           "da": "Månefasen !{{er|er ikke}} [[value]]",
           "ru": "Фаза Луны !{{есть|не является}} [[value]]",
           "pl": "Faza Księżyca !{{jest|nie jest}} [[value]]",
-          "ko": "달의 위상 !{{이다|아니다}} [[value]]"
+          "ko": "달의 위상 !{{이다|아니다}} [[value]]",
+          "ar": "مرحلة القمر !{{هي|ليست}} [[value]]"
         },
         "args": [
           {
@@ -3485,7 +4069,8 @@
               "da": "Månens fase",
               "ru": "Фаза Луны",
               "pl": "Faza Księżyca",
-              "ko": "달의 위상"
+              "ko": "달의 위상",
+              "ar": "مرحلة القمر"
             },
             "values": [
               {
@@ -3502,7 +4087,8 @@
                   "da": "Nymåne",
                   "ru": "Новолуние",
                   "pl": "Nów",
-                  "ko": "삭"
+                  "ko": "삭",
+                  "ar": "الهلال الجديد"
                 }
               },
               {
@@ -3519,7 +4105,8 @@
                   "da": "Tiltagende segl",
                   "ru": "Молодой месяц",
                   "pl": "Sierp przybywający",
-                  "ko": "초승달"
+                  "ko": "초승달",
+                  "ar": "الهلال المتزايد"
                 }
               },
               {
@@ -3536,7 +4123,8 @@
                   "da": "Første kvarter",
                   "ru": "Первая четверть",
                   "pl": "Pierwsza kwadra",
-                  "ko": "상현달"
+                  "ko": "상현달",
+                  "ar": "الربع الأول"
                 }
               },
               {
@@ -3553,7 +4141,8 @@
                   "da": "Tiltagende måne",
                   "ru": "Растущая Луна",
                   "pl": "Przybywająca garbata",
-                  "ko": "상현과 보름 사이"
+                  "ko": "상현과 보름 사이",
+                  "ar": "الأحدب المتزايد"
                 }
               },
               {
@@ -3570,7 +4159,8 @@
                   "da": "Fuldmåne",
                   "ru": "Полнолуние",
                   "pl": "Pełnia",
-                  "ko": "보름달"
+                  "ko": "보름달",
+                  "ar": "البدر"
                 }
               },
               {
@@ -3587,7 +4177,8 @@
                   "da": "Aftagende måne",
                   "ru": "Убывающая Луна",
                   "pl": "Garbus ubywający",
-                  "ko": "보름과 하현 사이"
+                  "ko": "보름과 하현 사이",
+                  "ar": "الأحدب المتضائل"
                 }
               },
               {
@@ -3604,7 +4195,8 @@
                   "da": "Sidste kvarter",
                   "ru": "Последняя четверть",
                   "pl": "Ostatnia kwadra",
-                  "ko": "하현달"
+                  "ko": "하현달",
+                  "ar": "الربع الأخير"
                 }
               },
               {
@@ -3621,7 +4213,8 @@
                   "da": "Aftagende segl",
                   "ru": "Старый месяц",
                   "pl": "Sierp ubywający",
-                  "ko": "그믐달"
+                  "ko": "그믐달",
+                  "ar": "الهلال المتضائل"
                 }
               }
             ]
@@ -3642,7 +4235,8 @@
           "da": "Det aktuelle stjernetegn !{{er|er ikke}}...",
           "ru": "Текущее знак зодиака !{{является|не является}}...",
           "pl": "Aktualny znak zodiaku !{{jest|nie jest}}...",
-          "ko": "현재 별자리 !{{입니다|아닙니다}}..."
+          "ko": "현재 별자리 !{{입니다|아닙니다}}...",
+          "ar": "علامة البروج الحالية !{{هي|ليست}}..."
         },
         "titleFormatted": {
           "en": "The zodiac sign !{{is|isn't}} [[value]]",
@@ -3656,7 +4250,8 @@
           "da": "Stjernetegnet !{{er|er ikke}} [[value]]",
           "ru": "Знак зодиака !{{является|не является}} [[value]]",
           "pl": "Znak zodiaku !{{jest|nie jest}} [[value]]",
-          "ko": "별자리 [[value]]는(은) !{{입니다|아닙니다}}"
+          "ko": "별자리 [[value]]는(은) !{{입니다|아닙니다}}",
+          "ar": "علامة البروج !{{هي|ليست}} [[value]]"
         },
         "args": [
           {
@@ -3674,7 +4269,8 @@
               "da": "Stjernetegn",
               "ru": "Знак зодиака",
               "pl": "Znak zodiaku",
-              "ko": "별자리"
+              "ko": "별자리",
+              "ar": "علامة البروج"
             },
             "values": [
               {
@@ -3691,7 +4287,8 @@
                   "da": "Vædderen",
                   "ru": "Овен",
                   "pl": "Baran",
-                  "ko": "양자리"
+                  "ko": "양자리",
+                  "ar": "الحمل"
                 }
               },
               {
@@ -3708,7 +4305,8 @@
                   "da": "Tyren",
                   "ru": "Телец",
                   "pl": "Byk",
-                  "ko": "황소자리"
+                  "ko": "황소자리",
+                  "ar": "الثور"
                 }
               },
               {
@@ -3725,7 +4323,8 @@
                   "da": "Tvillingen",
                   "ru": "Близнецы",
                   "pl": "Bliźnięta",
-                  "ko": "쌍둥이자리"
+                  "ko": "쌍둥이자리",
+                  "ar": "الجوزاء"
                 }
               },
               {
@@ -3742,7 +4341,8 @@
                   "da": "Krebsen",
                   "ru": "Рак",
                   "pl": "Rak",
-                  "ko": "게자리"
+                  "ko": "게자리",
+                  "ar": "السرطان"
                 }
               },
               {
@@ -3759,7 +4359,8 @@
                   "da": "Løven",
                   "ru": "Лев",
                   "pl": "Lew",
-                  "ko": "사자자리"
+                  "ko": "사자자리",
+                  "ar": "الأسد"
                 }
               },
               {
@@ -3776,7 +4377,8 @@
                   "da": "Jomfruen",
                   "ru": "Дева",
                   "pl": "Panna",
-                  "ko": "처녀자리"
+                  "ko": "처녀자리",
+                  "ar": "العذراء"
                 }
               },
               {
@@ -3793,7 +4395,8 @@
                   "da": "Vægten",
                   "ru": "Весы",
                   "pl": "Waga",
-                  "ko": "천칭자리"
+                  "ko": "천칭자리",
+                  "ar": "الميزان"
                 }
               },
               {
@@ -3810,7 +4413,8 @@
                   "da": "Skorpionen",
                   "ru": "Скорпион",
                   "pl": "Skorpion",
-                  "ko": "전갈자리"
+                  "ko": "전갈자리",
+                  "ar": "العقرب"
                 }
               },
               {
@@ -3827,7 +4431,8 @@
                   "da": "Skytte",
                   "ru": "Стрелец",
                   "pl": "Strzelec",
-                  "ko": "사수자리"
+                  "ko": "사수자리",
+                  "ar": "القوس"
                 }
               },
               {
@@ -3844,7 +4449,8 @@
                   "da": "Stenbukken",
                   "ru": "Козерог",
                   "pl": "Koziorożec",
-                  "ko": "염소자리"
+                  "ko": "염소자리",
+                  "ar": "الجدي"
                 }
               },
               {
@@ -3861,7 +4467,8 @@
                   "da": "Vandmanden",
                   "ru": "Водолей",
                   "pl": "Wodnik",
-                  "ko": "물병자리"
+                  "ko": "물병자리",
+                  "ar": "الدلو"
                 }
               },
               {
@@ -3878,7 +4485,8 @@
                   "da": "Fiskene",
                   "ru": "Рыбы",
                   "pl": "Ryby",
-                  "ko": "물고기자리"
+                  "ko": "물고기자리",
+                  "ar": "الحوت"
                 }
               }
             ]
@@ -3901,7 +4509,8 @@
           "da": "Næste trin i sekvensen",
           "ru": "Следующий шаг в последовательности",
           "pl": "Następny krok w sekwencji",
-          "ko": "시퀀스의 다음 단계"
+          "ko": "시퀀스의 다음 단계",
+          "ar": "الخطوة التالية في التسلسل"
         },
         "titleFormatted": {
           "en": "Next step in [[name]] ( 1—[[max_value]])",
@@ -3909,13 +4518,14 @@
           "de": "Nächster Schritt in [[name]] (1—[[max_value]])",
           "fr": "Étape suivante dans [[name]] (1—[[max_value]])",
           "it": "Passo successivo in [[name]] (1—[[max_value]])",
-          "sv": "Nästa steg i [[name]] (1—[[max_value]])",
-          "no": "Neste trinn i [[name]] (1—[[max_value]])",
+          "sv": "Nästa steg in [[name]] (1—[[max_value]])",
+          "no": "Neste trinn in [[name]] (1—[[max_value]])",
           "es": "Siguiente paso en [[name]] (1—[[max_value]])",
-          "da": "Næste trin i [[name]] (1—[[max_value]])",
+          "da": "Næste trin in [[name]] (1—[[max_value]])",
           "ru": "Следующий шаг в [[name]] (1—[[max_value]])",
           "pl": "Następny krok w [[name]] (1—[[max_value]])",
-          "ko": "[[name]]의 다음 단계 (1—[[max_value]])"
+          "ko": "[[name]]의 다음 단계 (1—[[max_value]])",
+          "ar": "الخطوة التالية في [[name]] (1—[[max_value]])"
         },
         "hint": {
           "en": "Go to the next step in a sequence. When the last value is reached, the sequence starts from the beginning.",
@@ -3929,7 +4539,8 @@
           "da": "Gå til næste trin i en sekvens. Når sidste værdi er nået starter sekvensen forfra.",
           "ru": "Перейти к следующему шагу последовательности. Когда достигнуто последнее значение, последовательность начинается заново.",
           "pl": "Przejdź do następnego kroku sekwencji. Po osiągnięciu ostatniej wartości sekwencja zaczyna się od początku.",
-          "ko": "시퀀스의 다음 단계로 이동합니다. 마지막 값에 도달하면 시퀀스가 처음부터 다시 시작됩니다."
+          "ko": "시퀀스의 다음 단계로 이동합니다. 마지막 값에 도달하면 시퀀스가 처음부터 다시 시작됩니다.",
+          "ar": "انتقل إلى الخطوة التالية في تسلسل. عندما يتم الوصول إلى القيمة الأخيرة، تبدأ السلسلة من البداية."
         },
         "args": [
           {
@@ -3947,7 +4558,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           },
           {
@@ -3967,7 +4579,8 @@
               "da": "Maks",
               "ru": "Максимум",
               "pl": "Maksimum",
-              "ko": "최대"
+              "ko": "최대",
+              "ar": "الحد الأقصى"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -3981,7 +4594,8 @@
               "da": "F.eks. 5",
               "ru": "Напр. 5",
               "pl": "Np. 5",
-              "ko": "예: 5"
+              "ko": "예: 5",
+              "ar": "مثال: 5"
             }
           }
         ]
@@ -4000,7 +4614,8 @@
           "da": "Næste trin i sekvensen",
           "ru": "Следующий шаг в последовательности",
           "pl": "Następny krok w sekwencji",
-          "ko": "시퀀스의 다음 단계"
+          "ko": "시퀀스의 다음 단계",
+          "ar": "الخطوة التالية في التسلسل"
         },
         "titleFormatted": {
           "en": "Next step in [[name]] ([[min_value]]—[[max_value]])",
@@ -4008,13 +4623,14 @@
           "de": "Nächster Schritt in [[name]] ([[min_value]]—[[max_value]])",
           "fr": "Étape suivante dans [[name]] ([[min_value]]—[[max_value]])",
           "it": "Passo successivo in [[name]] ([[min_value]]—[[max_value]])",
-          "sv": "Nästa steg i [[name]] ([[min_value]]—[[max_value]])",
-          "no": "Neste trinn i [[name]] ([[min_value]]—[[max_value]])",
+          "sv": "Nästa steg in [[name]] ([[min_value]]—[[max_value]])",
+          "no": "Neste trinn in [[name]] ([[min_value]]—[[max_value]])",
           "es": "Siguiente paso en [[name]] ([[min_value]]—[[max_value]])",
-          "da": "Næste trin i [[name]] ([[min_value]]—[[max_value]])",
+          "da": "Næste trin in [[name]] ([[min_value]]—[[max_value]])",
           "ru": "Следующий шаг в [[name]] ([[min_value]]—[[max_value]])",
           "pl": "Następny krok w [[name]] ([[min_value]]—[[max_value]])",
-          "ko": "[[name]]의 다음 단계 ([[min_value]]—[[max_value]])"
+          "ko": "[[name]]의 다음 단계 ([[min_value]]—[[max_value]])",
+          "ar": "الخطوة التالية في [[name]] ([[min_value]]—[[max_value]])"
         },
         "hint": {
           "en": "Go to the next step in a sequence. When the last value is reached, the sequence starts from the beginning.",
@@ -4028,7 +4644,8 @@
           "da": "Gå til næste trin i en sekvens. Når sidste værdi er nået starter sekvensen forfra.",
           "ru": "Перейти к следующему шагу последовательности. Когда достигнуто последнее значение, последовательность начинается заново.",
           "pl": "Przejdź do następnego kroku sekwencji. Po osiągnięciu ostatniej wartości sekwencja zaczyna się od początku.",
-          "ko": "시퀀스의 다음 단계로 이동합니다. 마지막 값에 도달하면 시퀀스가 처음부터 다시 시작됩니다."
+          "ko": "시퀀스의 다음 단계로 이동합니다. 마지막 값에 도달하면 시퀀스가 처음부터 다시 시작됩니다.",
+          "ar": "انتقل إلى الخطوة التالية في التسلسل. عندما يتم الوصول إلى القيمة الأخيرة، يبدأ التسلسل من البداية."
         },
         "args": [
           {
@@ -4046,7 +4663,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           },
           {
@@ -4066,7 +4684,8 @@
               "da": "Maks",
               "ru": "Максимум",
               "pl": "Maksimum",
-              "ko": "최대"
+              "ko": "최대",
+              "ar": "الأقصى"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -4080,7 +4699,8 @@
               "da": "F.eks. 5",
               "ru": "Напр. 5",
               "pl": "Np. 5",
-              "ko": "예: 5"
+              "ko": "예: 5",
+              "ar": "مثلاً: 5"
             }
           },
           {
@@ -4100,7 +4720,8 @@
               "da": "Min",
               "ru": "Минимум",
               "pl": "Minimum",
-              "ko": "최소"
+              "ko": "최소",
+              "ar": "الأدنى"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -4114,7 +4735,8 @@
               "da": "F.eks. -5",
               "ru": "Напр. -5",
               "pl": "Np. -5",
-              "ko": "예: -5"
+              "ko": "예: -5",
+              "ar": "مثلاً: -5"
             }
           }
         ]
@@ -4133,7 +4755,8 @@
           "da": "Indstil sekvens til",
           "ru": "Установить последовательность на",
           "pl": "Ustaw sekwencję na",
-          "ko": "시퀀스를 설정"
+          "ko": "시퀀스를 설정",
+          "ar": "تعيين التسلسل إلى"
         },
         "titleFormatted": {
           "en": "Set sequence [[name]] to [[value]]",
@@ -4147,7 +4770,8 @@
           "da": "Indstil sekvens [[name]] til [[value]]",
           "ru": "Установить последовательность [[name]] на [[value]]",
           "pl": "Ustaw sekwencję [[name]] na [[value]]",
-          "ko": "시퀀스 [[name]]을(를) [[value]]로 설정"
+          "ko": "시퀀스 [[name]]을(를) [[value]]로 설정",
+          "ar": "تعيين التسلسل [[name]] إلى [[value]]"
         },
         "hint": {
           "en": "Jump directly to a step in the sequence.",
@@ -4161,7 +4785,8 @@
           "da": "Hop direkte til et trin i sekvensen.",
           "ru": "Перейти напрямую к шагу в последовательности.",
           "pl": "Przejdź bezpośrednio do kroku w sekwencji.",
-          "ko": "시퀀스의 특정 단계로 바로 이동합니다."
+          "ko": "시퀀스의 특정 단계로 바로 이동합니다.",
+          "ar": "انتقل مباشرة إلى خطوة في التسلسل."
         },
         "args": [
           {
@@ -4179,7 +4804,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           },
           {
@@ -4199,7 +4825,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "قيمة"
             },
             "placeholder": {
               "en": "E.g. 5",
@@ -4213,7 +4840,8 @@
               "da": "F.eks. 5",
               "ru": "Напр. 5",
               "pl": "Np. 5",
-              "ko": "예: 5"
+              "ko": "예: 5",
+              "ar": "مثال 5"
             }
           }
         ]
@@ -4222,15 +4850,48 @@
         "id": "event_clear",
         "title": {
           "en": "Clear event",
-          "nl": "Leeg gebeurtenis"
+          "nl": "Leeg gebeurtenis",
+          "da": "Ryd begivenhed",
+          "de": "Ereignis löschen",
+          "es": "Borrar evento",
+          "fr": "Effacer l'événement",
+          "it": "Cancella evento",
+          "no": "Slett hendelse",
+          "sv": "Rensa händelse",
+          "pl": "Wyczyść wydarzenie",
+          "ru": "Очистить событие",
+          "ko": "이벤트 지우기",
+          "ar": "مسح الحدث"
         },
         "titleFormatted": {
           "en": "Clear event [[event]]",
-          "nl": "Leeg gebeurtenis [[event]]"
+          "nl": "Leeg gebeurtenis [[event]]",
+          "da": "Ryd begivenhed [[event]]",
+          "de": "Ereignis löschen [[event]]",
+          "es": "Borrar evento [[event]]",
+          "fr": "Effacer l'événement [[event]]",
+          "it": "Cancella evento [[event]]",
+          "no": "Slett hendelse [[event]]",
+          "sv": "Rensa händelse [[event]]",
+          "pl": "Wyczyść wydarzenie [[event]]",
+          "ru": "Очистить событие [[event]]",
+          "ko": "이벤트 지우기 [[event]]",
+          "ar": "مسح الحدث [[event]]"
         },
         "hint": {
           "en": "Clears all stored history for the event.",
-          "nl": "Leeft alle opgeslagen geschiedenis voor de gebeurtenis."
+          "nl": "Leeft alle opgeslagen geschiedenis voor de gebeurtenis.",
+          "da": "Nulstiller al gemt historik for begivenheden.",
+          "de": "Löscht den gesamten gespeicherten Verlauf für das Ereignis.",
+          "es": "Borra todo el historial almacenado para el evento.",
+          "fr": "Efface tout l'historique enregistré pour l'événement.",
+          "it": "Cancella tutta la cronologia memorizzata per l'evento.",
+          "no": "Sletter all lagret historikk for hendelsen.",
+          "sv": "Rensar all sparad historik för händelsen.",
+          "pl": "Czyści całą zapisaną historię dla wydarzenia.",
+          "ru": "Очищает всю сохранённую историю для события.",
+          "ko": "이벤트에 대한 저장된 모든 기록을 지웁니다.",
+          "ar": "يمسح كل التاريخ المخزن للحدث."
         },
         "args": [
           {
@@ -4238,7 +4899,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Wydarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           }
         ]
@@ -4247,30 +4919,96 @@
         "id": "event_clear_all",
         "title": {
           "en": "Clear all events",
-          "nl": "Leeg alle gebeurtenissen"
+          "nl": "Leeg alle gebeurtenissen",
+          "da": "Ryd alle begivenheder",
+          "de": "Alle Ereignisse löschen",
+          "es": "Borrar todos los eventos",
+          "fr": "Effacer tous les événements",
+          "it": "Cancella tutti gli eventi",
+          "no": "Tøm alle hendelser",
+          "sv": "Rensa alla händelser",
+          "pl": "Wyczyść wszystkie wydarzenia",
+          "ru": "Очистить все события",
+          "ko": "모든 이벤트 지우기",
+          "ar": "مسح جميع الأحداث"
         },
         "titleFormatted": {
           "en": "Clear all events",
-          "nl": "Leeg alle gebeurtenissen"
+          "nl": "Leeg alle gebeurtenissen",
+          "da": "Ryd alle begivenheder",
+          "de": "Alle Ereignisse löschen",
+          "es": "Borrar todos los eventos",
+          "fr": "Effacer tous les événements",
+          "it": "Cancella tutti gli eventi",
+          "no": "Tøm alle hendelser",
+          "sv": "Rensa alla händelser",
+          "pl": "Wyczyść wszystkie wydarzenia",
+          "ru": "Очистить все события",
+          "ko": "모든 이벤트 지우기",
+          "ar": "مسح جميع الأحداث"
         },
         "hint": {
           "en": "Clears all stored history for all events.",
-          "nl": "Leeft alle opgeslagen geschiedenis voor alle gebeurtenissen."
+          "nl": "Leeft alle opgeslagen geschiedenis voor alle gebeurtenissen.",
+          "da": "Rydder al gemt historie for alle begivenheder.",
+          "de": "Löscht den gesamten gespeicherten Verlauf für alle Ereignisse.",
+          "es": "Borra todo el historial almacenado para todos los eventos.",
+          "fr": "Efface tout l'historique stocké pour tous les événements.",
+          "it": "Cancella tutta la cronologia memorizzata per tutti gli eventi.",
+          "no": "Sletter all lagret historie for alle hendelser.",
+          "sv": "Rensar all sparad historik för alla händelser.",
+          "pl": "Czyści całą zapisaną historię dla wszystkich wydarzeń.",
+          "ru": "Стирает всю сохраненную историю для всех событий.",
+          "ko": "모든 이벤트에 대한 저장된 기록을 지웁니다.",
+          "ar": "يمسح جميع السجل المحفوظ لجميع الأحداث."
         }
       },
       {
         "id": "event_trigger",
         "title": {
           "en": "Trigger event",
-          "nl": "Trigger gebeurtenis"
+          "nl": "Trigger gebeurtenis",
+          "da": "Udløs begivenhed",
+          "de": "Ereignis auslösen",
+          "es": "Activar evento",
+          "fr": "Déclencher événement",
+          "it": "Attiva evento",
+          "no": "Utløse hendelse",
+          "sv": "Utlös händelse",
+          "pl": "Wyzwól zdarzenie",
+          "ru": "Запустить событие",
+          "ko": "이벤트 트리거",
+          "ar": "تشغيل الحدث"
         },
         "titleFormatted": {
           "en": "Trigger event [[event]]",
-          "nl": "Trigger gebeurtenis [[event]]"
+          "nl": "Trigger gebeurtenis [[event]]",
+          "da": "Udløs begivenhed [[event]]",
+          "de": "Ereignis auslösen [[event]]",
+          "es": "Activar evento [[event]]",
+          "fr": "Déclencher événement [[event]]",
+          "it": "Attiva evento [[event]]",
+          "no": "Utøve hendelse [[event]]",
+          "sv": "Utlös händelse [[event]]",
+          "pl": "Wyzwól zdarzenie [[event]]",
+          "ru": "Запустить событие [[event]]",
+          "ko": "이벤트 트리거 [[event]]",
+          "ar": "تشغيل الحدث [[event]]"
         },
         "hint": {
           "en": "Triggers the event and leaves a history entry.",
-          "nl": "Triggert de gebeurtenis en slaat een geschiedenis-item op."
+          "nl": "Triggert de gebeurtenis en slaat een geschiedenis-item op.",
+          "da": "Udløser begivenheden og efterlader en historikpost.",
+          "de": "Löst das Ereignis aus und hinterlässt einen Verlaufseintrag.",
+          "es": "Activa el evento y deja una entrada en el historial.",
+          "fr": "Déclenche l'événement et laisse une entrée dans l'historique.",
+          "it": "Attiva l'evento e lascia una voce nella cronologia.",
+          "no": "Utløser hendelsen og registrerer et historikkinnlegg.",
+          "sv": "Utlöser händelsen och lämnar ett historikinlägg.",
+          "pl": "Wyzwala zdarzenie i pozostawia wpis w historii.",
+          "ru": "Активирует событие и оставляет запись в истории.",
+          "ko": "이벤트를 트리거하고 히스토리 항목을 남깁니다.",
+          "ar": "يشغل الحدث ويترك مدخلًا في السجل."
         },
         "args": [
           {
@@ -4278,7 +5016,18 @@
             "name": "event",
             "title": {
               "en": "Event",
-              "nl": "Gebeurtenis"
+              "nl": "Gebeurtenis",
+              "da": "Begivenhed",
+              "de": "Ereignis",
+              "es": "Evento",
+              "fr": "Événement",
+              "it": "Evento",
+              "no": "Hendelse",
+              "sv": "Händelse",
+              "pl": "Zdarzenie",
+              "ru": "Событие",
+              "ko": "이벤트",
+              "ar": "حدث"
             }
           }
         ]
@@ -4297,7 +5046,8 @@
           "da": "Aktivér flag",
           "ru": "Активировать флаг",
           "pl": "Aktywuj flagę",
-          "ko": "플래그 활성화"
+          "ko": "플래그 활성화",
+          "ar": "تفعيل العلم"
         },
         "titleFormatted": {
           "en": "Activate flag [[flag]]",
@@ -4311,7 +5061,8 @@
           "da": "Aktivér flag [[flag]]",
           "ru": "Активировать флаг [[flag]]",
           "pl": "Aktywuj flagę [[flag]]",
-          "ko": "플래그 [[flag]] 활성화"
+          "ko": "플래그 [[flag]] 활성화",
+          "ar": "تفعيل العلم [[flag]]"
         },
         "hint": {
           "en": "Activates a defined flag.",
@@ -4325,7 +5076,8 @@
           "da": "Aktiverer et defineret flag.",
           "ru": "Активирует определенный флаг.",
           "pl": "Aktywuje zdefiniowaną flagę.",
-          "ko": "정의된 플래그를 활성화합니다."
+          "ko": "정의된 플래그를 활성화합니다.",
+          "ar": "يفعل علماً محدداً"
         },
         "args": [
           {
@@ -4343,7 +5095,8 @@
               "da": "Flag",
               "ru": "Флаг",
               "pl": "Flaga",
-              "ko": "플래그"
+              "ko": "플래그",
+              "ar": "علم"
             }
           }
         ]
@@ -4362,7 +5115,8 @@
           "da": "Deaktivér flag",
           "ru": "Деактивировать флаг",
           "pl": "Dezaktywuj flagę",
-          "ko": "플래그 비활성화"
+          "ko": "플래그 비활성화",
+          "ar": "تعطيل العلم"
         },
         "titleFormatted": {
           "en": "Deactivate flag [[flag]]",
@@ -4376,7 +5130,8 @@
           "da": "Deaktivér flag [[flag]]",
           "ru": "Деактивировать флаг [[flag]]",
           "pl": "Dezaktywuj flagę [[flag]]",
-          "ko": "플래그 [[flag]] 비활성화"
+          "ko": "플래그 [[flag]] 비활성화",
+          "ar": "تعطيل العلم [[flag]]"
         },
         "hint": {
           "en": "Deactivates a defined flag.",
@@ -4390,7 +5145,8 @@
           "da": "Deaktiverer et defineret flag.",
           "ru": "Деактивирует определенный флаг.",
           "pl": "Dezaktywuje zdefiniowaną flagę.",
-          "ko": "정의된 플래그를 비활성화합니다."
+          "ko": "정의된 플래그를 비활성화합니다.",
+          "ar": "يعطل علم محدد."
         },
         "args": [
           {
@@ -4408,7 +5164,8 @@
               "da": "Flag",
               "ru": "Флаг",
               "pl": "Flaga",
-              "ko": "플래그"
+              "ko": "플래그",
+              "ar": "علم"
             }
           }
         ]
@@ -4427,7 +5184,8 @@
           "da": "Skift flag",
           "ru": "Переключить флаг",
           "pl": "Przełącz flagę",
-          "ko": "플래그 전환"
+          "ko": "플래그 전환",
+          "ar": "تبديل العلم"
         },
         "titleFormatted": {
           "en": "Toggle flag [[flag]]",
@@ -4441,7 +5199,8 @@
           "da": "Skift flag [[flag]]",
           "ru": "Переключить флаг [[flag]]",
           "pl": "Przełącz flagę [[flag]]",
-          "ko": "플래그 [[flag]] 전환"
+          "ko": "플래그 [[flag]] 전환",
+          "ar": "تبديل العلم [[flag]]"
         },
         "hint": {
           "en": "Turns the flag on if it’s off, and off if it’s on.",
@@ -4455,7 +5214,8 @@
           "da": "Tænder flaget hvis det er slukket og slukker det hvis det er tændt.",
           "ru": "Включает флаг если он выключен и выключает если он включён.",
           "pl": "Włącza flagę gdy jest wyłączona i wyłącza gdy jest włączona.",
-          "ko": "플래그가 꺼져 있으면 켜고 켜져 있으면 끕니다."
+          "ko": "플래그가 꺼져 있으면 켜고 켜져 있으면 끕니다.",
+          "ar": "يشغّل العلم إذا كان مطفأ، ويطفئه إذا كان مشتغلاً."
         },
         "args": [
           {
@@ -4473,7 +5233,8 @@
               "da": "Flag",
               "ru": "Флаг",
               "pl": "Flaga",
-              "ko": "플래그"
+              "ko": "플래그",
+              "ar": "علم"
             }
           }
         ]
@@ -4482,11 +5243,33 @@
         "id": "label_clear",
         "title": {
           "en": "Clear label",
-          "nl": "Maak label leeg"
+          "nl": "Maak label leeg",
+          "da": "Ryd etiket",
+          "de": "Etikett löschen",
+          "es": "Limpiar etiqueta",
+          "fr": "Effacer l'étiquette",
+          "it": "Cancella etichetta",
+          "no": "Tøm etikett",
+          "sv": "Rensa etikett",
+          "pl": "Wyczyść etykietę",
+          "ru": "Очистить метку",
+          "ko": "라벨 지우기",
+          "ar": "مسح الملصق"
         },
         "titleFormatted": {
           "en": "Clear label [[label]]",
-          "nl": "Maak label [[label]] leeg"
+          "nl": "Maak label [[label]] leeg",
+          "da": "Ryd etiket [[label]]",
+          "de": "Etikett löschen [[label]]",
+          "es": "Limpiar etiqueta [[label]]",
+          "fr": "Effacer l'étiquette [[label]]",
+          "it": "Cancella etichetta [[label]]",
+          "no": "Tøm etikett [[label]]",
+          "sv": "Rensa etikett [[label]]",
+          "pl": "Wyczyść etykietę [[label]]",
+          "ru": "Очистить метку [[label]]",
+          "ko": "라벨 지우기 [[label]]",
+          "ar": "مسح الملصق [[label]]"
         },
         "args": [
           {
@@ -4494,7 +5277,18 @@
             "name": "label",
             "title": {
               "en": "label",
-              "nl": "Label"
+              "nl": "Label",
+              "da": "etiket",
+              "de": "Etikett",
+              "es": "etiqueta",
+              "fr": "étiquette",
+              "it": "etichetta",
+              "no": "etikett",
+              "sv": "etikett",
+              "pl": "etykieta",
+              "ru": "метка",
+              "ko": "라벨",
+              "ar": "ملصق"
             }
           }
         ]
@@ -4503,11 +5297,33 @@
         "id": "label_set",
         "title": {
           "en": "Set label",
-          "nl": "Stel label in"
+          "nl": "Stel label in",
+          "da": "Indstil etiket",
+          "de": "Label festlegen",
+          "es": "Establecer etiqueta",
+          "fr": "Définir l'étiquette",
+          "it": "Imposta etichetta",
+          "no": "Sett etikett",
+          "sv": "Ställ in etikett",
+          "pl": "Ustaw etykietę",
+          "ru": "Установить ярлык",
+          "ko": "레이블 설정",
+          "ar": "تعيين الملصق"
         },
         "titleFormatted": {
           "en": "Set label [[label]] to [[value]]",
-          "nl": "Stel label [[label]] in op [[value]]"
+          "nl": "Stel label [[label]] in op [[value]]",
+          "da": "Indstil etiket [[label]] til [[value]]",
+          "de": "Label [[label]] auf [[value]] festlegen",
+          "es": "Establecer etiqueta [[label]] a [[value]]",
+          "fr": "Définir l'étiquette [[label]] sur [[value]]",
+          "it": "Imposta etichetta [[label]] su [[value]]",
+          "no": "Sett etikett [[label]] til [[value]]",
+          "sv": "Ställ in etikett [[label]] till [[value]]",
+          "pl": "Ustaw etykietę [[label]] na [[value]]",
+          "ru": "Установить ярлык [[label]] на [[value]]",
+          "ko": "[[label]] 레이블을 [[value]]으로 설정",
+          "ar": "تعيين الملصق [[label]] إلى [[value]]"
         },
         "args": [
           {
@@ -4515,7 +5331,18 @@
             "name": "label",
             "title": {
               "en": "label",
-              "nl": "Label"
+              "nl": "Label",
+              "da": "etiket",
+              "de": "Label",
+              "es": "etiqueta",
+              "fr": "étiquette",
+              "it": "etichetta",
+              "no": "etikett",
+              "sv": "etikett",
+              "pl": "etykieta",
+              "ru": "ярлык",
+              "ko": "레이블",
+              "ar": "ملصق"
             }
           },
           {
@@ -4523,7 +5350,18 @@
             "name": "value",
             "title": {
               "en": "Value",
-              "nl": "Waarde"
+              "nl": "Waarde",
+              "da": "Værdi",
+              "de": "Wert",
+              "es": "Valor",
+              "fr": "Valeur",
+              "it": "Valore",
+              "no": "Verdi",
+              "sv": "Värde",
+              "pl": "Wartość",
+              "ru": "Значение",
+              "ko": "값",
+              "ar": "قيمة"
             }
           }
         ]
@@ -4542,7 +5380,8 @@
           "da": "Aktivér tilstand",
           "ru": "Активировать режим",
           "pl": "Aktywuj tryb",
-          "ko": "모드 활성화"
+          "ko": "모드 활성화",
+          "ar": "تفعيل الوضع"
         },
         "titleFormatted": {
           "en": "Activate [[name]]",
@@ -4556,7 +5395,8 @@
           "da": "Aktivér [[name]]",
           "ru": "Активировать [[name]]",
           "pl": "Aktywuj [[name]]",
-          "ko": "[[name]] 활성화"
+          "ko": "[[name]] 활성화",
+          "ar": "تفعيل [[name]]"
         },
         "hint": {
           "en": "Activates a defined mode and deactivates all other modes.",
@@ -4570,7 +5410,8 @@
           "da": "Aktiverer en defineret tilstand og deaktiverer alle andre tilstande.",
           "ru": "Активирует определенный режим и деактивирует все остальные режимы.",
           "pl": "Aktywuje zdefiniowany tryb i dezaktywuje wszystkie inne tryby.",
-          "ko": "정의된 모드를 활성화하고 다른 모든 모드를 비활성화합니다."
+          "ko": "정의된 모드를 활성화하고 다른 모든 모드를 비활성화합니다.",
+          "ar": "يقوم بتفعيل وضع مُحدد وإلغاء تفعيل كل الأوضاع الأخرى."
         },
         "args": [
           {
@@ -4588,7 +5429,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "وضع"
             }
           }
         ]
@@ -4607,7 +5449,8 @@
           "da": "Deaktivér tilstand",
           "ru": "Деактивировать режим",
           "pl": "Dezaktywuj tryb",
-          "ko": "모드 비활성화"
+          "ko": "모드 비활성화",
+          "ar": "إلغاء تنشيط الوضع"
         },
         "titleFormatted": {
           "en": "Deactivate [[name]]",
@@ -4621,7 +5464,8 @@
           "da": "Deaktivér [[name]]",
           "ru": "Деактивировать [[name]]",
           "pl": "Dezaktywuj [[name]]",
-          "ko": "[[name]] 비활성화"
+          "ko": "[[name]] 비활성화",
+          "ar": "إلغاء تنشيط [[name]]"
         },
         "hint": {
           "en": "Deactivates a defined mode.",
@@ -4635,7 +5479,8 @@
           "da": "Deaktiverer en defineret tilstand.",
           "ru": "Деактивирует определенный режим.",
           "pl": "Dezaktywuje zdefiniowany tryb.",
-          "ko": "정의된 모드를 비활성화합니다."
+          "ko": "정의된 모드를 비활성화합니다.",
+          "ar": "يلغي تنشيط وضع معين."
         },
         "args": [
           {
@@ -4653,7 +5498,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "وضع"
             }
           }
         ]
@@ -4672,7 +5518,8 @@
           "da": "Genaktivér tilstand",
           "ru": "Повторно активировать режим",
           "pl": "Ponownie aktywuj tryb",
-          "ko": "모드를 다시 활성화"
+          "ko": "모드를 다시 활성화",
+          "ar": "أعد تفعيل النمط"
         },
         "titleFormatted": {
           "en": "Reactivate [[name]]",
@@ -4686,7 +5533,8 @@
           "da": "Genaktivér [[name]]",
           "ru": "Повторно активировать [[name]]",
           "pl": "Ponownie aktywuj [[name]]",
-          "ko": "[[name]] 다시 활성화"
+          "ko": "[[name]] 다시 활성화",
+          "ar": "أعد تفعيل [[name]]"
         },
         "hint": {
           "en": "Re-triggers all 'mode is activated' cards.",
@@ -4700,7 +5548,8 @@
           "da": "Gentrigger alle 'tilstand er aktiveret'-kort.",
           "ru": "Повторно запускает все карточки «режим активирован».",
           "pl": "Ponownie wyzwala wszystkie karty «tryb jest aktywowany».",
-          "ko": "모든 '모드가 활성화되었습니다' 카드를 다시 트리거합니다."
+          "ko": "모든 '모드가 활성화되었습니다' 카드를 다시 트리거합니다.",
+          "ar": "يعيد تفعيل جميع البطاقات \"تم تفعيل النمط\"."
         },
         "args": [
           {
@@ -4718,7 +5567,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "نمط"
             }
           }
         ]
@@ -4737,7 +5587,8 @@
           "da": "Skift tilstand",
           "ru": "Переключить режим",
           "pl": "Przełącz tryb",
-          "ko": "모드 전환"
+          "ko": "모드 전환",
+          "ar": "تبديل الوضع"
         },
         "titleFormatted": {
           "en": "Toggle [[name]]",
@@ -4751,7 +5602,8 @@
           "da": "Skift [[name]]",
           "ru": "Переключить [[name]]",
           "pl": "Przełącz [[name]]",
-          "ko": "[[name]] 전환"
+          "ko": "[[name]] 전환",
+          "ar": "تبديل [[name]]"
         },
         "hint": {
           "en": "Turns the mode on if it’s off, and off if it’s on.",
@@ -4764,8 +5616,9 @@
           "es": "Activa el modo si está desactivado y lo desactiva si está activado.",
           "da": "Aktiverer tilstanden hvis den er slukket og deaktiverer den hvis den er tændt.",
           "ru": "Включает режим если он выключен и выключает если он включен.",
-          "pl": "Włącza tryb jeśli jest wyłączony i wyłącza jeśli jest włączony.",
-          "ko": "모드가 꺼져 있으면 켜고 켜져 있으면 끕니다."
+          "pl": "Włącza tryb jeśli jest wyłączony i wyłącza если jest włączony.",
+          "ko": "모드가 꺼져 있으면 켜고 켜져 있으면 끕니다.",
+          "ar": "يشغل الوضع إذا كان مغلقًا، ويغلقه إذا كان مفتوحًا."
         },
         "args": [
           {
@@ -4783,7 +5636,8 @@
               "da": "Tilstand",
               "ru": "Режим",
               "pl": "Tryb",
-              "ko": "모드"
+              "ko": "모드",
+              "ar": "وضع"
             }
           }
         ]
@@ -4802,7 +5656,8 @@
           "da": "Nulstil no-repeat-vindue",
           "ru": "Сбросить окно без повторов",
           "pl": "Zresetuj okno braku powtórzeń",
-          "ko": "반복 금지 창 재설정"
+          "ko": "반복 금지 창 재설정",
+          "ar": "إعادة تعيين نافذة عدم التكرار"
         },
         "titleFormatted": {
           "en": "Reset no-repeat window for [[window]]",
@@ -4816,7 +5671,8 @@
           "da": "Nulstil no-repeat-vindue for [[window]]",
           "ru": "Сбросить окно без повторов для [[window]]",
           "pl": "Zresetuj okno braku powtórzeń dla [[window]]",
-          "ko": "[[window]]의 반복 금지 창 재설정"
+          "ko": "[[window]]의 반복 금지 창 재설정",
+          "ar": "إعادة تعيين نافذة عدم التكرار لـ [[window]]"
         },
         "hint": {
           "en": "Clears the stored timestamp for the given identifier.",
@@ -4830,7 +5686,8 @@
           "da": "Rydder det gemte tidsstempel for den angivne identifikator.",
           "ru": "Очищает сохранённую временную метку для указанного идентификатора.",
           "pl": "Czyści zapisany znacznik czasu dla podanego identyfikatora.",
-          "ko": "지정된 식별자의 저장된 타임스탬프를 지웁니다."
+          "ko": "지정된 식별자의 저장된 타임스탬프를 지웁니다.",
+          "ar": "يمسح الطابع الزمني المخزن للمعرّف المحدد."
         },
         "args": [
           {
@@ -4848,7 +5705,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "اسم"
             }
           }
         ]
@@ -4867,7 +5725,8 @@
           "da": "Giv et tilfældigt faktum",
           "ru": "Дай случайный факт",
           "pl": "Podaj losowy fakt",
-          "ko": "무작위 사실 제공"
+          "ko": "무작위 사실 제공",
+          "ar": "أعط حقيقة عشوائية"
         },
         "titleFormatted": {
           "en": "Give a random fact",
@@ -4881,7 +5740,8 @@
           "da": "Giv et tilfældigt faktum",
           "ru": "Дай случайный факт",
           "pl": "Podaj losowy fakt",
-          "ko": "무작위 사실 제공"
+          "ko": "무작위 사실 제공",
+          "ar": "أعط حقيقة عشوائية"
         },
         "tokens": [
           {
@@ -4899,7 +5759,8 @@
               "da": "Tilfældigt faktum",
               "ru": "Случайный факт",
               "pl": "Losowy fakt",
-              "ko": "무작위 사실"
+              "ko": "무작위 사실",
+              "ar": "حقيقة عشوائية"
             }
           }
         ]
@@ -4918,7 +5779,8 @@
           "da": "Send signal",
           "ru": "Отправить сигнал",
           "pl": "Wyślij sygnał",
-          "ko": "신호 보내기"
+          "ko": "신호 보내기",
+          "ar": "إرسال إشارة"
         },
         "titleFormatted": {
           "en": "Send signal [[signal]]",
@@ -4932,7 +5794,8 @@
           "da": "Send signalet [[signal]]",
           "ru": "Отправить сигнал [[signal]]",
           "pl": "Wyślij sygnał [[signal]]",
-          "ko": "신호 [[signal]] 보내기"
+          "ko": "신호 [[signal]] 보내기",
+          "ar": "إرسال إشارة [[signal]]"
         },
         "hint": {
           "en": "Sends a signal that can be received by the 'Receive signal' card.",
@@ -4946,7 +5809,8 @@
           "da": "Sender et signal der kan modtages af kortet \"Modtag signal\".",
           "ru": "Отправляет сигнал который может быть получен картой «Получить сигнал».",
           "pl": "Wysyła sygnał który może zostać odebrany przez kartę „Odbierz sygnał”.",
-          "ko": "‘신호 받기’ 카드에서 받을 수 있는 신호를 보냅니다."
+          "ko": "‘신호 받기’ 카드에서 받을 수 있는 신호를 보냅니다.",
+          "ar": "يرسل إشارة يمكن استقبالها بواسطة بطاقة \"استقبال الإشارة\"."
         },
         "args": [
           {
@@ -4964,7 +5828,8 @@
               "da": "Signal",
               "ru": "Сигнал",
               "pl": "Sygnał",
-              "ko": "신호"
+              "ko": "신호",
+              "ar": "إشارة"
             }
           }
         ]
@@ -4983,7 +5848,8 @@
           "da": "Sæt skydeværdi",
           "ru": "Установить значение ползунка",
           "pl": "Ustaw wartość suwaka",
-          "ko": "슬라이더 값 설정"
+          "ko": "슬라이더 값 설정",
+          "ar": "تعيين قيمة المنزلق"
         },
         "titleFormatted": {
           "en": "Set slider [[slider]] to [[value]]",
@@ -4997,7 +5863,8 @@
           "da": "Sæt skyderen [[slider]] til [[value]]",
           "ru": "Установить ползунок [[slider]] на [[value]]",
           "pl": "Ustaw suwak [[slider]] na [[value]]",
-          "ko": "슬라이더 [[slider]]를 [[value]]로 설정"
+          "ko": "슬라이더 [[slider]]를 [[value]]로 설정",
+          "ar": "تعيين المنزلق [[slider]] إلى [[value]]"
         },
         "hint": {
           "en": "Sets the selected slider widget to a numeric value.",
@@ -5011,7 +5878,8 @@
           "da": "Sætter den valgte skyder-widget til en numerisk værdi.",
           "ru": "Устанавливает выбранный ползунок на числовое значение.",
           "pl": "Ustawia wybrany suwak na wartość liczbową.",
-          "ko": "선택한 슬라이더 위젯을 숫자 값으로 설정합니다."
+          "ko": "선택한 슬라이더 위젯을 숫자 값으로 설정합니다.",
+          "ar": "يضبط عنصر واجهة المنزلق المحدد على قيمة رقمية."
         },
         "args": [
           {
@@ -5029,7 +5897,8 @@
               "da": "Skyder",
               "ru": "Ползунок",
               "pl": "Suwak",
-              "ko": "슬라이더"
+              "ko": "슬라이더",
+              "ar": "المنزلق"
             }
           },
           {
@@ -5053,7 +5922,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             }
           }
         ]
@@ -5072,7 +5942,8 @@
           "da": "Sæt timer på pause",
           "ru": "Пауза таймера",
           "pl": "Wstrzymaj timer",
-          "ko": "타이머 일시정지"
+          "ko": "타이머 일시정지",
+          "ar": "إيقاف المؤقت مؤقتًا"
         },
         "titleFormatted": {
           "en": "Pause timer [[timer]]",
@@ -5086,7 +5957,8 @@
           "da": "Sæt timeren [[timer]] på pause",
           "ru": "Поставить таймер [[timer]] на паузу",
           "pl": "Wstrzymaj timer [[timer]]",
-          "ko": "[[timer]] 타이머 일시정지"
+          "ko": "[[timer]] 타이머 일시정지",
+          "ar": "إيقاف المؤقت [[timer]] مؤقتًا"
         },
         "args": [
           {
@@ -5104,7 +5976,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -5123,7 +5996,8 @@
           "da": "Genoptag timer",
           "ru": "Возобновить таймер",
           "pl": "Wznów timer",
-          "ko": "타이머 재개"
+          "ko": "타이머 재개",
+          "ar": "استئناف المؤقت"
         },
         "titleFormatted": {
           "en": "Resume timer [[timer]]",
@@ -5137,7 +6011,8 @@
           "da": "Genoptag timeren [[timer]]",
           "ru": "Возобновить таймер [[timer]]",
           "pl": "Wznów timer [[timer]]",
-          "ko": "[[timer]] 타이머 재개"
+          "ko": "[[timer]] 타이머 재개",
+          "ar": "استئناف المؤقت [[timer]]"
         },
         "args": [
           {
@@ -5155,7 +6030,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -5174,7 +6050,8 @@
           "da": "Indstil timer",
           "ru": "Установить таймер",
           "pl": "Ustaw timer",
-          "ko": "타이머 설정"
+          "ko": "타이머 설정",
+          "ar": "ضبط المؤقت"
         },
         "titleFormatted": {
           "en": "Set timer [[timer]] to [[duration]] [[unit]]",
@@ -5188,7 +6065,8 @@
           "da": "Indstil timeren [[timer]] til [[duration]] [[unit]]",
           "ru": "Установить таймер [[timer]] на [[duration]] [[unit]]",
           "pl": "Ustaw timer [[timer]] na [[duration]] [[unit]]",
-          "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 설정"
+          "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 설정",
+          "ar": "ضبط المؤقت [[timer]] إلى [[duration]] [[unit]]"
         },
         "hint": {
           "en": "Sets the remaining time of the timer.",
@@ -5202,7 +6080,8 @@
           "da": "Indstiller den resterende tid på timeren.",
           "ru": "Устанавливает оставшееся время таймера.",
           "pl": "Ustawia pozostały czas timera.",
-          "ko": "타이머의 남은 시간을 설정합니다."
+          "ko": "타이머의 남은 시간을 설정합니다.",
+          "ar": "يضبط الوقت المتبقي للمؤقت."
         },
         "args": [
           {
@@ -5220,7 +6099,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           },
           {
@@ -5240,7 +6120,8 @@
               "da": "Varighed",
               "ru": "Длительность",
               "pl": "Czas trwania",
-              "ko": "지속 시간"
+              "ko": "지속 시간",
+              "ar": "المدة الزمنية"
             },
             "placeholder": {
               "en": "E.g. 10",
@@ -5254,7 +6135,8 @@
               "da": "Fx 10",
               "ru": "Напр. 10",
               "pl": "Np. 10",
-              "ko": "예: 10"
+              "ko": "예: 10",
+              "ar": "مثال: 10"
             }
           },
           {
@@ -5272,7 +6154,8 @@
               "da": "Enhed",
               "ru": "Единица",
               "pl": "Jednostka",
-              "ko": "단위"
+              "ko": "단위",
+              "ar": "الوحدة"
             },
             "values": [
               {
@@ -5289,7 +6172,8 @@
                   "da": "sekunder",
                   "ru": "секунды",
                   "pl": "sekundy",
-                  "ko": "초"
+                  "ko": "초",
+                  "ar": "ثواني"
                 }
               },
               {
@@ -5306,7 +6190,8 @@
                   "da": "minutter",
                   "ru": "минуты",
                   "pl": "minuty",
-                  "ko": "분"
+                  "ko": "분",
+                  "ar": "دقائق"
                 }
               },
               {
@@ -5323,7 +6208,8 @@
                   "da": "timer",
                   "ru": "часы",
                   "pl": "godziny",
-                  "ko": "시간"
+                  "ko": "시간",
+                  "ar": "ساعات"
                 }
               },
               {
@@ -5340,7 +6226,8 @@
                   "da": "dage",
                   "ru": "дни",
                   "pl": "dni",
-                  "ko": "일"
+                  "ko": "일",
+                  "ar": "أيام"
                 }
               }
             ]
@@ -5361,7 +6248,8 @@
           "da": "Start timer",
           "ru": "Запустить таймер",
           "pl": "Uruchom timer",
-          "ko": "타이머 시작"
+          "ko": "타이머 시작",
+          "ar": "ابدأ المؤقت"
         },
         "titleFormatted": {
           "en": "Start timer [[timer]] with [[duration]] [[unit]]",
@@ -5375,7 +6263,8 @@
           "da": "Start timeren [[timer]] med [[duration]] [[unit]]",
           "ru": "Запустить таймер [[timer]] на [[duration]] [[unit]]",
           "pl": "Uruchom timer [[timer]] na [[duration]] [[unit]]",
-          "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 시작"
+          "ko": "타이머 [[timer]]을 [[duration]] [[unit]]로 시작",
+          "ar": "ابدأ المؤقت [[timer]] بمدة [[duration]] [[unit]]"
         },
         "hint": {
           "en": "Starts a fresh timer with the specified duration.",
@@ -5389,7 +6278,8 @@
           "da": "Starter en ny timer med den angivne varighed.",
           "ru": "Запускает новый таймер с указанной длительностью.",
           "pl": "Uruchamia nowy timer z podanym czasem trwania.",
-          "ko": "지정된 시간으로 새 타이머를 시작합니다."
+          "ko": "지정된 시간으로 새 타이머를 시작합니다.",
+          "ar": "يبدأ مؤقتًا جديدًا بالمدة المحددة."
         },
         "args": [
           {
@@ -5407,7 +6297,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           },
           {
@@ -5427,7 +6318,8 @@
               "da": "Varighed",
               "ru": "Длительность",
               "pl": "Czas trwania",
-              "ko": "지속 시간"
+              "ko": "지속 시간",
+              "ar": "المدة"
             },
             "placeholder": {
               "en": "E.g. 10",
@@ -5441,7 +6333,8 @@
               "da": "Fx 10",
               "ru": "Напр. 10",
               "pl": "Np. 10",
-              "ko": "예: 10"
+              "ko": "예: 10",
+              "ar": "مثال: 10"
             }
           },
           {
@@ -5459,7 +6352,8 @@
               "da": "Enhed",
               "ru": "Единица",
               "pl": "Jednostka",
-              "ko": "단위"
+              "ko": "단위",
+              "ar": "الوحدة"
             },
             "values": [
               {
@@ -5476,7 +6370,8 @@
                   "da": "sekunder",
                   "ru": "секунды",
                   "pl": "sekundy",
-                  "ko": "초"
+                  "ko": "초",
+                  "ar": "ثواني"
                 }
               },
               {
@@ -5493,7 +6388,8 @@
                   "da": "minutter",
                   "ru": "минуты",
                   "pl": "minuty",
-                  "ko": "분"
+                  "ko": "분",
+                  "ar": "دقائق"
                 }
               },
               {
@@ -5510,7 +6406,8 @@
                   "da": "timer",
                   "ru": "часы",
                   "pl": "godziny",
-                  "ko": "시간"
+                  "ko": "시간",
+                  "ar": "ساعات"
                 }
               },
               {
@@ -5527,7 +6424,8 @@
                   "da": "dage",
                   "ru": "дни",
                   "pl": "dni",
-                  "ko": "일"
+                  "ko": "일",
+                  "ar": "أيام"
                 }
               }
             ]
@@ -5548,7 +6446,8 @@
           "da": "Stop timer",
           "ru": "Остановить таймер",
           "pl": "Zatrzymaj timer",
-          "ko": "타이머 중지"
+          "ko": "타이머 중지",
+          "ar": "إيقاف المؤقت"
         },
         "titleFormatted": {
           "en": "Stop timer [[timer]]",
@@ -5562,7 +6461,8 @@
           "da": "Stop timeren [[timer]]",
           "ru": "Остановить таймер [[timer]]",
           "pl": "Zatrzymaj timer [[timer]]",
-          "ko": "타이머 [[timer]] 중지"
+          "ko": "타이머 [[timer]] 중지",
+          "ar": "إيقاف المؤقت [[timer]]"
         },
         "args": [
           {
@@ -5580,7 +6480,8 @@
               "da": "Navn",
               "ru": "Имя",
               "pl": "Nazwa",
-              "ko": "이름"
+              "ko": "이름",
+              "ar": "الاسم"
             }
           }
         ]
@@ -5599,7 +6500,8 @@
           "da": "Formindsk",
           "ru": "Уменьшить",
           "pl": "Zmniejsz",
-          "ko": "감소"
+          "ko": "감소",
+          "ar": "النقصان"
         },
         "titleFormatted": {
           "en": "Decrement [[value]] by [[step]]",
@@ -5613,7 +6515,8 @@
           "da": "Formindsk [[value]] med [[step]]",
           "ru": "Уменьшить [[value]] на [[step]]",
           "pl": "Zmniejsz [[value]] o [[step]]",
-          "ko": "[[value]]를 [[step]]만큼 감소"
+          "ko": "[[value]]를 [[step]]만큼 감소",
+          "ar": "قلل [[value]] بمقدار [[step]]"
         },
         "args": [
           {
@@ -5631,7 +6534,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             },
             "placeholder": {
               "en": "E.g. 13",
@@ -5645,7 +6549,8 @@
               "da": "F.eks. 13",
               "ru": "Напр. 13",
               "pl": "Np. 13",
-              "ko": "예: 13"
+              "ko": "예: 13",
+              "ar": "مثال: 13"
             }
           },
           {
@@ -5665,7 +6570,8 @@
               "da": "Trin",
               "ru": "Шаг",
               "pl": "Krok",
-              "ko": "단계"
+              "ko": "단계",
+              "ar": "خطوة"
             },
             "placeholder": {
               "en": "E.g. 1",
@@ -5679,7 +6585,8 @@
               "da": "F.eks. 1",
               "ru": "Напр. 1",
               "pl": "Np. 1",
-              "ko": "예: 1"
+              "ko": "예: 1",
+              "ar": "مثال: 1"
             }
           }
         ],
@@ -5699,7 +6606,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "النتيجة"
             }
           }
         ]
@@ -5718,7 +6626,8 @@
           "da": "Divider",
           "ru": "Делить",
           "pl": "Podziel",
-          "ko": "나누기"
+          "ko": "나누기",
+          "ar": "اقسم"
         },
         "titleFormatted": {
           "en": "Divide [[value]] by [[divisor]]",
@@ -5732,7 +6641,8 @@
           "da": "Divider [[value]] med [[divisor]]",
           "ru": "Делить [[value]] на [[divisor]]",
           "pl": "Podziel [[value]] przez [[divisor]]",
-          "ko": "[[value]]를 [[divisor]]로 나누기"
+          "ko": "[[value]]를 [[divisor]]로 나누기",
+          "ar": "اقسم [[value]] على [[divisor]]"
         },
         "args": [
           {
@@ -5750,7 +6660,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "قيمة"
             }
           },
           {
@@ -5771,7 +6682,8 @@
               "da": "Divisor",
               "ru": "Делитель",
               "pl": "Dzielnik",
-              "ko": "나누는 수"
+              "ko": "나누는 수",
+              "ar": "مقسوم"
             }
           }
         ],
@@ -5791,7 +6703,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "نتيجة"
             }
           }
         ]
@@ -5810,7 +6723,8 @@
           "da": "Forøg",
           "ru": "Увеличить",
           "pl": "Zwiększ",
-          "ko": "증가"
+          "ko": "증가",
+          "ar": "ازدياد"
         },
         "titleFormatted": {
           "en": "Increment [[value]] by [[step]]",
@@ -5824,7 +6738,8 @@
           "da": "Forøg [[value]] med [[step]]",
           "ru": "Увеличить [[value]] на [[step]]",
           "pl": "Zwiększ [[value]] o [[step]]",
-          "ko": "[[value]]를 [[step]]만큼 증가"
+          "ko": "[[value]]를 [[step]]만큼 증가",
+          "ar": "زيادة [[value]] بمقدار [[step]]"
         },
         "args": [
           {
@@ -5842,7 +6757,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "قيمة"
             },
             "placeholder": {
               "en": "E.g. 13",
@@ -5856,7 +6772,8 @@
               "da": "F.eks. 13",
               "ru": "Напр. 13",
               "pl": "Np. 13",
-              "ko": "예: 13"
+              "ko": "예: 13",
+              "ar": "مثلاً 13"
             }
           },
           {
@@ -5876,7 +6793,8 @@
               "da": "Trin",
               "ru": "Шаг",
               "pl": "Krok",
-              "ko": "단계"
+              "ko": "단계",
+              "ar": "خطوة"
             },
             "placeholder": {
               "en": "E.g. 1",
@@ -5890,7 +6808,8 @@
               "da": "F.eks. 1",
               "ru": "Напр. 1",
               "pl": "Np. 1",
-              "ko": "예: 1"
+              "ko": "예: 1",
+              "ar": "مثلاً 1"
             }
           }
         ],
@@ -5910,7 +6829,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "نتيجة"
             }
           }
         ]
@@ -5929,7 +6849,8 @@
           "da": "Gør negativ",
           "ru": "Сделать отрицательным",
           "pl": "Uczyń ujemnym",
-          "ko": "음수로 만들기"
+          "ko": "음수로 만들기",
+          "ar": "اجعلها سلبية"
         },
         "titleFormatted": {
           "en": "Make [[value]] negative",
@@ -5943,7 +6864,8 @@
           "da": "Gør [[value]] negativ",
           "ru": "Сделать [[value]] отрицательным",
           "pl": "Uczyń [[value]] ujemnym",
-          "ko": "[[value]] 음수로 만들기"
+          "ko": "[[value]] 음수로 만들기",
+          "ar": "اجعل [[value]] سلبية"
         },
         "hint": {
           "en": "Makes the value negative.",
@@ -5957,7 +6879,8 @@
           "da": "Gør værdien negativ.",
           "ru": "Делает значение отрицательным.",
           "pl": "Ustawia wartość jako ujemną.",
-          "ko": "값을 음수로 만듭니다."
+          "ko": "값을 음수로 만듭니다.",
+          "ar": "يجعل القيمة سالبة."
         },
         "args": [
           {
@@ -5975,7 +6898,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             },
             "placeholder": {
               "en": "E.g. 13",
@@ -5989,7 +6913,8 @@
               "da": "F.eks. 13",
               "ru": "Напр. 13",
               "pl": "Np. 13",
-              "ko": "예: 13"
+              "ko": "예: 13",
+              "ar": "مثال: 13"
             }
           }
         ],
@@ -6009,7 +6934,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "النتيجه"
             }
           }
         ]
@@ -6028,7 +6954,8 @@
           "da": "Gør positiv",
           "ru": "Сделать положительным",
           "pl": "Uczyń dodatnim",
-          "ko": "양수로 만들기"
+          "ko": "양수로 만들기",
+          "ar": "اجعلها موجبة"
         },
         "titleFormatted": {
           "en": "Make [[value]] positive",
@@ -6042,7 +6969,8 @@
           "da": "Gør [[value]] positiv",
           "ru": "Сделать [[value]] положительным",
           "pl": "Uczyń [[value]] dodatnim",
-          "ko": "[[value]] 양수로 만들기"
+          "ko": "[[value]] 양수로 만들기",
+          "ar": "اجعل [[value]] موجبة"
         },
         "hint": {
           "en": "Takes the absolute value of a number.",
@@ -6056,7 +6984,8 @@
           "da": "Tager den absolutte værdi af et tal.",
           "ru": "Берет абсолютное значение числа.",
           "pl": "Pobiera wartość bezwzględną liczby.",
-          "ko": "숫자의 절댓값을 사용합니다."
+          "ko": "숫자의 절댓값을 사용합니다.",
+          "ar": "يأخذ القيمة المطلقة لعدد."
         },
         "args": [
           {
@@ -6074,7 +7003,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             },
             "placeholder": {
               "en": "E.g. 13",
@@ -6088,7 +7018,8 @@
               "da": "F.eks. 13",
               "ru": "Напр. 13",
               "pl": "Np. 13",
-              "ko": "예: 13"
+              "ko": "예: 13",
+              "ar": "مثال: 13"
             }
           }
         ],
@@ -6108,7 +7039,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "النتيجة"
             }
           }
         ]
@@ -6127,7 +7059,8 @@
           "da": "Multiplicer",
           "ru": "Умножить",
           "pl": "Pomnóż",
-          "ko": "곱하기"
+          "ko": "곱하기",
+          "ar": "ضرب"
         },
         "titleFormatted": {
           "en": "Multiply [[value]] by [[factor]]",
@@ -6141,7 +7074,8 @@
           "da": "Multiplicer [[value]] med [[factor]]",
           "ru": "Умножить [[value]] на [[factor]]",
           "pl": "Pomnóż [[value]] przez [[factor]]",
-          "ko": "[[value]]에 [[factor]] 곱하기"
+          "ko": "[[value]]에 [[factor]] 곱하기",
+          "ar": "اضرب [[value]] في [[factor]]"
         },
         "args": [
           {
@@ -6159,7 +7093,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             }
           },
           {
@@ -6180,7 +7115,8 @@
               "da": "Faktor",
               "ru": "Множитель",
               "pl": "Mnożnik",
-              "ko": "인수"
+              "ko": "인수",
+              "ar": "عامل"
             }
           }
         ],
@@ -6200,7 +7136,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "النتيجة"
             }
           }
         ]
@@ -6219,7 +7156,8 @@
           "da": "Afrund",
           "ru": "Округлить",
           "pl": "Zaokrąglij",
-          "ko": "반올림"
+          "ko": "반올림",
+          "ar": "تقريب"
         },
         "titleFormatted": {
           "en": "Round [[value]]",
@@ -6233,7 +7171,8 @@
           "da": "Afrund [[value]]",
           "ru": "Округлить [[value]]",
           "pl": "Zaokrąglij [[value]]",
-          "ko": "[[value]] 반올림"
+          "ko": "[[value]] 반올림",
+          "ar": "تقريب [[value]]"
         },
         "args": [
           {
@@ -6251,7 +7190,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "قيمة"
             },
             "placeholder": {
               "en": "E.g. 13",
@@ -6265,7 +7205,8 @@
               "da": "F.eks. 13",
               "ru": "Напр. 13",
               "pl": "Np. 13",
-              "ko": "예: 13"
+              "ko": "예: 13",
+              "ar": "مثال 13"
             }
           }
         ],
@@ -6285,7 +7226,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "نتيجة"
             }
           }
         ]
@@ -6304,7 +7246,8 @@
           "da": "Afrund ned",
           "ru": "Округлить вниз",
           "pl": "Zaokrąglij w dół",
-          "ko": "내림"
+          "ko": "내림",
+          "ar": "تقريب لأسفل"
         },
         "titleFormatted": {
           "en": "Round [[value]] down",
@@ -6318,7 +7261,8 @@
           "da": "Afrund [[value]] ned",
           "ru": "Округлить [[value]] вниз",
           "pl": "Zaokrąglij [[value]] w dół",
-          "ko": "[[value]] 내림"
+          "ko": "[[value]] 내림",
+          "ar": "تقريب [[value]] لأسفل"
         },
         "hint": {
           "en": "Rounds down to the nearest integer.",
@@ -6332,7 +7276,8 @@
           "da": "Afrunder ned til nærmeste heltal.",
           "ru": "Округляет вниз до ближайшего целого.",
           "pl": "Zaokrągla w dół do najbliższej liczby całkowitej.",
-          "ko": "가장 가까운 정수로 내림합니다."
+          "ko": "가장 가까운 정수로 내림합니다.",
+          "ar": "يقرب لأسفل لأقرب عدد صحيح."
         },
         "args": [
           {
@@ -6350,7 +7295,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "قيمة"
             },
             "placeholder": {
               "en": "E.g. 13",
@@ -6364,7 +7310,8 @@
               "da": "F.eks. 13",
               "ru": "Напр. 13",
               "pl": "Np. 13",
-              "ko": "예: 13"
+              "ko": "예: 13",
+              "ar": "مثال: 13"
             }
           }
         ],
@@ -6384,7 +7331,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "نتيجة"
             }
           }
         ]
@@ -6397,10 +7345,10 @@
           "de": "Auf Schritt runden",
           "fr": "Arrondir à l’incrément",
           "it": "Arrotonda allo step",
-          "sv": "Avrunda till steg",
+          "sv": "Runda av till steget",
           "no": "Avrund til steg",
           "es": "Redondear al incremento",
-          "da": "Afrund til trin",
+          "da": "Rund av til trinn",
           "ru": "Округлить по шагу",
           "pl": "Zaokrąglij do kroku",
           "ko": "스텝 단위로 반올림"
@@ -6411,10 +7359,10 @@
           "de": "Runde [[value]] auf [[step]]",
           "fr": "Arrondir [[value]] à [[step]]",
           "it": "Arrotonda [[value]] a [[step]]",
-          "sv": "Avrunda [[value]] till [[step]]",
+          "sv": "Runda av [[value]] till [[step]]",
           "no": "Avrund [[value]] til [[step]]",
           "es": "Redondear [[value]] a [[step]]",
-          "da": "Afrund [[value]] til [[step]]",
+          "da": "Rund av [[value]] til [[step]]",
           "ru": "Округлить [[value]] по [[step]]",
           "pl": "Zaokrąglij [[value]] do [[step]]",
           "ko": "[[value]]을(를) [[step]] 단위로 반올림"
@@ -6425,10 +7373,10 @@
           "de": "Rundet auf das nächste Vielfache des Schritts.",
           "fr": "Arrondit au multiple le plus proche de l’incrément.",
           "it": "Arrotonda al multiplo più vicino dello step.",
-          "sv": "Avrundar till närmaste multipel av steget.",
+          "sv": "Rundar av till närmaste multipel av steget.",
           "no": "Avrunder til nærmeste multiplum av steget.",
           "es": "Redondea al múltiplo más cercano del incremento.",
-          "da": "Afrunder til nærmeste multiplum af trinnet.",
+          "da": "Runder av til nærmeste multiplum av trinnet.",
           "ru": "Округляет до ближайшего кратного шагу.",
           "pl": "Zaokrągla do najbliższego wielokrotności kroku.",
           "ko": "스텝의 가장 가까운 배수로 반올림합니다."
@@ -6446,7 +7394,7 @@
               "sv": "Värde",
               "no": "Verdi",
               "es": "Valor",
-              "da": "Værdi",
+              "da": "Verdi",
               "ru": "Значение",
               "pl": "Wartość",
               "ko": "값"
@@ -6479,7 +7427,7 @@
               "sv": "Steg",
               "no": "Steg",
               "es": "Incremento",
-              "da": "Trin",
+              "da": "Trinn",
               "ru": "Шаг",
               "pl": "Krok",
               "ko": "스텝"
@@ -6535,7 +7483,8 @@
           "da": "Afrund opad",
           "ru": "Округлить вверх",
           "pl": "Zaokrąglij w górę",
-          "ko": "올림"
+          "ko": "올림",
+          "ar": "تقريب لأعلى"
         },
         "titleFormatted": {
           "en": "Round [[value]] up",
@@ -6549,7 +7498,8 @@
           "da": "Afrund [[value]] opad",
           "ru": "Округлить [[value]] вверх",
           "pl": "Zaokrąglij [[value]] w górę",
-          "ko": "[[value]] 올림"
+          "ko": "[[value]] 올림",
+          "ar": "تقريب [[value]] لأعلى"
         },
         "hint": {
           "en": "Rounds up to the nearest integer.",
@@ -6563,7 +7513,8 @@
           "da": "Afrunder til nærmeste hele tal opad.",
           "ru": "Округляет до ближайшего большего целого.",
           "pl": "Zaokrągla do najbliższej większej liczby całkowitej.",
-          "ko": "가장 가까운 큰 정수로 올림합니다."
+          "ko": "가장 가까운 큰 정수로 올림합니다.",
+          "ar": "يقرب لأقرب عدد صحيح."
         },
         "args": [
           {
@@ -6581,7 +7532,8 @@
               "da": "Værdi",
               "ru": "Значение",
               "pl": "Wartość",
-              "ko": "값"
+              "ko": "값",
+              "ar": "القيمة"
             },
             "placeholder": {
               "en": "E.g. 13",
@@ -6595,7 +7547,8 @@
               "da": "F.eks. 13",
               "ru": "Напр. 13",
               "pl": "Np. 13",
-              "ko": "예: 13"
+              "ko": "예: 13",
+              "ar": "مثال: 13"
             }
           }
         ],
@@ -6615,7 +7568,8 @@
               "da": "Resultat",
               "ru": "Результат",
               "pl": "Wynik",
-              "ko": "결과"
+              "ko": "결과",
+              "ar": "النتيجة"
             }
           }
         ]
@@ -6626,7 +7580,18 @@
     "event": {
       "name": {
         "en": "Event",
-        "nl": "Gebeurtenis"
+        "nl": "Gebeurtenis",
+        "da": "Begivenhed",
+        "de": "Veranstaltung",
+        "es": "Evento",
+        "fr": "Événement",
+        "it": "Evento",
+        "no": "Arrangement",
+        "sv": "Händelse",
+        "pl": "Wydarzenie",
+        "ru": "Событие",
+        "ko": "이벤트",
+        "ar": "حدث"
       },
       "height": 120,
       "settings": [
@@ -6635,7 +7600,18 @@
           "type": "autocomplete",
           "title": {
             "en": "Event",
-            "nl": "Gebeurtenis"
+            "nl": "Gebeurtenis",
+            "da": "Begivenhed",
+            "de": "Veranstaltung",
+            "es": "Evento",
+            "fr": "Événement",
+            "it": "Evento",
+            "no": "Arrangement",
+            "sv": "Händelse",
+            "pl": "Wydarzenie",
+            "ru": "Событие",
+            "ko": "이벤트",
+            "ar": "حدث"
           }
         }
       ],
@@ -6660,7 +7636,8 @@
         "da": "Flag tændt/slukket",
         "ru": "Флаг включен/выключен",
         "pl": "Flaga włączona/wyłączona",
-        "ko": "플래그 켬/끔"
+        "ko": "플래그 켬/끔",
+        "ar": "علم تشغيل/إيقاف"
       },
       "height": 120,
       "settings": [
@@ -6679,7 +7656,8 @@
             "da": "Flag",
             "ru": "Флаг",
             "pl": "Flaga",
-            "ko": "플래그"
+            "ko": "플래그",
+            "ar": "علم"
           }
         }
       ],
@@ -6708,7 +7686,8 @@
         "da": "Flag",
         "ru": "Флаги",
         "pl": "Flagi",
-        "ko": "플래그"
+        "ko": "플래그",
+        "ar": "أعلام"
       },
       "height": 120,
       "settings": [
@@ -6718,7 +7697,18 @@
           "value": false,
           "title": {
             "en": "Read only",
-            "nl": "Alleen-lezen"
+            "nl": "Alleen-lezen",
+            "de": "Nur lesen",
+            "fr": "Lecture seule",
+            "it": "Solo lettura",
+            "sv": "Skrivskyddad",
+            "no": "Kun lesing",
+            "es": "Solo lectura",
+            "da": "Kun læsning",
+            "ru": "Только чтение",
+            "pl": "Tylko do odczytu",
+            "ko": "읽기 전용",
+            "ar": "قراءة فقط"
           }
         },
         {
@@ -6737,7 +7727,8 @@
             "da": "Vis ikoner",
             "ru": "Показать иконки",
             "pl": "Pokaż ikony",
-            "ko": "아이콘 표시"
+            "ko": "아이콘 표시",
+            "ar": "عرض الرموز"
           }
         },
         {
@@ -6755,7 +7746,8 @@
             "da": "Visningstilstand",
             "ru": "Режим просмотра",
             "pl": "Tryb widoku",
-            "ko": "보기 모드"
+            "ko": "보기 모드",
+            "ar": "وضع العرض"
           },
           "value": "grid",
           "values": [
@@ -6773,7 +7765,8 @@
                 "da": "Gitter",
                 "ru": "Сетка",
                 "pl": "Siatka",
-                "ko": "그리드"
+                "ko": "그리드",
+                "ar": "شبكة"
               }
             },
             {
@@ -6790,7 +7783,8 @@
                 "da": "Liste",
                 "ru": "Список",
                 "pl": "Lista",
-                "ko": "목록"
+                "ko": "목록",
+                "ar": "قائمة"
               }
             }
           ]
@@ -6811,7 +7805,18 @@
     "label": {
       "name": {
         "en": "Label",
-        "nl": "Label"
+        "nl": "Label",
+        "da": "Etiket",
+        "de": "Etikett",
+        "es": "Etiqueta",
+        "fr": "Étiquette",
+        "it": "Etichetta",
+        "no": "Etikett",
+        "sv": "Etikett",
+        "pl": "Etykieta",
+        "ru": "Метка",
+        "ko": "라벨",
+        "ar": "تسمية"
       },
       "height": 120,
       "settings": [
@@ -6820,7 +7825,18 @@
           "type": "autocomplete",
           "title": {
             "en": "Label",
-            "nl": "Label"
+            "nl": "Label",
+            "da": "Etiket",
+            "de": "Etikett",
+            "es": "Etiqueta",
+            "fr": "Étiquette",
+            "it": "Etichetta",
+            "no": "Etikett",
+            "sv": "Etikett",
+            "pl": "Etykieta",
+            "ru": "Метка",
+            "ko": "라벨",
+            "ar": "تسمية"
           }
         }
       ],
@@ -6845,7 +7861,8 @@
         "da": "Nuværende tilstand",
         "ru": "Текущий режим",
         "pl": "Aktualny tryb",
-        "ko": "현재 모드"
+        "ko": "현재 모드",
+        "ar": "الوضع الحالي"
       },
       "height": 120,
       "settings": [],
@@ -6870,7 +7887,8 @@
         "da": "Tilstande",
         "ru": "Режимы",
         "pl": "Tryby",
-        "ko": "모드"
+        "ko": "모드",
+        "ar": "الأوضاع"
       },
       "height": 120,
       "settings": [
@@ -6880,7 +7898,18 @@
           "value": false,
           "title": {
             "en": "Read only",
-            "nl": "Alleen-lezen"
+            "nl": "Alleen-lezen",
+            "da": "Kun læsning",
+            "de": "Nur lesen",
+            "es": "Solo lectura",
+            "fr": "Lecture seule",
+            "it": "Solo lettura",
+            "no": "Kun lesing",
+            "sv": "Endast läsning",
+            "pl": "Tylko do odczytu",
+            "ru": "Только чтение",
+            "ko": "읽기 전용",
+            "ar": "قراءة فقط"
           }
         },
         {
@@ -6899,7 +7928,8 @@
             "da": "Vis ikoner",
             "ru": "Показать иконки",
             "pl": "Pokaż ikony",
-            "ko": "아이콘 표시"
+            "ko": "아이콘 표시",
+            "ar": "إظهار الأيقونات"
           }
         },
         {
@@ -6917,7 +7947,8 @@
             "da": "Visningstilstand",
             "ru": "Режим просмотра",
             "pl": "Tryb widoku",
-            "ko": "보기 모드"
+            "ko": "보기 모드",
+            "ar": "وضع العرض"
           },
           "value": "grid",
           "values": [
@@ -6935,7 +7966,8 @@
                 "da": "Gitter",
                 "ru": "Сетка",
                 "pl": "Siatka",
-                "ko": "그리드"
+                "ko": "그리드",
+                "ar": "شبكة"
               }
             },
             {
@@ -6952,7 +7984,8 @@
                 "da": "Liste",
                 "ru": "Список",
                 "pl": "Lista",
-                "ko": "목록"
+                "ko": "목록",
+                "ar": "قائمة"
               }
             }
           ]
@@ -6983,7 +8016,8 @@
         "da": "Skyder",
         "ru": "Ползунок",
         "pl": "Suwak",
-        "ko": "슬라이더"
+        "ko": "슬라이더",
+        "ar": "المنزلق"
       },
       "height": 120,
       "settings": [
@@ -7002,7 +8036,8 @@
             "da": "Skyder",
             "ru": "Ползунок",
             "pl": "Suwak",
-            "ko": "슬라이더"
+            "ko": "슬라이더",
+            "ar": "المنزلق"
           }
         },
         {
@@ -7020,7 +8055,8 @@
             "da": "Farve",
             "ru": "Цвет",
             "pl": "Kolor",
-            "ko": "색상"
+            "ko": "색상",
+            "ar": "لون"
           },
           "value": "blue",
           "values": [
@@ -7038,7 +8074,8 @@
                 "da": "Rød",
                 "ru": "Красный",
                 "pl": "Czerwony",
-                "ko": "빨강"
+                "ko": "빨강",
+                "ar": "أحمر"
               }
             },
             {
@@ -7055,7 +8092,8 @@
                 "da": "Orange",
                 "ru": "Оранжевый",
                 "pl": "Pomarańczowy",
-                "ko": "주황"
+                "ko": "주황",
+                "ar": "برتقالي"
               }
             },
             {
@@ -7072,7 +8110,8 @@
                 "da": "Rav",
                 "ru": "Янтарный",
                 "pl": "Bursztynowy",
-                "ko": "호박색"
+                "ko": "호박색",
+                "ar": "عنبري"
               }
             },
             {
@@ -7089,7 +8128,8 @@
                 "da": "Gul",
                 "ru": "Жёлтый",
                 "pl": "Żółty",
-                "ko": "노랑"
+                "ko": "노랑",
+                "ar": "أصفر"
               }
             },
             {
@@ -7106,7 +8146,8 @@
                 "da": "Lime",
                 "ru": "Лайм",
                 "pl": "Limonkowy",
-                "ko": "라임"
+                "ko": "라임",
+                "ar": "ليم"
               }
             },
             {
@@ -7123,7 +8164,8 @@
                 "da": "Grøn",
                 "ru": "Зелёный",
                 "pl": "Zielony",
-                "ko": "초록"
+                "ko": "초록",
+                "ar": "أخضر"
               }
             },
             {
@@ -7140,7 +8182,8 @@
                 "da": "Smaragd",
                 "ru": "Изумрудный",
                 "pl": "Szmaragdowy",
-                "ko": "에메랄드"
+                "ko": "에메랄드",
+                "ar": "زمرد"
               }
             },
             {
@@ -7157,7 +8200,8 @@
                 "da": "Blågrøn",
                 "ru": "Сине-зелёный",
                 "pl": "Morski",
-                "ko": "청록"
+                "ko": "청록",
+                "ar": "أخضر مزرق"
               }
             },
             {
@@ -7174,7 +8218,8 @@
                 "da": "Cyan",
                 "ru": "Бирюзовый",
                 "pl": "Cyjan",
-                "ko": "청록색"
+                "ko": "청록색",
+                "ar": "سماوي"
               }
             },
             {
@@ -7191,7 +8236,8 @@
                 "da": "Himmel",
                 "ru": "Небесный",
                 "pl": "Niebieskie niebo",
-                "ko": "하늘"
+                "ko": "하늘",
+                "ar": "سماء"
               }
             },
             {
@@ -7208,7 +8254,8 @@
                 "da": "Blå",
                 "ru": "Синий",
                 "pl": "Niebieski",
-                "ko": "파랑"
+                "ko": "파랑",
+                "ar": "أزرق"
               }
             },
             {
@@ -7225,7 +8272,8 @@
                 "da": "Indigo",
                 "ru": "Индиго",
                 "pl": "Indygo",
-                "ko": "남색"
+                "ko": "남색",
+                "ar": "نيلي"
               }
             },
             {
@@ -7242,7 +8290,8 @@
                 "da": "Violet",
                 "ru": "Фиолетовый",
                 "pl": "Fioletowy",
-                "ko": "보라"
+                "ko": "보라",
+                "ar": "بنفسجي"
               }
             },
             {
@@ -7259,7 +8308,8 @@
                 "da": "Lilla",
                 "ru": "Пурпурный",
                 "pl": "Purpurowy",
-                "ko": "자주"
+                "ko": "자주",
+                "ar": "أرجواني"
               }
             },
             {
@@ -7276,7 +8326,8 @@
                 "da": "Fuchsia",
                 "ru": "Фуксия",
                 "pl": "Fuksja",
-                "ko": "후시아"
+                "ko": "후시아",
+                "ar": "فوشيا"
               }
             },
             {
@@ -7293,7 +8344,8 @@
                 "da": "Pink",
                 "ru": "Розовый",
                 "pl": "Różowy",
-                "ko": "핑크"
+                "ko": "핑크",
+                "ar": "وردي"
               }
             },
             {
@@ -7310,7 +8362,8 @@
                 "da": "Rosa",
                 "ru": "Розовый светлый",
                 "pl": "Jasnoróżowy",
-                "ko": "로즈"
+                "ko": "로즈",
+                "ar": "ورد متفتح"
               }
             }
           ]
@@ -7330,7 +8383,8 @@
             "da": "Ikon",
             "ru": "Иконка",
             "pl": "Ikona",
-            "ko": "아이콘"
+            "ko": "아이콘",
+            "ar": "رمز"
           }
         }
       ],

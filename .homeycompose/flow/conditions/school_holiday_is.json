@@ -12,7 +12,8 @@
         "da": "Det er en skoleferie",
         "ru": "Школьные каникулы",
         "pl": "Są ferie szkolne",
-        "ko": "학교 휴일입니다"
+        "ko": "학교 휴일입니다",
+        "ar": "إنها عطلة مدرسية"
     },
     "titleFormatted": {
         "en": "It !{{is|isn't}} [[holiday]] in region [[region]]",
@@ -26,7 +27,8 @@
         "da": "Det !{{er|er ikke}} [[holiday]] i region [[region]]",
         "ru": "Это !{{есть|нет}} [[holiday]] в регионе [[region]]",
         "pl": "To !{{jest|nie jest}} [[holiday]] w regionie [[region]]",
-        "ko": "해당 지역([[region]])은 [[holiday]]가 !{{맞습니다|아닙니다}}"
+        "ko": "해당 지역([[region]])은 [[holiday]]가 !{{맞습니다|아닙니다}}",
+        "ar": "إنه !{{هو|ليس}} [[holiday]] في المنطقة [[region]]"
     },
     "hint": {
         "en": "Checks if it is a school holiday in the Netherlands.",
@@ -40,7 +42,8 @@
         "da": "Tjekker om det er en skoleferie i Nederlandene.",
         "ru": "Проверяет, являются ли это школьные каникулы в Нидерландах.",
         "pl": "Sprawdza, czy są ferie szkolne w Niderlandach.",
-        "ko": "네덜란드의 학교 휴일인지 확인합니다."
+        "ko": "네덜란드의 학교 휴일인지 확인합니다.",
+        "ar": "يتحقق مما إذا كانت عطلة مدرسية في هولندا."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Skoleferie",
                 "ru": "Школьные каникулы",
                 "pl": "Ferie szkolne",
-                "ko": "학교 휴일"
+                "ko": "학교 휴일",
+                "ar": "عطلة مدرسية"
             }
         },
         {
@@ -76,7 +80,8 @@
                 "da": "Region",
                 "ru": "Регион",
                 "pl": "Region",
-                "ko": "지역"
+                "ko": "지역",
+                "ar": "منطقة"
             },
             "values": [
                 {
@@ -93,7 +98,8 @@
                         "da": "nord",
                         "ru": "север",
                         "pl": "północ",
-                        "ko": "북부"
+                        "ko": "북부",
+                        "ar": "شمال"
                     }
                 },
                 {
@@ -110,7 +116,8 @@
                         "da": "midt",
                         "ru": "центр",
                         "pl": "środek",
-                        "ko": "중부"
+                        "ko": "중부",
+                        "ar": "وسط"
                     }
                 },
                 {
@@ -127,7 +134,8 @@
                         "da": "syd",
                         "ru": "юг",
                         "pl": "południe",
-                        "ko": "남부"
+                        "ko": "남부",
+                        "ar": "جنوب"
                     }
                 }
             ]

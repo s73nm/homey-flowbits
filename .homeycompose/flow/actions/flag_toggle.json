@@ -12,7 +12,8 @@
         "da": "Skift flag",
         "ru": "Переключить флаг",
         "pl": "Przełącz flagę",
-        "ko": "플래그 전환"
+        "ko": "플래그 전환",
+        "ar": "تبديل العلم"
     },
     "titleFormatted": {
         "en": "Toggle flag [[flag]]",
@@ -26,7 +27,8 @@
         "da": "Skift flag [[flag]]",
         "ru": "Переключить флаг [[flag]]",
         "pl": "Przełącz flagę [[flag]]",
-        "ko": "플래그 [[flag]] 전환"
+        "ko": "플래그 [[flag]] 전환",
+        "ar": "تبديل العلم [[flag]]"
     },
     "hint": {
         "en": "Turns the flag on if it’s off, and off if it’s on.",
@@ -40,7 +42,8 @@
         "da": "Tænder flaget hvis det er slukket og slukker det hvis det er tændt.",
         "ru": "Включает флаг если он выключен и выключает если он включён.",
         "pl": "Włącza flagę gdy jest wyłączona i wyłącza gdy jest włączona.",
-        "ko": "플래그가 꺼져 있으면 켜고 켜져 있으면 끕니다."
+        "ko": "플래그가 꺼져 있으면 켜고 켜져 있으면 끕니다.",
+        "ar": "يشغّل العلم إذا كان مطفأ، ويطفئه إذا كان مشتغلاً."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Flag",
                 "ru": "Флаг",
                 "pl": "Flaga",
-                "ko": "플래그"
+                "ko": "플래그",
+                "ar": "علم"
             }
         }
     ]

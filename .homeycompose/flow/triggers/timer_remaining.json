@@ -12,7 +12,8 @@
         "da": "Tid tilbage på timer",
         "ru": "Осталось времени таймера",
         "pl": "Pozostały czas timera",
-        "ko": "타이머 남은 시간"
+        "ko": "타이머 남은 시간",
+        "ar": "الوقت المتبقي للمؤقت"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] reaches [[duration]] [[unit]] remaining",
@@ -25,8 +26,9 @@
         "es": "[[duration]] [[unit]] restantes para el temporizador [[timer]]",
         "da": "[[duration]] [[unit]] tilbage for timer [[timer]]",
         "ru": "[[duration]] [[unit]] осталось для таймера [[timer]]",
-        "pl": "[[duration]] [[unit]] pozostało dla timera [[timer]]",
-        "ko": "타이머 [[timer]]에 [[duration]] [[unit]] 남음"
+        "pl": "[[duration]] [[unit]] pozostało для timera [[timer]]",
+        "ko": "타이머 [[timer]]에 [[duration]] [[unit]] 남음",
+        "ar": "المؤقت [[timer]] يحقق [[duration]] [[unit]] متبقية"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "الاسم"
             }
         },
         {
@@ -64,7 +67,8 @@
                 "da": "Varighed",
                 "ru": "Продолжительность",
                 "pl": "Czas trwania",
-                "ko": "기간"
+                "ko": "기간",
+                "ar": "المدة"
             },
             "placeholder": {
                 "en": "E.g. 10",
@@ -78,7 +82,8 @@
                 "da": "F.eks. 10",
                 "ru": "Напр. 10",
                 "pl": "Np. 10",
-                "ko": "예: 10"
+                "ko": "예: 10",
+                "ar": "مثال: 10"
             }
         },
         {
@@ -96,7 +101,8 @@
                 "da": "Enhed",
                 "ru": "Единица",
                 "pl": "Jednostka",
-                "ko": "단위"
+                "ko": "단위",
+                "ar": "الوحدة"
             },
             "values": [
                 {
@@ -113,7 +119,8 @@
                         "da": "sekunder",
                         "ru": "секунды",
                         "pl": "sekundy",
-                        "ko": "초"
+                        "ko": "초",
+                        "ar": "ثواني"
                     }
                 },
                 {
@@ -130,7 +137,8 @@
                         "da": "minutter",
                         "ru": "минуты",
                         "pl": "minuty",
-                        "ko": "분"
+                        "ko": "분",
+                        "ar": "دقائق"
                     }
                 },
                 {
@@ -147,7 +155,8 @@
                         "da": "timer",
                         "ru": "часы",
                         "pl": "godziny",
-                        "ko": "시간"
+                        "ko": "시간",
+                        "ar": "ساعات"
                     }
                 },
                 {
@@ -164,7 +173,8 @@
                         "da": "dage",
                         "ru": "дни",
                         "pl": "dni",
-                        "ko": "일"
+                        "ko": "일",
+                        "ar": "أيام"
                     }
                 }
             ]

@@ -12,7 +12,8 @@
         "da": "Slå med en terning",
         "ru": "Бросить кубик",
         "pl": "Rzuć kostką",
-        "ko": "주사위를 굴리기"
+        "ko": "주사위를 굴리기",
+        "ar": "قم برمي النرد"
     },
     "titleFormatted": {
         "en": "Dice rolls [[result]]",
@@ -26,7 +27,8 @@
         "da": "Terningen viser [[result]]",
         "ru": "Кубик показывает [[result]]",
         "pl": "Kostka pokazuje [[result]]",
-        "ko": "주사위 결과 [[result]]"
+        "ko": "주사위 결과 [[result]]",
+        "ar": "النرد يوضح [[result]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Resultat",
                 "ru": "Результат",
                 "pl": "Wynik",
-                "ko": "결과"
+                "ko": "결과",
+                "ar": "النتيجة"
             },
             "min": 1,
             "max": 6,

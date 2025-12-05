@@ -1,47 +1,49 @@
 {
-    "name": {
-        "en": "Flag on/off",
-        "nl": "Flag aan/uit",
-        "de": "Flag ein/aus",
-        "fr": "Flag activé/désactivé",
-        "it": "Flag acceso/spento",
-        "sv": "Flag på/av",
-        "no": "Flag på/av",
-        "es": "Flag activado/desactivado",
-        "da": "Flag tændt/slukket",
-        "ru": "Флаг включен/выключен",
-        "pl": "Flaga włączona/wyłączona",
-        "ko": "플래그 켬/끔"
-    },
-    "height": 120,
-    "settings": [
-        {
-            "id": "flag",
-            "type": "autocomplete",
-            "title": {
-                "en": "Flag",
-                "nl": "Flag",
-                "de": "Flagge",
-                "fr": "Drapeau",
-                "it": "Flag",
-                "sv": "Flagga",
-                "no": "Flagg",
-                "es": "Bandera",
-                "da": "Flag",
-                "ru": "Флаг",
-                "pl": "Flaga",
-                "ko": "플래그"
-            }
-        }
-    ],
-    "api": {
-        "state": {
-            "method": "GET",
-            "path": "/"
-        },
-        "toggle": {
-            "method": "POST",
-            "path": "/"
-        }
+  "name": {
+    "en": "Flag on/off",
+    "nl": "Flag aan/uit",
+    "de": "Flag ein/aus",
+    "fr": "Flag activé/désactivé",
+    "it": "Flag acceso/spento",
+    "sv": "Flag på/av",
+    "no": "Flag på/av",
+    "es": "Flag activado/desactivado",
+    "da": "Flag tændt/slukket",
+    "ru": "Флаг включен/выключен",
+    "pl": "Flaga włączona/wyłączona",
+    "ko": "플래그 켬/끔",
+    "ar": "علم تشغيل/إيقاف"
+  },
+  "height": 120,
+  "settings": [
+    {
+      "id": "flag",
+      "type": "autocomplete",
+      "title": {
+        "en": "Flag",
+        "nl": "Flag",
+        "de": "Flagge",
+        "fr": "Drapeau",
+        "it": "Flag",
+        "sv": "Flagga",
+        "no": "Flagg",
+        "es": "Bandera",
+        "da": "Flag",
+        "ru": "Флаг",
+        "pl": "Flaga",
+        "ko": "플래그",
+        "ar": "علم"
+      }
     }
+  ],
+  "api": {
+    "state": {
+      "method": "GET",
+      "path": "/"
+    },
+    "toggle": {
+      "method": "POST",
+      "path": "/"
+    }
+  }
 }

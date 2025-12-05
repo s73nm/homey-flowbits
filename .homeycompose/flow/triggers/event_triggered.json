@@ -2,11 +2,33 @@
     "id": "event_triggered",
     "title": {
         "en": "Event triggered",
-        "nl": "Gebeurtenis getriggerd"
+        "nl": "Gebeurtenis getriggerd",
+        "da": "Begivenhed udløst",
+        "de": "Ereignis ausgelöst",
+        "es": "Evento activado",
+        "fr": "Événement déclenché",
+        "it": "Evento attivato",
+        "no": "Hendelse utløst",
+        "sv": "Händelse utlösts",
+        "pl": "Zdarzenie uruchomione",
+        "ru": "Событие сработало",
+        "ko": "이벤트가 발생했습니다",
+        "ar": "تم تحفيز الحدث"
     },
     "titleFormatted": {
         "en": "Event [[event]] is triggered",
-        "nl": "Gebeurtenis [[event]] is getriggerd"
+        "nl": "Gebeurtenis [[event]] is getriggerd",
+        "da": "Begivenhed [[event]] er udløst",
+        "de": "Ereignis [[event]] ist ausgelöst",
+        "es": "El evento [[event]] está activado",
+        "fr": "L'événement [[event]] est déclenché",
+        "it": "L'evento [[event]] è attivato",
+        "no": "Hendelse [[event]] er utløst",
+        "sv": "Händelse [[event]] är utlöst",
+        "pl": "Zdarzenie [[event]] zostało uruchomione",
+        "ru": "Событие [[event]] сработало",
+        "ko": "이벤트 [[event]]가 발생했습니다",
+        "ar": "تم تحفيز الحدث [[event]]"
     },
     "args": [
         {
@@ -14,7 +36,18 @@
             "name": "event",
             "title": {
                 "en": "Event",
-                "nl": "Gebeurtenis"
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Ereignis",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Hendelse",
+                "sv": "Händelse",
+                "pl": "Zdarzenie",
+                "ru": "Событие",
+                "ko": "이벤트",
+                "ar": "حدث"
             }
         }
     ]

@@ -12,7 +12,8 @@
         "da": "Tilstand ændret",
         "ru": "Режим изменён",
         "pl": "Tryb zmieniony",
-        "ko": "모드 변경됨"
+        "ko": "모드 변경됨",
+        "ar": "الوضع تغيّر"
     },
     "titleFormatted": {
         "en": "Mode [[name]] changed",
@@ -26,7 +27,8 @@
         "da": "Tilstand [[name]] ændret",
         "ru": "Режим [[name]] изменён",
         "pl": "Tryb [[name]] zmieniony",
-        "ko": "모드 [[name]] 변경됨"
+        "ko": "모드 [[name]] 변경됨",
+        "ar": "الوضع [[name]] تغيّر"
     },
     "hint": {
         "en": "Triggers when a mode is activated or deactivated.",
@@ -40,7 +42,8 @@
         "da": "Udløses når en tilstand aktiveres eller deaktiveres.",
         "ru": "Срабатывает при активации или деактивации режима.",
         "pl": "Wyzwalane, gdy tryb zostaje aktywowany lub dezaktywowany.",
-        "ko": "모드가 활성화되거나 비활성화될 때 트리거됨."
+        "ko": "모드가 활성화되거나 비활성화될 때 트리거됨.",
+        "ar": "يتم التفعيل عند تفعيل أو إلغاء تفعيل وضع."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Tilstand",
                 "ru": "Режим",
                 "pl": "Tryb",
-                "ko": "모드"
+                "ko": "모드",
+                "ar": "وضع"
             }
         }
     ],
@@ -78,7 +82,8 @@
                 "da": "Aktiv",
                 "ru": "Активный",
                 "pl": "Aktywny",
-                "ko": "활성"
+                "ko": "활성",
+                "ar": "نشط"
             }
         }
     ]

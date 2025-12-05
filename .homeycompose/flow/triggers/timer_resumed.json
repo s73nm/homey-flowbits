@@ -12,7 +12,8 @@
         "da": "Timer genoptaget",
         "ru": "Таймер возобновлён",
         "pl": "Timer wznowiony",
-        "ko": "타이머 재개됨"
+        "ko": "타이머 재개됨",
+        "ar": "تم استئناف المؤقت"
     },
     "titleFormatted": {
         "en": "Timer [[timer]] resumed",
@@ -26,7 +27,8 @@
         "da": "Timer [[timer]] genoptaget",
         "ru": "Таймер [[timer]] возобновлён",
         "pl": "Timer [[timer]] wznowiony",
-        "ko": "타이머 [[timer]] 재개됨"
+        "ko": "타이머 [[timer]] 재개됨",
+        "ar": "تم استئناف المؤقت [[timer]]"
     },
     "args": [
         {
@@ -44,7 +46,8 @@
                 "da": "Navn",
                 "ru": "Имя",
                 "pl": "Nazwa",
-                "ko": "이름"
+                "ko": "이름",
+                "ar": "اسم"
             }
         }
     ]

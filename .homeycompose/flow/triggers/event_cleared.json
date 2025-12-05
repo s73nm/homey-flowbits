@@ -2,11 +2,33 @@
     "id": "event_cleared",
     "title": {
         "en": "Event cleared",
-        "nl": "Gebeurtenis geleegd"
+        "nl": "Gebeurtenis geleegd",
+        "da": "Begivenhed ryddet",
+        "de": "Ereignis gelöscht",
+        "es": "Evento despejado",
+        "fr": "Événement effacé",
+        "it": "Evento cancellato",
+        "no": "Hendelse ryddet",
+        "sv": "Händelse rensad",
+        "pl": "Wydarzenie usunięte",
+        "ru": "Событие очищено",
+        "ko": "이벤트가 지워졌습니다",
+        "ar": "تم مسح الحدث"
     },
     "titleFormatted": {
         "en": "Event [[event]] is cleared",
-        "nl": "Gebeurtenis [[event]] is geleegd"
+        "nl": "Gebeurtenis [[event]] is geleegd",
+        "da": "Begivenhed [[event]] er ryddet",
+        "de": "Ereignis [[event]] ist gelöscht",
+        "es": "El evento [[event]] está despejado",
+        "fr": "L'événement [[event]] est effacé",
+        "it": "L'evento [[event]] è cancellato",
+        "no": "Hendelse [[event]] er ryddet",
+        "sv": "Händelsen [[event]] är rensad",
+        "pl": "Wydarzenie [[event]] zostało usunięte",
+        "ru": "Событие [[event]] очищено",
+        "ko": "[[event]] 이벤트가 지워졌습니다",
+        "ar": "تم مسح الحدث [[event]]"
     },
     "args": [
         {
@@ -14,7 +36,18 @@
             "name": "event",
             "title": {
                 "en": "Event",
-                "nl": "Gebeurtenis"
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Ereignis",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Hendelse",
+                "sv": "Händelse",
+                "pl": "Wydarzenie",
+                "ru": "Событие",
+                "ko": "이벤트",
+                "ar": "حدث"
             }
         }
     ]

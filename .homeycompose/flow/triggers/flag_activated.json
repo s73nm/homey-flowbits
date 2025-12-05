@@ -12,7 +12,8 @@
         "da": "Flag aktiveret",
         "ru": "Флаг активирован",
         "pl": "Flaga aktywowana",
-        "ko": "플래그 활성화됨"
+        "ko": "플래그 활성화됨",
+        "ar": "العلم مفعّل"
     },
     "titleFormatted": {
         "en": "Flag [[flag]] is activated",
@@ -26,7 +27,8 @@
         "da": "Flaget [[flag]] er aktiveret",
         "ru": "Флаг [[flag]] активирован",
         "pl": "Flaga [[flag]] została aktywowana",
-        "ko": "플래그 [[flag]]이 활성화됨"
+        "ko": "플래그 [[flag]]이 활성화됨",
+        "ar": "العلم [[flag]] مفعّل"
     },
     "hint": {
         "en": "Triggers when a flag gets activated.",
@@ -40,7 +42,8 @@
         "da": "Udløses når et flag aktiveres.",
         "ru": "Срабатывает при активации флага.",
         "pl": "Wyzwalane gdy flaga zostanie aktywowana.",
-        "ko": "플래그가 활성화될 때 트리거됨."
+        "ko": "플래그가 활성화될 때 트리거됨.",
+        "ar": "يتم التفعيل عند تنشيط العلم."
     },
     "args": [
         {
@@ -58,7 +61,8 @@
                 "da": "Flag",
                 "ru": "Флаг",
                 "pl": "Flaga",
-                "ko": "플래그"
+                "ko": "플래그",
+                "ar": "العلم"
             }
         }
     ]
