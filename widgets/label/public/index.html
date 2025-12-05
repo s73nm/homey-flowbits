@@ -1,0 +1,83 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <title>Label</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+</head>
+
+<body class="homey-widget">
+
+<div class="label">
+    <div
+        class="flowbits-icon label-icon"
+        id="label-icon"></div>
+
+    <div class="label-caption">
+        <div
+            class="label-name homey-text-small-light"
+            id="label-name">
+            &mdash;
+        </div>
+
+        <div
+            class="label-value homey-text-medium"
+            id="label-value">
+            &mdash;
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function onHomeyReady(Homey) {
+        const labelIcon = document.getElementById('label-icon');
+        const labelName = document.getElementById('label-name');
+        const labelValue = document.getElementById('label-value');
+        let ready = false;
+
+        const settings = Homey.getSettings();
+
+        async function init() {
+            Homey.on('flowbits-labels-update', update);
+
+            await update();
+        }
+
+        async function update() {
+            const label = await Homey.api('GET', `/?label=${settings.label.name}`);
+
+            labelName.innerText = label?.name ?? '—';
+            labelValue.innerText = label?.value ?? '—';
+
+            if (label?.color) {
+                labelIcon.style.setProperty('--color', label.color);
+            } else {
+                labelIcon.style.removeProperty('--color');
+            }
+
+            if (label?.icon) {
+                labelIcon.style.setProperty('--icon', JSON.stringify(label.icon));
+                labelIcon.style.setProperty('--icon-secondary', JSON.stringify(label.icon + label.icon));
+            } else {
+                labelIcon.style.removeProperty('--icon');
+                labelIcon.style.removeProperty('--icon-secondary');
+            }
+
+            const height = document.body.getBoundingClientRect().height;
+
+            if (ready) {
+                await Homey.setHeight(height);
+            } else {
+                Homey.ready({height});
+                ready = true;
+            }
+        }
+
+        init();
+    }
+</script>
+
+</body>
+</html>

@@ -70,6 +70,12 @@
 
             const modes = document.getElementById('modes');
 
+            if (settings.readonly) {
+                modes.setAttribute('data-readonly', 'true');
+            } else {
+                modes.removeAttribute('data-readonly');
+            }
+
             if (settings.view_mode === 'grid') {
                 modes.className = 'grid';
             } else {

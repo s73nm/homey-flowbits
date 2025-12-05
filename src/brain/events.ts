@@ -39,13 +39,17 @@ export default class extends Shortcuts<FlowBitsApp> {
 
         this.events = events;
 
-        await this.#triggerCleared(name);
+        await Promise.allSettled([
+            this.#triggerRealtime(),
+            this.#triggerCleared(name)
+        ]);
     }
 
     async clearAll(): Promise<void> {
         const names = Object.keys(this.events);
         this.events = {};
 
+        await this.#triggerRealtime();
         await Promise.allSettled(names.map(name => this.#triggerCleared(name)));
     }
 
@@ -127,7 +131,10 @@ export default class extends Shortcuts<FlowBitsApp> {
 
         this.events = events;
 
-        await this.#triggerTriggered(name);
+        await Promise.allSettled([
+            this.#triggerRealtime(),
+            this.#triggerTriggered(name)
+        ]);
     }
 
     async getLook(name: string): Promise<Look | null> {

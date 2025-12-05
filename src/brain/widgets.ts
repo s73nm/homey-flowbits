@@ -5,7 +5,9 @@ import { searchIcons } from '../util';
 
 export default class extends Shortcuts<FlowBitsApp> {
     async initialize(): Promise<void> {
+        await this.#initializeEvent();
         await this.#initializeFlagOnOff();
+        await this.#initializeLabel();
         await this.#initializeSlider();
     }
 
@@ -17,6 +19,18 @@ export default class extends Shortcuts<FlowBitsApp> {
         await this.app.sliders.setValue(sliderName, value, widgetId);
     }
 
+    async #initializeEvent(): Promise<void> {
+        const widget = this.dashboards.getWidget('event');
+
+        widget.registerSettingAutocompleteListener('event', async () => {
+            const events = await this.app.api.getEvents();
+
+            return events.map(event => ({
+                name: event.name
+            }));
+        });
+    }
+
     async #initializeFlagOnOff(): Promise<void> {
         const widget = this.dashboards.getWidget('flag_onoff');
 
@@ -25,6 +39,18 @@ export default class extends Shortcuts<FlowBitsApp> {
 
             return flags.map(flag => ({
                 name: flag.name
+            }));
+        });
+    }
+
+    async #initializeLabel(): Promise<void> {
+        const widget = this.dashboards.getWidget('label');
+
+        widget.registerSettingAutocompleteListener('label', async () => {
+            const labels = await this.app.api.getLabels();
+
+            return labels.map(label => ({
+                name: label.name
             }));
         });
     }

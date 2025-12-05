@@ -1,12 +1,6 @@
 @import '../../assets/app/base.css';
 @import '../../assets/app/icons.css';
 
-body {
-    -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
-    -webkit-user-select: none;
-    user-select: none;
-}
-
 .flag-on-off {
     display: flex;
     padding: var(--homey-su-4);

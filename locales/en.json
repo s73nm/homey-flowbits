@@ -41,6 +41,9 @@
     "current_mode": {
       "label": "Current mode",
       "suffix": "mode"
+    },
+    "event": {
+      "now": "Now"
     }
   },
   "settings": {

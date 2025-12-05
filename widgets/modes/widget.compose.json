@@ -16,6 +16,15 @@
     "height": 120,
     "settings": [
         {
+            "id": "readonly",
+            "type": "checkbox",
+            "value": false,
+            "title": {
+                "en": "Read only",
+                "nl": "Alleen-lezen"
+            }
+        },
+        {
             "id": "show_icons",
             "type": "checkbox",
             "value": true,

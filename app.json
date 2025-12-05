@@ -6623,6 +6623,30 @@
     ]
   },
   "widgets": {
+    "event": {
+      "name": {
+        "en": "Event",
+        "nl": "Gebeurtenis"
+      },
+      "height": 120,
+      "settings": [
+        {
+          "id": "event",
+          "type": "autocomplete",
+          "title": {
+            "en": "Event",
+            "nl": "Gebeurtenis"
+          }
+        }
+      ],
+      "api": {
+        "get": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "event"
+    },
     "flag_onoff": {
       "name": {
         "en": "Flag on/off",
@@ -6688,6 +6712,15 @@
       },
       "height": 120,
       "settings": [
+        {
+          "id": "readonly",
+          "type": "checkbox",
+          "value": false,
+          "title": {
+            "en": "Read only",
+            "nl": "Alleen-lezen"
+          }
+        },
         {
           "id": "show_icons",
           "type": "checkbox",
@@ -6775,6 +6808,30 @@
       },
       "id": "flags"
     },
+    "label": {
+      "name": {
+        "en": "Label",
+        "nl": "Label"
+      },
+      "height": 120,
+      "settings": [
+        {
+          "id": "label",
+          "type": "autocomplete",
+          "title": {
+            "en": "Label",
+            "nl": "Label"
+          }
+        }
+      ],
+      "api": {
+        "get": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "label"
+    },
     "mode_current": {
       "name": {
         "en": "Current mode",
@@ -6817,6 +6874,15 @@
       },
       "height": 120,
       "settings": [
+        {
+          "id": "readonly",
+          "type": "checkbox",
+          "value": false,
+          "title": {
+            "en": "Read only",
+            "nl": "Alleen-lezen"
+          }
+        },
         {
           "id": "show_icons",
           "type": "checkbox",

@@ -1,0 +1,124 @@
+<!doctype html>
+<html>
+<head lang="en">
+    <title>Event</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+</head>
+
+<body class="homey-widget">
+
+<div class="event">
+    <div
+        class="flowbits-icon event-icon"
+        id="event-icon"></div>
+
+    <div class="event-caption">
+        <div
+            class="event-name homey-text-small-light"
+            id="event-name">
+            &mdash;
+        </div>
+
+        <div
+            class="event-value homey-text-medium"
+            id="event-value">
+            &mdash;
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function onHomeyReady(Homey) {
+        const SECOND = 1;
+        const MINUTE = 60 * SECOND;
+        const HOUR = 60 * MINUTE;
+        const DAY = 24 * HOUR;
+
+        const eventIcon = document.getElementById('event-icon');
+        const eventName = document.getElementById('event-name');
+        const eventValue = document.getElementById('event-value');
+        let ready = false;
+        let interval;
+
+        const formatter = new Intl.RelativeTimeFormat(navigator.language, {numeric: 'auto', style: 'long'});
+        const formatterDate = new Intl.DateTimeFormat(navigator.language, {day: 'numeric', month: 'short', year: 'numeric', hour: '2-digit', minute: '2-digit'});
+
+        if (Date.prototype.getUTCTime === undefined) {
+            Date.prototype.getUTCTime = function () {
+                return this.getTime() - (this.getTimezoneOffset() * 60000);
+            };
+        }
+
+        const settings = Homey.getSettings();
+
+        async function init() {
+            Homey.on('flowbits-events-update', update);
+
+            await update();
+        }
+
+        function tick(lastUpdate) {
+            const now = new Date();
+            const diff = (now.getUTCTime() - lastUpdate.getUTCTime()) / 1000;
+            let value = Homey.__('widget.event.now');
+
+            if (diff > DAY) {
+                value = formatterDate.format(lastUpdate);
+            } else if (diff > HOUR) {
+                value = formatter.format(-Math.round(diff / HOUR), 'hour');
+            } else if (diff > MINUTE) {
+                value = formatter.format(-Math.round(diff / MINUTE), 'minute');
+            } else if (diff > SECOND) {
+                value = formatter.format(-Math.round(diff / SECOND), 'second');
+            }
+
+            eventValue.innerText = value;
+        }
+
+        async function update() {
+            clearInterval(interval);
+
+            const event = await Homey.api('GET', `/?event=${settings.event.name}`);
+
+            eventName.innerText = event?.name ?? '—';
+            eventValue.innerText = '—';
+
+            if (event?.color) {
+                eventIcon.style.setProperty('--color', event.color);
+            } else {
+                eventIcon.style.removeProperty('--color');
+            }
+
+            if (event?.icon) {
+                eventIcon.style.setProperty('--icon', JSON.stringify(event.icon));
+                eventIcon.style.setProperty('--icon-secondary', JSON.stringify(event.icon + event.icon));
+            } else {
+                eventIcon.style.removeProperty('--icon');
+                eventIcon.style.removeProperty('--icon-secondary');
+            }
+
+            if (event?.lastUpdate) {
+                const lastUpdate = new Date(event.lastUpdate);
+                interval = setInterval(() => tick(lastUpdate), 1000);
+                tick(lastUpdate);
+            }
+
+            const height = document.body.getBoundingClientRect().height;
+
+            if (ready) {
+                await Homey.setHeight(height);
+            } else {
+                Homey.ready({height});
+                ready = true;
+            }
+        }
+
+        init();
+    }
+</script>
+
+</body>
+</html>

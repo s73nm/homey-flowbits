@@ -1,0 +1,23 @@
+{
+    "name": {
+        "en": "Label",
+        "nl": "Label"
+    },
+    "height": 120,
+    "settings": [
+        {
+            "id": "label",
+            "type": "autocomplete",
+            "title": {
+                "en": "Label",
+                "nl": "Label"
+            }
+        }
+    ],
+    "api": {
+        "get": {
+            "method": "GET",
+            "path": "/"
+        }
+    }
+}

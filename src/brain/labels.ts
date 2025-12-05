@@ -75,7 +75,10 @@ export default class extends Shortcuts<FlowBitsApp> {
         delete labels[name];
         this.labels = labels;
 
-        await this.#triggerChanged(name);
+        await Promise.allSettled([
+            this.#triggerChanged(name),
+            this.#triggerRealtime()
+        ]);
     }
 
     async getValue(name: string): Promise<string | null> {
@@ -94,7 +97,8 @@ export default class extends Shortcuts<FlowBitsApp> {
 
         await Promise.allSettled([
             this.#triggerBecomes(name, value),
-            this.#triggerChanged(name)
+            this.#triggerChanged(name),
+            this.#triggerRealtime()
         ]);
     }
 

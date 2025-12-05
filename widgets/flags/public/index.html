@@ -70,6 +70,12 @@
 
             const flags = document.getElementById('flags');
 
+            if (settings.readonly) {
+                flags.setAttribute('data-readonly', 'true');
+            } else {
+                flags.removeAttribute('data-readonly');
+            }
+
             if (settings.view_mode === 'grid') {
                 flags.className = 'grid';
             } else {

@@ -1,14 +1,14 @@
 @import '../../assets/app/base.css';
 @import '../../assets/app/icons.css';
 
-.current-mode {
+.label {
     display: flex;
     align-items: center;
     flex-flow: row;
     gap: var(--homey-su-3);
 }
 
-.current-mode-caption {
+.label-caption {
     display: flex;
     align-items: flex-start;
     flex-flow: column;
@@ -16,6 +16,6 @@
     gap: var(--homey-su-1);
 }
 
-.current-mode-name {
+.label-value {
     font-size: var(--homey-font-size-xlarge);
 }

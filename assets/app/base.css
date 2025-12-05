@@ -18,6 +18,19 @@
     --rose: #f43f5e;
 }
 
+body {
+    color: var(--homey-text-color);
+
+    -webkit-tap-highlight-color: rgb(0 0 0 / 0.00001);
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+[data-readonly] {
+    pointer-events: none;
+    touch-action: none;
+}
+
 .flowbits-icon {
     --color: #64748b;
     --icon: '';
@@ -38,6 +51,7 @@
     color: var(--color);
     font-family: 'font-awesome', sans-serif;
     font-size: var(--size);
+    translate: 0 -.05em;
 }
 
 .flowbits-icon::before {
