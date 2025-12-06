@@ -1,4 +1,8 @@
-# Signals
+---
+outline: deep
+---
+
+# Signals <VPBadge type="info" text="1.0.0+"/>
 
 Signals let different parts of your system communicate through lightweight, one-time messages.  
 Where flags store *state*, signals represent *events* — short-lived pulses that indicate something just happened.

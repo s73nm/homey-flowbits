@@ -1,5 +1,5 @@
 import type { Theme } from 'vitepress';
-import DefaultTheme from 'vitepress/theme';
+import DefaultTheme, { VPBadge } from 'vitepress/theme';
 
 import Flow from './component/Flow.vue';
 import FlowCard from './component/FlowCard.vue';
@@ -12,6 +12,7 @@ export default {
     extends: DefaultTheme,
 
     enhanceApp({app}) {
+        app.component('VPBadge', VPBadge);
         app.component('Flow', Flow);
         app.component('FlowCard', FlowCard);
         app.component('FlowCardExplainer', FlowCardExplainer);

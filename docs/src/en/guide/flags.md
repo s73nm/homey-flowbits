@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Flags
+# Flags <VPBadge type="info" text="1.0.0+"/>
 
 Flags are simple boolean markers that represent a certain state in your home.  
 A flag is always either **on** (true) or **off** (false), and you can get, set, or toggle it from any flow.
@@ -64,7 +64,7 @@ These flow cards allow you to set, clear, toggle, or evaluate flags from within 
         <FlowCard type="trigger">Flag <strong>Vacation</strong> changed</FlowCard>
     </FlowCardExplainer>
     <FlowCardExplainer content="Triggers when a flag is deactivated.">
-        <FlowCard type="trigger">Flag <strong>Clearning</strong> is deactivated</FlowCard>
+        <FlowCard type="trigger">Flag <strong>Cleaning</strong> is deactivated</FlowCard>
     </FlowCardExplainer>
 </FlowCards>
 

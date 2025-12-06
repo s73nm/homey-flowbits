@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Timers
+# Timers <VPBadge type="info" text="1.0.0+"/>
 
 Timers let you delay actions, schedule follow-ups, and build flows that react to time passing rather than immediate events.  
 They are simple, self-contained countdowns that start, expire, and reset without storing additional data.

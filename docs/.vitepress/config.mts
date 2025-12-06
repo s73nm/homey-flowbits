@@ -48,9 +48,9 @@ export default defineConfig({
                             {
                                 text: 'More',
                                 items: [
-                                    {text: 'Apple', link: 'https://homey.app/nl-nl/app/com.basmilius.apple/Apple/test/'},
-                                    {text: 'Listri', link: 'https://listri.nl'},
-                                    {text: 'SAJ R5', link: 'https://homey.app/nl-nl/app/com.basmilius.sajr5/SAJ-R5/'}
+                                    {text: 'Apple', link: 'https://homey.app/en-nl/app/com.basmilius.apple/Apple/test/'},
+                                    {text: 'Lists', link: 'https://homey.app/en-nl/app/com.basmilius.listri/Lists/test/'},
+                                    {text: 'SAJ R5', link: 'https://homey.app/en-nl/app/com.basmilius.sajr5/SAJ-R5/'}
                                 ]
                             },
                             {
@@ -70,13 +70,16 @@ export default defineConfig({
                             text: 'Getting started',
                             items: [
                                 {text: 'Installation', link: '/guide/'},
+                                {text: 'App Settings', link: '/guide/app-settings'},
                                 {text: 'Philosophy', link: '/guide/philosophy'}
                             ]
                         },
                         {
                             text: 'Features',
                             items: [
+                                {text: 'Events', link: '/guide/events'},
                                 {text: 'Flags', link: '/guide/flags'},
+                                {text: 'Labels', link: '/guide/labels'},
                                 {text: 'Modes', link: '/guide/modes'},
                                 {text: 'No-repeat windows', link: '/guide/no-repeat-windows'},
                                 {text: 'Signals', link: '/guide/signals'},

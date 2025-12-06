@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Step Sequences (Cycles)
+# Step Sequences (Cycles) <VPBadge type="info" text="1.0.0+"/>
 
 Step sequences let you cycle through a predefined set of numbered steps in a fixed order. They are ideal when you want a flow to move from one state to the next each time it runs, without managing variables or additional logic.
 

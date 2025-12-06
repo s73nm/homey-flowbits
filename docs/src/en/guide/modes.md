@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# Modes
+# Modes <VPBadge type="info" text="1.0.0+"/>
 
 Modes let you define named states that describe how your home should behave.  
 A mode is a label such as *Home*, *Away*, *Night*, or *Party*, and flows can set or react to the current mode.
@@ -56,13 +56,13 @@ These flow cards let you manage modes directly from your flows, enabling you to 
 
 <FlowCards>
     <FlowCardExplainer content="Triggers when a mode is activated.">
-        <FlowCard type="trigger"><strong>Partytime</strong> is activated</FlowCard>
+        <FlowCard type="trigger"><strong>Evening</strong> is activated</FlowCard>
     </FlowCardExplainer>
     <FlowCardExplainer content="Triggers when a mode is activated or deactivated.">
-        <FlowCard type="trigger"><strong>Vacation</strong> changed</FlowCard>
+        <FlowCard type="trigger"><strong>Night</strong> changed</FlowCard>
     </FlowCardExplainer>
     <FlowCardExplainer content="Triggers when a mode is deactivated.">
-        <FlowCard type="trigger"><strong>Clearning</strong> is deactivated</FlowCard>
+        <FlowCard type="trigger"><strong>Morning</strong> is deactivated</FlowCard>
     </FlowCardExplainer>
 </FlowCards>
 

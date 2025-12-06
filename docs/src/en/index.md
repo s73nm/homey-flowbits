@@ -55,6 +55,20 @@ features:
         link: /guide/timers
         linkText: Learn more
 
+    -   title: Events
+        details: Track when something happens and check if it occurred today, within a time window, or at all.
+        icon:
+            src: /assets/features/events.svg
+        link: /guide/events
+        linkText: Learn more
+
+    -   title: Labels
+        details: Store and retrieve custom text values to pass dynamic information between flows.
+        icon:
+            src: /assets/features/labels.svg
+        link: /guide/labels
+        linkText: Learn more
+
     -   title: Sliders
         details: Control numeric values between 0 and 100 and respond to adjustments from flows or widgets.
         icon:

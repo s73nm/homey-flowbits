@@ -1,4 +1,8 @@
-# Sliders
+---
+outline: deep
+---
+
+# Sliders <VPBadge type="info" text="1.5.0+"/>
 
 Sliders let you work with adjustable numeric values inside your flows.  
 They behave like virtual dials: users can drag the slider in the UI, and flows can read or update its value at any time.
@@ -11,13 +15,12 @@ This fixed range keeps sliders predictable and easy to use for percentages, inte
 Sliders can be controlled both from the user interface and from flow cards.  
 When the value changes, a flow card triggers so you can respond to that update.
 
-## Key Features
+Sliders are useful for:
 
-- User-driven numeric input.
-- Flow-driven updates.
-- Optional real-time updates during sliding.
-- Consistent 0–100 range for all sliders.
-- Suitable for fine-tuned control.
+- User-driven numeric input
+- Flow-driven updates
+- Optional real-time updates during sliding
+- Fine-tuned control with a consistent 0–100 range
 
 ## Flow cards
 

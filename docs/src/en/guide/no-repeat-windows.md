@@ -2,7 +2,7 @@
 outline: deep
 ---
 
-# No-Repeat Windows
+# No-Repeat Windows <VPBadge type="info" text="1.3.0+"/>
 
 No-repeat windows help you prevent repeated triggers within a defined time span.  
 They are useful when a flow might fire multiple times in quick succession, but you only want the first one to count.
