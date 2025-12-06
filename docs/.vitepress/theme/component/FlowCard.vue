@@ -115,7 +115,7 @@
 
         if (width > 0) {
             // Normal case: target is to the right
-            const loopOut = 50;
+            const loopOut = 15;
             const midX = (startX + endX) / 2;
             const midY = (startY + endY) / 2;
 
