@@ -1,7 +1,4 @@
 {
-  "1.0.0": {
-    "en": "First version!"
-  },
   "0.0.1": {
     "en": "Initial test release."
   },
@@ -31,6 +28,9 @@
   },
   "0.2.0": {
     "en": "Update the assets and branding a bit."
+  },
+  "1.0.0": {
+      "en": "First version!"
   },
   "1.0.1": {
     "en": "Added a hint to the school holiday flow card."

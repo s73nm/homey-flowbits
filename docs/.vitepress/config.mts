@@ -71,6 +71,7 @@ export default defineConfig({
                             items: [
                                 {text: 'Installation', link: '/guide/'},
                                 {text: 'App Settings', link: '/guide/app-settings'},
+                                {text: 'Release Notes', link: '/guide/release-notes'},
                                 {text: 'Philosophy', link: '/guide/philosophy'}
                             ]
                         },
