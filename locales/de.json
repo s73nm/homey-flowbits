@@ -35,6 +35,11 @@
     },
     "event": {
       "now": "Jetzt"
+    },
+    "timer": {
+      "finished": "Beendet",
+      "paused": "Pausiert",
+      "stopped": "Gestoppt"
     }
   },
   "settings": {
@@ -65,11 +70,18 @@
       "modes": "Modi",
       "no_repeats": "Nicht-wiederholen-Fenster",
       "sliders": "Schieberegler",
-      "timers": "Timer"
+      "timers": "Timer",
+      "events": "Ereignisse",
+      "labels": "Etiketten"
     },
     "card_statistics": {
       "title": "Flowkarten-Statistiken",
       "description": "Dies sind Nutzungsstatistiken für einzelne Flowkarten."
+    },
+    "timers": {
+      "title": "Timer",
+      "description": "Timer zählen von einer bestimmten Dauer herunter und können gestartet, pausiert, gestoppt und zurückgesetzt werden. Verwenden Sie Timer-Aktionen, Bedingungen und Trigger in Ihren Flows, um Countdowns zu verwalten und zu reagieren, wenn Timer ablaufen.",
+      "empty": "Es wurden noch keine Timer erstellt."
     }
   },
   "color": {

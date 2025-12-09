@@ -35,6 +35,11 @@
     },
     "event": {
       "now": "Nu"
+    },
+    "timer": {
+      "finished": "Afsluttet",
+      "paused": "Sat på pause",
+      "stopped": "Stoppet"
     }
   },
   "settings": {
@@ -65,11 +70,18 @@
       "modes": "Tilstande",
       "no_repeats": "Ingen-gentagelsesvinduer",
       "sliders": "Skydeknapper",
-      "timers": "Timere"
+      "timers": "Timere",
+      "events": "Begivenheder",
+      "labels": "Etiketter"
     },
     "card_statistics": {
       "title": "Flowkortstatistik",
       "description": "Dette er brugsstatistik for individuelle flowkort."
+    },
+    "timers": {
+      "title": "Timere",
+      "description": "Timere tæller ned fra en specificeret varighed og kan startes, sættes på pause, stoppes og nulstilles. Brug timerhandlinger, betingelser og triggere i dine flows til at administrere nedtællinger og reagere når timere er færdige.",
+      "empty": "Der er endnu ikke oprettet nogen timere."
     }
   },
   "color": {

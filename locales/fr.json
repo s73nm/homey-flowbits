@@ -35,6 +35,11 @@
     },
     "event": {
       "now": "Maintenant"
+    },
+    "timer": {
+      "finished": "Terminé",
+      "paused": "En pause",
+      "stopped": "Arrêté"
     }
   },
   "settings": {
@@ -65,11 +70,18 @@
       "modes": "Modes",
       "no_repeats": "Fenêtres sans répétition",
       "sliders": "Curseurs",
-      "timers": "Minuteries"
+      "timers": "Minuteries",
+      "events": "Événements",
+      "labels": "Étiquettes"
     },
     "card_statistics": {
       "title": "Statistiques des cartes de flux",
       "description": "Voici les statistiques d'utilisation des cartes de flux individuelles."
+    },
+    "timers": {
+      "title": "Minuteries",
+      "description": "Les minuteries effectuent un compte à rebours à partir d'une durée spécifiée et peuvent être démarrées, mises en pause, arrêtées et réinitialisées. Utilisez les actions, conditions et déclencheurs de minuterie dans vos flux pour gérer les comptes à rebours et réagir lorsque les minuteries se terminent.",
+      "empty": "Aucune minuterie n'a encore été créée."
     }
   },
   "color": {

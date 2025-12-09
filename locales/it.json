@@ -35,6 +35,11 @@
     },
     "event": {
       "now": "Adesso"
+    },
+    "timer": {
+      "finished": "Terminato",
+      "paused": "In pausa",
+      "stopped": "Fermato"
     }
   },
   "settings": {
@@ -65,11 +70,18 @@
       "modes": "Modalità",
       "no_repeats": "Finestre senza ripetizione",
       "sliders": "Slider",
-      "timers": "Timer"
+      "timers": "Timer",
+      "events": "Eventi",
+      "labels": "Etichette"
     },
     "card_statistics": {
       "title": "Statistiche delle schede flow",
       "description": "Queste sono statistiche di utilizzo per le singole schede flow."
+    },
+    "timers": {
+      "title": "Timer",
+      "description": "I timer fanno un conto alla rovescia da una durata specificata e possono essere avviati, messi in pausa, fermati e ripristinati. Usa azioni, condizioni e trigger dei timer nei tuoi flow per gestire i conti alla rovescia e rispondere quando i timer terminano.",
+      "empty": "Nessun timer è stato ancora creato."
     }
   },
   "color": {

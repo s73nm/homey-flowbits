@@ -54,11 +54,15 @@
     },
     "widget": {
         "current_mode": {
-            "label": "Nåværende modus",
-            "suffix": "modus"
+            "label": "Nåværende modus"
         },
         "event": {
             "now": "Nå"
+        },
+        "timer": {
+            "finished": "Fullført",
+            "paused": "Pauset",
+            "stopped": "Stoppet"
         }
     },
     "settings": {
@@ -81,11 +85,18 @@
             "description": "Bare én modus kan være aktiv om gangen. Opprett og administrer moduser via handlinger, betingelser og triggere i dine flyter.",
             "empty": "Ingen moduser har blitt opprettet enda."
         },
+        "timers": {
+            "title": "Tidtakere",
+            "description": "Tidtakere teller ned fra en spesifisert varighet og kan startes, settes på pause, stoppes og tilbakestilles. Bruk tidtakerhandlinger, betingelser og triggere i flytene dine for å administrere nedtellinger og reagere når tidtakere er ferdige.",
+            "empty": "Ingen tidtakere har blitt opprettet enda."
+        },
         "statistics": {
             "title": "Statistikk",
             "description": "Dette er funksjonsstatistikk for FlowBits. De er basert på dine flyter.",
             "cycles": "Sykluser",
+            "events": "Hendelser",
             "flags": "Flagg",
+            "labels": "Etiketter",
             "modes": "Moduser",
             "no_repeats": "Ingen-gjentakelsesvinduer",
             "sliders": "Glidere",

@@ -54,11 +54,15 @@
     },
     "widget": {
         "current_mode": {
-            "label": "Modalità attuale",
-            "suffix": "modalità"
+            "label": "Modalità attuale"
         },
         "event": {
             "now": "Adesso"
+        },
+        "timer": {
+            "finished": "Terminato",
+            "paused": "In pausa",
+            "stopped": "Fermato"
         }
     },
     "settings": {
@@ -81,11 +85,18 @@
             "description": "Solo una modalità può essere attiva alla volta. Crea e gestisci le modalità tramite azioni, condizioni e trigger nei tuoi flow.",
             "empty": "Nessuna modalità è stata ancora creata."
         },
+        "timers": {
+            "title": "Timer",
+            "description": "I timer fanno un conto alla rovescia da una durata specificata e possono essere avviati, messi in pausa, fermati e ripristinati. Usa azioni, condizioni e trigger dei timer nei tuoi flow per gestire i conti alla rovescia e rispondere quando i timer terminano.",
+            "empty": "Nessun timer è stato ancora creato."
+        },
         "statistics": {
             "title": "Statistiche",
             "description": "Queste sono statistiche delle funzionalità di FlowBits. Si basano sui tuoi flow.",
             "cycles": "Cicli",
+            "events": "Eventi",
             "flags": "Flag",
+            "labels": "Etichette",
             "modes": "Modalità",
             "no_repeats": "Finestre senza ripetizione",
             "sliders": "Slider",

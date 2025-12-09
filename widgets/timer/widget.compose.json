@@ -1,0 +1,23 @@
+{
+    "name": {
+        "en": "Timer",
+        "nl": "Timer"
+    },
+    "height": 120,
+    "settings": [
+        {
+            "id": "timer",
+            "type": "autocomplete",
+            "title": {
+                "en": "Timer",
+                "nl": "Timer"
+            }
+        }
+    ],
+    "api": {
+        "get": {
+            "method": "GET",
+            "path": "/"
+        }
+    }
+}

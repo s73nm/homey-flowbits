@@ -1,22 +1,84 @@
 import { DateTime, Shortcuts } from '@basmilius/homey-common';
-import { SETTING_TIMER_PREFIX } from '../const';
+import { REALTIME_TIMER_UPDATE, SETTING_TIMER_LOOKS, SETTING_TIMER_PREFIX } from '../const';
 import { AutocompleteProviders, Triggers } from '../flow';
-import type { ClockState, ClockUnit, FlowBitsApp } from '../types';
+import type { ClockState, ClockUnit, Feature, FlowBitsApp, Look, Styleable, Timer } from '../types';
 import { convertDurationToSeconds, slugify } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> {
+const TIMER_FINISH_GRACE_PERIOD = 5;
+
+export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, Styleable {
+    get looks(): Record<string, Look> {
+        return this.settings.get(SETTING_TIMER_LOOKS) ?? {};
+    }
+
+    set looks(value: Record<string, Look>) {
+        this.settings.set(SETTING_TIMER_LOOKS, value);
+    }
+
     #timeouts: Record<string, NodeJS.Timeout[]> = {};
-    #timers: Record<string, Timer> = {};
+    #timers: Record<string, StoredTimer> = {};
 
     async initialize(): Promise<void> {
         await this.#schedule();
     }
 
-    async getCount(): Promise<number> {
+    async count(): Promise<number> {
         return Object.keys(this.#timers).length;
     }
 
-    async finish(timer: Timer): Promise<void> {
+    async find(name: string): Promise<Timer | null> {
+        const timers = await this.findAll();
+        const timer = timers.find(timer => timer.name === name);
+
+        if (timer) {
+            return timer;
+        }
+
+        const provider = this.#autocompleteProvider();
+        const definedTimers = await provider.find('');
+        const defined = definedTimers.find(t => t.name === name);
+
+        if (defined) {
+            const look = await this.getLook(name);
+
+            return {
+                color: look[0],
+                icon: look[1],
+                name,
+                remaining: 0,
+                status: 'stopped',
+                target: 0
+            };
+        }
+
+        return null;
+    }
+
+    async findAll(): Promise<Timer[]> {
+        const now = DateTime.now().toSeconds();
+        const timers = await this.#findAll();
+        const results: Timer[] = [];
+
+        for (const timer of timers) {
+            const look = await this.getLook(timer.name);
+            const remaining = timer.status === 'running'
+                ? Math.max(0, timer.target - now)
+                : timer.remaining;
+
+            results.push({
+                color: look[0],
+                icon: look[1],
+                name: timer.name,
+                remaining,
+                status: timer.status,
+                target: timer.target
+            });
+        }
+
+        return results;
+    }
+
+    async finish(timer: StoredTimer): Promise<void> {
         await this.#update(timer.name, timer.duration, 0, timer.target, 'finished');
         await this.#triggerFinished(timer.name);
     }
@@ -77,6 +139,7 @@ export default class extends Shortcuts<FlowBitsApp> {
 
         await this.#clear(timer);
         await this.#remove(timer.id);
+        await this.#triggerRealtime(timer.name);
         await this.#triggerStopped(timer.name);
     }
 
@@ -111,11 +174,24 @@ export default class extends Shortcuts<FlowBitsApp> {
         return timer?.status === 'running';
     }
 
+    async getLook(name: string): Promise<Look> {
+        return this.looks[name] ?? ['#06b6d4', ''];
+    }
+
+    async setLook(name: string, look: Look): Promise<void> {
+        this.looks = {
+            ...this.looks,
+            [name]: look
+        };
+
+        await this.#triggerRealtime(name);
+    }
+
     #id(name: string): string {
         return `${SETTING_TIMER_PREFIX}${slugify(name)}`;
     }
 
-    async #clear(timer: Timer): Promise<void> {
+    async #clear(timer: StoredTimer): Promise<void> {
         const timeouts = this.#timeouts[timer.id];
 
         if (!timeouts) {
@@ -127,28 +203,23 @@ export default class extends Shortcuts<FlowBitsApp> {
         delete this.#timeouts[timer.id];
     }
 
-    async #find(name: string): Promise<Timer | null> {
+    async #find(name: string): Promise<StoredTimer | null> {
         return Object.values(this.#timers).find(t => t.name === name) ?? null;
     }
 
-    async #findAll(): Promise<Timer[]> {
-        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Timer);
-
-        if (!autocompleteProvider) {
-            throw new Error('Failed to get autocomplete provider.');
-        }
-
+    async #findAll(): Promise<StoredTimer[]> {
         const allSettings = this.settings.getKeys();
+        const autocompleteProvider = this.#autocompleteProvider();
         const definedTimers = await autocompleteProvider.find('');
-        const timers: Timer[] = [];
-        const checkKeys: (keyof Timer)[] = ['name', 'duration', 'remaining', 'target', 'status'];
+        const timers: StoredTimer[] = [];
+        const checkKeys: (keyof StoredTimer)[] = ['name', 'duration', 'remaining', 'target', 'status'];
 
         for (const setting of allSettings) {
             if (!setting.startsWith(SETTING_TIMER_PREFIX)) {
                 continue;
             }
 
-            const timer: Timer = this.settings.get(setting);
+            const timer: StoredTimer = this.settings.get(setting);
             const isValid = timer && checkKeys.every(key => key in timer);
 
             if (!isValid || !definedTimers.find(t => t.name === timer.name)) {
@@ -177,7 +248,7 @@ export default class extends Shortcuts<FlowBitsApp> {
     async #save(name: string, duration: number, unit: ClockUnit, status: ClockState): Promise<void> {
         const now = DateTime.now().toSeconds();
         const remaining = convertDurationToSeconds(duration, unit);
-        const target = now + remaining;
+        const target = now + remaining + 1;
 
         await this.#update(name, remaining, remaining, target, status);
     }
@@ -185,7 +256,10 @@ export default class extends Shortcuts<FlowBitsApp> {
     async #schedule(): Promise<void> {
         const now = DateTime.now().toSeconds();
         const timers = await this.#findAll();
-        const remainingTriggers: { timer: { name: string }, duration: number, unit: ClockUnit }[] = await this.homey.flow.getTriggerCard('timer_remaining').getArgumentValues();
+        const remainingTriggers: { timer: { name: string }, duration: number, unit: ClockUnit }[] = await this.homey.flow
+            .getTriggerCard('timer_remaining')
+            .getArgumentValues()
+            .catch(() => []);
 
         this.#timers = {};
 
@@ -225,12 +299,13 @@ export default class extends Shortcuts<FlowBitsApp> {
                 }
 
                 this.#timeouts[timer.id] = timeouts;
-            } else if (diff >= -5 && timer.status === 'running') {
+            } else if (diff >= -TIMER_FINISH_GRACE_PERIOD && timer.status === 'running') {
                 // todo(Bas): Decide if this 5 second grace period is wanted.
                 await this.finish(timer);
             }
 
             this.#timers[timer.id] = timer;
+            await this.#triggerRealtime(timer.name);
         }
     }
 
@@ -244,7 +319,7 @@ export default class extends Shortcuts<FlowBitsApp> {
             remaining,
             target,
             status
-        } satisfies Timer);
+        } satisfies StoredTimer);
     }
 
     async #triggerFinished(name: string): Promise<void> {
@@ -294,9 +369,29 @@ export default class extends Shortcuts<FlowBitsApp> {
 
         this.log(`Triggered timer stopped for ${name}.`);
     }
+
+    async #triggerRealtime(name: string): Promise<void> {
+        const timer = await this.find(name);
+
+        if (!timer) {
+            return;
+        }
+
+        this.realtime(REALTIME_TIMER_UPDATE, timer);
+    }
+
+    #autocompleteProvider(): AutocompleteProviders.Timer {
+        const provider = this.registry.findAutocompleteProvider(AutocompleteProviders.Timer);
+
+        if (!provider) {
+            throw new Error('Failed to get the timer autocomplete provider.');
+        }
+
+        return provider;
+    }
 }
 
-type Timer = {
+type StoredTimer = {
     readonly id: string;
     readonly name: string;
     readonly duration: number;

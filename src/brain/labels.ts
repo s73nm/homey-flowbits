@@ -1,9 +1,9 @@
 import { DateTime, Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_LABELS_UPDATE, SETTING_LABEL_LOOKS, SETTING_LABELS } from '../const';
 import { AutocompleteProviders, Triggers } from '../flow';
-import type { Event, FlowBitsApp, Label, Look } from '../types';
+import type { Feature, FlowBitsApp, Label, Look, Styleable } from '../types';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class extends Shortcuts<FlowBitsApp> implements Feature<Label>, Styleable {
     get labels(): Record<string, [string, DateTime]> {
         return Object.fromEntries(
             Object.entries<[string, string]>(this.settings.get(SETTING_LABELS) ?? {})
@@ -32,20 +32,20 @@ export default class extends Shortcuts<FlowBitsApp> {
         this.settings.set(SETTING_LABEL_LOOKS, value);
     }
 
+    async count(): Promise<number> {
+        const labels = await this.findAll();
+
+        return labels.length;
+    }
+
     async find(name: string): Promise<Label | null> {
-        const labels = await this.getLabels();
+        const labels = await this.findAll();
         const label = labels.find(label => label.name === name);
 
         return label ?? null;
     }
 
-    async getCount(): Promise<number> {
-        const labels = await this.getLabels();
-
-        return labels.length;
-    }
-
-    async getLabels(): Promise<Event[]> {
+    async findAll(): Promise<Label[]> {
         const provider = this.#autocompleteProvider();
         const labels = await provider.find('');
 
@@ -53,17 +53,18 @@ export default class extends Shortcuts<FlowBitsApp> {
             return [];
         }
 
-        const results: Event[] = [];
+        const results: Label[] = [];
 
         for (const label of labels) {
             const look = await this.getLook(label.name);
             const data = this.labels[label.name] ?? null;
 
             results.push({
-                color: look?.[0],
-                icon: look?.[1],
+                color: look[0],
+                icon: look[1],
                 lastUpdate: data?.[1]?.toISO() ?? undefined,
-                name: label.name
+                name: label.name,
+                value: data?.[0]
             });
         }
 
@@ -102,7 +103,7 @@ export default class extends Shortcuts<FlowBitsApp> {
         ]);
     }
 
-    async getLook(name: string): Promise<Look | null> {
+    async getLook(name: string): Promise<Look> {
         return this.looks[name] ?? ['#204ef6', ''];
     }
 

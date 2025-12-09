@@ -281,6 +281,10 @@
       "method": "GET",
       "path": "/modes"
     },
+    "getTimers": {
+      "method": "GET",
+      "path": "/timers"
+    },
     "getColors": {
       "method": "GET",
       "path": "/colors"
@@ -304,6 +308,10 @@
     "setModeLook": {
       "method": "POST",
       "path": "/modes/look"
+    },
+    "setTimerLook": {
+      "method": "POST",
+      "path": "/timers/look"
     },
     "getStatistics": {
       "method": "GET",

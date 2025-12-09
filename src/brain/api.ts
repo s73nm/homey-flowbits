@@ -1,9 +1,9 @@
 import { Shortcuts } from '@basmilius/homey-common';
-import type { Event, Flag, FlowBitsApp, Label, Mode, Statistics } from '../types';
+import type { Event, Flag, FlowBitsApp, Label, Mode, Statistics, Timer } from '../types';
 
 export default class extends Shortcuts<FlowBitsApp> {
     async getEvents(): Promise<Event[]> {
-        return await this.app.events.getEvents();
+        return await this.app.events.findAll();
     }
 
     async setEventLook(eventName: string, color: string, icon: string): Promise<boolean> {
@@ -59,7 +59,7 @@ export default class extends Shortcuts<FlowBitsApp> {
     }
 
     async getFlags(): Promise<Flag[]> {
-        return await this.app.flags.getFlags();
+        return await this.app.flags.findAll();
     }
 
     async setFlagLook(flagName: string, color: string, icon: string): Promise<boolean> {
@@ -75,7 +75,7 @@ export default class extends Shortcuts<FlowBitsApp> {
     }
 
     async getLabels(): Promise<Label[]> {
-        return await this.app.labels.getLabels();
+        return await this.app.labels.findAll();
     }
 
     async setLabelLook(labelName: string, color: string, icon: string): Promise<boolean> {
@@ -135,7 +135,7 @@ export default class extends Shortcuts<FlowBitsApp> {
     }
 
     async getModes(): Promise<Mode[]> {
-        return await this.app.modes.getModes();
+        return await this.app.modes.findAll();
     }
 
     async setModeLook(modeName: string, color: string, icon: string): Promise<boolean> {
@@ -150,22 +150,38 @@ export default class extends Shortcuts<FlowBitsApp> {
         return true;
     }
 
+    async getTimers(): Promise<Timer[]> {
+        return await this.app.timers.findAll();
+    }
+
+    async setTimerLook(timerName: string, color: string, icon: string): Promise<boolean> {
+        const timer = await this.app.timers.find(timerName);
+
+        if (!timer) {
+            return false;
+        }
+
+        await this.app.timers.setLook(timer.name, [color, icon]);
+
+        return true;
+    }
+
     async getStatistics(): Promise<Statistics> {
-        const flags = await this.app.flags.getFlags();
-        const modes = await this.app.modes.getModes();
+        const flags = await this.app.flags.findAll();
+        const modes = await this.app.modes.findAll();
 
         return {
             currentFlags: flags.filter(flag => flag.active).map(flag => flag.name),
             currentMode: modes.find(mode => mode.active)?.name ?? null,
 
-            numberOfCycles: await this.app.cycles.getCount(),
-            numberOfEvents: await this.app.events.getCount(),
-            numberOfFlags: await this.app.flags.getCount(),
-            numberOfLabels: 0,
-            numberOfModes: await this.app.modes.getCount(),
-            numberOfNoRepeats: await this.app.noRepeat.getCount(),
-            numberOfSliders: await this.app.sliders.getCount(),
-            numberOfTimers: await this.app.timers.getCount(),
+            numberOfCycles: await this.app.cycles.count(),
+            numberOfEvents: await this.app.events.count(),
+            numberOfFlags: await this.app.flags.count(),
+            numberOfLabels: await this.app.labels.count(),
+            numberOfModes: await this.app.modes.count(),
+            numberOfNoRepeats: await this.app.noRepeat.count(),
+            numberOfSliders: await this.app.sliders.count(),
+            numberOfTimers: await this.app.timers.count(),
 
             runsPerFlowCard: {},
             usagePerFlowCard: await this.#getStatisticsUsagePerFlowCard()

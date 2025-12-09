@@ -54,11 +54,15 @@
     },
     "widget": {
         "current_mode": {
-            "label": "Aktuel tilstand",
-            "suffix": "tilstand"
+            "label": "Aktuel tilstand"
         },
         "event": {
             "now": "Nu"
+        },
+        "timer": {
+            "finished": "Afsluttet",
+            "paused": "Sat på pause",
+            "stopped": "Stoppet"
         }
     },
     "settings": {
@@ -81,11 +85,18 @@
             "description": "Kun én tilstand kan være aktiv ad gangen. Opret og administrér tilstande via handlinger, betingelser og triggere i dine flows.",
             "empty": "Der er endnu ikke oprettet nogen tilstande."
         },
+        "timers": {
+            "title": "Timere",
+            "description": "Timere tæller ned fra en specificeret varighed og kan startes, sættes på pause, stoppes og nulstilles. Brug timerhandlinger, betingelser og triggere i dine flows til at administrere nedtællinger og reagere når timere er færdige.",
+            "empty": "Der er endnu ikke oprettet nogen timere."
+        },
         "statistics": {
             "title": "Statistik",
             "description": "Dette er funktionsstatistik for FlowBits. De er baseret på dine flows.",
             "cycles": "Cyklusser",
+            "events": "Begivenheder",
             "flags": "Flag",
+            "labels": "Etiketter",
             "modes": "Tilstande",
             "no_repeats": "Ingen-gentagelsesvinduer",
             "sliders": "Skydeknapper",

@@ -1,0 +1,154 @@
+
+<!doctype html>
+<html>
+<head lang="en">
+    <title>Timer</title>
+
+    <link
+        rel="stylesheet"
+        href="style.css">
+</head>
+
+<body class="homey-widget">
+
+<div class="timer">
+    <div
+        class="flowbits-icon timer-icon"
+        id="timer-icon"></div>
+
+    <div class="timer-caption">
+        <div
+            class="timer-name homey-text-small-light"
+            id="timer-name">
+            &mdash;
+        </div>
+
+        <div
+            class="timer-value homey-text-medium"
+            id="timer-value">
+            &mdash;
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    function onHomeyReady(Homey) {
+        const SECOND = 1;
+        const MINUTE = 60 * SECOND;
+        const HOUR = 60 * MINUTE;
+        const DAY = 24 * HOUR;
+
+        const timerIcon = document.getElementById('timer-icon');
+        const timerName = document.getElementById('timer-name');
+        const timerValue = document.getElementById('timer-value');
+        let ready = false;
+        let interval;
+
+        const settings = Homey.getSettings();
+
+        async function init() {
+            Homey.on('flowbits-timer-update', (timer) => {
+                if (timer?.name === settings.timer?.name) {
+                    render(timer);
+                }
+            });
+
+            await update();
+        }
+
+        function formatDuration(seconds) {
+            const days = Math.floor(seconds / DAY);
+            const hours = Math.floor((seconds % DAY) / HOUR);
+            const minutes = Math.floor((seconds % HOUR) / MINUTE);
+            const secs = Math.floor(seconds % MINUTE);
+
+            if (days > 0) {
+                return `${days}d ${hours}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+            }
+
+            if (hours > 0) {
+                return `${hours}:${String(minutes).padStart(2, '0')}:${String(secs).padStart(2, '0')}`;
+            }
+
+            return `${minutes}:${String(secs).padStart(2, '0')}`;
+        }
+
+        function tick(target, status) {
+            if (status === 'paused') {
+                return;
+            }
+
+            if (status === 'finished') {
+                timerValue.innerText = Homey.__('widget.timer.finished');
+                return;
+            }
+
+            const now = Date.now() / 1000;
+            const remaining = Math.max(0, target - now);
+
+            if (remaining <= 0) {
+                clearInterval(interval);
+                timerValue.innerText = Homey.__('widget.timer.finished');
+                return;
+            }
+
+            timerValue.innerText = formatDuration(remaining);
+        }
+
+        function render(timer) {
+            clearInterval(interval);
+
+            timerName.innerText = timer?.name ?? '—';
+            timerValue.innerText = '—';
+
+            if (timer?.color) {
+                timerIcon.style.setProperty('--color', timer.color);
+            } else {
+                timerIcon.style.removeProperty('--color');
+            }
+
+            if (timer?.icon) {
+                timerIcon.style.setProperty('--icon', JSON.stringify(timer.icon));
+                timerIcon.style.setProperty('--icon-secondary', JSON.stringify(timer.icon + timer.icon));
+            } else {
+                timerIcon.style.removeProperty('--icon');
+                timerIcon.style.removeProperty('--icon-secondary');
+            }
+
+            if (timer) {
+                if (timer.status === 'paused') {
+                    timerValue.innerText = `${formatDuration(timer.remaining)} (${Homey.__('widget.timer.paused')})`;
+                } else if (timer.status === 'finished') {
+                    timerValue.innerText = Homey.__('widget.timer.finished');
+                } else if (timer.status === 'running') {
+                    tick(timer.target, timer.status);
+                    interval = setInterval(() => tick(timer.target, timer.status), 1000);
+                } else if (timer.status === 'stopped') {
+                    timerValue.innerText = Homey.__('widget.timer.stopped');
+                }
+            } else if (settings.timer?.name) {
+                timerValue.innerText = Homey.__('widget.timer.stopped');
+            }
+        }
+
+        async function update() {
+            const timer = await Homey.api('GET', `/?timer=${settings.timer.name}`);
+
+            render(timer);
+
+            const height = document.body.getBoundingClientRect().height;
+
+            if (ready) {
+                await Homey.setHeight(height);
+            } else {
+                Homey.ready({height});
+                ready = true;
+            }
+        }
+
+        init();
+    }
+</script>
+
+</body>
+</html>

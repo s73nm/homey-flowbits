@@ -54,11 +54,15 @@
     },
     "widget": {
         "current_mode": {
-            "label": "Aktualny tryb",
-            "suffix": "tryb"
+            "label": "Aktualny tryb"
         },
         "event": {
             "now": "Teraz"
+        },
+        "timer": {
+            "finished": "Zakończony",
+            "paused": "Wstrzymany",
+            "stopped": "Zatrzymany"
         }
     },
     "settings": {
@@ -81,11 +85,18 @@
             "description": "Tylko jeden tryb może być aktywny w danym momencie. Twórz i zarządzaj trybami za pomocą akcji, warunków i wyzwalaczy.",
             "empty": "Nie utworzono jeszcze żadnych trybów."
         },
+        "timers": {
+            "title": "Timery",
+            "description": "Timery odliczają czas od określonego czasu trwania i mogą być uruchamiane, wstrzymywane, zatrzymywane i resetowane. Używaj akcji, warunków i wyzwalaczy timerów w swoich przepływach, aby zarządzać odliczaniem i reagować, gdy timery się kończą.",
+            "empty": "Nie utworzono jeszcze żadnych timerów."
+        },
         "statistics": {
             "title": "Statystyki",
             "description": "To są statystyki funkcji FlowBits, oparte na twoich przepływach.",
             "cycles": "Cyklе",
+            "events": "Zdarzenia",
             "flags": "Flagi",
+            "labels": "Etykiety",
             "modes": "Tryby",
             "no_repeats": "Okna bez powtórzeń",
             "sliders": "Suwaki",

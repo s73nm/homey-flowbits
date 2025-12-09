@@ -1,9 +1,9 @@
 import { DateTime, Shortcuts } from '@basmilius/homey-common';
 import { SETTING_NO_REPEAT_WINDOWS } from '../const';
-import type { ClockUnit, FlowBitsApp } from '../types';
+import type { ClockUnit, Feature, FlowBitsApp, NoRepeatWindow } from '../types';
 import { convertDurationToSeconds } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class extends Shortcuts<FlowBitsApp> implements Feature<NoRepeatWindow> {
     get windows(): Record<string, DateTime> {
         return Object.fromEntries(
             Object.entries<string>(this.settings.get(SETTING_NO_REPEAT_WINDOWS) ?? {})
@@ -21,6 +21,25 @@ export default class extends Shortcuts<FlowBitsApp> {
                     .map(([key, value]) => [key, value.toISO()])
             )
         );
+    }
+
+    async count(): Promise<number> {
+        return Object.keys(this.windows).length;
+    }
+
+    async find(name: string): Promise<NoRepeatWindow | null> {
+        const noRepeatWindows = await this.findAll();
+        const noRepeatWindow = noRepeatWindows.find(noRepeatWindow => noRepeatWindow.name === name);
+
+        return noRepeatWindow ?? null;
+    }
+
+    async findAll(): Promise<NoRepeatWindow[]> {
+        return Object.entries(this.windows)
+            .map(([name, lastUpdate]) => ({
+                name,
+                lastUpdate: lastUpdate?.toISO() ?? undefined
+            }));
     }
 
     async clear(name: string): Promise<void> {
@@ -45,9 +64,5 @@ export default class extends Shortcuts<FlowBitsApp> {
         const seconds = convertDurationToSeconds(duration, unit);
 
         return last.plus({seconds}) <= now;
-    }
-
-    async getCount(): Promise<number> {
-        return Object.keys(this.windows).length;
     }
 }

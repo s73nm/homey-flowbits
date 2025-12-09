@@ -54,11 +54,15 @@
     },
     "widget": {
         "current_mode": {
-            "label": "Mode actuel",
-            "suffix": "mode"
+            "label": "Mode actuel"
         },
         "event": {
             "now": "Maintenant"
+        },
+        "timer": {
+            "finished": "Terminé",
+            "paused": "En pause",
+            "stopped": "Arrêté"
         }
     },
     "settings": {
@@ -81,11 +85,18 @@
             "description": "Un seul mode peut être actif à la fois. Créez et gérez les modes via les actions, conditions et déclencheurs dans vos flows.",
             "empty": "Aucun mode n’a encore été créé."
         },
+        "timers": {
+            "title": "Minuteries",
+            "description": "Les minuteries effectuent un compte à rebours à partir d'une durée spécifiée et peuvent être démarrées, mises en pause, arrêtées et réinitialisées. Utilisez les actions, conditions et déclencheurs de minuterie dans vos flux pour gérer les comptes à rebours et réagir lorsque les minuteries se terminent.",
+            "empty": "Aucune minuterie n'a encore été créée."
+        },
         "statistics": {
             "title": "Statistiques",
             "description": "Voici les statistiques des fonctionnalités de FlowBits. Elles sont basées sur vos flux.",
             "cycles": "Cycles",
+            "events": "Événements",
             "flags": "Drapeaux",
+            "labels": "Étiquettes",
             "modes": "Modes",
             "no_repeats": "Fenêtres sans répétition",
             "sliders": "Curseurs",

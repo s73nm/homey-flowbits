@@ -1,13 +1,13 @@
 import { DateTime, Shortcuts } from '@basmilius/homey-common';
-import { EVENTS_HISTORY_LENGTH, REALTIME_EVENTS_UPDATE, SETTING_EVENT_LOOKS } from '../const';
+import { EVENTS_HISTORY_LENGTH, REALTIME_EVENTS_UPDATE, SETTING_EVENT_LOOKS, SETTING_EVENTS } from '../const';
 import { AutocompleteProviders, Triggers } from '../flow';
-import type { ClockUnit, Event, FlowBitsApp, Look } from '../types';
+import type { ClockUnit, Event, Feature, FlowBitsApp, Look, Styleable } from '../types';
 import { convertDurationToSeconds } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class extends Shortcuts<FlowBitsApp> implements Feature<Event>, Styleable {
     get events(): Record<string, DateTime[]> {
         return Object.fromEntries(
-            Object.entries<string[]>(this.settings.get('events') ?? {})
+            Object.entries<string[]>(this.settings.get(SETTING_EVENTS) ?? this.settings.get('events') ?? {})
                 .map(([key, value]) => [
                     key,
                     value.map(v => DateTime.fromISO(v))
@@ -16,7 +16,7 @@ export default class extends Shortcuts<FlowBitsApp> {
     }
 
     set events(value: Record<string, DateTime[]>) {
-        this.settings.set('events', Object.fromEntries(
+        this.settings.set(SETTING_EVENTS, Object.fromEntries(
             Object.entries<DateTime[]>(value)
                 .map(([key, value]) => [
                     key,
@@ -31,6 +31,44 @@ export default class extends Shortcuts<FlowBitsApp> {
 
     set looks(value: Record<string, Look>) {
         this.settings.set(SETTING_EVENT_LOOKS, value);
+    }
+
+    async count(): Promise<number> {
+        const events = await this.findAll();
+
+        return events.length;
+    }
+
+    async find(name: string): Promise<Event | null> {
+        const events = await this.findAll();
+        const event = events.find(event => event.name === name);
+
+        return event ?? null;
+    }
+
+    async findAll(): Promise<Event[]> {
+        const provider = this.#autocompleteProvider();
+        const events = await provider.find('');
+
+        if (events.length === 0) {
+            return [];
+        }
+
+        const results: Event[] = [];
+
+        for (const event of events) {
+            const look = await this.getLook(event.name);
+            const updates = this.events[event.name] ?? [];
+
+            results.push({
+                color: look[0],
+                icon: look[1],
+                lastUpdate: updates[updates.length - 1]?.toISO() ?? undefined,
+                name: event.name
+            });
+        }
+
+        return results;
     }
 
     async clear(name: string): Promise<void> {
@@ -51,44 +89,6 @@ export default class extends Shortcuts<FlowBitsApp> {
 
         await this.#triggerRealtime();
         await Promise.allSettled(names.map(name => this.#triggerCleared(name)));
-    }
-
-    async find(name: string): Promise<Event | null> {
-        const events = await this.getEvents();
-        const event = events.find(event => event.name === name);
-
-        return event ?? null;
-    }
-
-    async getCount(): Promise<number> {
-        const events = await this.getEvents();
-
-        return events.length;
-    }
-
-    async getEvents(): Promise<Event[]> {
-        const provider = this.#autocompleteProvider();
-        const events = await provider.find('');
-
-        if (events.length === 0) {
-            return [];
-        }
-
-        const results: Event[] = [];
-
-        for (const event of events) {
-            const look = await this.getLook(event.name);
-            const updates = this.events[event.name] ?? [];
-
-            results.push({
-                color: look?.[0],
-                icon: look?.[1],
-                lastUpdate: updates[updates.length - 1]?.toISO() ?? undefined,
-                name: event.name
-            });
-        }
-
-        return results;
     }
 
     async happened(name: string): Promise<boolean> {
@@ -121,7 +121,7 @@ export default class extends Shortcuts<FlowBitsApp> {
         const events = this.events[name] ?? [];
         const seconds = convertDurationToSeconds(duration, unit);
 
-        return events.some(event => event.diffNow().as('seconds') <= seconds);
+        return events.some(event => Math.abs(event.diffNow().as('seconds')) <= seconds);
     }
 
     async trigger(name: string): Promise<void> {
@@ -137,7 +137,7 @@ export default class extends Shortcuts<FlowBitsApp> {
         ]);
     }
 
-    async getLook(name: string): Promise<Look | null> {
+    async getLook(name: string): Promise<Look> {
         return this.looks[name] ?? ['#204ef6', ''];
     }
 

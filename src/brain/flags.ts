@@ -1,10 +1,9 @@
 import { Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_FLAGS_UPDATE, SETTING_FLAG_LOOKS, SETTING_FLAGS } from '../const';
 import { AutocompleteProviders, Triggers } from '../flow';
-import type { Flag, FlowBitsApp, Look, Mode } from '../types';
-import { getBuiltinLook } from '../util';
+import type { Feature, Flag, FlowBitsApp, Look, Styleable } from '../types';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class extends Shortcuts<FlowBitsApp> implements Feature<Flag>, Styleable {
     get currentFlags(): string[] {
         return this.settings.get(SETTING_FLAGS) ?? [];
     }
@@ -19,6 +18,44 @@ export default class extends Shortcuts<FlowBitsApp> {
 
     set looks(value: Record<string, Look>) {
         this.settings.set(SETTING_FLAG_LOOKS, value);
+    }
+
+    async count(): Promise<number> {
+        const flags = await this.findAll();
+
+        return flags.length;
+    }
+
+    async find(name: string): Promise<Flag | null> {
+        const flags = await this.findAll();
+        const flag = flags.find(flag => flag.name === name);
+
+        return flag ?? null;
+    }
+
+    async findAll(): Promise<Flag[]> {
+        const provider = this.#autocompleteProvider();
+        const current = this.currentFlags;
+        const flags = await provider.find('');
+
+        if (flags.length === 0) {
+            return [];
+        }
+
+        const results: Flag[] = [];
+
+        for (const flag of flags) {
+            const look = await this.getLook(flag.name);
+
+            results.push({
+                active: current.includes(flag.name),
+                color: look[0],
+                icon: look[1],
+                name: flag.name
+            });
+        }
+
+        return results;
     }
 
     async activate(name: string): Promise<void> {
@@ -61,52 +98,8 @@ export default class extends Shortcuts<FlowBitsApp> {
         }
     }
 
-    async find(name: string): Promise<Flag | null> {
-        const flags = await this.getFlags();
-        const flag = flags.find(flag => flag.name === name);
-
-        return flag ?? null;
-    }
-
-    async getCount(): Promise<number> {
-        const flags = await this.getFlags();
-
-        return flags.length;
-    }
-
-    async getFlags(): Promise<Flag[]> {
-        const provider = this.#autocompleteProvider();
-        const current = this.currentFlags;
-        const flags = await provider.find('');
-
-        if (flags.length === 0) {
-            return [];
-        }
-
-        const prefix = this.translate('widget.current_mode.prefix');
-        const suffix = this.translate('widget.current_mode.suffix');
-        const results: Mode[] = [];
-
-        for (const flag of flags) {
-            let look = await this.getLook(flag.name);
-
-            if (!look) {
-                look = await getBuiltinLook(flag.name, this.language, prefix, suffix);
-            }
-
-            results.push({
-                active: current.includes(flag.name),
-                color: look?.[0],
-                icon: look?.[1],
-                name: flag.name
-            });
-        }
-
-        return results;
-    }
-
-    async getLook(name: string): Promise<Look | null> {
-        return this.looks[name] ?? null;
+    async getLook(name: string): Promise<Look> {
+        return this.looks[name] ?? ['#204ef6', ''];
     }
 
     async setLook(name: string, look: Look): Promise<void> {

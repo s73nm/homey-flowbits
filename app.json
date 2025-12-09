@@ -282,6 +282,10 @@
       "method": "GET",
       "path": "/modes"
     },
+    "getTimers": {
+      "method": "GET",
+      "path": "/timers"
+    },
     "getColors": {
       "method": "GET",
       "path": "/colors"
@@ -305,6 +309,10 @@
     "setModeLook": {
       "method": "POST",
       "path": "/modes/look"
+    },
+    "setTimerLook": {
+      "method": "POST",
+      "path": "/timers/look"
     },
     "getStatistics": {
       "method": "GET",
@@ -8399,6 +8407,30 @@
         }
       },
       "id": "slider"
+    },
+    "timer": {
+      "name": {
+        "en": "Timer",
+        "nl": "Timer"
+      },
+      "height": 120,
+      "settings": [
+        {
+          "id": "timer",
+          "type": "autocomplete",
+          "title": {
+            "en": "Timer",
+            "nl": "Timer"
+          }
+        }
+      ],
+      "api": {
+        "get": {
+          "method": "GET",
+          "path": "/"
+        }
+      },
+      "id": "timer"
     }
   }
 }

@@ -35,6 +35,11 @@
     },
     "event": {
       "now": "Teraz"
+    },
+    "timer": {
+      "finished": "Zakończony",
+      "paused": "Wstrzymany",
+      "stopped": "Zatrzymany"
     }
   },
   "settings": {
@@ -65,11 +70,18 @@
       "modes": "Tryby",
       "no_repeats": "Okna bez powtórzeń",
       "sliders": "Suwaki",
-      "timers": "Timery"
+      "timers": "Timery",
+      "events": "Zdarzenia",
+      "labels": "Etykiety"
     },
     "card_statistics": {
       "title": "Statystyki kart przepływów",
       "description": "To są statystyki użycia dla poszczególnych kart przepływów."
+    },
+    "timers": {
+      "title": "Timery",
+      "description": "Timery odliczają czas od określonego czasu trwania i mogą być uruchamiane, wstrzymywane, zatrzymywane i resetowane. Używaj akcji, warunków i wyzwalaczy timerów w swoich przepływach, aby zarządzać odliczaniem i reagować, gdy timery się kończą.",
+      "empty": "Nie utworzono jeszcze żadnych timerów."
     }
   },
   "color": {

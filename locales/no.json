@@ -35,6 +35,11 @@
     },
     "event": {
       "now": "Nå"
+    },
+    "timer": {
+      "finished": "Fullført",
+      "paused": "Pauset",
+      "stopped": "Stoppet"
     }
   },
   "settings": {
@@ -65,11 +70,18 @@
       "modes": "Moduser",
       "no_repeats": "Ingen-gjentakelsesvinduer",
       "sliders": "Glidere",
-      "timers": "Tidtakere"
+      "timers": "Tidtakere",
+      "events": "Hendelser",
+      "labels": "Etiketter"
     },
     "card_statistics": {
       "title": "Flytkortstatistikk",
       "description": "Dette er bruksstatistikk for individuelle flytkort."
+    },
+    "timers": {
+      "title": "Tidtakere",
+      "description": "Tidtakere teller ned fra en spesifisert varighet og kan startes, settes på pause, stoppes og tilbakestilles. Bruk tidtakerhandlinger, betingelser og triggere i flytene dine for å administrere nedtellinger og reagere når tidtakere er ferdige.",
+      "empty": "Ingen tidtakere har blitt opprettet enda."
     }
   },
   "color": {

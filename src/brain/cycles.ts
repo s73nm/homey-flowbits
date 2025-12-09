@@ -1,10 +1,43 @@
 import { Shortcuts } from '@basmilius/homey-common';
-import { SETTING_CYCLE_PREFIX } from '../const';
-import { Triggers } from '../flow';
-import type { FlowBitsApp } from '../types';
+import { REALTIME_CYCLE_UPDATE, SETTING_CYCLE_PREFIX } from '../const';
+import { AutocompleteProviders, Triggers } from '../flow';
+import type { Cycle, Feature, FlowBitsApp } from '../types';
 import { slugify } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class extends Shortcuts<FlowBitsApp> implements Feature<Cycle> {
+    async count(): Promise<number> {
+        const cycles = await this.findAll();
+
+        return cycles.length;
+    }
+
+    async find(name: string): Promise<Cycle | null> {
+        const cycles = await this.findAll();
+        const cycle = cycles.find(cycle => cycle.name === name);
+
+        return cycle ?? null;
+    }
+
+    async findAll(): Promise<Cycle[]> {
+        const provider = this.#autocompleteProvider();
+        const cycles = await provider.find('');
+
+        if (cycles.length === 0) {
+            return [];
+        }
+
+        const results: Cycle[] = [];
+
+        for (const cycle of cycles) {
+            results.push({
+                name: cycle.name,
+                step: this.#get(cycle.name) ?? -1
+            });
+        }
+
+        return results;
+    }
+
     async cycle(name: string, minValue: number, maxValue: number): Promise<void> {
         let value = this.#get(name);
 
@@ -26,16 +59,10 @@ export default class extends Shortcuts<FlowBitsApp> {
         this.#set(name, value);
 
         await Promise.allSettled([
+            this.#triggerRealtime(name),
             this.#triggerCycleBecomes(name, value),
             this.#triggerCycleUpdates(name, value)
         ]);
-    }
-
-    async getCount(): Promise<number> {
-        return this.settings
-            .getKeys()
-            .filter(setting => setting.startsWith(SETTING_CYCLE_PREFIX))
-            .length;
     }
 
     async getValue(name: string): Promise<number | null> {
@@ -64,5 +91,25 @@ export default class extends Shortcuts<FlowBitsApp> {
         this.registry
             .findTrigger(Triggers.CycleUpdates)
             ?.trigger({name}, {value});
+    }
+
+    async #triggerRealtime(name: string): Promise<void> {
+        const cycle = await this.find(name);
+
+        if (!cycle) {
+            return;
+        }
+
+        this.realtime(REALTIME_CYCLE_UPDATE, cycle);
+    }
+
+    #autocompleteProvider(): AutocompleteProviders.Cycle {
+        const provider = this.registry.findAutocompleteProvider(AutocompleteProviders.Cycle);
+
+        if (!provider) {
+            throw new Error('Failed to get the cycle autocomplete provider.');
+        }
+
+        return provider;
     }
 }

@@ -1,5 +1,4 @@
 export { default as convertDurationToSeconds } from './convertDurationToSeconds';
-export { default as getBuiltinLook } from './getBuiltinLook';
 export { default as getDayPeriod, type DayPeriod } from './getDayPeriod';
 export { default as getDayPeriodRange } from './getDayPeriodRange';
 export { default as getMoonPhase, type MoonPhase } from './getMoonPhase';

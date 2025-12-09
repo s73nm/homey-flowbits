@@ -44,6 +44,11 @@
     },
     "event": {
       "now": "Now"
+    },
+    "timer": {
+      "finished": "Finished",
+      "paused": "Paused",
+      "stopped": "Stopped"
     }
   },
   "settings": {
@@ -91,6 +96,11 @@
       "title": "Labels",
       "description": "Labels store key-value pairs for use in your flows. Use label actions, conditions, and triggers to set, get, and check values dynamically.",
       "empty": "No labels have been created yet."
+    },
+    "timers": {
+      "title": "Timers",
+      "description": "Timers count down from a specified duration and can be started, paused, stopped, and reset. Use timer actions, conditions, and triggers in your flows to manage countdowns and respond when timers finish.",
+      "empty": "No timers have been created yet."
     }
   },
   "color": {

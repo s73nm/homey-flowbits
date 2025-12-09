@@ -1,10 +1,9 @@
 import { Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_MODE_UPDATE, SETTING_MODE, SETTING_MODE_LOOKS } from '../const';
 import { AutocompleteProviders, Triggers } from '../flow';
-import type { FlowBitsApp, Look, Mode } from '../types';
-import { getBuiltinLook } from '../util';
+import type { Feature, FlowBitsApp, Look, Mode, Styleable } from '../types';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class extends Shortcuts<FlowBitsApp> implements Feature<Mode>, Styleable {
     get currentMode(): string | null {
         return this.settings.get(SETTING_MODE);
     }
@@ -19,6 +18,44 @@ export default class extends Shortcuts<FlowBitsApp> {
 
     set looks(value: Record<string, Look>) {
         this.settings.set(SETTING_MODE_LOOKS, value);
+    }
+
+    async count(): Promise<number> {
+        const modes = await this.findAll();
+
+        return modes.length;
+    }
+
+    async find(name: string): Promise<Mode | null> {
+        const modes = await this.findAll();
+        const mode = modes.find(mode => mode.name === name);
+
+        return mode ?? null;
+    }
+
+    async findAll(): Promise<Mode[]> {
+        const provider = this.#autocompleteProvider();
+        const current = this.currentMode;
+        const modes = await provider.find('');
+
+        if (modes.length === 0) {
+            return [];
+        }
+
+        const results: Mode[] = [];
+
+        for (const mode of modes) {
+            const look = await this.getLook(mode.name);
+
+            results.push({
+                active: current === mode.name,
+                color: look[0],
+                icon: look[1],
+                name: mode.name
+            });
+        }
+
+        return results;
     }
 
     async activate(name: string): Promise<void> {
@@ -75,52 +112,8 @@ export default class extends Shortcuts<FlowBitsApp> {
         }
     }
 
-    async find(name: string): Promise<Mode | null> {
-        const modes = await this.getModes();
-        const mode = modes.find(mode => mode.name === name);
-
-        return mode ?? null;
-    }
-
-    async getCount(): Promise<number> {
-        const modes = await this.getModes();
-
-        return modes.length;
-    }
-
-    async getModes(): Promise<Mode[]> {
-        const provider = this.#autocompleteProvider();
-        const current = this.currentMode;
-        const modes = await provider.find('');
-
-        if (modes.length === 0) {
-            return [];
-        }
-
-        const prefix = this.translate('widget.current_mode.prefix');
-        const suffix = this.translate('widget.current_mode.suffix');
-        const results: Mode[] = [];
-
-        for (const mode of modes) {
-            let look = await this.getLook(mode.name);
-
-            if (!look) {
-                look = await getBuiltinLook(mode.name, this.language, prefix, suffix);
-            }
-
-            results.push({
-                active: current === mode.name,
-                color: look?.[0],
-                icon: look?.[1],
-                name: mode.name
-            });
-        }
-
-        return results;
-    }
-
-    async getLook(name: string): Promise<Look | null> {
-        return this.looks[name] ?? null;
+    async getLook(name: string): Promise<Look> {
+        return this.looks[name] ?? ['#204ef6', ''];
     }
 
     async setLook(name: string, look: Look): Promise<void> {

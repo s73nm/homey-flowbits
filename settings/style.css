@@ -70,7 +70,7 @@ body {
     z-index: 1000;
 
     &::before {
-        position: absolute;
+        position: fixed;
         display: block;
         inset: 0;
         content: '';

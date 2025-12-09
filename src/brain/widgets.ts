@@ -9,6 +9,7 @@ export default class extends Shortcuts<FlowBitsApp> {
         await this.#initializeFlagOnOff();
         await this.#initializeLabel();
         await this.#initializeSlider();
+        await this.#initializeTimer();
     }
 
     async getSliderValue(sliderName: string): Promise<number | null> {
@@ -73,5 +74,17 @@ export default class extends Shortcuts<FlowBitsApp> {
         });
 
         widget.registerSettingAutocompleteListener('icon', searchIcons);
+    }
+
+    async #initializeTimer(): Promise<void> {
+        const widget = this.dashboards.getWidget('timer');
+
+        widget.registerSettingAutocompleteListener('timer', async () => {
+            const timers = await this.app.api.getTimers();
+
+            return timers.map(timer => ({
+                name: timer.name
+            }));
+        });
     }
 }

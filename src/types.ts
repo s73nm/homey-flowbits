@@ -5,7 +5,8 @@ export type FlowBitsApp = App;
 export type ClockState =
     | 'finished'
     | 'running'
-    | 'paused';
+    | 'paused'
+    | 'stopped';
 
 export type ClockUnit =
     | 'seconds'
@@ -13,32 +14,71 @@ export type ClockUnit =
     | 'hours'
     | 'days';
 
-export type Event = {
+export interface Feature<TInstance> {
+    count(): Promise<number>;
+
+    find(name: string): Promise<TInstance | null>;
+
+    findAll(): Promise<TInstance[]>;
+}
+
+export interface Styleable {
+    get looks(): Record<string, Look>;
+
+    set looks(looks: Record<string, Look>);
+
+    getLook(name: string): Promise<Look>;
+
+    setLook(name: string, look: Look): Promise<void>;
+}
+
+export type WithLook<T> = T & {
     readonly color: string | undefined;
     readonly icon: string | undefined;
+};
+
+export type Cycle = {
+    readonly name: string;
+    readonly step: number;
+};
+
+export type Event = WithLook<{
     readonly lastUpdate: string | undefined;
     readonly name: string;
-};
+}>;
 
-export type Flag = {
+export type Flag = WithLook<{
     readonly active: boolean;
-    readonly color: string | undefined;
-    readonly icon: string | undefined;
     readonly name: string;
-};
+}>;
 
-export type Label = {
-    readonly color: string | undefined;
-    readonly icon: string | undefined;
+export type Label = WithLook<{
+    readonly lastUpdate: string | undefined;
     readonly name: string;
-};
+    readonly value: string | undefined;
+}>;
 
-export type Mode = {
+export type Mode = WithLook<{
     readonly active: boolean;
-    readonly color: string | undefined;
-    readonly icon: string | undefined;
     readonly name: string;
+}>;
+
+export type NoRepeatWindow = {
+    readonly name: string;
+    readonly lastUpdate: string | undefined;
 };
+
+export type Slider = {
+    readonly name: string;
+    readonly value: number;
+};
+
+export type Timer = WithLook<{
+    readonly name: string;
+    readonly remaining: number;
+    readonly status: ClockState;
+    readonly target: number;
+}>;
 
 export type Look = [color: string, icon: string];
 
