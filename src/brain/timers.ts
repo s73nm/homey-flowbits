@@ -56,22 +56,25 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, S
 
     async findAll(): Promise<Timer[]> {
         const now = DateTime.now().toSeconds();
-        const timers = await this.#findAll();
+        const provider = this.#autocompleteProvider();
+        const definedTimers = await provider.find('');
+        const activeTimers = await this.#findAll();
         const results: Timer[] = [];
 
-        for (const timer of timers) {
+        for (const timer of definedTimers) {
+            const activeTimer = activeTimers.find(t => t.name === timer.name);
             const look = await this.getLook(timer.name);
-            const remaining = timer.status === 'running'
-                ? Math.max(0, timer.target - now)
-                : timer.remaining;
+            const remaining = activeTimer?.status === 'running'
+                ? Math.max(0, activeTimer.target - now)
+                : activeTimer?.remaining ?? 0;
 
             results.push({
                 color: look[0],
                 icon: look[1],
                 name: timer.name,
                 remaining,
-                status: timer.status,
-                target: timer.target
+                status: activeTimer?.status ?? 'stopped',
+                target: activeTimer?.target ?? 0
             });
         }
 
