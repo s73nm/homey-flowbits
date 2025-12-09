@@ -1,6 +1,6 @@
 import type { ApiRequest, Color, Icon } from '@basmilius/homey-common';
 import { colors, icons } from '@basmilius/homey-common';
-import type { Event, Flag, FlowBitsApp, Label, Mode, Statistics, Timer } from './src/types';
+import type { Cycle, Event, Flag, FlowBitsApp, Label, Mode, NoRepeatWindow, Slider, Statistics, Timer } from './src/types';
 
 export async function activateFlag({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyFlag>): Promise<boolean> {
     return await app.api.activateFlag(body.flag);
@@ -26,6 +26,10 @@ export async function toggleMode({homey: {app}, body}: ApiRequest<FlowBitsApp, B
     return await app.api.toggleMode(body.mode);
 }
 
+export async function getCycles({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Cycle[]> {
+    return await app.api.getCycles();
+}
+
 export async function getEvents({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Event[]> {
     return await app.api.getEvents();
 }
@@ -40,6 +44,14 @@ export async function getLabels({homey: {app}}: ApiRequest<FlowBitsApp>): Promis
 
 export async function getModes({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Mode[]> {
     return await app.api.getModes();
+}
+
+export async function getNoRepeatWindows({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<NoRepeatWindow[]> {
+    return await app.noRepeat.findAll();
+}
+
+export async function getSliders({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Slider[]> {
+    return await app.sliders.findAll();
 }
 
 export async function getTimers({homey: {app}}: ApiRequest<FlowBitsApp>): Promise<Timer[]> {

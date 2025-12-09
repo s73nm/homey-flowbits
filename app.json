@@ -266,6 +266,10 @@
       "method": "POST",
       "path": "/modes"
     },
+    "getCycles": {
+      "method": "GET",
+      "path": "/cycles"
+    },
     "getEvents": {
       "method": "GET",
       "path": "/events"
@@ -281,6 +285,14 @@
     "getModes": {
       "method": "GET",
       "path": "/modes"
+    },
+    "getNoRepeatWindows": {
+      "method": "GET",
+      "path": "/no-repeat-windows"
+    },
+    "getSliders": {
+      "method": "GET",
+      "path": "/sliders"
     },
     "getTimers": {
       "method": "GET",
