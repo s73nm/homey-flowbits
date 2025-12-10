@@ -23,7 +23,9 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, S
     }
 
     async count(): Promise<number> {
-        return Object.keys(this.#timers).length;
+        const timers = await this.findAll();
+
+        return timers.length;
     }
 
     async find(name: string): Promise<Timer | null> {
