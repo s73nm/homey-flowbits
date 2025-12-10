@@ -3,11 +3,9 @@
 
 .flag-on-off {
     display: flex;
-    padding: var(--homey-su-4);
     align-items: center;
     flex-flow: row;
     gap: var(--homey-su-3);
-    justify-content: start;
 }
 
 .flag-on-off-name {

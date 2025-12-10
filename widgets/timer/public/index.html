@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html>
 <head lang="en">
@@ -11,20 +10,24 @@
 
 <body class="homey-widget">
 
-<div class="timer">
+<div class="basic-widget">
     <div
-        class="flowbits-icon timer-icon"
+        class="basic-widget-icon flowbits-icon"
         id="timer-icon"></div>
 
-    <div class="timer-caption">
-        <div
-            class="timer-name homey-text-small-light"
-            id="timer-name">
-            &mdash;
+    <div class="basic-widget-caption">
+        <div class="basic-widget-header">
+            <span
+                class="basic-widget-header-name"
+                id="timer-name">&mdash;</span>
+
+            <span
+                class="basic-widget-header-icon flowbits-icon"
+                style="--icon: ''; --icon-secondary: ''"></span>
         </div>
 
         <div
-            class="timer-value homey-text-medium"
+            class="basic-widget-content"
             id="timer-value">
             &mdash;
         </div>
