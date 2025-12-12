@@ -36,4 +36,9 @@ export default class extends FlowAutocompleteArgumentProvider<FlowBitsApp> {
     mapArgument(value: any): string {
         return value.name.name;
     }
+
+    async update(): Promise<void> {
+        await super.update();
+        await this.app.modes.update();
+    }
 }
