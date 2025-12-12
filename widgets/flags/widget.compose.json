@@ -113,6 +113,25 @@
           }
         }
       ]
+    },
+    {
+        "id": "filter",
+        "type": "autocomplete",
+        "title": {
+            "en": "Filter",
+            "nl": "Filter",
+            "de": "Filter",
+            "fr": "Filtre",
+            "it": "Filtro",
+            "sv": "Filter",
+            "no": "Filter",
+            "es": "Filtro",
+            "da": "Filter",
+            "ru": "Фильтр",
+            "pl": "Filtr",
+            "ko": "필터",
+            "ar": "تصفية"
+        }
     }
   ],
   "api": {

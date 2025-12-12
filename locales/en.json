@@ -49,6 +49,9 @@
       "finished": "Finished",
       "paused": "Paused",
       "stopped": "Stopped"
+    },
+    "flags": {
+      "no_filter": "No filter"
     }
   },
   "settings": {

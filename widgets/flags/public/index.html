@@ -43,6 +43,10 @@
             lastResult = resultsString;
 
             for (const result of results) {
+                if (settings.filter && settings.filter.flags.length > 0 && !settings.filter.flags.includes(result.name)) {
+                    continue;
+                }
+
                 const button = document.createElement('button');
                 button.className = 'homey-widget item' + (result.active ? ' active' : '');
                 button.onclick = () => onClickFlag(result);
