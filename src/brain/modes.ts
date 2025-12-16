@@ -3,7 +3,7 @@ import { REALTIME_MODE_UPDATE, SETTING_MODE, SETTING_MODE_LOOKS } from '../const
 import { AutocompleteProviders, Triggers } from '../flow';
 import type { Feature, FlowBitsApp, Look, Mode, Styleable } from '../types';
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<Mode>, Styleable {
+export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mode>, Styleable {
     get currentMode(): string | null {
         return this.settings.get(SETTING_MODE);
     }
@@ -71,6 +71,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Mode>, St
 
         this.currentMode = name;
 
+        this.log(`Activate mode ${name}.`);
+
         await Promise.allSettled([
             this.#triggerRealtime(),
             this.#triggerActivated(name),
@@ -87,6 +89,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Mode>, St
 
         this.currentMode = null;
 
+        this.log(`Deactivate mode ${name}.`);
+
         await Promise.allSettled([
             this.#triggerRealtime(),
             this.#triggerDeactivated(name),
@@ -96,6 +100,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Mode>, St
 
     async reactivate(name: string): Promise<void> {
         this.currentMode = name;
+
+        this.log(`Reactivate mode ${name}.`);
 
         await Promise.allSettled([
             this.#triggerRealtime(),

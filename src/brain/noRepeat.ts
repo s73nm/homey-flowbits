@@ -3,7 +3,7 @@ import { SETTING_NO_REPEAT_WINDOWS } from '../const';
 import type { ClockUnit, Feature, FlowBitsApp, NoRepeatWindow } from '../types';
 import { convertDurationToSeconds } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<NoRepeatWindow> {
+export default class NoRepeat extends Shortcuts<FlowBitsApp> implements Feature<NoRepeatWindow> {
     get windows(): Record<string, DateTime> {
         return Object.fromEntries(
             Object.entries<string>(this.settings.get(SETTING_NO_REPEAT_WINDOWS) ?? {})
@@ -46,6 +46,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<NoRepeatW
         const windows = this.windows;
         delete windows[name];
         this.windows = windows;
+
+        this.log(`Clear no-repeat window ${name}.`);
     }
 
     async check(name: string, duration: number, unit: ClockUnit): Promise<boolean> {
@@ -56,6 +58,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<NoRepeatW
         windows[name] = now;
 
         this.windows = windows;
+
+        this.log(`Set no-repeat window last call to ${now.toISO()}.`);
 
         if (last === null) {
             return true;

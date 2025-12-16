@@ -3,7 +3,7 @@ import { REALTIME_SLIDER_UPDATE, SETTING_SLIDERS } from '../const';
 import { Triggers } from '../flow';
 import type { Feature, FlowBitsApp, Slider } from '../types';
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<Slider> {
+export default class Sliders extends Shortcuts<FlowBitsApp> implements Feature<Slider> {
     get values(): Record<string, number> {
         return this.settings.get(SETTING_SLIDERS) ?? {};
     }
@@ -41,8 +41,12 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Slider> {
             [name]: value
         };
 
-        await this.#triggerRealtime(name, value, widgetId);
-        await this.#triggerChanged(name, value);
+        this.log(`Set value of slider ${name} to ${value}.`);
+
+        await Promise.allSettled([
+            this.#triggerRealtime(name, value, widgetId),
+            this.#triggerChanged(name, value)
+        ]);
     }
 
     async #triggerChanged(slider: string, value: number): Promise<void> {

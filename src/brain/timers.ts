@@ -6,7 +6,7 @@ import { convertDurationToSeconds, slugify } from '../util';
 
 const TIMER_FINISH_GRACE_PERIOD = 5;
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, Styleable {
+export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Timer>, Styleable {
     get looks(): Record<string, Look> {
         return this.settings.get(SETTING_TIMER_LOOKS) ?? {};
     }
@@ -85,7 +85,12 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, S
 
     async finish(timer: StoredTimer): Promise<void> {
         await this.#update(timer.name, timer.duration, 0, timer.target, 'finished');
-        await this.#triggerFinished(timer.name);
+        this.log(`Finish timer ${timer.name}.`);
+
+        await Promise.allSettled([
+            this.#triggerRealtime(timer.name),
+            this.#triggerFinished(timer.name)
+        ]);
     }
 
     async pause(name: string): Promise<void> {
@@ -99,8 +104,13 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, S
         const target = DateTime.fromSeconds(timer.target);
 
         await this.#update(timer.name, timer.duration, target.diff(now).as('seconds'), timer.target, 'paused');
+        this.log(`Pause timer ${timer.name}.`);
+
         await this.#schedule();
-        await this.#triggerPaused(timer.name);
+        await Promise.allSettled([
+            this.#triggerRealtime(timer.name),
+            this.#triggerPaused(timer.name)
+        ]);
     }
 
     async resume(name: string): Promise<void> {
@@ -114,8 +124,13 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, S
         const target = now.plus({seconds: timer.remaining});
 
         await this.#update(timer.name, timer.duration, timer.remaining, target.toSeconds(), 'running');
+        this.log(`Resume timer ${timer.name}.`);
+
         await this.#schedule();
-        await this.#triggerResumed(timer.name);
+        await Promise.allSettled([
+            this.#triggerRealtime(timer.name),
+            this.#triggerResumed(timer.name)
+        ]);
     }
 
     async set(name: string, duration: number, unit: ClockUnit): Promise<void> {
@@ -127,12 +142,20 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, S
 
         await this.#save(name, duration, unit, timer.status);
         await this.#schedule();
+
+        this.log(`Set timer ${timer.name} to ${duration} ${unit}.`);
     }
 
     async start(name: string, duration: number, unit: ClockUnit): Promise<void> {
         await this.#save(name, duration, unit, 'running');
         await this.#schedule();
-        await this.#triggerStarted(name);
+
+        this.log(`Start timer ${name} for ${duration} ${unit}.`);
+
+        await Promise.allSettled([
+            this.#triggerRealtime(name),
+            this.#triggerStarted(name)
+        ]);
     }
 
     async stop(name: string): Promise<void> {
@@ -144,8 +167,13 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Timer>, S
 
         await this.#clear(timer);
         await this.#remove(timer.id);
-        await this.#triggerRealtime(timer.name);
-        await this.#triggerStopped(timer.name);
+
+        this.log(`Stop timer ${timer.name}.`);
+
+        await Promise.allSettled([
+            this.#triggerRealtime(timer.name),
+            this.#triggerStopped(timer.name)
+        ]);
     }
 
     async isDuration(name: string, duration: number, unit: ClockUnit): Promise<boolean> {

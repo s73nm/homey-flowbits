@@ -3,7 +3,7 @@ import { AutocompleteProviders } from '../flow';
 import type { FlowBitsApp } from '../types';
 import { searchIcons } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class Widgets extends Shortcuts<FlowBitsApp> {
     async initialize(): Promise<void> {
         await this.#initializeEvent();
         await this.#initializeFlagOnOff();

@@ -4,7 +4,7 @@ import { AutocompleteProviders, Triggers } from '../flow';
 import type { ClockUnit, Event, Feature, FlowBitsApp, Look, Styleable } from '../types';
 import { convertDurationToSeconds } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<Event>, Styleable {
+export default class Events extends Shortcuts<FlowBitsApp> implements Feature<Event>, Styleable {
     get events(): Record<string, DateTime[]> {
         return Object.fromEntries(
             Object.entries<string[]>(this.settings.get(SETTING_EVENTS) ?? this.settings.get('events') ?? {})
@@ -77,6 +77,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Event>, S
 
         this.events = events;
 
+        this.log(`Clear ${name}.`);
+
         await Promise.allSettled([
             this.#triggerRealtime(),
             this.#triggerCleared(name)
@@ -86,6 +88,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Event>, S
     async clearAll(): Promise<void> {
         const names = Object.keys(this.events);
         this.events = {};
+
+        this.log('Clear all events.');
 
         await this.#triggerRealtime();
         await Promise.allSettled(names.map(name => this.#triggerCleared(name)));
@@ -126,10 +130,13 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Event>, S
 
     async trigger(name: string): Promise<void> {
         const events = this.events;
+        const now = DateTime.now();
         events[name] = events[name]?.slice(-EVENTS_HISTORY_LENGTH) ?? [];
-        events[name].push(DateTime.now());
+        events[name].push(now);
 
         this.events = events;
+
+        this.log(`Trigger ${name} at ${now.toISO()}.`);
 
         await Promise.allSettled([
             this.#triggerRealtime(),

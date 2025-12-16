@@ -22,7 +22,7 @@ const TRIGGERS: Record<string, Trigger<FlowBitsApp, any>[]> = {
     ]
 };
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class Tokens extends Shortcuts<FlowBitsApp> {
     readonly #tokens: Record<string, Token> = {};
     readonly #values: Record<string, string | boolean | number> = {};
 

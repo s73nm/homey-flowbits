@@ -4,7 +4,7 @@ import { AutocompleteProviders, Triggers } from '../flow';
 import type { Cycle, Feature, FlowBitsApp } from '../types';
 import { slugify } from '../util';
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<Cycle> {
+export default class Cycles extends Shortcuts<FlowBitsApp> implements Feature<Cycle> {
     async count(): Promise<number> {
         const cycles = await this.findAll();
 
@@ -57,6 +57,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Cycle> {
 
     async cycleTo(name: string, value: number): Promise<void> {
         this.#set(name, value);
+
+        this.log(`Cycle ${name} to ${value}.`);
 
         await Promise.allSettled([
             this.#triggerRealtime(name),

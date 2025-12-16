@@ -5,10 +5,10 @@
     "": {
       "name": "com.basmilius.flowbits",
       "dependencies": {
-        "@basmilius/homey-common": "^1.5.0",
+        "@basmilius/homey-common": "^1.9.0",
       },
       "devDependencies": {
-        "@tsconfig/node18": "^18.2.6",
+        "@tsconfig/node22": "^22.0.5",
         "@types/bun": "^1.3.4",
         "@types/homey": "npm:homey-apps-sdk-v3-types@^0.3.12",
         "@types/luxon": "^3.7.1",
@@ -27,7 +27,7 @@
 
     "@babel/types": ["@babel/types@7.28.5", "", { "dependencies": { "@babel/helper-string-parser": "^7.27.1", "@babel/helper-validator-identifier": "^7.28.5" } }, "sha512-qQ5m48eI/MFLQ5PxQj4PFaprjyCTLI37ElWMmNs0K8Lk3dVeOdNpB3ks8jc7yM5CDmVC73eMVk/trk3fgmrUpA=="],
 
-    "@basmilius/homey-common": ["@basmilius/homey-common@1.5.0", "", {}, "sha512-J/g90AKk+UQS8diAZc/3RFlcYZrUZMUP7HMmVs1PE0ubO2yKDPR8Ab8CbjnEUETxjqdvDpAYDzLlazJbx9ZnIQ=="],
+    "@basmilius/homey-common": ["@basmilius/homey-common@1.9.0", "", {}, "sha512-219p6S6KtUe8LXhUi0iIFMcyHXt+sRok0FEjdBeQlgoeG0DNe13M5NEjzBoZCGspGI5pAhnmVWx/FnAGEcGkhQ=="],
 
     "@docsearch/css": ["@docsearch/css@4.3.2", "", {}, "sha512-K3Yhay9MgkBjJJ0WEL5MxnACModX9xuNt3UlQQkDEDZJZ0+aeWKtOkxHNndMRkMBnHdYvQjxkm6mdlneOtU1IQ=="],
 
@@ -153,7 +153,7 @@
 
     "@shikijs/vscode-textmate": ["@shikijs/vscode-textmate@10.0.2", "", {}, "sha512-83yeghZ2xxin3Nj8z1NMd/NCuca+gsYXswywDy5bHvwlWL8tpTQmzGeUuHd9FC3E/SBEMvzJRwWEOz5gGes9Qg=="],
 
-    "@tsconfig/node18": ["@tsconfig/node18@18.2.6", "", {}, "sha512-eAWQzAjPj18tKnDzmWstz4OyWewLUNBm9tdoN9LayzoboRktYx3Enk1ZXPmThj55L7c4VWYq/Bzq0A51znZfhw=="],
+    "@tsconfig/node22": ["@tsconfig/node22@22.0.5", "", {}, "sha512-hLf2ld+sYN/BtOJjHUWOk568dvjFQkHnLNa6zce25GIH+vxKfvTgm3qpaH6ToF5tu/NN0IH66s+Bb5wElHrLcw=="],
 
     "@types/bun": ["@types/bun@1.3.4", "", { "dependencies": { "bun-types": "1.3.4" } }, "sha512-EEPTKXHP+zKGPkhRLv+HI0UEX8/o+65hqARxLy8Ov5rIxMBPNTjeZww00CIihrIQGEQBYg+0roO5qOnS/7boGA=="],
 

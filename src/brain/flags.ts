@@ -3,7 +3,7 @@ import { REALTIME_FLAGS_UPDATE, SETTING_FLAG_LOOKS, SETTING_FLAGS } from '../con
 import { AutocompleteProviders, Triggers } from '../flow';
 import type { Feature, Flag, FlowBitsApp, Look, Styleable } from '../types';
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<Flag>, Styleable {
+export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Flag>, Styleable {
     get currentFlags(): string[] {
         return this.settings.get(SETTING_FLAGS) ?? [];
     }
@@ -67,6 +67,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Flag>, St
 
         this.currentFlags = [...current, name];
 
+        this.log(`Activate flag ${name}.`);
+
         await Promise.allSettled([
             this.#triggerRealtime(),
             this.#triggerActivated(name),
@@ -82,6 +84,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Flag>, St
         }
 
         this.currentFlags = current.filter(f => f !== name);
+
+        this.log(`Deactivate flag ${name}.`);
 
         await Promise.allSettled([
             this.#triggerRealtime(),

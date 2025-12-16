@@ -3,7 +3,7 @@ import { REALTIME_LABELS_UPDATE, SETTING_LABEL_LOOKS, SETTING_LABELS } from '../
 import { AutocompleteProviders, Triggers } from '../flow';
 import type { Feature, FlowBitsApp, Label, Look, Styleable } from '../types';
 
-export default class extends Shortcuts<FlowBitsApp> implements Feature<Label>, Styleable {
+export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<Label>, Styleable {
     get labels(): Record<string, [string, DateTime]> {
         return Object.fromEntries(
             Object.entries<[string, string]>(this.settings.get(SETTING_LABELS) ?? {})
@@ -76,6 +76,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Label>, S
         delete labels[name];
         this.labels = labels;
 
+        this.log(`Clear label value for ${name}.`);
+
         await Promise.allSettled([
             this.#triggerChanged(name),
             this.#triggerRealtime()
@@ -95,6 +97,8 @@ export default class extends Shortcuts<FlowBitsApp> implements Feature<Label>, S
             ...this.labels,
             [name]: [value, DateTime.now()]
         };
+
+        this.log(`Set label value for ${name} to ${value}.`);
 
         await Promise.allSettled([
             this.#triggerBecomes(name, value),
