@@ -154,5 +154,8 @@
   },
   "1.9.0": {
     "en": "This update introduces a filter setting for the Flags-widget, this allows you to select which flags are shown in the widget. It also fixes a bug where widgets were not updated when new flags and modes were added."
+  },
+  "1.9.1": {
+    "en": "This update adds more verbose logging for dianostics reports."
   }
 }
