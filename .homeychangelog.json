@@ -157,5 +157,8 @@
   },
   "1.9.1": {
     "en": "This update adds more verbose logging for dianostics reports."
+  },
+  "1.9.2": {
+    "en": "No significant changes, just a library version bump."
   }
 }
