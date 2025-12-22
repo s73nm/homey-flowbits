@@ -160,5 +160,8 @@
   },
   "1.9.2": {
     "en": "No significant changes, just a library version bump."
+  },
+  "1.9.3": {
+    "en": "Cleanup and internal refactorings."
   }
 }
