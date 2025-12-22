@@ -49,7 +49,7 @@ export default defineConfig({
                                 text: 'More',
                                 items: [
                                     {text: 'Apple', link: 'https://homey.app/en-nl/app/com.basmilius.apple/Apple/test/'},
-                                    {text: 'Lists', link: 'https://homey.app/en-nl/app/com.basmilius.listri/Lists/test/'},
+                                    {text: 'Lists', link: 'https://homey.app/en-nl/app/com.basmilius.listri/Lists/'},
                                     {text: 'SAJ R5', link: 'https://homey.app/en-nl/app/com.basmilius.sajr5/SAJ-R5/'}
                                 ]
                             },
