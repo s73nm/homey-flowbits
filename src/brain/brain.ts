@@ -7,6 +7,7 @@ import Flags from './flags';
 import Labels from './labels';
 import Modes from './modes';
 import NoRepeat from './noRepeat';
+import Signals from './signals';
 import Sliders from './sliders';
 import Timers from './timers';
 import Tokens from './tokens';
@@ -41,6 +42,10 @@ export default class extends Shortcuts<FlowBitsApp> {
         return this.#noRepeat;
     }
 
+    get signals(): Signals {
+        return this.#signals;
+    }
+
     get sliders(): Sliders {
         return this.#sliders;
     }
@@ -64,6 +69,7 @@ export default class extends Shortcuts<FlowBitsApp> {
     readonly #labels: Labels;
     readonly #modes: Modes;
     readonly #noRepeat: NoRepeat;
+    readonly #signals: Signals;
     readonly #sliders: Sliders;
     readonly #timers: Timers;
     readonly #tokens: Tokens;
@@ -79,6 +85,7 @@ export default class extends Shortcuts<FlowBitsApp> {
         this.#labels = new Labels(app);
         this.#modes = new Modes(app);
         this.#noRepeat = new NoRepeat(app);
+        this.#signals = new Signals(app);
         this.#sliders = new Sliders(app);
         this.#timers = new Timers(app);
         this.#tokens = new Tokens(app);

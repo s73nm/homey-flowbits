@@ -1,6 +1,6 @@
 import { action, FlowActionEntity } from '@basmilius/homey-common';
 import type { FlowBitsApp } from '../../types';
-import { AutocompleteProviders, Triggers } from '..';
+import { AutocompleteProviders } from '..';
 
 @action('signal_send')
 export default class extends FlowActionEntity<FlowBitsApp, Args> {
@@ -11,9 +11,7 @@ export default class extends FlowActionEntity<FlowBitsApp, Args> {
     }
 
     async onRun(args: Args): Promise<void> {
-        this.registry
-            .findTrigger(Triggers.SignalReceive)
-            ?.trigger({signal: args.signal.name});
+        this.app.signals.send(args.signal.name);
     }
 }
 
