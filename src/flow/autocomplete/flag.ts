@@ -26,6 +26,7 @@ export default class extends FlowAutocompleteArgumentProvider<FlowBitsApp> {
         return [
             this.flow.getActionCard('flag_activate'),
             this.flow.getActionCard('flag_deactivate'),
+            this.flow.getActionCard('flag_toggle'),
             this.flow.getConditionCard('flag_is'),
             this.flow.getTriggerCard('flag_activated'),
             this.flow.getTriggerCard('flag_changed'),
