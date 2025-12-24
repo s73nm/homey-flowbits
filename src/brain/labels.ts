@@ -41,15 +41,21 @@ export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<La
             ...Object.keys(this.looks)
         ]);
 
+        const labels = this.labels;
+        const looks = this.looks;
+
         for (const key of keys) {
             if (defined.find(d => d.name === key)) {
                 continue;
             }
 
             this.log(`Deleting unused label ${key}...`);
-            delete this.labels[key];
-            delete this.looks[key];
+            delete labels[key];
+            delete looks[key];
         }
+
+        this.labels = labels;
+        this.looks = looks;
     }
 
     async count(): Promise<number> {

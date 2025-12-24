@@ -42,15 +42,21 @@ export default class Events extends Shortcuts<FlowBitsApp> implements Feature<Ev
             ...Object.keys(this.looks)
         ]);
 
+        const events = this.events;
+        const looks = this.looks;
+
         for (const key of keys) {
             if (defined.find(d => d.name === key)) {
                 continue;
             }
 
             this.log(`Deleting unused event ${key}...`);
-            delete this.events[key];
-            delete this.looks[key];
+            delete events[key];
+            delete looks[key];
         }
+
+        this.events = events;
+        this.looks = looks;
     }
 
     async count(): Promise<number> {

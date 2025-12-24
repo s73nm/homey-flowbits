@@ -27,6 +27,7 @@ export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Ti
 
         const defined = await this.findAll();
         const keys = Object.keys(this.looks);
+        const looks = this.looks;
 
         for (const key of keys) {
             if (defined.find(d => d.name === key)) {
@@ -34,8 +35,10 @@ export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Ti
             }
 
             this.log(`Deleting unused timer look ${key}...`);
-            delete this.looks[key];
+            delete looks[key];
         }
+
+        this.looks = looks;
     }
 
     async count(): Promise<number> {

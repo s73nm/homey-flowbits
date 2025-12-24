@@ -13,7 +13,7 @@ import Timers from './timers';
 import Tokens from './tokens';
 import Widgets from './widgets';
 
-export default class extends Shortcuts<FlowBitsApp> {
+export default class Brain extends Shortcuts<FlowBitsApp> {
     get api(): Api {
         return this.#api;
     }
@@ -90,5 +90,22 @@ export default class extends Shortcuts<FlowBitsApp> {
         this.#timers = new Timers(app);
         this.#tokens = new Tokens(app);
         this.#widgets = new Widgets(app);
+    }
+
+    async cleanup(): Promise<void> {
+        this.log('Cleaning up...');
+
+        await Promise.allSettled([
+            this.cycles.cleanup(),
+            this.events.cleanup(),
+            this.flags.cleanup(),
+            this.labels.cleanup(),
+            this.modes.cleanup(),
+            this.noRepeat.cleanup(),
+            this.sliders.cleanup(),
+            this.timers.cleanup()
+        ]);
+
+        this.log('Cleanup done.');
     }
 }

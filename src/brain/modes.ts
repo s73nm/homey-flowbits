@@ -24,6 +24,7 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
         this.log('Cleaning up unused modes...');
 
         const defined = await this.findAll();
+        const looks = this.looks;
 
         if (this.currentMode && !defined.find(d => d.name === this.currentMode)) {
             this.currentMode = null;
@@ -35,8 +36,10 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
             }
 
             this.log(`Deleting unused mode look ${key}...`);
-            delete this.looks[key];
+            delete looks[key];
         }
+
+        this.looks = looks;
     }
 
     async count(): Promise<number> {

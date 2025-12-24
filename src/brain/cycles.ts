@@ -11,12 +11,12 @@ export default class Cycles extends Shortcuts<FlowBitsApp> implements Feature<Cy
         const defined = await this.findAll();
 
         for (const key of this.settings.getKeys()) {
-            if (!key.startsWith(SETTING_CYCLE_PREFIX) || defined.find(d => d.name === key)) {
+            if (!key.startsWith(SETTING_CYCLE_PREFIX) || defined.find(d => this.#id(d.name) === key)) {
                 continue;
             }
 
             this.log(`Deleting unused cycle ${key}....`);
-            this.settings.unset(this.#id(key));
+            this.settings.unset(key);
         }
     }
 

@@ -24,6 +24,7 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
         this.log('Cleaning up unused flags...');
 
         const defined = await this.findAll();
+        const looks = this.looks;
 
         this.currentFlags = this.currentFlags.filter(flag => defined.find(d => d.name === flag));
 
@@ -33,8 +34,10 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
             }
 
             this.log(`Deleting unused flag look ${key}...`);
-            delete this.looks[key];
+            delete looks[key];
         }
+
+        this.looks = looks;
     }
 
     async count(): Promise<number> {
