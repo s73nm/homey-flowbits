@@ -163,5 +163,8 @@
   },
   "1.9.3": {
     "en": "Cleanup and internal refactorings."
+  },
+  "1.9.4": {
+    "en": "This update add internal cleanup logic and fixes a few instances where autocomplete providers did not check all flow cards."
   }
 }
