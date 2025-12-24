@@ -1,5 +1,4 @@
 import { Shortcuts } from '@basmilius/homey-common';
-import { AutocompleteProviders } from '../flow';
 import type { FlowBitsApp } from '../types';
 import { searchIcons } from '../util';
 
@@ -11,14 +10,6 @@ export default class Widgets extends Shortcuts<FlowBitsApp> {
         await this.#initializeLabel();
         await this.#initializeSlider();
         await this.#initializeTimer();
-    }
-
-    async getSliderValue(sliderName: string): Promise<number | null> {
-        return await this.app.sliders.getValue(sliderName);
-    }
-
-    async setSliderValue(sliderName: string, value: number, widgetId?: string): Promise<void> {
-        await this.app.sliders.setValue(sliderName, value, widgetId);
     }
 
     async #initializeEvent(): Promise<void> {
@@ -178,16 +169,10 @@ export default class Widgets extends Shortcuts<FlowBitsApp> {
     }
 
     async #initializeSlider(): Promise<void> {
-        const autocompleteProvider = this.registry.findAutocompleteProvider(AutocompleteProviders.Slider);
-
-        if (!autocompleteProvider) {
-            throw new Error('Failed to get the slider autocomplete provider.');
-        }
-
         const widget = this.dashboards.getWidget('slider');
 
         widget.registerSettingAutocompleteListener('slider', async (query) => {
-            const sliders = await autocompleteProvider.find(query);
+            const sliders = await this.app.api.getSliders();
 
             return sliders.map(slider => ({
                 name: slider.name

@@ -1,8 +1,8 @@
 import { DateTime, Shortcuts, Trigger } from '@basmilius/homey-common';
-import type { FlowToken } from 'homey';
 import { Triggers } from '../flow';
 import type { FlowBitsApp } from '../types';
 import { getDayPeriod, getMoonPhase, getZodiacSign } from '../util';
+import type Homey from 'homey';
 
 type Provider<T extends string | boolean | number> = (state: State) => T;
 type Translator<T> = (value: T) => string;
@@ -11,8 +11,8 @@ type State = {
     readonly now: DateTime;
 };
 
-type RawToken = [FlowToken, Provider<string | boolean | number>];
-type TranslatedToken = [...RawToken, FlowToken, Translator<any>];
+type RawToken = [Homey.FlowToken, Provider<string | boolean | number>];
+type TranslatedToken = [...RawToken, Homey.FlowToken, Translator<any>];
 type Token = RawToken | TranslatedToken;
 
 const TRIGGERS: Record<string, Trigger<FlowBitsApp, any>[]> = {
