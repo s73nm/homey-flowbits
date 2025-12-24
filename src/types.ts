@@ -15,6 +15,8 @@ export type ClockUnit =
     | 'days';
 
 export interface Feature<TInstance> {
+    cleanup(): Promise<void>;
+
     count(): Promise<number>;
 
     find(name: string): Promise<TInstance | null>;

@@ -22,6 +22,22 @@ export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Ti
         await this.#schedule();
     }
 
+    async cleanup(): Promise<void> {
+        this.log('Cleaning up unused timers...');
+
+        const defined = await this.findAll();
+        const keys = Object.keys(this.looks);
+
+        for (const key of keys) {
+            if (defined.find(d => d.name === key)) {
+                continue;
+            }
+
+            this.log(`Deleting unused timer look ${key}...`);
+            delete this.looks[key];
+        }
+    }
+
     async count(): Promise<number> {
         const timers = await this.findAll();
 

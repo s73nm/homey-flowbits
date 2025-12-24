@@ -79,6 +79,15 @@ export default class FlowBitsApp extends App<FlowBitsApp> {
             await this.tokens.initialize();
             await this.widgets.initialize();
 
+            await this.cycles.cleanup();
+            await this.events.cleanup();
+            await this.flags.cleanup();
+            await this.labels.cleanup();
+            await this.modes.cleanup();
+            await this.noRepeat.cleanup();
+            await this.sliders.cleanup();
+            await this.timers.cleanup();
+
             this.log('FlowBits has been initialized!');
         } catch (err) {
             this.error('Failed initializing FlowBits.', err);

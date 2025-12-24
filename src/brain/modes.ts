@@ -20,6 +20,25 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
         this.settings.set(SETTING_MODE_LOOKS, value);
     }
 
+    async cleanup(): Promise<void> {
+        this.log('Cleaning up unused modes...');
+
+        const defined = await this.findAll();
+
+        if (this.currentMode && !defined.find(d => d.name === this.currentMode)) {
+            this.currentMode = null;
+        }
+
+        for (const key of Object.keys(this.looks)) {
+            if (defined.find(d => d.name === key)) {
+                continue;
+            }
+
+            this.log(`Deleting unused mode look ${key}...`);
+            delete this.looks[key];
+        }
+    }
+
     async count(): Promise<number> {
         const modes = await this.findAll();
 

@@ -3,6 +3,9 @@ import { SETTING_NO_REPEAT_WINDOWS } from '../const';
 import type { ClockUnit, Feature, FlowBitsApp, NoRepeatWindow } from '../types';
 import { convertDurationToSeconds } from '../util';
 
+// todo(Bas): Implement cleanup().
+// todo(Bas): Use auto complete provider to find defined no-repeat windows.
+
 export default class NoRepeat extends Shortcuts<FlowBitsApp> implements Feature<NoRepeatWindow> {
     get windows(): Record<string, DateTime> {
         return Object.fromEntries(
@@ -21,6 +24,9 @@ export default class NoRepeat extends Shortcuts<FlowBitsApp> implements Feature<
                     .map(([key, value]) => [key, value.toISO()])
             )
         );
+    }
+
+    async cleanup(): Promise<void> {
     }
 
     async count(): Promise<number> {

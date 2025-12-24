@@ -5,6 +5,21 @@ import type { Cycle, Feature, FlowBitsApp } from '../types';
 import { slugify } from '../util';
 
 export default class Cycles extends Shortcuts<FlowBitsApp> implements Feature<Cycle> {
+    async cleanup(): Promise<void> {
+        this.log('Cleaning up unused cycles...');
+
+        const defined = await this.findAll();
+
+        for (const key of this.settings.getKeys()) {
+            if (!key.startsWith(SETTING_CYCLE_PREFIX) || defined.find(d => d.name === key)) {
+                continue;
+            }
+
+            this.log(`Deleting unused cycle ${key}....`);
+            this.settings.unset(this.#id(key));
+        }
+    }
+
     async count(): Promise<number> {
         const cycles = await this.findAll();
 

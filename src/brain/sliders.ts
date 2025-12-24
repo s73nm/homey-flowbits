@@ -3,6 +3,9 @@ import { REALTIME_SLIDER_UPDATE, SETTING_SLIDERS } from '../const';
 import { Triggers } from '../flow';
 import type { Feature, FlowBitsApp, Slider } from '../types';
 
+// todo(Bas): Implement cleanup().
+// todo(Bas): Migrate sliders to use looks, like other features, instead of widget settings.
+
 export default class Sliders extends Shortcuts<FlowBitsApp> implements Feature<Slider> {
     get values(): Record<string, number> {
         return this.settings.get(SETTING_SLIDERS) ?? {};
@@ -10,6 +13,9 @@ export default class Sliders extends Shortcuts<FlowBitsApp> implements Feature<S
 
     set values(value: Record<string, number>) {
         this.settings.set(SETTING_SLIDERS, value);
+    }
+
+    async cleanup(): Promise<void> {
     }
 
     async count(): Promise<number> {

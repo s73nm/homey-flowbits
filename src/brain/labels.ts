@@ -32,6 +32,26 @@ export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<La
         this.settings.set(SETTING_LABEL_LOOKS, value);
     }
 
+    async cleanup(): Promise<void> {
+        this.log('Cleaning up unused labels...');
+
+        const defined = await this.findAll();
+        const keys = new Set([
+            ...Object.keys(this.labels),
+            ...Object.keys(this.looks)
+        ]);
+
+        for (const key of keys) {
+            if (defined.find(d => d.name === key)) {
+                continue;
+            }
+
+            this.log(`Deleting unused label ${key}...`);
+            delete this.labels[key];
+            delete this.looks[key];
+        }
+    }
+
     async count(): Promise<number> {
         const labels = await this.findAll();
 
