@@ -169,5 +169,8 @@
   },
   "1.9.5": {
     "en": "Add paypal donate option."
+  },
+  "1.9.6": {
+    "en": "This update adds a welcome notification with a reference to the documentation website."
   }
 }
