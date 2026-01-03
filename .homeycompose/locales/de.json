@@ -12,7 +12,8 @@
     },
     "notification": {
         "mode_activated": "**__name__** ist aktiviert.",
-        "mode_deactivated": "**__name__** ist deaktiviert."
+        "mode_deactivated": "**__name__** ist deaktiviert.",
+        "welcome": "Willkommen bei **FlowBits**! Besuchen Sie flowbits.nl, um mehr darüber zu erfahren, was Sie mit FlowBits tun können."
     },
     "token": {
         "day_period": "Tageszeit (roh)",

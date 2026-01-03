@@ -12,7 +12,8 @@
   },
   "notification": {
     "mode_activated": "**__name__** активирован.",
-    "mode_deactivated": "**__name__** деактивирован."
+    "mode_deactivated": "**__name__** деактивирован.",
+    "welcome": "Добро пожаловать в **FlowBits**! Посетите flowbits.nl, чтобы узнать больше о том, что вы можете делать с FlowBits."
   },
   "token": {
     "day_period": "Период дня (сырой)",

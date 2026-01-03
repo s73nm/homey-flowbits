@@ -12,7 +12,8 @@
     },
     "notification": {
         "mode_activated": "**__name__** is activated.",
-        "mode_deactivated": "**__name__** is deactivated."
+        "mode_deactivated": "**__name__** is deactivated.",
+        "welcome": "Welcome to **FlowBits**! Go to flowbits.nl to learn more about what you can do with FlowBits."
     },
     "token": {
         "day_period": "Day period (raw)",

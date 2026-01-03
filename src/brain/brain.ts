@@ -108,4 +108,20 @@ export default class Brain extends Shortcuts<FlowBitsApp> {
 
         this.log('Cleanup done.');
     }
+
+    async welcome(): Promise<void> {
+        const welcomeId = this.settings.getKeys().includes('welcomeId')
+            ? this.settings.get('welcomeId')
+            : 0;
+
+        if (welcomeId >= 1) {
+            return;
+        }
+
+        await this.homey.notifications.createNotification({
+            excerpt: this.translate('notification.welcome')
+        });
+
+        this.settings.set('welcomeId', 1);
+    }
 }

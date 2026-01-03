@@ -80,6 +80,7 @@ export default class FlowBitsApp extends App<FlowBitsApp> {
             await this.widgets.initialize();
 
             await this.#brain.cleanup();
+            await this.#brain.welcome();
 
             this.log('FlowBits has been initialized!');
         } catch (err) {

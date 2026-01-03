@@ -12,7 +12,8 @@
   },
   "notification": {
     "mode_activated": "**__name__** 활성화됨.",
-    "mode_deactivated": "**__name__** 비활성화됨."
+    "mode_deactivated": "**__name__** 비활성화됨.",
+    "welcome": "**FlowBits**에 오신 것을 환영합니다! flowbits.nl을 방문하여 FlowBits로 할 수 있는 작업에 대해 자세히 알아보세요."
   },
   "token": {
     "day_period": "시간대 (원본)",

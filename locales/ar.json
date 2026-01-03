@@ -12,7 +12,8 @@
   },
   "notification": {
     "mode_activated": "**__name__** تم تفعيله.",
-    "mode_deactivated": "**__name__** تم إلغاء تفعيله."
+    "mode_deactivated": "**__name__** تم إلغاء تفعيله.",
+    "welcome": "مرحباً بك في **FlowBits**! انتقل إلى flowbits.nl لمعرفة المزيد حول ما يمكنك فعله مع FlowBits."
   },
   "token": {
     "day_period": "فترة اليوم (غير معالج)",
