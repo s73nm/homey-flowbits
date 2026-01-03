@@ -41,16 +41,16 @@ export default defineConfig({
                         items: [
                             {
                                 items: [
-                                    {text: 'App Store', link: 'https://homey.app/en-nl/app/com.basmilius.flowbits/FlowBits/'},
+                                    {text: 'App Store', link: 'https://homey.app/a/com.basmilius.flowbits/'},
                                     {text: 'Community Topic', link: 'https://community.homey.app/t/app-pro-flowbits/145855'}
                                 ]
                             },
                             {
                                 text: 'More',
                                 items: [
-                                    {text: 'Apple', link: 'https://homey.app/en-nl/app/com.basmilius.apple/Apple/test/'},
-                                    {text: 'Lists', link: 'https://homey.app/en-nl/app/com.basmilius.listri/Lists/'},
-                                    {text: 'SAJ R5', link: 'https://homey.app/en-nl/app/com.basmilius.sajr5/SAJ-R5/'}
+                                    {text: 'Apple TV & HomePod', link: 'https://homey.app/a/com.basmilius.apple/'},
+                                    {text: 'Lists', link: 'https://homey.app/a/com.basmilius.listri/'},
+                                    {text: 'SAJ R5', link: 'https://homey.app/a/com.basmilius.sajr5/'}
                                 ]
                             },
                             {
