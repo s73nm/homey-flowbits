@@ -172,5 +172,8 @@
   },
   "1.9.6": {
     "en": "This update adds a welcome notification with a reference to the documentation website."
+  },
+  "1.10.0": {
+    "en": "This update adds a filter option to the Modes-widget."
   }
 }
