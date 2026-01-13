@@ -1,25 +1,5 @@
 {
-  "name": {
-    "en": "Label",
-    "nl": "Label",
-    "da": "Etiket",
-    "de": "Etikett",
-    "es": "Etiqueta",
-    "fr": "Étiquette",
-    "it": "Etichetta",
-    "no": "Etikett",
-    "sv": "Etikett",
-    "pl": "Etykieta",
-    "ru": "Метка",
-    "ko": "라벨",
-    "ar": "تسمية"
-  },
-  "height": 120,
-  "settings": [
-    {
-      "id": "label",
-      "type": "autocomplete",
-      "title": {
+    "name": {
         "en": "Label",
         "nl": "Label",
         "da": "Etiket",
@@ -33,13 +13,33 @@
         "ru": "Метка",
         "ko": "라벨",
         "ar": "تسمية"
-      }
+    },
+    "height": 120,
+    "settings": [
+        {
+            "id": "label",
+            "type": "autocomplete",
+            "title": {
+                "en": "Label",
+                "nl": "Label",
+                "da": "Etiket",
+                "de": "Etikett",
+                "es": "Etiqueta",
+                "fr": "Étiquette",
+                "it": "Etichetta",
+                "no": "Etikett",
+                "sv": "Etikett",
+                "pl": "Etykieta",
+                "ru": "Метка",
+                "ko": "라벨",
+                "ar": "تسمية"
+            }
+        }
+    ],
+    "api": {
+        "get": {
+            "method": "GET",
+            "path": "/"
+        }
     }
-  ],
-  "api": {
-    "get": {
-      "method": "GET",
-      "path": "/"
-    }
-  }
 }

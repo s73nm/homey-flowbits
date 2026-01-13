@@ -1,147 +1,147 @@
 {
-  "name": {
-    "en": "Flags",
-    "nl": "Flags",
-    "de": "Flags",
-    "fr": "Drapeaux",
-    "it": "Flag",
-    "sv": "Flaggor",
-    "no": "Flagg",
-    "es": "Banderas",
-    "da": "Flag",
-    "ru": "Флаги",
-    "pl": "Flagi",
-    "ko": "플래그",
-    "ar": "أعلام"
-  },
-  "height": 120,
-  "settings": [
-    {
-      "id": "readonly",
-      "type": "checkbox",
-      "value": false,
-      "title": {
-        "en": "Read only",
-        "nl": "Alleen-lezen",
-        "de": "Nur lesen",
-        "fr": "Lecture seule",
-        "it": "Solo lettura",
-        "sv": "Skrivskyddad",
-        "no": "Kun lesing",
-        "es": "Solo lectura",
-        "da": "Kun læsning",
-        "ru": "Только чтение",
-        "pl": "Tylko do odczytu",
-        "ko": "읽기 전용",
-        "ar": "قراءة فقط"
-      }
+    "name": {
+        "en": "Flags",
+        "nl": "Flags",
+        "de": "Flags",
+        "fr": "Drapeaux",
+        "it": "Flag",
+        "sv": "Flaggor",
+        "no": "Flagg",
+        "es": "Banderas",
+        "da": "Flag",
+        "ru": "Флаги",
+        "pl": "Flagi",
+        "ko": "플래그",
+        "ar": "أعلام"
     },
-    {
-      "id": "show_icons",
-      "type": "checkbox",
-      "value": true,
-      "title": {
-        "en": "Show icons",
-        "nl": "Toon icoontjes",
-        "de": "Symbole anzeigen",
-        "fr": "Afficher les icônes",
-        "it": "Mostra icone",
-        "sv": "Visa ikoner",
-        "no": "Vis ikoner",
-        "es": "Mostrar iconos",
-        "da": "Vis ikoner",
-        "ru": "Показать иконки",
-        "pl": "Pokaż ikony",
-        "ko": "아이콘 표시",
-        "ar": "عرض الرموز"
-      }
-    },
-    {
-      "id": "view_mode",
-      "type": "dropdown",
-      "title": {
-        "en": "View mode",
-        "nl": "Weergavemodus",
-        "de": "Ansichtsmodus",
-        "fr": "Mode d’affichage",
-        "it": "Modalità di visualizzazione",
-        "sv": "Visningsläge",
-        "no": "Visningsmodus",
-        "es": "Modo de vista",
-        "da": "Visningstilstand",
-        "ru": "Режим просмотра",
-        "pl": "Tryb widoku",
-        "ko": "보기 모드",
-        "ar": "وضع العرض"
-      },
-      "value": "grid",
-      "values": [
+    "height": 120,
+    "settings": [
         {
-          "id": "grid",
-          "title": {
-            "en": "Grid",
-            "nl": "Grid",
-            "de": "Raster",
-            "fr": "Grille",
-            "it": "Griglia",
-            "sv": "Rutnät",
-            "no": "Rutenett",
-            "es": "Cuadrícula",
-            "da": "Gitter",
-            "ru": "Сетка",
-            "pl": "Siatka",
-            "ko": "그리드",
-            "ar": "شبكة"
-          }
+            "id": "readonly",
+            "type": "checkbox",
+            "value": false,
+            "title": {
+                "en": "Read only",
+                "nl": "Alleen-lezen",
+                "de": "Nur lesen",
+                "fr": "Lecture seule",
+                "it": "Solo lettura",
+                "sv": "Skrivskyddad",
+                "no": "Kun lesing",
+                "es": "Solo lectura",
+                "da": "Kun læsning",
+                "ru": "Только чтение",
+                "pl": "Tylko do odczytu",
+                "ko": "읽기 전용",
+                "ar": "قراءة فقط"
+            }
         },
         {
-          "id": "list",
-          "title": {
-            "en": "List",
-            "nl": "Lijst",
-            "de": "Liste",
-            "fr": "Liste",
-            "it": "Elenco",
-            "sv": "Lista",
-            "no": "Liste",
-            "es": "Lista",
-            "da": "Liste",
-            "ru": "Список",
-            "pl": "Lista",
-            "ko": "목록",
-            "ar": "قائمة"
-          }
+            "id": "show_icons",
+            "type": "checkbox",
+            "value": true,
+            "title": {
+                "en": "Show icons",
+                "nl": "Toon icoontjes",
+                "de": "Symbole anzeigen",
+                "fr": "Afficher les icônes",
+                "it": "Mostra icone",
+                "sv": "Visa ikoner",
+                "no": "Vis ikoner",
+                "es": "Mostrar iconos",
+                "da": "Vis ikoner",
+                "ru": "Показать иконки",
+                "pl": "Pokaż ikony",
+                "ko": "아이콘 표시",
+                "ar": "عرض الرموز"
+            }
+        },
+        {
+            "id": "view_mode",
+            "type": "dropdown",
+            "title": {
+                "en": "View mode",
+                "nl": "Weergavemodus",
+                "de": "Ansichtsmodus",
+                "fr": "Mode d’affichage",
+                "it": "Modalità di visualizzazione",
+                "sv": "Visningsläge",
+                "no": "Visningsmodus",
+                "es": "Modo de vista",
+                "da": "Visningstilstand",
+                "ru": "Режим просмотра",
+                "pl": "Tryb widoku",
+                "ko": "보기 모드",
+                "ar": "وضع العرض"
+            },
+            "value": "grid",
+            "values": [
+                {
+                    "id": "grid",
+                    "title": {
+                        "en": "Grid",
+                        "nl": "Grid",
+                        "de": "Raster",
+                        "fr": "Grille",
+                        "it": "Griglia",
+                        "sv": "Rutnät",
+                        "no": "Rutenett",
+                        "es": "Cuadrícula",
+                        "da": "Gitter",
+                        "ru": "Сетка",
+                        "pl": "Siatka",
+                        "ko": "그리드",
+                        "ar": "شبكة"
+                    }
+                },
+                {
+                    "id": "list",
+                    "title": {
+                        "en": "List",
+                        "nl": "Lijst",
+                        "de": "Liste",
+                        "fr": "Liste",
+                        "it": "Elenco",
+                        "sv": "Lista",
+                        "no": "Liste",
+                        "es": "Lista",
+                        "da": "Liste",
+                        "ru": "Список",
+                        "pl": "Lista",
+                        "ko": "목록",
+                        "ar": "قائمة"
+                    }
+                }
+            ]
+        },
+        {
+            "id": "filter",
+            "type": "autocomplete",
+            "title": {
+                "en": "Filter",
+                "nl": "Filter",
+                "de": "Filter",
+                "fr": "Filtre",
+                "it": "Filtro",
+                "sv": "Filter",
+                "no": "Filter",
+                "es": "Filtro",
+                "da": "Filter",
+                "ru": "Фильтр",
+                "pl": "Filtr",
+                "ko": "필터",
+                "ar": "تصفية"
+            }
         }
-      ]
-    },
-    {
-        "id": "filter",
-        "type": "autocomplete",
-        "title": {
-            "en": "Filter",
-            "nl": "Filter",
-            "de": "Filter",
-            "fr": "Filtre",
-            "it": "Filtro",
-            "sv": "Filter",
-            "no": "Filter",
-            "es": "Filtro",
-            "da": "Filter",
-            "ru": "Фильтр",
-            "pl": "Filtr",
-            "ko": "필터",
-            "ar": "تصفية"
+    ],
+    "api": {
+        "list": {
+            "method": "GET",
+            "path": "/"
+        },
+        "toggle": {
+            "method": "POST",
+            "path": "/"
         }
     }
-  ],
-  "api": {
-    "list": {
-      "method": "GET",
-      "path": "/"
-    },
-    "toggle": {
-      "method": "POST",
-      "path": "/"
-    }
-  }
 }

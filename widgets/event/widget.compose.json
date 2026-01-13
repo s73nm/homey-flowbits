@@ -1,25 +1,5 @@
 {
-  "name": {
-    "en": "Event",
-    "nl": "Gebeurtenis",
-    "da": "Begivenhed",
-    "de": "Veranstaltung",
-    "es": "Evento",
-    "fr": "Événement",
-    "it": "Evento",
-    "no": "Arrangement",
-    "sv": "Händelse",
-    "pl": "Wydarzenie",
-    "ru": "Событие",
-    "ko": "이벤트",
-    "ar": "حدث"
-  },
-  "height": 120,
-  "settings": [
-    {
-      "id": "event",
-      "type": "autocomplete",
-      "title": {
+    "name": {
         "en": "Event",
         "nl": "Gebeurtenis",
         "da": "Begivenhed",
@@ -33,13 +13,33 @@
         "ru": "Событие",
         "ko": "이벤트",
         "ar": "حدث"
-      }
+    },
+    "height": 120,
+    "settings": [
+        {
+            "id": "event",
+            "type": "autocomplete",
+            "title": {
+                "en": "Event",
+                "nl": "Gebeurtenis",
+                "da": "Begivenhed",
+                "de": "Veranstaltung",
+                "es": "Evento",
+                "fr": "Événement",
+                "it": "Evento",
+                "no": "Arrangement",
+                "sv": "Händelse",
+                "pl": "Wydarzenie",
+                "ru": "Событие",
+                "ko": "이벤트",
+                "ar": "حدث"
+            }
+        }
+    ],
+    "api": {
+        "get": {
+            "method": "GET",
+            "path": "/"
+        }
     }
-  ],
-  "api": {
-    "get": {
-      "method": "GET",
-      "path": "/"
-    }
-  }
 }
