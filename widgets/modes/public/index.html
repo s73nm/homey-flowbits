@@ -26,7 +26,12 @@
         }
 
         async function onClickMode(mode) {
-            Homey.hapticFeedback();
+            try {
+                Homey.hapticFeedback();
+            } catch (_) {
+                // care
+            }
+
             await Homey.api('POST', '/', {mode: mode.name});
         }
 
@@ -49,7 +54,7 @@
 
                 const button = document.createElement('button');
                 button.className = 'homey-widget item' + (result.active ? ' active' : '');
-                button.onclick = () => onClickMode(result);
+                button.addEventListener('click', () => onClickMode(result));
 
                 if (settings.show_icons && result.icon) {
                     const icon = document.createElement('div');

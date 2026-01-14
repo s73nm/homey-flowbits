@@ -26,7 +26,12 @@
         }
 
         async function onClickFlag(flag) {
-            Homey.hapticFeedback();
+            try {
+                Homey.hapticFeedback();
+            } catch (_) {
+                // care
+            }
+
             await Homey.api('POST', '/', {flag: flag.name});
         }
 
@@ -49,7 +54,7 @@
 
                 const button = document.createElement('button');
                 button.className = 'homey-widget item' + (result.active ? ' active' : '');
-                button.onclick = () => onClickFlag(result);
+                button.addEventListener('click', () => onClickFlag(result));
 
                 if (settings.show_icons && result.icon) {
                     const icon = document.createElement('div');

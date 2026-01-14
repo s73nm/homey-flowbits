@@ -50,7 +50,11 @@
 
                 loading = true;
 
-                Homey.hapticFeedback();
+                try {
+                    Homey.hapticFeedback();
+                } catch (_) {
+                    // care
+                }
 
                 if (power.classList.contains('on')) {
                     icon.classList.remove('on');
@@ -63,7 +67,7 @@
                 await Homey.api('POST', '/', {flag});
 
                 loading = false;
-            }, {passive: true});
+            });
         }
 
         async function update() {
