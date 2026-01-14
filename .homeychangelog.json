@@ -175,5 +175,8 @@
   },
   "1.10.0": {
     "en": "This update adds a filter option to the Modes-widget."
+  },
+  "1.10.1": {
+    "en": "Fixes a bug where clicks wouldn't register while using a hardware pointer on an iPad."
   }
 }
