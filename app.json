@@ -1270,6 +1270,27 @@
               "ar": "تسمية"
             }
           }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "string",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "da": "Værdi",
+              "de": "Wert",
+              "es": "Valor",
+              "fr": "Valeur",
+              "it": "Valore",
+              "no": "Verdi",
+              "sv": "Värde",
+              "pl": "Wartość",
+              "ru": "Значение",
+              "ko": "값",
+              "ar": "قيمة"
+            }
+          }
         ]
       },
       {

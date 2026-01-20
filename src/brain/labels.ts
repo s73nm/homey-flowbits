@@ -105,7 +105,7 @@ export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<La
         this.log(`Clear label value for ${name}.`);
 
         await Promise.allSettled([
-            this.#triggerChanged(name),
+            this.#triggerChanged(name, '-'),
             this.#triggerRealtime()
         ]);
     }
@@ -128,7 +128,7 @@ export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<La
 
         await Promise.allSettled([
             this.#triggerBecomes(name, value),
-            this.#triggerChanged(name),
+            this.#triggerChanged(name, value),
             this.#triggerRealtime()
         ]);
     }
@@ -156,10 +156,10 @@ export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<La
             ?.trigger({name, value});
     }
 
-    async #triggerChanged(name: string): Promise<void> {
+    async #triggerChanged(name: string, value: string): Promise<void> {
         this.registry
             .findTrigger(Triggers.LabelChanged)
-            ?.trigger({name});
+            ?.trigger({name}, {value});
     }
 
     async #triggerRealtime(): Promise<void> {
