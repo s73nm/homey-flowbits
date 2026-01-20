@@ -181,5 +181,8 @@
   },
   "1.10.2": {
     "en": "Fixes a typo, thanks @s73nm!"
+  },
+  "1.10.3": {
+    "en": "This update introduces a new value token to the label changed trigger."
   }
 }
