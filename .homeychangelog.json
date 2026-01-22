@@ -187,5 +187,8 @@
   },
   "1.10.4": {
     "en": "Bump dependencies."
+  },
+  "1.10.5": {
+    "en": "Fixed an issue where only saved sliders were available in the slider widget."
   }
 }
