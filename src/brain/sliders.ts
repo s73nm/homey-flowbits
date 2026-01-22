@@ -1,9 +1,8 @@
 import { Shortcuts } from '@basmilius/homey-common';
 import { REALTIME_SLIDER_UPDATE, SETTING_SLIDERS } from '../const';
-import { Triggers } from '../flow';
+import { AutocompleteProviders, Triggers } from '../flow';
 import type { Feature, FlowBitsApp, Slider } from '../types';
 
-// todo(Bas): Implement cleanup().
 // todo(Bas): Migrate sliders to use looks, like other features, instead of widget settings.
 
 export default class Sliders extends Shortcuts<FlowBitsApp> implements Feature<Slider> {
@@ -16,6 +15,22 @@ export default class Sliders extends Shortcuts<FlowBitsApp> implements Feature<S
     }
 
     async cleanup(): Promise<void> {
+        this.log('Cleaning up unused sliders...');
+
+        const defined = await this.findAll();
+        const keys = Object.keys(this.values);
+        const values = this.values;
+
+        for (const key of keys) {
+            if (defined.some(slider => slider.name === key)) {
+                continue;
+            }
+
+            this.log(`Deleting unused slider ${key}...`);
+            delete values[key];
+        }
+
+        this.values = values;
     }
 
     async count(): Promise<number> {
@@ -30,11 +45,25 @@ export default class Sliders extends Shortcuts<FlowBitsApp> implements Feature<S
     }
 
     async findAll(): Promise<Slider[]> {
-        return Object.entries(this.values)
-            .map(([name, value]) => ({
-                name,
+        const provider = this.#autocompleteProvider();
+        const sliders = await provider.find('');
+
+        if (sliders.length === 0) {
+            return [];
+        }
+
+        const results: Slider[] = [];
+
+        for (const slider of sliders) {
+            const value = this.values[slider.name] ?? 0;
+
+            results.push({
+                name: slider.name,
                 value
-            }));
+            });
+        }
+
+        return results;
     }
 
     async getValue(name: string): Promise<number | null> {
@@ -63,5 +92,15 @@ export default class Sliders extends Shortcuts<FlowBitsApp> implements Feature<S
 
     async #triggerRealtime(slider: string, value: number, widgetId?: string): Promise<void> {
         this.realtime(REALTIME_SLIDER_UPDATE, {slider, value, widgetId});
+    }
+
+    #autocompleteProvider(): AutocompleteProviders.Slider {
+        const provider = this.registry.findAutocompleteProvider(AutocompleteProviders.Slider);
+
+        if (!provider) {
+            throw new Error('Failed to get the slider autocomplete provider.');
+        }
+
+        return provider;
     }
 }
