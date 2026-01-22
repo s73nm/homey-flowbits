@@ -190,5 +190,8 @@
   },
   "1.10.5": {
     "en": "Fixed an issue where only saved sliders were available in the slider widget."
+  },
+  "1.11.0": {
+    "en": "This update adds a new utility flow card to calculate the percentage between two timestamps."
   }
 }
