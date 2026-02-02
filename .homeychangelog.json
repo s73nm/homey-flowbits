@@ -208,5 +208,8 @@
   },
   "1.12.4": {
     "en": "Bump dependencies."
+  },
+  "1.12.5": {
+    "en": "This update improves all translations for consistency."
   }
 }
