@@ -1,16 +1,16 @@
 {
   "autocomplete": {
     "cycle_new": "Nowy licznik w tym przepływie",
+    "event_new": "Nowe zdarzenie w tym przepływie",
     "flag_new": "Nowa flaga w tym przepływie",
+    "label_new": "Nowa etykieta w tym przepływie",
     "mode_new": "Nowy tryb w tym przepływie",
     "no_repeat_new": "Nowe okno bez powtórzeń w tym przepływie",
-    "signal_new": "Nowy sygnał w tym przepływie",
-    "timer_new": "Nowy timer w tym przepływie",
-    "slider_new": "Nowy suwak w tym przepływie",
-    "event_new": "Nowe zdarzenie w tym przepływie",
-    "label_new": "Nowa etykieta w tym przepływie",
     "set_new": "Nowe set w tym przepływie",
-    "set_state_new": "Nowy stan set w tym przepływie, zostanie zidentyfikowany po zapisaniu przepływu"
+    "set_state_new": "Nowy stan set w tym przepływie, zostanie zidentyfikowany po zapisaniu przepływu",
+    "signal_new": "Nowy sygnał w tym przepływie",
+    "slider_new": "Nowy suwak w tym przepływie",
+    "timer_new": "Nowy timer w tym przepływie"
   },
   "notification": {
     "mode_activated": "**__name__** jest aktywowany.",
@@ -30,97 +30,6 @@
     "afternoon": "Popołudnie",
     "evening": "Wieczór",
     "night": "Noc"
-  },
-  "widget": {
-    "current_mode": {
-      "label": "Aktualny tryb",
-      "suffix": "tryb"
-    },
-    "event": {
-      "now": "Teraz"
-    },
-    "timer": {
-      "finished": "Zakończony",
-      "paused": "Wstrzymany",
-      "stopped": "Zatrzymany"
-    },
-    "setStates": {
-      "active": "Aktywny",
-      "inactive": "Nieaktywny"
-    },
-    "setStatus": {
-      "active": "Aktywny",
-      "full": "Pełna aktywność",
-      "inactive": "Brak aktywnych stanów",
-      "partially": "__active__ z __total__ stanów aktywnych"
-    }
-  },
-  "settings": {
-    "title": "Ustawienia",
-    "subtitle": "Skonfiguruj FlowBits według własnych preferencji.",
-    "close": "Zamknij",
-    "save": "Zapisz",
-    "search": "Szukaj",
-    "edit": {
-      "color": "Kolor",
-      "icon": "Ikona"
-    },
-    "flags": {
-      "title": "Flagi",
-      "description": "Kilka flag może być aktywnych jednocześnie. Twórz i zarządzaj flagami za pomocą akcji, warunków i wyzwalaczy w swoich flow.",
-      "empty": "Nie utworzono jeszcze żadnych flag."
-    },
-    "modes": {
-      "title": "Tryby",
-      "description": "Tylko jeden tryb może być aktywny w danym momencie. Twórz i zarządzaj trybami za pomocą akcji, warunków i wyzwalaczy.",
-      "empty": "Nie utworzono jeszcze żadnych trybów."
-    },
-    "statistics": {
-      "title": "Statystyki",
-      "description": "To są statystyki funkcji FlowBits, oparte na twoich przepływach.",
-      "cycles": "Cyklе",
-      "flags": "Flagi",
-      "modes": "Tryby",
-      "no_repeats": "Okna bez powtórzeń",
-      "sliders": "Suwaki",
-      "timers": "Timery",
-      "events": "Zdarzenia",
-      "labels": "Etykiety",
-      "sets": "Zestawy"
-    },
-    "card_statistics": {
-      "title": "Statystyki kart przepływów",
-      "description": "To są statystyki użycia dla poszczególnych kart przepływów."
-    },
-    "timers": {
-      "title": "Timery",
-      "description": "Timery odliczają czas od określonego czasu trwania i mogą być uruchamiane, wstrzymywane, zatrzymywane i resetowane. Używaj akcji, warunków i wyzwalaczy timerów w swoich przepływach, aby zarządzać odliczaniem i reagować, gdy timery się kończą.",
-      "empty": "Nie utworzono jeszcze żadnych timerów."
-    },
-    "sets": {
-      "title": "Zestawy",
-      "description": "Zestawy to kolekcje stanów logicznych, które mogą być oceniane jako grupa. Zestaw jest aktywny, gdy którykolwiek z jego stanów jest aktywny. Używaj akcji, warunków i wyzwalaczy zestawów w swoich przepływach, aby zarządzać grupowanymi stanami.",
-      "empty": "Nie utworzono jeszcze żadnych zestawów."
-    }
-  },
-  "color": {
-    "red": "Czerwony",
-    "orange": "Pomarańczowy",
-    "amber": "Bursztynowy",
-    "yellow": "Żółty",
-    "lime": "Limonkowy",
-    "green": "Zielony",
-    "emerald": "Szmaragdowy",
-    "teal": "Morski",
-    "cyan": "Cyjan",
-    "sky": "Niebieski jasny",
-    "blue": "Niebieski",
-    "indigo": "Indygo",
-    "violet": "Fioletowy",
-    "purple": "Purpurowy",
-    "fuchsia": "Fuksja",
-    "pink": "Różowy",
-    "rose": "Róż jasny"
   },
   "moon_phase": {
     "new_moon": "Nów",
@@ -145,5 +54,105 @@
     "scorpio": "Skorpion",
     "taurus": "Byk",
     "virgo": "Panna"
+  },
+  "widget": {
+    "current_mode": {
+      "label": "Aktualny tryb"
+    },
+    "event": {
+      "now": "Teraz"
+    },
+    "setStates": {
+      "active": "Aktywny",
+      "inactive": "Nieaktywny"
+    },
+    "setStatus": {
+      "active": "Aktywny",
+      "full": "Pełna aktywność",
+      "inactive": "Brak aktywnych stanów",
+      "partially": "__active__ z __total__ stanów aktywnych"
+    },
+    "timer": {
+      "finished": "Zakończony",
+      "paused": "Wstrzymany",
+      "stopped": "Zatrzymany"
+    }
+  },
+  "settings": {
+    "title": "Ustawienia",
+    "subtitle": "Skonfiguruj FlowBits według własnych preferencji.",
+    "close": "Zamknij",
+    "save": "Zapisz",
+    "search": "Szukaj",
+    "edit": {
+      "color": "Kolor",
+      "icon": "Ikona"
+    },
+    "events": {
+      "title": "Zdarzenia",
+      "description": "Zdarzenia śledzą, kiedy coś się dzieje i przechowują historię znaczników czasu. Używaj akcji, warunków i wyzwalaczy zdarzeń w swoich przepływach, aby śledzić wystąpienia i sprawdzać, jak często lub kiedy zdarzenia miały miejsce.",
+      "empty": "Nie utworzono jeszcze żadnych zdarzeń."
+    },
+    "flags": {
+      "title": "Flagi",
+      "description": "Kilka flag może być aktywnych jednocześnie. Twórz i zarządzaj flagami za pomocą akcji, warunków i wyzwalaczy w swoich flow.",
+      "empty": "Nie utworzono jeszcze żadnych flag."
+    },
+    "labels": {
+      "title": "Etykiety",
+      "description": "Etykiety przechowują pary klucz-wartość do użycia w przepływach. Używaj akcji, warunków i wyzwalaczy etykiet, aby dynamicznie ustawiać, pobierać i sprawdzać wartości.",
+      "empty": "Nie utworzono jeszcze żadnych etykiet."
+    },
+    "modes": {
+      "title": "Tryby",
+      "description": "Tylko jeden tryb może być aktywny w danym momencie. Twórz i zarządzaj trybami za pomocą akcji, warunków i wyzwalaczy.",
+      "empty": "Nie utworzono jeszcze żadnych trybów."
+    },
+    "sets": {
+      "title": "Zestawy",
+      "description": "Zestawy to kolekcje stanów logicznych, które mogą być oceniane jako grupa. Zestaw jest aktywny, gdy którykolwiek z jego stanów jest aktywny. Używaj akcji, warunków i wyzwalaczy zestawów w swoich przepływach, aby zarządzać grupowanymi stanami.",
+      "empty": "Nie utworzono jeszcze żadnych zestawów."
+    },
+    "timers": {
+      "title": "Timery",
+      "description": "Timery odliczają czas od określonego czasu trwania i mogą być uruchamiane, wstrzymywane, zatrzymywane i resetowane. Używaj akcji, warunków i wyzwalaczy timerów w swoich przepływach, aby zarządzać odliczaniem i reagować, gdy timery się kończą.",
+      "empty": "Nie utworzono jeszcze żadnych timerów."
+    },
+    "statistics": {
+      "title": "Statystyki",
+      "description": "To są statystyki funkcji FlowBits, oparte na twoich przepływach.",
+      "cycles": "Cykle",
+      "events": "Zdarzenia",
+      "flags": "Flagi",
+      "labels": "Etykiety",
+      "modes": "Tryby",
+      "no_repeats": "Okna bez powtórzeń",
+      "sets": "Zestawy",
+      "sliders": "Suwaki",
+      "timers": "Timery"
+    },
+    "card_statistics": {
+      "title": "Statystyki kart przepływów",
+      "description": "To są statystyki użycia dla poszczególnych kart przepływów."
+    }
+  },
+  "color": {
+    "red": "Czerwony",
+    "orange": "Pomarańczowy",
+    "amber": "Bursztynowy",
+    "yellow": "Żółty",
+    "lime": "Limonkowy",
+    "green": "Zielony",
+    "emerald": "Szmaragdowy",
+    "teal": "Morski",
+    "cyan": "Cyjan",
+    "sky": "Niebieski jasny",
+    "blue": "Niebieski",
+    "indigo": "Indygo",
+    "violet": "Fioletowy",
+    "purple": "Purpurowy",
+    "fuchsia": "Fuksja",
+    "pink": "Różowy",
+    "rose": "Róż jasny"
   }
 }

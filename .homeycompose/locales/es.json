@@ -88,10 +88,20 @@
             "color": "Color",
             "icon": "Icono"
         },
+        "events": {
+            "title": "Eventos",
+            "description": "Los eventos rastrean cuándo sucede algo y mantienen un historial de marcas de tiempo. Utiliza acciones, condiciones y disparadores de eventos en tus flujos para rastrear ocurrencias y verificar con qué frecuencia o cuándo sucedieron los eventos.",
+            "empty": "Aún no se han creado eventos."
+        },
         "flags": {
             "title": "Banderas",
             "description": "Varias banderas pueden estar activas simultáneamente. Crea y gestiona banderas mediante acciones, condiciones y disparadores en tus flujos.",
             "empty": "Aún no se han creado banderas."
+        },
+        "labels": {
+            "title": "Etiquetas",
+            "description": "Las etiquetas almacenan pares clave-valor para usar en tus flujos. Utiliza acciones, condiciones y disparadores de etiquetas para establecer, obtener y verificar valores dinámicamente.",
+            "empty": "Aún no se han creado etiquetas."
         },
         "modes": {
             "title": "Modos",

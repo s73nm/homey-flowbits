@@ -88,10 +88,20 @@
             "color": "Colore",
             "icon": "Icona"
         },
+        "events": {
+            "title": "Eventi",
+            "description": "Gli eventi registrano quando qualcosa accade e conservano una cronologia di timestamp. Usa azioni, condizioni e trigger degli eventi nei tuoi flow per tracciare le occorrenze e verificare quanto spesso o quando gli eventi si sono verificati.",
+            "empty": "Nessun evento è stato ancora creato."
+        },
         "flags": {
             "title": "Flag",
             "description": "Più flag possono essere attivi contemporaneamente. Crea e gestisci i flag tramite azioni, condizioni e trigger nei tuoi flow.",
             "empty": "Nessun flag è stato ancora creato."
+        },
+        "labels": {
+            "title": "Etichette",
+            "description": "Le etichette memorizzano coppie chiave-valore da utilizzare nei tuoi flow. Usa azioni, condizioni e trigger delle etichette per impostare, ottenere e verificare i valori dinamicamente.",
+            "empty": "Nessuna etichetta è stata ancora creata."
         },
         "modes": {
             "title": "Modalità",

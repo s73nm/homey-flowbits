@@ -1,9 +1,9 @@
 {
     "autocomplete": {
         "cycle_new": "Neuer Zähler in diesem Flow",
-        "event_new": "Neues Ereignis in diesem Fluss",
+        "event_new": "Neues Ereignis in diesem Flow",
         "flag_new": "Neue Flagge in diesem Flow",
-        "label_new": "Neues Etikett in diesem Fluss",
+        "label_new": "Neues Etikett in diesem Flow",
         "mode_new": "Neuer Modus in diesem Flow",
         "no_repeat_new": "Neues No-Repeat-Fenster in diesem Flow",
         "set_new": "Neues Set in diesem Flow",
@@ -88,10 +88,20 @@
             "color": "Farbe",
             "icon": "Symbol"
         },
+        "events": {
+            "title": "Ereignisse",
+            "description": "Ereignisse verfolgen, wann etwas passiert, und speichern einen Verlauf von Zeitstempeln. Verwenden Sie Ereignis-Aktionen, Bedingungen und Trigger in Ihren Flows, um Vorkommen zu verfolgen und zu überprüfen, wie oft oder wann Ereignisse stattgefunden haben.",
+            "empty": "Es wurden noch keine Ereignisse erstellt."
+        },
         "flags": {
             "title": "Flags",
             "description": "Mehrere Flags können gleichzeitig aktiv sein. Erstellen und verwalten Sie Flags mithilfe von Aktionen, Bedingungen und Triggern in Ihren Flows.",
             "empty": "Es wurden noch keine Flags erstellt."
+        },
+        "labels": {
+            "title": "Etiketten",
+            "description": "Etiketten speichern Schlüssel-Wert-Paare zur Verwendung in Ihren Flows. Verwenden Sie Label-Aktionen, Bedingungen und Trigger, um Werte dynamisch zu setzen, abzurufen und zu überprüfen.",
+            "empty": "Es wurden noch keine Etiketten erstellt."
         },
         "modes": {
             "title": "Modi",

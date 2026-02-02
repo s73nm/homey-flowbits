@@ -6,7 +6,7 @@
         "label_new": "Nouvelle étiquette dans ce flux",
         "mode_new": "Nouveau mode dans ce flux",
         "no_repeat_new": "Nouvelle fenêtre sans répétition dans ce flux",
-        "set_new": "Nouveau ensemble dans ce flux",
+        "set_new": "Nouvel ensemble dans ce flux",
         "set_state_new": "Nouvel état d'ensemble dans ce flux, sera connu après enregistrement du flux",
         "signal_new": "Nouveau signal dans ce flux",
         "slider_new": "Nouveau curseur dans ce flux",
@@ -88,10 +88,20 @@
             "color": "Couleur",
             "icon": "Icône"
         },
+        "events": {
+            "title": "Événements",
+            "description": "Les événements enregistrent quand quelque chose se produit et conservent un historique d'horodatages. Utilisez les actions, conditions et déclencheurs d'événements dans vos flux pour suivre les occurrences et vérifier à quelle fréquence ou quand les événements se sont produits.",
+            "empty": "Aucun événement n'a encore été créé."
+        },
         "flags": {
             "title": "Drapeaux",
             "description": "Plusieurs drapeaux peuvent être actifs simultanément. Créez et gérez-les via les actions, conditions et déclencheurs dans vos flows.",
             "empty": "Aucun drapeau n’a encore été créé."
+        },
+        "labels": {
+            "title": "Étiquettes",
+            "description": "Les étiquettes stockent des paires clé-valeur à utiliser dans vos flux. Utilisez les actions, conditions et déclencheurs d'étiquettes pour définir, obtenir et vérifier des valeurs dynamiquement.",
+            "empty": "Aucune étiquette n'a encore été créée."
         },
         "modes": {
             "title": "Modes",

@@ -88,10 +88,20 @@
             "color": "Färg",
             "icon": "Ikon"
         },
+        "events": {
+            "title": "Händelser",
+            "description": "Händelser spårar när något händer och bevarar en historik av tidsstämplar. Använd händelseåtgärder, villkor och triggers i dina flöden för att spåra händelser och kontrollera hur ofta eller när händelser inträffade.",
+            "empty": "Inga händelser har skapats ännu."
+        },
         "flags": {
             "title": "Flaggor",
             "description": "Flera flaggor kan vara aktiva samtidigt. Skapa och hantera flaggor med hjälp av åtgärder, villkor och triggers i dina flöden.",
             "empty": "Inga flaggor har skapats ännu."
+        },
+        "labels": {
+            "title": "Etiketter",
+            "description": "Etiketter lagrar nyckel-värdepar för användning i dina flöden. Använd etikettåtgärder, villkor och triggers för att dynamiskt ställa in, hämta och kontrollera värden.",
+            "empty": "Inga etiketter har skapats ännu."
         },
         "modes": {
             "title": "Lägen",

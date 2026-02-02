@@ -88,10 +88,20 @@
             "color": "Kolor",
             "icon": "Ikona"
         },
+        "events": {
+            "title": "Zdarzenia",
+            "description": "Zdarzenia śledzą, kiedy coś się dzieje i przechowują historię znaczników czasu. Używaj akcji, warunków i wyzwalaczy zdarzeń w swoich przepływach, aby śledzić wystąpienia i sprawdzać, jak często lub kiedy zdarzenia miały miejsce.",
+            "empty": "Nie utworzono jeszcze żadnych zdarzeń."
+        },
         "flags": {
             "title": "Flagi",
             "description": "Kilka flag może być aktywnych jednocześnie. Twórz i zarządzaj flagami za pomocą akcji, warunków i wyzwalaczy w swoich flow.",
             "empty": "Nie utworzono jeszcze żadnych flag."
+        },
+        "labels": {
+            "title": "Etykiety",
+            "description": "Etykiety przechowują pary klucz-wartość do użycia w przepływach. Używaj akcji, warunków i wyzwalaczy etykiet, aby dynamicznie ustawiać, pobierać i sprawdzać wartości.",
+            "empty": "Nie utworzono jeszcze żadnych etykiet."
         },
         "modes": {
             "title": "Tryby",
@@ -111,7 +121,7 @@
         "statistics": {
             "title": "Statystyki",
             "description": "To są statystyki funkcji FlowBits, oparte na twoich przepływach.",
-            "cycles": "Cyklе",
+            "cycles": "Cykle",
             "events": "Zdarzenia",
             "flags": "Flagi",
             "labels": "Etykiety",

@@ -5,7 +5,7 @@
         "flag_new": "Nyt flag i dette flow",
         "label_new": "Ny etiket i dette flow",
         "mode_new": "Ny tilstand i dette flow",
-        "no_repeat_new": "Nyt ingen- gentagelses vindue i dette flow",
+        "no_repeat_new": "Nyt ingen-gentagelsesvindue i dette flow",
         "set_new": "Nyt sæt i dette flow",
         "set_state_new": "Ny sæt-tilstand i dette flow, vil blive kendt efter lagring af flowet",
         "signal_new": "Ny signal i dette flow",
@@ -88,10 +88,20 @@
             "color": "Farve",
             "icon": "Ikon"
         },
+        "events": {
+            "title": "Begivenheder",
+            "description": "Begivenheder sporer hvornår noget sker og gemmer en historik af tidsstempler. Brug begivenhedshandlinger, betingelser og triggere i dine flows til at spore hændelser og kontrollere hvor ofte eller hvornår begivenheder skete.",
+            "empty": "Der er endnu ikke oprettet nogen begivenheder."
+        },
         "flags": {
             "title": "Flag",
             "description": "Flere flag kan være aktive samtidig. Opret og administrér flag via handlinger, betingelser og triggere i dine flows.",
             "empty": "Der er endnu ikke oprettet nogen flag."
+        },
+        "labels": {
+            "title": "Etiketter",
+            "description": "Etiketter gemmer nøgle-værdi par til brug i dine flows. Brug etiket-handlinger, betingelser og triggere til at indstille, hente og kontrollere værdier dynamisk.",
+            "empty": "Der er endnu ikke oprettet nogen etiketter."
         },
         "modes": {
             "title": "Tilstande",

@@ -1,16 +1,16 @@
 {
     "autocomplete": {
-        "cycle_new": "Ny teller i dette flyten",
+        "cycle_new": "Ny teller i denne flyten",
         "event_new": "Ny hendelse i denne flyten",
-        "flag_new": "Nytt flagg i dette flyten",
+        "flag_new": "Nytt flagg i denne flyten",
         "label_new": "Ny etikett i denne flyten",
-        "mode_new": "Ny modus i dette flyten",
-        "no_repeat_new": "Nytt ikke-repeterende vindu i dette flyten",
+        "mode_new": "Ny modus i denne flyten",
+        "no_repeat_new": "Nytt ikke-repeterende vindu i denne flyten",
         "set_new": "Ny set i denne flyten",
         "set_state_new": "Ny set-stand i denne flyten, vil bli kjent etter lagring av flyten",
-        "signal_new": "Ny signal i dette flyten",
+        "signal_new": "Ny signal i denne flyten",
         "slider_new": "Ny skyver i denne flyten",
-        "timer_new": "Ny timer i dette flyten"
+        "timer_new": "Ny timer i denne flyten"
     },
     "notification": {
         "mode_activated": "**__name__** er aktivert.",
@@ -88,10 +88,20 @@
             "color": "Farge",
             "icon": "Ikon"
         },
+        "events": {
+            "title": "Hendelser",
+            "description": "Hendelser sporer når noe skjer og holder en historikk over tidsstempler. Bruk hendelseshandlinger, betingelser og triggere i flytene dine for å spore forekomster og sjekke hvor ofte eller når hendelser skjedde.",
+            "empty": "Ingen hendelser har blitt opprettet enda."
+        },
         "flags": {
             "title": "Flagg",
             "description": "Flere flagg kan være aktive samtidig. Opprett og administrer flagg via handlinger, betingelser og triggere i flytene dine.",
             "empty": "Ingen flagg har blitt opprettet enda."
+        },
+        "labels": {
+            "title": "Etiketter",
+            "description": "Etiketter lagrer nøkkel-verdi-par for bruk i dine flyter. Bruk etiketthandlinger, betingelser og triggere for å sette, hente og sjekke verdier dynamisk.",
+            "empty": "Ingen etiketter har blitt opprettet enda."
         },
         "modes": {
             "title": "Moduser",

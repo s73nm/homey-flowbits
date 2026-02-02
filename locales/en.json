@@ -1,31 +1,16 @@
 {
-  "tokens": {
-    "day_period": "Day period (raw)",
-    "moon_phase": "Moon phase (raw)",
-    "zodiac_sign": "Zodiac sign (raw)",
-    "day_period_translated": "Day period",
-    "moon_phase_translated": "Moon phase",
-    "zodiac_sign_translated": "Zodiac sign"
-  },
   "autocomplete": {
     "cycle_new": "New counter in this flow",
-    "mode_new": "New mode in this flow",
-    "signal_new": "New signal in this flow",
-    "timer_new": "New timer in this flow",
-    "flag_new": "New flag in this flow",
-    "no_repeat": "New no-repeat window in this flow",
-    "no_repeat_new": "New no-repeat window in this flow",
-    "slider_new": "New slider in this flow",
     "event_new": "New event in this flow",
+    "flag_new": "New flag in this flow",
     "label_new": "New label in this flow",
+    "mode_new": "New mode in this flow",
+    "no_repeat_new": "New no-repeat window in this flow",
     "set_new": "New set in this flow",
-    "set_state_new": "New set state in this flow, will be known after saving the flow"
-  },
-  "day_period": {
-    "afternoon": "Afternoon",
-    "evening": "Evening",
-    "morning": "Morning",
-    "night": "Night"
+    "set_state_new": "New set state in this flow, will be known after saving the flow",
+    "signal_new": "New signal in this flow",
+    "slider_new": "New slider in this flow",
+    "timer_new": "New timer in this flow"
   },
   "notification": {
     "mode_activated": "**__name__** is activated.",
@@ -40,109 +25,11 @@
     "zodiac_sign": "Zodiac sign (raw)",
     "zodiac_sign_translated": "Zodiac sign"
   },
-  "widget": {
-    "current_mode": {
-      "label": "Current mode",
-      "suffix": "mode"
-    },
-    "event": {
-      "now": "Now"
-    },
-    "timer": {
-      "finished": "Finished",
-      "paused": "Paused",
-      "stopped": "Stopped"
-    },
-    "flags": {
-      "no_filter": "No filter"
-    },
-    "setStatus": {
-      "active": "Active",
-      "inactive": "No states active",
-      "partially": "__active__ out of __total__ states active",
-      "full": "Fully active"
-    },
-    "setStates": {
-      "active": "Active",
-      "inactive": "Inactive"
-    }
-  },
-  "settings": {
-    "title": "Settings",
-    "subtitle": "Configure FlowBits to your liking.",
-    "flags": {
-      "title": "Flags",
-      "description": "Multiple flags can be active simultaneously. Create and manage flags using flag actions, conditions, and triggers in your flows.",
-      "empty": "No flags have been created yet."
-    },
-    "modes": {
-      "title": "Modes",
-      "description": "Only one mode can be active at a time. Create and manage modes using mode actions, conditions, and triggers in your flows.",
-      "empty": "No modes have been created yet."
-    },
-    "close": "Close",
-    "edit": {
-      "color": "Color",
-      "icon": "Icon"
-    },
-    "save": "Save",
-    "search": "Search",
-    "statistics": {
-      "cycles": "Cycles",
-      "flags": "Flags",
-      "modes": "Modes",
-      "no_repeats": "No-repeat windows",
-      "sliders": "Sliders",
-      "timers": "Timers",
-      "title": "Statistics",
-      "description": "These are feature statistics for FlowBits. They are based on your flows.",
-      "events": "Events",
-      "labels": "Labels",
-      "sets": "Sets"
-    },
-    "card_statistics": {
-      "title": "Flow card statistics",
-      "description": "These are usage statistics for individual flow cards."
-    },
-    "events": {
-      "title": "Events",
-      "description": "Events track when something happens and keep a history of timestamps. Use event actions, conditions, and triggers in your flows to track occurrences and check how often or when events happened.",
-      "empty": "No events have been created yet."
-    },
-    "labels": {
-      "title": "Labels",
-      "description": "Labels store key-value pairs for use in your flows. Use label actions, conditions, and triggers to set, get, and check values dynamically.",
-      "empty": "No labels have been created yet."
-    },
-    "timers": {
-      "title": "Timers",
-      "description": "Timers count down from a specified duration and can be started, paused, stopped, and reset. Use timer actions, conditions, and triggers in your flows to manage countdowns and respond when timers finish.",
-      "empty": "No timers have been created yet."
-    },
-    "sets": {
-      "title": "Sets",
-      "description": "Sets are collections of boolean states that can be evaluated as a group. A set is active when any of its states is active. Use set actions, conditions, and triggers in your flows to manage grouped states.",
-      "empty": "No sets have been created yet."
-    }
-  },
-  "color": {
-    "red": "Red",
-    "orange": "Orange",
-    "amber": "Amber",
-    "yellow": "Yellow",
-    "lime": "Lime",
-    "green": "Green",
-    "emerald": "Emerald",
-    "teal": "Teal",
-    "cyan": "Cyan",
-    "sky": "Sky",
-    "blue": "Blue",
-    "indigo": "Indigo",
-    "violet": "Violet",
-    "purple": "Purple",
-    "fuchsia": "Fuchsia",
-    "pink": "Pink",
-    "rose": "Rose"
+  "day_period": {
+    "afternoon": "Afternoon",
+    "evening": "Evening",
+    "morning": "Morning",
+    "night": "Night"
   },
   "moon_phase": {
     "new_moon": "New Moon",
@@ -168,8 +55,104 @@
     "taurus": "Taurus",
     "virgo": "Virgo"
   },
-  "event": {
-    "builtin": "Built-in",
-    "mode": "Mode __name__ activated"
+  "widget": {
+    "current_mode": {
+      "label": "Current mode"
+    },
+    "event": {
+      "now": "Now"
+    },
+    "setStates": {
+      "active": "Active",
+      "inactive": "Inactive"
+    },
+    "setStatus": {
+      "active": "Active",
+      "full": "Fully active",
+      "inactive": "No states active",
+      "partially": "__active__ out of __total__ states active"
+    },
+    "timer": {
+      "finished": "Finished",
+      "paused": "Paused",
+      "stopped": "Stopped"
+    }
+  },
+  "settings": {
+    "title": "Settings",
+    "subtitle": "Configure FlowBits to your liking.",
+    "close": "Close",
+    "save": "Save",
+    "search": "Search",
+    "edit": {
+      "color": "Color",
+      "icon": "Icon"
+    },
+    "events": {
+      "title": "Events",
+      "description": "Events track when something happens and keep a history of timestamps. Use event actions, conditions, and triggers in your flows to track occurrences and check how often or when events happened.",
+      "empty": "No events have been created yet."
+    },
+    "flags": {
+      "title": "Flags",
+      "description": "Multiple flags can be active simultaneously. Create and manage flags using flag actions, conditions, and triggers in your flows.",
+      "empty": "No flags have been created yet."
+    },
+    "labels": {
+      "title": "Labels",
+      "description": "Labels store key-value pairs for use in your flows. Use label actions, conditions, and triggers to set, get, and check values dynamically.",
+      "empty": "No labels have been created yet."
+    },
+    "modes": {
+      "title": "Modes",
+      "description": "Only one mode can be active at a time. Create and manage modes using mode actions, conditions, and triggers in your flows.",
+      "empty": "No modes have been created yet."
+    },
+    "sets": {
+      "title": "Sets",
+      "description": "Sets are collections of boolean states that can be evaluated as a group. A set is active when any of its states is active. Use set actions, conditions, and triggers in your flows to manage grouped states.",
+      "empty": "No sets have been created yet."
+    },
+    "timers": {
+      "title": "Timers",
+      "description": "Timers count down from a specified duration and can be started, paused, stopped, and reset. Use timer actions, conditions, and triggers in your flows to manage countdowns and respond when timers finish.",
+      "empty": "No timers have been created yet."
+    },
+    "statistics": {
+      "title": "Statistics",
+      "description": "These are feature statistics for FlowBits. They are based on your flows.",
+      "cycles": "Cycles",
+      "events": "Events",
+      "flags": "Flags",
+      "labels": "Labels",
+      "modes": "Modes",
+      "no_repeats": "No-repeat windows",
+      "sets": "Sets",
+      "sliders": "Sliders",
+      "timers": "Timers"
+    },
+    "card_statistics": {
+      "title": "Flow card statistics",
+      "description": "These are usage statistics for individual flow cards."
+    }
+  },
+  "color": {
+    "red": "Red",
+    "orange": "Orange",
+    "amber": "Amber",
+    "yellow": "Yellow",
+    "lime": "Lime",
+    "green": "Green",
+    "emerald": "Emerald",
+    "teal": "Teal",
+    "cyan": "Cyan",
+    "sky": "Sky",
+    "blue": "Blue",
+    "indigo": "Indigo",
+    "violet": "Violet",
+    "purple": "Purple",
+    "fuchsia": "Fuchsia",
+    "pink": "Pink",
+    "rose": "Rose"
   }
 }
