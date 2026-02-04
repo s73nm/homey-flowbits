@@ -132,6 +132,17 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
         ]);
     }
 
+    async reactivateCurrent(): Promise<void> {
+        const current = this.currentMode;
+
+        if (current === null) {
+            this.log('No current mode to reactivate.');
+            return;
+        }
+
+        await this.reactivate(current);
+    }
+
     async toggle(name: string): Promise<void> {
         if (this.currentMode === name) {
             await this.deactivate(name);
