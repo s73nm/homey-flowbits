@@ -217,5 +217,8 @@
   },
   "1.13.1": {
     "en": "This update adds missing inverted condition flow card titles and makes translations a more consistent."
+  },
+  "1.14.0": {
+    "en": "This update adds a new Reactivate current mode flow action."
   }
 }
