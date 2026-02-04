@@ -214,5 +214,8 @@
   },
   "1.13.0": {
     "en": "This update adds previous step flow cards for cycles. Event condition flow cards can now be inverted, thanks @s73nm"
+  },
+  "1.13.1": {
+    "en": "This update adds missing inverted condition flow card titles and makes translations a more consistent."
   }
 }
