@@ -227,5 +227,8 @@
   },
   "1.15.1": {
     "en": "Updated app readme."
+  },
+  "1.15.2": {
+    "en": "This update introduces a new 'Retrieve info of timer' flow action, which provides flow tokens for the timer status, remaining time and remaining seconds."
   }
 }
