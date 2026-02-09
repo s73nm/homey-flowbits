@@ -230,5 +230,8 @@
   },
   "1.15.2": {
     "en": "This update introduces a new 'Retrieve info of timer' flow action, which provides flow tokens for the timer status, remaining time and remaining seconds."
+  },
+  "1.16.0": {
+    "en": "This update rewrites how app settings are rendered."
   }
 }
