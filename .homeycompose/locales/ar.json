@@ -84,6 +84,10 @@
         "close": "إغلاق",
         "save": "حفظ",
         "search": "بحث",
+        "documentation": {
+            "title": "الوثائق",
+            "description": "تعرف على المزيد حول FlowBits وكيفية استخدام جميع ميزاته بفعالية. قم بزيارة FlowBits.nl للحصول على الوثائق."
+        },
         "edit": {
             "color": "لون",
             "icon": "أيقونة"

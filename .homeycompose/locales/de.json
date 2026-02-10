@@ -84,6 +84,10 @@
         "close": "Schließen",
         "save": "Speichern",
         "search": "Suchen",
+        "documentation": {
+            "title": "Dokumentation",
+            "description": "Erfahren Sie mehr über FlowBits und wie Sie alle Funktionen effektiv nutzen können. Besuchen Sie FlowBits.nl für Dokumentation."
+        },
         "edit": {
             "color": "Farbe",
             "icon": "Symbol"
