@@ -134,6 +134,10 @@
     "card_statistics": {
       "title": "Statystyki kart przepływów",
       "description": "To są statystyki użycia dla poszczególnych kart przepływów."
+    },
+    "documentation": {
+      "title": "Dokumentacja",
+      "description": "Dowiedz się więcej o FlowBits i jak efektywnie korzystać ze wszystkich funkcji. Odwiedź FlowBits.nl aby zobaczyć dokumentację."
     }
   },
   "color": {

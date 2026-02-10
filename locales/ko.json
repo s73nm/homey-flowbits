@@ -134,6 +134,10 @@
     "card_statistics": {
       "title": "플로우 카드 통계",
       "description": "개별 플로우 카드의 사용 통계입니다."
+    },
+    "documentation": {
+      "title": "문서",
+      "description": "FlowBits에 대해 자세히 알아보고 모든 기능을 효과적으로 사용하는 방법을 배워보세요. 문서는 FlowBits.nl을 방문하세요."
     }
   },
   "color": {

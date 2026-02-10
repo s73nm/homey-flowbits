@@ -134,6 +134,10 @@
     "card_statistics": {
       "title": "Flowkortstatistik",
       "description": "Dette er brugsstatistik for individuelle flowkort."
+    },
+    "documentation": {
+      "title": "Dokumentation",
+      "description": "Lær mere om FlowBits, og hvordan du bruger alle funktioner effektivt. Besøg FlowBits.nl for dokumentation."
     }
   },
   "color": {

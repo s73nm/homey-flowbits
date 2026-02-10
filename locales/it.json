@@ -134,6 +134,10 @@
     "card_statistics": {
       "title": "Statistiche delle schede flow",
       "description": "Queste sono statistiche di utilizzo per le singole schede flow."
+    },
+    "documentation": {
+      "title": "Documentazione",
+      "description": "Scopri di più su FlowBits e su come utilizzare tutte le sue funzionalità in modo efficace. Visita FlowBits.nl per la documentazione."
     }
   },
   "color": {

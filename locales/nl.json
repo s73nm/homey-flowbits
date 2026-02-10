@@ -134,6 +134,10 @@
     "card_statistics": {
       "title": "Flowkaartstatistieken",
       "description": "Dit zijn gebruiksstatistieken voor afzonderlijke flowkaarten."
+    },
+    "documentation": {
+      "title": "Documentatie",
+      "description": "Leer meer over FlowBits en hoe je alle functies effectief kunt gebruiken. Bezoek FlowBits.nl voor documentatie."
     }
   },
   "color": {
