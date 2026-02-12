@@ -233,5 +233,8 @@
   },
   "1.16.0": {
     "en": "This update rewrites how app settings are rendered."
+  },
+  "1.16.1": {
+    "en": "Bump deps."
   }
 }
