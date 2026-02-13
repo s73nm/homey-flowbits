@@ -236,5 +236,8 @@
   },
   "1.16.1": {
     "en": "Bump deps."
+  },
+  "1.17.0": {
+    "en": "This update introduces repeating timers."
   }
 }
