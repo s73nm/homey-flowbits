@@ -239,5 +239,8 @@
   },
   "1.17.0": {
     "en": "This update introduces repeating timers."
+  },
+  "1.17.1": {
+    "en": "Small clarification in repeating timers feature."
   }
 }
