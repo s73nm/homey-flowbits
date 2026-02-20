@@ -246,5 +246,8 @@
   "1.17.2": {
     "en": "This update improves startup performance.",
     "nl": "Deze update verbetert de prestaties bij het opstarten."
+  },
+  "1.17.3": {
+    "en": "Update dependencies."
   }
 }
