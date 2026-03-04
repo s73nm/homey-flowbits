@@ -118,7 +118,7 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
     async activate(name: string): Promise<void> {
         const current = this.currentFlags;
 
-        if (current.includes(name)) {
+        if (!name || current.includes(name)) {
             return;
         }
 
@@ -143,7 +143,7 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
     async deactivate(name: string): Promise<void> {
         const current = this.currentFlags;
 
-        if (!current.includes(name)) {
+        if (!name || !current.includes(name)) {
             return;
         }
 
@@ -174,6 +174,10 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
     }
 
     async activateFor(name: string, duration: number, unit: ClockUnit): Promise<void> {
+        if (!name) {
+            return;
+        }
+
         // Clear any existing timeout for this flag
         this.#clearFlagTimeout(name);
 
@@ -194,6 +198,7 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
         }
 
         const isActive = this.currentFlags.includes(name);
+
         if (!isActive) {
             return false;
         }
@@ -213,6 +218,7 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
         }
 
         const isActive = this.currentFlags.includes(name);
+
         if (isActive) {
             return false;
         }

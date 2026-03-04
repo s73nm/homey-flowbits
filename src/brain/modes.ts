@@ -120,7 +120,7 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
     async activate(name: string): Promise<void> {
         const current = this.currentMode;
 
-        if (current === name) {
+        if (!name || current === name) {
             return;
         }
 
@@ -155,7 +155,7 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
     async deactivate(name: string): Promise<void> {
         const current = this.currentMode;
 
-        if (current !== name) {
+        if (!name || current !== name) {
             return;
         }
 
@@ -178,6 +178,10 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
     }
 
     async reactivate(name: string): Promise<void> {
+        if (!name) {
+            return;
+        }
+
         // Clear any existing timeout
         this.#clearModeTimeout();
 
@@ -216,6 +220,10 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
     }
 
     async activateFor(name: string, duration: number, unit: ClockUnit): Promise<void> {
+        if (!name) {
+            return;
+        }
+
         // Clear any existing timeout
         this.#clearModeTimeout();
 
@@ -236,6 +244,7 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
         }
 
         const isActive = this.currentMode === name;
+
         if (!isActive) {
             return false;
         }
@@ -255,6 +264,7 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
         }
 
         const isActive = this.currentMode === name;
+
         if (isActive) {
             return false;
         }
