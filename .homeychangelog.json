@@ -262,5 +262,9 @@
     "1.18.0": {
         "en": "This update adds milliseconds as a timing unit for everything time-related, thanks @stefan-schweiger!. The Set states widget now has an opt-in setting to allow toggling states from the widget.",
         "nl": "Deze update voegt milliseconden toe als een tijd-eenheid voor alles tijdgerelateerd, bedankt @stefan-schweiger!. De Set statussen widget heeft nu een optie om statussen te kunnen togglen vanaf de widget."
+    },
+    "1.18.1": {
+        "en": "This update fixes a bug where unneeded mode and flag updates were triggered when the name was somehow empty.",
+        "nl": "Deze update fixt een bug waarbij onnodige mode en flag updates werden getriggert wanneer de naam leeg was."
     }
 }
