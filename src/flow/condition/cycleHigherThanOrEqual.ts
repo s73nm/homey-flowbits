@@ -11,7 +11,13 @@ export default class extends FlowConditionEntity<FlowBitsApp, Args, never> {
     }
 
     async onRun(args: Args): Promise<boolean> {
-        return await this.app.cycles.getValue(args.name.name) >= args.value;
+        const value = await this.app.cycles.getValue(args.name.name);
+
+        if (value === null) {
+            return false;
+        }
+
+        return value >= args.value;
     }
 }
 
