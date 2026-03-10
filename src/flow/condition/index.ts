@@ -23,6 +23,7 @@ export { default as NoRepeatWindow } from './noRepeatWindow';
 export { default as SchoolHolidayIs } from './schoolHolidayIs';
 export { default as SetActiveAll } from './setActiveAll';
 export { default as SetActiveAny } from './setActiveAny';
+export { default as SetActiveAtLeast } from './setActiveAtLeast';
 export { default as SetInactive } from './setInactive';
 export { default as SetStateIs } from './setStateIs';
 export { default as TimerDuration } from './timerDuration';

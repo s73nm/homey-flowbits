@@ -17,6 +17,7 @@ export { default as ModeCurrentChanged } from './modeCurrentChanged';
 export { default as ModeDeactivated } from './modeDeactivated';
 export { default as SetBecomesActiveAll } from './setBecomesActiveAll';
 export { default as SetBecomesActiveAny } from './setBecomesActiveAny';
+export { default as SetBecomesActiveAtLeast } from './setBecomesActiveAtLeast';
 export { default as SetBecomesInactive } from './setBecomesInactive';
 export { default as SetBecomesInactiveAll } from './setBecomesInactiveAll';
 export { default as SetChanged } from './setChanged';

@@ -1250,6 +1250,81 @@
       {
         "id": "label_changed",
         "title": {
+          "en": "Label changed or cleared",
+          "nl": "Label gewijzigd of gewist",
+          "da": "Etiket ændret eller ryddet",
+          "de": "Etikett geändert oder gelöscht",
+          "es": "Etiqueta cambiada o borrada",
+          "fr": "Étiquette modifiée ou effacée",
+          "it": "Etichetta modificata o cancellata",
+          "no": "Etikett endret eller ryddet",
+          "sv": "Etikett ändrad eller rensad",
+          "pl": "Etykieta zmieniona lub wyczyszczona",
+          "ru": "Метка изменена или очищена",
+          "ko": "레이블 변경됨 또는 지워짐",
+          "ar": "تم تغيير التسمية أو مسحها"
+        },
+        "titleFormatted": {
+          "en": "Label [[label]] changed or cleared",
+          "nl": "Label [[label]] is gewijzigd of gewist",
+          "da": "Etiket [[label]] ændret eller ryddet",
+          "de": "Etikett [[label]] geändert oder gelöscht",
+          "es": "Etiqueta [[label]] cambiada o borrada",
+          "fr": "Étiquette [[label]] modifiée ou effacée",
+          "it": "Etichetta [[label]] modificata o cancellata",
+          "no": "Etikett [[label]] endret eller ryddet",
+          "sv": "Etikett [[label]] ändrad eller rensad",
+          "pl": "Etykieta [[label]] zmieniona lub wyczyszczona",
+          "ru": "Метка [[label]] изменена или очищена",
+          "ko": "레이블 [[label]] 변경됨 또는 지워짐",
+          "ar": "تم تغيير التسمية [[label]] أو مسحها"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+              "en": "Label",
+              "nl": "Label",
+              "da": "Etiket",
+              "de": "Etikett",
+              "es": "Etiqueta",
+              "fr": "Étiquette",
+              "it": "Etichetta",
+              "no": "Etikett",
+              "sv": "Etikett",
+              "pl": "Etykieta",
+              "ru": "Метка",
+              "ko": "레이블",
+              "ar": "تسمية"
+            }
+          }
+        ],
+        "tokens": [
+          {
+            "name": "value",
+            "type": "string",
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "da": "Værdi",
+              "de": "Wert",
+              "es": "Valor",
+              "fr": "Valeur",
+              "it": "Valore",
+              "no": "Verdi",
+              "sv": "Värde",
+              "pl": "Wartość",
+              "ru": "Значение",
+              "ko": "값",
+              "ar": "قيمة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "label_changed_v2",
+        "title": {
           "en": "Label changed",
           "nl": "Label gewijzigd",
           "da": "Etiket ændret",
@@ -1318,6 +1393,60 @@
               "ru": "Значение",
               "ko": "값",
               "ar": "قيمة"
+            }
+          }
+        ]
+      },
+      {
+        "id": "label_cleared",
+        "title": {
+          "en": "Label cleared",
+          "nl": "Label gewist",
+          "da": "Etiket ryddet",
+          "de": "Etikett gelöscht",
+          "es": "Etiqueta borrada",
+          "fr": "Étiquette effacée",
+          "it": "Etichetta cancellata",
+          "no": "Etikett ryddet",
+          "sv": "Etikett rensad",
+          "pl": "Etykieta wyczyszczona",
+          "ru": "Метка очищена",
+          "ko": "레이블 지워짐",
+          "ar": "تم مسح التسمية"
+        },
+        "titleFormatted": {
+          "en": "Label [[label]] is cleared",
+          "nl": "Label [[label]] is gewist",
+          "da": "Etiket [[label]] er ryddet",
+          "de": "Etikett [[label]] ist gelöscht",
+          "es": "Etiqueta [[label]] borrada",
+          "fr": "L'étiquette [[label]] est effacée",
+          "it": "L'etichetta [[label]] è cancellata",
+          "no": "Etikett [[label]] er ryddet",
+          "sv": "Etikett [[label]] är rensad",
+          "pl": "Etykieta [[label]] została wyczyszczona",
+          "ru": "Метка [[label]] очищена",
+          "ko": "레이블 [[label]]이 지워짐",
+          "ar": "تم مسح التسمية [[label]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "label",
+            "title": {
+              "en": "Label",
+              "nl": "Label",
+              "da": "Etiket",
+              "de": "Etikett",
+              "es": "Etiqueta",
+              "fr": "Étiquette",
+              "it": "Etichetta",
+              "no": "Etikett",
+              "sv": "Etikett",
+              "pl": "Etykieta",
+              "ru": "Метка",
+              "ko": "레이블",
+              "ar": "تسمية"
             }
           }
         ]
@@ -1754,6 +1883,97 @@
               "ko": "세트",
               "ar": "مجموعة"
             }
+          }
+        ]
+      },
+      {
+        "id": "set_becomes_active_at_least",
+        "title": {
+          "en": "At least N states in set became active",
+          "nl": "Minimaal N statussen in set werden actief",
+          "de": "Mindestens N Zustände im Set wurden aktiv",
+          "fr": "Au moins N états dans l'ensemble sont devenus actifs",
+          "it": "Almeno N stati nel set sono diventati attivi",
+          "sv": "Minst N tillstånd i uppsättningen blev aktiva",
+          "no": "Minst N tilstander i settet ble aktive",
+          "es": "Al menos N estados en el conjunto se activaron",
+          "da": "Mindst N tilstande i sættet blev aktive",
+          "ru": "По крайней мере N состояний в наборе стали активными",
+          "pl": "Co najmniej N stanów w zestawie stało się aktywnych",
+          "ko": "세트에서 최소 N개의 상태가 활성화됨",
+          "ar": "على الأقل N حالات في المجموعة أصبحت نشطة"
+        },
+        "titleFormatted": {
+          "en": "At least [[n]] states in set [[set]] became active",
+          "nl": "Minimaal [[n]] statussen in set [[set]] werden actief",
+          "de": "Mindestens [[n]] Zustände im Set [[set]] wurden aktiv",
+          "fr": "Au moins [[n]] états dans l'ensemble [[set]] sont devenus actifs",
+          "it": "Almeno [[n]] stati nel set [[set]] sono diventati attivi",
+          "sv": "Minst [[n]] tillstånd i uppsättningen [[set]] blev aktiva",
+          "no": "Minst [[n]] tilstander i settet [[set]] ble aktive",
+          "es": "Al menos [[n]] estados en el conjunto [[set]] se activaron",
+          "da": "Mindst [[n]] tilstande i sættet [[set]] blev aktive",
+          "ru": "По крайней мере [[n]] состояний в наборе [[set]] стали активными",
+          "pl": "Co najmniej [[n]] stanów w zestawie [[set]] stało się aktywnych",
+          "ko": "세트 [[set]]에서 최소 [[n]]개의 상태가 활성화됨",
+          "ar": "على الأقل [[n]] حالات في المجموعة [[set]] أصبحت نشطة"
+        },
+        "hint": {
+          "en": "Triggers when states in a set are activated and the number of active states reaches at least N.",
+          "nl": "Triggers wanneer statussen in een set actief worden en het aantal actieve statussen minimaal N bereikt.",
+          "de": "Wird ausgelöst, wenn Zustände in einem Set aktiviert werden und die Anzahl aktiver Zustände mindestens N erreicht.",
+          "fr": "Se déclenche lorsque des états d'un ensemble sont activés et que le nombre d'états actifs atteint au moins N.",
+          "it": "Si attiva quando gli stati in un set vengono attivati e il numero di stati attivi raggiunge almeno N.",
+          "sv": "Utlöses när tillstånd i en uppsättning aktiveras och antalet aktiva tillstånd når minst N.",
+          "no": "Utløses når tilstander i et sett aktiveres og antallet aktive tilstander når minst N.",
+          "es": "Se activa cuando los estados de un conjunto se activan y el número de estados activos alcanza al menos N.",
+          "da": "Udløses når tilstande i et sæt aktiveres og antallet af aktive tilstande når mindst N.",
+          "ru": "Срабатывает, когда состояния в наборе активируются и количество активных состояний достигает хотя бы N.",
+          "pl": "Wyzwalane, gdy stany w zestawie zostają aktywowane, a liczba aktywnych stanów osiąga co najmniej N.",
+          "ko": "세트의 상태가 활성화되고 활성 상태 수가 최소 N에 도달하면 트리거됩니다.",
+          "ar": "يتم التشغيل عند تفعيل الحالات في مجموعة ويصل عدد الحالات النشطة إلى N على الأقل."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "set",
+            "title": {
+              "en": "Set",
+              "nl": "Set",
+              "de": "Satz",
+              "fr": "Ensemble",
+              "it": "Set",
+              "sv": "Uppsättning",
+              "no": "Sett",
+              "es": "Conjunto",
+              "da": "Sæt",
+              "ru": "Набор",
+              "pl": "Zestaw",
+              "ko": "세트",
+              "ar": "مجموعة"
+            }
+          },
+          {
+            "type": "number",
+            "name": "n",
+            "title": {
+              "en": "Number of states",
+              "nl": "Aantal statussen",
+              "de": "Anzahl der Zustände",
+              "fr": "Nombre d'états",
+              "it": "Numero di stati",
+              "sv": "Antal tillstånd",
+              "no": "Antall tilstander",
+              "es": "Número de estados",
+              "da": "Antal tilstande",
+              "ru": "Количество состояний",
+              "pl": "Liczba stanów",
+              "ko": "상태 수",
+              "ar": "عدد الحالات"
+            },
+            "min": 1,
+            "step": 1,
+            "labelDecimals": 0
           }
         ]
       },
@@ -2923,6 +3143,186 @@
           "pl": "Sekwencja [[name]] !{{jest równa|nie jest równa}} [[value]]",
           "ko": "시퀀스 [[name]] !{{같음|같지 않음}} [[value]]",
           "ar": "التسلسل [[name]] !{{يساوي|لا يساوي}} [[value]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름",
+              "ar": "الاسم"
+            }
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "step": 1,
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값",
+              "ar": "قيمة"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "F.eks. 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5",
+              "ar": "مثال: 5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cycle_higher_than_or_equal",
+        "title": {
+          "en": "Sequence is higher than or equal to",
+          "nl": "Stappenreeks is groter dan of gelijk aan",
+          "de": "Sequenz ist größer als oder gleich",
+          "fr": "Séquence est supérieure ou égale à",
+          "it": "Sequenza è maggiore o uguale a",
+          "sv": "Sekvens är större än eller lika med",
+          "no": "Sekvens er større enn eller lik",
+          "es": "Secuencia es mayor o igual que",
+          "da": "Sekvens er større end eller lig med",
+          "ru": "Последовательность больше или равна",
+          "pl": "Sekwencja jest większa lub równa",
+          "ko": "시퀀스가 이상임",
+          "ar": "التسلسل أكبر من أو يساوي"
+        },
+        "titleFormatted": {
+          "en": "Sequence [[name]] !{{is higher than or equal to|is lower than}} [[value]]",
+          "nl": "Stappenreeks [[name]] is !{{groter dan of gelijk aan|kleiner dan}} [[value]]",
+          "de": "Sequenz [[name]] !{{ist größer als oder gleich|ist kleiner als}} [[value]]",
+          "fr": "Séquence [[name]] !{{est supérieure ou égale à|est inférieure à}} [[value]]",
+          "it": "Sequenza [[name]] !{{è maggiore o uguale a|è minore di}} [[value]]",
+          "sv": "Sekvens [[name]] !{{är större än eller lika med|är mindre än}} [[value]]",
+          "no": "Sekvens [[name]] !{{er større enn eller lik|er mindre enn}} [[value]]",
+          "es": "Secuencia [[name]] !{{es mayor o igual que|es menor que}} [[value]]",
+          "da": "Sekvens [[name]] !{{er større end eller lig med|er mindre end}} [[value]]",
+          "ru": "Последовательность [[name]] !{{больше или равна|меньше}} [[value]]",
+          "pl": "Sekwencja [[name]] !{{jest większa lub równa|jest mniejsza niż}} [[value]]",
+          "ko": "시퀀스 [[name]] !{{이상임|미만임}} [[value]]",
+          "ar": "التسلسل [[name]] !{{أكبر من أو يساوي|أقل من}} [[value]]"
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "name",
+            "title": {
+              "en": "Name",
+              "nl": "Naam",
+              "de": "Name",
+              "fr": "Nom",
+              "it": "Nome",
+              "sv": "Namn",
+              "no": "Navn",
+              "es": "Nombre",
+              "da": "Navn",
+              "ru": "Имя",
+              "pl": "Nazwa",
+              "ko": "이름",
+              "ar": "الاسم"
+            }
+          },
+          {
+            "type": "number",
+            "name": "value",
+            "min": 0,
+            "step": 1,
+            "title": {
+              "en": "Value",
+              "nl": "Waarde",
+              "de": "Wert",
+              "fr": "Valeur",
+              "it": "Valore",
+              "sv": "Värde",
+              "no": "Verdi",
+              "es": "Valor",
+              "da": "Værdi",
+              "ru": "Значение",
+              "pl": "Wartość",
+              "ko": "값",
+              "ar": "قيمة"
+            },
+            "placeholder": {
+              "en": "E.g. 5",
+              "nl": "Bijv. 5",
+              "de": "Z. B. 5",
+              "fr": "P. ex. 5",
+              "it": "Es. 5",
+              "sv": "T.ex. 5",
+              "no": "F.eks. 5",
+              "es": "P. ej. 5",
+              "da": "F.eks. 5",
+              "ru": "Напр. 5",
+              "pl": "Np. 5",
+              "ko": "예: 5",
+              "ar": "مثال: 5"
+            }
+          }
+        ]
+      },
+      {
+        "id": "cycle_lower_than_or_equal",
+        "title": {
+          "en": "Sequence is lower than or equal to",
+          "nl": "Stappenreeks is kleiner dan of gelijk aan",
+          "de": "Sequenz ist kleiner als oder gleich",
+          "fr": "Séquence est inférieure ou égale à",
+          "it": "Sequenza è minore o uguale a",
+          "sv": "Sekvens är mindre än eller lika med",
+          "no": "Sekvens er mindre enn eller lik",
+          "es": "Secuencia es menor o igual que",
+          "da": "Sekvens er mindre end eller lig med",
+          "ru": "Последовательность меньше или равна",
+          "pl": "Sekwencja jest mniejsza lub równa",
+          "ko": "시퀀스가 이하임",
+          "ar": "التسلسل أقل من أو يساوي"
+        },
+        "titleFormatted": {
+          "en": "Sequence [[name]] !{{is lower than or equal to|is higher than}} [[value]]",
+          "nl": "Stappenreeks [[name]] is !{{kleiner dan of gelijk aan|groter dan}} [[value]]",
+          "de": "Sequenz [[name]] !{{ist kleiner als oder gleich|ist größer als}} [[value]]",
+          "fr": "Séquence [[name]] !{{est inférieure ou égale à|est supérieure à}} [[value]]",
+          "it": "Sequenza [[name]] !{{è minore o uguale a|è maggiore di}} [[value]]",
+          "sv": "Sekvens [[name]] !{{är mindre än eller lika med|är större än}} [[value]]",
+          "no": "Sekvens [[name]] !{{er mindre enn eller lik|er større enn}} [[value]]",
+          "es": "Secuencia [[name]] !{{es menor o igual que|es mayor que}} [[value]]",
+          "da": "Sekvens [[name]] !{{er mindre end eller lig med|er større end}} [[value]]",
+          "ru": "Последовательность [[name]] !{{меньше или равна|больше}} [[value]]",
+          "pl": "Sekwencja [[name]] !{{jest mniejsza lub równa|jest większa niż}} [[value]]",
+          "ko": "시퀀스 [[name]] !{{이하임|초과임}} [[value]]",
+          "ar": "التسلسل [[name]] !{{أقل من أو يساوي|أكبر من}} [[value]]"
         },
         "args": [
           {
@@ -5459,6 +5859,97 @@
               "ko": "세트",
               "ar": "مجموعة"
             }
+          }
+        ]
+      },
+      {
+        "id": "set_active_at_least",
+        "title": {
+          "en": "!{{At least|Fewer than}} N states in set are active",
+          "nl": "!{{Minimaal|Minder dan}} N statussen in set zijn actief",
+          "de": "!{{Mindestens|Weniger als}} N Zustände im Set sind aktiv",
+          "fr": "!{{Au moins|Moins de}} N états dans l'ensemble sont actifs",
+          "it": "!{{Almeno|Meno di}} N stati nel set sono attivi",
+          "sv": "!{{Minst|Färre än}} N tillstånd i uppsättningen är aktiva",
+          "no": "!{{Minst|Færre enn}} N tilstander i settet er aktive",
+          "es": "!{{Al menos|Menos de}} N estados en el conjunto están activos",
+          "da": "!{{Mindst|Færre end}} N tilstande i sættet er aktive",
+          "ru": "!{{По крайней мере|Менее}} N состояний в наборе активны",
+          "pl": "!{{Co najmniej|Mniej niż}} N stanów w zestawie jest aktywnych",
+          "ko": "세트에서 !{{최소|미만}} N개의 상태가 활성화됨",
+          "ar": "!{{على الأقل|أقل من}} N حالات في المجموعة نشطة"
+        },
+        "titleFormatted": {
+          "en": "!{{At least|Fewer than}} [[n]] states in set [[set]] are active",
+          "nl": "!{{Minimaal|Minder dan}} [[n]] statussen in set [[set]] zijn actief",
+          "de": "!{{Mindestens|Weniger als}} [[n]] Zustände im Set [[set]] sind aktiv",
+          "fr": "!{{Au moins|Moins de}} [[n]] états dans l'ensemble [[set]] sont actifs",
+          "it": "!{{Almeno|Meno di}} [[n]] stati nel set [[set]] sono attivi",
+          "sv": "!{{Minst|Färre än}} [[n]] tillstånd i uppsättningen [[set]] är aktiva",
+          "no": "!{{Minst|Færre enn}} [[n]] tilstander i settet [[set]] er aktive",
+          "es": "!{{Al menos|Menos de}} [[n]] estados en el conjunto [[set]] están activos",
+          "da": "!{{Mindst|Færre end}} [[n]] tilstande i sættet [[set]] er aktive",
+          "ru": "!{{По крайней мере|Менее}} [[n]] состояний в наборе [[set]] активны",
+          "pl": "!{{Co najmniej|Mniej niż}} [[n]] stanów w zestawie [[set]] jest aktywnych",
+          "ko": "세트 [[set]]에서 !{{최소|미만}} [[n]]개의 상태가 활성화됨",
+          "ar": "!{{على الأقل|أقل من}} [[n]] حالات في المجموعة [[set]] نشطة"
+        },
+        "hint": {
+          "en": "At least (or fewer than) N states in a set are active.",
+          "nl": "Minimaal (of minder dan) N statussen in een set zijn actief.",
+          "de": "Mindestens (oder weniger als) N Zustände in einem Set sind aktiv.",
+          "fr": "Au moins (ou moins de) N états dans un ensemble sont actifs.",
+          "it": "Almeno (o meno di) N stati in un set sono attivi.",
+          "sv": "Minst (eller färre än) N tillstånd i en uppsättning är aktiva.",
+          "no": "Minst (eller færre enn) N tilstander i et sett er aktive.",
+          "es": "Al menos (o menos de) N estados en un conjunto están activos.",
+          "da": "Mindst (eller færre end) N tilstande i et sæt er aktive.",
+          "ru": "По крайней мере (или менее) N состояний в наборе активны.",
+          "pl": "Co najmniej (lub mniej niż) N stanów w zestawie jest aktywnych.",
+          "ko": "세트에서 최소 (또는 미만) N개의 상태가 활성화되어 있습니다.",
+          "ar": "على الأقل (أو أقل من) N حالات في مجموعة نشطة."
+        },
+        "args": [
+          {
+            "type": "autocomplete",
+            "name": "set",
+            "title": {
+              "en": "Set",
+              "nl": "Set",
+              "de": "Satz",
+              "fr": "Ensemble",
+              "it": "Set",
+              "sv": "Uppsättning",
+              "no": "Sett",
+              "es": "Conjunto",
+              "da": "Sæt",
+              "ru": "Набор",
+              "pl": "Zestaw",
+              "ko": "세트",
+              "ar": "مجموعة"
+            }
+          },
+          {
+            "type": "number",
+            "name": "n",
+            "title": {
+              "en": "Number of states",
+              "nl": "Aantal statussen",
+              "de": "Anzahl der Zustände",
+              "fr": "Nombre d'états",
+              "it": "Numero di stati",
+              "sv": "Antal tillstånd",
+              "no": "Antall tilstander",
+              "es": "Número de estados",
+              "da": "Antal tilstande",
+              "ru": "Количество состояний",
+              "pl": "Liczba stanów",
+              "ko": "상태 수",
+              "ar": "عدد الحالات"
+            },
+            "min": 1,
+            "step": 1,
+            "labelDecimals": 0
           }
         ]
       },

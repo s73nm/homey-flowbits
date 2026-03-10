@@ -1,0 +1,32 @@
+import { FlowTriggerEntity, trigger } from '@basmilius/homey-common';
+import type { FlowBitsApp } from '../../types';
+import { AutocompleteProviders } from '..';
+
+@trigger('set_becomes_active_at_least')
+export default class extends FlowTriggerEntity<FlowBitsApp, Args, State> {
+    async onInit(): Promise<void> {
+        this.registerAutocomplete('set', AutocompleteProviders.Set);
+
+        await super.onInit();
+    }
+
+    async onRun(args: Args, state: State): Promise<boolean> {
+        if (args.set.name !== state.set) {
+            return false;
+        }
+
+        return state.activeCount >= args.n;
+    }
+}
+
+type Args = {
+    readonly set: {
+        readonly name: string;
+    };
+    readonly n: number;
+};
+
+type State = {
+    readonly set: string;
+    readonly activeCount: number;
+};

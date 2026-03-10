@@ -210,6 +210,11 @@ export default class Sets extends Shortcuts<FlowBitsApp> implements Feature<BitS
 
         const activeStates = this.#getActiveStateNames(setName);
         const counts = this.#getCounts(setName);
+
+        if (!wasTargetActive) {
+            triggers.push(this.#triggerSetBecomesActiveAtLeast(setName, counts.activeCount));
+        }
+
         triggers.push(this.#triggerSetChanged(setName, true, counts.activeCount, counts.totalCount, activeStates));
 
         await Promise.allSettled(triggers);
@@ -276,6 +281,11 @@ export default class Sets extends Shortcuts<FlowBitsApp> implements Feature<BitS
 
         const activeStates = this.#getActiveStateNames(setName);
         const counts = this.#getCounts(setName);
+
+        if (!wasTargetActive) {
+            triggers.push(this.#triggerSetBecomesActiveAtLeast(setName, counts.activeCount));
+        }
+
         triggers.push(this.#triggerSetChanged(setName, true, counts.activeCount, counts.totalCount, activeStates));
 
         await Promise.allSettled(triggers);
@@ -361,6 +371,12 @@ export default class Sets extends Shortcuts<FlowBitsApp> implements Feature<BitS
         }
     }
 
+    async isActiveAtLeast(setName: string, count: number): Promise<boolean> {
+        const {activeCount} = this.#getCounts(setName);
+
+        return activeCount >= count;
+    }
+
     async isActiveAll(setName: string): Promise<boolean> {
         const {activeCount, totalCount} = this.#getCounts(setName);
 
@@ -411,6 +427,12 @@ export default class Sets extends Shortcuts<FlowBitsApp> implements Feature<BitS
         this.registry
             .findTrigger(Triggers.SetBecomesActiveAny)
             ?.trigger({set});
+    }
+
+    async #triggerSetBecomesActiveAtLeast(set: string, activeCount: number): Promise<void> {
+        this.registry
+            .findTrigger(Triggers.SetBecomesActiveAtLeast)
+            ?.trigger({set, activeCount});
     }
 
     async #triggerSetBecomesInactive(set: string): Promise<void> {
@@ -539,6 +561,9 @@ export default class Sets extends Shortcuts<FlowBitsApp> implements Feature<BitS
         }
         if (!snapshot.allActive && isNowAllActive) {
             triggers.push(this.#triggerSetBecomesActiveAll(setName));
+        }
+        if (activatedStates.length > 0) {
+            triggers.push(this.#triggerSetBecomesActiveAtLeast(setName, counts.activeCount));
         }
 
         triggers.push(this.#triggerSetChanged(setName, true, counts.activeCount, counts.totalCount, activeStates));

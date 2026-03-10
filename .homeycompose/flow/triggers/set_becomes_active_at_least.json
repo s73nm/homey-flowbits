@@ -1,0 +1,91 @@
+{
+    "id": "set_becomes_active_at_least",
+    "title": {
+        "en": "At least N states in set became active",
+        "nl": "Minimaal N statussen in set werden actief",
+        "de": "Mindestens N Zustände im Set wurden aktiv",
+        "fr": "Au moins N états dans l'ensemble sont devenus actifs",
+        "it": "Almeno N stati nel set sono diventati attivi",
+        "sv": "Minst N tillstånd i uppsättningen blev aktiva",
+        "no": "Minst N tilstander i settet ble aktive",
+        "es": "Al menos N estados en el conjunto se activaron",
+        "da": "Mindst N tilstande i sættet blev aktive",
+        "ru": "По крайней мере N состояний в наборе стали активными",
+        "pl": "Co najmniej N stanów w zestawie stało się aktywnych",
+        "ko": "세트에서 최소 N개의 상태가 활성화됨",
+        "ar": "على الأقل N حالات في المجموعة أصبحت نشطة"
+    },
+    "titleFormatted": {
+        "en": "At least [[n]] states in set [[set]] became active",
+        "nl": "Minimaal [[n]] statussen in set [[set]] werden actief",
+        "de": "Mindestens [[n]] Zustände im Set [[set]] wurden aktiv",
+        "fr": "Au moins [[n]] états dans l'ensemble [[set]] sont devenus actifs",
+        "it": "Almeno [[n]] stati nel set [[set]] sono diventati attivi",
+        "sv": "Minst [[n]] tillstånd i uppsättningen [[set]] blev aktiva",
+        "no": "Minst [[n]] tilstander i settet [[set]] ble aktive",
+        "es": "Al menos [[n]] estados en el conjunto [[set]] se activaron",
+        "da": "Mindst [[n]] tilstande i sættet [[set]] blev aktive",
+        "ru": "По крайней мере [[n]] состояний в наборе [[set]] стали активными",
+        "pl": "Co najmniej [[n]] stanów w zestawie [[set]] stało się aktywnych",
+        "ko": "세트 [[set]]에서 최소 [[n]]개의 상태가 활성화됨",
+        "ar": "على الأقل [[n]] حالات في المجموعة [[set]] أصبحت نشطة"
+    },
+    "hint": {
+        "en": "Triggers when states in a set are activated and the number of active states reaches at least N.",
+        "nl": "Triggers wanneer statussen in een set actief worden en het aantal actieve statussen minimaal N bereikt.",
+        "de": "Wird ausgelöst, wenn Zustände in einem Set aktiviert werden und die Anzahl aktiver Zustände mindestens N erreicht.",
+        "fr": "Se déclenche lorsque des états d'un ensemble sont activés et que le nombre d'états actifs atteint au moins N.",
+        "it": "Si attiva quando gli stati in un set vengono attivati e il numero di stati attivi raggiunge almeno N.",
+        "sv": "Utlöses när tillstånd i en uppsättning aktiveras och antalet aktiva tillstånd når minst N.",
+        "no": "Utløses når tilstander i et sett aktiveres og antallet aktive tilstander når minst N.",
+        "es": "Se activa cuando los estados de un conjunto se activan y el número de estados activos alcanza al menos N.",
+        "da": "Udløses når tilstande i et sæt aktiveres og antallet af aktive tilstande når mindst N.",
+        "ru": "Срабатывает, когда состояния в наборе активируются и количество активных состояний достигает хотя бы N.",
+        "pl": "Wyzwalane, gdy stany w zestawie zostają aktywowane, a liczba aktywnych stanów osiąga co najmniej N.",
+        "ko": "세트의 상태가 활성화되고 활성 상태 수가 최소 N에 도달하면 트리거됩니다.",
+        "ar": "يتم التشغيل عند تفعيل الحالات في مجموعة ويصل عدد الحالات النشطة إلى N على الأقل."
+    },
+    "args": [
+        {
+            "type": "autocomplete",
+            "name": "set",
+            "title": {
+                "en": "Set",
+                "nl": "Set",
+                "de": "Satz",
+                "fr": "Ensemble",
+                "it": "Set",
+                "sv": "Uppsättning",
+                "no": "Sett",
+                "es": "Conjunto",
+                "da": "Sæt",
+                "ru": "Набор",
+                "pl": "Zestaw",
+                "ko": "세트",
+                "ar": "مجموعة"
+            }
+        },
+        {
+            "type": "number",
+            "name": "n",
+            "title": {
+                "en": "Number of states",
+                "nl": "Aantal statussen",
+                "de": "Anzahl der Zustände",
+                "fr": "Nombre d'états",
+                "it": "Numero di stati",
+                "sv": "Antal tillstånd",
+                "no": "Antall tilstander",
+                "es": "Número de estados",
+                "da": "Antal tilstande",
+                "ru": "Количество состояний",
+                "pl": "Liczba stanów",
+                "ko": "상태 수",
+                "ar": "عدد الحالات"
+            },
+            "min": 1,
+            "step": 1,
+            "labelDecimals": 0
+        }
+    ]
+}
