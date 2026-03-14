@@ -79,22 +79,18 @@ export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<La
             return [];
         }
 
-        const results: Label[] = [];
-
-        for (const label of labels) {
-            const look = await this.getLook(label.name);
+        return labels.map(label => {
+            const look = this.getLook(label.name);
             const data = this.labels[label.name] ?? null;
 
-            results.push({
+            return {
                 color: look[0],
                 icon: look[1],
                 lastUpdate: data?.[1]?.toISO() ?? undefined,
                 name: label.name,
                 value: data?.[0]
-            });
-        }
-
-        return results;
+            };
+        });
     }
 
     async clearValue(name: string): Promise<void> {
@@ -135,7 +131,7 @@ export default class Labels extends Shortcuts<FlowBitsApp> implements Feature<La
         ]);
     }
 
-    async getLook(name: string): Promise<Look> {
+    getLook(name: string): Look {
         return this.looks[name] ?? ['#204ef6', ''];
     }
 

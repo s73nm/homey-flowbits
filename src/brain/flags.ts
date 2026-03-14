@@ -93,26 +93,18 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
         const lastUpdates = this.lastUpdates;
         const flags = await provider.find('');
 
-        if (flags.length === 0) {
-            return [];
-        }
-
-        const results: Flag[] = [];
-
-        for (const flag of flags) {
-            const look = await this.getLook(flag.name);
+        return flags.map(flag => {
+            const look = this.getLook(flag.name);
             const lastUpdate = lastUpdates[flag.name];
 
-            results.push({
+            return {
                 active: current.includes(flag.name),
                 color: look[0],
                 icon: look[1],
                 lastUpdate: lastUpdate?.toISO() ?? undefined,
                 name: flag.name
-            });
-        }
-
-        return results;
+            };
+        });
     }
 
     async activate(name: string): Promise<void> {
@@ -229,7 +221,7 @@ export default class Flags extends Shortcuts<FlowBitsApp> implements Feature<Fla
         return lastUpdate <= cutoff;
     }
 
-    async getLook(name: string): Promise<Look> {
+    getLook(name: string): Look {
         return this.looks[name] ?? ['#204ef6', ''];
     }
 

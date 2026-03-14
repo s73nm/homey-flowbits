@@ -80,21 +80,17 @@ export default class Events extends Shortcuts<FlowBitsApp> implements Feature<Ev
             return [];
         }
 
-        const results: Event[] = [];
-
-        for (const event of events) {
-            const look = await this.getLook(event.name);
+        return events.map(event => {
+            const look = this.getLook(event.name);
             const updates = this.events[event.name] ?? [];
 
-            results.push({
+            return {
                 color: look[0],
                 icon: look[1],
                 lastUpdate: updates[updates.length - 1]?.toISO() ?? undefined,
                 name: event.name
-            });
-        }
-
-        return results;
+            };
+        });
     }
 
     async clear(name: string): Promise<void> {
@@ -170,7 +166,7 @@ export default class Events extends Shortcuts<FlowBitsApp> implements Feature<Ev
         ]);
     }
 
-    async getLook(name: string): Promise<Look> {
+    getLook(name: string): Look {
         return this.looks[name] ?? ['#204ef6', ''];
     }
 

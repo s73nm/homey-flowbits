@@ -30,7 +30,7 @@ export interface Styleable {
 
     set looks(looks: Record<string, Look>);
 
-    getLook(name: string): Promise<Look>;
+    getLook(name: string): Look;
 
     setLook(name: string, look: Look): Promise<void>;
 }

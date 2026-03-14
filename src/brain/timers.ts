@@ -61,7 +61,7 @@ export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Ti
         const defined = definedTimers.find(t => t.name === name);
 
         if (defined) {
-            const look = await this.getLook(name);
+            const look = this.getLook(name);
 
             return {
                 color: look[0],
@@ -82,16 +82,15 @@ export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Ti
         const provider = this.#autocompleteProvider();
         const definedTimers = await provider.find('');
         const activeTimers = await this.#findAll();
-        const results: Timer[] = [];
 
-        for (const timer of definedTimers) {
+        return definedTimers.map(timer => {
             const activeTimer = activeTimers.find(t => t.name === timer.name);
-            const look = await this.getLook(timer.name);
+            const look = this.getLook(timer.name);
             const remaining = activeTimer?.status === 'running'
                 ? Math.max(0, activeTimer.target - now)
                 : activeTimer?.remainingMs ?? 0;
 
-            results.push({
+            return {
                 color: look[0],
                 icon: look[1],
                 name: timer.name,
@@ -99,10 +98,8 @@ export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Ti
                 status: activeTimer?.status ?? 'stopped',
                 target: activeTimer?.target ?? 0,
                 repeating: activeTimer?.repeating ?? false
-            });
-        }
-
-        return results;
+            };
+        });
     }
 
     async finish(timer: StoredTimer): Promise<void> {
@@ -338,7 +335,7 @@ export default class Timers extends Shortcuts<FlowBitsApp> implements Feature<Ti
         };
     }
 
-    async getLook(name: string): Promise<Look> {
+    getLook(name: string): Look {
         return this.looks[name] ?? ['#06b6d4', ''];
     }
 

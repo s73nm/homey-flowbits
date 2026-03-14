@@ -99,22 +99,18 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
             return [];
         }
 
-        const results: Mode[] = [];
-
-        for (const mode of modes) {
-            const look = await this.getLook(mode.name);
+        return modes.map(mode => {
+            const look = this.getLook(mode.name);
             const lastUpdate = lastUpdates[mode.name];
 
-            results.push({
+            return {
                 active: current === mode.name,
                 color: look[0],
                 icon: look[1],
                 lastUpdate: lastUpdate?.toISO() ?? undefined,
                 name: mode.name
-            });
-        }
-
-        return results;
+            };
+        });
     }
 
     async activate(name: string): Promise<void> {
@@ -275,7 +271,7 @@ export default class Modes extends Shortcuts<FlowBitsApp> implements Feature<Mod
         return lastUpdate <= cutoff;
     }
 
-    async getLook(name: string): Promise<Look> {
+    getLook(name: string): Look {
         return this.looks[name] ?? ['#204ef6', ''];
     }
 
