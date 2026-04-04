@@ -1,5 +1,5 @@
 import type { ApiRequest, Color, Icon } from '@basmilius/homey-common';
-import { colors, icons } from '@basmilius/homey-common';
+import { colors, icons } from '@basmilius/homey-common/data';
 import type { BitSet, Cycle, Event, Flag, FlowBitsApp, Label, Mode, NoRepeatWindow, Slider, Statistics, Timer } from './src/types';
 
 export async function activateFlag({homey: {app}, body}: ApiRequest<FlowBitsApp, BodyFlag>): Promise<boolean> {

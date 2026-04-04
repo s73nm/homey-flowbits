@@ -1,5 +1,5 @@
 import type { Icon } from '@basmilius/homey-common';
-import { icons } from '@basmilius/homey-common';
+import { icons } from '@basmilius/homey-common/data';
 
 export default async function (query: string): Promise<Icon[]> {
     const normalizedQuery = query.toLowerCase().trim();
